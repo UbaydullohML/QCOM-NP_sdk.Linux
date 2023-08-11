@@ -1,0 +1,29 @@
+{
+    "UdoPackage_0":
+    {
+        "Operators": [
+            {
+                "type": "Conv",
+                "inputs":[
+                    {"name":"input", "data_type":"FLOAT_32"},
+                    {"name":"weight", "data_type":"FLOAT_32", "static":true, "default_value": [1.0]},
+                    {"name":"bias", "data_type":"FLOAT_32", "static":true, "default_value": [1.0]}
+                ],
+                "outputs":[
+                    {"name":"output", "data_type": "FLOAT_32"}
+                ],
+                "scalar_params": [
+                    {"name": "group", "data_type": "INT_32", "default_value": 1}
+                ],
+                "tensor_params": [
+                    {"name": "pads", "data_type": "INT_32", "default_value": [1, 1]},
+                    {"name": "strides", "data_type": "INT_32", "default_value": [1, 1]},
+                    {"name": "dilations", "data_type": "INT_32", "default_value": [1, 1]},
+                    {"name": "kernel_shape", "data_type": "INT_32", "default_value": [1]}
+                ],
+                "core_types": ["CPU"]
+            }
+        ],
+        "UDO_PACKAGE_NAME": "Conv2DPackage"
+    }
+}
