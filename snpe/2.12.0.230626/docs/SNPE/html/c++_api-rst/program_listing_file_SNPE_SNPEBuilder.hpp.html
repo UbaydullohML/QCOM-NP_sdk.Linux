@@ -1,0 +1,548 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Program Listing for File SNPEBuilder.hpp &mdash; Snapdragon Neural Processing Engine SDK</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/custom_css.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/collapsible-lists/css/tree_view.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+        <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Qualcomm® Neural Processing SDK
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                v2.12.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../general/revision_history.html">Revision History</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/revision_history_windows.html">Revision History - Windows</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/overview.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/setup.html">Setup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/usergroup1.html">Network Models</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/usergroup5.html">Input Data and Preprocessing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/usergroup6.html">Tutorials and Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/usergroup10.html">Benchmarking and Accuracy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/tools.html">Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/usergroup11.html">Debug Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/api.html">API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/limitations.html">Limitations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/appx_ref.html">References</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Qualcomm® Neural Processing SDK</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Program Listing for File SNPEBuilder.hpp</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="program-listing-for-file-snpebuilder-hpp">
+<span id="program-listing-file-snpe-snpebuilder-hpp"></span><h1>Program Listing for File SNPEBuilder.hpp<a class="headerlink" href="#program-listing-for-file-snpebuilder-hpp" title="Permalink to this headline">¶</a></h1>
+<p>↰ <a class="reference internal" href="file_SNPE_SNPEBuilder.hpp.html#file-snpe-snpebuilder-hpp"><span class="std std-ref">Return to documentation for file</span></a> (<code class="docutils literal notranslate"><span class="pre">SNPE/SNPEBuilder.hpp</span></code>)</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="c1">//==============================================================================</span>
+<span class="c1">//</span>
+<span class="c1">//  Copyright (c) 2017-2023 Qualcomm Technologies, Inc.</span>
+<span class="c1">//  All Rights Reserved.</span>
+<span class="c1">//  Confidential and Proprietary - Qualcomm Technologies, Inc.</span>
+<span class="c1">//</span>
+<span class="c1">//==============================================================================</span>
+
+<span class="cp">#ifndef _SNPE_BUILDER_HPP_</span>
+<span class="cp">#define _SNPE_BUILDER_HPP_</span>
+
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;SNPE/SNPE.hpp&quot;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;DlSystem/DlEnums.hpp&quot;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;DlSystem/UDLFunc.hpp&quot;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;DlSystem/DlOptional.hpp&quot;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;DlSystem/TensorShapeMap.hpp&quot;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;DlSystem/PlatformConfig.hpp&quot;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;DlSystem/IOBufferDataTypeMap.hpp&quot;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;DlSystem/RuntimeList.hpp&quot;</span>
+
+<span class="k">namespace</span><span class="w"> </span><span class="nn">zdl</span><span class="w"> </span><span class="p">{</span>
+<span class="w">   </span><span class="k">namespace</span><span class="w"> </span><span class="nn">DlContainer</span>
+<span class="w">   </span><span class="p">{</span>
+<span class="w">      </span><span class="k">class</span><span class="w"> </span><span class="nc">IDlContainer</span><span class="p">;</span>
+<span class="w">   </span><span class="p">}</span>
+<span class="p">}</span>
+
+<span class="k">struct</span><span class="w"> </span><span class="nc">SNPEBuilderImpl</span><span class="p">;</span>
+
+
+<span class="k">namespace</span><span class="w"> </span><span class="nn">zdl</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">namespace</span><span class="w"> </span><span class="nn">SNPE</span><span class="w"> </span><span class="p">{</span>
+<span class="cm">/** @addtogroup c_plus_plus_apis C++</span>
+<span class="cm">@{ */</span>
+
+<span class="cm">/**</span>
+<span class="cm"> * The builder class for creating SNPE objects.</span>
+<span class="cm"> * Not meant to be extended.</span>
+<span class="cm"> */</span>
+<span class="k">class</span><span class="w"> </span><span class="nc">ZDL_EXPORT</span><span class="w"> </span><span class="n">SNPEBuilder</span><span class="w"> </span><span class="k">final</span>
+<span class="p">{</span>
+<span class="k">private</span><span class="o">:</span>
+<span class="w">   </span><span class="n">std</span><span class="o">::</span><span class="n">unique_ptr</span><span class="o">&lt;::</span><span class="n">SNPEBuilderImpl</span><span class="o">&gt;</span><span class="w"> </span><span class="n">m_Impl</span><span class="p">;</span>
+<span class="k">public</span><span class="o">:</span>
+
+<span class="w">   </span><span class="cm">/**</span>
+<span class="cm">    * @brief Constructor of NeuralNetwork Builder with a supplied model.</span>
+<span class="cm">    *</span>
+<span class="cm">    * @param[in] container A container holding the model.</span>
+<span class="cm">    *</span>
+<span class="cm">    * @return A new instance of a SNPEBuilder object</span>
+<span class="cm">    *         that can be used to configure and build</span>
+<span class="cm">    *         an instance of SNPE.</span>
+<span class="cm">    *</span>
+<span class="cm">    */</span>
+<span class="w">   </span><span class="k">explicit</span><span class="w"> </span><span class="n">SNPEBuilder</span><span class="p">(</span>
+<span class="w">      </span><span class="n">zdl</span><span class="o">::</span><span class="n">DlContainer</span><span class="o">::</span><span class="n">IDlContainer</span><span class="o">*</span><span class="w"> </span><span class="n">container</span><span class="p">);</span>
+<span class="w">   </span><span class="o">~</span><span class="n">SNPEBuilder</span><span class="p">();</span>
+
+<span class="w">   </span><span class="cm">/**</span>
+<span class="cm">    * NOTE: DEPRECATED, MAY BE REMOVED IN THE FUTURE. Please use</span>
+<span class="cm">    *       setRuntimeProcessorOrder()</span>
+<span class="cm">    *</span>
+<span class="cm">    * @brief Sets the runtime processor.</span>
+<span class="cm">    *</span>
+<span class="cm">    * @param[in] targetRuntimeProcessor The target runtime.</span>
+<span class="cm">    *</span>
+<span class="cm">    * @return The current instance of SNPEBuilder.</span>
+<span class="cm">    */</span>
+<span class="w">   </span><span class="n">SNPEBuilder</span><span class="o">&amp;</span><span class="w"> </span><span class="nf">setRuntimeProcessor</span><span class="p">(</span>
+<span class="w">      </span><span class="n">zdl</span><span class="o">::</span><span class="n">DlSystem</span><span class="o">::</span><span class="n">Runtime_t</span><span class="w"> </span><span class="n">targetRuntimeProcessor</span><span class="p">);</span>
+
+<span class="w">   </span><span class="cm">/**</span>
+<span class="cm">    * @brief Requests a performance profile.</span>
+<span class="cm">    *</span>
+<span class="cm">    * @param[in] targetRuntimeProfile The target performance profile.</span>
+<span class="cm">    *</span>
+<span class="cm">    * @return The current instance of SNPEBuilder.</span>
+<span class="cm">    */</span>
+<span class="w">   </span><span class="n">SNPEBuilder</span><span class="o">&amp;</span><span class="w"> </span><span class="nf">setPerformanceProfile</span><span class="p">(</span>
+<span class="w">      </span><span class="n">zdl</span><span class="o">::</span><span class="n">DlSystem</span><span class="o">::</span><span class="n">PerformanceProfile_t</span><span class="w"> </span><span class="n">performanceProfile</span><span class="p">);</span>
+
+<span class="w">   </span><span class="cm">/**</span>
+<span class="cm">    * @brief Sets the profiling level. Default profiling level for</span>
+<span class="cm">    *        SNPEBuilder is off. Off and basic only applies to DSP runtime.</span>
+<span class="cm">    *</span>
+<span class="cm">    * @param[in] profilingLevel The target profiling level.</span>
+<span class="cm">    *</span>
+<span class="cm">    * @return The current instance of SNPEBuilder.</span>
+<span class="cm">    */</span>
+<span class="w">   </span><span class="n">SNPEBuilder</span><span class="o">&amp;</span><span class="w"> </span><span class="nf">setProfilingLevel</span><span class="p">(</span>
+<span class="w">      </span><span class="n">zdl</span><span class="o">::</span><span class="n">DlSystem</span><span class="o">::</span><span class="n">ProfilingLevel_t</span><span class="w"> </span><span class="n">profilingLevel</span><span class="p">);</span>
+
+<span class="w">    </span><span class="cm">/**</span>
+<span class="cm">     * @brief Sets a preference for execution priority.</span>
+<span class="cm">     *</span>
+<span class="cm">     * This allows the caller to give coarse hint to SNPE runtime</span>
+<span class="cm">     * about the priority of the network.  SNPE runtime is free to use</span>
+<span class="cm">     * this information to co-ordinate between different workloads</span>
+<span class="cm">     * that may or may not extend beyond SNPE.</span>
+<span class="cm">     *</span>
+<span class="cm">     * @param[in] ExecutionPriorityHint_t The target performance profile.</span>
+<span class="cm">     *</span>
+<span class="cm">     * @return The current instance of SNPEBuilder.</span>
+<span class="cm">     */</span>
+<span class="w">   </span><span class="n">SNPEBuilder</span><span class="o">&amp;</span><span class="w"> </span><span class="nf">setExecutionPriorityHint</span><span class="p">(</span>
+<span class="w">            </span><span class="n">zdl</span><span class="o">::</span><span class="n">DlSystem</span><span class="o">::</span><span class="n">ExecutionPriorityHint_t</span><span class="w"> </span><span class="n">priority</span><span class="p">);</span>
+
+<span class="w">    </span><span class="cm">/**</span>
+<span class="cm">    * @brief Sets the layers that will generate output.</span>
+<span class="cm">    *</span>
+<span class="cm">    * @param[in] outputLayerNames List of layer names to</span>
+<span class="cm">    *                             output. An empty list will</span>
+<span class="cm">    *                             result in only the final</span>
+<span class="cm">    *                             layer of the model being</span>
+<span class="cm">    *                             the output layer.  The list</span>
+<span class="cm">    *                             will be copied.</span>
+<span class="cm">    *</span>
+<span class="cm">    * @return The current instance of SNPEBuilder.</span>
+<span class="cm">    */</span>
+<span class="w">   </span><span class="n">SNPEBuilder</span><span class="o">&amp;</span><span class="w"> </span><span class="nf">setOutputLayers</span><span class="p">(</span>
+<span class="w">      </span><span class="k">const</span><span class="w"> </span><span class="n">zdl</span><span class="o">::</span><span class="n">DlSystem</span><span class="o">::</span><span class="n">StringList</span><span class="o">&amp;</span><span class="w"> </span><span class="n">outputLayerNames</span><span class="p">);</span>
+
+<span class="w">   </span><span class="cm">/**</span>
+<span class="cm">   * @brief Sets the output tensor names.</span>
+<span class="cm">   *</span>
+<span class="cm">   * @param[in] outputTensorNames List of tensor names to</span>
+<span class="cm">   *                             output. An empty list will</span>
+<span class="cm">   *                             result in producing output for the final</span>
+<span class="cm">   *                             output tensor of the model.</span>
+<span class="cm">   *                             The list will be copied.</span>
+<span class="cm">   *</span>
+<span class="cm">   * @return The current instance of SNPEBuilder.</span>
+<span class="cm">   */</span>
+<span class="w">   </span><span class="n">SNPEBuilder</span><span class="o">&amp;</span><span class="w"> </span><span class="nf">setOutputTensors</span><span class="p">(</span>
+<span class="w">      </span><span class="k">const</span><span class="w"> </span><span class="n">zdl</span><span class="o">::</span><span class="n">DlSystem</span><span class="o">::</span><span class="n">StringList</span><span class="o">&amp;</span><span class="w"> </span><span class="n">outputTensorNames</span><span class="p">);</span>
+
+<span class="w">   </span><span class="cm">/**</span>
+<span class="cm">    * @brief Passes in a User-defined layer.</span>
+<span class="cm">    *</span>
+<span class="cm">    * @param udlBundle Bundle of udl factory function and a cookie</span>
+<span class="cm">    *</span>
+<span class="cm">    * @return The current instance of SNPEBuilder.</span>
+<span class="cm">    */</span>
+<span class="w">   </span><span class="n">SNPEBuilder</span><span class="o">&amp;</span><span class="w"> </span><span class="nf">setUdlBundle</span><span class="p">(</span>
+<span class="w">      </span><span class="n">zdl</span><span class="o">::</span><span class="n">DlSystem</span><span class="o">::</span><span class="n">UDLBundle</span><span class="w"> </span><span class="n">udlBundle</span><span class="p">);</span>
+
+<span class="w">   </span><span class="cm">/**</span>
+<span class="cm">    * @brief Sets whether this neural network will perform inference with</span>
+<span class="cm">    *        input from user-supplied buffers, and write output to user-supplied</span>
+<span class="cm">    *        buffers.  Default behaviour is to use tensors created by</span>
+<span class="cm">    *        ITensorFactory.</span>
+<span class="cm">    *</span>
+<span class="cm">    * @param[in] bufferMode Whether to use user-supplied buffer or not.</span>
+<span class="cm">    *</span>
+<span class="cm">    * @return The current instance of SNPEBuilder.</span>
+<span class="cm">    */</span>
+<span class="w">   </span><span class="n">SNPEBuilder</span><span class="o">&amp;</span><span class="w"> </span><span class="nf">setUseUserSuppliedBuffers</span><span class="p">(</span>
+<span class="w">      </span><span class="kt">bool</span><span class="w"> </span><span class="n">bufferMode</span><span class="p">);</span>
+
+<span class="w">    </span><span class="cm">/**</span>
+<span class="cm">    * @brief Sets the debug mode of the runtime.</span>
+<span class="cm">    *</span>
+<span class="cm">    * @param[in] debugMode This enables debug mode for the runtime. It</span>
+<span class="cm">    *                      does two things. For an empty</span>
+<span class="cm">    *                      outputLayerNames list, all layers will be</span>
+<span class="cm">    *                      output. It might also disable some internal</span>
+<span class="cm">    *                      runtime optimizations (e.g., some networks</span>
+<span class="cm">    *                      might be optimized by combining layers,</span>
+<span class="cm">    *                      etc.).</span>
+<span class="cm">    *</span>
+<span class="cm">    * @return The current instance of SNPEBuilder.</span>
+<span class="cm">    */</span>
+<span class="w">   </span><span class="n">SNPEBuilder</span><span class="o">&amp;</span><span class="w"> </span><span class="nf">setDebugMode</span><span class="p">(</span>
+<span class="w">      </span><span class="kt">bool</span><span class="w"> </span><span class="n">debugMode</span><span class="p">);</span>
+
+<span class="w">   </span><span class="cm">/**</span>
+<span class="cm">    * NOTE: DEPRECATED, MAY BE REMOVED IN THE FUTURE. Please use</span>
+<span class="cm">    *       setRuntimeProcessorOrder()</span>
+<span class="cm">    *</span>
+<span class="cm">    * @brief Sets the mode of CPU fallback functionality.</span>
+<span class="cm">    *</span>
+<span class="cm">    * @param[in] mode   This flag enables/disables the functionality</span>
+<span class="cm">    *                   of CPU fallback. When the CPU fallback</span>
+<span class="cm">    *                   functionality is enabled, layers in model that</span>
+<span class="cm">    *                   violates runtime constraints will run on CPU</span>
+<span class="cm">    *                   while the rest of non-violating layers will</span>
+<span class="cm">    *                   run on the chosen runtime processor. In</span>
+<span class="cm">    *                   disabled mode, models with layers violating</span>
+<span class="cm">    *                   runtime constraints will NOT run on the chosen</span>
+<span class="cm">    *                   runtime processor and will result in runtime</span>
+<span class="cm">    *                   exception. By default, the functionality is</span>
+<span class="cm">    *                   enabled.</span>
+<span class="cm">    *</span>
+<span class="cm">    * @return The current instance of SNPEBuilder.</span>
+<span class="cm">    */</span>
+<span class="w">   </span><span class="n">SNPEBuilder</span><span class="o">&amp;</span><span class="w"> </span><span class="nf">setCPUFallbackMode</span><span class="p">(</span>
+<span class="w">      </span><span class="kt">bool</span><span class="w"> </span><span class="n">mode</span><span class="p">);</span>
+
+
+<span class="w">   </span><span class="cm">/**</span>
+<span class="cm">    * @brief Sets network&#39;s input dimensions to enable resizing of</span>
+<span class="cm">    *        the spatial dimensions of each layer for fully convolutional networks,</span>
+<span class="cm">    *        and the batch dimension for all networks.</span>
+<span class="cm">    *</span>
+<span class="cm">    * @param[in] tensorShapeMap The map of input names and their new dimensions.</span>
+<span class="cm">    *                           The new dimensions overwrite the input dimensions</span>
+<span class="cm">    *                           embedded in the model and then resize each layer</span>
+<span class="cm">    *                           of the model. If the model contains</span>
+<span class="cm">    *                           layers whose dimensions cannot be resized e.g FullyConnected,</span>
+<span class="cm">    *                           exception will be thrown when SNPE instance is actually built.</span>
+<span class="cm">    *                           In general the batch dimension is always resizable.</span>
+<span class="cm">    *                           After resizing of layers&#39; dimensions in model based</span>
+<span class="cm">    *                           on new input dimensions, the new model is revalidated</span>
+<span class="cm">    *                           against all runtime constraints, whose failures may</span>
+<span class="cm">    *                           result in cpu fallback situation.</span>
+<span class="cm">    *</span>
+<span class="cm">    * @return The current instance of SNPEBuilder.</span>
+<span class="cm">    */</span>
+<span class="w">   </span><span class="n">SNPEBuilder</span><span class="o">&amp;</span><span class="w"> </span><span class="nf">setInputDimensions</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">zdl</span><span class="o">::</span><span class="n">DlSystem</span><span class="o">::</span><span class="n">TensorShapeMap</span><span class="o">&amp;</span><span class="w"> </span><span class="n">inputDimensionsMap</span><span class="p">);</span>
+
+<span class="w">   </span><span class="cm">/**</span>
+<span class="cm">    * @brief Sets the mode of init caching functionality.</span>
+<span class="cm">    *</span>
+<span class="cm">    * @param[in] mode   This flag enables/disables the functionality of init caching.</span>
+<span class="cm">    *                   When init caching functionality is enabled, a set of init caches</span>
+<span class="cm">    *                   will be created during network building/initialization process</span>
+<span class="cm">    *                   and will be added to DLC container. If such DLC container is saved</span>
+<span class="cm">    *                   by the user, in subsequent network building/initialization processes</span>
+<span class="cm">    *                   these init caches will be loaded from the DLC so as to reduce initialization time.</span>
+<span class="cm">    *                   In disable mode, no init caches will be added to DLC container.</span>
+<span class="cm">    *</span>
+<span class="cm">    * @return The current instance of SNPEBuilder.</span>
+<span class="cm">    */</span>
+<span class="w">   </span><span class="n">SNPEBuilder</span><span class="o">&amp;</span><span class="w"> </span><span class="nf">setInitCacheMode</span><span class="p">(</span>
+<span class="w">      </span><span class="kt">bool</span><span class="w"> </span><span class="n">cacheMode</span><span class="p">);</span>
+
+<span class="w">   </span><span class="cm">/**</span>
+<span class="cm">    * @brief Returns an instance of SNPE based on the current parameters.</span>
+<span class="cm">    *</span>
+<span class="cm">    * @return A new instance of a SNPE object that can be used</span>
+<span class="cm">    *         to execute models or null if any errors occur.</span>
+<span class="cm">    */</span>
+<span class="w">   </span><span class="n">std</span><span class="o">::</span><span class="n">unique_ptr</span><span class="o">&lt;</span><span class="n">SNPE</span><span class="o">&gt;</span><span class="w"> </span><span class="n">build</span><span class="p">()</span><span class="w"> </span><span class="k">noexcept</span><span class="p">;</span>
+
+<span class="w">   </span><span class="cm">/**</span>
+<span class="cm">    * @brief Sets the platform configuration.</span>
+<span class="cm">    *</span>
+<span class="cm">    * @param[in] platformConfig The platform configuration.</span>
+<span class="cm">    *</span>
+<span class="cm">    * @return The current instance of SNPEBuilder.</span>
+<span class="cm">    */</span>
+<span class="w">   </span><span class="n">SNPEBuilder</span><span class="o">&amp;</span><span class="w"> </span><span class="nf">setPlatformConfig</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">zdl</span><span class="o">::</span><span class="n">DlSystem</span><span class="o">::</span><span class="n">PlatformConfig</span><span class="o">&amp;</span><span class="w"> </span><span class="n">platformConfig</span><span class="p">);</span>
+
+<span class="w">   </span><span class="cm">/**</span>
+<span class="cm">    * @brief Sets network&#39;s runtime order of precedence. Example:</span>
+<span class="cm">    *        CPU_FLOAT32, GPU_FLOAT16, AIP_FIXED8_TF</span>
+<span class="cm">    *        Note:- setRuntimeProcessor() or setCPUFallbackMode() will be silently ignored when</span>
+<span class="cm">    *        setRuntimeProcessorOrder() is invoked</span>
+<span class="cm">    *</span>
+<span class="cm">    * @param[in] runtimeList The list of runtime in order of precedence</span>
+<span class="cm">    *</span>
+<span class="cm">    * @return The current instance of SNPEBuilder.</span>
+<span class="cm">    */</span>
+<span class="w">   </span><span class="n">SNPEBuilder</span><span class="o">&amp;</span><span class="w"> </span><span class="nf">setRuntimeProcessorOrder</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">zdl</span><span class="o">::</span><span class="n">DlSystem</span><span class="o">::</span><span class="n">RuntimeList</span><span class="o">&amp;</span><span class="w"> </span><span class="n">runtimeList</span><span class="p">);</span>
+
+<span class="w">    </span><span class="cm">/**</span>
+<span class="cm">    * @brief Sets the unconsumed tensors as output</span>
+<span class="cm">    *</span>
+<span class="cm">    * @param[in] setOutput This enables unconsumed tensors (i.e)</span>
+<span class="cm">    *                      outputs which are not inputs to any</span>
+<span class="cm">    *                      layer (basically dead ends) to be marked</span>
+<span class="cm">    *                      for output</span>
+<span class="cm">    *</span>
+<span class="cm">    * @return The current instance of SNPEBuilder.</span>
+<span class="cm">    */</span>
+<span class="w">   </span><span class="n">SNPEBuilder</span><span class="o">&amp;</span><span class="w"> </span><span class="nf">setUnconsumedTensorsAsOutputs</span><span class="p">(</span>
+<span class="w">      </span><span class="kt">bool</span><span class="w"> </span><span class="n">setOutput</span><span class="p">);</span>
+
+<span class="w">    </span><span class="cm">/**</span>
+<span class="cm">    * @brief Execution terminated when exceeding time limit.</span>
+<span class="cm">    *        Only valid for dsp runtime currently.</span>
+<span class="cm">    *</span>
+<span class="cm">    * @param[in] timeout Time limit value in microseconds</span>
+<span class="cm">    *</span>
+<span class="cm">    * @return The current instance of SNPEBuilder.</span>
+<span class="cm">    */</span>
+<span class="w">   </span><span class="n">SNPEBuilder</span><span class="o">&amp;</span><span class="w"> </span><span class="nf">setTimeOut</span><span class="p">(</span>
+<span class="w">      </span><span class="kt">uint64_t</span><span class="w"> </span><span class="n">timeoutMicroSec</span><span class="p">);</span>
+
+
+<span class="w">   </span><span class="cm">/**</span>
+<span class="cm">    * @brief Sets the datatype of the buffer.</span>
+<span class="cm">    *        Only valid for dsp runtime currently.</span>
+<span class="cm">    *</span>
+<span class="cm">    * @param[in] Map of the buffer names and the datatype that needs to be set.</span>
+<span class="cm">    *</span>
+<span class="cm">    * @return The current instance of SNPEBuilder.</span>
+<span class="cm">    */</span>
+<span class="w">   </span><span class="n">SNPEBuilder</span><span class="o">&amp;</span><span class="w"> </span><span class="nf">setBufferDataType</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">zdl</span><span class="o">::</span><span class="n">DlSystem</span><span class="o">::</span><span class="n">IOBufferDataTypeMap</span><span class="o">&amp;</span><span class="w"> </span><span class="n">dataTypeMap</span><span class="p">);</span>
+
+<span class="w">   </span><span class="cm">/**</span>
+<span class="cm">    * @brief Sets up the entire initialization callflow to</span>
+<span class="cm">    *        happen on the user&#39;s thread</span>
+<span class="cm">    *</span>
+<span class="cm">    * @return The current instance of SNPEBuilder.</span>
+<span class="cm">    */</span>
+<span class="w">   </span><span class="n">SNPEBuilder</span><span class="o">&amp;</span><span class="w"> </span><span class="nf">setSingleThreadedInit</span><span class="p">(</span><span class="kt">bool</span><span class="w"> </span><span class="n">singleThreadedInit</span><span class="p">);</span>
+
+<span class="w">   </span><span class="cm">/**</span>
+<span class="cm">    * @brief Sets cpu fxp mode to passed value</span>
+<span class="cm">    *</span>
+<span class="cm">    * @return The current instance of SNPEBuilder.</span>
+<span class="cm">    */</span>
+<span class="w">   </span><span class="n">SNPEBuilder</span><span class="o">&amp;</span><span class="w"> </span><span class="nf">setCpuFixedPointMode</span><span class="p">(</span><span class="kt">bool</span><span class="w"> </span><span class="n">cpuFxpMode</span><span class="p">);</span>
+
+<span class="p">};</span>
+<span class="cm">/** @} */</span><span class="w"> </span><span class="cm">/* end_addtogroup c_plus_plus_apis C++ */</span>
+
+<span class="p">}}</span>
+
+<span class="cp">#endif</span>
+</pre></div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2020-2023, Qualcomm Technologies, Inc..
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

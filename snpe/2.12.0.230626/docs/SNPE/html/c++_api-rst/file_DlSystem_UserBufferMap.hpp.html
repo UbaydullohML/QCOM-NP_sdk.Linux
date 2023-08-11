@@ -1,0 +1,413 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>File UserBufferMap.hpp &mdash; Snapdragon Neural Processing Engine SDK</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/custom_css.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/collapsible-lists/css/tree_view.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+        <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Qualcomm® Neural Processing SDK
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                v2.12.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../general/revision_history.html">Revision History</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/revision_history_windows.html">Revision History - Windows</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/overview.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/setup.html">Setup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/usergroup1.html">Network Models</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/usergroup5.html">Input Data and Preprocessing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/usergroup6.html">Tutorials and Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/usergroup10.html">Benchmarking and Accuracy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/tools.html">Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/usergroup11.html">Debug Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/api.html">API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/limitations.html">Limitations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/appx_ref.html">References</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Qualcomm® Neural Processing SDK</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>File UserBufferMap.hpp</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="file-userbuffermap-hpp">
+<span id="file-dlsystem-userbuffermap-hpp"></span><h1>File UserBufferMap.hpp<a class="headerlink" href="#file-userbuffermap-hpp" title="Permalink to this headline">¶</a></h1>
+<p>↰ <a class="reference internal" href="dir_DlSystem.html#dir-dlsystem"><span class="std std-ref">Parent directory</span></a> (<code class="docutils literal notranslate"><span class="pre">DlSystem</span></code>)</p>
+<div class="contents local topic" id="contents">
+<p class="topic-title">Contents</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#definition-dlsystem-userbuffermap-hpp" id="id1">Definition (<code class="docutils literal notranslate"><span class="pre">DlSystem/UserBufferMap.hpp</span></code>)</a></p></li>
+<li><p><a class="reference internal" href="#includes" id="id2">Includes</a></p></li>
+<li><p><a class="reference internal" href="#included-by" id="id3">Included By</a></p></li>
+<li><p><a class="reference internal" href="#namespaces" id="id4">Namespaces</a></p></li>
+<li><p><a class="reference internal" href="#classes" id="id5">Classes</a></p></li>
+<li><p><a class="reference internal" href="#full-file-listing" id="id6">Full File Listing</a></p></li>
+</ul>
+</div>
+<div class="section" id="definition-dlsystem-userbuffermap-hpp">
+<h2>Definition (<code class="docutils literal notranslate"><span class="pre">DlSystem/UserBufferMap.hpp</span></code>)<a class="headerlink" href="#definition-dlsystem-userbuffermap-hpp" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="program_listing_file_DlSystem_UserBufferMap.hpp.html">Program Listing for File UserBufferMap.hpp</a></li>
+</ul>
+</div>
+</div>
+<div class="section" id="includes">
+<h2>Includes<a class="headerlink" href="#includes" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">StringList.hpp</span></code> (<a class="reference internal" href="file_DlSystem_StringList.hpp.html#file-dlsystem-stringlist-hpp"><span class="std std-ref">File StringList.hpp</span></a>)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">ZdlExportDefine.hpp</span></code> (<a class="reference internal" href="file_DlSystem_ZdlExportDefine.hpp.html#file-dlsystem-zdlexportdefine-hpp"><span class="std std-ref">File ZdlExportDefine.hpp</span></a>)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">memory</span></code></p></li>
+</ul>
+</div>
+<div class="section" id="included-by">
+<h2>Included By<a class="headerlink" href="#included-by" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="file_SNPE_SNPE.hpp.html#file-snpe-snpe-hpp"><span class="std std-ref">File SNPE.hpp</span></a></p></li>
+</ul>
+</div>
+<div class="section" id="namespaces">
+<h2>Namespaces<a class="headerlink" href="#namespaces" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="namespace_DlSystem.html#namespace-dlsystem"><span class="std std-ref">Namespace DlSystem</span></a></p></li>
+<li><p><a class="reference internal" href="namespace_zdl.html#namespace-zdl"><span class="std std-ref">Namespace zdl</span></a></p></li>
+<li><p><a class="reference internal" href="namespace_zdl__DlSystem.html#namespace-zdl-dlsystem"><span class="std std-ref">Namespace zdl::DlSystem</span></a></p></li>
+</ul>
+</div>
+<div class="section" id="classes">
+<h2>Classes<a class="headerlink" href="#classes" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="classzdl_1_1DlSystem_1_1UserBufferMap.html#exhale-class-classzdl-1-1dlsystem-1-1userbuffermap"><span class="std std-ref">Class UserBufferMap</span></a></p></li>
+</ul>
+</div>
+<div class="section" id="full-file-listing">
+<h2>Full File Listing<a class="headerlink" href="#full-file-listing" title="Permalink to this headline">¶</a></h2>
+<dl class="cpp type">
+<dt class="sig sig-object cpp" id="_CPPv48DlSystem">
+<span id="_CPPv38DlSystem"></span><span id="_CPPv28DlSystem"></span><span id="DlSystem"></span><span class="target" id="namespaceDlSystem"></span><span class="k"><span class="pre">namespace</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">DlSystem</span></span></span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp type">
+<dt class="sig sig-object cpp" id="_CPPv43zdl">
+<span id="_CPPv33zdl"></span><span id="_CPPv23zdl"></span><span id="zdl"></span><span class="target" id="namespacezdl"></span><span class="k"><span class="pre">namespace</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">zdl</span></span></span><br /></dt>
+<dd><dl class="cpp type">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystemE">
+<span id="_CPPv3N3zdl8DlSystemE"></span><span id="_CPPv2N3zdl8DlSystemE"></span><span id="zdl::DlSystem"></span><span class="target" id="namespacezdl_1_1DlSystem"></span><span class="k"><span class="pre">namespace</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">DlSystem</span></span></span><br /></dt>
+<dd><dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem13UserBufferMapE">
+<span id="_CPPv3N3zdl8DlSystem13UserBufferMapE"></span><span id="_CPPv2N3zdl8DlSystem13UserBufferMapE"></span><span id="zdl::DlSystem::UserBufferMap"></span><span class="target" id="classzdl_1_1DlSystem_1_1UserBufferMap"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">UserBufferMap</span></span></span><br /></dt>
+<dd><em>#include &lt;UserBufferMap.hpp&gt;</em><p>A class representing the map of UserBuffer. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem13UserBufferMap13UserBufferMapEv">
+<span id="_CPPv3N3zdl8DlSystem13UserBufferMap13UserBufferMapEv"></span><span id="_CPPv2N3zdl8DlSystem13UserBufferMap13UserBufferMapEv"></span><span id="zdl::DlSystem::UserBufferMap::UserBufferMap"></span><span class="target" id="classzdl_1_1DlSystem_1_1UserBufferMap_1a1dd32d29163ea863ca934e3d87997f85"></span><span class="sig-name descname"><span class="n"><span class="pre">UserBufferMap</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><br /></dt>
+<dd><p>Creates a new empty UserBuffer map </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem13UserBufferMap13UserBufferMapERK13UserBufferMap">
+<span id="_CPPv3N3zdl8DlSystem13UserBufferMap13UserBufferMapERK13UserBufferMap"></span><span id="_CPPv2N3zdl8DlSystem13UserBufferMap13UserBufferMapERK13UserBufferMap"></span><span id="zdl::DlSystem::UserBufferMap::UserBufferMap__UserBufferMapCR"></span><span class="target" id="classzdl_1_1DlSystem_1_1UserBufferMap_1af38d8b7454a5c87992a144781608256a"></span><span class="sig-name descname"><span class="n"><span class="pre">UserBufferMap</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="classzdl_1_1DlSystem_1_1UserBufferMap.html#_CPPv4N3zdl8DlSystem13UserBufferMap13UserBufferMapERK13UserBufferMap" title="zdl::DlSystem::UserBufferMap::UserBufferMap"><span class="n"><span class="pre">UserBufferMap</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">other</span></span><span class="sig-paren">)</span><br /></dt>
+<dd><p>copy constructor. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>other</strong> – <strong>[in]</strong> object to copy. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem13UserBufferMapaSERK13UserBufferMap">
+<span id="_CPPv3N3zdl8DlSystem13UserBufferMapaSERK13UserBufferMap"></span><span id="_CPPv2N3zdl8DlSystem13UserBufferMapaSERK13UserBufferMap"></span><span id="zdl::DlSystem::UserBufferMap::assign-operator__UserBufferMapCR"></span><span class="target" id="classzdl_1_1DlSystem_1_1UserBufferMap_1a96c48d374bc64672c116f572d539acda"></span><a class="reference internal" href="classzdl_1_1DlSystem_1_1UserBufferMap.html#_CPPv4N3zdl8DlSystem13UserBufferMapE" title="zdl::DlSystem::UserBufferMap"><span class="n"><span class="pre">UserBufferMap</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="k"><span class="pre">operator</span></span><span class="o"><span class="pre">=</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="classzdl_1_1DlSystem_1_1UserBufferMap.html#_CPPv4N3zdl8DlSystem13UserBufferMapE" title="zdl::DlSystem::UserBufferMap"><span class="n"><span class="pre">UserBufferMap</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">other</span></span><span class="sig-paren">)</span><br /></dt>
+<dd><p>assignment operator. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem13UserBufferMap3addEPKcPN3zdl8DlSystem11IUserBufferE">
+<span id="_CPPv3N3zdl8DlSystem13UserBufferMap3addEPKcPN3zdl8DlSystem11IUserBufferE"></span><span id="_CPPv2N3zdl8DlSystem13UserBufferMap3addEPKcPN3zdl8DlSystem11IUserBufferE"></span><span id="zdl::DlSystem::UserBufferMap::add__cCP.zdl::DlSystem::IUserBufferP"></span><span class="target" id="classzdl_1_1DlSystem_1_1UserBufferMap_1a33d79c4c7e3896a603222db5484325b8"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">add</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">name</span></span>, <a class="reference internal" href="file_DlContainer_IDlContainer.hpp.html#_CPPv43zdl" title="zdl"><span class="n"><span class="pre">zdl</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="file_DlSystem_DlEnums.hpp.html#_CPPv4N3zdl8DlSystemE" title="zdl::DlSystem"><span class="n"><span class="pre">DlSystem</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="classzdl_1_1DlSystem_1_1IUserBuffer.html#_CPPv4N3zdl8DlSystem11IUserBufferE" title="zdl::DlSystem::IUserBuffer"><span class="n"><span class="pre">IUserBuffer</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">buffer</span></span><span class="sig-paren">)</span><br /></dt>
+<dd><p>Adds a name and the corresponding UserBuffer pointer to the map. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>name</strong> – <strong>[in]</strong> The name of the UserBuffer </p></li>
+<li><p><strong>userBuffer</strong> – <strong>[in]</strong> The pointer to the UserBuffer</p></li>
+</ul>
+</dd>
+</dl>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If a UserBuffer with the same name already exists, the new UserBuffer pointer would be updated. </p>
+</div>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem13UserBufferMap6removeEPKc">
+<span id="_CPPv3N3zdl8DlSystem13UserBufferMap6removeEPKc"></span><span id="_CPPv2N3zdl8DlSystem13UserBufferMap6removeEPKc"></span><span id="zdl::DlSystem::UserBufferMap::remove__cCP"></span><span class="target" id="classzdl_1_1DlSystem_1_1UserBufferMap_1aa2a346c9ec6a42cc800d99419dec19ab"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">remove</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">name</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">noexcept</span></span><br /></dt>
+<dd><p>Removes a mapping of one UserBuffer and its name by its name. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>name</strong> – <strong>[in]</strong> The name of UserBuffer to be removed</p>
+</dd>
+</dl>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If no UserBuffer with the specified name is found, nothing is done. </p>
+</div>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK3zdl8DlSystem13UserBufferMap4sizeEv">
+<span id="_CPPv3NK3zdl8DlSystem13UserBufferMap4sizeEv"></span><span id="_CPPv2NK3zdl8DlSystem13UserBufferMap4sizeEv"></span><span id="zdl::DlSystem::UserBufferMap::sizeC"></span><span class="target" id="classzdl_1_1DlSystem_1_1UserBufferMap_1aca6a14535aa5f4817e0f3b478f09ebf3"></span><span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">size</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="k"><span class="pre">noexcept</span></span><br /></dt>
+<dd><p>Returns the number of UserBuffers in the map. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem13UserBufferMap5clearEv">
+<span id="_CPPv3N3zdl8DlSystem13UserBufferMap5clearEv"></span><span id="_CPPv2N3zdl8DlSystem13UserBufferMap5clearEv"></span><span id="zdl::DlSystem::UserBufferMap::clear"></span><span class="target" id="classzdl_1_1DlSystem_1_1UserBufferMap_1a8cbe8e64718a837b9d0cfbfccf9ffcb0"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">clear</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">noexcept</span></span><br /></dt>
+<dd><p>Removes all UserBuffers from the map </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK3zdl8DlSystem13UserBufferMap13getUserBufferEPKc">
+<span id="_CPPv3NK3zdl8DlSystem13UserBufferMap13getUserBufferEPKc"></span><span id="_CPPv2NK3zdl8DlSystem13UserBufferMap13getUserBufferEPKc"></span><span id="zdl::DlSystem::UserBufferMap::getUserBuffer__cCPC"></span><span class="target" id="classzdl_1_1DlSystem_1_1UserBufferMap_1ae34de843fd8d22b73df84c9bd1430fc8"></span><a class="reference internal" href="file_DlContainer_IDlContainer.hpp.html#_CPPv43zdl" title="zdl"><span class="n"><span class="pre">zdl</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="file_DlSystem_DlEnums.hpp.html#_CPPv4N3zdl8DlSystemE" title="zdl::DlSystem"><span class="n"><span class="pre">DlSystem</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="classzdl_1_1DlSystem_1_1IUserBuffer.html#_CPPv4N3zdl8DlSystem11IUserBufferE" title="zdl::DlSystem::IUserBuffer"><span class="n"><span class="pre">IUserBuffer</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">getUserBuffer</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">name</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="k"><span class="pre">noexcept</span></span><br /></dt>
+<dd><p>Returns the UserBuffer given its name. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>name</strong> – <strong>[in]</strong> The name of the UserBuffer to get.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>nullptr if no UserBuffer with the specified name is found; otherwise, a valid pointer to the UserBuffer. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK3zdl8DlSystem13UserBufferMap18getUserBufferNamesEv">
+<span id="_CPPv3NK3zdl8DlSystem13UserBufferMap18getUserBufferNamesEv"></span><span id="_CPPv2NK3zdl8DlSystem13UserBufferMap18getUserBufferNamesEv"></span><span id="zdl::DlSystem::UserBufferMap::getUserBufferNamesC"></span><span class="target" id="classzdl_1_1DlSystem_1_1UserBufferMap_1a37d56066edb574f8fca6f44336e9414e"></span><a class="reference internal" href="file_DlContainer_IDlContainer.hpp.html#_CPPv43zdl" title="zdl"><span class="n"><span class="pre">zdl</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="file_DlSystem_DlEnums.hpp.html#_CPPv4N3zdl8DlSystemE" title="zdl::DlSystem"><span class="n"><span class="pre">DlSystem</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="classzdl_1_1DlSystem_1_1StringList.html#_CPPv4N3zdl8DlSystem10StringListE" title="zdl::DlSystem::StringList"><span class="n"><span class="pre">StringList</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getUserBufferNames</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><br /></dt>
+<dd><p>Returns the names of all UserBuffers</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>A list of UserBuffer names. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem13UserBufferMapD0Ev">
+<span id="_CPPv3N3zdl8DlSystem13UserBufferMapD0Ev"></span><span id="_CPPv2N3zdl8DlSystem13UserBufferMapD0Ev"></span><span id="zdl::DlSystem::UserBufferMap::~UserBufferMap"></span><span class="target" id="classzdl_1_1DlSystem_1_1UserBufferMap_1a8ab1a8632234cdf7348c783ffc6de4ec"></span><span class="sig-name descname"><span class="n"><span class="pre">~UserBufferMap</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-private-functions">Private Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem13UserBufferMap4swapERK13UserBufferMap">
+<span id="_CPPv3N3zdl8DlSystem13UserBufferMap4swapERK13UserBufferMap"></span><span id="_CPPv2N3zdl8DlSystem13UserBufferMap4swapERK13UserBufferMap"></span><span id="zdl::DlSystem::UserBufferMap::swap__UserBufferMapCR"></span><span class="target" id="classzdl_1_1DlSystem_1_1UserBufferMap_1a10cae053ed9b71c98f288fd6dad791f8"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">swap</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="classzdl_1_1DlSystem_1_1UserBufferMap.html#_CPPv4N3zdl8DlSystem13UserBufferMapE" title="zdl::DlSystem::UserBufferMap"><span class="n"><span class="pre">UserBufferMap</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">other</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3zdl8DlSystem13UserBufferMap4swapERK13UserBufferMap" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-private-members">Private Members</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem13UserBufferMap19m_UserBufferMapImplE">
+<span id="_CPPv3N3zdl8DlSystem13UserBufferMap19m_UserBufferMapImplE"></span><span id="_CPPv2N3zdl8DlSystem13UserBufferMap19m_UserBufferMapImplE"></span><span id="zdl::DlSystem::UserBufferMap::m_UserBufferMapImpl__std::unique_ptr:DlSystem::UserBufferMapImpl:"></span><span class="target" id="classzdl_1_1DlSystem_1_1UserBufferMap_1abd0875ef347d5c0f84f83ea826bb9e52"></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">unique_ptr</span></span><span class="p"><span class="pre">&lt;</span></span><span class="p"><span class="pre">::</span></span><a class="reference internal" href="file_DlSystem_IOBufferDataTypeMap.hpp.html#_CPPv48DlSystem" title="DlSystem"><span class="n"><span class="pre">DlSystem</span></span></a><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">UserBufferMapImpl</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">m_UserBufferMapImpl</span></span></span><a class="headerlink" href="#_CPPv4N3zdl8DlSystem13UserBufferMap19m_UserBufferMapImplE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2020-2023, Qualcomm Technologies, Inc..
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

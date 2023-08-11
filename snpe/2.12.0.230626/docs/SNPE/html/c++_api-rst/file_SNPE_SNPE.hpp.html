@@ -1,0 +1,559 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>File SNPE.hpp &mdash; Snapdragon Neural Processing Engine SDK</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/custom_css.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/collapsible-lists/css/tree_view.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+        <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Qualcomm® Neural Processing SDK
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                v2.12.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../general/revision_history.html">Revision History</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/revision_history_windows.html">Revision History - Windows</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/overview.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/setup.html">Setup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/usergroup1.html">Network Models</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/usergroup5.html">Input Data and Preprocessing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/usergroup6.html">Tutorials and Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/usergroup10.html">Benchmarking and Accuracy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/tools.html">Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/usergroup11.html">Debug Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/api.html">API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/limitations.html">Limitations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/appx_ref.html">References</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Qualcomm® Neural Processing SDK</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>File SNPE.hpp</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="file-snpe-hpp">
+<span id="file-snpe-snpe-hpp"></span><h1>File SNPE.hpp<a class="headerlink" href="#file-snpe-hpp" title="Permalink to this headline">¶</a></h1>
+<p>↰ <a class="reference internal" href="dir_SNPE.html#dir-snpe"><span class="std std-ref">Parent directory</span></a> (<code class="docutils literal notranslate"><span class="pre">SNPE</span></code>)</p>
+<div class="contents local topic" id="contents">
+<p class="topic-title">Contents</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#definition-snpe-snpe-hpp" id="id1">Definition (<code class="docutils literal notranslate"><span class="pre">SNPE/SNPE.hpp</span></code>)</a></p></li>
+<li><p><a class="reference internal" href="#includes" id="id2">Includes</a></p></li>
+<li><p><a class="reference internal" href="#included-by" id="id3">Included By</a></p></li>
+<li><p><a class="reference internal" href="#namespaces" id="id4">Namespaces</a></p></li>
+<li><p><a class="reference internal" href="#classes" id="id5">Classes</a></p></li>
+<li><p><a class="reference internal" href="#full-file-listing" id="id6">Full File Listing</a></p></li>
+</ul>
+</div>
+<div class="section" id="definition-snpe-snpe-hpp">
+<h2>Definition (<code class="docutils literal notranslate"><span class="pre">SNPE/SNPE.hpp</span></code>)<a class="headerlink" href="#definition-snpe-snpe-hpp" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="program_listing_file_SNPE_SNPE.hpp.html">Program Listing for File SNPE.hpp</a></li>
+</ul>
+</div>
+</div>
+<div class="section" id="includes">
+<h2>Includes<a class="headerlink" href="#includes" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">DlSystem/DlOptional.hpp</span></code> (<a class="reference internal" href="file_DlSystem_DlOptional.hpp.html#file-dlsystem-dloptional-hpp"><span class="std std-ref">File DlOptional.hpp</span></a>)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">DlSystem/DlVersion.hpp</span></code> (<a class="reference internal" href="file_DlSystem_DlVersion.hpp.html#file-dlsystem-dlversion-hpp"><span class="std std-ref">File DlVersion.hpp</span></a>)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">DlSystem/IBufferAttributes.hpp</span></code> (<a class="reference internal" href="file_DlSystem_IBufferAttributes.hpp.html#file-dlsystem-ibufferattributes-hpp"><span class="std std-ref">File IBufferAttributes.hpp</span></a>)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">DlSystem/ITensor.hpp</span></code> (<a class="reference internal" href="file_DlSystem_ITensor.hpp.html#file-dlsystem-itensor-hpp"><span class="std std-ref">File ITensor.hpp</span></a>)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">DlSystem/IUserBuffer.hpp</span></code> (<a class="reference internal" href="file_DlSystem_IUserBuffer.hpp.html#file-dlsystem-iuserbuffer-hpp"><span class="std std-ref">File IUserBuffer.hpp</span></a>)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">DlSystem/String.hpp</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">DlSystem/StringList.hpp</span></code> (<a class="reference internal" href="file_DlSystem_StringList.hpp.html#file-dlsystem-stringlist-hpp"><span class="std std-ref">File StringList.hpp</span></a>)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">DlSystem/TensorMap.hpp</span></code> (<a class="reference internal" href="file_DlSystem_TensorMap.hpp.html#file-dlsystem-tensormap-hpp"><span class="std std-ref">File TensorMap.hpp</span></a>)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">DlSystem/TensorShape.hpp</span></code> (<a class="reference internal" href="file_DlSystem_TensorShape.hpp.html#file-dlsystem-tensorshape-hpp"><span class="std std-ref">File TensorShape.hpp</span></a>)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">DlSystem/UserBufferMap.hpp</span></code> (<a class="reference internal" href="file_DlSystem_UserBufferMap.hpp.html#file-dlsystem-userbuffermap-hpp"><span class="std std-ref">File UserBufferMap.hpp</span></a>)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">DlSystem/UserMemoryMap.hpp</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">DlSystem/ZdlExportDefine.hpp</span></code> (<a class="reference internal" href="file_DlSystem_ZdlExportDefine.hpp.html#file-dlsystem-zdlexportdefine-hpp"><span class="std std-ref">File ZdlExportDefine.hpp</span></a>)</p></li>
+</ul>
+</div>
+<div class="section" id="included-by">
+<h2>Included By<a class="headerlink" href="#included-by" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="file_SNPE_SNPEBuilder.hpp.html#file-snpe-snpebuilder-hpp"><span class="std std-ref">File SNPEBuilder.hpp</span></a></p></li>
+<li><p><a class="reference internal" href="file_SNPE_SNPEFactory.hpp.html#file-snpe-snpefactory-hpp"><span class="std std-ref">File SNPEFactory.hpp</span></a></p></li>
+</ul>
+</div>
+<div class="section" id="namespaces">
+<h2>Namespaces<a class="headerlink" href="#namespaces" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="namespace_zdl.html#namespace-zdl"><span class="std std-ref">Namespace zdl</span></a></p></li>
+<li><p><a class="reference internal" href="namespace_zdl__DiagLog.html#namespace-zdl-diaglog"><span class="std std-ref">Namespace zdl::DiagLog</span></a></p></li>
+<li><p><a class="reference internal" href="namespace_zdl__SNPE.html#namespace-zdl-snpe"><span class="std std-ref">Namespace zdl::SNPE</span></a></p></li>
+</ul>
+</div>
+<div class="section" id="classes">
+<h2>Classes<a class="headerlink" href="#classes" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="classzdl_1_1SNPE_1_1SNPE.html#exhale-class-classzdl-1-1snpe-1-1snpe"><span class="std std-ref">Class SNPE</span></a></p></li>
+</ul>
+</div>
+<div class="section" id="full-file-listing">
+<h2>Full File Listing<a class="headerlink" href="#full-file-listing" title="Permalink to this headline">¶</a></h2>
+<dl class="cpp type">
+<dt class="sig sig-object cpp" id="_CPPv43zdl">
+<span id="_CPPv33zdl"></span><span id="_CPPv23zdl"></span><span id="zdl"></span><span class="target" id="namespacezdl"></span><span class="k"><span class="pre">namespace</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">zdl</span></span></span><br /></dt>
+<dd><dl class="cpp type">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl7DiagLogE">
+<span id="_CPPv3N3zdl7DiagLogE"></span><span id="_CPPv2N3zdl7DiagLogE"></span><span id="zdl::DiagLog"></span><span class="target" id="namespacezdl_1_1DiagLog"></span><span class="k"><span class="pre">namespace</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">DiagLog</span></span></span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp type">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl4SNPEE">
+<span id="_CPPv3N3zdl4SNPEE"></span><span id="_CPPv2N3zdl4SNPEE"></span><span id="zdl::SNPE"></span><span class="target" id="namespacezdl_1_1SNPE"></span><span class="k"><span class="pre">namespace</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SNPE</span></span></span><br /></dt>
+<dd><dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl4SNPE4SNPEE">
+<span id="_CPPv3N3zdl4SNPE4SNPEE"></span><span id="_CPPv2N3zdl4SNPE4SNPEE"></span><span id="zdl::SNPE::SNPE"></span><span class="target" id="classzdl_1_1SNPE_1_1SNPE"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SNPE</span></span></span><br /></dt>
+<dd><em>#include &lt;SNPE.hpp&gt;</em><p>The <a class="reference internal" href="#classzdl_1_1SNPE_1_1SNPE"><span class="std std-ref">SNPE</span></a> interface class definition </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl4SNPE4SNPE4SNPEERRNSt10unique_ptrIN3zdl4SNPE11SnpeRuntimeEEE">
+<span id="_CPPv3N3zdl4SNPE4SNPE4SNPEERRNSt10unique_ptrIN3zdl4SNPE11SnpeRuntimeEEE"></span><span id="_CPPv2N3zdl4SNPE4SNPE4SNPEERRNSt10unique_ptrIN3zdl4SNPE11SnpeRuntimeEEE"></span><span id="zdl::SNPE::SNPE::SNPE__std::unique_ptr:zdl::SNPE::SnpeRuntime:RR"></span><span class="target" id="classzdl_1_1SNPE_1_1SNPE_1a5cac8c9097039aa656df557d037a1150"></span><span class="k"><span class="pre">explicit</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SNPE</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">unique_ptr</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="file_DlContainer_IDlContainer.hpp.html#_CPPv43zdl" title="zdl"><span class="n"><span class="pre">zdl</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="file_PlatformValidator_PlatformValidator.hpp.html#_CPPv4N3zdl4SNPEE" title="zdl::SNPE"><span class="n"><span class="pre">SNPE</span></span></a><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">SnpeRuntime</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">runtime</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">noexcept</span></span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl4SNPE4SNPED0Ev">
+<span id="_CPPv3N3zdl4SNPE4SNPED0Ev"></span><span id="_CPPv2N3zdl4SNPE4SNPED0Ev"></span><span id="zdl::SNPE::SNPE::~SNPE"></span><span class="target" id="classzdl_1_1SNPE_1_1SNPE_1adf9968cf4910fdaa3dcf9450209f07bf"></span><span class="sig-name descname"><span class="n"><span class="pre">~SNPE</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK3zdl4SNPE4SNPE19getInputTensorNamesEv">
+<span id="_CPPv3NK3zdl4SNPE4SNPE19getInputTensorNamesEv"></span><span id="_CPPv2NK3zdl4SNPE4SNPE19getInputTensorNamesEv"></span><span id="zdl::SNPE::SNPE::getInputTensorNamesC"></span><span class="target" id="classzdl_1_1SNPE_1_1SNPE_1aef665464aa9e44a8f6070e425ef6232e"></span><a class="reference internal" href="file_DlContainer_IDlContainer.hpp.html#_CPPv43zdl" title="zdl"><span class="n"><span class="pre">zdl</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="file_DlSystem_DlEnums.hpp.html#_CPPv4N3zdl8DlSystemE" title="zdl::DlSystem"><span class="n"><span class="pre">DlSystem</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="classzdl_1_1DlSystem_1_1Optional.html#_CPPv4N3zdl8DlSystem8OptionalE" title="zdl::DlSystem::Optional"><span class="n"><span class="pre">Optional</span></span></a><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="file_DlContainer_IDlContainer.hpp.html#_CPPv43zdl" title="zdl"><span class="n"><span class="pre">zdl</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="file_DlSystem_DlEnums.hpp.html#_CPPv4N3zdl8DlSystemE" title="zdl::DlSystem"><span class="n"><span class="pre">DlSystem</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="classzdl_1_1DlSystem_1_1StringList.html#_CPPv4N3zdl8DlSystem10StringListE" title="zdl::DlSystem::StringList"><span class="n"><span class="pre">StringList</span></span></a><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getInputTensorNames</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="k"><span class="pre">noexcept</span></span><br /></dt>
+<dd><p>Gets the names of input tensors to the network. </p>
+<p>To support multiple input scenarios, where multiple tensors are passed through <a class="reference internal" href="#classzdl_1_1SNPE_1_1SNPE_1a3bd4c3b33990622e1bb403ddede6467f"><span class="std std-ref">execute()</span></a> in a TensorMap, each tensor needs to be uniquely named. The names of tensors can be retrieved through this function.</p>
+<p>In the case of a single input, one name will be returned.</p>
+<p><dl class="simple">
+<dt><strong>See</strong></dt><dd><p><a class="reference internal" href="file_DlSystem_DlOptional.hpp.html#classzdl_1_1DlSystem_1_1Optional"><span class="std std-ref">zdl::DlSystem::Optional</span></a> </p>
+</dd>
+</dl>
+</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>An Optional List of input tensor names.</p>
+</dd>
+</dl>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Note that because the returned value is an Optional list, the list must be verified as boolean true value before being dereferenced.</p>
+</div>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK3zdl4SNPE4SNPE20getOutputTensorNamesEv">
+<span id="_CPPv3NK3zdl4SNPE4SNPE20getOutputTensorNamesEv"></span><span id="_CPPv2NK3zdl4SNPE4SNPE20getOutputTensorNamesEv"></span><span id="zdl::SNPE::SNPE::getOutputTensorNamesC"></span><span class="target" id="classzdl_1_1SNPE_1_1SNPE_1a99573ff6726e6b1586acfb048790c4cf"></span><a class="reference internal" href="file_DlContainer_IDlContainer.hpp.html#_CPPv43zdl" title="zdl"><span class="n"><span class="pre">zdl</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="file_DlSystem_DlEnums.hpp.html#_CPPv4N3zdl8DlSystemE" title="zdl::DlSystem"><span class="n"><span class="pre">DlSystem</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="classzdl_1_1DlSystem_1_1Optional.html#_CPPv4N3zdl8DlSystem8OptionalE" title="zdl::DlSystem::Optional"><span class="n"><span class="pre">Optional</span></span></a><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="file_DlContainer_IDlContainer.hpp.html#_CPPv43zdl" title="zdl"><span class="n"><span class="pre">zdl</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="file_DlSystem_DlEnums.hpp.html#_CPPv4N3zdl8DlSystemE" title="zdl::DlSystem"><span class="n"><span class="pre">DlSystem</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="classzdl_1_1DlSystem_1_1StringList.html#_CPPv4N3zdl8DlSystem10StringListE" title="zdl::DlSystem::StringList"><span class="n"><span class="pre">StringList</span></span></a><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getOutputTensorNames</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="k"><span class="pre">noexcept</span></span><br /></dt>
+<dd><p>Gets the names of output tensors to the network. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>List of output tensor names. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK3zdl4SNPE4SNPE31getOutputTensorNamesByLayerNameEPKc">
+<span id="_CPPv3NK3zdl4SNPE4SNPE31getOutputTensorNamesByLayerNameEPKc"></span><span id="_CPPv2NK3zdl4SNPE4SNPE31getOutputTensorNamesByLayerNameEPKc"></span><span id="zdl::SNPE::SNPE::getOutputTensorNamesByLayerName__cCPC"></span><span class="target" id="classzdl_1_1SNPE_1_1SNPE_1a961093ea81837169fd9269cfd92800f2"></span><a class="reference internal" href="file_DlContainer_IDlContainer.hpp.html#_CPPv43zdl" title="zdl"><span class="n"><span class="pre">zdl</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="file_DlSystem_DlEnums.hpp.html#_CPPv4N3zdl8DlSystemE" title="zdl::DlSystem"><span class="n"><span class="pre">DlSystem</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="classzdl_1_1DlSystem_1_1StringList.html#_CPPv4N3zdl8DlSystem10StringListE" title="zdl::DlSystem::StringList"><span class="n"><span class="pre">StringList</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getOutputTensorNamesByLayerName</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">name</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="k"><span class="pre">noexcept</span></span><br /></dt>
+<dd><p>Gets the name of output tensor from the input layer name. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Output tensor name. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl4SNPE4SNPE7executeERKN3zdl8DlSystem9TensorMapERN3zdl8DlSystem9TensorMapE">
+<span id="_CPPv3N3zdl4SNPE4SNPE7executeERKN3zdl8DlSystem9TensorMapERN3zdl8DlSystem9TensorMapE"></span><span id="_CPPv2N3zdl4SNPE4SNPE7executeERKN3zdl8DlSystem9TensorMapERN3zdl8DlSystem9TensorMapE"></span><span id="zdl::SNPE::SNPE::execute__zdl::DlSystem::TensorMapCR.zdl::DlSystem::TensorMapR"></span><span class="target" id="classzdl_1_1SNPE_1_1SNPE_1a3bd4c3b33990622e1bb403ddede6467f"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">execute</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="file_DlContainer_IDlContainer.hpp.html#_CPPv43zdl" title="zdl"><span class="n"><span class="pre">zdl</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="file_DlSystem_DlEnums.hpp.html#_CPPv4N3zdl8DlSystemE" title="zdl::DlSystem"><span class="n"><span class="pre">DlSystem</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="classzdl_1_1DlSystem_1_1TensorMap.html#_CPPv4N3zdl8DlSystem9TensorMapE" title="zdl::DlSystem::TensorMap"><span class="n"><span class="pre">TensorMap</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">input</span></span>, <a class="reference internal" href="file_DlContainer_IDlContainer.hpp.html#_CPPv43zdl" title="zdl"><span class="n"><span class="pre">zdl</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="file_DlSystem_DlEnums.hpp.html#_CPPv4N3zdl8DlSystemE" title="zdl::DlSystem"><span class="n"><span class="pre">DlSystem</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="classzdl_1_1DlSystem_1_1TensorMap.html#_CPPv4N3zdl8DlSystem9TensorMapE" title="zdl::DlSystem::TensorMap"><span class="n"><span class="pre">TensorMap</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">output</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">noexcept</span></span><br /></dt>
+<dd><p>Processes the input data and returns the output. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>A</strong> – <strong>[in]</strong> map of tensors that contains the input data for each input. The names of tensors needs to be matched with names retrieved through <a class="reference internal" href="#classzdl_1_1SNPE_1_1SNPE_1aef665464aa9e44a8f6070e425ef6232e"><span class="std std-ref">getInputTensorNames()</span></a></p></li>
+<li><p><strong>An</strong> – <strong>[inout]</strong> empty map of tensors that will contain the output data of potentially multiple layers (the key in the map is the layer name) upon return</p></li>
+</ul>
+</dd>
+</dl>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>output tensormap has to be empty. To forward propagate and get results in user-supplied tensors, use executeWithSuppliedOutputTensors. </p>
+</div>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl4SNPE4SNPE7executeEPKN3zdl8DlSystem7ITensorERN3zdl8DlSystem9TensorMapE">
+<span id="_CPPv3N3zdl4SNPE4SNPE7executeEPKN3zdl8DlSystem7ITensorERN3zdl8DlSystem9TensorMapE"></span><span id="_CPPv2N3zdl4SNPE4SNPE7executeEPKN3zdl8DlSystem7ITensorERN3zdl8DlSystem9TensorMapE"></span><span id="zdl::SNPE::SNPE::execute__zdl::DlSystem::ITensorCP.zdl::DlSystem::TensorMapR"></span><span class="target" id="classzdl_1_1SNPE_1_1SNPE_1a2ed1e1b1ce65e8da97ee1f89f93540b2"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">execute</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="file_DlContainer_IDlContainer.hpp.html#_CPPv43zdl" title="zdl"><span class="n"><span class="pre">zdl</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="file_DlSystem_DlEnums.hpp.html#_CPPv4N3zdl8DlSystemE" title="zdl::DlSystem"><span class="n"><span class="pre">DlSystem</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="classzdl_1_1DlSystem_1_1ITensor.html#_CPPv4N3zdl8DlSystem7ITensorE" title="zdl::DlSystem::ITensor"><span class="n"><span class="pre">ITensor</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">input</span></span>, <a class="reference internal" href="file_DlContainer_IDlContainer.hpp.html#_CPPv43zdl" title="zdl"><span class="n"><span class="pre">zdl</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="file_DlSystem_DlEnums.hpp.html#_CPPv4N3zdl8DlSystemE" title="zdl::DlSystem"><span class="n"><span class="pre">DlSystem</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="classzdl_1_1DlSystem_1_1TensorMap.html#_CPPv4N3zdl8DlSystem9TensorMapE" title="zdl::DlSystem::TensorMap"><span class="n"><span class="pre">TensorMap</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">output</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">noexcept</span></span><br /></dt>
+<dd><p>Processes the input data and returns the output. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>A</strong> – <strong>[in]</strong> single tensor contains the input data.</p></li>
+<li><p><strong>An</strong> – <strong>[inout]</strong> empty map of tensors that will contain the output data of potentially multiple layers (the key in the map is the layer name) upon return</p></li>
+</ul>
+</dd>
+</dl>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>output tensormap has to be empty. </p>
+</div>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl4SNPE4SNPE7executeERKN3zdl8DlSystem13UserBufferMapERKN3zdl8DlSystem13UserBufferMapE">
+<span id="_CPPv3N3zdl4SNPE4SNPE7executeERKN3zdl8DlSystem13UserBufferMapERKN3zdl8DlSystem13UserBufferMapE"></span><span id="_CPPv2N3zdl4SNPE4SNPE7executeERKN3zdl8DlSystem13UserBufferMapERKN3zdl8DlSystem13UserBufferMapE"></span><span id="zdl::SNPE::SNPE::execute__zdl::DlSystem::UserBufferMapCR.zdl::DlSystem::UserBufferMapCR"></span><span class="target" id="classzdl_1_1SNPE_1_1SNPE_1a36d4b6b210077e570d8b350eaf89da17"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">execute</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="file_DlContainer_IDlContainer.hpp.html#_CPPv43zdl" title="zdl"><span class="n"><span class="pre">zdl</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="file_DlSystem_DlEnums.hpp.html#_CPPv4N3zdl8DlSystemE" title="zdl::DlSystem"><span class="n"><span class="pre">DlSystem</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="classzdl_1_1DlSystem_1_1UserBufferMap.html#_CPPv4N3zdl8DlSystem13UserBufferMapE" title="zdl::DlSystem::UserBufferMap"><span class="n"><span class="pre">UserBufferMap</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">input</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="file_DlContainer_IDlContainer.hpp.html#_CPPv43zdl" title="zdl"><span class="n"><span class="pre">zdl</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="file_DlSystem_DlEnums.hpp.html#_CPPv4N3zdl8DlSystemE" title="zdl::DlSystem"><span class="n"><span class="pre">DlSystem</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="classzdl_1_1DlSystem_1_1UserBufferMap.html#_CPPv4N3zdl8DlSystem13UserBufferMapE" title="zdl::DlSystem::UserBufferMap"><span class="n"><span class="pre">UserBufferMap</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">output</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">noexcept</span></span><br /></dt>
+<dd><p>Processes the input data and returns the output, using user-supplied buffers. </p>
+<p>
+Caller must guarantee that for the duration of <a class="reference internal" href="#classzdl_1_1SNPE_1_1SNPE_1a3bd4c3b33990622e1bb403ddede6467f"><span class="std std-ref">execute()</span></a>, the buffer stored in UserBuffer would remain valid. For more detail on buffer ownership and lifetime requirements, please refer to zdl::DlSystem::UserBuffer documentation. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>A</strong> – <strong>[in]</strong> map of UserBuffers that contains the input data for each input. The names of UserBuffers needs to be matched with names retrieved through <a class="reference internal" href="#classzdl_1_1SNPE_1_1SNPE_1aef665464aa9e44a8f6070e425ef6232e"><span class="std std-ref">getInputTensorNames()</span></a></p></li>
+<li><p><strong>A</strong> – <strong>[inout]</strong> map of UserBuffers that will hold the output data of potentially multiple layers (the key in the map is the UserBuffer name)</p></li>
+</ul>
+</dd>
+</dl>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>input and output UserBuffer maps must be fully pre-populated. with dimensions matching what the network expects. For example, if there are 5 output UserBuffers they all have to be present in map.</p>
+</div>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl4SNPE4SNPE18registerIonBuffersERKN3zdl8DlSystem13UserMemoryMapE">
+<span id="_CPPv3N3zdl4SNPE4SNPE18registerIonBuffersERKN3zdl8DlSystem13UserMemoryMapE"></span><span id="_CPPv2N3zdl4SNPE4SNPE18registerIonBuffersERKN3zdl8DlSystem13UserMemoryMapE"></span><span id="zdl::SNPE::SNPE::registerIonBuffers__zdl::DlSystem::UserMemoryMapCR"></span><span class="target" id="classzdl_1_1SNPE_1_1SNPE_1aba936e894d071df59dc4e8cf97b93d8c"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">registerIonBuffers</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="file_DlContainer_IDlContainer.hpp.html#_CPPv43zdl" title="zdl"><span class="n"><span class="pre">zdl</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="file_DlSystem_DlEnums.hpp.html#_CPPv4N3zdl8DlSystemE" title="zdl::DlSystem"><span class="n"><span class="pre">DlSystem</span></span></a><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">UserMemoryMap</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">ionBufferMap</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">noexcept</span></span><br /></dt>
+<dd><p>Register Client ION Buffers. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>A</strong> – <strong>[in]</strong> UserMemoryMap of virtual addresses </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl4SNPE4SNPE20deregisterIonBuffersERKN3zdl8DlSystem10StringListE">
+<span id="_CPPv3N3zdl4SNPE4SNPE20deregisterIonBuffersERKN3zdl8DlSystem10StringListE"></span><span id="_CPPv2N3zdl4SNPE4SNPE20deregisterIonBuffersERKN3zdl8DlSystem10StringListE"></span><span id="zdl::SNPE::SNPE::deregisterIonBuffers__zdl::DlSystem::StringListCR"></span><span class="target" id="classzdl_1_1SNPE_1_1SNPE_1a054a2f78eb363fa4378bc8a532f76a68"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">deregisterIonBuffers</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="file_DlContainer_IDlContainer.hpp.html#_CPPv43zdl" title="zdl"><span class="n"><span class="pre">zdl</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="file_DlSystem_DlEnums.hpp.html#_CPPv4N3zdl8DlSystemE" title="zdl::DlSystem"><span class="n"><span class="pre">DlSystem</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="classzdl_1_1DlSystem_1_1StringList.html#_CPPv4N3zdl8DlSystem10StringListE" title="zdl::DlSystem::StringList"><span class="n"><span class="pre">StringList</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">ionBufferNames</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">noexcept</span></span><br /></dt>
+<dd><p>Deregister Client ION Buffers. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>A</strong> – <strong>[in]</strong> StringList of ION Buffer names </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK3zdl4SNPE4SNPE15getModelVersionEv">
+<span id="_CPPv3NK3zdl4SNPE4SNPE15getModelVersionEv"></span><span id="_CPPv2NK3zdl4SNPE4SNPE15getModelVersionEv"></span><span id="zdl::SNPE::SNPE::getModelVersionC"></span><span class="target" id="classzdl_1_1SNPE_1_1SNPE_1a397c4c85150c47c043534878ad5c76b3"></span><a class="reference internal" href="file_DlContainer_IDlContainer.hpp.html#_CPPv43zdl" title="zdl"><span class="n"><span class="pre">zdl</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="file_DlSystem_DlEnums.hpp.html#_CPPv4N3zdl8DlSystemE" title="zdl::DlSystem"><span class="n"><span class="pre">DlSystem</span></span></a><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">String</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getModelVersion</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="k"><span class="pre">noexcept</span></span><br /></dt>
+<dd><p>Returns the version string embedded at model conversion time. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Model version string, which is a free-form string supplied at the time of the conversion </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK3zdl4SNPE4SNPE18getInputDimensionsEv">
+<span id="_CPPv3NK3zdl4SNPE4SNPE18getInputDimensionsEv"></span><span id="_CPPv2NK3zdl4SNPE4SNPE18getInputDimensionsEv"></span><span id="zdl::SNPE::SNPE::getInputDimensionsC"></span><span class="target" id="classzdl_1_1SNPE_1_1SNPE_1a42abea1ccbf3c1158cb6b886904a4110"></span><a class="reference internal" href="file_DlContainer_IDlContainer.hpp.html#_CPPv43zdl" title="zdl"><span class="n"><span class="pre">zdl</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="file_DlSystem_DlEnums.hpp.html#_CPPv4N3zdl8DlSystemE" title="zdl::DlSystem"><span class="n"><span class="pre">DlSystem</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="classzdl_1_1DlSystem_1_1Optional.html#_CPPv4N3zdl8DlSystem8OptionalE" title="zdl::DlSystem::Optional"><span class="n"><span class="pre">Optional</span></span></a><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="file_DlContainer_IDlContainer.hpp.html#_CPPv43zdl" title="zdl"><span class="n"><span class="pre">zdl</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="file_DlSystem_DlEnums.hpp.html#_CPPv4N3zdl8DlSystemE" title="zdl::DlSystem"><span class="n"><span class="pre">DlSystem</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="classzdl_1_1DlSystem_1_1TensorShape.html#_CPPv4N3zdl8DlSystem11TensorShapeE" title="zdl::DlSystem::TensorShape"><span class="n"><span class="pre">TensorShape</span></span></a><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getInputDimensions</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="k"><span class="pre">noexcept</span></span><br /></dt>
+<dd><p>Returns the dimensions of the input data to the model in the form of TensorShape. The dimensions in TensorShape corresponds to what the tensor dimensions would need to be for an input tensor to the model. </p>
+<p><dl class="simple">
+<dt><strong>See</strong></dt><dd><p><a class="reference internal" href="file_DlSystem_ITensor.hpp.html#classzdl_1_1DlSystem_1_1ITensor"><span class="std std-ref">zdl::DlSystem::ITensor</span></a> </p>
+</dd>
+<dt><strong>See</strong></dt><dd><p><a class="reference internal" href="file_DlSystem_TensorShape.hpp.html#classzdl_1_1DlSystem_1_1TensorShape"><span class="std std-ref">zdl::DlSystem::TensorShape</span></a> </p>
+</dd>
+<dt><strong>See</strong></dt><dd><p><a class="reference internal" href="file_DlSystem_DlOptional.hpp.html#classzdl_1_1DlSystem_1_1Optional"><span class="std std-ref">zdl::DlSystem::Optional</span></a> </p>
+</dd>
+</dl>
+</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>layer</strong> – <strong>[in]</strong> input name.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>An Optional instance of TensorShape that maintains dimensions, matching the tensor dimensions for input to the model, where the last entry is the fastest varying dimension, etc.</p>
+</dd>
+</dl>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Note that this function only makes sense for networks that have a fixed input size. For networks in which the input size varies with each call of Execute(), this function should not be used.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Because the returned type is an Optional instance, it must be verified as a boolean true value before being dereferenced.</p>
+</div>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK3zdl4SNPE4SNPE18getInputDimensionsEPKc">
+<span id="_CPPv3NK3zdl4SNPE4SNPE18getInputDimensionsEPKc"></span><span id="_CPPv2NK3zdl4SNPE4SNPE18getInputDimensionsEPKc"></span><span id="zdl::SNPE::SNPE::getInputDimensions__cCPC"></span><span class="target" id="classzdl_1_1SNPE_1_1SNPE_1a787a75298aba7622e46f90bf797bc09b"></span><a class="reference internal" href="file_DlContainer_IDlContainer.hpp.html#_CPPv43zdl" title="zdl"><span class="n"><span class="pre">zdl</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="file_DlSystem_DlEnums.hpp.html#_CPPv4N3zdl8DlSystemE" title="zdl::DlSystem"><span class="n"><span class="pre">DlSystem</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="classzdl_1_1DlSystem_1_1Optional.html#_CPPv4N3zdl8DlSystem8OptionalE" title="zdl::DlSystem::Optional"><span class="n"><span class="pre">Optional</span></span></a><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="file_DlContainer_IDlContainer.hpp.html#_CPPv43zdl" title="zdl"><span class="n"><span class="pre">zdl</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="file_DlSystem_DlEnums.hpp.html#_CPPv4N3zdl8DlSystemE" title="zdl::DlSystem"><span class="n"><span class="pre">DlSystem</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="classzdl_1_1DlSystem_1_1TensorShape.html#_CPPv4N3zdl8DlSystem11TensorShapeE" title="zdl::DlSystem::TensorShape"><span class="n"><span class="pre">TensorShape</span></span></a><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getInputDimensions</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">name</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="k"><span class="pre">noexcept</span></span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK3zdl4SNPE4SNPE19getOutputLayerNamesEv">
+<span id="_CPPv3NK3zdl4SNPE4SNPE19getOutputLayerNamesEv"></span><span id="_CPPv2NK3zdl4SNPE4SNPE19getOutputLayerNamesEv"></span><span id="zdl::SNPE::SNPE::getOutputLayerNamesC"></span><span class="target" id="classzdl_1_1SNPE_1_1SNPE_1a1ed7b3193c9b243bfbb918c3ae52f8f3"></span><a class="reference internal" href="file_DlContainer_IDlContainer.hpp.html#_CPPv43zdl" title="zdl"><span class="n"><span class="pre">zdl</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="file_DlSystem_DlEnums.hpp.html#_CPPv4N3zdl8DlSystemE" title="zdl::DlSystem"><span class="n"><span class="pre">DlSystem</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="classzdl_1_1DlSystem_1_1Optional.html#_CPPv4N3zdl8DlSystem8OptionalE" title="zdl::DlSystem::Optional"><span class="n"><span class="pre">Optional</span></span></a><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="file_DlContainer_IDlContainer.hpp.html#_CPPv43zdl" title="zdl"><span class="n"><span class="pre">zdl</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="file_DlSystem_DlEnums.hpp.html#_CPPv4N3zdl8DlSystemE" title="zdl::DlSystem"><span class="n"><span class="pre">DlSystem</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="classzdl_1_1DlSystem_1_1StringList.html#_CPPv4N3zdl8DlSystem10StringListE" title="zdl::DlSystem::StringList"><span class="n"><span class="pre">StringList</span></span></a><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getOutputLayerNames</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="k"><span class="pre">noexcept</span></span><br /></dt>
+<dd><p>Gets the output layer(s) for the network. </p>
+<p>Note that the output layers returned by this function may be different than those specified when the network was created via the <a class="reference internal" href="file_SNPE_SNPEBuilder.hpp.html#classzdl_1_1SNPE_1_1SNPEBuilder"><span class="std std-ref">zdl::SNPE::SNPEBuilder</span></a>. For example, if the network was created in debug mode with no explicit output layers specified, this will contain all layers.</p>
+<p><dl class="simple">
+<dt><strong>See</strong></dt><dd><p><a class="reference internal" href="file_DlSystem_DlOptional.hpp.html#classzdl_1_1DlSystem_1_1Optional"><span class="std std-ref">zdl::DlSystem::Optional</span></a> </p>
+</dd>
+</dl>
+</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>A List of output layer names.</p>
+</dd>
+</dl>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Note that because the returned value is an Optional StringList, the list must be verified as a boolean true value before being dereferenced.</p>
+</div>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK3zdl4SNPE4SNPE30getInputOutputBufferAttributesEPKc">
+<span id="_CPPv3NK3zdl4SNPE4SNPE30getInputOutputBufferAttributesEPKc"></span><span id="_CPPv2NK3zdl4SNPE4SNPE30getInputOutputBufferAttributesEPKc"></span><span id="zdl::SNPE::SNPE::getInputOutputBufferAttributes__cCPC"></span><span class="target" id="classzdl_1_1SNPE_1_1SNPE_1a4b2823be65f4cea9659a7e23936102d7"></span><a class="reference internal" href="file_DlContainer_IDlContainer.hpp.html#_CPPv43zdl" title="zdl"><span class="n"><span class="pre">zdl</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="file_DlSystem_DlEnums.hpp.html#_CPPv4N3zdl8DlSystemE" title="zdl::DlSystem"><span class="n"><span class="pre">DlSystem</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="classzdl_1_1DlSystem_1_1Optional.html#_CPPv4N3zdl8DlSystem8OptionalE" title="zdl::DlSystem::Optional"><span class="n"><span class="pre">Optional</span></span></a><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="file_DlContainer_IDlContainer.hpp.html#_CPPv43zdl" title="zdl"><span class="n"><span class="pre">zdl</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="file_DlSystem_DlEnums.hpp.html#_CPPv4N3zdl8DlSystemE" title="zdl::DlSystem"><span class="n"><span class="pre">DlSystem</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="classzdl_1_1DlSystem_1_1IBufferAttributes.html#_CPPv4N3zdl8DlSystem17IBufferAttributesE" title="zdl::DlSystem::IBufferAttributes"><span class="n"><span class="pre">IBufferAttributes</span></span></a><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getInputOutputBufferAttributes</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">name</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="k"><span class="pre">noexcept</span></span><br /></dt>
+<dd><p>Returns attributes of buffers used to feed input tensors and receive result from output tensors. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>Tensor</strong> – <strong>[in]</strong> name.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>BufferAttributes of input/output tensor named </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl4SNPE4SNPE19getDiagLogInterfaceEv">
+<span id="_CPPv3N3zdl4SNPE4SNPE19getDiagLogInterfaceEv"></span><span id="_CPPv2N3zdl4SNPE4SNPE19getDiagLogInterfaceEv"></span><span id="zdl::SNPE::SNPE::getDiagLogInterface"></span><span class="target" id="classzdl_1_1SNPE_1_1SNPE_1ae5964af4b4001673796428faf5484962"></span><a class="reference internal" href="file_DlContainer_IDlContainer.hpp.html#_CPPv43zdl" title="zdl"><span class="n"><span class="pre">zdl</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="file_DlSystem_DlEnums.hpp.html#_CPPv4N3zdl8DlSystemE" title="zdl::DlSystem"><span class="n"><span class="pre">DlSystem</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="classzdl_1_1DlSystem_1_1Optional.html#_CPPv4N3zdl8DlSystem8OptionalE" title="zdl::DlSystem::Optional"><span class="n"><span class="pre">Optional</span></span></a><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="file_DlContainer_IDlContainer.hpp.html#_CPPv43zdl" title="zdl"><span class="n"><span class="pre">zdl</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="file_SNPE_IDiagLog.hpp.html#_CPPv4N3zdl7DiagLogE" title="zdl::DiagLog"><span class="n"><span class="pre">DiagLog</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="classzdl_1_1DiagLog_1_1IDiagLog.html#_CPPv4N3zdl7DiagLog8IDiagLogE" title="zdl::DiagLog::IDiagLog"><span class="n"><span class="pre">IDiagLog</span></span></a><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getDiagLogInterface</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">noexcept</span></span><br /></dt>
+<dd><p>Get the diagnostic logging interface</p>
+<p><dl class="simple">
+<dt><strong>See</strong></dt><dd><p><a class="reference internal" href="file_DlSystem_DlOptional.hpp.html#classzdl_1_1DlSystem_1_1Optional"><span class="std std-ref">zdl::DlSystem::Optional</span></a> </p>
+</dd>
+</dl>
+</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Note that because the returned type is an Optional instance, it must be verified as a boolean true value before being dereferenced.</p>
+</div>
+</dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-private-functions">Private Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl4SNPE4SNPE4SNPEERK4SNPE">
+<span id="_CPPv3N3zdl4SNPE4SNPE4SNPEERK4SNPE"></span><span id="_CPPv2N3zdl4SNPE4SNPE4SNPEERK4SNPE"></span><span id="zdl::SNPE::SNPE::SNPE__SNPECR"></span><span class="target" id="classzdl_1_1SNPE_1_1SNPE_1ac948bb535bdaccea290c442e18aa3173"></span><span class="sig-name descname"><span class="n"><span class="pre">SNPE</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N3zdl4SNPE4SNPE4SNPEERK4SNPE" title="zdl::SNPE::SNPE::SNPE"><span class="n"><span class="pre">SNPE</span></span></a><span class="p"><span class="pre">&amp;</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="k"><span class="pre">delete</span></span><a class="headerlink" href="#_CPPv4N3zdl4SNPE4SNPE4SNPEERK4SNPE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl4SNPE4SNPEaSERK4SNPE">
+<span id="_CPPv3N3zdl4SNPE4SNPEaSERK4SNPE"></span><span id="_CPPv2N3zdl4SNPE4SNPEaSERK4SNPE"></span><span id="zdl::SNPE::SNPE::assign-operator__SNPECR"></span><span class="target" id="classzdl_1_1SNPE_1_1SNPE_1a7bd8eff3128b6b533d3806f4f2457b98"></span><a class="reference internal" href="classzdl_1_1SNPE_1_1SNPE.html#_CPPv4N3zdl4SNPE4SNPEE" title="zdl::SNPE::SNPE"><span class="n"><span class="pre">SNPE</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="k"><span class="pre">operator</span></span><span class="o"><span class="pre">=</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="classzdl_1_1SNPE_1_1SNPE.html#_CPPv4N3zdl4SNPE4SNPEE" title="zdl::SNPE::SNPE"><span class="n"><span class="pre">SNPE</span></span></a><span class="p"><span class="pre">&amp;</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="k"><span class="pre">delete</span></span><a class="headerlink" href="#_CPPv4N3zdl4SNPE4SNPEaSERK4SNPE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-private-members">Private Members</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl4SNPE4SNPE9m_RuntimeE">
+<span id="_CPPv3N3zdl4SNPE4SNPE9m_RuntimeE"></span><span id="_CPPv2N3zdl4SNPE4SNPE9m_RuntimeE"></span><span id="zdl::SNPE::SNPE::m_Runtime__std::unique_ptr:SnpeRuntime:"></span><span class="target" id="classzdl_1_1SNPE_1_1SNPE_1af9e8eecd83e7cc4d3cd63af1427feda1"></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">unique_ptr</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">SnpeRuntime</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">m_Runtime</span></span></span><a class="headerlink" href="#_CPPv4N3zdl4SNPE4SNPE9m_RuntimeE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2020-2023, Qualcomm Technologies, Inc..
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

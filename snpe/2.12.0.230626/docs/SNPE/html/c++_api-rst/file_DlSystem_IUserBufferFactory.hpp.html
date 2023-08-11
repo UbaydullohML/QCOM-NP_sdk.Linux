@@ -1,0 +1,333 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>File IUserBufferFactory.hpp &mdash; Snapdragon Neural Processing Engine SDK</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/custom_css.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/collapsible-lists/css/tree_view.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+        <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Qualcomm® Neural Processing SDK
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                v2.12.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../general/revision_history.html">Revision History</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/revision_history_windows.html">Revision History - Windows</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/overview.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/setup.html">Setup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/usergroup1.html">Network Models</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/usergroup5.html">Input Data and Preprocessing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/usergroup6.html">Tutorials and Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/usergroup10.html">Benchmarking and Accuracy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/tools.html">Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/usergroup11.html">Debug Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/api.html">API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/limitations.html">Limitations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/appx_ref.html">References</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Qualcomm® Neural Processing SDK</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>File IUserBufferFactory.hpp</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="file-iuserbufferfactory-hpp">
+<span id="file-dlsystem-iuserbufferfactory-hpp"></span><h1>File IUserBufferFactory.hpp<a class="headerlink" href="#file-iuserbufferfactory-hpp" title="Permalink to this headline">¶</a></h1>
+<p>↰ <a class="reference internal" href="dir_DlSystem.html#dir-dlsystem"><span class="std std-ref">Parent directory</span></a> (<code class="docutils literal notranslate"><span class="pre">DlSystem</span></code>)</p>
+<div class="contents local topic" id="contents">
+<p class="topic-title">Contents</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#definition-dlsystem-iuserbufferfactory-hpp" id="id1">Definition (<code class="docutils literal notranslate"><span class="pre">DlSystem/IUserBufferFactory.hpp</span></code>)</a></p></li>
+<li><p><a class="reference internal" href="#includes" id="id2">Includes</a></p></li>
+<li><p><a class="reference internal" href="#namespaces" id="id3">Namespaces</a></p></li>
+<li><p><a class="reference internal" href="#classes" id="id4">Classes</a></p></li>
+<li><p><a class="reference internal" href="#full-file-listing" id="id5">Full File Listing</a></p></li>
+</ul>
+</div>
+<div class="section" id="definition-dlsystem-iuserbufferfactory-hpp">
+<h2>Definition (<code class="docutils literal notranslate"><span class="pre">DlSystem/IUserBufferFactory.hpp</span></code>)<a class="headerlink" href="#definition-dlsystem-iuserbufferfactory-hpp" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="program_listing_file_DlSystem_IUserBufferFactory.hpp.html">Program Listing for File IUserBufferFactory.hpp</a></li>
+</ul>
+</div>
+</div>
+<div class="section" id="includes">
+<h2>Includes<a class="headerlink" href="#includes" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">DlEnums.hpp</span></code> (<a class="reference internal" href="file_DlSystem_DlEnums.hpp.html#file-dlsystem-dlenums-hpp"><span class="std std-ref">File DlEnums.hpp</span></a>)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">IUserBuffer.hpp</span></code> (<a class="reference internal" href="file_DlSystem_IUserBuffer.hpp.html#file-dlsystem-iuserbuffer-hpp"><span class="std std-ref">File IUserBuffer.hpp</span></a>)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">TensorShape.hpp</span></code> (<a class="reference internal" href="file_DlSystem_TensorShape.hpp.html#file-dlsystem-tensorshape-hpp"><span class="std std-ref">File TensorShape.hpp</span></a>)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">ZdlExportDefine.hpp</span></code> (<a class="reference internal" href="file_DlSystem_ZdlExportDefine.hpp.html#file-dlsystem-zdlexportdefine-hpp"><span class="std std-ref">File ZdlExportDefine.hpp</span></a>)</p></li>
+</ul>
+</div>
+<div class="section" id="namespaces">
+<h2>Namespaces<a class="headerlink" href="#namespaces" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="namespace_zdl.html#namespace-zdl"><span class="std std-ref">Namespace zdl</span></a></p></li>
+<li><p><a class="reference internal" href="namespace_zdl__DlSystem.html#namespace-zdl-dlsystem"><span class="std std-ref">Namespace zdl::DlSystem</span></a></p></li>
+</ul>
+</div>
+<div class="section" id="classes">
+<h2>Classes<a class="headerlink" href="#classes" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="classzdl_1_1DlSystem_1_1IUserBufferFactory.html#exhale-class-classzdl-1-1dlsystem-1-1iuserbufferfactory"><span class="std std-ref">Class IUserBufferFactory</span></a></p></li>
+</ul>
+</div>
+<div class="section" id="full-file-listing">
+<h2>Full File Listing<a class="headerlink" href="#full-file-listing" title="Permalink to this headline">¶</a></h2>
+<dl class="cpp type">
+<dt class="sig sig-object cpp" id="_CPPv43zdl">
+<span id="_CPPv33zdl"></span><span id="_CPPv23zdl"></span><span id="zdl"></span><span class="target" id="namespacezdl"></span><span class="k"><span class="pre">namespace</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">zdl</span></span></span><br /></dt>
+<dd><dl class="cpp type">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystemE">
+<span id="_CPPv3N3zdl8DlSystemE"></span><span id="_CPPv2N3zdl8DlSystemE"></span><span id="zdl::DlSystem"></span><span class="target" id="namespacezdl_1_1DlSystem"></span><span class="k"><span class="pre">namespace</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">DlSystem</span></span></span><br /></dt>
+<dd><dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem18IUserBufferFactoryE">
+<span id="_CPPv3N3zdl8DlSystem18IUserBufferFactoryE"></span><span id="_CPPv2N3zdl8DlSystem18IUserBufferFactoryE"></span><span id="zdl::DlSystem::IUserBufferFactory"></span><span class="target" id="classzdl_1_1DlSystem_1_1IUserBufferFactory"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">IUserBufferFactory</span></span></span><br /></dt>
+<dd><em>#include &lt;IUserBufferFactory.hpp&gt;</em><p>Factory interface class to create <a class="reference internal" href="file_DlSystem_IUserBuffer.hpp.html#classzdl_1_1DlSystem_1_1IUserBuffer"><span class="std std-ref">IUserBuffer</span></a> objects. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem18IUserBufferFactoryD0Ev">
+<span id="_CPPv3N3zdl8DlSystem18IUserBufferFactoryD0Ev"></span><span id="_CPPv2N3zdl8DlSystem18IUserBufferFactoryD0Ev"></span><span id="zdl::DlSystem::IUserBufferFactory::~IUserBufferFactory"></span><span class="target" id="classzdl_1_1DlSystem_1_1IUserBufferFactory_1a4425d5aa1fb8fb0c93827ab8865971f3"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">~IUserBufferFactory</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="k"><span class="pre">default</span></span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem18IUserBufferFactory16createUserBufferEPv6size_tRKN3zdl8DlSystem11TensorShapeEPN3zdl8DlSystem18UserBufferEncodingE">
+<span id="_CPPv3N3zdl8DlSystem18IUserBufferFactory16createUserBufferEPv6size_tRKN3zdl8DlSystem11TensorShapeEPN3zdl8DlSystem18UserBufferEncodingE"></span><span id="_CPPv2N3zdl8DlSystem18IUserBufferFactory16createUserBufferEPv6size_tRKN3zdl8DlSystem11TensorShapeEPN3zdl8DlSystem18UserBufferEncodingE"></span><span id="zdl::DlSystem::IUserBufferFactory::createUserBuffer__voidP.s.zdl::DlSystem::TensorShapeCR.zdl::DlSystem::UserBufferEncodingP"></span><span class="target" id="classzdl_1_1DlSystem_1_1IUserBufferFactory_1adbb9c1b03e46fbbb7a757a177431b82c"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">unique_ptr</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="classzdl_1_1DlSystem_1_1IUserBuffer.html#_CPPv4N3zdl8DlSystem11IUserBufferE" title="zdl::DlSystem::IUserBuffer"><span class="n"><span class="pre">IUserBuffer</span></span></a><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">createUserBuffer</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">buffer</span></span>, <span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">bufSize</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="file_DlContainer_IDlContainer.hpp.html#_CPPv43zdl" title="zdl"><span class="n"><span class="pre">zdl</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="file_DlSystem_DlEnums.hpp.html#_CPPv4N3zdl8DlSystemE" title="zdl::DlSystem"><span class="n"><span class="pre">DlSystem</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="classzdl_1_1DlSystem_1_1TensorShape.html#_CPPv4N3zdl8DlSystem11TensorShapeE" title="zdl::DlSystem::TensorShape"><span class="n"><span class="pre">TensorShape</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">strides</span></span>, <a class="reference internal" href="file_DlContainer_IDlContainer.hpp.html#_CPPv43zdl" title="zdl"><span class="n"><span class="pre">zdl</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="file_DlSystem_DlEnums.hpp.html#_CPPv4N3zdl8DlSystemE" title="zdl::DlSystem"><span class="n"><span class="pre">DlSystem</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="classzdl_1_1DlSystem_1_1UserBufferEncoding.html#_CPPv4N3zdl8DlSystem18UserBufferEncodingE" title="zdl::DlSystem::UserBufferEncoding"><span class="n"><span class="pre">UserBufferEncoding</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">userBufferEncoding</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">noexcept</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><br /></dt>
+<dd><p>Creates a UserBuffer. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>buffer</strong> – <strong>[in]</strong> Pointer to the buffer that the caller supplies</p></li>
+<li><p><strong>bufSize</strong> – <strong>[in]</strong> Buffer size, in bytes</p></li>
+<li><p><strong>strides</strong> – <strong>[in]</strong> Total number of bytes between elements in each dimension. E.g. A tightly packed tensor of floats with dimensions [4, 3, 2] would have strides of [24, 8, 4].</p></li>
+<li><p><strong>userBufferEncoding</strong> – <strong>[in]</strong> Reference to an <a class="reference internal" href="file_DlSystem_IUserBuffer.hpp.html#classzdl_1_1DlSystem_1_1UserBufferEncoding"><span class="std std-ref">UserBufferEncoding</span></a> object</p></li>
+</ul>
+</dd>
+</dl>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Caller has to ensure that memory pointed to by buffer stays accessible for the lifetime of the object created </p>
+</div>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem18IUserBufferFactory16createUserBufferEPv6size_tRKN3zdl8DlSystem11TensorShapeEPN3zdl8DlSystem18UserBufferEncodingEPN3zdl8DlSystem16UserBufferSourceE">
+<span id="_CPPv3N3zdl8DlSystem18IUserBufferFactory16createUserBufferEPv6size_tRKN3zdl8DlSystem11TensorShapeEPN3zdl8DlSystem18UserBufferEncodingEPN3zdl8DlSystem16UserBufferSourceE"></span><span id="_CPPv2N3zdl8DlSystem18IUserBufferFactory16createUserBufferEPv6size_tRKN3zdl8DlSystem11TensorShapeEPN3zdl8DlSystem18UserBufferEncodingEPN3zdl8DlSystem16UserBufferSourceE"></span><span id="zdl::DlSystem::IUserBufferFactory::createUserBuffer__voidP.s.zdl::DlSystem::TensorShapeCR.zdl::DlSystem::UserBufferEncodingP.zdl::DlSystem::UserBufferSourceP"></span><span class="target" id="classzdl_1_1DlSystem_1_1IUserBufferFactory_1ae899ad614c0f4323cd45868b5835e97b"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">unique_ptr</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="classzdl_1_1DlSystem_1_1IUserBuffer.html#_CPPv4N3zdl8DlSystem11IUserBufferE" title="zdl::DlSystem::IUserBuffer"><span class="n"><span class="pre">IUserBuffer</span></span></a><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">createUserBuffer</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">buffer</span></span>, <span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">bufSize</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="file_DlContainer_IDlContainer.hpp.html#_CPPv43zdl" title="zdl"><span class="n"><span class="pre">zdl</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="file_DlSystem_DlEnums.hpp.html#_CPPv4N3zdl8DlSystemE" title="zdl::DlSystem"><span class="n"><span class="pre">DlSystem</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="classzdl_1_1DlSystem_1_1TensorShape.html#_CPPv4N3zdl8DlSystem11TensorShapeE" title="zdl::DlSystem::TensorShape"><span class="n"><span class="pre">TensorShape</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">strides</span></span>, <a class="reference internal" href="file_DlContainer_IDlContainer.hpp.html#_CPPv43zdl" title="zdl"><span class="n"><span class="pre">zdl</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="file_DlSystem_DlEnums.hpp.html#_CPPv4N3zdl8DlSystemE" title="zdl::DlSystem"><span class="n"><span class="pre">DlSystem</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="classzdl_1_1DlSystem_1_1UserBufferEncoding.html#_CPPv4N3zdl8DlSystem18UserBufferEncodingE" title="zdl::DlSystem::UserBufferEncoding"><span class="n"><span class="pre">UserBufferEncoding</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">userBufferEncoding</span></span>, <a class="reference internal" href="file_DlContainer_IDlContainer.hpp.html#_CPPv43zdl" title="zdl"><span class="n"><span class="pre">zdl</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="file_DlSystem_DlEnums.hpp.html#_CPPv4N3zdl8DlSystemE" title="zdl::DlSystem"><span class="n"><span class="pre">DlSystem</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="classzdl_1_1DlSystem_1_1UserBufferSource.html#_CPPv4N3zdl8DlSystem16UserBufferSourceE" title="zdl::DlSystem::UserBufferSource"><span class="n"><span class="pre">UserBufferSource</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">userBufferSource</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">noexcept</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><br /></dt>
+<dd><p>Creates a UserBuffer. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>buffer</strong> – <strong>[in]</strong> Pointer to the buffer that the caller supplies</p></li>
+<li><p><strong>bufSize</strong> – <strong>[in]</strong> Buffer size, in bytes</p></li>
+<li><p><strong>strides</strong> – <strong>[in]</strong> Total number of bytes between elements in each dimension. E.g. A tightly packed tensor of floats with dimensions [4, 3, 2] would have strides of [24, 8, 4].</p></li>
+<li><p><strong>userBufferEncoding</strong> – <strong>[in]</strong> Reference to an <a class="reference internal" href="file_DlSystem_IUserBuffer.hpp.html#classzdl_1_1DlSystem_1_1UserBufferEncoding"><span class="std std-ref">UserBufferEncoding</span></a> object</p></li>
+<li><p><strong>userBufferSource</strong> – <strong>[in]</strong> Reference to an <a class="reference internal" href="file_DlSystem_IUserBuffer.hpp.html#classzdl_1_1DlSystem_1_1UserBufferSource"><span class="std std-ref">UserBufferSource</span></a> object</p></li>
+</ul>
+</dd>
+</dl>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Caller has to ensure that memory pointed to by buffer stays accessible for the lifetime of the object created </p>
+</div>
+</dd></dl>
+
+</div>
+</dd></dl>
+
+</dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2020-2023, Qualcomm Technologies, Inc..
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

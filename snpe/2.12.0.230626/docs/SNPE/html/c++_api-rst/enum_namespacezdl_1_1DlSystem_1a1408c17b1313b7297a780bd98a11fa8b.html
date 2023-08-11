@@ -1,0 +1,916 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Enum ErrorCode &mdash; Snapdragon Neural Processing Engine SDK</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/custom_css.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/collapsible-lists/css/tree_view.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+        <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Qualcomm® Neural Processing SDK
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                v2.12.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../general/revision_history.html">Revision History</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/revision_history_windows.html">Revision History - Windows</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/overview.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/setup.html">Setup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/usergroup1.html">Network Models</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/usergroup5.html">Input Data and Preprocessing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/usergroup6.html">Tutorials and Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/usergroup10.html">Benchmarking and Accuracy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/tools.html">Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/usergroup11.html">Debug Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/api.html">API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/limitations.html">Limitations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/appx_ref.html">References</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Qualcomm® Neural Processing SDK</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Enum ErrorCode</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="enum-errorcode">
+<span id="exhale-enum-namespacezdl-1-1dlsystem-1a1408c17b1313b7297a780bd98a11fa8b"></span><h1>Enum ErrorCode<a class="headerlink" href="#enum-errorcode" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_DlSystem_DlError.hpp.html#file-dlsystem-dlerror-hpp"><span class="std std-ref">File DlError.hpp</span></a></p></li>
+</ul>
+<div class="section" id="enum-documentation">
+<h2>Enum Documentation<a class="headerlink" href="#enum-documentation" title="Permalink to this headline">¶</a></h2>
+<dl class="cpp enum">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem9ErrorCodeE">
+<span id="_CPPv3N3zdl8DlSystem9ErrorCodeE"></span><span id="_CPPv2N3zdl8DlSystem9ErrorCodeE"></span><span class="target" id="namespacezdl_1_1DlSystem_1a1408c17b1313b7297a780bd98a11fa8b"></span><span class="k"><span class="pre">enum</span></span><span class="w"> </span><span class="sig-prename descclassname"><a class="reference internal" href="file_DlContainer_IDlContainer.hpp.html#_CPPv43zdl" title="zdl"><span class="n"><span class="pre">zdl</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="file_DlSystem_DlEnums.hpp.html#_CPPv4N3zdl8DlSystemE" title="zdl::DlSystem"><span class="n"><span class="pre">DlSystem</span></span></a><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">ErrorCode</span></span></span><a class="headerlink" href="#_CPPv4N3zdl8DlSystem9ErrorCodeE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p><em>Values:</em></p>
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem9ErrorCode4NONEE">
+<span id="_CPPv3N3zdl8DlSystem9ErrorCode4NONEE"></span><span id="_CPPv2N3zdl8DlSystem9ErrorCode4NONEE"></span><span class="target" id="namespacezdl_1_1DlSystem_1a1408c17b1313b7297a780bd98a11fa8bab50339a10e1de285ac99d4c3990b8693"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">NONE</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><a class="headerlink" href="#_CPPv4N3zdl8DlSystem9ErrorCode4NONEE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem9ErrorCode24SNPE_CAPI_CREATE_FAILUREE">
+<span id="_CPPv3N3zdl8DlSystem9ErrorCode24SNPE_CAPI_CREATE_FAILUREE"></span><span id="_CPPv2N3zdl8DlSystem9ErrorCode24SNPE_CAPI_CREATE_FAILUREE"></span><span class="target" id="namespacezdl_1_1DlSystem_1a1408c17b1313b7297a780bd98a11fa8ba68df306ba4c138de673e6d3f52cb7197"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SNPE_CAPI_CREATE_FAILURE</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">10</span></span><a class="headerlink" href="#_CPPv4N3zdl8DlSystem9ErrorCode24SNPE_CAPI_CREATE_FAILUREE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem9ErrorCode27SNPE_CAPI_HANDLEGEN_FAILUREE">
+<span id="_CPPv3N3zdl8DlSystem9ErrorCode27SNPE_CAPI_HANDLEGEN_FAILUREE"></span><span id="_CPPv2N3zdl8DlSystem9ErrorCode27SNPE_CAPI_HANDLEGEN_FAILUREE"></span><span class="target" id="namespacezdl_1_1DlSystem_1a1408c17b1313b7297a780bd98a11fa8baf8a8ed4250aae65b3d0a751fb10028c4"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SNPE_CAPI_HANDLEGEN_FAILURE</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">11</span></span><a class="headerlink" href="#_CPPv4N3zdl8DlSystem9ErrorCode27SNPE_CAPI_HANDLEGEN_FAILUREE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem9ErrorCode24SNPE_CAPI_DELETE_FAILUREE">
+<span id="_CPPv3N3zdl8DlSystem9ErrorCode24SNPE_CAPI_DELETE_FAILUREE"></span><span id="_CPPv2N3zdl8DlSystem9ErrorCode24SNPE_CAPI_DELETE_FAILUREE"></span><span class="target" id="namespacezdl_1_1DlSystem_1a1408c17b1313b7297a780bd98a11fa8ba583355f63551e86f3dbb1bc588ef7330"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SNPE_CAPI_DELETE_FAILURE</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">12</span></span><a class="headerlink" href="#_CPPv4N3zdl8DlSystem9ErrorCode24SNPE_CAPI_DELETE_FAILUREE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem9ErrorCode20SNPE_CAPI_BAD_HANDLEE">
+<span id="_CPPv3N3zdl8DlSystem9ErrorCode20SNPE_CAPI_BAD_HANDLEE"></span><span id="_CPPv2N3zdl8DlSystem9ErrorCode20SNPE_CAPI_BAD_HANDLEE"></span><span class="target" id="namespacezdl_1_1DlSystem_1a1408c17b1313b7297a780bd98a11fa8baa73dea26c3a2bf01784644c6f5bf0bbe"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SNPE_CAPI_BAD_HANDLE</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">13</span></span><a class="headerlink" href="#_CPPv4N3zdl8DlSystem9ErrorCode20SNPE_CAPI_BAD_HANDLEE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem9ErrorCode22SNPE_CAPI_BAD_ARGUMENTE">
+<span id="_CPPv3N3zdl8DlSystem9ErrorCode22SNPE_CAPI_BAD_ARGUMENTE"></span><span id="_CPPv2N3zdl8DlSystem9ErrorCode22SNPE_CAPI_BAD_ARGUMENTE"></span><span class="target" id="namespacezdl_1_1DlSystem_1a1408c17b1313b7297a780bd98a11fa8ba8f465465c1f7c795d563e8ac319fcdc1"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SNPE_CAPI_BAD_ARGUMENT</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">14</span></span><a class="headerlink" href="#_CPPv4N3zdl8DlSystem9ErrorCode22SNPE_CAPI_BAD_ARGUMENTE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem9ErrorCode19SNPE_CAPI_BAD_ALLOCE">
+<span id="_CPPv3N3zdl8DlSystem9ErrorCode19SNPE_CAPI_BAD_ALLOCE"></span><span id="_CPPv2N3zdl8DlSystem9ErrorCode19SNPE_CAPI_BAD_ALLOCE"></span><span class="target" id="namespacezdl_1_1DlSystem_1a1408c17b1313b7297a780bd98a11fa8ba4a00d8c2705dd8bb645db7c061e81533"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SNPE_CAPI_BAD_ALLOC</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">15</span></span><a class="headerlink" href="#_CPPv4N3zdl8DlSystem9ErrorCode19SNPE_CAPI_BAD_ALLOCE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem9ErrorCode25SNPE_CONFIG_MISSING_PARAME">
+<span id="_CPPv3N3zdl8DlSystem9ErrorCode25SNPE_CONFIG_MISSING_PARAME"></span><span id="_CPPv2N3zdl8DlSystem9ErrorCode25SNPE_CONFIG_MISSING_PARAME"></span><span class="target" id="namespacezdl_1_1DlSystem_1a1408c17b1313b7297a780bd98a11fa8ba51c34e99590a5b0ab53b557ea4d6abd7"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SNPE_CONFIG_MISSING_PARAM</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">100</span></span><a class="headerlink" href="#_CPPv4N3zdl8DlSystem9ErrorCode25SNPE_CONFIG_MISSING_PARAME" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem9ErrorCode25SNPE_CONFIG_INVALID_PARAME">
+<span id="_CPPv3N3zdl8DlSystem9ErrorCode25SNPE_CONFIG_INVALID_PARAME"></span><span id="_CPPv2N3zdl8DlSystem9ErrorCode25SNPE_CONFIG_INVALID_PARAME"></span><span class="target" id="namespacezdl_1_1DlSystem_1a1408c17b1313b7297a780bd98a11fa8ba3b5570776b4ac1c1490ff71046e06d98"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SNPE_CONFIG_INVALID_PARAM</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">101</span></span><a class="headerlink" href="#_CPPv4N3zdl8DlSystem9ErrorCode25SNPE_CONFIG_INVALID_PARAME" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem9ErrorCode24SNPE_CONFIG_MISSING_FILEE">
+<span id="_CPPv3N3zdl8DlSystem9ErrorCode24SNPE_CONFIG_MISSING_FILEE"></span><span id="_CPPv2N3zdl8DlSystem9ErrorCode24SNPE_CONFIG_MISSING_FILEE"></span><span class="target" id="namespacezdl_1_1DlSystem_1a1408c17b1313b7297a780bd98a11fa8ba1fa6c96d34085d08e359b8022ea9277b"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SNPE_CONFIG_MISSING_FILE</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">102</span></span><a class="headerlink" href="#_CPPv4N3zdl8DlSystem9ErrorCode24SNPE_CONFIG_MISSING_FILEE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem9ErrorCode28SNPE_CONFIG_NNCONFIG_NOT_SETE">
+<span id="_CPPv3N3zdl8DlSystem9ErrorCode28SNPE_CONFIG_NNCONFIG_NOT_SETE"></span><span id="_CPPv2N3zdl8DlSystem9ErrorCode28SNPE_CONFIG_NNCONFIG_NOT_SETE"></span><span class="target" id="namespacezdl_1_1DlSystem_1a1408c17b1313b7297a780bd98a11fa8ba0549583780fb81c0e7b36e6034c911b8"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SNPE_CONFIG_NNCONFIG_NOT_SET</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">103</span></span><a class="headerlink" href="#_CPPv4N3zdl8DlSystem9ErrorCode28SNPE_CONFIG_NNCONFIG_NOT_SETE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem9ErrorCode28SNPE_CONFIG_NNCONFIG_INVALIDE">
+<span id="_CPPv3N3zdl8DlSystem9ErrorCode28SNPE_CONFIG_NNCONFIG_INVALIDE"></span><span id="_CPPv2N3zdl8DlSystem9ErrorCode28SNPE_CONFIG_NNCONFIG_INVALIDE"></span><span class="target" id="namespacezdl_1_1DlSystem_1a1408c17b1313b7297a780bd98a11fa8ba484bdac427ac232a6a6c0e592268d1f2"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SNPE_CONFIG_NNCONFIG_INVALID</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">104</span></span><a class="headerlink" href="#_CPPv4N3zdl8DlSystem9ErrorCode28SNPE_CONFIG_NNCONFIG_INVALIDE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem9ErrorCode28SNPE_CONFIG_WRONG_INPUT_NAMEE">
+<span id="_CPPv3N3zdl8DlSystem9ErrorCode28SNPE_CONFIG_WRONG_INPUT_NAMEE"></span><span id="_CPPv2N3zdl8DlSystem9ErrorCode28SNPE_CONFIG_WRONG_INPUT_NAMEE"></span><span class="target" id="namespacezdl_1_1DlSystem_1a1408c17b1313b7297a780bd98a11fa8ba56ce9d709f069f972cc767a497ba6e8e"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SNPE_CONFIG_WRONG_INPUT_NAME</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">105</span></span><a class="headerlink" href="#_CPPv4N3zdl8DlSystem9ErrorCode28SNPE_CONFIG_WRONG_INPUT_NAMEE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem9ErrorCode38SNPE_CONFIG_INCORRECT_INPUT_DIMENSIONSE">
+<span id="_CPPv3N3zdl8DlSystem9ErrorCode38SNPE_CONFIG_INCORRECT_INPUT_DIMENSIONSE"></span><span id="_CPPv2N3zdl8DlSystem9ErrorCode38SNPE_CONFIG_INCORRECT_INPUT_DIMENSIONSE"></span><span class="target" id="namespacezdl_1_1DlSystem_1a1408c17b1313b7297a780bd98a11fa8ba72e301eea6619491d16174d2048cdc05"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SNPE_CONFIG_INCORRECT_INPUT_DIMENSIONS</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">106</span></span><a class="headerlink" href="#_CPPv4N3zdl8DlSystem9ErrorCode38SNPE_CONFIG_INCORRECT_INPUT_DIMENSIONSE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem9ErrorCode49SNPE_CONFIG_DIMENSIONS_MODIFICATION_NOT_SUPPORTEDE">
+<span id="_CPPv3N3zdl8DlSystem9ErrorCode49SNPE_CONFIG_DIMENSIONS_MODIFICATION_NOT_SUPPORTEDE"></span><span id="_CPPv2N3zdl8DlSystem9ErrorCode49SNPE_CONFIG_DIMENSIONS_MODIFICATION_NOT_SUPPORTEDE"></span><span class="target" id="namespacezdl_1_1DlSystem_1a1408c17b1313b7297a780bd98a11fa8ba2456464efc490422dda760b735939114"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SNPE_CONFIG_DIMENSIONS_MODIFICATION_NOT_SUPPORTED</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">107</span></span><a class="headerlink" href="#_CPPv4N3zdl8DlSystem9ErrorCode49SNPE_CONFIG_DIMENSIONS_MODIFICATION_NOT_SUPPORTEDE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem9ErrorCode46SNPE_CONFIG_BOTH_OUTPUT_LAYER_TENSOR_NAMES_SETE">
+<span id="_CPPv3N3zdl8DlSystem9ErrorCode46SNPE_CONFIG_BOTH_OUTPUT_LAYER_TENSOR_NAMES_SETE"></span><span id="_CPPv2N3zdl8DlSystem9ErrorCode46SNPE_CONFIG_BOTH_OUTPUT_LAYER_TENSOR_NAMES_SETE"></span><span class="target" id="namespacezdl_1_1DlSystem_1a1408c17b1313b7297a780bd98a11fa8ba07a100ec8244828f7ea51eee160de892"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SNPE_CONFIG_BOTH_OUTPUT_LAYER_TENSOR_NAMES_SET</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">108</span></span><a class="headerlink" href="#_CPPv4N3zdl8DlSystem9ErrorCode46SNPE_CONFIG_BOTH_OUTPUT_LAYER_TENSOR_NAMES_SETE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem9ErrorCode42SNPE_CONFIG_NNCONFIG_ONLY_TENSOR_SUPPORTEDE">
+<span id="_CPPv3N3zdl8DlSystem9ErrorCode42SNPE_CONFIG_NNCONFIG_ONLY_TENSOR_SUPPORTEDE"></span><span id="_CPPv2N3zdl8DlSystem9ErrorCode42SNPE_CONFIG_NNCONFIG_ONLY_TENSOR_SUPPORTEDE"></span><span class="target" id="namespacezdl_1_1DlSystem_1a1408c17b1313b7297a780bd98a11fa8badb61cd9778dc705e55f335d5a9e00646"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SNPE_CONFIG_NNCONFIG_ONLY_TENSOR_SUPPORTED</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">120</span></span><a class="headerlink" href="#_CPPv4N3zdl8DlSystem9ErrorCode42SNPE_CONFIG_NNCONFIG_ONLY_TENSOR_SUPPORTEDE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem9ErrorCode47SNPE_CONFIG_NNCONFIG_ONLY_USER_BUFFER_SUPPORTEDE">
+<span id="_CPPv3N3zdl8DlSystem9ErrorCode47SNPE_CONFIG_NNCONFIG_ONLY_USER_BUFFER_SUPPORTEDE"></span><span id="_CPPv2N3zdl8DlSystem9ErrorCode47SNPE_CONFIG_NNCONFIG_ONLY_USER_BUFFER_SUPPORTEDE"></span><span class="target" id="namespacezdl_1_1DlSystem_1a1408c17b1313b7297a780bd98a11fa8baa139cc51c7e96585e6ff6c1c3bd6cf9e"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SNPE_CONFIG_NNCONFIG_ONLY_USER_BUFFER_SUPPORTED</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">121</span></span><a class="headerlink" href="#_CPPv4N3zdl8DlSystem9ErrorCode47SNPE_CONFIG_NNCONFIG_ONLY_USER_BUFFER_SUPPORTEDE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem9ErrorCode28SNPE_DLSYSTEM_MISSING_BUFFERE">
+<span id="_CPPv3N3zdl8DlSystem9ErrorCode28SNPE_DLSYSTEM_MISSING_BUFFERE"></span><span id="_CPPv2N3zdl8DlSystem9ErrorCode28SNPE_DLSYSTEM_MISSING_BUFFERE"></span><span class="target" id="namespacezdl_1_1DlSystem_1a1408c17b1313b7297a780bd98a11fa8ba4a0d8e393f4673845b95a767146e2dc2"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SNPE_DLSYSTEM_MISSING_BUFFER</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">200</span></span><a class="headerlink" href="#_CPPv4N3zdl8DlSystem9ErrorCode28SNPE_DLSYSTEM_MISSING_BUFFERE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem9ErrorCode32SNPE_DLSYSTEM_TENSOR_CAST_FAILEDE">
+<span id="_CPPv3N3zdl8DlSystem9ErrorCode32SNPE_DLSYSTEM_TENSOR_CAST_FAILEDE"></span><span id="_CPPv2N3zdl8DlSystem9ErrorCode32SNPE_DLSYSTEM_TENSOR_CAST_FAILEDE"></span><span class="target" id="namespacezdl_1_1DlSystem_1a1408c17b1313b7297a780bd98a11fa8ba1d40e6b1cb0df2d8fba4b91db1161995"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SNPE_DLSYSTEM_TENSOR_CAST_FAILED</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">201</span></span><a class="headerlink" href="#_CPPv4N3zdl8DlSystem9ErrorCode32SNPE_DLSYSTEM_TENSOR_CAST_FAILEDE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem9ErrorCode39SNPE_DLSYSTEM_FIXED_POINT_PARAM_INVALIDE">
+<span id="_CPPv3N3zdl8DlSystem9ErrorCode39SNPE_DLSYSTEM_FIXED_POINT_PARAM_INVALIDE"></span><span id="_CPPv2N3zdl8DlSystem9ErrorCode39SNPE_DLSYSTEM_FIXED_POINT_PARAM_INVALIDE"></span><span class="target" id="namespacezdl_1_1DlSystem_1a1408c17b1313b7297a780bd98a11fa8ba430a186110e70aedc71be776b42c732c"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SNPE_DLSYSTEM_FIXED_POINT_PARAM_INVALID</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">202</span></span><a class="headerlink" href="#_CPPv4N3zdl8DlSystem9ErrorCode39SNPE_DLSYSTEM_FIXED_POINT_PARAM_INVALIDE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem9ErrorCode27SNPE_DLSYSTEM_SIZE_MISMATCHE">
+<span id="_CPPv3N3zdl8DlSystem9ErrorCode27SNPE_DLSYSTEM_SIZE_MISMATCHE"></span><span id="_CPPv2N3zdl8DlSystem9ErrorCode27SNPE_DLSYSTEM_SIZE_MISMATCHE"></span><span class="target" id="namespacezdl_1_1DlSystem_1a1408c17b1313b7297a780bd98a11fa8ba366bd7206942e5b0a161cd9e07d8e424"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SNPE_DLSYSTEM_SIZE_MISMATCH</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">203</span></span><a class="headerlink" href="#_CPPv4N3zdl8DlSystem9ErrorCode27SNPE_DLSYSTEM_SIZE_MISMATCHE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem9ErrorCode28SNPE_DLSYSTEM_NAME_NOT_FOUNDE">
+<span id="_CPPv3N3zdl8DlSystem9ErrorCode28SNPE_DLSYSTEM_NAME_NOT_FOUNDE"></span><span id="_CPPv2N3zdl8DlSystem9ErrorCode28SNPE_DLSYSTEM_NAME_NOT_FOUNDE"></span><span class="target" id="namespacezdl_1_1DlSystem_1a1408c17b1313b7297a780bd98a11fa8baeea9d7f91debac4a1e809aed69ed98e9"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SNPE_DLSYSTEM_NAME_NOT_FOUND</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">204</span></span><a class="headerlink" href="#_CPPv4N3zdl8DlSystem9ErrorCode28SNPE_DLSYSTEM_NAME_NOT_FOUNDE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem9ErrorCode28SNPE_DLSYSTEM_VALUE_MISMATCHE">
+<span id="_CPPv3N3zdl8DlSystem9ErrorCode28SNPE_DLSYSTEM_VALUE_MISMATCHE"></span><span id="_CPPv2N3zdl8DlSystem9ErrorCode28SNPE_DLSYSTEM_VALUE_MISMATCHE"></span><span class="target" id="namespacezdl_1_1DlSystem_1a1408c17b1313b7297a780bd98a11fa8ba3a38677d465454971547262c6a71c252"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SNPE_DLSYSTEM_VALUE_MISMATCH</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">205</span></span><a class="headerlink" href="#_CPPv4N3zdl8DlSystem9ErrorCode28SNPE_DLSYSTEM_VALUE_MISMATCHE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem9ErrorCode27SNPE_DLSYSTEM_INSERT_FAILEDE">
+<span id="_CPPv3N3zdl8DlSystem9ErrorCode27SNPE_DLSYSTEM_INSERT_FAILEDE"></span><span id="_CPPv2N3zdl8DlSystem9ErrorCode27SNPE_DLSYSTEM_INSERT_FAILEDE"></span><span class="target" id="namespacezdl_1_1DlSystem_1a1408c17b1313b7297a780bd98a11fa8ba8545d388a57882337f1cf33eaec2482d"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SNPE_DLSYSTEM_INSERT_FAILED</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">206</span></span><a class="headerlink" href="#_CPPv4N3zdl8DlSystem9ErrorCode27SNPE_DLSYSTEM_INSERT_FAILEDE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem9ErrorCode37SNPE_DLSYSTEM_TENSOR_FILE_READ_FAILEDE">
+<span id="_CPPv3N3zdl8DlSystem9ErrorCode37SNPE_DLSYSTEM_TENSOR_FILE_READ_FAILEDE"></span><span id="_CPPv2N3zdl8DlSystem9ErrorCode37SNPE_DLSYSTEM_TENSOR_FILE_READ_FAILEDE"></span><span class="target" id="namespacezdl_1_1DlSystem_1a1408c17b1313b7297a780bd98a11fa8bad62d4ec4a071311b409a92e0ba043913"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SNPE_DLSYSTEM_TENSOR_FILE_READ_FAILED</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">207</span></span><a class="headerlink" href="#_CPPv4N3zdl8DlSystem9ErrorCode37SNPE_DLSYSTEM_TENSOR_FILE_READ_FAILEDE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem9ErrorCode29SNPE_DLSYSTEM_DIAGLOG_FAILUREE">
+<span id="_CPPv3N3zdl8DlSystem9ErrorCode29SNPE_DLSYSTEM_DIAGLOG_FAILUREE"></span><span id="_CPPv2N3zdl8DlSystem9ErrorCode29SNPE_DLSYSTEM_DIAGLOG_FAILUREE"></span><span class="target" id="namespacezdl_1_1DlSystem_1a1408c17b1313b7297a780bd98a11fa8ba6cbfe03b8c77f729195400ea9f815547"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SNPE_DLSYSTEM_DIAGLOG_FAILURE</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">208</span></span><a class="headerlink" href="#_CPPv4N3zdl8DlSystem9ErrorCode29SNPE_DLSYSTEM_DIAGLOG_FAILUREE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem9ErrorCode27SNPE_DLSYSTEM_LAYER_NOT_SETE">
+<span id="_CPPv3N3zdl8DlSystem9ErrorCode27SNPE_DLSYSTEM_LAYER_NOT_SETE"></span><span id="_CPPv2N3zdl8DlSystem9ErrorCode27SNPE_DLSYSTEM_LAYER_NOT_SETE"></span><span class="target" id="namespacezdl_1_1DlSystem_1a1408c17b1313b7297a780bd98a11fa8ba20c0aefc64f27a8030125615babe5f08"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SNPE_DLSYSTEM_LAYER_NOT_SET</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">209</span></span><a class="headerlink" href="#_CPPv4N3zdl8DlSystem9ErrorCode27SNPE_DLSYSTEM_LAYER_NOT_SETE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem9ErrorCode40SNPE_DLSYSTEM_WRONG_NUMBER_INPUT_BUFFERSE">
+<span id="_CPPv3N3zdl8DlSystem9ErrorCode40SNPE_DLSYSTEM_WRONG_NUMBER_INPUT_BUFFERSE"></span><span id="_CPPv2N3zdl8DlSystem9ErrorCode40SNPE_DLSYSTEM_WRONG_NUMBER_INPUT_BUFFERSE"></span><span class="target" id="namespacezdl_1_1DlSystem_1a1408c17b1313b7297a780bd98a11fa8ba822a33c0f76fd706ab4d77dffc187897"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SNPE_DLSYSTEM_WRONG_NUMBER_INPUT_BUFFERS</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">210</span></span><a class="headerlink" href="#_CPPv4N3zdl8DlSystem9ErrorCode40SNPE_DLSYSTEM_WRONG_NUMBER_INPUT_BUFFERSE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem9ErrorCode43SNPE_DLSYSTEM_RUNTIME_TENSOR_SHAPE_MISMATCHE">
+<span id="_CPPv3N3zdl8DlSystem9ErrorCode43SNPE_DLSYSTEM_RUNTIME_TENSOR_SHAPE_MISMATCHE"></span><span id="_CPPv2N3zdl8DlSystem9ErrorCode43SNPE_DLSYSTEM_RUNTIME_TENSOR_SHAPE_MISMATCHE"></span><span class="target" id="namespacezdl_1_1DlSystem_1a1408c17b1313b7297a780bd98a11fa8ba540144392ac243e1bbd6b21d6069ce14"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SNPE_DLSYSTEM_RUNTIME_TENSOR_SHAPE_MISMATCH</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">211</span></span><a class="headerlink" href="#_CPPv4N3zdl8DlSystem9ErrorCode43SNPE_DLSYSTEM_RUNTIME_TENSOR_SHAPE_MISMATCHE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem9ErrorCode28SNPE_DLSYSTEM_TENSOR_MISSINGE">
+<span id="_CPPv3N3zdl8DlSystem9ErrorCode28SNPE_DLSYSTEM_TENSOR_MISSINGE"></span><span id="_CPPv2N3zdl8DlSystem9ErrorCode28SNPE_DLSYSTEM_TENSOR_MISSINGE"></span><span class="target" id="namespacezdl_1_1DlSystem_1a1408c17b1313b7297a780bd98a11fa8ba640356b195d400f638c53831727602e5"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SNPE_DLSYSTEM_TENSOR_MISSING</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">212</span></span><a class="headerlink" href="#_CPPv4N3zdl8DlSystem9ErrorCode28SNPE_DLSYSTEM_TENSOR_MISSINGE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem9ErrorCode42SNPE_DLSYSTEM_TENSOR_ITERATION_UNSUPPORTEDE">
+<span id="_CPPv3N3zdl8DlSystem9ErrorCode42SNPE_DLSYSTEM_TENSOR_ITERATION_UNSUPPORTEDE"></span><span id="_CPPv2N3zdl8DlSystem9ErrorCode42SNPE_DLSYSTEM_TENSOR_ITERATION_UNSUPPORTEDE"></span><span class="target" id="namespacezdl_1_1DlSystem_1a1408c17b1313b7297a780bd98a11fa8badbc2ab6e730eb3c42e8b71914f805029"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SNPE_DLSYSTEM_TENSOR_ITERATION_UNSUPPORTED</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">213</span></span><a class="headerlink" href="#_CPPv4N3zdl8DlSystem9ErrorCode42SNPE_DLSYSTEM_TENSOR_ITERATION_UNSUPPORTEDE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem9ErrorCode36SNPE_DLSYSTEM_BUFFER_MANAGER_MISSINGE">
+<span id="_CPPv3N3zdl8DlSystem9ErrorCode36SNPE_DLSYSTEM_BUFFER_MANAGER_MISSINGE"></span><span id="_CPPv2N3zdl8DlSystem9ErrorCode36SNPE_DLSYSTEM_BUFFER_MANAGER_MISSINGE"></span><span class="target" id="namespacezdl_1_1DlSystem_1a1408c17b1313b7297a780bd98a11fa8ba5c01fba8542c12294d6ae8d048fbd45d"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SNPE_DLSYSTEM_BUFFER_MANAGER_MISSING</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">214</span></span><a class="headerlink" href="#_CPPv4N3zdl8DlSystem9ErrorCode36SNPE_DLSYSTEM_BUFFER_MANAGER_MISSINGE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem9ErrorCode47SNPE_DLSYSTEM_RUNTIME_BUFFER_SOURCE_UNSUPPORTEDE">
+<span id="_CPPv3N3zdl8DlSystem9ErrorCode47SNPE_DLSYSTEM_RUNTIME_BUFFER_SOURCE_UNSUPPORTEDE"></span><span id="_CPPv2N3zdl8DlSystem9ErrorCode47SNPE_DLSYSTEM_RUNTIME_BUFFER_SOURCE_UNSUPPORTEDE"></span><span class="target" id="namespacezdl_1_1DlSystem_1a1408c17b1313b7297a780bd98a11fa8bae4be79c8dd118d8bc42ec683de8fb187"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SNPE_DLSYSTEM_RUNTIME_BUFFER_SOURCE_UNSUPPORTED</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">215</span></span><a class="headerlink" href="#_CPPv4N3zdl8DlSystem9ErrorCode47SNPE_DLSYSTEM_RUNTIME_BUFFER_SOURCE_UNSUPPORTEDE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem9ErrorCode32SNPE_DLSYSTEM_BUFFER_CAST_FAILEDE">
+<span id="_CPPv3N3zdl8DlSystem9ErrorCode32SNPE_DLSYSTEM_BUFFER_CAST_FAILEDE"></span><span id="_CPPv2N3zdl8DlSystem9ErrorCode32SNPE_DLSYSTEM_BUFFER_CAST_FAILEDE"></span><span class="target" id="namespacezdl_1_1DlSystem_1a1408c17b1313b7297a780bd98a11fa8bad4b69f21b0b5e4ec1287da9731051531"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SNPE_DLSYSTEM_BUFFER_CAST_FAILED</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">216</span></span><a class="headerlink" href="#_CPPv4N3zdl8DlSystem9ErrorCode32SNPE_DLSYSTEM_BUFFER_CAST_FAILEDE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem9ErrorCode35SNPE_DLSYSTEM_WRONG_TRANSITION_TYPEE">
+<span id="_CPPv3N3zdl8DlSystem9ErrorCode35SNPE_DLSYSTEM_WRONG_TRANSITION_TYPEE"></span><span id="_CPPv2N3zdl8DlSystem9ErrorCode35SNPE_DLSYSTEM_WRONG_TRANSITION_TYPEE"></span><span class="target" id="namespacezdl_1_1DlSystem_1a1408c17b1313b7297a780bd98a11fa8ba5999a1664b075c693b08322db81e0058"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SNPE_DLSYSTEM_WRONG_TRANSITION_TYPE</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">217</span></span><a class="headerlink" href="#_CPPv4N3zdl8DlSystem9ErrorCode35SNPE_DLSYSTEM_WRONG_TRANSITION_TYPEE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem9ErrorCode38SNPE_DLSYSTEM_LAYER_ALREADY_REGISTEREDE">
+<span id="_CPPv3N3zdl8DlSystem9ErrorCode38SNPE_DLSYSTEM_LAYER_ALREADY_REGISTEREDE"></span><span id="_CPPv2N3zdl8DlSystem9ErrorCode38SNPE_DLSYSTEM_LAYER_ALREADY_REGISTEREDE"></span><span class="target" id="namespacezdl_1_1DlSystem_1a1408c17b1313b7297a780bd98a11fa8bad8931f6b7cdcec0c09e2ec2d098e8c00"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SNPE_DLSYSTEM_LAYER_ALREADY_REGISTERED</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">218</span></span><a class="headerlink" href="#_CPPv4N3zdl8DlSystem9ErrorCode38SNPE_DLSYSTEM_LAYER_ALREADY_REGISTEREDE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem9ErrorCode32SNPE_DLSYSTEM_TENSOR_DIM_INVALIDE">
+<span id="_CPPv3N3zdl8DlSystem9ErrorCode32SNPE_DLSYSTEM_TENSOR_DIM_INVALIDE"></span><span id="_CPPv2N3zdl8DlSystem9ErrorCode32SNPE_DLSYSTEM_TENSOR_DIM_INVALIDE"></span><span class="target" id="namespacezdl_1_1DlSystem_1a1408c17b1313b7297a780bd98a11fa8bac027687d9d60455213a20397600d2bf7"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SNPE_DLSYSTEM_TENSOR_DIM_INVALID</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">219</span></span><a class="headerlink" href="#_CPPv4N3zdl8DlSystem9ErrorCode32SNPE_DLSYSTEM_TENSOR_DIM_INVALIDE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem9ErrorCode36SNPE_DLSYSTEM_BUFFERENCODING_UNKNOWNE">
+<span id="_CPPv3N3zdl8DlSystem9ErrorCode36SNPE_DLSYSTEM_BUFFERENCODING_UNKNOWNE"></span><span id="_CPPv2N3zdl8DlSystem9ErrorCode36SNPE_DLSYSTEM_BUFFERENCODING_UNKNOWNE"></span><span class="target" id="namespacezdl_1_1DlSystem_1a1408c17b1313b7297a780bd98a11fa8ba4110501f5daee0cb7455308a5f98b1de"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SNPE_DLSYSTEM_BUFFERENCODING_UNKNOWN</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">240</span></span><a class="headerlink" href="#_CPPv4N3zdl8DlSystem9ErrorCode36SNPE_DLSYSTEM_BUFFERENCODING_UNKNOWNE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem9ErrorCode34SNPE_DLSYSTEM_BUFFER_INVALID_PARAME">
+<span id="_CPPv3N3zdl8DlSystem9ErrorCode34SNPE_DLSYSTEM_BUFFER_INVALID_PARAME"></span><span id="_CPPv2N3zdl8DlSystem9ErrorCode34SNPE_DLSYSTEM_BUFFER_INVALID_PARAME"></span><span class="target" id="namespacezdl_1_1DlSystem_1a1408c17b1313b7297a780bd98a11fa8ba23ebea32f87ca33502836621e18a331a"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SNPE_DLSYSTEM_BUFFER_INVALID_PARAM</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">241</span></span><a class="headerlink" href="#_CPPv4N3zdl8DlSystem9ErrorCode34SNPE_DLSYSTEM_BUFFER_INVALID_PARAME" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem9ErrorCode37SNPE_DLCONTAINER_MODEL_PARSING_FAILEDE">
+<span id="_CPPv3N3zdl8DlSystem9ErrorCode37SNPE_DLCONTAINER_MODEL_PARSING_FAILEDE"></span><span id="_CPPv2N3zdl8DlSystem9ErrorCode37SNPE_DLCONTAINER_MODEL_PARSING_FAILEDE"></span><span class="target" id="namespacezdl_1_1DlSystem_1a1408c17b1313b7297a780bd98a11fa8baf7c24fb1012063d11252573149fa336e"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SNPE_DLCONTAINER_MODEL_PARSING_FAILED</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">300</span></span><a class="headerlink" href="#_CPPv4N3zdl8DlSystem9ErrorCode37SNPE_DLCONTAINER_MODEL_PARSING_FAILEDE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem9ErrorCode35SNPE_DLCONTAINER_UNKNOWN_LAYER_CODEE">
+<span id="_CPPv3N3zdl8DlSystem9ErrorCode35SNPE_DLCONTAINER_UNKNOWN_LAYER_CODEE"></span><span id="_CPPv2N3zdl8DlSystem9ErrorCode35SNPE_DLCONTAINER_UNKNOWN_LAYER_CODEE"></span><span class="target" id="namespacezdl_1_1DlSystem_1a1408c17b1313b7297a780bd98a11fa8ba7e51da6e1ac7cdad4e67e7b5f403df93"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SNPE_DLCONTAINER_UNKNOWN_LAYER_CODE</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">301</span></span><a class="headerlink" href="#_CPPv4N3zdl8DlSystem9ErrorCode35SNPE_DLCONTAINER_UNKNOWN_LAYER_CODEE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem9ErrorCode36SNPE_DLCONTAINER_MISSING_LAYER_PARAME">
+<span id="_CPPv3N3zdl8DlSystem9ErrorCode36SNPE_DLCONTAINER_MISSING_LAYER_PARAME"></span><span id="_CPPv2N3zdl8DlSystem9ErrorCode36SNPE_DLCONTAINER_MISSING_LAYER_PARAME"></span><span class="target" id="namespacezdl_1_1DlSystem_1a1408c17b1313b7297a780bd98a11fa8bac8dc5e09f31ba8788dc1cf90338f8b8a"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SNPE_DLCONTAINER_MISSING_LAYER_PARAM</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">302</span></span><a class="headerlink" href="#_CPPv4N3zdl8DlSystem9ErrorCode36SNPE_DLCONTAINER_MISSING_LAYER_PARAME" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem9ErrorCode42SNPE_DLCONTAINER_LAYER_PARAM_NOT_SUPPORTEDE">
+<span id="_CPPv3N3zdl8DlSystem9ErrorCode42SNPE_DLCONTAINER_LAYER_PARAM_NOT_SUPPORTEDE"></span><span id="_CPPv2N3zdl8DlSystem9ErrorCode42SNPE_DLCONTAINER_LAYER_PARAM_NOT_SUPPORTEDE"></span><span class="target" id="namespacezdl_1_1DlSystem_1a1408c17b1313b7297a780bd98a11fa8bad669ccbc13907b9e2d97565d709b8c2b"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SNPE_DLCONTAINER_LAYER_PARAM_NOT_SUPPORTED</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">303</span></span><a class="headerlink" href="#_CPPv4N3zdl8DlSystem9ErrorCode42SNPE_DLCONTAINER_LAYER_PARAM_NOT_SUPPORTEDE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem9ErrorCode36SNPE_DLCONTAINER_LAYER_PARAM_INVALIDE">
+<span id="_CPPv3N3zdl8DlSystem9ErrorCode36SNPE_DLCONTAINER_LAYER_PARAM_INVALIDE"></span><span id="_CPPv2N3zdl8DlSystem9ErrorCode36SNPE_DLCONTAINER_LAYER_PARAM_INVALIDE"></span><span class="target" id="namespacezdl_1_1DlSystem_1a1408c17b1313b7297a780bd98a11fa8ba40d8fa576989cb950b710b05db2c1a93"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SNPE_DLCONTAINER_LAYER_PARAM_INVALID</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">304</span></span><a class="headerlink" href="#_CPPv4N3zdl8DlSystem9ErrorCode36SNPE_DLCONTAINER_LAYER_PARAM_INVALIDE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem9ErrorCode36SNPE_DLCONTAINER_TENSOR_DATA_MISSINGE">
+<span id="_CPPv3N3zdl8DlSystem9ErrorCode36SNPE_DLCONTAINER_TENSOR_DATA_MISSINGE"></span><span id="_CPPv2N3zdl8DlSystem9ErrorCode36SNPE_DLCONTAINER_TENSOR_DATA_MISSINGE"></span><span class="target" id="namespacezdl_1_1DlSystem_1a1408c17b1313b7297a780bd98a11fa8ba40ad375295dde0798ebd5eab615539e4"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SNPE_DLCONTAINER_TENSOR_DATA_MISSING</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">305</span></span><a class="headerlink" href="#_CPPv4N3zdl8DlSystem9ErrorCode36SNPE_DLCONTAINER_TENSOR_DATA_MISSINGE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem9ErrorCode34SNPE_DLCONTAINER_MODEL_LOAD_FAILEDE">
+<span id="_CPPv3N3zdl8DlSystem9ErrorCode34SNPE_DLCONTAINER_MODEL_LOAD_FAILEDE"></span><span id="_CPPv2N3zdl8DlSystem9ErrorCode34SNPE_DLCONTAINER_MODEL_LOAD_FAILEDE"></span><span class="target" id="namespacezdl_1_1DlSystem_1a1408c17b1313b7297a780bd98a11fa8ba38f194d9e323aef9c0ae0d85e2f8f694"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SNPE_DLCONTAINER_MODEL_LOAD_FAILED</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">306</span></span><a class="headerlink" href="#_CPPv4N3zdl8DlSystem9ErrorCode34SNPE_DLCONTAINER_MODEL_LOAD_FAILEDE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem9ErrorCode32SNPE_DLCONTAINER_MISSING_RECORDSE">
+<span id="_CPPv3N3zdl8DlSystem9ErrorCode32SNPE_DLCONTAINER_MISSING_RECORDSE"></span><span id="_CPPv2N3zdl8DlSystem9ErrorCode32SNPE_DLCONTAINER_MISSING_RECORDSE"></span><span class="target" id="namespacezdl_1_1DlSystem_1a1408c17b1313b7297a780bd98a11fa8ba1fb23647f535014e99ec7b06e4100619"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SNPE_DLCONTAINER_MISSING_RECORDS</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">307</span></span><a class="headerlink" href="#_CPPv4N3zdl8DlSystem9ErrorCode32SNPE_DLCONTAINER_MISSING_RECORDSE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem9ErrorCode31SNPE_DLCONTAINER_INVALID_RECORDE">
+<span id="_CPPv3N3zdl8DlSystem9ErrorCode31SNPE_DLCONTAINER_INVALID_RECORDE"></span><span id="_CPPv2N3zdl8DlSystem9ErrorCode31SNPE_DLCONTAINER_INVALID_RECORDE"></span><span class="target" id="namespacezdl_1_1DlSystem_1a1408c17b1313b7297a780bd98a11fa8ba912e39e397821c35b6fd38ff6971d0f2"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SNPE_DLCONTAINER_INVALID_RECORD</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">308</span></span><a class="headerlink" href="#_CPPv4N3zdl8DlSystem9ErrorCode31SNPE_DLCONTAINER_INVALID_RECORDE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem9ErrorCode30SNPE_DLCONTAINER_WRITE_FAILUREE">
+<span id="_CPPv3N3zdl8DlSystem9ErrorCode30SNPE_DLCONTAINER_WRITE_FAILUREE"></span><span id="_CPPv2N3zdl8DlSystem9ErrorCode30SNPE_DLCONTAINER_WRITE_FAILUREE"></span><span class="target" id="namespacezdl_1_1DlSystem_1a1408c17b1313b7297a780bd98a11fa8ba9970f32dcfb8d2b12957be30ab46ecf9"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SNPE_DLCONTAINER_WRITE_FAILURE</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">309</span></span><a class="headerlink" href="#_CPPv4N3zdl8DlSystem9ErrorCode30SNPE_DLCONTAINER_WRITE_FAILUREE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem9ErrorCode29SNPE_DLCONTAINER_READ_FAILUREE">
+<span id="_CPPv3N3zdl8DlSystem9ErrorCode29SNPE_DLCONTAINER_READ_FAILUREE"></span><span id="_CPPv2N3zdl8DlSystem9ErrorCode29SNPE_DLCONTAINER_READ_FAILUREE"></span><span class="target" id="namespacezdl_1_1DlSystem_1a1408c17b1313b7297a780bd98a11fa8bacf84cbd89a114762978781f7098e1cdc"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SNPE_DLCONTAINER_READ_FAILURE</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">310</span></span><a class="headerlink" href="#_CPPv4N3zdl8DlSystem9ErrorCode29SNPE_DLCONTAINER_READ_FAILUREE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem9ErrorCode30SNPE_DLCONTAINER_BAD_CONTAINERE">
+<span id="_CPPv3N3zdl8DlSystem9ErrorCode30SNPE_DLCONTAINER_BAD_CONTAINERE"></span><span id="_CPPv2N3zdl8DlSystem9ErrorCode30SNPE_DLCONTAINER_BAD_CONTAINERE"></span><span class="target" id="namespacezdl_1_1DlSystem_1a1408c17b1313b7297a780bd98a11fa8ba5510f3cd147a3befecafe6975f3d241d"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SNPE_DLCONTAINER_BAD_CONTAINER</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">311</span></span><a class="headerlink" href="#_CPPv4N3zdl8DlSystem9ErrorCode30SNPE_DLCONTAINER_BAD_CONTAINERE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem9ErrorCode39SNPE_DLCONTAINER_BAD_DNN_FORMAT_VERSIONE">
+<span id="_CPPv3N3zdl8DlSystem9ErrorCode39SNPE_DLCONTAINER_BAD_DNN_FORMAT_VERSIONE"></span><span id="_CPPv2N3zdl8DlSystem9ErrorCode39SNPE_DLCONTAINER_BAD_DNN_FORMAT_VERSIONE"></span><span class="target" id="namespacezdl_1_1DlSystem_1a1408c17b1313b7297a780bd98a11fa8bad8909e1dbf0cd7ca22a43b424ab83173"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SNPE_DLCONTAINER_BAD_DNN_FORMAT_VERSION</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">312</span></span><a class="headerlink" href="#_CPPv4N3zdl8DlSystem9ErrorCode39SNPE_DLCONTAINER_BAD_DNN_FORMAT_VERSIONE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem9ErrorCode40SNPE_DLCONTAINER_UNKNOWN_AXIS_ANNOTATIONE">
+<span id="_CPPv3N3zdl8DlSystem9ErrorCode40SNPE_DLCONTAINER_UNKNOWN_AXIS_ANNOTATIONE"></span><span id="_CPPv2N3zdl8DlSystem9ErrorCode40SNPE_DLCONTAINER_UNKNOWN_AXIS_ANNOTATIONE"></span><span class="target" id="namespacezdl_1_1DlSystem_1a1408c17b1313b7297a780bd98a11fa8ba12fba31ce04c972c589938c4cb36cdb7"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SNPE_DLCONTAINER_UNKNOWN_AXIS_ANNOTATION</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">313</span></span><a class="headerlink" href="#_CPPv4N3zdl8DlSystem9ErrorCode40SNPE_DLCONTAINER_UNKNOWN_AXIS_ANNOTATIONE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem9ErrorCode37SNPE_DLCONTAINER_UNKNOWN_SHUFFLE_TYPEE">
+<span id="_CPPv3N3zdl8DlSystem9ErrorCode37SNPE_DLCONTAINER_UNKNOWN_SHUFFLE_TYPEE"></span><span id="_CPPv2N3zdl8DlSystem9ErrorCode37SNPE_DLCONTAINER_UNKNOWN_SHUFFLE_TYPEE"></span><span class="target" id="namespacezdl_1_1DlSystem_1a1408c17b1313b7297a780bd98a11fa8baa954934b879317686f538af6db959431"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SNPE_DLCONTAINER_UNKNOWN_SHUFFLE_TYPE</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">314</span></span><a class="headerlink" href="#_CPPv4N3zdl8DlSystem9ErrorCode37SNPE_DLCONTAINER_UNKNOWN_SHUFFLE_TYPEE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem9ErrorCode34SNPE_DLCONTAINER_TEMP_FILE_FAILUREE">
+<span id="_CPPv3N3zdl8DlSystem9ErrorCode34SNPE_DLCONTAINER_TEMP_FILE_FAILUREE"></span><span id="_CPPv2N3zdl8DlSystem9ErrorCode34SNPE_DLCONTAINER_TEMP_FILE_FAILUREE"></span><span class="target" id="namespacezdl_1_1DlSystem_1a1408c17b1313b7297a780bd98a11fa8ba868fb0b56a51ffc275fea6b3f69e2154"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SNPE_DLCONTAINER_TEMP_FILE_FAILURE</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">315</span></span><a class="headerlink" href="#_CPPv4N3zdl8DlSystem9ErrorCode34SNPE_DLCONTAINER_TEMP_FILE_FAILUREE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem9ErrorCode26SNPE_NETWORK_EMPTY_NETWORKE">
+<span id="_CPPv3N3zdl8DlSystem9ErrorCode26SNPE_NETWORK_EMPTY_NETWORKE"></span><span id="_CPPv2N3zdl8DlSystem9ErrorCode26SNPE_NETWORK_EMPTY_NETWORKE"></span><span class="target" id="namespacezdl_1_1DlSystem_1a1408c17b1313b7297a780bd98a11fa8ba07082e77a1733f1e68d8738d635d42ca"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SNPE_NETWORK_EMPTY_NETWORK</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">400</span></span><a class="headerlink" href="#_CPPv4N3zdl8DlSystem9ErrorCode26SNPE_NETWORK_EMPTY_NETWORKE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem9ErrorCode28SNPE_NETWORK_CREATION_FAILEDE">
+<span id="_CPPv3N3zdl8DlSystem9ErrorCode28SNPE_NETWORK_CREATION_FAILEDE"></span><span id="_CPPv2N3zdl8DlSystem9ErrorCode28SNPE_NETWORK_CREATION_FAILEDE"></span><span class="target" id="namespacezdl_1_1DlSystem_1a1408c17b1313b7297a780bd98a11fa8ba28d4ca5f86cc6bf38fc4d63ff6d3e430"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SNPE_NETWORK_CREATION_FAILED</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">401</span></span><a class="headerlink" href="#_CPPv4N3zdl8DlSystem9ErrorCode28SNPE_NETWORK_CREATION_FAILEDE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem9ErrorCode29SNPE_NETWORK_PARTITION_FAILEDE">
+<span id="_CPPv3N3zdl8DlSystem9ErrorCode29SNPE_NETWORK_PARTITION_FAILEDE"></span><span id="_CPPv2N3zdl8DlSystem9ErrorCode29SNPE_NETWORK_PARTITION_FAILEDE"></span><span class="target" id="namespacezdl_1_1DlSystem_1a1408c17b1313b7297a780bd98a11fa8baaec68e0ab0ec899235b143433eae4827"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SNPE_NETWORK_PARTITION_FAILED</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">402</span></span><a class="headerlink" href="#_CPPv4N3zdl8DlSystem9ErrorCode29SNPE_NETWORK_PARTITION_FAILEDE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem9ErrorCode30SNPE_NETWORK_NO_OUTPUT_DEFINEDE">
+<span id="_CPPv3N3zdl8DlSystem9ErrorCode30SNPE_NETWORK_NO_OUTPUT_DEFINEDE"></span><span id="_CPPv2N3zdl8DlSystem9ErrorCode30SNPE_NETWORK_NO_OUTPUT_DEFINEDE"></span><span class="target" id="namespacezdl_1_1DlSystem_1a1408c17b1313b7297a780bd98a11fa8baa5c6e39cd6bf3ad939f15ea57985a8c3"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SNPE_NETWORK_NO_OUTPUT_DEFINED</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">403</span></span><a class="headerlink" href="#_CPPv4N3zdl8DlSystem9ErrorCode30SNPE_NETWORK_NO_OUTPUT_DEFINEDE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem9ErrorCode44SNPE_NETWORK_MISMATCH_BETWEEN_NAMES_AND_DIMSE">
+<span id="_CPPv3N3zdl8DlSystem9ErrorCode44SNPE_NETWORK_MISMATCH_BETWEEN_NAMES_AND_DIMSE"></span><span id="_CPPv2N3zdl8DlSystem9ErrorCode44SNPE_NETWORK_MISMATCH_BETWEEN_NAMES_AND_DIMSE"></span><span class="target" id="namespacezdl_1_1DlSystem_1a1408c17b1313b7297a780bd98a11fa8ba7180b308931139ddc362956e273490b8"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SNPE_NETWORK_MISMATCH_BETWEEN_NAMES_AND_DIMS</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">404</span></span><a class="headerlink" href="#_CPPv4N3zdl8DlSystem9ErrorCode44SNPE_NETWORK_MISMATCH_BETWEEN_NAMES_AND_DIMSE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem9ErrorCode32SNPE_NETWORK_MISSING_INPUT_NAMESE">
+<span id="_CPPv3N3zdl8DlSystem9ErrorCode32SNPE_NETWORK_MISSING_INPUT_NAMESE"></span><span id="_CPPv2N3zdl8DlSystem9ErrorCode32SNPE_NETWORK_MISSING_INPUT_NAMESE"></span><span class="target" id="namespacezdl_1_1DlSystem_1a1408c17b1313b7297a780bd98a11fa8ba34828dafce84fee9983f6c4052ecb1b8"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SNPE_NETWORK_MISSING_INPUT_NAMES</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">405</span></span><a class="headerlink" href="#_CPPv4N3zdl8DlSystem9ErrorCode32SNPE_NETWORK_MISSING_INPUT_NAMESE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem9ErrorCode33SNPE_NETWORK_MISSING_OUTPUT_NAMESE">
+<span id="_CPPv3N3zdl8DlSystem9ErrorCode33SNPE_NETWORK_MISSING_OUTPUT_NAMESE"></span><span id="_CPPv2N3zdl8DlSystem9ErrorCode33SNPE_NETWORK_MISSING_OUTPUT_NAMESE"></span><span class="target" id="namespacezdl_1_1DlSystem_1a1408c17b1313b7297a780bd98a11fa8ba4fb7408d9b3419928620ec7274c6a04b"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SNPE_NETWORK_MISSING_OUTPUT_NAMES</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">406</span></span><a class="headerlink" href="#_CPPv4N3zdl8DlSystem9ErrorCode33SNPE_NETWORK_MISSING_OUTPUT_NAMESE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem9ErrorCode29SNPE_NETWORK_EXECUTION_FAILEDE">
+<span id="_CPPv3N3zdl8DlSystem9ErrorCode29SNPE_NETWORK_EXECUTION_FAILEDE"></span><span id="_CPPv2N3zdl8DlSystem9ErrorCode29SNPE_NETWORK_EXECUTION_FAILEDE"></span><span class="target" id="namespacezdl_1_1DlSystem_1a1408c17b1313b7297a780bd98a11fa8ba708c771854526d3c4ede1e619c4e8f94"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SNPE_NETWORK_EXECUTION_FAILED</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">407</span></span><a class="headerlink" href="#_CPPv4N3zdl8DlSystem9ErrorCode29SNPE_NETWORK_EXECUTION_FAILEDE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem9ErrorCode36SNPE_HOST_RUNTIME_TARGET_UNAVAILABLEE">
+<span id="_CPPv3N3zdl8DlSystem9ErrorCode36SNPE_HOST_RUNTIME_TARGET_UNAVAILABLEE"></span><span id="_CPPv2N3zdl8DlSystem9ErrorCode36SNPE_HOST_RUNTIME_TARGET_UNAVAILABLEE"></span><span class="target" id="namespacezdl_1_1DlSystem_1a1408c17b1313b7297a780bd98a11fa8bafce24406aba955cbab6e6630001da605"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SNPE_HOST_RUNTIME_TARGET_UNAVAILABLE</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">500</span></span><a class="headerlink" href="#_CPPv4N3zdl8DlSystem9ErrorCode36SNPE_HOST_RUNTIME_TARGET_UNAVAILABLEE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem9ErrorCode28SNPE_CPU_LAYER_NOT_SUPPORTEDE">
+<span id="_CPPv3N3zdl8DlSystem9ErrorCode28SNPE_CPU_LAYER_NOT_SUPPORTEDE"></span><span id="_CPPv2N3zdl8DlSystem9ErrorCode28SNPE_CPU_LAYER_NOT_SUPPORTEDE"></span><span class="target" id="namespacezdl_1_1DlSystem_1a1408c17b1313b7297a780bd98a11fa8baac53776bce6d7d8e3457ee44fe6e50fd"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SNPE_CPU_LAYER_NOT_SUPPORTED</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">600</span></span><a class="headerlink" href="#_CPPv4N3zdl8DlSystem9ErrorCode28SNPE_CPU_LAYER_NOT_SUPPORTEDE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem9ErrorCode34SNPE_CPU_LAYER_PARAM_NOT_SUPPORTEDE">
+<span id="_CPPv3N3zdl8DlSystem9ErrorCode34SNPE_CPU_LAYER_PARAM_NOT_SUPPORTEDE"></span><span id="_CPPv2N3zdl8DlSystem9ErrorCode34SNPE_CPU_LAYER_PARAM_NOT_SUPPORTEDE"></span><span class="target" id="namespacezdl_1_1DlSystem_1a1408c17b1313b7297a780bd98a11fa8ba16166143fed92a2e5b1d8c8385725cd3"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SNPE_CPU_LAYER_PARAM_NOT_SUPPORTED</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">601</span></span><a class="headerlink" href="#_CPPv4N3zdl8DlSystem9ErrorCode34SNPE_CPU_LAYER_PARAM_NOT_SUPPORTEDE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem9ErrorCode28SNPE_CPU_LAYER_PARAM_INVALIDE">
+<span id="_CPPv3N3zdl8DlSystem9ErrorCode28SNPE_CPU_LAYER_PARAM_INVALIDE"></span><span id="_CPPv2N3zdl8DlSystem9ErrorCode28SNPE_CPU_LAYER_PARAM_INVALIDE"></span><span class="target" id="namespacezdl_1_1DlSystem_1a1408c17b1313b7297a780bd98a11fa8ba7da47ed2b2c952aa21cced12d4499802"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SNPE_CPU_LAYER_PARAM_INVALID</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">602</span></span><a class="headerlink" href="#_CPPv4N3zdl8DlSystem9ErrorCode28SNPE_CPU_LAYER_PARAM_INVALIDE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem9ErrorCode40SNPE_CPU_LAYER_PARAM_COMBINATION_INVALIDE">
+<span id="_CPPv3N3zdl8DlSystem9ErrorCode40SNPE_CPU_LAYER_PARAM_COMBINATION_INVALIDE"></span><span id="_CPPv2N3zdl8DlSystem9ErrorCode40SNPE_CPU_LAYER_PARAM_COMBINATION_INVALIDE"></span><span class="target" id="namespacezdl_1_1DlSystem_1a1408c17b1313b7297a780bd98a11fa8baafafa8b9c80d4a45b319c3c065a7eebc"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SNPE_CPU_LAYER_PARAM_COMBINATION_INVALID</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">603</span></span><a class="headerlink" href="#_CPPv4N3zdl8DlSystem9ErrorCode40SNPE_CPU_LAYER_PARAM_COMBINATION_INVALIDE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem9ErrorCode25SNPE_CPU_BUFFER_NOT_FOUNDE">
+<span id="_CPPv3N3zdl8DlSystem9ErrorCode25SNPE_CPU_BUFFER_NOT_FOUNDE"></span><span id="_CPPv2N3zdl8DlSystem9ErrorCode25SNPE_CPU_BUFFER_NOT_FOUNDE"></span><span class="target" id="namespacezdl_1_1DlSystem_1a1408c17b1313b7297a780bd98a11fa8baa20ad055bd1afd5a1881ec83113c264f"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SNPE_CPU_BUFFER_NOT_FOUND</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">604</span></span><a class="headerlink" href="#_CPPv4N3zdl8DlSystem9ErrorCode25SNPE_CPU_BUFFER_NOT_FOUNDE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem9ErrorCode30SNPE_CPU_NETWORK_NOT_SUPPORTEDE">
+<span id="_CPPv3N3zdl8DlSystem9ErrorCode30SNPE_CPU_NETWORK_NOT_SUPPORTEDE"></span><span id="_CPPv2N3zdl8DlSystem9ErrorCode30SNPE_CPU_NETWORK_NOT_SUPPORTEDE"></span><span class="target" id="namespacezdl_1_1DlSystem_1a1408c17b1313b7297a780bd98a11fa8ba41d80933998f9ef674795d60b63f865f"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SNPE_CPU_NETWORK_NOT_SUPPORTED</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">605</span></span><a class="headerlink" href="#_CPPv4N3zdl8DlSystem9ErrorCode30SNPE_CPU_NETWORK_NOT_SUPPORTEDE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem9ErrorCode32SNPE_CPU_FXP_LAYER_NOT_SUPPORTEDE">
+<span id="_CPPv3N3zdl8DlSystem9ErrorCode32SNPE_CPU_FXP_LAYER_NOT_SUPPORTEDE"></span><span id="_CPPv2N3zdl8DlSystem9ErrorCode32SNPE_CPU_FXP_LAYER_NOT_SUPPORTEDE"></span><span class="target" id="namespacezdl_1_1DlSystem_1a1408c17b1313b7297a780bd98a11fa8bab002baec691a2f4b02476bf83c451332"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SNPE_CPU_FXP_LAYER_NOT_SUPPORTED</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">700</span></span><a class="headerlink" href="#_CPPv4N3zdl8DlSystem9ErrorCode32SNPE_CPU_FXP_LAYER_NOT_SUPPORTEDE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem9ErrorCode38SNPE_CPU_FXP_LAYER_PARAM_NOT_SUPPORTEDE">
+<span id="_CPPv3N3zdl8DlSystem9ErrorCode38SNPE_CPU_FXP_LAYER_PARAM_NOT_SUPPORTEDE"></span><span id="_CPPv2N3zdl8DlSystem9ErrorCode38SNPE_CPU_FXP_LAYER_PARAM_NOT_SUPPORTEDE"></span><span class="target" id="namespacezdl_1_1DlSystem_1a1408c17b1313b7297a780bd98a11fa8ba9f623f7ba4bd016f0f7842af40194ce2"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SNPE_CPU_FXP_LAYER_PARAM_NOT_SUPPORTED</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">701</span></span><a class="headerlink" href="#_CPPv4N3zdl8DlSystem9ErrorCode38SNPE_CPU_FXP_LAYER_PARAM_NOT_SUPPORTEDE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem9ErrorCode32SNPE_CPU_FXP_LAYER_PARAM_INVALIDE">
+<span id="_CPPv3N3zdl8DlSystem9ErrorCode32SNPE_CPU_FXP_LAYER_PARAM_INVALIDE"></span><span id="_CPPv2N3zdl8DlSystem9ErrorCode32SNPE_CPU_FXP_LAYER_PARAM_INVALIDE"></span><span class="target" id="namespacezdl_1_1DlSystem_1a1408c17b1313b7297a780bd98a11fa8bac86fba5f7a2875f3652951b2cfb8515b"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SNPE_CPU_FXP_LAYER_PARAM_INVALID</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">702</span></span><a class="headerlink" href="#_CPPv4N3zdl8DlSystem9ErrorCode32SNPE_CPU_FXP_LAYER_PARAM_INVALIDE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem9ErrorCode27SNPE_CPU_FXP_OPTION_INVALIDE">
+<span id="_CPPv3N3zdl8DlSystem9ErrorCode27SNPE_CPU_FXP_OPTION_INVALIDE"></span><span id="_CPPv2N3zdl8DlSystem9ErrorCode27SNPE_CPU_FXP_OPTION_INVALIDE"></span><span class="target" id="namespacezdl_1_1DlSystem_1a1408c17b1313b7297a780bd98a11fa8bac5b709a8aa63d6a361ba3ad323805dfd"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SNPE_CPU_FXP_OPTION_INVALID</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">703</span></span><a class="headerlink" href="#_CPPv4N3zdl8DlSystem9ErrorCode27SNPE_CPU_FXP_OPTION_INVALIDE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem9ErrorCode28SNPE_GPU_LAYER_NOT_SUPPORTEDE">
+<span id="_CPPv3N3zdl8DlSystem9ErrorCode28SNPE_GPU_LAYER_NOT_SUPPORTEDE"></span><span id="_CPPv2N3zdl8DlSystem9ErrorCode28SNPE_GPU_LAYER_NOT_SUPPORTEDE"></span><span class="target" id="namespacezdl_1_1DlSystem_1a1408c17b1313b7297a780bd98a11fa8ba7bddde4f6818aab5fdc8e198b48461b9"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SNPE_GPU_LAYER_NOT_SUPPORTED</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">800</span></span><a class="headerlink" href="#_CPPv4N3zdl8DlSystem9ErrorCode28SNPE_GPU_LAYER_NOT_SUPPORTEDE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem9ErrorCode34SNPE_GPU_LAYER_PARAM_NOT_SUPPORTEDE">
+<span id="_CPPv3N3zdl8DlSystem9ErrorCode34SNPE_GPU_LAYER_PARAM_NOT_SUPPORTEDE"></span><span id="_CPPv2N3zdl8DlSystem9ErrorCode34SNPE_GPU_LAYER_PARAM_NOT_SUPPORTEDE"></span><span class="target" id="namespacezdl_1_1DlSystem_1a1408c17b1313b7297a780bd98a11fa8bab0497d9dd43069f0500e801c9e9dcdb7"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SNPE_GPU_LAYER_PARAM_NOT_SUPPORTED</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">801</span></span><a class="headerlink" href="#_CPPv4N3zdl8DlSystem9ErrorCode34SNPE_GPU_LAYER_PARAM_NOT_SUPPORTEDE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem9ErrorCode28SNPE_GPU_LAYER_PARAM_INVALIDE">
+<span id="_CPPv3N3zdl8DlSystem9ErrorCode28SNPE_GPU_LAYER_PARAM_INVALIDE"></span><span id="_CPPv2N3zdl8DlSystem9ErrorCode28SNPE_GPU_LAYER_PARAM_INVALIDE"></span><span class="target" id="namespacezdl_1_1DlSystem_1a1408c17b1313b7297a780bd98a11fa8ba26342f56df176288809795e7ea2d3aaa"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SNPE_GPU_LAYER_PARAM_INVALID</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">802</span></span><a class="headerlink" href="#_CPPv4N3zdl8DlSystem9ErrorCode28SNPE_GPU_LAYER_PARAM_INVALIDE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem9ErrorCode40SNPE_GPU_LAYER_PARAM_COMBINATION_INVALIDE">
+<span id="_CPPv3N3zdl8DlSystem9ErrorCode40SNPE_GPU_LAYER_PARAM_COMBINATION_INVALIDE"></span><span id="_CPPv2N3zdl8DlSystem9ErrorCode40SNPE_GPU_LAYER_PARAM_COMBINATION_INVALIDE"></span><span class="target" id="namespacezdl_1_1DlSystem_1a1408c17b1313b7297a780bd98a11fa8ba6a71cbc523d92d6892ee8aa42667c2a3"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SNPE_GPU_LAYER_PARAM_COMBINATION_INVALID</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">803</span></span><a class="headerlink" href="#_CPPv4N3zdl8DlSystem9ErrorCode40SNPE_GPU_LAYER_PARAM_COMBINATION_INVALIDE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem9ErrorCode34SNPE_GPU_KERNEL_COMPILATION_FAILEDE">
+<span id="_CPPv3N3zdl8DlSystem9ErrorCode34SNPE_GPU_KERNEL_COMPILATION_FAILEDE"></span><span id="_CPPv2N3zdl8DlSystem9ErrorCode34SNPE_GPU_KERNEL_COMPILATION_FAILEDE"></span><span class="target" id="namespacezdl_1_1DlSystem_1a1408c17b1313b7297a780bd98a11fa8babe47b5d8125dc1047a7d4e1d6ec16257"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SNPE_GPU_KERNEL_COMPILATION_FAILED</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">804</span></span><a class="headerlink" href="#_CPPv4N3zdl8DlSystem9ErrorCode34SNPE_GPU_KERNEL_COMPILATION_FAILEDE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem9ErrorCode24SNPE_GPU_CONTEXT_NOT_SETE">
+<span id="_CPPv3N3zdl8DlSystem9ErrorCode24SNPE_GPU_CONTEXT_NOT_SETE"></span><span id="_CPPv2N3zdl8DlSystem9ErrorCode24SNPE_GPU_CONTEXT_NOT_SETE"></span><span class="target" id="namespacezdl_1_1DlSystem_1a1408c17b1313b7297a780bd98a11fa8ba1c15d8e09a2028d047d0df62837cc4ee"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SNPE_GPU_CONTEXT_NOT_SET</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">805</span></span><a class="headerlink" href="#_CPPv4N3zdl8DlSystem9ErrorCode24SNPE_GPU_CONTEXT_NOT_SETE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem9ErrorCode23SNPE_GPU_KERNEL_NOT_SETE">
+<span id="_CPPv3N3zdl8DlSystem9ErrorCode23SNPE_GPU_KERNEL_NOT_SETE"></span><span id="_CPPv2N3zdl8DlSystem9ErrorCode23SNPE_GPU_KERNEL_NOT_SETE"></span><span class="target" id="namespacezdl_1_1DlSystem_1a1408c17b1313b7297a780bd98a11fa8baa2b39145bb148a19ec8ddfd7b7e86ded"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SNPE_GPU_KERNEL_NOT_SET</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">806</span></span><a class="headerlink" href="#_CPPv4N3zdl8DlSystem9ErrorCode23SNPE_GPU_KERNEL_NOT_SETE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem9ErrorCode29SNPE_GPU_KERNEL_PARAM_INVALIDE">
+<span id="_CPPv3N3zdl8DlSystem9ErrorCode29SNPE_GPU_KERNEL_PARAM_INVALIDE"></span><span id="_CPPv2N3zdl8DlSystem9ErrorCode29SNPE_GPU_KERNEL_PARAM_INVALIDE"></span><span class="target" id="namespacezdl_1_1DlSystem_1a1408c17b1313b7297a780bd98a11fa8baf4ff370f02ed5244bde064762c0e62db"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SNPE_GPU_KERNEL_PARAM_INVALID</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">807</span></span><a class="headerlink" href="#_CPPv4N3zdl8DlSystem9ErrorCode29SNPE_GPU_KERNEL_PARAM_INVALIDE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem9ErrorCode28SNPE_GPU_OPENCL_CHECK_FAILEDE">
+<span id="_CPPv3N3zdl8DlSystem9ErrorCode28SNPE_GPU_OPENCL_CHECK_FAILEDE"></span><span id="_CPPv2N3zdl8DlSystem9ErrorCode28SNPE_GPU_OPENCL_CHECK_FAILEDE"></span><span class="target" id="namespacezdl_1_1DlSystem_1a1408c17b1313b7297a780bd98a11fa8bac6792fbb181666783685166726b29458"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SNPE_GPU_OPENCL_CHECK_FAILED</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">808</span></span><a class="headerlink" href="#_CPPv4N3zdl8DlSystem9ErrorCode28SNPE_GPU_OPENCL_CHECK_FAILEDE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem9ErrorCode30SNPE_GPU_OPENCL_FUNCTION_ERRORE">
+<span id="_CPPv3N3zdl8DlSystem9ErrorCode30SNPE_GPU_OPENCL_FUNCTION_ERRORE"></span><span id="_CPPv2N3zdl8DlSystem9ErrorCode30SNPE_GPU_OPENCL_FUNCTION_ERRORE"></span><span class="target" id="namespacezdl_1_1DlSystem_1a1408c17b1313b7297a780bd98a11fa8ba04a20ef9677a233da0a47961d1ecb3a2"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SNPE_GPU_OPENCL_FUNCTION_ERROR</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">809</span></span><a class="headerlink" href="#_CPPv4N3zdl8DlSystem9ErrorCode30SNPE_GPU_OPENCL_FUNCTION_ERRORE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem9ErrorCode25SNPE_GPU_BUFFER_NOT_FOUNDE">
+<span id="_CPPv3N3zdl8DlSystem9ErrorCode25SNPE_GPU_BUFFER_NOT_FOUNDE"></span><span id="_CPPv2N3zdl8DlSystem9ErrorCode25SNPE_GPU_BUFFER_NOT_FOUNDE"></span><span class="target" id="namespacezdl_1_1DlSystem_1a1408c17b1313b7297a780bd98a11fa8ba261d52fe465e9b0c7bf9c8ad5e57dd3f"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SNPE_GPU_BUFFER_NOT_FOUND</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">810</span></span><a class="headerlink" href="#_CPPv4N3zdl8DlSystem9ErrorCode25SNPE_GPU_BUFFER_NOT_FOUNDE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem9ErrorCode27SNPE_GPU_TENSOR_DIM_INVALIDE">
+<span id="_CPPv3N3zdl8DlSystem9ErrorCode27SNPE_GPU_TENSOR_DIM_INVALIDE"></span><span id="_CPPv2N3zdl8DlSystem9ErrorCode27SNPE_GPU_TENSOR_DIM_INVALIDE"></span><span class="target" id="namespacezdl_1_1DlSystem_1a1408c17b1313b7297a780bd98a11fa8ba17d888112d5b2c9f69c55caa73e43f5e"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SNPE_GPU_TENSOR_DIM_INVALID</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">811</span></span><a class="headerlink" href="#_CPPv4N3zdl8DlSystem9ErrorCode27SNPE_GPU_TENSOR_DIM_INVALIDE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem9ErrorCode29SNPE_GPU_MEMORY_FLAGS_INVALIDE">
+<span id="_CPPv3N3zdl8DlSystem9ErrorCode29SNPE_GPU_MEMORY_FLAGS_INVALIDE"></span><span id="_CPPv2N3zdl8DlSystem9ErrorCode29SNPE_GPU_MEMORY_FLAGS_INVALIDE"></span><span class="target" id="namespacezdl_1_1DlSystem_1a1408c17b1313b7297a780bd98a11fa8babfa87bf43ad3df3c76a0dbb3732b21d7"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SNPE_GPU_MEMORY_FLAGS_INVALID</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">812</span></span><a class="headerlink" href="#_CPPv4N3zdl8DlSystem9ErrorCode29SNPE_GPU_MEMORY_FLAGS_INVALIDE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem9ErrorCode32SNPE_GPU_UNEXPECTED_NUMBER_OF_IOE">
+<span id="_CPPv3N3zdl8DlSystem9ErrorCode32SNPE_GPU_UNEXPECTED_NUMBER_OF_IOE"></span><span id="_CPPv2N3zdl8DlSystem9ErrorCode32SNPE_GPU_UNEXPECTED_NUMBER_OF_IOE"></span><span class="target" id="namespacezdl_1_1DlSystem_1a1408c17b1313b7297a780bd98a11fa8ba53d3b9551a79d8dc7471ae7cdf0086c9"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SNPE_GPU_UNEXPECTED_NUMBER_OF_IO</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">813</span></span><a class="headerlink" href="#_CPPv4N3zdl8DlSystem9ErrorCode32SNPE_GPU_UNEXPECTED_NUMBER_OF_IOE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem9ErrorCode26SNPE_GPU_LAYER_PROXY_ERRORE">
+<span id="_CPPv3N3zdl8DlSystem9ErrorCode26SNPE_GPU_LAYER_PROXY_ERRORE"></span><span id="_CPPv2N3zdl8DlSystem9ErrorCode26SNPE_GPU_LAYER_PROXY_ERRORE"></span><span class="target" id="namespacezdl_1_1DlSystem_1a1408c17b1313b7297a780bd98a11fa8baebe0305658c134875888f50de937976e"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SNPE_GPU_LAYER_PROXY_ERROR</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">814</span></span><a class="headerlink" href="#_CPPv4N3zdl8DlSystem9ErrorCode26SNPE_GPU_LAYER_PROXY_ERRORE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem9ErrorCode22SNPE_GPU_BUFFER_IN_USEE">
+<span id="_CPPv3N3zdl8DlSystem9ErrorCode22SNPE_GPU_BUFFER_IN_USEE"></span><span id="_CPPv2N3zdl8DlSystem9ErrorCode22SNPE_GPU_BUFFER_IN_USEE"></span><span class="target" id="namespacezdl_1_1DlSystem_1a1408c17b1313b7297a780bd98a11fa8bac1944c2070cf5c0eedb300f0f00f603d"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SNPE_GPU_BUFFER_IN_USE</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">815</span></span><a class="headerlink" href="#_CPPv4N3zdl8DlSystem9ErrorCode22SNPE_GPU_BUFFER_IN_USEE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem9ErrorCode34SNPE_GPU_BUFFER_MODIFICATION_ERRORE">
+<span id="_CPPv3N3zdl8DlSystem9ErrorCode34SNPE_GPU_BUFFER_MODIFICATION_ERRORE"></span><span id="_CPPv2N3zdl8DlSystem9ErrorCode34SNPE_GPU_BUFFER_MODIFICATION_ERRORE"></span><span class="target" id="namespacezdl_1_1DlSystem_1a1408c17b1313b7297a780bd98a11fa8baa76f54e9e20b3d5fea2bb7832da970e4"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SNPE_GPU_BUFFER_MODIFICATION_ERROR</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">816</span></span><a class="headerlink" href="#_CPPv4N3zdl8DlSystem9ErrorCode34SNPE_GPU_BUFFER_MODIFICATION_ERRORE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem9ErrorCode33SNPE_GPU_DATA_ARRANGEMENT_INVALIDE">
+<span id="_CPPv3N3zdl8DlSystem9ErrorCode33SNPE_GPU_DATA_ARRANGEMENT_INVALIDE"></span><span id="_CPPv2N3zdl8DlSystem9ErrorCode33SNPE_GPU_DATA_ARRANGEMENT_INVALIDE"></span><span class="target" id="namespacezdl_1_1DlSystem_1a1408c17b1313b7297a780bd98a11fa8bac903db52dce0ab323f69e9b954fbf9d3"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SNPE_GPU_DATA_ARRANGEMENT_INVALID</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">817</span></span><a class="headerlink" href="#_CPPv4N3zdl8DlSystem9ErrorCode33SNPE_GPU_DATA_ARRANGEMENT_INVALIDE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem9ErrorCode28SNPE_DSP_LAYER_NOT_SUPPORTEDE">
+<span id="_CPPv3N3zdl8DlSystem9ErrorCode28SNPE_DSP_LAYER_NOT_SUPPORTEDE"></span><span id="_CPPv2N3zdl8DlSystem9ErrorCode28SNPE_DSP_LAYER_NOT_SUPPORTEDE"></span><span class="target" id="namespacezdl_1_1DlSystem_1a1408c17b1313b7297a780bd98a11fa8ba5f17bfd592dd9dd15691c8d5ae868ce7"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SNPE_DSP_LAYER_NOT_SUPPORTED</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">900</span></span><a class="headerlink" href="#_CPPv4N3zdl8DlSystem9ErrorCode28SNPE_DSP_LAYER_NOT_SUPPORTEDE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem9ErrorCode34SNPE_DSP_LAYER_PARAM_NOT_SUPPORTEDE">
+<span id="_CPPv3N3zdl8DlSystem9ErrorCode34SNPE_DSP_LAYER_PARAM_NOT_SUPPORTEDE"></span><span id="_CPPv2N3zdl8DlSystem9ErrorCode34SNPE_DSP_LAYER_PARAM_NOT_SUPPORTEDE"></span><span class="target" id="namespacezdl_1_1DlSystem_1a1408c17b1313b7297a780bd98a11fa8ba54eda19629c1f15746e42c95b8fcc95d"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SNPE_DSP_LAYER_PARAM_NOT_SUPPORTED</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">901</span></span><a class="headerlink" href="#_CPPv4N3zdl8DlSystem9ErrorCode34SNPE_DSP_LAYER_PARAM_NOT_SUPPORTEDE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem9ErrorCode28SNPE_DSP_LAYER_PARAM_INVALIDE">
+<span id="_CPPv3N3zdl8DlSystem9ErrorCode28SNPE_DSP_LAYER_PARAM_INVALIDE"></span><span id="_CPPv2N3zdl8DlSystem9ErrorCode28SNPE_DSP_LAYER_PARAM_INVALIDE"></span><span class="target" id="namespacezdl_1_1DlSystem_1a1408c17b1313b7297a780bd98a11fa8ba9ff46807985ebab77ce60495778ac282"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SNPE_DSP_LAYER_PARAM_INVALID</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">902</span></span><a class="headerlink" href="#_CPPv4N3zdl8DlSystem9ErrorCode28SNPE_DSP_LAYER_PARAM_INVALIDE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem9ErrorCode40SNPE_DSP_LAYER_PARAM_COMBINATION_INVALIDE">
+<span id="_CPPv3N3zdl8DlSystem9ErrorCode40SNPE_DSP_LAYER_PARAM_COMBINATION_INVALIDE"></span><span id="_CPPv2N3zdl8DlSystem9ErrorCode40SNPE_DSP_LAYER_PARAM_COMBINATION_INVALIDE"></span><span class="target" id="namespacezdl_1_1DlSystem_1a1408c17b1313b7297a780bd98a11fa8bafacc0cf6b881b62a95c2e6f3146f3575"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SNPE_DSP_LAYER_PARAM_COMBINATION_INVALID</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">903</span></span><a class="headerlink" href="#_CPPv4N3zdl8DlSystem9ErrorCode40SNPE_DSP_LAYER_PARAM_COMBINATION_INVALIDE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem9ErrorCode25SNPE_DSP_STUB_NOT_PRESENTE">
+<span id="_CPPv3N3zdl8DlSystem9ErrorCode25SNPE_DSP_STUB_NOT_PRESENTE"></span><span id="_CPPv2N3zdl8DlSystem9ErrorCode25SNPE_DSP_STUB_NOT_PRESENTE"></span><span class="target" id="namespacezdl_1_1DlSystem_1a1408c17b1313b7297a780bd98a11fa8ba97f5c9d3f6ca4f7208d06dce3c504a6e"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SNPE_DSP_STUB_NOT_PRESENT</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">904</span></span><a class="headerlink" href="#_CPPv4N3zdl8DlSystem9ErrorCode25SNPE_DSP_STUB_NOT_PRESENTE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem9ErrorCode29SNPE_DSP_LAYER_NAME_TRUNCATEDE">
+<span id="_CPPv3N3zdl8DlSystem9ErrorCode29SNPE_DSP_LAYER_NAME_TRUNCATEDE"></span><span id="_CPPv2N3zdl8DlSystem9ErrorCode29SNPE_DSP_LAYER_NAME_TRUNCATEDE"></span><span class="target" id="namespacezdl_1_1DlSystem_1a1408c17b1313b7297a780bd98a11fa8ba28482932aeafd79f5d18fe4f6a8bdc3f"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SNPE_DSP_LAYER_NAME_TRUNCATED</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">905</span></span><a class="headerlink" href="#_CPPv4N3zdl8DlSystem9ErrorCode29SNPE_DSP_LAYER_NAME_TRUNCATEDE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem9ErrorCode42SNPE_DSP_LAYER_INPUT_BUFFER_NAME_TRUNCATEDE">
+<span id="_CPPv3N3zdl8DlSystem9ErrorCode42SNPE_DSP_LAYER_INPUT_BUFFER_NAME_TRUNCATEDE"></span><span id="_CPPv2N3zdl8DlSystem9ErrorCode42SNPE_DSP_LAYER_INPUT_BUFFER_NAME_TRUNCATEDE"></span><span class="target" id="namespacezdl_1_1DlSystem_1a1408c17b1313b7297a780bd98a11fa8ba4a8086d8da150f61eaf88e087f9f4956"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SNPE_DSP_LAYER_INPUT_BUFFER_NAME_TRUNCATED</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">906</span></span><a class="headerlink" href="#_CPPv4N3zdl8DlSystem9ErrorCode42SNPE_DSP_LAYER_INPUT_BUFFER_NAME_TRUNCATEDE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem9ErrorCode43SNPE_DSP_LAYER_OUTPUT_BUFFER_NAME_TRUNCATEDE">
+<span id="_CPPv3N3zdl8DlSystem9ErrorCode43SNPE_DSP_LAYER_OUTPUT_BUFFER_NAME_TRUNCATEDE"></span><span id="_CPPv2N3zdl8DlSystem9ErrorCode43SNPE_DSP_LAYER_OUTPUT_BUFFER_NAME_TRUNCATEDE"></span><span class="target" id="namespacezdl_1_1DlSystem_1a1408c17b1313b7297a780bd98a11fa8ba0b9071409c3d3b659b08d77f915da575"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SNPE_DSP_LAYER_OUTPUT_BUFFER_NAME_TRUNCATED</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">907</span></span><a class="headerlink" href="#_CPPv4N3zdl8DlSystem9ErrorCode43SNPE_DSP_LAYER_OUTPUT_BUFFER_NAME_TRUNCATEDE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem9ErrorCode36SNPE_DSP_RUNTIME_COMMUNICATION_ERRORE">
+<span id="_CPPv3N3zdl8DlSystem9ErrorCode36SNPE_DSP_RUNTIME_COMMUNICATION_ERRORE"></span><span id="_CPPv2N3zdl8DlSystem9ErrorCode36SNPE_DSP_RUNTIME_COMMUNICATION_ERRORE"></span><span class="target" id="namespacezdl_1_1DlSystem_1a1408c17b1313b7297a780bd98a11fa8bae0e04c384aa977c196ff222bab2c7a18"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SNPE_DSP_RUNTIME_COMMUNICATION_ERROR</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">908</span></span><a class="headerlink" href="#_CPPv4N3zdl8DlSystem9ErrorCode36SNPE_DSP_RUNTIME_COMMUNICATION_ERRORE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem9ErrorCode36SNPE_DSP_RUNTIME_INVALID_PARAM_ERRORE">
+<span id="_CPPv3N3zdl8DlSystem9ErrorCode36SNPE_DSP_RUNTIME_INVALID_PARAM_ERRORE"></span><span id="_CPPv2N3zdl8DlSystem9ErrorCode36SNPE_DSP_RUNTIME_INVALID_PARAM_ERRORE"></span><span class="target" id="namespacezdl_1_1DlSystem_1a1408c17b1313b7297a780bd98a11fa8ba5f2eec06bc9807129b0cb6e014b099fa"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SNPE_DSP_RUNTIME_INVALID_PARAM_ERROR</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">909</span></span><a class="headerlink" href="#_CPPv4N3zdl8DlSystem9ErrorCode36SNPE_DSP_RUNTIME_INVALID_PARAM_ERRORE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem9ErrorCode29SNPE_DSP_RUNTIME_SYSTEM_ERRORE">
+<span id="_CPPv3N3zdl8DlSystem9ErrorCode29SNPE_DSP_RUNTIME_SYSTEM_ERRORE"></span><span id="_CPPv2N3zdl8DlSystem9ErrorCode29SNPE_DSP_RUNTIME_SYSTEM_ERRORE"></span><span class="target" id="namespacezdl_1_1DlSystem_1a1408c17b1313b7297a780bd98a11fa8ba7cf8de0684e4075cea6a091fac0291f4"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SNPE_DSP_RUNTIME_SYSTEM_ERROR</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">910</span></span><a class="headerlink" href="#_CPPv4N3zdl8DlSystem9ErrorCode29SNPE_DSP_RUNTIME_SYSTEM_ERRORE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem9ErrorCode30SNPE_DSP_RUNTIME_CRASHED_ERRORE">
+<span id="_CPPv3N3zdl8DlSystem9ErrorCode30SNPE_DSP_RUNTIME_CRASHED_ERRORE"></span><span id="_CPPv2N3zdl8DlSystem9ErrorCode30SNPE_DSP_RUNTIME_CRASHED_ERRORE"></span><span class="target" id="namespacezdl_1_1DlSystem_1a1408c17b1313b7297a780bd98a11fa8baa01144794535c31133e706f862b8967d"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SNPE_DSP_RUNTIME_CRASHED_ERROR</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">911</span></span><a class="headerlink" href="#_CPPv4N3zdl8DlSystem9ErrorCode30SNPE_DSP_RUNTIME_CRASHED_ERRORE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem9ErrorCode26SNPE_DSP_BUFFER_SIZE_ERRORE">
+<span id="_CPPv3N3zdl8DlSystem9ErrorCode26SNPE_DSP_BUFFER_SIZE_ERRORE"></span><span id="_CPPv2N3zdl8DlSystem9ErrorCode26SNPE_DSP_BUFFER_SIZE_ERRORE"></span><span class="target" id="namespacezdl_1_1DlSystem_1a1408c17b1313b7297a780bd98a11fa8ba32f07731a8d6e4df1d58d9c9a3709d31"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SNPE_DSP_BUFFER_SIZE_ERROR</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">912</span></span><a class="headerlink" href="#_CPPv4N3zdl8DlSystem9ErrorCode26SNPE_DSP_BUFFER_SIZE_ERRORE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem9ErrorCode26SNPE_DSP_UDO_EXECUTE_ERRORE">
+<span id="_CPPv3N3zdl8DlSystem9ErrorCode26SNPE_DSP_UDO_EXECUTE_ERRORE"></span><span id="_CPPv2N3zdl8DlSystem9ErrorCode26SNPE_DSP_UDO_EXECUTE_ERRORE"></span><span class="target" id="namespacezdl_1_1DlSystem_1a1408c17b1313b7297a780bd98a11fa8bae494d7475b9a8471cabe72b255c74851"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SNPE_DSP_UDO_EXECUTE_ERROR</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">913</span></span><a class="headerlink" href="#_CPPv4N3zdl8DlSystem9ErrorCode26SNPE_DSP_UDO_EXECUTE_ERRORE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem9ErrorCode37SNPE_DSP_UDO_LIB_NOT_REGISTERED_ERRORE">
+<span id="_CPPv3N3zdl8DlSystem9ErrorCode37SNPE_DSP_UDO_LIB_NOT_REGISTERED_ERRORE"></span><span id="_CPPv2N3zdl8DlSystem9ErrorCode37SNPE_DSP_UDO_LIB_NOT_REGISTERED_ERRORE"></span><span class="target" id="namespacezdl_1_1DlSystem_1a1408c17b1313b7297a780bd98a11fa8bac6fafa4c4652f9140e8b902190463f43"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SNPE_DSP_UDO_LIB_NOT_REGISTERED_ERROR</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">914</span></span><a class="headerlink" href="#_CPPv4N3zdl8DlSystem9ErrorCode37SNPE_DSP_UDO_LIB_NOT_REGISTERED_ERRORE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem9ErrorCode44SNPE_DSP_UDO_INVALID_QUANTIZATION_TYPE_ERRORE">
+<span id="_CPPv3N3zdl8DlSystem9ErrorCode44SNPE_DSP_UDO_INVALID_QUANTIZATION_TYPE_ERRORE"></span><span id="_CPPv2N3zdl8DlSystem9ErrorCode44SNPE_DSP_UDO_INVALID_QUANTIZATION_TYPE_ERRORE"></span><span class="target" id="namespacezdl_1_1DlSystem_1a1408c17b1313b7297a780bd98a11fa8baeec13168d08eab01821eb731eb46d9ce"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SNPE_DSP_UDO_INVALID_QUANTIZATION_TYPE_ERROR</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">915</span></span><a class="headerlink" href="#_CPPv4N3zdl8DlSystem9ErrorCode44SNPE_DSP_UDO_INVALID_QUANTIZATION_TYPE_ERRORE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem9ErrorCode35SNPE_DSP_RUNTIME_INVALID_RPC_DRIVERE">
+<span id="_CPPv3N3zdl8DlSystem9ErrorCode35SNPE_DSP_RUNTIME_INVALID_RPC_DRIVERE"></span><span id="_CPPv2N3zdl8DlSystem9ErrorCode35SNPE_DSP_RUNTIME_INVALID_RPC_DRIVERE"></span><span class="target" id="namespacezdl_1_1DlSystem_1a1408c17b1313b7297a780bd98a11fa8ba27f9c2bedc73eedd238e733f970ed61d"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SNPE_DSP_RUNTIME_INVALID_RPC_DRIVER</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">916</span></span><a class="headerlink" href="#_CPPv4N3zdl8DlSystem9ErrorCode35SNPE_DSP_RUNTIME_INVALID_RPC_DRIVERE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem9ErrorCode37SNPE_DSP_RUNTIME_RPC_PERMISSION_ERRORE">
+<span id="_CPPv3N3zdl8DlSystem9ErrorCode37SNPE_DSP_RUNTIME_RPC_PERMISSION_ERRORE"></span><span id="_CPPv2N3zdl8DlSystem9ErrorCode37SNPE_DSP_RUNTIME_RPC_PERMISSION_ERRORE"></span><span class="target" id="namespacezdl_1_1DlSystem_1a1408c17b1313b7297a780bd98a11fa8ba038f69154bfc5c35bcec645a23037a67"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SNPE_DSP_RUNTIME_RPC_PERMISSION_ERROR</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">917</span></span><a class="headerlink" href="#_CPPv4N3zdl8DlSystem9ErrorCode37SNPE_DSP_RUNTIME_RPC_PERMISSION_ERRORE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem9ErrorCode36SNPE_DSP_RUNTIME_DSP_FILE_OPEN_ERRORE">
+<span id="_CPPv3N3zdl8DlSystem9ErrorCode36SNPE_DSP_RUNTIME_DSP_FILE_OPEN_ERRORE"></span><span id="_CPPv2N3zdl8DlSystem9ErrorCode36SNPE_DSP_RUNTIME_DSP_FILE_OPEN_ERRORE"></span><span class="target" id="namespacezdl_1_1DlSystem_1a1408c17b1313b7297a780bd98a11fa8ba64ae041a69ce11bc06fcaa590800a8ae"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SNPE_DSP_RUNTIME_DSP_FILE_OPEN_ERROR</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">918</span></span><a class="headerlink" href="#_CPPv4N3zdl8DlSystem9ErrorCode36SNPE_DSP_RUNTIME_DSP_FILE_OPEN_ERRORE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem9ErrorCode41SNPE_MODEL_VALIDATION_LAYER_NOT_SUPPORTEDE">
+<span id="_CPPv3N3zdl8DlSystem9ErrorCode41SNPE_MODEL_VALIDATION_LAYER_NOT_SUPPORTEDE"></span><span id="_CPPv2N3zdl8DlSystem9ErrorCode41SNPE_MODEL_VALIDATION_LAYER_NOT_SUPPORTEDE"></span><span class="target" id="namespacezdl_1_1DlSystem_1a1408c17b1313b7297a780bd98a11fa8bafffffd42146ba02a6e01e66003d7017c"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SNPE_MODEL_VALIDATION_LAYER_NOT_SUPPORTED</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">1000</span></span><a class="headerlink" href="#_CPPv4N3zdl8DlSystem9ErrorCode41SNPE_MODEL_VALIDATION_LAYER_NOT_SUPPORTEDE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem9ErrorCode47SNPE_MODEL_VALIDATION_LAYER_PARAM_NOT_SUPPORTEDE">
+<span id="_CPPv3N3zdl8DlSystem9ErrorCode47SNPE_MODEL_VALIDATION_LAYER_PARAM_NOT_SUPPORTEDE"></span><span id="_CPPv2N3zdl8DlSystem9ErrorCode47SNPE_MODEL_VALIDATION_LAYER_PARAM_NOT_SUPPORTEDE"></span><span class="target" id="namespacezdl_1_1DlSystem_1a1408c17b1313b7297a780bd98a11fa8baa033697ddf098eb32a23ab07763b9483"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SNPE_MODEL_VALIDATION_LAYER_PARAM_NOT_SUPPORTED</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">1001</span></span><a class="headerlink" href="#_CPPv4N3zdl8DlSystem9ErrorCode47SNPE_MODEL_VALIDATION_LAYER_PARAM_NOT_SUPPORTEDE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem9ErrorCode41SNPE_MODEL_VALIDATION_LAYER_PARAM_INVALIDE">
+<span id="_CPPv3N3zdl8DlSystem9ErrorCode41SNPE_MODEL_VALIDATION_LAYER_PARAM_INVALIDE"></span><span id="_CPPv2N3zdl8DlSystem9ErrorCode41SNPE_MODEL_VALIDATION_LAYER_PARAM_INVALIDE"></span><span class="target" id="namespacezdl_1_1DlSystem_1a1408c17b1313b7297a780bd98a11fa8bafdae3b9c275526a6f736329a8d20af30"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SNPE_MODEL_VALIDATION_LAYER_PARAM_INVALID</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">1002</span></span><a class="headerlink" href="#_CPPv4N3zdl8DlSystem9ErrorCode41SNPE_MODEL_VALIDATION_LAYER_PARAM_INVALIDE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem9ErrorCode41SNPE_MODEL_VALIDATION_LAYER_PARAM_MISSINGE">
+<span id="_CPPv3N3zdl8DlSystem9ErrorCode41SNPE_MODEL_VALIDATION_LAYER_PARAM_MISSINGE"></span><span id="_CPPv2N3zdl8DlSystem9ErrorCode41SNPE_MODEL_VALIDATION_LAYER_PARAM_MISSINGE"></span><span class="target" id="namespacezdl_1_1DlSystem_1a1408c17b1313b7297a780bd98a11fa8baed678f5112be7f684e6b04b28cee315a"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SNPE_MODEL_VALIDATION_LAYER_PARAM_MISSING</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">1003</span></span><a class="headerlink" href="#_CPPv4N3zdl8DlSystem9ErrorCode41SNPE_MODEL_VALIDATION_LAYER_PARAM_MISSINGE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem9ErrorCode53SNPE_MODEL_VALIDATION_LAYER_PARAM_COMBINATION_INVALIDE">
+<span id="_CPPv3N3zdl8DlSystem9ErrorCode53SNPE_MODEL_VALIDATION_LAYER_PARAM_COMBINATION_INVALIDE"></span><span id="_CPPv2N3zdl8DlSystem9ErrorCode53SNPE_MODEL_VALIDATION_LAYER_PARAM_COMBINATION_INVALIDE"></span><span class="target" id="namespacezdl_1_1DlSystem_1a1408c17b1313b7297a780bd98a11fa8ba05e1346988ec16370309067b66c48efb"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SNPE_MODEL_VALIDATION_LAYER_PARAM_COMBINATION_INVALID</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">1004</span></span><a class="headerlink" href="#_CPPv4N3zdl8DlSystem9ErrorCode53SNPE_MODEL_VALIDATION_LAYER_PARAM_COMBINATION_INVALIDE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem9ErrorCode44SNPE_MODEL_VALIDATION_LAYER_ORDERING_INVALIDE">
+<span id="_CPPv3N3zdl8DlSystem9ErrorCode44SNPE_MODEL_VALIDATION_LAYER_ORDERING_INVALIDE"></span><span id="_CPPv2N3zdl8DlSystem9ErrorCode44SNPE_MODEL_VALIDATION_LAYER_ORDERING_INVALIDE"></span><span class="target" id="namespacezdl_1_1DlSystem_1a1408c17b1313b7297a780bd98a11fa8ba893412f012b9a2645241bb38b5382dc9"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SNPE_MODEL_VALIDATION_LAYER_ORDERING_INVALID</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">1005</span></span><a class="headerlink" href="#_CPPv4N3zdl8DlSystem9ErrorCode44SNPE_MODEL_VALIDATION_LAYER_ORDERING_INVALIDE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem9ErrorCode40SNPE_MODEL_VALIDATION_INVALID_CONSTRAINTE">
+<span id="_CPPv3N3zdl8DlSystem9ErrorCode40SNPE_MODEL_VALIDATION_INVALID_CONSTRAINTE"></span><span id="_CPPv2N3zdl8DlSystem9ErrorCode40SNPE_MODEL_VALIDATION_INVALID_CONSTRAINTE"></span><span class="target" id="namespacezdl_1_1DlSystem_1a1408c17b1313b7297a780bd98a11fa8bae933d34043e0ee27a96d87824a2c7e63"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SNPE_MODEL_VALIDATION_INVALID_CONSTRAINT</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">1006</span></span><a class="headerlink" href="#_CPPv4N3zdl8DlSystem9ErrorCode40SNPE_MODEL_VALIDATION_INVALID_CONSTRAINTE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem9ErrorCode36SNPE_MODEL_VALIDATION_MISSING_BUFFERE">
+<span id="_CPPv3N3zdl8DlSystem9ErrorCode36SNPE_MODEL_VALIDATION_MISSING_BUFFERE"></span><span id="_CPPv2N3zdl8DlSystem9ErrorCode36SNPE_MODEL_VALIDATION_MISSING_BUFFERE"></span><span class="target" id="namespacezdl_1_1DlSystem_1a1408c17b1313b7297a780bd98a11fa8bafd0ed406895f4becfb7f2a65ef8b385b"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SNPE_MODEL_VALIDATION_MISSING_BUFFER</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">1007</span></span><a class="headerlink" href="#_CPPv4N3zdl8DlSystem9ErrorCode36SNPE_MODEL_VALIDATION_MISSING_BUFFERE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem9ErrorCode48SNPE_MODEL_VALIDATION_BUFFER_REUSE_NOT_SUPPORTEDE">
+<span id="_CPPv3N3zdl8DlSystem9ErrorCode48SNPE_MODEL_VALIDATION_BUFFER_REUSE_NOT_SUPPORTEDE"></span><span id="_CPPv2N3zdl8DlSystem9ErrorCode48SNPE_MODEL_VALIDATION_BUFFER_REUSE_NOT_SUPPORTEDE"></span><span class="target" id="namespacezdl_1_1DlSystem_1a1408c17b1313b7297a780bd98a11fa8bae8b2ddb1c8b599a5df927c4eda908942"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SNPE_MODEL_VALIDATION_BUFFER_REUSE_NOT_SUPPORTED</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">1008</span></span><a class="headerlink" href="#_CPPv4N3zdl8DlSystem9ErrorCode48SNPE_MODEL_VALIDATION_BUFFER_REUSE_NOT_SUPPORTEDE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem9ErrorCode49SNPE_MODEL_VALIDATION_LAYER_COULD_NOT_BE_ASSIGNEDE">
+<span id="_CPPv3N3zdl8DlSystem9ErrorCode49SNPE_MODEL_VALIDATION_LAYER_COULD_NOT_BE_ASSIGNEDE"></span><span id="_CPPv2N3zdl8DlSystem9ErrorCode49SNPE_MODEL_VALIDATION_LAYER_COULD_NOT_BE_ASSIGNEDE"></span><span class="target" id="namespacezdl_1_1DlSystem_1a1408c17b1313b7297a780bd98a11fa8ba8cffc3a77f64d7f8d7d7163dcb99ae4e"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SNPE_MODEL_VALIDATION_LAYER_COULD_NOT_BE_ASSIGNED</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">1009</span></span><a class="headerlink" href="#_CPPv4N3zdl8DlSystem9ErrorCode49SNPE_MODEL_VALIDATION_LAYER_COULD_NOT_BE_ASSIGNEDE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem9ErrorCode32SNPE_UDL_LAYER_EMPTY_UDL_NETWORKE">
+<span id="_CPPv3N3zdl8DlSystem9ErrorCode32SNPE_UDL_LAYER_EMPTY_UDL_NETWORKE"></span><span id="_CPPv2N3zdl8DlSystem9ErrorCode32SNPE_UDL_LAYER_EMPTY_UDL_NETWORKE"></span><span class="target" id="namespacezdl_1_1DlSystem_1a1408c17b1313b7297a780bd98a11fa8ba1d89d454b16977cd2df5ee5ea60082d1"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SNPE_UDL_LAYER_EMPTY_UDL_NETWORK</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">1100</span></span><a class="headerlink" href="#_CPPv4N3zdl8DlSystem9ErrorCode32SNPE_UDL_LAYER_EMPTY_UDL_NETWORKE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem9ErrorCode28SNPE_UDL_LAYER_PARAM_INVALIDE">
+<span id="_CPPv3N3zdl8DlSystem9ErrorCode28SNPE_UDL_LAYER_PARAM_INVALIDE"></span><span id="_CPPv2N3zdl8DlSystem9ErrorCode28SNPE_UDL_LAYER_PARAM_INVALIDE"></span><span class="target" id="namespacezdl_1_1DlSystem_1a1408c17b1313b7297a780bd98a11fa8ba9167432c35ad099d3de9163209778691"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SNPE_UDL_LAYER_PARAM_INVALID</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">1101</span></span><a class="headerlink" href="#_CPPv4N3zdl8DlSystem9ErrorCode28SNPE_UDL_LAYER_PARAM_INVALIDE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem9ErrorCode31SNPE_UDL_LAYER_INSTANCE_MISSINGE">
+<span id="_CPPv3N3zdl8DlSystem9ErrorCode31SNPE_UDL_LAYER_INSTANCE_MISSINGE"></span><span id="_CPPv2N3zdl8DlSystem9ErrorCode31SNPE_UDL_LAYER_INSTANCE_MISSINGE"></span><span class="target" id="namespacezdl_1_1DlSystem_1a1408c17b1313b7297a780bd98a11fa8ba110f0de6a5ece6ba615c0c81cfae0913"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SNPE_UDL_LAYER_INSTANCE_MISSING</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">1102</span></span><a class="headerlink" href="#_CPPv4N3zdl8DlSystem9ErrorCode31SNPE_UDL_LAYER_INSTANCE_MISSINGE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem9ErrorCode27SNPE_UDL_LAYER_SETUP_FAILEDE">
+<span id="_CPPv3N3zdl8DlSystem9ErrorCode27SNPE_UDL_LAYER_SETUP_FAILEDE"></span><span id="_CPPv2N3zdl8DlSystem9ErrorCode27SNPE_UDL_LAYER_SETUP_FAILEDE"></span><span class="target" id="namespacezdl_1_1DlSystem_1a1408c17b1313b7297a780bd98a11fa8ba0f62895991aabbf53057b17b6a9d4d25"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SNPE_UDL_LAYER_SETUP_FAILED</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">1103</span></span><a class="headerlink" href="#_CPPv4N3zdl8DlSystem9ErrorCode27SNPE_UDL_LAYER_SETUP_FAILEDE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem9ErrorCode23SNPE_UDL_EXECUTE_FAILEDE">
+<span id="_CPPv3N3zdl8DlSystem9ErrorCode23SNPE_UDL_EXECUTE_FAILEDE"></span><span id="_CPPv2N3zdl8DlSystem9ErrorCode23SNPE_UDL_EXECUTE_FAILEDE"></span><span class="target" id="namespacezdl_1_1DlSystem_1a1408c17b1313b7297a780bd98a11fa8bad0f8b533b5003b92033eff3ebeb4a128"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SNPE_UDL_EXECUTE_FAILED</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">1104</span></span><a class="headerlink" href="#_CPPv4N3zdl8DlSystem9ErrorCode23SNPE_UDL_EXECUTE_FAILEDE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem9ErrorCode23SNPE_UDL_BUNDLE_INVALIDE">
+<span id="_CPPv3N3zdl8DlSystem9ErrorCode23SNPE_UDL_BUNDLE_INVALIDE"></span><span id="_CPPv2N3zdl8DlSystem9ErrorCode23SNPE_UDL_BUNDLE_INVALIDE"></span><span class="target" id="namespacezdl_1_1DlSystem_1a1408c17b1313b7297a780bd98a11fa8baf8e2d6282ad45bbad244add0f3074b45"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SNPE_UDL_BUNDLE_INVALID</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">1105</span></span><a class="headerlink" href="#_CPPv4N3zdl8DlSystem9ErrorCode23SNPE_UDL_BUNDLE_INVALIDE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem9ErrorCode22SNPE_STD_LIBRARY_ERRORE">
+<span id="_CPPv3N3zdl8DlSystem9ErrorCode22SNPE_STD_LIBRARY_ERRORE"></span><span id="_CPPv2N3zdl8DlSystem9ErrorCode22SNPE_STD_LIBRARY_ERRORE"></span><span class="target" id="namespacezdl_1_1DlSystem_1a1408c17b1313b7297a780bd98a11fa8ba4e85212b5edb60069c15b1fce9e7d180"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SNPE_STD_LIBRARY_ERROR</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">1200</span></span><a class="headerlink" href="#_CPPv4N3zdl8DlSystem9ErrorCode22SNPE_STD_LIBRARY_ERRORE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem9ErrorCode22SNPE_UNKNOWN_EXCEPTIONE">
+<span id="_CPPv3N3zdl8DlSystem9ErrorCode22SNPE_UNKNOWN_EXCEPTIONE"></span><span id="_CPPv2N3zdl8DlSystem9ErrorCode22SNPE_UNKNOWN_EXCEPTIONE"></span><span class="target" id="namespacezdl_1_1DlSystem_1a1408c17b1313b7297a780bd98a11fa8badaf90127f947f74addaa0ba988698013"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SNPE_UNKNOWN_EXCEPTION</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">1210</span></span><a class="headerlink" href="#_CPPv4N3zdl8DlSystem9ErrorCode22SNPE_UNKNOWN_EXCEPTIONE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem9ErrorCode32SNPE_STORAGE_INVALID_KERNEL_REPOE">
+<span id="_CPPv3N3zdl8DlSystem9ErrorCode32SNPE_STORAGE_INVALID_KERNEL_REPOE"></span><span id="_CPPv2N3zdl8DlSystem9ErrorCode32SNPE_STORAGE_INVALID_KERNEL_REPOE"></span><span class="target" id="namespacezdl_1_1DlSystem_1a1408c17b1313b7297a780bd98a11fa8bad86c6c06a3d2f20a90ea58b9293a4000"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SNPE_STORAGE_INVALID_KERNEL_REPO</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">1300</span></span><a class="headerlink" href="#_CPPv4N3zdl8DlSystem9ErrorCode32SNPE_STORAGE_INVALID_KERNEL_REPOE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem9ErrorCode31SNPE_DLCACHING_INVALID_METADATAE">
+<span id="_CPPv3N3zdl8DlSystem9ErrorCode31SNPE_DLCACHING_INVALID_METADATAE"></span><span id="_CPPv2N3zdl8DlSystem9ErrorCode31SNPE_DLCACHING_INVALID_METADATAE"></span><span class="target" id="namespacezdl_1_1DlSystem_1a1408c17b1313b7297a780bd98a11fa8ba74c5212eb1e2cb8ce8f8750b32cbbfeb"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SNPE_DLCACHING_INVALID_METADATA</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">1500</span></span><a class="headerlink" href="#_CPPv4N3zdl8DlSystem9ErrorCode31SNPE_DLCACHING_INVALID_METADATAE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem9ErrorCode31SNPE_DLCACHING_INVALID_INITBLOBE">
+<span id="_CPPv3N3zdl8DlSystem9ErrorCode31SNPE_DLCACHING_INVALID_INITBLOBE"></span><span id="_CPPv2N3zdl8DlSystem9ErrorCode31SNPE_DLCACHING_INVALID_INITBLOBE"></span><span class="target" id="namespacezdl_1_1DlSystem_1a1408c17b1313b7297a780bd98a11fa8ba7614b5763fe766e7d51ea22da25d2acb"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SNPE_DLCACHING_INVALID_INITBLOB</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">1501</span></span><a class="headerlink" href="#_CPPv4N3zdl8DlSystem9ErrorCode31SNPE_DLCACHING_INVALID_INITBLOBE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem9ErrorCode38SNPE_INFRA_CLUSTERMGR_INSTANCE_INVALIDE">
+<span id="_CPPv3N3zdl8DlSystem9ErrorCode38SNPE_INFRA_CLUSTERMGR_INSTANCE_INVALIDE"></span><span id="_CPPv2N3zdl8DlSystem9ErrorCode38SNPE_INFRA_CLUSTERMGR_INSTANCE_INVALIDE"></span><span class="target" id="namespacezdl_1_1DlSystem_1a1408c17b1313b7297a780bd98a11fa8ba1804f3ca0cd81cf737c2ed80186404c7"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SNPE_INFRA_CLUSTERMGR_INSTANCE_INVALID</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">1600</span></span><a class="headerlink" href="#_CPPv4N3zdl8DlSystem9ErrorCode38SNPE_INFRA_CLUSTERMGR_INSTANCE_INVALIDE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem9ErrorCode41SNPE_INFRA_CLUSTERMGR_EXECUTE_SYNC_FAILEDE">
+<span id="_CPPv3N3zdl8DlSystem9ErrorCode41SNPE_INFRA_CLUSTERMGR_EXECUTE_SYNC_FAILEDE"></span><span id="_CPPv2N3zdl8DlSystem9ErrorCode41SNPE_INFRA_CLUSTERMGR_EXECUTE_SYNC_FAILEDE"></span><span class="target" id="namespacezdl_1_1DlSystem_1a1408c17b1313b7297a780bd98a11fa8bac6e942359e3fe847b653277188d71130"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SNPE_INFRA_CLUSTERMGR_EXECUTE_SYNC_FAILED</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">1601</span></span><a class="headerlink" href="#_CPPv4N3zdl8DlSystem9ErrorCode41SNPE_INFRA_CLUSTERMGR_EXECUTE_SYNC_FAILEDE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem9ErrorCode28SNPE_MEMORY_CORRUPTION_ERRORE">
+<span id="_CPPv3N3zdl8DlSystem9ErrorCode28SNPE_MEMORY_CORRUPTION_ERRORE"></span><span id="_CPPv2N3zdl8DlSystem9ErrorCode28SNPE_MEMORY_CORRUPTION_ERRORE"></span><span class="target" id="namespacezdl_1_1DlSystem_1a1408c17b1313b7297a780bd98a11fa8bad4f207b58f429d2625eeb560d08749e2"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SNPE_MEMORY_CORRUPTION_ERROR</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">1700</span></span><a class="headerlink" href="#_CPPv4N3zdl8DlSystem9ErrorCode28SNPE_MEMORY_CORRUPTION_ERRORE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2020-2023, Qualcomm Technologies, Inc..
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

@@ -1,0 +1,1010 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>File SnpeError.java &mdash; Snapdragon Neural Processing Engine SDK</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/custom_css.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/collapsible-lists/css/tree_view.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+        <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Qualcomm® Neural Processing SDK
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                v2.12.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../general/revision_history.html">Revision History</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/revision_history_windows.html">Revision History - Windows</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/overview.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/setup.html">Setup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/usergroup1.html">Network Models</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/usergroup5.html">Input Data and Preprocessing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/usergroup6.html">Tutorials and Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/usergroup10.html">Benchmarking and Accuracy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/tools.html">Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/usergroup11.html">Debug Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/api.html">API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/limitations.html">Limitations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/appx_ref.html">References</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Qualcomm® Neural Processing SDK</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>File SnpeError.java</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="file-snpeerror-java">
+<span id="id1"></span><h1>File SnpeError.java<a class="headerlink" href="#file-snpeerror-java" title="Permalink to this headline">¶</a></h1>
+<div class="contents local topic" id="contents">
+<p class="topic-title">Contents</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#definition-snpeerror-java" id="id2">Definition (<code class="docutils literal notranslate"><span class="pre">SnpeError.java</span></code>)</a></p></li>
+<li><p><a class="reference internal" href="#namespaces" id="id3">Namespaces</a></p></li>
+<li><p><a class="reference internal" href="#classes" id="id4">Classes</a></p></li>
+<li><p><a class="reference internal" href="#enums" id="id5">Enums</a></p></li>
+<li><p><a class="reference internal" href="#full-file-listing" id="id6">Full File Listing</a></p></li>
+</ul>
+</div>
+<div class="section" id="definition-snpeerror-java">
+<h2>Definition (<code class="docutils literal notranslate"><span class="pre">SnpeError.java</span></code>)<a class="headerlink" href="#definition-snpeerror-java" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="program_listing_file_SnpeError.java.html">Program Listing for File SnpeError.java</a></li>
+</ul>
+</div>
+</div>
+<div class="section" id="namespaces">
+<h2>Namespaces<a class="headerlink" href="#namespaces" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="namespace_com__qualcomm__qti__snpe.html#namespace-com-qualcomm-qti-snpe"><span class="std std-ref">Namespace com::qualcomm::qti::snpe</span></a></p></li>
+</ul>
+</div>
+<div class="section" id="classes">
+<h2>Classes<a class="headerlink" href="#classes" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="classcom_1_1qualcomm_1_1qti_1_1snpe_1_1SnpeError.html#exhale-class-classcom-1-1qualcomm-1-1qti-1-1snpe-1-1snpeerror"><span class="std std-ref">Class SnpeError</span></a></p></li>
+<li><p><a class="reference internal" href="classcom_1_1qualcomm_1_1qti_1_1snpe_1_1SnpeError_1_1IllegalArgsOrStateException.html#exhale-class-classcom-1-1qualcomm-1-1qti-1-1snpe-1-1snpeerror-1-1illegalargsorstateexception"><span class="std std-ref">Class SnpeError::IllegalArgsOrStateException</span></a></p></li>
+<li><p><a class="reference internal" href="classcom_1_1qualcomm_1_1qti_1_1snpe_1_1SnpeError_1_1InvalidInputException.html#exhale-class-classcom-1-1qualcomm-1-1qti-1-1snpe-1-1snpeerror-1-1invalidinputexception"><span class="std std-ref">Class SnpeError::InvalidInputException</span></a></p></li>
+<li><p><a class="reference internal" href="classcom_1_1qualcomm_1_1qti_1_1snpe_1_1SnpeError_1_1NativeException.html#exhale-class-classcom-1-1qualcomm-1-1qti-1-1snpe-1-1snpeerror-1-1nativeexception"><span class="std std-ref">Class SnpeError::NativeException</span></a></p></li>
+<li><p><a class="reference internal" href="classcom_1_1qualcomm_1_1qti_1_1snpe_1_1SnpeError_1_1SnpeException.html#exhale-class-classcom-1-1qualcomm-1-1qti-1-1snpe-1-1snpeerror-1-1snpeexception"><span class="std std-ref">Class SnpeError::SnpeException</span></a></p></li>
+<li><p><a class="reference internal" href="classcom_1_1qualcomm_1_1qti_1_1snpe_1_1SnpeError_1_1SnpeIOException.html#exhale-class-classcom-1-1qualcomm-1-1qti-1-1snpe-1-1snpeerror-1-1snpeioexception"><span class="std std-ref">Class SnpeError::SnpeIOException</span></a></p></li>
+</ul>
+</div>
+<div class="section" id="enums">
+<h2>Enums<a class="headerlink" href="#enums" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="enumcom_1_1qualcomm_1_1qti_1_1snpe_1_1SnpeError_1_1Error.html#exhale-enum-enumcom-1-1qualcomm-1-1qti-1-1snpe-1-1snpeerror-1-1error"><span class="std std-ref">Enum Error</span></a></p></li>
+</ul>
+</div>
+<div class="section" id="full-file-listing">
+<h2>Full File Listing<a class="headerlink" href="#full-file-listing" title="Permalink to this headline">¶</a></h2>
+<dl class="cpp type">
+<dt class="sig sig-object cpp" id="_CPPv4N3com8qualcomm3qti4snpeE">
+<span id="_CPPv3N3com8qualcomm3qti4snpeE"></span><span id="_CPPv2N3com8qualcomm3qti4snpeE"></span><span id="com::qualcomm::qti::snpe"></span><span class="target" id="namespacecom_1_1qualcomm_1_1qti_1_1snpe"></span><span class="k"><span class="pre">namespace</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">com</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">qualcomm</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">qti</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">snpe</span></span></span><br /></dt>
+<dd><dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv4N3com8qualcomm3qti4snpe9SnpeErrorE">
+<span id="_CPPv3N3com8qualcomm3qti4snpe9SnpeErrorE"></span><span id="_CPPv2N3com8qualcomm3qti4snpe9SnpeErrorE"></span><span id="com::qualcomm::qti::snpe::SnpeError"></span><span class="target" id="classcom_1_1qualcomm_1_1qti_1_1snpe_1_1SnpeError"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SnpeError</span></span></span><br /></dt>
+<dd><p><a class="reference internal" href="#classcom_1_1qualcomm_1_1qti_1_1snpe_1_1SnpeError"><span class="std std-ref">SnpeError</span></a> throws exceptions with code and message </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3com8qualcomm3qti4snpe9SnpeError18getSnpeNativeErrorE6String">
+<span id="_CPPv3N3com8qualcomm3qti4snpe9SnpeError18getSnpeNativeErrorE6String"></span><span id="_CPPv2N3com8qualcomm3qti4snpe9SnpeError18getSnpeNativeErrorE6String"></span><span id="com::qualcomm::qti::snpe::SnpeError::getSnpeNativeError__String"></span><span class="target" id="classcom_1_1qualcomm_1_1qti_1_1snpe_1_1SnpeError_1ac078223dfe14a3e9466e4d6661f3fbe2"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="n"><span class="pre">NativeException</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getSnpeNativeError</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">String</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">message</span></span><span class="sig-paren">)</span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3com8qualcomm3qti4snpe9SnpeError20getInvalidInputErrorE5Error6String">
+<span id="_CPPv3N3com8qualcomm3qti4snpe9SnpeError20getInvalidInputErrorE5Error6String"></span><span id="_CPPv2N3com8qualcomm3qti4snpe9SnpeError20getInvalidInputErrorE5Error6String"></span><span id="com::qualcomm::qti::snpe::SnpeError::getInvalidInputError__Error.String"></span><span class="target" id="classcom_1_1qualcomm_1_1qti_1_1snpe_1_1SnpeError_1a4953a5b6c8be9125bce3df25e94e3ba2"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="n"><span class="pre">InvalidInputException</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getInvalidInputError</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="classcom_1_1qualcomm_1_1qti_1_1snpe_1_1SnpeError.html#_CPPv4N3com8qualcomm3qti4snpe9SnpeError5ErrorEi6String" title="com::qualcomm::qti::snpe::SnpeError::Error"><span class="n"><span class="pre">Error</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">error</span></span>, <span class="n"><span class="pre">String</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">info</span></span><span class="sig-paren">)</span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3com8qualcomm3qti4snpe9SnpeError20getInvalidInputErrorE5Error">
+<span id="_CPPv3N3com8qualcomm3qti4snpe9SnpeError20getInvalidInputErrorE5Error"></span><span id="_CPPv2N3com8qualcomm3qti4snpe9SnpeError20getInvalidInputErrorE5Error"></span><span id="com::qualcomm::qti::snpe::SnpeError::getInvalidInputError__Error"></span><span class="target" id="classcom_1_1qualcomm_1_1qti_1_1snpe_1_1SnpeError_1ac05677d7fd7ed389a3d7a1b1deb14430"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="n"><span class="pre">InvalidInputException</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getInvalidInputError</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="classcom_1_1qualcomm_1_1qti_1_1snpe_1_1SnpeError.html#_CPPv4N3com8qualcomm3qti4snpe9SnpeError5ErrorEi6String" title="com::qualcomm::qti::snpe::SnpeError::Error"><span class="n"><span class="pre">Error</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">error</span></span><span class="sig-paren">)</span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3com8qualcomm3qti4snpe9SnpeError15getIllegalErrorE5Error">
+<span id="_CPPv3N3com8qualcomm3qti4snpe9SnpeError15getIllegalErrorE5Error"></span><span id="_CPPv2N3com8qualcomm3qti4snpe9SnpeError15getIllegalErrorE5Error"></span><span id="com::qualcomm::qti::snpe::SnpeError::getIllegalError__Error"></span><span class="target" id="classcom_1_1qualcomm_1_1qti_1_1snpe_1_1SnpeError_1ad2afdcfebf255bfb88d6f4b309362a5e"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="n"><span class="pre">IllegalArgsOrStateException</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getIllegalError</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="classcom_1_1qualcomm_1_1qti_1_1snpe_1_1SnpeError.html#_CPPv4N3com8qualcomm3qti4snpe9SnpeError5ErrorEi6String" title="com::qualcomm::qti::snpe::SnpeError::Error"><span class="n"><span class="pre">Error</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">error</span></span><span class="sig-paren">)</span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3com8qualcomm3qti4snpe9SnpeError15getIllegalErrorE5Error6String">
+<span id="_CPPv3N3com8qualcomm3qti4snpe9SnpeError15getIllegalErrorE5Error6String"></span><span id="_CPPv2N3com8qualcomm3qti4snpe9SnpeError15getIllegalErrorE5Error6String"></span><span id="com::qualcomm::qti::snpe::SnpeError::getIllegalError__Error.String"></span><span class="target" id="classcom_1_1qualcomm_1_1qti_1_1snpe_1_1SnpeError_1a595b99949a0bc26e0b57df3304d5dbd7"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="n"><span class="pre">IllegalArgsOrStateException</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getIllegalError</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="classcom_1_1qualcomm_1_1qti_1_1snpe_1_1SnpeError.html#_CPPv4N3com8qualcomm3qti4snpe9SnpeError5ErrorEi6String" title="com::qualcomm::qti::snpe::SnpeError::Error"><span class="n"><span class="pre">Error</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">error</span></span>, <span class="n"><span class="pre">String</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">info</span></span><span class="sig-paren">)</span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3com8qualcomm3qti4snpe9SnpeError10getIOErrorE5Error">
+<span id="_CPPv3N3com8qualcomm3qti4snpe9SnpeError10getIOErrorE5Error"></span><span id="_CPPv2N3com8qualcomm3qti4snpe9SnpeError10getIOErrorE5Error"></span><span id="com::qualcomm::qti::snpe::SnpeError::getIOError__Error"></span><span class="target" id="classcom_1_1qualcomm_1_1qti_1_1snpe_1_1SnpeError_1a312d46d7a944757dfa9ef7de2441956a"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="n"><span class="pre">SnpeIOException</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getIOError</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="classcom_1_1qualcomm_1_1qti_1_1snpe_1_1SnpeError.html#_CPPv4N3com8qualcomm3qti4snpe9SnpeError5ErrorEi6String" title="com::qualcomm::qti::snpe::SnpeError::Error"><span class="n"><span class="pre">Error</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">error</span></span><span class="sig-paren">)</span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3com8qualcomm3qti4snpe9SnpeError10getIOErrorE5Error6String">
+<span id="_CPPv3N3com8qualcomm3qti4snpe9SnpeError10getIOErrorE5Error6String"></span><span id="_CPPv2N3com8qualcomm3qti4snpe9SnpeError10getIOErrorE5Error6String"></span><span id="com::qualcomm::qti::snpe::SnpeError::getIOError__Error.String"></span><span class="target" id="classcom_1_1qualcomm_1_1qti_1_1snpe_1_1SnpeError_1a5fc9b8c02d51ee601e032009367e76f0"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="n"><span class="pre">SnpeIOException</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getIOError</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="classcom_1_1qualcomm_1_1qti_1_1snpe_1_1SnpeError.html#_CPPv4N3com8qualcomm3qti4snpe9SnpeError5ErrorEi6String" title="com::qualcomm::qti::snpe::SnpeError::Error"><span class="n"><span class="pre">Error</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">error</span></span>, <span class="n"><span class="pre">String</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">info</span></span><span class="sig-paren">)</span><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-static-functions">Public Static Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3com8qualcomm3qti4snpe9SnpeError11getInstanceEv">
+<span id="_CPPv3N3com8qualcomm3qti4snpe9SnpeError11getInstanceEv"></span><span id="_CPPv2N3com8qualcomm3qti4snpe9SnpeError11getInstanceEv"></span><span id="com::qualcomm::qti::snpe::SnpeError::getInstance"></span><span class="target" id="classcom_1_1qualcomm_1_1qti_1_1snpe_1_1SnpeError_1a37a06da5ccde1feee1f252d5a7dea401"></span><span class="k"><span class="pre">static</span></span><span class="w"> </span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><a class="reference internal" href="classcom_1_1qualcomm_1_1qti_1_1snpe_1_1SnpeError.html#_CPPv4N3com8qualcomm3qti4snpe9SnpeErrorE" title="com::qualcomm::qti::snpe::SnpeError"><span class="n"><span class="pre">SnpeError</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getInstance</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-private-functions">Private Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3com8qualcomm3qti4snpe9SnpeError9SnpeErrorEv">
+<span id="_CPPv3N3com8qualcomm3qti4snpe9SnpeError9SnpeErrorEv"></span><span id="_CPPv2N3com8qualcomm3qti4snpe9SnpeError9SnpeErrorEv"></span><span id="com::qualcomm::qti::snpe::SnpeError::SnpeError"></span><span class="target" id="classcom_1_1qualcomm_1_1qti_1_1snpe_1_1SnpeError_1a1cbe0d2a9b70399ffe8a1816c69ea133"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SnpeError</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3com8qualcomm3qti4snpe9SnpeError9SnpeErrorEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3com8qualcomm3qti4snpe9SnpeError15getErrorMessageEi6String6String">
+<span id="_CPPv3N3com8qualcomm3qti4snpe9SnpeError15getErrorMessageEi6String6String"></span><span id="_CPPv2N3com8qualcomm3qti4snpe9SnpeError15getErrorMessageEi6String6String"></span><span id="com::qualcomm::qti::snpe::SnpeError::getErrorMessage__i.String.String"></span><span class="target" id="classcom_1_1qualcomm_1_1qti_1_1snpe_1_1SnpeError_1a5a7635b06993f9bb9e0b821331198ffb"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="n"><span class="pre">String</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getErrorMessage</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">code</span></span>, <span class="n"><span class="pre">String</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">message</span></span>, <span class="n"><span class="pre">String</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">info</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3com8qualcomm3qti4snpe9SnpeError15getErrorMessageEi6String6String" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-private-static-attributes">Private Static Attributes</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N3com8qualcomm3qti4snpe9SnpeError9mInstanceE">
+<span id="_CPPv3N3com8qualcomm3qti4snpe9SnpeError9mInstanceE"></span><span id="_CPPv2N3com8qualcomm3qti4snpe9SnpeError9mInstanceE"></span><span id="com::qualcomm::qti::snpe::SnpeError::mInstance__SnpeError"></span><span class="target" id="classcom_1_1qualcomm_1_1qti_1_1snpe_1_1SnpeError_1a8c83fc8130bee92f5cc27d3b632edf53"></span><span class="k"><span class="pre">static</span></span><span class="w"> </span><a class="reference internal" href="classcom_1_1qualcomm_1_1qti_1_1snpe_1_1SnpeError.html#_CPPv4N3com8qualcomm3qti4snpe9SnpeErrorE" title="com::qualcomm::qti::snpe::SnpeError"><span class="n"><span class="pre">SnpeError</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">mInstance</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="n"><span class="pre">null</span></span><a class="headerlink" href="#_CPPv4N3com8qualcomm3qti4snpe9SnpeError9mInstanceE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<dl class="cpp enum">
+<dt class="sig sig-object cpp" id="_CPPv4N3com8qualcomm3qti4snpe9SnpeError3com8qualcomm3qti4snpe9SnpeError5ErrorE">
+<span id="_CPPv3N3com8qualcomm3qti4snpe9SnpeError3com8qualcomm3qti4snpe9SnpeError5ErrorE"></span><span id="_CPPv2N3com8qualcomm3qti4snpe9SnpeError3com8qualcomm3qti4snpe9SnpeError5ErrorE"></span><span class="target" id="enumcom_1_1qualcomm_1_1qti_1_1snpe_1_1SnpeError_1_1Error"></span><span class="k"><span class="pre">enum</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Error</span></span></span><br /></dt>
+<dd><p><a class="reference internal" href="#enumcom_1_1qualcomm_1_1qti_1_1snpe_1_1SnpeError_1_1Error"><span class="std std-ref">Error</span></a> error messages with their codes </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3com8qualcomm3qti4snpe9SnpeError5ErrorEi6String">
+<span id="_CPPv3N3com8qualcomm3qti4snpe9SnpeError5ErrorEi6String"></span><span id="_CPPv2N3com8qualcomm3qti4snpe9SnpeError5ErrorEi6String"></span><span id="com::qualcomm::qti::snpe::SnpeError::Error__i.String"></span><span class="target" id="enumcom_1_1qualcomm_1_1qti_1_1snpe_1_1SnpeError_1_1Error_1adb01bf354790d3e163e919e63e23a7c4"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Error</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">code</span></span>, <span class="n"><span class="pre">String</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">message</span></span><span class="sig-paren">)</span><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp">
+<span class="target" id="enumcom_1_1qualcomm_1_1qti_1_1snpe_1_1SnpeError_1_1Error_1aebf3cddf354201f2eab73e151f4cd7fd"></span><span class="sig-name descname"><span class="pre">NETWORK_BUNDLE_ACCESS_ERROR</span>&#160;&#160; <span class="pre">=(10,</span> <span class="pre">&quot;Unable</span> <span class="pre">to</span> <span class="pre">access</span> <span class="pre">network</span> <span class="pre">initialization</span> <span class="pre">bundle!&quot;)</span></span></dt>
+<dd><p>Exception thrown while accessing network bundle</p>
+<p>code = 10</p>
+<p>message = Unable to access network initialization bundle! </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp">
+<span class="target" id="enumcom_1_1qualcomm_1_1qti_1_1snpe_1_1SnpeError_1_1Error_1ae907c005a47570fdd65edb295f3953cc"></span><span class="sig-name descname"><span class="pre">NETWORK_OBJECT_ACCESS_ERROR</span>&#160;&#160; <span class="pre">=(11,</span> <span class="pre">&quot;Unable</span> <span class="pre">to</span> <span class="pre">access</span> <span class="pre">network</span> <span class="pre">object!&quot;)</span></span></dt>
+<dd><p>Exception thrown while accessing network object</p>
+<p>code = 11</p>
+<p>message = Unable to access network object! </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp">
+<span class="target" id="enumcom_1_1qualcomm_1_1qti_1_1snpe_1_1SnpeError_1_1Error_1ae899186a688f05d2c6abd88b593c0d17"></span><span class="sig-name descname"><span class="pre">NETWORK_RELEASE_ERROR</span>&#160;&#160; <span class="pre">=(12,</span> <span class="pre">&quot;Unable</span> <span class="pre">to</span> <span class="pre">release</span> <span class="pre">managed</span> <span class="pre">network!&quot;)</span></span></dt>
+<dd><p>Exception thrown while releasing network.</p>
+<p>code = 12</p>
+<p>message = Unable to release managed network! </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp">
+<span class="target" id="enumcom_1_1qualcomm_1_1qti_1_1snpe_1_1SnpeError_1_1Error_1ae48954bfad958e743a3c0f1d8249cbf1"></span><span class="sig-name descname"><span class="pre">MODEL_READ_ERROR</span>&#160;&#160; <span class="pre">=(13,</span> <span class="pre">&quot;Unable</span> <span class="pre">to</span> <span class="pre">read</span> <span class="pre">model</span> <span class="pre">file</span> <span class="pre">path!&quot;)</span></span></dt>
+<dd><p>Exception thrown while reading model file from file path.</p>
+<p>code = 13</p>
+<p>message = Unable to read model file path! </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp">
+<span class="target" id="enumcom_1_1qualcomm_1_1qti_1_1snpe_1_1SnpeError_1_1Error_1ae8f802070e2dfeeb5ba74960be5933da"></span><span class="sig-name descname"><span class="pre">BUFFER_STREAM_ACCESS_ERROR</span>&#160;&#160; <span class="pre">=(14,</span> <span class="pre">&quot;Unable</span> <span class="pre">to</span> <span class="pre">access</span> <span class="pre">model</span> <span class="pre">NativeBufferOutputStream!&quot;)</span></span></dt>
+<dd><p>Exception thrown while accessing model BufferOutputStream.</p>
+<p>code = 14</p>
+<p>message = Unable to access model NativeBufferOutputStream! </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp">
+<span class="target" id="enumcom_1_1qualcomm_1_1qti_1_1snpe_1_1SnpeError_1_1Error_1aa11d95a00b73b24b462d520fc2a3c66b"></span><span class="sig-name descname"><span class="pre">RUNTIME_ORDINAL_ERROR</span>&#160;&#160; <span class="pre">=(15,</span> <span class="pre">&quot;Runtime</span> <span class="pre">ordinal</span> <span class="pre">error&quot;)</span></span></dt>
+<dd><p>Exception thrown when passed ordinal is greater than supported runtimes size.</p>
+<p>code = 15</p>
+<p>message = Runtime ordinal error! </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp">
+<span class="target" id="enumcom_1_1qualcomm_1_1qti_1_1snpe_1_1SnpeError_1_1Error_1a2c26219abe9ddc6b857cb977b5bee493"></span><span class="sig-name descname"><span class="pre">BUFFER_ENCODING_ERROR</span>&#160;&#160; <span class="pre">=(16,</span> <span class="pre">&quot;Failed</span> <span class="pre">to</span> <span class="pre">cast</span> <span class="pre">UserBuffer</span> <span class="pre">Encoding</span> <span class="pre">to</span> <span class="pre">TF8.&quot;)</span></span></dt>
+<dd><p>Exception thrown while casting user buffer encoding to TF8.</p>
+<p>code = 16</p>
+<p>message = Failed to cast UserBuffer encoding to TF8. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp">
+<span class="target" id="enumcom_1_1qualcomm_1_1qti_1_1snpe_1_1SnpeError_1_1Error_1a2325aecd17d100d01cc772f4e2c5a3bf"></span><span class="sig-name descname"><span class="pre">NETWORK_TENSOR_ACCESS_ERROR</span>&#160;&#160; <span class="pre">=(17,</span> <span class="pre">&quot;Unable</span> <span class="pre">to</span> <span class="pre">access</span> <span class="pre">network</span> <span class="pre">tensor.&quot;)</span></span></dt>
+<dd><p>Exception thrown while accessing network tensor.</p>
+<p>code = 17</p>
+<p>message = Unable to access network tensor. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp">
+<span class="target" id="enumcom_1_1qualcomm_1_1qti_1_1snpe_1_1SnpeError_1_1Error_1a547b190d2a02f71e575401998de76d88"></span><span class="sig-name descname"><span class="pre">INPUT_TENSOR_ACCESS_ERROR</span>&#160;&#160; <span class="pre">=(18,</span> <span class="pre">&quot;Unable</span> <span class="pre">to</span> <span class="pre">access</span> <span class="pre">input</span> <span class="pre">tensor</span> <span class="pre">ByteBuffer!&quot;)</span></span></dt>
+<dd><p>Exception thrown while accessing input tensor byte buffer.</p>
+<p>code = 18</p>
+<p>message = Unable to access input tensor ByteBuffer! </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp">
+<span class="target" id="enumcom_1_1qualcomm_1_1qti_1_1snpe_1_1SnpeError_1_1Error_1a8fcecd2d2dffe1aebfd5277b64acf1e9"></span><span class="sig-name descname"><span class="pre">INVALID_INPUT_TENSOR_NULL_EMPTY</span>&#160;&#160; <span class="pre">=(19,</span> <span class="pre">&quot;Input</span> <span class="pre">tensor</span> <span class="pre">map</span> <span class="pre">can</span> <span class="pre">not</span> <span class="pre">be</span> <span class="pre">null</span> <span class="pre">or</span> <span class="pre">empty!&quot;)</span></span></dt>
+<dd><p>Exception thrown if input tensor map is null or empty.</p>
+<p>code = 19</p>
+<p>message = Input tensor map can not be null or empty! </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp">
+<span class="target" id="enumcom_1_1qualcomm_1_1qti_1_1snpe_1_1SnpeError_1_1Error_1a56e938c8c1476715261eb837f1d48c35"></span><span class="sig-name descname"><span class="pre">INVALID_OUTPUT_TENSOR_NULL_EMPTY</span>&#160;&#160; <span class="pre">=(20,</span> <span class="pre">&quot;Output</span> <span class="pre">tensor</span> <span class="pre">map</span> <span class="pre">can</span> <span class="pre">not</span> <span class="pre">be</span> <span class="pre">null</span> <span class="pre">or</span> <span class="pre">empty&quot;)</span></span></dt>
+<dd><p>Exception thrown if output tensor map is null or empty.</p>
+<p>code = 20</p>
+<p>message = Output tensor map can not be null or empty </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp">
+<span class="target" id="enumcom_1_1qualcomm_1_1qti_1_1snpe_1_1SnpeError_1_1Error_1ad897eb38ffd514fd6d0a8a6ac333a1eb"></span><span class="sig-name descname"><span class="pre">INVALID_TENSOR_NULL</span>&#160;&#160; <span class="pre">=(21,</span> <span class="pre">&quot;Tensor</span> <span class="pre">can</span> <span class="pre">not</span> <span class="pre">be</span> <span class="pre">null:&quot;)</span></span></dt>
+<dd><p>Exception thrown if tensor is null.</p>
+<p>code = 21</p>
+<p>message = <a class="reference internal" href="file_Tensor.java.html#classcom_1_1qualcomm_1_1qti_1_1snpe_1_1Tensor"><span class="std std-ref">Tensor</span></a> can not be null : “name” </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp">
+<span class="target" id="enumcom_1_1qualcomm_1_1qti_1_1snpe_1_1SnpeError_1_1Error_1a2dd6850cb3f9d6f227f6b3d8ef4fe5be"></span><span class="sig-name descname"><span class="pre">INVALID_TENSOR_INSTANCE</span>&#160;&#160; <span class="pre">=(22,</span> <span class="pre">&quot;Input</span> <span class="pre">Tensor</span> <span class="pre">must</span> <span class="pre">be</span> <span class="pre">an</span> <span class="pre">instance</span> <span class="pre">of</span> <span class="pre">&quot;)</span></span></dt>
+<dd><p>Exception thrown if input tensor instance is not of the expected type.</p>
+<p>code = 22</p>
+<p>message = Input <a class="reference internal" href="file_Tensor.java.html#classcom_1_1qualcomm_1_1qti_1_1snpe_1_1Tensor"><span class="std std-ref">Tensor</span></a> must be an instance of “correct_instance_type” </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp">
+<span class="target" id="enumcom_1_1qualcomm_1_1qti_1_1snpe_1_1SnpeError_1_1Error_1acc9f9a8969623df11e1e34235febf1d1"></span><span class="sig-name descname"><span class="pre">INVALID_INPUT_NETWORK_TENSORS</span>&#160;&#160; <span class="pre">=(23,</span> <span class="pre">&quot;Tensor</span> <span class="pre">not</span> <span class="pre">amongst</span> <span class="pre">network</span> <span class="pre">input</span> <span class="pre">tensors:</span> <span class="pre">&quot;)</span></span></dt>
+<dd><p>Exception thrown if tensor is not present in input tensors.</p>
+<p>code = 23</p>
+<p>message = <a class="reference internal" href="file_Tensor.java.html#classcom_1_1qualcomm_1_1qti_1_1snpe_1_1Tensor"><span class="std std-ref">Tensor</span></a> not amongst network input tensors: “incorrect_tensor_name” </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp">
+<span class="target" id="enumcom_1_1qualcomm_1_1qti_1_1snpe_1_1SnpeError_1_1Error_1a5937e1163c90500824892ac2de3ba4c7"></span><span class="sig-name descname"><span class="pre">INVALID_OUTPUT_INSTANCE</span>&#160;&#160; <span class="pre">=(24,</span> <span class="pre">&quot;Output</span> <span class="pre">Tensor</span> <span class="pre">must</span> <span class="pre">be</span> <span class="pre">an</span> <span class="pre">instance</span> <span class="pre">of</span> <span class="pre">&quot;)</span></span></dt>
+<dd><p>Exception thrown if output tensor instance is not of the expected type.</p>
+<p>code = 24</p>
+<p>message = Output <a class="reference internal" href="file_Tensor.java.html#classcom_1_1qualcomm_1_1qti_1_1snpe_1_1Tensor"><span class="std std-ref">Tensor</span></a> must be an instance of “correct_instance_type” </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp">
+<span class="target" id="enumcom_1_1qualcomm_1_1qti_1_1snpe_1_1SnpeError_1_1Error_1a237c5eb013d81ac0f9da1fcd17ac8be8"></span><span class="sig-name descname"><span class="pre">INVALID_OUTPUT_NETWORK_TENSORS</span>&#160;&#160; <span class="pre">=(25,</span> <span class="pre">&quot;Tensor</span> <span class="pre">not</span> <span class="pre">amongst</span> <span class="pre">network</span> <span class="pre">output</span> <span class="pre">tensors:</span> <span class="pre">&quot;)</span></span></dt>
+<dd><p>Exception thrown if tensor is not present in output tensors.</p>
+<p>code = 25</p>
+<p>message = <a class="reference internal" href="file_Tensor.java.html#classcom_1_1qualcomm_1_1qti_1_1snpe_1_1Tensor"><span class="std std-ref">Tensor</span></a> not amongst network output tensors: “incorrect_tensor_name” </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp">
+<span class="target" id="enumcom_1_1qualcomm_1_1qti_1_1snpe_1_1SnpeError_1_1Error_1ac2f8a957d23076b9145a84b46fefa85c"></span><span class="sig-name descname"><span class="pre">INVALID_TENSOR_SHAPE</span>&#160;&#160; <span class="pre">=(26,</span> <span class="pre">&quot;&quot;)</span></span></dt>
+<dd><p>Exception thrown if tensor shape is invalid</p>
+<p>code = 26</p>
+<p>message = <a class="reference internal" href="file_Tensor.java.html#classcom_1_1qualcomm_1_1qti_1_1snpe_1_1Tensor"><span class="std std-ref">Tensor</span></a> “tensor_name” has unexpected shape Expected: “expected_length”, Actual: “actual_length” </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp">
+<span class="target" id="enumcom_1_1qualcomm_1_1qti_1_1snpe_1_1SnpeError_1_1Error_1aa185bed7efe848e270876ac2fc5c96cc"></span><span class="sig-name descname"><span class="pre">INVALID_TENSOR_DIMENSION</span>&#160;&#160; <span class="pre">=(27,</span> <span class="pre">&quot;&quot;)</span></span></dt>
+<dd><p>Exception thrown if tensor dimension is invalid</p>
+<p>code = 27</p>
+<p>message = <a class="reference internal" href="file_Tensor.java.html#classcom_1_1qualcomm_1_1qti_1_1snpe_1_1Tensor"><span class="std std-ref">Tensor</span></a> “tensor_name” has unexpected dimension : “dimension_value” Expected : “expected_dimension”, Actual: “actual_dimension” </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp">
+<span class="target" id="enumcom_1_1qualcomm_1_1qti_1_1snpe_1_1SnpeError_1_1Error_1ae0d599d97d758e3ae20bc67aefe2663e"></span><span class="sig-name descname"><span class="pre">ILLEGAL_TENSOR_SHAPE_NULL_EMPTY</span>&#160;&#160; <span class="pre">=(28,</span> <span class="pre">&quot;Tensor</span> <span class="pre">shape</span> <span class="pre">can</span> <span class="pre">not</span> <span class="pre">be</span> <span class="pre">null</span> <span class="pre">or</span> <span class="pre">empty!&quot;)</span></span></dt>
+<dd><p>Exception thrown if tensor shape is null or empty.</p>
+<p>code = 28</p>
+<p>message = <a class="reference internal" href="file_Tensor.java.html#classcom_1_1qualcomm_1_1qti_1_1snpe_1_1Tensor"><span class="std std-ref">Tensor</span></a> shape can not be null or empty!. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp">
+<span class="target" id="enumcom_1_1qualcomm_1_1qti_1_1snpe_1_1SnpeError_1_1Error_1a1f03d0e8603a106c4729f9d46ae351b7"></span><span class="sig-name descname"><span class="pre">ILLEGAL_SHAPE_DIM</span>&#160;&#160; <span class="pre">=(29,</span> <span class="pre">&quot;Shape</span> <span class="pre">dimension</span> <span class="pre">can</span> <span class="pre">not</span> <span class="pre">be</span> <span class="pre">&lt;</span> <span class="pre">1!&quot;)</span></span></dt>
+<dd><p>Exception thrown if shape dimension is less than 1.</p>
+<p>code = 29</p>
+<p>message = Shape dimension can not be &lt; 1! </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp">
+<span class="target" id="enumcom_1_1qualcomm_1_1qti_1_1snpe_1_1SnpeError_1_1Error_1a9f56c73ba38a3a9ddd1507da8568733c"></span><span class="sig-name descname"><span class="pre">ILLEGAL_BUFFER_SIZE</span>&#160;&#160; <span class="pre">=(30,</span> <span class="pre">&quot;Buffer</span> <span class="pre">size</span> <span class="pre">has</span> <span class="pre">to</span> <span class="pre">be</span> <span class="pre">greater</span> <span class="pre">than</span> <span class="pre">0&quot;)</span></span></dt>
+<dd><p>Exception thrown if buffer size is less than or equal to zero.</p>
+<p>code = 30</p>
+<p>message = Buffer size has to be greater than 0. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp">
+<span class="target" id="enumcom_1_1qualcomm_1_1qti_1_1snpe_1_1SnpeError_1_1Error_1a56da577bdb31b66442e5dcc01dee175f"></span><span class="sig-name descname"><span class="pre">ILLEGAL_STRIDE</span>&#160;&#160; <span class="pre">=(31,</span> <span class="pre">&quot;Strides</span> <span class="pre">can</span> <span class="pre">not</span> <span class="pre">be</span> <span class="pre">less</span> <span class="pre">than</span> <span class="pre">1&quot;)</span></span></dt>
+<dd><p>Exception thrown if stride is less than 1.</p>
+<p>code = 31</p>
+<p>message = Strides can not be less than 1 </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp">
+<span class="target" id="enumcom_1_1qualcomm_1_1qti_1_1snpe_1_1SnpeError_1_1Error_1a8f280289d65e4dfd23601ddde10a558b"></span><span class="sig-name descname"><span class="pre">ILLEGAL_STEP_ZERO</span>&#160;&#160; <span class="pre">=(32,</span> <span class="pre">&quot;Step</span> <span class="pre">representing</span> <span class="pre">0.0</span> <span class="pre">has</span> <span class="pre">to</span> <span class="pre">be</span> <span class="pre">a</span> <span class="pre">valid</span> <span class="pre">8-bit</span> <span class="pre">value&quot;)</span></span></dt>
+<dd><p>Exception thrown if step representing 0.0 is not a valid 8-bit value.</p>
+<p>code = 32</p>
+<p>message = Step representing 0.0 has to be a valid 8-bit value </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp">
+<span class="target" id="enumcom_1_1qualcomm_1_1qti_1_1snpe_1_1SnpeError_1_1Error_1af9e68021889af8a5aa64894c97441069"></span><span class="sig-name descname"><span class="pre">ILLEGAL_STEP_VALUE</span>&#160;&#160; <span class="pre">=(33,</span> <span class="pre">&quot;Step</span> <span class="pre">size</span> <span class="pre">has</span> <span class="pre">to</span> <span class="pre">be</span> <span class="pre">a</span> <span class="pre">positive</span> <span class="pre">value&quot;)</span></span></dt>
+<dd><p>Exception thrown if step size is a negative value.</p>
+<p>code = 33</p>
+<p>message = Step size has to be a positive value. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp">
+<span class="target" id="enumcom_1_1qualcomm_1_1qti_1_1snpe_1_1SnpeError_1_1Error_1a411a601cd4997991c1d53476010d5298"></span><span class="sig-name descname"><span class="pre">ILLEGAL_BUFFER_NULL</span>&#160;&#160; <span class="pre">=(34,</span> <span class="pre">&quot;Buffer</span> <span class="pre">must</span> <span class="pre">be</span> <span class="pre">allocated,</span> <span class="pre">not</span> <span class="pre">null&quot;)</span></span></dt>
+<dd><p>Exception thrown if buffer is null.</p>
+<p>code = 34</p>
+<p>message = Buffer must be allocated, not null </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp">
+<span class="target" id="enumcom_1_1qualcomm_1_1qti_1_1snpe_1_1SnpeError_1_1Error_1abb17eda85a3d2346ac8ec63acf712ab8"></span><span class="sig-name descname"><span class="pre">ILLEGAL_TENSOR_NAME</span>&#160;&#160; <span class="pre">=(35,</span> <span class="pre">&quot;Network</span> <span class="pre">has</span> <span class="pre">no</span> <span class="pre">tensor</span> <span class="pre">with</span> <span class="pre">name</span> <span class="pre">&quot;)</span></span></dt>
+<dd><p>Exception thrown if network has unknown tensor.</p>
+<p>code = 35</p>
+<p>message = Network has no tensor with name “unknown_tensor_name” </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp">
+<span class="target" id="enumcom_1_1qualcomm_1_1qti_1_1snpe_1_1SnpeError_1_1Error_1a37e759100b88996fff26566bab5ace14"></span><span class="sig-name descname"><span class="pre">ILLEGAL_NETWORK_RELEASE</span>&#160;&#160; <span class="pre">=(36,</span> <span class="pre">&quot;Network</span> <span class="pre">instance</span> <span class="pre">already</span> <span class="pre">released!&quot;)</span></span></dt>
+<dd><p>Exception thrown if trying to release an already released network instance.</p>
+<p>code = 36</p>
+<p>message = Network instance already released! </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp">
+<span class="target" id="enumcom_1_1qualcomm_1_1qti_1_1snpe_1_1SnpeError_1_1Error_1a544e5a16bd037a7e1c54184c4514c49c"></span><span class="sig-name descname"><span class="pre">ILLEGAL_SELECTED_LAYER</span>&#160;&#160; <span class="pre">=(37,</span> <span class="pre">&quot;Selected</span> <span class="pre">layer</span> <span class="pre">is</span> <span class="pre">not</span> <span class="pre">amongst</span> <span class="pre">network</span> <span class="pre">output</span> <span class="pre">layers:</span> <span class="pre">&quot;)</span></span></dt>
+<dd><p>Exception thrown if selected layer is not present in output layers.</p>
+<p>code = 37</p>
+<p>message = Selected layer is not amongst network output layers: “incorrect_layer_name” </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp">
+<span class="target" id="enumcom_1_1qualcomm_1_1qti_1_1snpe_1_1SnpeError_1_1Error_1a083f85033909b483ae37601ee2903dc7"></span><span class="sig-name descname"><span class="pre">ILLEGAL_USER_BUFFER_TENSOR</span>&#160;&#160; <span class="pre">=(38,</span> <span class="pre">&quot;UserBuffer</span> <span class="pre">tensor</span> <span class="pre">encodings</span> <span class="pre">do</span> <span class="pre">not</span> <span class="pre">match&quot;)</span></span></dt>
+<dd><p>Exception thrown if user buffer tensor enscodings don’t match.</p>
+<p>code = 38</p>
+<p>message = UserBuffer tensor encodings do not match. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp">
+<span class="target" id="enumcom_1_1qualcomm_1_1qti_1_1snpe_1_1SnpeError_1_1Error_1ab86e5d8fd6f4f0c1e3ede7f907c9f727"></span><span class="sig-name descname"><span class="pre">TENSOR_BUNDLE_ACCESS_ERROR</span>&#160;&#160; <span class="pre">=(39,</span> <span class="pre">&quot;Unable</span> <span class="pre">to</span> <span class="pre">access</span> <span class="pre">tensor</span> <span class="pre">initialization</span> <span class="pre">bundle!&quot;)</span></span></dt>
+<dd><p>Exception thrown while accessing tensor initialization bundle.</p>
+<p>code = 39</p>
+<p>message = Unable to access tensor initialization bundle! </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp">
+<span class="target" id="enumcom_1_1qualcomm_1_1qti_1_1snpe_1_1SnpeError_1_1Error_1a03f30dfdb84e24a4bd167c2ce6849886"></span><span class="sig-name descname"><span class="pre">TENSOR_CREATION_ERROR</span>&#160;&#160; <span class="pre">=(40,</span> <span class="pre">&quot;Unable</span> <span class="pre">to</span> <span class="pre">create</span> <span class="pre">native</span> <span class="pre">tensor!&quot;)</span></span></dt>
+<dd><p>Exception thrown while creating native tensor</p>
+<p>code = 40</p>
+<p>message = Unable to create native tensor! </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp">
+<span class="target" id="enumcom_1_1qualcomm_1_1qti_1_1snpe_1_1SnpeError_1_1Error_1a6986ba07c29c55bd1cb5821adeaa2e5a"></span><span class="sig-name descname"><span class="pre">TENSOR_MANAGE_ERROR</span>&#160;&#160; <span class="pre">=(41,</span> <span class="pre">&quot;Unable</span> <span class="pre">to</span> <span class="pre">release</span> <span class="pre">managed</span> <span class="pre">tensor!&quot;)</span></span></dt>
+<dd><p>Exception thrown while releasing tensor</p>
+<p>code = 41</p>
+<p>message = Unable to release managed tensor! </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp">
+<span class="target" id="enumcom_1_1qualcomm_1_1qti_1_1snpe_1_1SnpeError_1_1Error_1a775c96d34df182c76e5625bb300e7a2a"></span><span class="sig-name descname"><span class="pre">TENSOR_RELEASE_ERROR</span>&#160;&#160; <span class="pre">=(42,</span> <span class="pre">&quot;FloatTensor</span> <span class="pre">instance</span> <span class="pre">already</span> <span class="pre">released!&quot;)</span></span></dt>
+<dd><p>Exception thrown while trying to release already released float tensor.</p>
+<p>code = 42</p>
+<p>message = <a class="reference internal" href="file_FloatTensor.java.html#classcom_1_1qualcomm_1_1qti_1_1snpe_1_1FloatTensor"><span class="std std-ref">FloatTensor</span></a> instance already released! </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp">
+<span class="target" id="enumcom_1_1qualcomm_1_1qti_1_1snpe_1_1SnpeError_1_1Error_1a5bb28ddb74f862df0022a877eae70d19"></span><span class="sig-name descname"><span class="pre">BUFFER_BUNDLE_ACCESS_ERROR</span>&#160;&#160; <span class="pre">=(43,</span> <span class="pre">&quot;Unable</span> <span class="pre">to</span> <span class="pre">access</span> <span class="pre">user</span> <span class="pre">buffer</span> <span class="pre">tensor</span> <span class="pre">initialization</span> <span class="pre">bundle!&quot;)</span></span></dt>
+<dd><p>Exception thrown while accessing buffer tensor initialization bundle.</p>
+<p>code = 43</p>
+<p>message = Unable to access user buffer tensor initialization bundle! </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp">
+<span class="target" id="enumcom_1_1qualcomm_1_1qti_1_1snpe_1_1SnpeError_1_1Error_1a5a46ed6ed17782ed32a2e233459360f7"></span><span class="sig-name descname"><span class="pre">BUFFER_TENSOR_ADDRESS_ACCESS_ERROR</span>&#160;&#160; <span class="pre">=(44,</span> <span class="pre">&quot;Unable</span> <span class="pre">to</span> <span class="pre">access</span> <span class="pre">user</span> <span class="pre">buffer</span> <span class="pre">tensor</span> <span class="pre">address!&quot;)</span></span></dt>
+<dd><p>Exception thrown while accessing user buffer tensor address!</p>
+<p>code = 44</p>
+<p>message = Unable to access user buffer tensor address! </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp">
+<span class="target" id="enumcom_1_1qualcomm_1_1qti_1_1snpe_1_1SnpeError_1_1Error_1ada152ccb052869a49763682f9486586b"></span><span class="sig-name descname"><span class="pre">BYTE_BUFFER_DIRECT_ERROR</span>&#160;&#160; <span class="pre">=(45,</span> <span class="pre">&quot;ByteBuffer</span> <span class="pre">is</span> <span class="pre">not</span> <span class="pre">a</span> <span class="pre">direct</span> <span class="pre">buffer&quot;)</span></span></dt>
+<dd><p>Exception thrown if byte buffer is not a direct buffer.</p>
+<p>code = 45</p>
+<p>message = ByteBuffer is not a direct buffer. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp">
+<span class="target" id="enumcom_1_1qualcomm_1_1qti_1_1snpe_1_1SnpeError_1_1Error_1aa902cdace07b51df8b5f0541c5cb63bd"></span><span class="sig-name descname"><span class="pre">BYTE_BUFFER_ORDER_ERROR</span>&#160;&#160; <span class="pre">=(46,</span> <span class="pre">&quot;ByteBuffer</span> <span class="pre">has</span> <span class="pre">a</span> <span class="pre">different</span> <span class="pre">byte</span> <span class="pre">order</span> <span class="pre">than</span> <span class="pre">that</span> <span class="pre">of</span> <span class="pre">underlying</span> <span class="pre">platform&quot;)</span></span></dt>
+<dd><p>Exception thrown if byteBuffer has a different byte order than that of underlying platform.</p>
+<p>code = 46</p>
+<p>message = ByteBuffer has a different byte order than that of underlying platform. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp">
+<span class="target" id="enumcom_1_1qualcomm_1_1qti_1_1snpe_1_1SnpeError_1_1Error_1a3e7eccda8dba765d499af9253827bf6e"></span><span class="sig-name descname"><span class="pre">USER_BUFFER_RELEASE_ERROR</span>&#160;&#160; <span class="pre">=(47,</span> <span class="pre">&quot;TF8UserBufferTensor</span> <span class="pre">instance</span> <span class="pre">already</span> <span class="pre">released!&quot;)</span></span></dt>
+<dd><p>Exception thrown while trying to release <a class="reference internal" href="file_TF8UserBufferTensor.java.html#classcom_1_1qualcomm_1_1qti_1_1snpe_1_1TF8UserBufferTensor"><span class="std std-ref">TF8UserBufferTensor</span></a> if it is already released.</p>
+<p>code = 47</p>
+<p>message = <a class="reference internal" href="file_TF8UserBufferTensor.java.html#classcom_1_1qualcomm_1_1qti_1_1snpe_1_1TF8UserBufferTensor"><span class="std std-ref">TF8UserBufferTensor</span></a> instance already released! </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp">
+<span class="target" id="enumcom_1_1qualcomm_1_1qti_1_1snpe_1_1SnpeError_1_1Error_1aa66c45266c0d2098ebbe14fe2ca8a77c"></span><span class="sig-name descname"><span class="pre">BUFFER_OS_RETRIEVE_ERROR_MESSAGE</span>&#160;&#160; <span class="pre">=(48,</span> <span class="pre">&quot;Unable</span> <span class="pre">to</span> <span class="pre">retrieve</span> <span class="pre">managed</span> <span class="pre">NativeBufferOutputStream&quot;)</span></span></dt>
+<dd><p>Exception thrown while retrieving NativeBufferOutputStream.</p>
+<p>code = 48</p>
+<p>message = Unable to retrieve managed NativeBufferOutputStream </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp">
+<span class="target" id="enumcom_1_1qualcomm_1_1qti_1_1snpe_1_1SnpeError_1_1Error_1a200fff35389151405e09ff5dd31cf08a"></span><span class="sig-name descname"><span class="pre">BUFFER_OS_SOURCE_ACCESS_ERROR_MESSAGE</span>&#160;&#160; <span class="pre">=(49,</span> <span class="pre">&quot;Unable</span> <span class="pre">to</span> <span class="pre">access</span> <span class="pre">NativeBufferOutputStream</span> <span class="pre">source</span> <span class="pre">buffer!&quot;)</span></span></dt>
+<dd><p><a class="reference internal" href="#enumcom_1_1qualcomm_1_1qti_1_1snpe_1_1SnpeError_1_1Error"><span class="std std-ref">Error</span></a> thrown while accessing NativeBufferOutputStream source buffer.</p>
+<p>code = 49</p>
+<p>message = Unable to access NativeBufferOutputStream source buffer! </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp">
+<span class="target" id="enumcom_1_1qualcomm_1_1qti_1_1snpe_1_1SnpeError_1_1Error_1aaa7b502b2e944fcf1ee84720423e7dda"></span><span class="sig-name descname"><span class="pre">BUFFER_OS_RELEASE_ERROR</span>&#160;&#160; <span class="pre">=(50,</span> <span class="pre">&quot;Unable</span> <span class="pre">to</span> <span class="pre">release</span> <span class="pre">managed</span> <span class="pre">NativeBufferOutputStream&quot;)</span></span></dt>
+<dd><p>Exception thrown while releasing NativeBufferOutputStream.</p>
+<p>code = 50</p>
+<p>message = Unable to release managed NativeBufferOutputStream </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp">
+<span class="target" id="enumcom_1_1qualcomm_1_1qti_1_1snpe_1_1SnpeError_1_1Error_1a54833f2722f802e01732e61f6c98f8d5"></span><span class="sig-name descname"><span class="pre">BUFFER_OS_SIZE_ERROR</span>&#160;&#160; <span class="pre">=(51,</span> <span class="pre">&quot;Not</span> <span class="pre">allowed</span> <span class="pre">to</span> <span class="pre">write</span> <span class="pre">beyond</span> <span class="pre">buffer</span> <span class="pre">size.&quot;)</span></span></dt>
+<dd><p>Exception thrown while writing into buffer.</p>
+<p>code = 51</p>
+<p>message = Not allowed to write beyond buffer size. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp">
+<span class="target" id="enumcom_1_1qualcomm_1_1qti_1_1snpe_1_1SnpeError_1_1Error_1ae8c7767467eba214e5c5f5c2687e6c00"></span><span class="sig-name descname"><span class="pre">BUFFER_STREAM_INVALID_ERROR</span>&#160;&#160; <span class="pre">=(52,</span> <span class="pre">&quot;Buffer</span> <span class="pre">stream</span> <span class="pre">size</span> <span class="pre">is</span> <span class="pre">invalid:</span> <span class="pre">&quot;)</span></span></dt>
+<dd><p>Exception thrown if stream size is invalid.</p>
+<p>code = 52</p>
+<p>message = Buffer stream size is invalid: “invalid_size” </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp">
+<span class="target" id="enumcom_1_1qualcomm_1_1qti_1_1snpe_1_1SnpeError_1_1Error_1abd1643c6f02755d7d09234d27c9eba51"></span><span class="sig-name descname"><span class="pre">BUFFER_SOURCE_NOT_DIRECT_ERROR</span>&#160;&#160; <span class="pre">=(53,</span> <span class="pre">&quot;Source</span> <span class="pre">buffer</span> <span class="pre">must</span> <span class="pre">be</span> <span class="pre">direct!&quot;)</span></span></dt>
+<dd><p>Exception thrown if source buffer is not direct.</p>
+<p>code = 53</p>
+<p>message = Source buffer must be direct!” </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp">
+<span class="target" id="enumcom_1_1qualcomm_1_1qti_1_1snpe_1_1SnpeError_1_1Error_1ab2b588b8ea55b9b4120c6010fe9a3097"></span><span class="sig-name descname"><span class="pre">JNI_INITIALIZE_ERROR</span>&#160;&#160; <span class="pre">=(54,</span> <span class="pre">&quot;Failed</span> <span class="pre">to</span> <span class="pre">initialize</span> <span class="pre">native</span> <span class="pre">JNI</span> <span class="pre">caches.&quot;)</span></span></dt>
+<dd><p>Exception thrown for native JNI cache initialization failure.</p>
+<p>code = 54</p>
+<p>message = Failed to initialize native JNI caches. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp">
+<span class="target" id="enumcom_1_1qualcomm_1_1qti_1_1snpe_1_1SnpeError_1_1Error_1a5a60f34948f9f0798c0bf34173a51f7c"></span><span class="sig-name descname"><span class="pre">DSP_INITIALIZE_ERROR</span>&#160;&#160; <span class="pre">=(55,</span> <span class="pre">&quot;Failed</span> <span class="pre">to</span> <span class="pre">initialize</span> <span class="pre">DSP</span> <span class="pre">LIBRARY</span> <span class="pre">PATH.&quot;)</span></span></dt>
+<dd><p>Exception thrown for DSP LIBRARY PATH cache initialization failure.</p>
+<p>code = 55</p>
+<p>message = Failed to initialize DSP LIBRARY PATH. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp">
+<span class="target" id="enumcom_1_1qualcomm_1_1qti_1_1snpe_1_1SnpeError_1_1Error_1a177d3293de8ecd3d29ee2d044e9092ab"></span><span class="sig-name descname"><span class="pre">RUNTIME_ORDER_NULL_OR_EMPTY_ERROR</span>&#160;&#160; <span class="pre">=(56,</span> <span class="pre">&quot;Runtime</span> <span class="pre">order</span> <span class="pre">can</span> <span class="pre">not</span> <span class="pre">be</span> <span class="pre">null</span> <span class="pre">or</span> <span class="pre">empty.&quot;)</span></span></dt>
+<dd><p>Exception thrown if runtime order is null or empty.</p>
+<p>code = 56</p>
+<p>message = Runtime order can not be null or empty. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp">
+<span class="target" id="enumcom_1_1qualcomm_1_1qti_1_1snpe_1_1SnpeError_1_1Error_1ab076df8feb8e6f61227f4693a99ca833"></span><span class="sig-name descname"><span class="pre">RUNTIME_NULL_ERROR</span>&#160;&#160; <span class="pre">=(57,</span> <span class="pre">&quot;Runtime</span> <span class="pre">order</span> <span class="pre">can</span> <span class="pre">not</span> <span class="pre">be</span> <span class="pre">null.&quot;)</span></span></dt>
+<dd><p>Exception thrown if runtime order is null.</p>
+<p>code = 57</p>
+<p>message = Runtime order can not be null. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp">
+<span class="target" id="enumcom_1_1qualcomm_1_1qti_1_1snpe_1_1SnpeError_1_1Error_1aa61298cc7abdbf40b184b91d32a029dc"></span><span class="sig-name descname"><span class="pre">INPUT_DIMEN_NULL_OR_EMPTY_ERROR</span>&#160;&#160; <span class="pre">=(58,</span> <span class="pre">&quot;Input</span> <span class="pre">dimensions</span> <span class="pre">can</span> <span class="pre">not</span> <span class="pre">be</span> <span class="pre">null.&quot;)</span></span></dt>
+<dd><p>Exception thrown if input dimensions are null.</p>
+<p>code = 58</p>
+<p>message = Input dimensions can not be null. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp">
+<span class="target" id="enumcom_1_1qualcomm_1_1qti_1_1snpe_1_1SnpeError_1_1Error_1a973eafd7ab7442937cc1112a93a99e07"></span><span class="sig-name descname"><span class="pre">OUTPUT_LAYER_NULL_ERROR</span>&#160;&#160; <span class="pre">=(59,</span> <span class="pre">&quot;Output</span> <span class="pre">layers</span> <span class="pre">can</span> <span class="pre">not</span> <span class="pre">be</span> <span class="pre">null.&quot;)</span></span></dt>
+<dd><p>Exception thrown if output layers are null.</p>
+<p>code = 59</p>
+<p>message = Output layers can not be null. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp">
+<span class="target" id="enumcom_1_1qualcomm_1_1qti_1_1snpe_1_1SnpeError_1_1Error_1ae7635aa0f0067f7f96dac4e90f851f3d"></span><span class="sig-name descname"><span class="pre">MODEL_FILE_NULL_ERROR</span>&#160;&#160; <span class="pre">=(60,</span> <span class="pre">&quot;Model</span> <span class="pre">file</span> <span class="pre">can</span> <span class="pre">not</span> <span class="pre">be</span> <span class="pre">null.&quot;)</span></span></dt>
+<dd><p>Exception thrown if model file is null.</p>
+<p>code = 60</p>
+<p>message = Model file can not be null. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp">
+<span class="target" id="enumcom_1_1qualcomm_1_1qti_1_1snpe_1_1SnpeError_1_1Error_1a33e7f10b086b80ed17e4d52351e03099"></span><span class="sig-name descname"><span class="pre">FILE_EXISTENCE_ERROR</span>&#160;&#160; <span class="pre">=(61,</span> <span class="pre">&quot;File</span> <span class="pre">does</span> <span class="pre">not</span> <span class="pre">exist:</span> <span class="pre">&quot;)</span></span></dt>
+<dd><p>Exception thrown if file does not exist.</p>
+<p>code = 60</p>
+<p>message = File does not exist: “filename” </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp">
+<span class="target" id="enumcom_1_1qualcomm_1_1qti_1_1snpe_1_1SnpeError_1_1Error_1aee83e0fe0c00e6eb9064130b595b61ef"></span><span class="sig-name descname"><span class="pre">FILE_READ_ERROR</span>&#160;&#160; <span class="pre">=(62,</span> <span class="pre">&quot;Can</span> <span class="pre">not</span> <span class="pre">read</span> <span class="pre">from</span> <span class="pre">file:</span> <span class="pre">&quot;)</span></span></dt>
+<dd><p>Exception thrown if file is not readable.</p>
+<p>code = 60</p>
+<p>message = Can not read from file: “filename” </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp">
+<span class="target" id="enumcom_1_1qualcomm_1_1qti_1_1snpe_1_1SnpeError_1_1Error_1a07a78caf1fdf3705f1932cdfb3a7dcee"></span><span class="sig-name descname"><span class="pre">PERFORMANCE_PROFILE_NULL_ERROR</span>&#160;&#160; <span class="pre">=(63,</span> <span class="pre">&quot;Performance</span> <span class="pre">profile</span> <span class="pre">can</span> <span class="pre">not</span> <span class="pre">be</span> <span class="pre">null.&quot;)</span></span></dt>
+<dd><p>Exception thrown if performance profile is null.</p>
+<p>code = 63</p>
+<p>message = Performance profile can not be null. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp">
+<span class="target" id="enumcom_1_1qualcomm_1_1qti_1_1snpe_1_1SnpeError_1_1Error_1adb6ac348ce969963b97c15d877723675"></span><span class="sig-name descname"><span class="pre">EXECUTION_PRIORITY_NULL_ERROR</span>&#160;&#160; <span class="pre">=(64,</span> <span class="pre">&quot;Execution</span> <span class="pre">priority</span> <span class="pre">hint</span> <span class="pre">can</span> <span class="pre">not</span> <span class="pre">be</span> <span class="pre">null.&quot;)</span></span></dt>
+<dd><p>Exception thrown if execution priority hint is null.</p>
+<p>code = 64</p>
+<p>message = Execution priority hint can not be null. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp">
+<span class="target" id="enumcom_1_1qualcomm_1_1qti_1_1snpe_1_1SnpeError_1_1Error_1a9409fd88aeb16d3fa41a34685bd189c6"></span><span class="sig-name descname"><span class="pre">CACHE_TAG_NULL_ERROR</span>&#160;&#160; <span class="pre">=(65,</span> <span class="pre">&quot;cacheTag</span> <span class="pre">is</span> <span class="pre">null&quot;)</span></span></dt>
+<dd><p>Exception thrown if cacheTag is null.</p>
+<p>code = 65</p>
+<p>message = cacheTag is null. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp">
+<span class="target" id="enumcom_1_1qualcomm_1_1qti_1_1snpe_1_1SnpeError_1_1Error_1a599db2608804726e5082bbbb6c62a4d4"></span><span class="sig-name descname"><span class="pre">CACHE_TAG_EMPTY_ERROR</span>&#160;&#160; <span class="pre">=(66,</span> <span class="pre">&quot;cacheTag</span> <span class="pre">is</span> <span class="pre">empty&quot;)</span></span></dt>
+<dd><p>Exception thrown if cacheTag is empty.</p>
+<p>code = 66</p>
+<p>message = cacheTag is empty. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp">
+<span class="target" id="enumcom_1_1qualcomm_1_1qti_1_1snpe_1_1SnpeError_1_1Error_1a865dd15a5116bd5f796d8c1d48acdfa4"></span><span class="sig-name descname"><span class="pre">CONTEXT_NULL_ERROR</span>&#160;&#160; <span class="pre">=(67,</span> <span class="pre">&quot;context</span> <span class="pre">is</span> <span class="pre">null&quot;)</span></span></dt>
+<dd><p>Exception thrown if context is null.</p>
+<p>code = 67</p>
+<p>message = context is null. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp">
+<span class="target" id="enumcom_1_1qualcomm_1_1qti_1_1snpe_1_1SnpeError_1_1Error_1ac99029ddf447b5ac000ff54181e0b171"></span><span class="sig-name descname"><span class="pre">DIRECTORY_PATH_NULL_ERROR</span>&#160;&#160; <span class="pre">=(68,</span> <span class="pre">&quot;Directory</span> <span class="pre">path</span> <span class="pre">is</span> <span class="pre">null&quot;)</span></span></dt>
+<dd><p>Exception thrown if directory path is null.</p>
+<p>code = 68</p>
+<p>message = Directory path is null. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp">
+<span class="target" id="enumcom_1_1qualcomm_1_1qti_1_1snpe_1_1SnpeError_1_1Error_1a1524205432a55fd0cc1f2fa5c36844de"></span><span class="sig-name descname"><span class="pre">DIRECTORY_PATH_EMPTY_ERROR</span>&#160;&#160; <span class="pre">=(69,</span> <span class="pre">&quot;Directory</span> <span class="pre">path</span> <span class="pre">is</span> <span class="pre">empty&quot;)</span></span></dt>
+<dd><p>Exception thrown if directory path is empty.</p>
+<p>code = 69</p>
+<p>message = Directory path is empty. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp">
+<span class="target" id="enumcom_1_1qualcomm_1_1qti_1_1snpe_1_1SnpeError_1_1Error_1ab4b4d27e053e69e89c5275ae3558f436"></span><span class="sig-name descname"><span class="pre">DIRECTORY_EXISTENCE_ERROR</span>&#160;&#160; <span class="pre">=(70,</span> <span class="pre">&quot;Directory</span> <span class="pre">does</span> <span class="pre">not</span> <span class="pre">exist:&quot;)</span></span></dt>
+<dd><p>Exception thrown if directory path is empty.</p>
+<p>code = 70</p>
+<p>message = Directory does not exist:”directory_name”. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp">
+<span class="target" id="enumcom_1_1qualcomm_1_1qti_1_1snpe_1_1SnpeError_1_1Error_1af59bc5a0ec12c137ba6e6c95eff91341"></span><span class="sig-name descname"><span class="pre">NOT_A_DIRECTORY_ERROR</span>&#160;&#160; <span class="pre">=(71,</span> <span class="pre">&quot;Not</span> <span class="pre">a</span> <span class="pre">directory:</span> <span class="pre">&quot;)</span></span></dt>
+<dd><p>Exception thrown if the file is not a directoty.</p>
+<p>code = 71</p>
+<p>message = Not a directory: “directory_name”. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp">
+<span class="target" id="enumcom_1_1qualcomm_1_1qti_1_1snpe_1_1SnpeError_1_1Error_1ac262b26ae415a5929693b4ead55990af"></span><span class="sig-name descname"><span class="pre">FILE_WRITE_ERROR</span>&#160;&#160; <span class="pre">=(72,</span> <span class="pre">&quot;Can</span> <span class="pre">not</span> <span class="pre">write</span> <span class="pre">into</span> <span class="pre">file:</span> <span class="pre">&quot;)</span></span></dt>
+<dd><p>Exception thrown if the file is not writable.</p>
+<p>code = 72</p>
+<p>message = Can not write into file: “file_name”. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp">
+<span class="target" id="enumcom_1_1qualcomm_1_1qti_1_1snpe_1_1SnpeError_1_1Error_1a98c945fc29794f66238787110e004e82"></span><span class="sig-name descname"><span class="pre">RUNTIME_TARGET_NOT_SUPPORTED_ERROR</span>&#160;&#160; <span class="pre">=(73,</span> <span class="pre">&quot;None</span> <span class="pre">of</span> <span class="pre">the</span> <span class="pre">selected</span> <span class="pre">runtime</span> <span class="pre">targets</span> <span class="pre">are</span> <span class="pre">supported.&quot;)</span></span></dt>
+<dd><p>Exception thrown if no selected runtime is supported.</p>
+<p>code = 73</p>
+<p>message = None of the selected runtime targets are supported. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp">
+<span class="target" id="enumcom_1_1qualcomm_1_1qti_1_1snpe_1_1SnpeError_1_1Error_1a3d71861970a4694aa79c9a6e3c2c4c25"></span><span class="sig-name descname"><span class="pre">IO_STREAM_NULL_ERROR</span>&#160;&#160; <span class="pre">=(74,</span> <span class="pre">&quot;Stream</span> <span class="pre">can</span> <span class="pre">not</span> <span class="pre">be</span> <span class="pre">null.&quot;)</span></span></dt>
+<dd><p>Exception thrown if stream is null.</p>
+<p>code = 74</p>
+<p>message = Stream can not be null. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp">
+<span class="target" id="enumcom_1_1qualcomm_1_1qti_1_1snpe_1_1SnpeError_1_1Error_1aca1dd717137d76faa02146f01f704146"></span><span class="sig-name descname"><span class="pre">IO_MODEL_SIZE_INVALID_ERROR</span>&#160;&#160; <span class="pre">=(75,</span> <span class="pre">&quot;Model</span> <span class="pre">size</span> <span class="pre">can</span> <span class="pre">not</span> <span class="pre">be</span> <span class="pre">&lt;=</span> <span class="pre">0.&quot;)</span></span></dt>
+<dd><p>Exception thrown if model size is less than or equal to 0.</p>
+<p>code = 75</p>
+<p>message = Model size can not be &lt;= 0. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp">
+<span class="target" id="enumcom_1_1qualcomm_1_1qti_1_1snpe_1_1SnpeError_1_1Error_1a701d0fa5204cd715252a668aa20f1fc5"></span><span class="sig-name descname"><span class="pre">IO_SIZE_MISMATCH_ERROR</span>&#160;&#160; <span class="pre">=(76,</span> <span class="pre">&quot;The</span> <span class="pre">expected</span> <span class="pre">model</span> <span class="pre">stream</span> <span class="pre">size</span> <span class="pre">and</span> <span class="pre">actual</span> <span class="pre">mismatch.&quot;)</span></span></dt>
+<dd><p>Exception thrown if there is a mismatch between model’s expected stream size and actual stream size.</p>
+<p>code = 76</p>
+<p>message = The expected model stream size and actual mismatch. </p>
+</dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-private-members">Private Members</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp">
+<span class="target" id="enumcom_1_1qualcomm_1_1qti_1_1snpe_1_1SnpeError_1_1Error_1af277ba7eb0bd38bd5bef51b2bdecd116"></span><span class="sig-name descname"><span class="pre">final</span> <span class="pre">int</span> <span class="pre">code</span></span></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp">
+<span class="target" id="enumcom_1_1qualcomm_1_1qti_1_1snpe_1_1SnpeError_1_1Error_1ad46ae74e7b52cd8b031720dbcdb5022c"></span><span class="sig-name descname"><span class="pre">final</span> <span class="pre">String</span> <span class="pre">message</span></span></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-private-static-functions">Private Static Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3com8qualcomm3qti4snpe9SnpeError8getErrorE6String">
+<span id="_CPPv3N3com8qualcomm3qti4snpe9SnpeError8getErrorE6String"></span><span id="_CPPv2N3com8qualcomm3qti4snpe9SnpeError8getErrorE6String"></span><span id="com::qualcomm::qti::snpe::SnpeError::getError__String"></span><span class="target" id="enumcom_1_1qualcomm_1_1qti_1_1snpe_1_1SnpeError_1_1Error_1ac7213526c0c297e8aba4d81ad04dc3b7"></span><span class="k"><span class="pre">static</span></span><span class="w"> </span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><a class="reference internal" href="classcom_1_1qualcomm_1_1qti_1_1snpe_1_1SnpeError.html#_CPPv4N3com8qualcomm3qti4snpe9SnpeError5ErrorEi6String" title="com::qualcomm::qti::snpe::SnpeError::Error"><span class="n"><span class="pre">Error</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getError</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">String</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">message</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3com8qualcomm3qti4snpe9SnpeError8getErrorE6String" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+<dl class="cpp class">
+<dt class="sig sig-object cpp">
+<span class="target" id="classcom_1_1qualcomm_1_1qti_1_1snpe_1_1SnpeError_1_1IllegalArgsOrStateException"></span><span class="sig-name descname"><span class="pre">IllegalArgsOrStateException</span> <span class="pre">:</span> <span class="pre">public</span> <span class="pre">com.qualcomm.qti.snpe.SnpeError.SnpeException</span></span></dt>
+<dd><p>Exception type for errors related to IllegalState or IllegalArgument.</p>
+<p>throws runtime exception with code and message for errors related to illegal state or illegal arguments. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-private-functions">Private Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3com8qualcomm3qti4snpe9SnpeError19PhonyNameDueToError27IllegalArgsOrStateExceptionEi6String">
+<span id="_CPPv3N3com8qualcomm3qti4snpe9SnpeError19PhonyNameDueToError27IllegalArgsOrStateExceptionEi6String"></span><span id="_CPPv2N3com8qualcomm3qti4snpe9SnpeError19PhonyNameDueToError27IllegalArgsOrStateExceptionEi6String"></span><span id="com::qualcomm::qti::snpe::SnpeError::PhonyNameDueToError::IllegalArgsOrStateException__i.String"></span><span class="target" id="classcom_1_1qualcomm_1_1qti_1_1snpe_1_1SnpeError_1_1IllegalArgsOrStateException_1a0ede672af1106deba21f5d844de48123"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">IllegalArgsOrStateException</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">code</span></span>, <span class="n"><span class="pre">String</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">detailMessage</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3com8qualcomm3qti4snpe9SnpeError19PhonyNameDueToError27IllegalArgsOrStateExceptionEi6String" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+<dl class="cpp class">
+<dt class="sig sig-object cpp">
+<span class="target" id="classcom_1_1qualcomm_1_1qti_1_1snpe_1_1SnpeError_1_1InvalidInputException"></span><span class="sig-name descname"><span class="pre">InvalidInputException</span> <span class="pre">:</span> <span class="pre">public</span> <span class="pre">com.qualcomm.qti.snpe.SnpeError.SnpeException</span></span></dt>
+<dd><p>Exception type for errors related to invalid inputs.</p>
+<p>throws exception for invalid inputs with code and message. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-private-functions">Private Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3com8qualcomm3qti4snpe9SnpeError19PhonyNameDueToError21InvalidInputExceptionEi6String">
+<span id="_CPPv3N3com8qualcomm3qti4snpe9SnpeError19PhonyNameDueToError21InvalidInputExceptionEi6String"></span><span id="_CPPv2N3com8qualcomm3qti4snpe9SnpeError19PhonyNameDueToError21InvalidInputExceptionEi6String"></span><span id="com::qualcomm::qti::snpe::SnpeError::PhonyNameDueToError::InvalidInputException__i.String"></span><span class="target" id="classcom_1_1qualcomm_1_1qti_1_1snpe_1_1SnpeError_1_1InvalidInputException_1a0d2a84e6b89ced3a3e215dbf4fc601e1"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">InvalidInputException</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">code</span></span>, <span class="n"><span class="pre">String</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">detailMessage</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3com8qualcomm3qti4snpe9SnpeError19PhonyNameDueToError21InvalidInputExceptionEi6String" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+<dl class="cpp class">
+<dt class="sig sig-object cpp">
+<span class="target" id="classcom_1_1qualcomm_1_1qti_1_1snpe_1_1SnpeError_1_1NativeException"></span><span class="sig-name descname"><span class="pre">NativeException</span> <span class="pre">:</span> <span class="pre">public</span> <span class="pre">com.qualcomm.qti.snpe.SnpeError.SnpeException</span></span></dt>
+<dd><p>Exception type for errors related to native network.</p>
+<p>throws runtime exception with code and message for errors related to native network. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-private-functions">Private Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3com8qualcomm3qti4snpe9SnpeError19PhonyNameDueToError15NativeExceptionEi6String">
+<span id="_CPPv3N3com8qualcomm3qti4snpe9SnpeError19PhonyNameDueToError15NativeExceptionEi6String"></span><span id="_CPPv2N3com8qualcomm3qti4snpe9SnpeError19PhonyNameDueToError15NativeExceptionEi6String"></span><span id="com::qualcomm::qti::snpe::SnpeError::PhonyNameDueToError::NativeException__i.String"></span><span class="target" id="classcom_1_1qualcomm_1_1qti_1_1snpe_1_1SnpeError_1_1NativeException_1aa2c80846dd02167dcf552cbf8ba480b8"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">NativeException</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">code</span></span>, <span class="n"><span class="pre">String</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">detailMessage</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3com8qualcomm3qti4snpe9SnpeError19PhonyNameDueToError15NativeExceptionEi6String" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv4N3com8qualcomm3qti4snpe9SnpeError13SnpeExceptionE">
+<span id="_CPPv3N3com8qualcomm3qti4snpe9SnpeError13SnpeExceptionE"></span><span id="_CPPv2N3com8qualcomm3qti4snpe9SnpeError13SnpeExceptionE"></span><span id="com::qualcomm::qti::snpe::SnpeError::SnpeException"></span><span class="target" id="classcom_1_1qualcomm_1_1qti_1_1snpe_1_1SnpeError_1_1SnpeException"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SnpeException</span></span></span><span class="w"> </span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="k"><span class="pre">public</span></span><span class="w"> </span><span class="n"><span class="pre">RuntimeException</span></span><br /></dt>
+<dd><p>Subclassed by <a class="reference internal" href="#classcom_1_1qualcomm_1_1qti_1_1snpe_1_1SnpeError_1_1IllegalArgsOrStateException"><span class="std std-ref">com.qualcomm.qti.snpe.SnpeError.IllegalArgsOrStateException</span></a>, <a class="reference internal" href="#classcom_1_1qualcomm_1_1qti_1_1snpe_1_1SnpeError_1_1InvalidInputException"><span class="std std-ref">com.qualcomm.qti.snpe.SnpeError.InvalidInputException</span></a>, <a class="reference internal" href="#classcom_1_1qualcomm_1_1qti_1_1snpe_1_1SnpeError_1_1NativeException"><span class="std std-ref">com.qualcomm.qti.snpe.SnpeError.NativeException</span></a>, <a class="reference internal" href="#classcom_1_1qualcomm_1_1qti_1_1snpe_1_1SnpeError_1_1SnpeIOException"><span class="std std-ref">com.qualcomm.qti.snpe.SnpeError.SnpeIOException</span></a></p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3com8qualcomm3qti4snpe9SnpeError13SnpeException12getErrorCodeEv">
+<span id="_CPPv3N3com8qualcomm3qti4snpe9SnpeError13SnpeException12getErrorCodeEv"></span><span id="_CPPv2N3com8qualcomm3qti4snpe9SnpeError13SnpeException12getErrorCodeEv"></span><span id="com::qualcomm::qti::snpe::SnpeError::SnpeException::getErrorCode"></span><span class="target" id="classcom_1_1qualcomm_1_1qti_1_1snpe_1_1SnpeError_1_1SnpeException_1aa9e24385fe8509c408c8c5f1d62ae458"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getErrorCode</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-private-functions">Private Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3com8qualcomm3qti4snpe9SnpeError13SnpeException13SnpeExceptionEi6String">
+<span id="_CPPv3N3com8qualcomm3qti4snpe9SnpeError13SnpeException13SnpeExceptionEi6String"></span><span id="_CPPv2N3com8qualcomm3qti4snpe9SnpeError13SnpeException13SnpeExceptionEi6String"></span><span id="com::qualcomm::qti::snpe::SnpeError::SnpeException::SnpeException__i.String"></span><span class="target" id="classcom_1_1qualcomm_1_1qti_1_1snpe_1_1SnpeError_1_1SnpeException_1a62978d58397c5e2eef215249eb303e9c"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SnpeException</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">code</span></span>, <span class="n"><span class="pre">String</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">detailMessage</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3com8qualcomm3qti4snpe9SnpeError13SnpeException13SnpeExceptionEi6String" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-private-members">Private Members</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N3com8qualcomm3qti4snpe9SnpeError13SnpeException4codeE">
+<span id="_CPPv3N3com8qualcomm3qti4snpe9SnpeError13SnpeException4codeE"></span><span id="_CPPv2N3com8qualcomm3qti4snpe9SnpeError13SnpeException4codeE"></span><span id="com::qualcomm::qti::snpe::SnpeError::SnpeException::code__i"></span><span class="target" id="classcom_1_1qualcomm_1_1qti_1_1snpe_1_1SnpeError_1_1SnpeException_1a23229a93fb98518e0fecd14cbbfb164c"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">code</span></span></span><a class="headerlink" href="#_CPPv4N3com8qualcomm3qti4snpe9SnpeError13SnpeException4codeE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+<dl class="cpp class">
+<dt class="sig sig-object cpp">
+<span class="target" id="classcom_1_1qualcomm_1_1qti_1_1snpe_1_1SnpeError_1_1SnpeIOException"></span><span class="sig-name descname"><span class="pre">SnpeIOException</span> <span class="pre">:</span> <span class="pre">public</span> <span class="pre">com.qualcomm.qti.snpe.SnpeError.SnpeException</span></span></dt>
+<dd><p>Exception type for errors related to IO Operations.</p>
+<p>throws IO Exception with code and message </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-private-functions">Private Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3com8qualcomm3qti4snpe9SnpeError19PhonyNameDueToError15SnpeIOExceptionEi6String">
+<span id="_CPPv3N3com8qualcomm3qti4snpe9SnpeError19PhonyNameDueToError15SnpeIOExceptionEi6String"></span><span id="_CPPv2N3com8qualcomm3qti4snpe9SnpeError19PhonyNameDueToError15SnpeIOExceptionEi6String"></span><span id="com::qualcomm::qti::snpe::SnpeError::PhonyNameDueToError::SnpeIOException__i.String"></span><span class="target" id="classcom_1_1qualcomm_1_1qti_1_1snpe_1_1SnpeError_1_1SnpeIOException_1a6b71babbc6d75f0b84148f926bd6be61"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SnpeIOException</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">code</span></span>, <span class="n"><span class="pre">String</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">detailMessage</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3com8qualcomm3qti4snpe9SnpeError19PhonyNameDueToError15SnpeIOExceptionEi6String" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2020-2023, Qualcomm Technologies, Inc..
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

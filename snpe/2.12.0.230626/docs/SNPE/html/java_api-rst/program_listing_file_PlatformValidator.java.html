@@ -1,0 +1,322 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Program Listing for File PlatformValidator.java &mdash; Snapdragon Neural Processing Engine SDK</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/custom_css.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/collapsible-lists/css/tree_view.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+        <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Qualcomm® Neural Processing SDK
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                v2.12.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../general/revision_history.html">Revision History</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/revision_history_windows.html">Revision History - Windows</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/overview.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/setup.html">Setup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/usergroup1.html">Network Models</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/usergroup5.html">Input Data and Preprocessing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/usergroup6.html">Tutorials and Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/usergroup10.html">Benchmarking and Accuracy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/tools.html">Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/usergroup11.html">Debug Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/api.html">API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/limitations.html">Limitations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/appx_ref.html">References</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Qualcomm® Neural Processing SDK</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Program Listing for File PlatformValidator.java</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="program-listing-for-file-platformvalidator-java">
+<span id="program-listing-file-platformvalidator-java"></span><h1>Program Listing for File PlatformValidator.java<a class="headerlink" href="#program-listing-for-file-platformvalidator-java" title="Permalink to this headline">¶</a></h1>
+<p>↰ <a class="reference internal" href="file_PlatformValidator.java.html#file-platformvalidator-java"><span class="std std-ref">Return to documentation for file</span></a> (<code class="docutils literal notranslate"><span class="pre">PlatformValidator.java</span></code>)</p>
+<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="cm">/*</span>
+<span class="cm"> * Copyright (c) 2019 Qualcomm Technologies, Inc.</span>
+<span class="cm"> * All Rights Reserved.</span>
+<span class="cm"> * Confidential and Proprietary - Qualcomm Technologies, Inc.</span>
+<span class="cm"> */</span>
+
+<span class="kn">package</span><span class="w"> </span><span class="nn">com.qualcomm.qti.platformvalidator</span><span class="p">;</span>
+
+<span class="kn">import</span><span class="w"> </span><span class="nn">android.app.Application</span><span class="p">;</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">com.qualcomm.qti.platformvalidator.PlatformValidatorUtil</span><span class="p">;</span>
+
+
+<span class="cm">/** @addtogroup java_apis</span>
+<span class="cm">@{ */</span>
+
+<span class="cm">/**</span>
+<span class="cm"> * {@link PlatformValidator} class - top level APIs of the SNPE Platform Validator.</span>
+<span class="cm"> */</span>
+<span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">PlatformValidator</span>
+<span class="p">{</span>
+
+<span class="w">   </span><span class="kd">private</span><span class="w"> </span><span class="kt">boolean</span><span class="w"> </span><span class="n">sInitialized</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">false</span><span class="p">;</span>
+<span class="w">   </span><span class="kd">private</span><span class="w"> </span><span class="n">PlatformValidatorUtil</span><span class="p">.</span><span class="na">Runtime</span><span class="w"> </span><span class="n">mTargetRuntime</span><span class="p">;</span>
+
+<span class="w">   </span><span class="kd">public</span><span class="w"> </span><span class="nf">PlatformValidator</span><span class="p">()</span>
+<span class="w">   </span><span class="p">{</span>
+<span class="w">      </span><span class="n">mTargetRuntime</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">PlatformValidatorUtil</span><span class="p">.</span><span class="na">Runtime</span><span class="p">.</span><span class="na">CPU</span><span class="p">;</span><span class="w"> </span><span class="c1">// default value</span>
+<span class="w">   </span><span class="p">}</span>
+
+<span class="w">   </span><span class="kd">public</span><span class="w"> </span><span class="nf">PlatformValidator</span><span class="p">(</span><span class="kd">final</span><span class="w"> </span><span class="n">PlatformValidatorUtil</span><span class="p">.</span><span class="na">Runtime</span><span class="w"> </span><span class="n">runtime</span><span class="p">)</span>
+<span class="w">   </span><span class="p">{</span>
+<span class="w">      </span><span class="n">mTargetRuntime</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">runtime</span><span class="p">;</span>
+<span class="w">   </span><span class="p">}</span>
+
+<span class="w">   </span><span class="kd">private</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">init</span><span class="p">(</span><span class="kd">final</span><span class="w"> </span><span class="n">Application</span><span class="w"> </span><span class="n">application</span><span class="p">)</span>
+<span class="w">   </span><span class="p">{</span>
+<span class="w">       </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">sInitialized</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="n">System</span><span class="p">.</span><span class="na">loadLibrary</span><span class="p">(</span><span class="s">&quot;platformvalidator-android&quot;</span><span class="p">);</span>
+<span class="w">            </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">nativeInit</span><span class="p">(</span><span class="n">mTargetRuntime</span><span class="p">.</span><span class="na">ordinal</span><span class="p">,</span><span class="w"> </span><span class="n">application</span><span class="p">.</span><span class="na">getApplicationInfo</span><span class="p">().</span><span class="na">nativeLibraryDir</span><span class="p">))</span>
+<span class="w">               </span><span class="n">sInitialized</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">true</span><span class="p">;</span>
+<span class="w">            </span><span class="k">else</span>
+<span class="w">               </span><span class="k">throw</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">IllegalArgumentException</span><span class="p">(</span><span class="s">&quot;Runtime &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">mTargetRuntime</span><span class="o">+</span><span class="w"> </span><span class="s">&quot;not supported.&quot;</span><span class="p">);</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">   </span><span class="p">}</span>
+
+<span class="w">   </span><span class="cm">/**</span>
+<span class="cm">    * Checks if the runtime associated with the object is available or not</span>
+<span class="cm">    * @param Application context of the caller</span>
+<span class="cm">    * @return True if runtime is available otherwise false</span>
+<span class="cm">    */</span>
+<span class="w">   </span><span class="kd">public</span><span class="w"> </span><span class="kt">boolean</span><span class="w"> </span><span class="nf">isRuntimeAvailable</span><span class="p">(</span><span class="kd">final</span><span class="w"> </span><span class="n">Application</span><span class="w"> </span><span class="n">application</span><span class="p">)</span>
+<span class="w">   </span><span class="p">{</span>
+<span class="w">      </span><span class="n">init</span><span class="p">(</span><span class="n">application</span><span class="p">);</span>
+<span class="w">      </span><span class="k">return</span><span class="w"> </span><span class="n">nativeIsRuntimeAvailable</span><span class="p">();</span>
+<span class="w">   </span><span class="p">}</span>
+
+<span class="w">   </span><span class="cm">/**</span>
+<span class="cm">    * Checks core version of the runtime</span>
+<span class="cm">    * @param Application context of the caller</span>
+<span class="cm">    * @return Coreversion string of the runtime</span>
+<span class="cm">    */</span>
+<span class="w">   </span><span class="kd">public</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="nf">coreVersion</span><span class="p">(</span><span class="kd">final</span><span class="w"> </span><span class="n">Application</span><span class="w"> </span><span class="n">application</span><span class="p">)</span>
+<span class="w">   </span><span class="p">{</span>
+<span class="w">      </span><span class="n">init</span><span class="p">(</span><span class="n">application</span><span class="p">);</span>
+<span class="w">      </span><span class="k">return</span><span class="w"> </span><span class="n">nativeCoreVersion</span><span class="p">();</span>
+<span class="w">   </span><span class="p">}</span>
+
+<span class="w">   </span><span class="cm">/**</span>
+<span class="cm">    * Checks library version of the runtime</span>
+<span class="cm">    * @param Application context of the caller</span>
+<span class="cm">    * @return library version string of the runtime</span>
+<span class="cm">    */</span>
+<span class="w">   </span><span class="kd">public</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="nf">libVersion</span><span class="p">(</span><span class="kd">final</span><span class="w"> </span><span class="n">Application</span><span class="w"> </span><span class="n">application</span><span class="p">)</span>
+<span class="w">   </span><span class="p">{</span>
+<span class="w">      </span><span class="n">init</span><span class="p">(</span><span class="n">application</span><span class="p">);</span>
+<span class="w">      </span><span class="k">return</span><span class="w"> </span><span class="n">nativeLibVersion</span><span class="p">();</span>
+<span class="w">   </span><span class="p">}</span>
+
+<span class="w">   </span><span class="cm">/**</span>
+<span class="cm">    * Checks SNPE runtime availability</span>
+<span class="cm">    * @param Application context of the caller</span>
+<span class="cm">    * @return True if runtime is available otherwise false</span>
+<span class="cm">    */</span>
+<span class="w">   </span><span class="kd">public</span><span class="w"> </span><span class="kt">boolean</span><span class="w"> </span><span class="nf">runtimeCheck</span><span class="p">(</span><span class="kd">final</span><span class="w"> </span><span class="n">Application</span><span class="w"> </span><span class="n">application</span><span class="p">)</span>
+<span class="w">   </span><span class="p">{</span>
+<span class="w">      </span><span class="n">init</span><span class="p">(</span><span class="n">application</span><span class="p">);</span>
+<span class="w">      </span><span class="k">return</span><span class="w"> </span><span class="n">nativeRuntimeCheck</span><span class="p">();</span>
+<span class="w">   </span><span class="p">}</span>
+
+<span class="w">   </span><span class="kd">private</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kd">native</span><span class="w"> </span><span class="kt">boolean</span><span class="w"> </span><span class="nf">nativeInit</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">runtime</span><span class="p">,</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="n">nativeLibraryDir</span><span class="p">);</span>
+<span class="w">   </span><span class="kd">private</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kd">native</span><span class="w"> </span><span class="kt">boolean</span><span class="w"> </span><span class="nf">nativeIsRuntimeAvailable</span><span class="p">();</span>
+<span class="w">   </span><span class="kd">private</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kd">native</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="nf">nativeCoreVersion</span><span class="p">();</span>
+<span class="w">   </span><span class="kd">private</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kd">native</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="nf">nativeLibVersion</span><span class="p">();</span>
+<span class="w">   </span><span class="kd">private</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kd">native</span><span class="w"> </span><span class="kt">boolean</span><span class="w"> </span><span class="nf">nativeRuntimeCheck</span><span class="p">();</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2020-2023, Qualcomm Technologies, Inc..
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

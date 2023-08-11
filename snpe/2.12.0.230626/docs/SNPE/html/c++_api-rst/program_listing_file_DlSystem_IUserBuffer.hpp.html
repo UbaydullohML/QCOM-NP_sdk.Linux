@@ -1,0 +1,690 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Program Listing for File IUserBuffer.hpp &mdash; Snapdragon Neural Processing Engine SDK</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/custom_css.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/collapsible-lists/css/tree_view.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+        <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Qualcomm® Neural Processing SDK
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                v2.12.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../general/revision_history.html">Revision History</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/revision_history_windows.html">Revision History - Windows</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/overview.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/setup.html">Setup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/usergroup1.html">Network Models</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/usergroup5.html">Input Data and Preprocessing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/usergroup6.html">Tutorials and Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/usergroup10.html">Benchmarking and Accuracy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/tools.html">Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/usergroup11.html">Debug Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/api.html">API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/limitations.html">Limitations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/appx_ref.html">References</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Qualcomm® Neural Processing SDK</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Program Listing for File IUserBuffer.hpp</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="program-listing-for-file-iuserbuffer-hpp">
+<span id="program-listing-file-dlsystem-iuserbuffer-hpp"></span><h1>Program Listing for File IUserBuffer.hpp<a class="headerlink" href="#program-listing-for-file-iuserbuffer-hpp" title="Permalink to this headline">¶</a></h1>
+<p>↰ <a class="reference internal" href="file_DlSystem_IUserBuffer.hpp.html#file-dlsystem-iuserbuffer-hpp"><span class="std std-ref">Return to documentation for file</span></a> (<code class="docutils literal notranslate"><span class="pre">DlSystem/IUserBuffer.hpp</span></code>)</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="c1">//==============================================================================</span>
+<span class="c1">//</span>
+<span class="c1">// Copyright (c) 2017-2023 Qualcomm Technologies, Inc.</span>
+<span class="c1">// All Rights Reserved.</span>
+<span class="c1">// Confidential and Proprietary - Qualcomm Technologies, Inc.</span>
+<span class="c1">//</span>
+<span class="c1">//==============================================================================</span>
+
+<span class="cp">#ifndef _IUSER_BUFFER_HPP</span>
+<span class="cp">#define _IUSER_BUFFER_HPP</span>
+
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;TensorShape.hpp&quot;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;ZdlExportDefine.hpp&quot;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;math.h&gt;</span>
+
+<span class="k">namespace</span><span class="w"> </span><span class="nn">zdl</span><span class="w"> </span><span class="p">{</span>
+<span class="k">namespace</span><span class="w"> </span><span class="nn">DlSystem</span><span class="w"> </span><span class="p">{</span>
+
+<span class="cm">/** @addtogroup c_plus_plus_apis C++</span>
+<span class="cm">@{ */</span>
+
+
+<span class="cm">/**</span>
+<span class="cm">  * @brief .</span>
+<span class="cm">  *</span>
+<span class="cm">  * A base class buffer encoding type</span>
+<span class="cm">  */</span>
+<span class="k">class</span><span class="w"> </span><span class="nc">ZDL_EXPORT</span><span class="w"> </span><span class="n">UserBufferEncoding</span><span class="w"> </span><span class="p">{</span>
+<span class="k">public</span><span class="o">:</span>
+
+<span class="w">    </span><span class="cm">/**</span>
+<span class="cm">      * @brief .</span>
+<span class="cm">      *</span>
+<span class="cm">      * An enum class of all supported element types in a IUserBuffer</span>
+<span class="cm">      */</span>
+<span class="w">    </span><span class="k">enum</span><span class="w"> </span><span class="k">class</span><span class="w"> </span><span class="nc">ElementType_t</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="c1">/// Unknown element type.</span>
+<span class="w">        </span><span class="n">UNKNOWN</span><span class="w">         </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+
+<span class="w">        </span><span class="c1">/// Each element is presented by 32-bit float.</span>
+<span class="w">        </span><span class="n">FLOAT</span><span class="w">           </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+
+<span class="w">        </span><span class="c1">/// Each element is presented by an unsigned int.</span>
+<span class="w">        </span><span class="n">UNSIGNED8BIT</span><span class="w">    </span><span class="o">=</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span>
+
+<span class="w">        </span><span class="c1">/// Each element is presented by 16-bit float.</span>
+<span class="w">        </span><span class="n">FLOAT16</span><span class="w">         </span><span class="o">=</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span>
+
+<span class="w">        </span><span class="c1">/// Each element is presented by an 8-bit quantized value.</span>
+<span class="w">        </span><span class="n">TF8</span><span class="w">             </span><span class="o">=</span><span class="w"> </span><span class="mi">10</span><span class="p">,</span>
+
+<span class="w">        </span><span class="c1">/// Each element is presented by an 16-bit quantized value.</span>
+<span class="w">        </span><span class="n">TF16</span><span class="w">            </span><span class="o">=</span><span class="w"> </span><span class="mi">11</span><span class="p">,</span>
+
+<span class="w">        </span><span class="c1">/// Each element is presented by Int32</span>
+<span class="w">        </span><span class="n">INT32</span><span class="w">           </span><span class="o">=</span><span class="w"> </span><span class="mi">12</span><span class="p">,</span>
+
+<span class="w">        </span><span class="c1">/// Each element is presented by UInt32</span>
+<span class="w">        </span><span class="n">UINT32</span><span class="w">          </span><span class="o">=</span><span class="w"> </span><span class="mi">13</span><span class="p">,</span>
+
+<span class="w">        </span><span class="c1">/// Each element is presented by Int8</span>
+<span class="w">        </span><span class="n">INT8</span><span class="w">            </span><span class="o">=</span><span class="w"> </span><span class="mi">14</span><span class="p">,</span>
+
+<span class="w">        </span><span class="c1">/// Each element is presented by UInt8</span>
+<span class="w">        </span><span class="n">UINT8</span><span class="w">           </span><span class="o">=</span><span class="w"> </span><span class="mi">15</span><span class="p">,</span>
+
+<span class="w">        </span><span class="c1">/// Each element is presented by Int8</span>
+<span class="w">        </span><span class="n">INT16</span><span class="w">           </span><span class="o">=</span><span class="w"> </span><span class="mi">16</span><span class="p">,</span>
+
+<span class="w">        </span><span class="c1">/// Each element is presented by Int8</span>
+<span class="w">        </span><span class="n">UINT16</span><span class="w">          </span><span class="o">=</span><span class="w"> </span><span class="mi">17</span><span class="p">,</span>
+
+<span class="w">        </span><span class="c1">/// Each element is presented by Bool8</span>
+<span class="w">        </span><span class="n">BOOL8</span><span class="w">           </span><span class="o">=</span><span class="w"> </span><span class="mi">18</span><span class="p">,</span>
+<span class="w">    </span><span class="p">};</span>
+
+<span class="w">    </span><span class="cm">/**</span>
+<span class="cm">      * @brief Retrieves the size of the element, in bytes.</span>
+<span class="cm">      *</span>
+<span class="cm">      * @return Size of the element, in bytes.</span>
+<span class="cm">     */</span>
+<span class="w">    </span><span class="k">virtual</span><span class="w"> </span><span class="kt">size_t</span><span class="w"> </span><span class="nf">getElementSize</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="k">noexcept</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+
+<span class="w">    </span><span class="cm">/**</span>
+<span class="cm">      * @brief Retrieves the element type</span>
+<span class="cm">      *</span>
+<span class="cm">      * @return Element type</span>
+<span class="cm">     */</span>
+<span class="w">    </span><span class="n">ElementType_t</span><span class="w"> </span><span class="nf">getElementType</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="k">noexcept</span><span class="w"> </span><span class="p">{</span><span class="k">return</span><span class="w"> </span><span class="n">m_ElementType</span><span class="p">;};</span>
+
+<span class="w">    </span><span class="k">virtual</span><span class="w"> </span><span class="o">~</span><span class="n">UserBufferEncoding</span><span class="p">()</span><span class="w"> </span><span class="p">{}</span>
+
+<span class="k">protected</span><span class="o">:</span>
+<span class="w">    </span><span class="n">UserBufferEncoding</span><span class="p">(</span><span class="n">ElementType_t</span><span class="w">  </span><span class="n">elementType</span><span class="p">)</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">m_ElementType</span><span class="p">(</span><span class="n">elementType</span><span class="p">)</span><span class="w"> </span><span class="p">{};</span>
+<span class="k">private</span><span class="o">:</span>
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="n">ElementType_t</span><span class="w">  </span><span class="n">m_ElementType</span><span class="p">;</span>
+<span class="p">};</span>
+
+<span class="cm">/**</span>
+<span class="cm">  * @brief .</span>
+<span class="cm">  *</span>
+<span class="cm">  * A base class buffer source type</span>
+<span class="cm">  *</span>
+<span class="cm">  * @note User buffer from CPU support all kinds of runtimes;</span>
+<span class="cm">  *       User buffer from GLBUFFER support only GPU runtime.</span>
+<span class="cm">  */</span>
+<span class="k">class</span><span class="w"> </span><span class="nc">ZDL_EXPORT</span><span class="w"> </span><span class="n">UserBufferSource</span><span class="w"> </span><span class="p">{</span>
+<span class="k">public</span><span class="o">:</span>
+<span class="w">   </span><span class="k">enum</span><span class="w"> </span><span class="k">class</span><span class="w"> </span><span class="nc">SourceType_t</span>
+<span class="w">   </span><span class="p">{</span>
+<span class="w">      </span><span class="c1">/// Unknown buffer source type.</span>
+<span class="w">      </span><span class="n">UNKNOWN</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+
+<span class="w">      </span><span class="c1">/// The network inputs are from CPU buffer.</span>
+<span class="w">      </span><span class="n">CPU</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+
+<span class="w">      </span><span class="c1">/// The network inputs are from OpenGL buffer.</span>
+<span class="w">      </span><span class="n">GLBUFFER</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">2</span>
+<span class="w">   </span><span class="p">};</span>
+
+<span class="w">   </span><span class="cm">/**</span>
+<span class="cm">     * @brief Retrieves the source type</span>
+<span class="cm">     *</span>
+<span class="cm">     * @return Source type</span>
+<span class="cm">    */</span>
+<span class="w">   </span><span class="n">SourceType_t</span><span class="w"> </span><span class="nf">getSourceType</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="k">noexcept</span><span class="w"> </span><span class="p">{</span><span class="k">return</span><span class="w"> </span><span class="n">m_SourceType</span><span class="p">;};</span>
+
+<span class="k">protected</span><span class="o">:</span>
+<span class="w">   </span><span class="n">UserBufferSource</span><span class="p">(</span><span class="n">SourceType_t</span><span class="w"> </span><span class="n">sourceType</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="n">m_SourceType</span><span class="p">(</span><span class="n">sourceType</span><span class="p">)</span><span class="w"> </span><span class="p">{};</span>
+<span class="k">private</span><span class="o">:</span>
+<span class="w">   </span><span class="k">const</span><span class="w"> </span><span class="n">SourceType_t</span><span class="w"> </span><span class="n">m_SourceType</span><span class="p">;</span>
+<span class="p">};</span>
+
+<span class="cm">/**</span>
+<span class="cm">  * @brief .</span>
+<span class="cm">  *</span>
+<span class="cm">  * An source type where input data is delivered from OpenGL buffer</span>
+<span class="cm">  */</span>
+<span class="k">class</span><span class="w"> </span><span class="nc">ZDL_EXPORT</span><span class="w"> </span><span class="n">UserBufferSourceGLBuffer</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="k">public</span><span class="w"> </span><span class="n">UserBufferSource</span><span class="p">{</span>
+<span class="k">public</span><span class="o">:</span>
+<span class="w">   </span><span class="n">UserBufferSourceGLBuffer</span><span class="p">()</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">UserBufferSource</span><span class="p">(</span><span class="n">SourceType_t</span><span class="o">::</span><span class="n">GLBUFFER</span><span class="p">)</span><span class="w"> </span><span class="p">{};</span>
+<span class="p">};</span>
+
+<span class="cm">/**</span>
+<span class="cm">  * @brief .</span>
+<span class="cm">  *</span>
+<span class="cm">  * An encoding type where each element is represented by an unsigned int</span>
+<span class="cm">  */</span>
+<span class="k">class</span><span class="w"> </span><span class="nc">ZDL_EXPORT</span><span class="w"> </span><span class="n">UserBufferEncodingUnsigned8Bit</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="k">public</span><span class="w"> </span><span class="n">UserBufferEncoding</span><span class="w"> </span><span class="p">{</span>
+<span class="k">public</span><span class="o">:</span>
+<span class="w">    </span><span class="n">UserBufferEncodingUnsigned8Bit</span><span class="p">()</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">UserBufferEncoding</span><span class="p">(</span><span class="n">ElementType_t</span><span class="o">::</span><span class="n">UNSIGNED8BIT</span><span class="p">)</span><span class="w"> </span><span class="p">{};</span>
+<span class="w">    </span><span class="kt">size_t</span><span class="w"> </span><span class="nf">getElementSize</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="k">noexcept</span><span class="w"> </span><span class="k">override</span><span class="p">;</span>
+
+<span class="k">protected</span><span class="o">:</span>
+<span class="w">    </span><span class="n">UserBufferEncodingUnsigned8Bit</span><span class="p">(</span><span class="n">ElementType_t</span><span class="w">  </span><span class="n">elementType</span><span class="p">)</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">UserBufferEncoding</span><span class="p">(</span><span class="n">elementType</span><span class="p">)</span><span class="w"> </span><span class="p">{};</span>
+
+<span class="p">};</span>
+
+<span class="cm">/**</span>
+<span class="cm">  * @brief .</span>
+<span class="cm">  *</span>
+<span class="cm">  * An encoding type where each element is represented by a N-bit float</span>
+<span class="cm">  */</span>
+<span class="k">class</span><span class="w"> </span><span class="nc">ZDL_EXPORT</span><span class="w"> </span><span class="n">UserBufferEncodingFloatN</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="k">public</span><span class="w"> </span><span class="n">UserBufferEncoding</span><span class="w"> </span><span class="p">{</span>
+<span class="k">public</span><span class="o">:</span>
+<span class="w">    </span><span class="n">UserBufferEncodingFloatN</span><span class="p">(</span><span class="kt">uint8_t</span><span class="w"> </span><span class="n">bWidth</span><span class="o">=</span><span class="mi">32</span><span class="p">)</span>
+<span class="w">      </span><span class="o">:</span><span class="w"> </span><span class="n">UserBufferEncoding</span><span class="p">(</span><span class="n">getTypeFromWidth</span><span class="p">(</span><span class="n">bWidth</span><span class="p">)),</span><span class="w"> </span><span class="n">bitWidth</span><span class="p">(</span><span class="n">bWidth</span><span class="p">)</span><span class="w"> </span><span class="p">{};</span>
+<span class="w">    </span><span class="kt">size_t</span><span class="w"> </span><span class="nf">getElementSize</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="k">noexcept</span><span class="w"> </span><span class="k">override</span><span class="p">;</span>
+<span class="w">    </span><span class="k">static</span><span class="w"> </span><span class="n">ElementType_t</span><span class="w"> </span><span class="nf">getTypeFromWidth</span><span class="p">(</span><span class="kt">uint8_t</span><span class="w"> </span><span class="n">width</span><span class="p">);</span>
+<span class="k">private</span><span class="o">:</span>
+<span class="w">    </span><span class="kt">uint8_t</span><span class="w"> </span><span class="n">bitWidth</span><span class="p">;</span>
+<span class="p">};</span>
+
+<span class="cm">/**</span>
+<span class="cm">  * @brief .</span>
+<span class="cm">  *</span>
+<span class="cm">  * An encoding type where each element is represented by a 32-bit float</span>
+<span class="cm">  */</span>
+<span class="k">class</span><span class="w"> </span><span class="nc">ZDL_EXPORT</span><span class="w"> </span><span class="n">UserBufferEncodingFloat</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="k">public</span><span class="w"> </span><span class="n">UserBufferEncodingFloatN</span><span class="w"> </span><span class="p">{</span>
+<span class="k">public</span><span class="o">:</span>
+<span class="w">    </span><span class="n">UserBufferEncodingFloat</span><span class="p">()</span><span class="w"> </span><span class="p">{};</span>
+<span class="p">};</span>
+
+<span class="cm">/**</span>
+<span class="cm">  * @brief .</span>
+<span class="cm">  *</span>
+<span class="cm">  * An encoding type where each element is represented by tf8, which is an</span>
+<span class="cm">  * 8-bit quantizd value, which has an exact representation of 0.0</span>
+<span class="cm">  */</span>
+<span class="k">class</span><span class="w"> </span><span class="nc">ZDL_EXPORT</span><span class="w"> </span><span class="n">UserBufferEncodingTfN</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="k">public</span><span class="w"> </span><span class="n">UserBufferEncoding</span><span class="w"> </span><span class="p">{</span>
+<span class="k">public</span><span class="o">:</span>
+<span class="w">   </span><span class="n">UserBufferEncodingTfN</span><span class="p">()</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">delete</span><span class="p">;</span>
+<span class="w">   </span><span class="n">UserBufferEncodingTfN</span><span class="p">(</span><span class="kt">uint64_t</span><span class="w"> </span><span class="n">stepFor0</span><span class="p">,</span><span class="w"> </span><span class="kt">float</span><span class="w"> </span><span class="n">stepSize</span><span class="p">,</span><span class="w"> </span><span class="kt">uint8_t</span><span class="w"> </span><span class="n">bWidth</span><span class="o">=</span><span class="mi">8</span><span class="p">)</span><span class="o">:</span>
+<span class="w">                                           </span><span class="n">UserBufferEncoding</span><span class="p">(</span><span class="n">getTypeFromWidth</span><span class="p">(</span><span class="n">bWidth</span><span class="p">)),</span>
+<span class="w">                                           </span><span class="n">bitWidth</span><span class="p">(</span><span class="n">bWidth</span><span class="p">),</span>
+<span class="w">                                           </span><span class="n">m_StepExactly0</span><span class="p">(</span><span class="n">stepFor0</span><span class="p">),</span>
+<span class="w">                                           </span><span class="n">m_QuantizedStepSize</span><span class="p">(</span><span class="n">stepSize</span><span class="p">){};</span>
+
+<span class="w">   </span><span class="n">UserBufferEncodingTfN</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">zdl</span><span class="o">::</span><span class="n">DlSystem</span><span class="o">::</span><span class="n">UserBufferEncoding</span><span class="w"> </span><span class="o">&amp;</span><span class="n">ubEncoding</span><span class="p">)</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">UserBufferEncoding</span><span class="p">(</span><span class="n">ubEncoding</span><span class="p">.</span><span class="n">getElementType</span><span class="p">()){</span>
+<span class="w">            </span><span class="k">const</span><span class="w"> </span><span class="n">zdl</span><span class="o">::</span><span class="n">DlSystem</span><span class="o">::</span><span class="n">UserBufferEncodingTfN</span><span class="o">*</span><span class="w"> </span><span class="n">ubEncodingTfN</span>
+<span class="w">                            </span><span class="o">=</span><span class="w"> </span><span class="k">dynamic_cast</span><span class="w"> </span><span class="o">&lt;</span><span class="k">const</span><span class="w"> </span><span class="n">zdl</span><span class="o">::</span><span class="n">DlSystem</span><span class="o">::</span><span class="n">UserBufferEncodingTfN</span><span class="o">*&gt;</span><span class="w"> </span><span class="p">(</span><span class="o">&amp;</span><span class="n">ubEncoding</span><span class="p">);</span>
+<span class="w">            </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">ubEncodingTfN</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="n">m_StepExactly0</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">ubEncodingTfN</span><span class="o">-&gt;</span><span class="n">getStepExactly0</span><span class="p">();</span>
+<span class="w">                </span><span class="n">m_QuantizedStepSize</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">ubEncodingTfN</span><span class="o">-&gt;</span><span class="n">getQuantizedStepSize</span><span class="p">();</span>
+<span class="w">                </span><span class="n">bitWidth</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">ubEncodingTfN</span><span class="o">-&gt;</span><span class="n">bitWidth</span><span class="p">;</span>
+<span class="w">            </span><span class="p">}</span>
+<span class="w">   </span><span class="p">}</span>
+
+<span class="w">   </span><span class="kt">size_t</span><span class="w"> </span><span class="n">getElementSize</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="k">noexcept</span><span class="w"> </span><span class="k">override</span><span class="p">;</span>
+<span class="w">   </span><span class="cm">/**</span>
+<span class="cm">      * @brief Sets the step value that represents 0</span>
+<span class="cm">      *</span>
+<span class="cm">      * @param[in] stepExactly0 The step value that represents 0</span>
+<span class="cm">      *</span>
+<span class="cm">     */</span>
+<span class="w">   </span><span class="kt">void</span><span class="w"> </span><span class="nf">setStepExactly0</span><span class="p">(</span><span class="kt">uint64_t</span><span class="w"> </span><span class="n">stepExactly0</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="n">m_StepExactly0</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">stepExactly0</span><span class="p">;</span>
+<span class="w">   </span><span class="p">}</span>
+
+<span class="w">   </span><span class="cm">/**</span>
+<span class="cm">     * @brief Sets the float value that each step represents</span>
+<span class="cm">     *</span>
+<span class="cm">     * @param[in] quantizedStepSize The float value of each step size</span>
+<span class="cm">     *</span>
+<span class="cm">    */</span>
+<span class="w">   </span><span class="kt">void</span><span class="w"> </span><span class="nf">setQuantizedStepSize</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="kt">float</span><span class="w"> </span><span class="n">quantizedStepSize</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="n">m_QuantizedStepSize</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">quantizedStepSize</span><span class="p">;</span>
+<span class="w">   </span><span class="p">}</span>
+
+<span class="w">   </span><span class="cm">/**</span>
+<span class="cm">     * @brief Retrieves the step that represents 0.0</span>
+<span class="cm">     *</span>
+<span class="cm">     * @return Step value</span>
+<span class="cm">    */</span>
+<span class="w">   </span><span class="kt">uint64_t</span><span class="w"> </span><span class="nf">getStepExactly0</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="k">return</span><span class="w"> </span><span class="n">m_StepExactly0</span><span class="p">;</span>
+<span class="w">   </span><span class="p">}</span>
+
+<span class="w">   </span><span class="cm">/**</span>
+<span class="cm">    * Calculates the minimum floating point value that</span>
+<span class="cm">    * can be represented with this encoding.</span>
+<span class="cm">    *</span>
+<span class="cm">    * @return Minimum representable floating point value</span>
+<span class="cm">    */</span>
+<span class="w">   </span><span class="kt">float</span><span class="w"> </span><span class="nf">getMin</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="k">return</span><span class="w"> </span><span class="k">static_cast</span><span class="o">&lt;</span><span class="kt">float</span><span class="o">&gt;</span><span class="p">(</span><span class="n">m_QuantizedStepSize</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="p">(</span><span class="mi">0</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="p">(</span><span class="kt">double</span><span class="p">)</span><span class="n">m_StepExactly0</span><span class="p">));</span>
+<span class="w">   </span><span class="p">}</span>
+
+<span class="w">   </span><span class="cm">/**</span>
+<span class="cm">    * Calculates the maximum floating point value that</span>
+<span class="cm">    * can be represented with this encoding.</span>
+<span class="cm">    *</span>
+<span class="cm">    * @return Maximum representable floating point value</span>
+<span class="cm">    */</span>
+<span class="w">   </span><span class="kt">float</span><span class="w"> </span><span class="nf">getMax</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="p">{</span>
+<span class="w">       </span><span class="k">return</span><span class="w"> </span><span class="k">static_cast</span><span class="o">&lt;</span><span class="kt">float</span><span class="o">&gt;</span><span class="p">(</span><span class="n">m_QuantizedStepSize</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="p">(</span><span class="n">pow</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="n">bitWidth</span><span class="p">)</span><span class="mi">-1</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="p">(</span><span class="kt">double</span><span class="p">)</span><span class="n">m_StepExactly0</span><span class="p">));</span>
+<span class="w">   </span><span class="p">};</span>
+
+<span class="w">   </span><span class="cm">/**</span>
+<span class="cm">     * @brief Retrieves the step size</span>
+<span class="cm">     *</span>
+<span class="cm">     * @return Step size</span>
+<span class="cm">    */</span>
+<span class="w">   </span><span class="kt">float</span><span class="w"> </span><span class="nf">getQuantizedStepSize</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="k">return</span><span class="w"> </span><span class="n">m_QuantizedStepSize</span><span class="p">;</span>
+<span class="w">   </span><span class="p">}</span>
+
+<span class="w">   </span><span class="k">static</span><span class="w"> </span><span class="n">ElementType_t</span><span class="w"> </span><span class="nf">getTypeFromWidth</span><span class="p">(</span><span class="kt">uint8_t</span><span class="w"> </span><span class="n">width</span><span class="p">);</span>
+
+<span class="w">   </span><span class="kt">uint8_t</span><span class="w"> </span><span class="n">bitWidth</span><span class="p">;</span>
+<span class="k">protected</span><span class="o">:</span>
+<span class="w">   </span><span class="kt">uint64_t</span><span class="w"> </span><span class="n">m_StepExactly0</span><span class="p">;</span>
+<span class="w">   </span><span class="kt">float</span><span class="w"> </span><span class="n">m_QuantizedStepSize</span><span class="p">;</span>
+<span class="p">};</span>
+
+<span class="cm">/**</span>
+<span class="cm">  * @brief .</span>
+<span class="cm">  *</span>
+<span class="cm">  * An encoding type where each element is represented by intN, which is an</span>
+<span class="cm">  */</span>
+<span class="k">class</span><span class="w"> </span><span class="nc">ZDL_EXPORT</span><span class="w"> </span><span class="n">UserBufferEncodingIntN</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="k">public</span><span class="w"> </span><span class="n">UserBufferEncoding</span><span class="w"> </span><span class="p">{</span>
+<span class="k">public</span><span class="o">:</span>
+<span class="w">   </span><span class="n">UserBufferEncodingIntN</span><span class="p">(</span><span class="kt">uint8_t</span><span class="w"> </span><span class="n">bWidth</span><span class="o">=</span><span class="mi">32</span><span class="p">)</span><span class="o">:</span>
+<span class="w">                                           </span><span class="n">UserBufferEncoding</span><span class="p">(</span><span class="n">getTypeFromWidth</span><span class="p">(</span><span class="n">bWidth</span><span class="p">)),</span>
+<span class="w">                                           </span><span class="n">bitWidth</span><span class="p">(</span><span class="n">bWidth</span><span class="p">){};</span>
+
+<span class="w">   </span><span class="n">UserBufferEncodingIntN</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">zdl</span><span class="o">::</span><span class="n">DlSystem</span><span class="o">::</span><span class="n">UserBufferEncoding</span><span class="w"> </span><span class="o">&amp;</span><span class="n">ubEncoding</span><span class="p">)</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">UserBufferEncoding</span><span class="p">(</span><span class="n">ubEncoding</span><span class="p">.</span><span class="n">getElementType</span><span class="p">()){</span>
+<span class="w">            </span><span class="k">const</span><span class="w"> </span><span class="n">zdl</span><span class="o">::</span><span class="n">DlSystem</span><span class="o">::</span><span class="n">UserBufferEncodingIntN</span><span class="o">*</span><span class="w"> </span><span class="n">ubEncodingIntN</span>
+<span class="w">                            </span><span class="o">=</span><span class="w"> </span><span class="k">dynamic_cast</span><span class="w"> </span><span class="o">&lt;</span><span class="k">const</span><span class="w"> </span><span class="n">zdl</span><span class="o">::</span><span class="n">DlSystem</span><span class="o">::</span><span class="n">UserBufferEncodingIntN</span><span class="o">*&gt;</span><span class="w"> </span><span class="p">(</span><span class="o">&amp;</span><span class="n">ubEncoding</span><span class="p">);</span>
+<span class="w">            </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">ubEncodingIntN</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="n">bitWidth</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">ubEncodingIntN</span><span class="o">-&gt;</span><span class="n">bitWidth</span><span class="p">;</span>
+<span class="w">            </span><span class="p">}</span>
+<span class="w">   </span><span class="p">}</span>
+<span class="w">   </span><span class="kt">size_t</span><span class="w"> </span><span class="n">getElementSize</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="k">noexcept</span><span class="w"> </span><span class="k">override</span><span class="p">;</span>
+<span class="w">   </span><span class="k">static</span><span class="w"> </span><span class="n">ElementType_t</span><span class="w"> </span><span class="nf">getTypeFromWidth</span><span class="p">(</span><span class="kt">uint8_t</span><span class="w"> </span><span class="n">width</span><span class="p">);</span>
+<span class="w">   </span><span class="kt">uint8_t</span><span class="w"> </span><span class="n">bitWidth</span><span class="p">;</span>
+<span class="p">};</span>
+
+<span class="cm">/**</span>
+<span class="cm">  * @brief .</span>
+<span class="cm">  *</span>
+<span class="cm">  * An encoding type where each element is represented by UintN, which is an</span>
+<span class="cm">  */</span>
+<span class="k">class</span><span class="w"> </span><span class="nc">ZDL_EXPORT</span><span class="w"> </span><span class="n">UserBufferEncodingUintN</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="k">public</span><span class="w"> </span><span class="n">UserBufferEncoding</span><span class="w"> </span><span class="p">{</span>
+<span class="k">public</span><span class="o">:</span>
+<span class="w">   </span><span class="n">UserBufferEncodingUintN</span><span class="p">(</span><span class="kt">uint8_t</span><span class="w"> </span><span class="n">bWidth</span><span class="o">=</span><span class="mi">32</span><span class="p">)</span><span class="o">:</span>
+<span class="w">                                           </span><span class="n">UserBufferEncoding</span><span class="p">(</span><span class="n">getTypeFromWidth</span><span class="p">(</span><span class="n">bWidth</span><span class="p">)),</span>
+<span class="w">                                           </span><span class="n">bitWidth</span><span class="p">(</span><span class="n">bWidth</span><span class="p">){};</span>
+
+<span class="w">   </span><span class="n">UserBufferEncodingUintN</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">zdl</span><span class="o">::</span><span class="n">DlSystem</span><span class="o">::</span><span class="n">UserBufferEncoding</span><span class="w"> </span><span class="o">&amp;</span><span class="n">ubEncoding</span><span class="p">)</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">UserBufferEncoding</span><span class="p">(</span><span class="n">ubEncoding</span><span class="p">.</span><span class="n">getElementType</span><span class="p">()){</span>
+<span class="w">            </span><span class="k">const</span><span class="w"> </span><span class="n">zdl</span><span class="o">::</span><span class="n">DlSystem</span><span class="o">::</span><span class="n">UserBufferEncodingUintN</span><span class="o">*</span><span class="w"> </span><span class="n">ubEncodingUintN</span>
+<span class="w">                            </span><span class="o">=</span><span class="w"> </span><span class="k">dynamic_cast</span><span class="w"> </span><span class="o">&lt;</span><span class="k">const</span><span class="w"> </span><span class="n">zdl</span><span class="o">::</span><span class="n">DlSystem</span><span class="o">::</span><span class="n">UserBufferEncodingUintN</span><span class="o">*&gt;</span><span class="w"> </span><span class="p">(</span><span class="o">&amp;</span><span class="n">ubEncoding</span><span class="p">);</span>
+<span class="w">            </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">ubEncodingUintN</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="n">bitWidth</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">ubEncodingUintN</span><span class="o">-&gt;</span><span class="n">bitWidth</span><span class="p">;</span>
+<span class="w">            </span><span class="p">}</span>
+<span class="w">   </span><span class="p">}</span>
+<span class="w">   </span><span class="kt">size_t</span><span class="w"> </span><span class="n">getElementSize</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="k">noexcept</span><span class="w"> </span><span class="k">override</span><span class="p">;</span>
+<span class="w">   </span><span class="k">static</span><span class="w"> </span><span class="n">ElementType_t</span><span class="w"> </span><span class="nf">getTypeFromWidth</span><span class="p">(</span><span class="kt">uint8_t</span><span class="w"> </span><span class="n">width</span><span class="p">);</span>
+<span class="w">   </span><span class="kt">uint8_t</span><span class="w"> </span><span class="n">bitWidth</span><span class="p">;</span>
+<span class="p">};</span>
+
+<span class="cm">/**</span>
+<span class="cm">  * @brief .</span>
+<span class="cm">  *</span>
+<span class="cm">  * An encoding type where each element is represented by Bool, which is an</span>
+<span class="cm">  */</span>
+<span class="k">class</span><span class="w"> </span><span class="nc">ZDL_EXPORT</span><span class="w"> </span><span class="n">UserBufferEncodingBool</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="k">public</span><span class="w"> </span><span class="n">UserBufferEncoding</span><span class="w"> </span><span class="p">{</span>
+<span class="k">public</span><span class="o">:</span>
+<span class="w">   </span><span class="n">UserBufferEncodingBool</span><span class="p">(</span><span class="kt">uint8_t</span><span class="w"> </span><span class="n">bWidth</span><span class="o">=</span><span class="mi">8</span><span class="p">)</span><span class="o">:</span>
+<span class="w">                                           </span><span class="n">UserBufferEncoding</span><span class="p">(</span><span class="n">getTypeFromWidth</span><span class="p">(</span><span class="n">bWidth</span><span class="p">)),</span>
+<span class="w">                                           </span><span class="n">bitWidth</span><span class="p">(</span><span class="n">bWidth</span><span class="p">){};</span>
+
+<span class="w">   </span><span class="n">UserBufferEncodingBool</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">zdl</span><span class="o">::</span><span class="n">DlSystem</span><span class="o">::</span><span class="n">UserBufferEncoding</span><span class="w"> </span><span class="o">&amp;</span><span class="n">ubEncoding</span><span class="p">)</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">UserBufferEncoding</span><span class="p">(</span><span class="n">ubEncoding</span><span class="p">.</span><span class="n">getElementType</span><span class="p">()){</span>
+<span class="w">            </span><span class="k">const</span><span class="w"> </span><span class="n">zdl</span><span class="o">::</span><span class="n">DlSystem</span><span class="o">::</span><span class="n">UserBufferEncodingBool</span><span class="o">*</span><span class="w"> </span><span class="n">ubEncodingBool</span>
+<span class="w">                            </span><span class="o">=</span><span class="w"> </span><span class="k">dynamic_cast</span><span class="w"> </span><span class="o">&lt;</span><span class="k">const</span><span class="w"> </span><span class="n">zdl</span><span class="o">::</span><span class="n">DlSystem</span><span class="o">::</span><span class="n">UserBufferEncodingBool</span><span class="o">*&gt;</span><span class="w"> </span><span class="p">(</span><span class="o">&amp;</span><span class="n">ubEncoding</span><span class="p">);</span>
+<span class="w">            </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">ubEncodingBool</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="n">bitWidth</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">ubEncodingBool</span><span class="o">-&gt;</span><span class="n">bitWidth</span><span class="p">;</span>
+<span class="w">            </span><span class="p">}</span>
+<span class="w">   </span><span class="p">}</span>
+<span class="w">   </span><span class="kt">size_t</span><span class="w"> </span><span class="n">getElementSize</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="k">noexcept</span><span class="w"> </span><span class="k">override</span><span class="p">;</span>
+<span class="w">   </span><span class="n">ElementType_t</span><span class="w"> </span><span class="nf">getTypeFromWidth</span><span class="p">(</span><span class="kt">uint8_t</span><span class="w"> </span><span class="n">width</span><span class="p">);</span>
+<span class="w">   </span><span class="kt">uint8_t</span><span class="w"> </span><span class="n">bitWidth</span><span class="p">;</span>
+<span class="p">};</span>
+
+<span class="k">class</span><span class="w"> </span><span class="nc">ZDL_EXPORT</span><span class="w"> </span><span class="n">UserBufferEncodingTf8</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="k">public</span><span class="w"> </span><span class="n">UserBufferEncodingTfN</span><span class="w"> </span><span class="p">{</span>
+<span class="k">public</span><span class="o">:</span>
+<span class="w">    </span><span class="n">UserBufferEncodingTf8</span><span class="p">()</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">delete</span><span class="p">;</span>
+<span class="w">    </span><span class="n">UserBufferEncodingTf8</span><span class="p">(</span><span class="kt">unsigned</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="n">stepFor0</span><span class="p">,</span><span class="w"> </span><span class="kt">float</span><span class="w"> </span><span class="n">stepSize</span><span class="p">)</span><span class="w"> </span><span class="o">:</span>
+<span class="w">            </span><span class="n">UserBufferEncodingTfN</span><span class="p">(</span><span class="n">stepFor0</span><span class="p">,</span><span class="w"> </span><span class="n">stepSize</span><span class="p">)</span><span class="w"> </span><span class="p">{};</span>
+
+<span class="w">    </span><span class="n">UserBufferEncodingTf8</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">zdl</span><span class="o">::</span><span class="n">DlSystem</span><span class="o">::</span><span class="n">UserBufferEncoding</span><span class="w"> </span><span class="o">&amp;</span><span class="n">ubEncoding</span><span class="p">)</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">UserBufferEncodingTfN</span><span class="p">(</span><span class="n">ubEncoding</span><span class="p">){}</span>
+
+<span class="cm">/**</span>
+<span class="cm">      * @brief Sets the step value that represents 0</span>
+<span class="cm">      *</span>
+<span class="cm">      * @param[in] stepExactly0 The step value that represents 0</span>
+<span class="cm">      *</span>
+<span class="cm">     */</span>
+
+<span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="n">setStepExactly0</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="kt">unsigned</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="n">stepExactly0</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">UserBufferEncodingTfN</span><span class="o">::</span><span class="n">m_StepExactly0</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">stepExactly0</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="cm">/**</span>
+<span class="cm">      * @brief Retrieves the step that represents 0.0</span>
+<span class="cm">      *</span>
+<span class="cm">      * @return Step value</span>
+<span class="cm">     */</span>
+
+<span class="w">    </span><span class="kt">unsigned</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="n">getStepExactly0</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="n">UserBufferEncodingTfN</span><span class="o">::</span><span class="n">m_StepExactly0</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="p">};</span>
+
+
+<span class="cm">/**</span>
+<span class="cm"> * @brief UserBuffer contains a pointer and info on how to walk it and interpret its content.</span>
+<span class="cm"> */</span>
+<span class="k">class</span><span class="w"> </span><span class="nc">ZDL_EXPORT</span><span class="w"> </span><span class="n">IUserBuffer</span><span class="w"> </span><span class="p">{</span>
+<span class="k">public</span><span class="o">:</span>
+<span class="w">    </span><span class="k">virtual</span><span class="w"> </span><span class="o">~</span><span class="n">IUserBuffer</span><span class="p">()</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">default</span><span class="p">;</span>
+
+<span class="w">    </span><span class="cm">/**</span>
+<span class="cm">      * @brief Retrieves the total number of bytes between elements in each dimension if</span>
+<span class="cm">      * the buffer were to be interpreted as a multi-dimensional array.</span>
+<span class="cm">      *</span>
+<span class="cm">      * @return Number of bytes between elements in each dimension.</span>
+<span class="cm">      * e.g. A tightly packed tensor of floats with dimensions [4, 3, 2] would</span>
+<span class="cm">      * return strides of [24, 8, 4].</span>
+<span class="cm">     */</span>
+<span class="w">    </span><span class="k">virtual</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">TensorShape</span><span class="o">&amp;</span><span class="w"> </span><span class="nf">getStrides</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+
+<span class="w">    </span><span class="cm">/**</span>
+<span class="cm">      * @brief Retrieves the size of the buffer, in bytes.</span>
+<span class="cm">      *</span>
+<span class="cm">      * @return Size of the underlying buffer, in bytes.</span>
+<span class="cm">     */</span>
+<span class="w">    </span><span class="k">virtual</span><span class="w"> </span><span class="kt">size_t</span><span class="w"> </span><span class="nf">getSize</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+
+<span class="w">    </span><span class="cm">/**</span>
+<span class="cm">      * @brief Retrieves the size of the inference data in the buffer, in bytes.</span>
+<span class="cm">      *</span>
+<span class="cm">      * The inference results from a dynamic-sized model may not be exactly the same size</span>
+<span class="cm">      * as the UserBuffer provided to SNPE. This function can be used to get the amount</span>
+<span class="cm">      * of output inference data, which may be less or greater than the size of the UserBuffer.</span>
+<span class="cm">      *</span>
+<span class="cm">      * If the inference results fit in the UserBuffer, getOutputSize() would be less than</span>
+<span class="cm">      * or equal to getSize(). But if the inference results were more than the capacity of</span>
+<span class="cm">      * the provided UserBuffer, the results would be truncated to fit the UserBuffer. But,</span>
+<span class="cm">      * getOutputSize() would be greater than getSize(), which indicates a bigger buffer</span>
+<span class="cm">      * needs to be provided to SNPE to hold all of the inference results.</span>
+<span class="cm">      *</span>
+<span class="cm">      * @return Size required for the buffer to hold all inference results, which can be less</span>
+<span class="cm">      * or more than the size of the buffer, in bytes.</span>
+<span class="cm">    */</span>
+<span class="w">    </span><span class="k">virtual</span><span class="w"> </span><span class="kt">size_t</span><span class="w"> </span><span class="nf">getOutputSize</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+
+<span class="w">    </span><span class="cm">/**</span>
+<span class="cm">      * @brief Changes the underlying memory that backs the UserBuffer.</span>
+<span class="cm">      *</span>
+<span class="cm">      * This can be used to avoid creating multiple UserBuffer objects</span>
+<span class="cm">      * when the only thing that differs is the memory location.</span>
+<span class="cm">      *</span>
+<span class="cm">      * @param[in] buffer Pointer to the memory location</span>
+<span class="cm">      *</span>
+<span class="cm">      * @return Whether the set succeeds.</span>
+<span class="cm">     */</span>
+<span class="w">    </span><span class="k">virtual</span><span class="w"> </span><span class="kt">bool</span><span class="w"> </span><span class="nf">setBufferAddress</span><span class="p">(</span><span class="kt">void</span><span class="w"> </span><span class="o">*</span><span class="n">buffer</span><span class="p">)</span><span class="w"> </span><span class="k">noexcept</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+
+<span class="w">    </span><span class="cm">/**</span>
+<span class="cm">      * @brief Gets a const reference to the data encoding object of</span>
+<span class="cm">      *        the underlying buffer</span>
+<span class="cm">      *</span>
+<span class="cm">      * This is necessary when the UserBuffer is filled by SNPE with</span>
+<span class="cm">      * data types such as TF8, where the caller needs to know the quantization</span>
+<span class="cm">      * parameters in order to interpret the data properly</span>
+<span class="cm">      *</span>
+<span class="cm">      * @return A read-only encoding object</span>
+<span class="cm">     */</span>
+<span class="w">    </span><span class="k">virtual</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">UserBufferEncoding</span><span class="o">&amp;</span><span class="w"> </span><span class="nf">getEncoding</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="k">noexcept</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+
+<span class="w">    </span><span class="cm">/**</span>
+<span class="cm">      * @brief Gets a reference to the data encoding object of</span>
+<span class="cm">      *        the underlying buffer</span>
+<span class="cm">      *</span>
+<span class="cm">      * This is necessary when the UserBuffer is re-used, and the encoding</span>
+<span class="cm">      * parameters can change.  For example, each input can be quantized with</span>
+<span class="cm">      * different step sizes.</span>
+<span class="cm">      *</span>
+<span class="cm">      * @return Data encoding meta-data</span>
+<span class="cm">     */</span>
+<span class="w">    </span><span class="k">virtual</span><span class="w"> </span><span class="n">UserBufferEncoding</span><span class="o">&amp;</span><span class="w"> </span><span class="nf">getEncoding</span><span class="p">()</span><span class="w"> </span><span class="k">noexcept</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+
+<span class="p">};</span>
+
+<span class="cm">/** @} */</span><span class="w"> </span><span class="cm">/* end_addtogroup c_plus_plus_apis C++ */</span>
+
+<span class="p">}</span>
+<span class="p">}</span>
+
+<span class="cp">#endif</span>
+</pre></div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2020-2023, Qualcomm Technologies, Inc..
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

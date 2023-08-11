@@ -1,0 +1,598 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>File SNPEBuilder.hpp &mdash; Snapdragon Neural Processing Engine SDK</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/custom_css.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/collapsible-lists/css/tree_view.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+        <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Qualcomm® Neural Processing SDK
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                v2.12.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../general/revision_history.html">Revision History</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/revision_history_windows.html">Revision History - Windows</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/overview.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/setup.html">Setup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/usergroup1.html">Network Models</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/usergroup5.html">Input Data and Preprocessing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/usergroup6.html">Tutorials and Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/usergroup10.html">Benchmarking and Accuracy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/tools.html">Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/usergroup11.html">Debug Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/api.html">API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/limitations.html">Limitations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/appx_ref.html">References</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Qualcomm® Neural Processing SDK</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>File SNPEBuilder.hpp</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="file-snpebuilder-hpp">
+<span id="file-snpe-snpebuilder-hpp"></span><h1>File SNPEBuilder.hpp<a class="headerlink" href="#file-snpebuilder-hpp" title="Permalink to this headline">¶</a></h1>
+<p>↰ <a class="reference internal" href="dir_SNPE.html#dir-snpe"><span class="std std-ref">Parent directory</span></a> (<code class="docutils literal notranslate"><span class="pre">SNPE</span></code>)</p>
+<div class="contents local topic" id="contents">
+<p class="topic-title">Contents</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#definition-snpe-snpebuilder-hpp" id="id1">Definition (<code class="docutils literal notranslate"><span class="pre">SNPE/SNPEBuilder.hpp</span></code>)</a></p></li>
+<li><p><a class="reference internal" href="#includes" id="id2">Includes</a></p></li>
+<li><p><a class="reference internal" href="#namespaces" id="id3">Namespaces</a></p></li>
+<li><p><a class="reference internal" href="#classes" id="id4">Classes</a></p></li>
+<li><p><a class="reference internal" href="#full-file-listing" id="id5">Full File Listing</a></p></li>
+</ul>
+</div>
+<div class="section" id="definition-snpe-snpebuilder-hpp">
+<h2>Definition (<code class="docutils literal notranslate"><span class="pre">SNPE/SNPEBuilder.hpp</span></code>)<a class="headerlink" href="#definition-snpe-snpebuilder-hpp" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="program_listing_file_SNPE_SNPEBuilder.hpp.html">Program Listing for File SNPEBuilder.hpp</a></li>
+</ul>
+</div>
+</div>
+<div class="section" id="includes">
+<h2>Includes<a class="headerlink" href="#includes" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">DlSystem/DlEnums.hpp</span></code> (<a class="reference internal" href="file_DlSystem_DlEnums.hpp.html#file-dlsystem-dlenums-hpp"><span class="std std-ref">File DlEnums.hpp</span></a>)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">DlSystem/DlOptional.hpp</span></code> (<a class="reference internal" href="file_DlSystem_DlOptional.hpp.html#file-dlsystem-dloptional-hpp"><span class="std std-ref">File DlOptional.hpp</span></a>)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">DlSystem/IOBufferDataTypeMap.hpp</span></code> (<a class="reference internal" href="file_DlSystem_IOBufferDataTypeMap.hpp.html#file-dlsystem-iobufferdatatypemap-hpp"><span class="std std-ref">File IOBufferDataTypeMap.hpp</span></a>)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">DlSystem/PlatformConfig.hpp</span></code> (<a class="reference internal" href="file_DlSystem_PlatformConfig.hpp.html#file-dlsystem-platformconfig-hpp"><span class="std std-ref">File PlatformConfig.hpp</span></a>)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">DlSystem/RuntimeList.hpp</span></code> (<a class="reference internal" href="file_DlSystem_RuntimeList.hpp.html#file-dlsystem-runtimelist-hpp"><span class="std std-ref">File RuntimeList.hpp</span></a>)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">DlSystem/TensorShapeMap.hpp</span></code> (<a class="reference internal" href="file_DlSystem_TensorShapeMap.hpp.html#file-dlsystem-tensorshapemap-hpp"><span class="std std-ref">File TensorShapeMap.hpp</span></a>)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">DlSystem/UDLFunc.hpp</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">SNPE/SNPE.hpp</span></code> (<a class="reference internal" href="file_SNPE_SNPE.hpp.html#file-snpe-snpe-hpp"><span class="std std-ref">File SNPE.hpp</span></a>)</p></li>
+</ul>
+</div>
+<div class="section" id="namespaces">
+<h2>Namespaces<a class="headerlink" href="#namespaces" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="namespace_zdl.html#namespace-zdl"><span class="std std-ref">Namespace zdl</span></a></p></li>
+<li><p><a class="reference internal" href="namespace_zdl__DlContainer.html#namespace-zdl-dlcontainer"><span class="std std-ref">Namespace zdl::DlContainer</span></a></p></li>
+<li><p><a class="reference internal" href="namespace_zdl__SNPE.html#namespace-zdl-snpe"><span class="std std-ref">Namespace zdl::SNPE</span></a></p></li>
+</ul>
+</div>
+<div class="section" id="classes">
+<h2>Classes<a class="headerlink" href="#classes" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="classzdl_1_1SNPE_1_1SNPEBuilder.html#exhale-class-classzdl-1-1snpe-1-1snpebuilder"><span class="std std-ref">Class SNPEBuilder</span></a></p></li>
+</ul>
+</div>
+<div class="section" id="full-file-listing">
+<h2>Full File Listing<a class="headerlink" href="#full-file-listing" title="Permalink to this headline">¶</a></h2>
+<dl class="cpp type">
+<dt class="sig sig-object cpp" id="_CPPv43zdl">
+<span id="_CPPv33zdl"></span><span id="_CPPv23zdl"></span><span id="zdl"></span><span class="target" id="namespacezdl"></span><span class="k"><span class="pre">namespace</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">zdl</span></span></span><br /></dt>
+<dd><dl class="cpp type">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl11DlContainerE">
+<span id="_CPPv3N3zdl11DlContainerE"></span><span id="_CPPv2N3zdl11DlContainerE"></span><span id="zdl::DlContainer"></span><span class="target" id="namespacezdl_1_1DlContainer"></span><span class="k"><span class="pre">namespace</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">DlContainer</span></span></span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp type">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl4SNPEE">
+<span id="_CPPv3N3zdl4SNPEE"></span><span id="_CPPv2N3zdl4SNPEE"></span><span id="zdl::SNPE"></span><span class="target" id="namespacezdl_1_1SNPE"></span><span class="k"><span class="pre">namespace</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SNPE</span></span></span><br /></dt>
+<dd><dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl4SNPE11SNPEBuilderE">
+<span id="_CPPv3N3zdl4SNPE11SNPEBuilderE"></span><span id="_CPPv2N3zdl4SNPE11SNPEBuilderE"></span><span id="zdl::SNPE::SNPEBuilder"></span><span class="target" id="classzdl_1_1SNPE_1_1SNPEBuilder"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SNPEBuilder</span></span></span><br /></dt>
+<dd><em>#include &lt;SNPEBuilder.hpp&gt;</em><p>The builder class for creating <a class="reference internal" href="file_SNPE_SNPE.hpp.html#classzdl_1_1SNPE_1_1SNPE"><span class="std std-ref">SNPE</span></a> objects. Not meant to be extended. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl4SNPE11SNPEBuilder11SNPEBuilderEPN3zdl11DlContainer12IDlContainerE">
+<span id="_CPPv3N3zdl4SNPE11SNPEBuilder11SNPEBuilderEPN3zdl11DlContainer12IDlContainerE"></span><span id="_CPPv2N3zdl4SNPE11SNPEBuilder11SNPEBuilderEPN3zdl11DlContainer12IDlContainerE"></span><span id="zdl::SNPE::SNPEBuilder::SNPEBuilder__zdl::DlContainer::IDlContainerP"></span><span class="target" id="classzdl_1_1SNPE_1_1SNPEBuilder_1afbc232273e239ed045221ddf29815239"></span><span class="k"><span class="pre">explicit</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SNPEBuilder</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="file_DlContainer_IDlContainer.hpp.html#_CPPv43zdl" title="zdl"><span class="n"><span class="pre">zdl</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="file_DlContainer_IDlContainer.hpp.html#_CPPv4N3zdl11DlContainerE" title="zdl::DlContainer"><span class="n"><span class="pre">DlContainer</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="classzdl_1_1DlContainer_1_1IDlContainer.html#_CPPv4N3zdl11DlContainer12IDlContainerE" title="zdl::DlContainer::IDlContainer"><span class="n"><span class="pre">IDlContainer</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">container</span></span><span class="sig-paren">)</span><br /></dt>
+<dd><p>Constructor of NeuralNetwork Builder with a supplied model. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>container</strong> – <strong>[in]</strong> A container holding the model.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>A new instance of a <a class="reference internal" href="#classzdl_1_1SNPE_1_1SNPEBuilder"><span class="std std-ref">SNPEBuilder</span></a> object that can be used to configure and build an instance of <a class="reference internal" href="file_SNPE_SNPE.hpp.html#classzdl_1_1SNPE_1_1SNPE"><span class="std std-ref">SNPE</span></a>. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl4SNPE11SNPEBuilderD0Ev">
+<span id="_CPPv3N3zdl4SNPE11SNPEBuilderD0Ev"></span><span id="_CPPv2N3zdl4SNPE11SNPEBuilderD0Ev"></span><span id="zdl::SNPE::SNPEBuilder::~SNPEBuilder"></span><span class="target" id="classzdl_1_1SNPE_1_1SNPEBuilder_1a6b8c3f75883de63430e525ad8b074890"></span><span class="sig-name descname"><span class="n"><span class="pre">~SNPEBuilder</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl4SNPE11SNPEBuilder19setRuntimeProcessorEN3zdl8DlSystem9Runtime_tE">
+<span id="_CPPv3N3zdl4SNPE11SNPEBuilder19setRuntimeProcessorEN3zdl8DlSystem9Runtime_tE"></span><span id="_CPPv2N3zdl4SNPE11SNPEBuilder19setRuntimeProcessorEN3zdl8DlSystem9Runtime_tE"></span><span id="zdl::SNPE::SNPEBuilder::setRuntimeProcessor__zdl::DlSystem::Runtime_t"></span><span class="target" id="classzdl_1_1SNPE_1_1SNPEBuilder_1a86ada93a1e7902fb1b1882f33892f5fc"></span><a class="reference internal" href="classzdl_1_1SNPE_1_1SNPEBuilder.html#_CPPv4N3zdl4SNPE11SNPEBuilderE" title="zdl::SNPE::SNPEBuilder"><span class="n"><span class="pre">SNPEBuilder</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="n"><span class="pre">setRuntimeProcessor</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="file_DlContainer_IDlContainer.hpp.html#_CPPv43zdl" title="zdl"><span class="n"><span class="pre">zdl</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="file_DlSystem_DlEnums.hpp.html#_CPPv4N3zdl8DlSystemE" title="zdl::DlSystem"><span class="n"><span class="pre">DlSystem</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="enum_group__c__plus__plus__apis_1ga44a623125cbc82942472581f8a9c3f4c.html#_CPPv4N3zdl8DlSystem9Runtime_tE" title="zdl::DlSystem::Runtime_t"><span class="n"><span class="pre">Runtime_t</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">targetRuntimeProcessor</span></span><span class="sig-paren">)</span><br /></dt>
+<dd><p>Sets the runtime processor. </p>
+<p>NOTE: DEPRECATED, MAY BE REMOVED IN THE FUTURE. Please use <a class="reference internal" href="#classzdl_1_1SNPE_1_1SNPEBuilder_1aa70257966382d2e57d75957d87aa37ac"><span class="std std-ref">setRuntimeProcessorOrder()</span></a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>targetRuntimeProcessor</strong> – <strong>[in]</strong> The target runtime.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>The current instance of <a class="reference internal" href="#classzdl_1_1SNPE_1_1SNPEBuilder"><span class="std std-ref">SNPEBuilder</span></a>. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl4SNPE11SNPEBuilder21setPerformanceProfileEN3zdl8DlSystem20PerformanceProfile_tE">
+<span id="_CPPv3N3zdl4SNPE11SNPEBuilder21setPerformanceProfileEN3zdl8DlSystem20PerformanceProfile_tE"></span><span id="_CPPv2N3zdl4SNPE11SNPEBuilder21setPerformanceProfileEN3zdl8DlSystem20PerformanceProfile_tE"></span><span id="zdl::SNPE::SNPEBuilder::setPerformanceProfile__zdl::DlSystem::PerformanceProfile_t"></span><span class="target" id="classzdl_1_1SNPE_1_1SNPEBuilder_1a3c55557fcb805a2308436cb65650a546"></span><a class="reference internal" href="classzdl_1_1SNPE_1_1SNPEBuilder.html#_CPPv4N3zdl4SNPE11SNPEBuilderE" title="zdl::SNPE::SNPEBuilder"><span class="n"><span class="pre">SNPEBuilder</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="n"><span class="pre">setPerformanceProfile</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="file_DlContainer_IDlContainer.hpp.html#_CPPv43zdl" title="zdl"><span class="n"><span class="pre">zdl</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="file_DlSystem_DlEnums.hpp.html#_CPPv4N3zdl8DlSystemE" title="zdl::DlSystem"><span class="n"><span class="pre">DlSystem</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="enum_group__c__plus__plus__apis_1gaaff6a40e793d0fcae2fb62c566f643b4.html#_CPPv4N3zdl8DlSystem20PerformanceProfile_tE" title="zdl::DlSystem::PerformanceProfile_t"><span class="n"><span class="pre">PerformanceProfile_t</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">performanceProfile</span></span><span class="sig-paren">)</span><br /></dt>
+<dd><p>Requests a performance profile. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>targetRuntimeProfile</strong> – <strong>[in]</strong> The target performance profile.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>The current instance of <a class="reference internal" href="#classzdl_1_1SNPE_1_1SNPEBuilder"><span class="std std-ref">SNPEBuilder</span></a>. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl4SNPE11SNPEBuilder17setProfilingLevelEN3zdl8DlSystem16ProfilingLevel_tE">
+<span id="_CPPv3N3zdl4SNPE11SNPEBuilder17setProfilingLevelEN3zdl8DlSystem16ProfilingLevel_tE"></span><span id="_CPPv2N3zdl4SNPE11SNPEBuilder17setProfilingLevelEN3zdl8DlSystem16ProfilingLevel_tE"></span><span id="zdl::SNPE::SNPEBuilder::setProfilingLevel__zdl::DlSystem::ProfilingLevel_t"></span><span class="target" id="classzdl_1_1SNPE_1_1SNPEBuilder_1a56c3184ef69b469efc672e8ec4ee5064"></span><a class="reference internal" href="classzdl_1_1SNPE_1_1SNPEBuilder.html#_CPPv4N3zdl4SNPE11SNPEBuilderE" title="zdl::SNPE::SNPEBuilder"><span class="n"><span class="pre">SNPEBuilder</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="n"><span class="pre">setProfilingLevel</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="file_DlContainer_IDlContainer.hpp.html#_CPPv43zdl" title="zdl"><span class="n"><span class="pre">zdl</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="file_DlSystem_DlEnums.hpp.html#_CPPv4N3zdl8DlSystemE" title="zdl::DlSystem"><span class="n"><span class="pre">DlSystem</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="enum_group__c__plus__plus__apis_1ga957611cdf88dc2986791d2a258c2805c.html#_CPPv4N3zdl8DlSystem16ProfilingLevel_tE" title="zdl::DlSystem::ProfilingLevel_t"><span class="n"><span class="pre">ProfilingLevel_t</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">profilingLevel</span></span><span class="sig-paren">)</span><br /></dt>
+<dd><p>Sets the profiling level. Default profiling level for <a class="reference internal" href="#classzdl_1_1SNPE_1_1SNPEBuilder"><span class="std std-ref">SNPEBuilder</span></a> is off. Off and basic only applies to DSP runtime. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>profilingLevel</strong> – <strong>[in]</strong> The target profiling level.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>The current instance of <a class="reference internal" href="#classzdl_1_1SNPE_1_1SNPEBuilder"><span class="std std-ref">SNPEBuilder</span></a>. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl4SNPE11SNPEBuilder24setExecutionPriorityHintEN3zdl8DlSystem23ExecutionPriorityHint_tE">
+<span id="_CPPv3N3zdl4SNPE11SNPEBuilder24setExecutionPriorityHintEN3zdl8DlSystem23ExecutionPriorityHint_tE"></span><span id="_CPPv2N3zdl4SNPE11SNPEBuilder24setExecutionPriorityHintEN3zdl8DlSystem23ExecutionPriorityHint_tE"></span><span id="zdl::SNPE::SNPEBuilder::setExecutionPriorityHint__zdl::DlSystem::ExecutionPriorityHint_t"></span><span class="target" id="classzdl_1_1SNPE_1_1SNPEBuilder_1a4d5709a1df37bc9c06b54f3143b46ff8"></span><a class="reference internal" href="classzdl_1_1SNPE_1_1SNPEBuilder.html#_CPPv4N3zdl4SNPE11SNPEBuilderE" title="zdl::SNPE::SNPEBuilder"><span class="n"><span class="pre">SNPEBuilder</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="n"><span class="pre">setExecutionPriorityHint</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="file_DlContainer_IDlContainer.hpp.html#_CPPv43zdl" title="zdl"><span class="n"><span class="pre">zdl</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="file_DlSystem_DlEnums.hpp.html#_CPPv4N3zdl8DlSystemE" title="zdl::DlSystem"><span class="n"><span class="pre">DlSystem</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="enum_group__c__plus__plus__apis_1ga9c7653c2efeb5c04504617b1e42fa3dd.html#_CPPv4N3zdl8DlSystem23ExecutionPriorityHint_tE" title="zdl::DlSystem::ExecutionPriorityHint_t"><span class="n"><span class="pre">ExecutionPriorityHint_t</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">priority</span></span><span class="sig-paren">)</span><br /></dt>
+<dd><p>Sets a preference for execution priority. </p>
+<p>This allows the caller to give coarse hint to <a class="reference internal" href="file_SNPE_SNPE.hpp.html#classzdl_1_1SNPE_1_1SNPE"><span class="std std-ref">SNPE</span></a> runtime about the priority of the network. <a class="reference internal" href="file_SNPE_SNPE.hpp.html#classzdl_1_1SNPE_1_1SNPE"><span class="std std-ref">SNPE</span></a> runtime is free to use this information to co-ordinate between different workloads that may or may not extend beyond <a class="reference internal" href="file_SNPE_SNPE.hpp.html#classzdl_1_1SNPE_1_1SNPE"><span class="std std-ref">SNPE</span></a>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>ExecutionPriorityHint_t</strong> – <strong>[in]</strong> The target performance profile.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>The current instance of <a class="reference internal" href="#classzdl_1_1SNPE_1_1SNPEBuilder"><span class="std std-ref">SNPEBuilder</span></a>. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl4SNPE11SNPEBuilder15setOutputLayersERKN3zdl8DlSystem10StringListE">
+<span id="_CPPv3N3zdl4SNPE11SNPEBuilder15setOutputLayersERKN3zdl8DlSystem10StringListE"></span><span id="_CPPv2N3zdl4SNPE11SNPEBuilder15setOutputLayersERKN3zdl8DlSystem10StringListE"></span><span id="zdl::SNPE::SNPEBuilder::setOutputLayers__zdl::DlSystem::StringListCR"></span><span class="target" id="classzdl_1_1SNPE_1_1SNPEBuilder_1af8ac94cd697027c18b83b453182a237f"></span><a class="reference internal" href="classzdl_1_1SNPE_1_1SNPEBuilder.html#_CPPv4N3zdl4SNPE11SNPEBuilderE" title="zdl::SNPE::SNPEBuilder"><span class="n"><span class="pre">SNPEBuilder</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="n"><span class="pre">setOutputLayers</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="file_DlContainer_IDlContainer.hpp.html#_CPPv43zdl" title="zdl"><span class="n"><span class="pre">zdl</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="file_DlSystem_DlEnums.hpp.html#_CPPv4N3zdl8DlSystemE" title="zdl::DlSystem"><span class="n"><span class="pre">DlSystem</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="classzdl_1_1DlSystem_1_1StringList.html#_CPPv4N3zdl8DlSystem10StringListE" title="zdl::DlSystem::StringList"><span class="n"><span class="pre">StringList</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">outputLayerNames</span></span><span class="sig-paren">)</span><br /></dt>
+<dd><p>Sets the layers that will generate output. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>outputLayerNames</strong> – <strong>[in]</strong> List of layer names to output. An empty list will result in only the final layer of the model being the output layer. The list will be copied.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>The current instance of <a class="reference internal" href="#classzdl_1_1SNPE_1_1SNPEBuilder"><span class="std std-ref">SNPEBuilder</span></a>. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl4SNPE11SNPEBuilder16setOutputTensorsERKN3zdl8DlSystem10StringListE">
+<span id="_CPPv3N3zdl4SNPE11SNPEBuilder16setOutputTensorsERKN3zdl8DlSystem10StringListE"></span><span id="_CPPv2N3zdl4SNPE11SNPEBuilder16setOutputTensorsERKN3zdl8DlSystem10StringListE"></span><span id="zdl::SNPE::SNPEBuilder::setOutputTensors__zdl::DlSystem::StringListCR"></span><span class="target" id="classzdl_1_1SNPE_1_1SNPEBuilder_1a03ac019ac561312b224b339d705c3546"></span><a class="reference internal" href="classzdl_1_1SNPE_1_1SNPEBuilder.html#_CPPv4N3zdl4SNPE11SNPEBuilderE" title="zdl::SNPE::SNPEBuilder"><span class="n"><span class="pre">SNPEBuilder</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="n"><span class="pre">setOutputTensors</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="file_DlContainer_IDlContainer.hpp.html#_CPPv43zdl" title="zdl"><span class="n"><span class="pre">zdl</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="file_DlSystem_DlEnums.hpp.html#_CPPv4N3zdl8DlSystemE" title="zdl::DlSystem"><span class="n"><span class="pre">DlSystem</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="classzdl_1_1DlSystem_1_1StringList.html#_CPPv4N3zdl8DlSystem10StringListE" title="zdl::DlSystem::StringList"><span class="n"><span class="pre">StringList</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">outputTensorNames</span></span><span class="sig-paren">)</span><br /></dt>
+<dd><p>Sets the output tensor names. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>outputTensorNames</strong> – <strong>[in]</strong> List of tensor names to output. An empty list will result in producing output for the final output tensor of the model. The list will be copied.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>The current instance of <a class="reference internal" href="#classzdl_1_1SNPE_1_1SNPEBuilder"><span class="std std-ref">SNPEBuilder</span></a>. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl4SNPE11SNPEBuilder12setUdlBundleEN3zdl8DlSystem9UDLBundleE">
+<span id="_CPPv3N3zdl4SNPE11SNPEBuilder12setUdlBundleEN3zdl8DlSystem9UDLBundleE"></span><span id="_CPPv2N3zdl4SNPE11SNPEBuilder12setUdlBundleEN3zdl8DlSystem9UDLBundleE"></span><span id="zdl::SNPE::SNPEBuilder::setUdlBundle__zdl::DlSystem::UDLBundle"></span><span class="target" id="classzdl_1_1SNPE_1_1SNPEBuilder_1a117ab410b580e97f0c26b3fbb138955a"></span><a class="reference internal" href="classzdl_1_1SNPE_1_1SNPEBuilder.html#_CPPv4N3zdl4SNPE11SNPEBuilderE" title="zdl::SNPE::SNPEBuilder"><span class="n"><span class="pre">SNPEBuilder</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="n"><span class="pre">setUdlBundle</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="file_DlContainer_IDlContainer.hpp.html#_CPPv43zdl" title="zdl"><span class="n"><span class="pre">zdl</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="file_DlSystem_DlEnums.hpp.html#_CPPv4N3zdl8DlSystemE" title="zdl::DlSystem"><span class="n"><span class="pre">DlSystem</span></span></a><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">UDLBundle</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">udlBundle</span></span><span class="sig-paren">)</span><br /></dt>
+<dd><p>Passes in a User-defined layer. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>udlBundle</strong> – Bundle of udl factory function and a cookie</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>The current instance of <a class="reference internal" href="#classzdl_1_1SNPE_1_1SNPEBuilder"><span class="std std-ref">SNPEBuilder</span></a>. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl4SNPE11SNPEBuilder25setUseUserSuppliedBuffersEb">
+<span id="_CPPv3N3zdl4SNPE11SNPEBuilder25setUseUserSuppliedBuffersEb"></span><span id="_CPPv2N3zdl4SNPE11SNPEBuilder25setUseUserSuppliedBuffersEb"></span><span id="zdl::SNPE::SNPEBuilder::setUseUserSuppliedBuffers__b"></span><span class="target" id="classzdl_1_1SNPE_1_1SNPEBuilder_1a64a8dc65a0adc99c5a8d385826303d8a"></span><a class="reference internal" href="classzdl_1_1SNPE_1_1SNPEBuilder.html#_CPPv4N3zdl4SNPE11SNPEBuilderE" title="zdl::SNPE::SNPEBuilder"><span class="n"><span class="pre">SNPEBuilder</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="n"><span class="pre">setUseUserSuppliedBuffers</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">bufferMode</span></span><span class="sig-paren">)</span><br /></dt>
+<dd><p>Sets whether this neural network will perform inference with input from user-supplied buffers, and write output to user-supplied buffers. Default behaviour is to use tensors created by ITensorFactory. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>bufferMode</strong> – <strong>[in]</strong> Whether to use user-supplied buffer or not.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>The current instance of <a class="reference internal" href="#classzdl_1_1SNPE_1_1SNPEBuilder"><span class="std std-ref">SNPEBuilder</span></a>. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl4SNPE11SNPEBuilder12setDebugModeEb">
+<span id="_CPPv3N3zdl4SNPE11SNPEBuilder12setDebugModeEb"></span><span id="_CPPv2N3zdl4SNPE11SNPEBuilder12setDebugModeEb"></span><span id="zdl::SNPE::SNPEBuilder::setDebugMode__b"></span><span class="target" id="classzdl_1_1SNPE_1_1SNPEBuilder_1aa24c89894c3408edda8871d5af43690a"></span><a class="reference internal" href="classzdl_1_1SNPE_1_1SNPEBuilder.html#_CPPv4N3zdl4SNPE11SNPEBuilderE" title="zdl::SNPE::SNPEBuilder"><span class="n"><span class="pre">SNPEBuilder</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="n"><span class="pre">setDebugMode</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">debugMode</span></span><span class="sig-paren">)</span><br /></dt>
+<dd><p>Sets the debug mode of the runtime. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>debugMode</strong> – <strong>[in]</strong> This enables debug mode for the runtime. It does two things. For an empty outputLayerNames list, all layers will be output. It might also disable some internal runtime optimizations (e.g., some networks might be optimized by combining layers, etc.).</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>The current instance of <a class="reference internal" href="#classzdl_1_1SNPE_1_1SNPEBuilder"><span class="std std-ref">SNPEBuilder</span></a>. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl4SNPE11SNPEBuilder18setCPUFallbackModeEb">
+<span id="_CPPv3N3zdl4SNPE11SNPEBuilder18setCPUFallbackModeEb"></span><span id="_CPPv2N3zdl4SNPE11SNPEBuilder18setCPUFallbackModeEb"></span><span id="zdl::SNPE::SNPEBuilder::setCPUFallbackMode__b"></span><span class="target" id="classzdl_1_1SNPE_1_1SNPEBuilder_1a0564fc8e2c4be9669944db08689b36b0"></span><a class="reference internal" href="classzdl_1_1SNPE_1_1SNPEBuilder.html#_CPPv4N3zdl4SNPE11SNPEBuilderE" title="zdl::SNPE::SNPEBuilder"><span class="n"><span class="pre">SNPEBuilder</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="n"><span class="pre">setCPUFallbackMode</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">mode</span></span><span class="sig-paren">)</span><br /></dt>
+<dd><p>Sets the mode of CPU fallback functionality. </p>
+<p>NOTE: DEPRECATED, MAY BE REMOVED IN THE FUTURE. Please use <a class="reference internal" href="#classzdl_1_1SNPE_1_1SNPEBuilder_1aa70257966382d2e57d75957d87aa37ac"><span class="std std-ref">setRuntimeProcessorOrder()</span></a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>mode</strong> – <strong>[in]</strong> This flag enables/disables the functionality of CPU fallback. When the CPU fallback functionality is enabled, layers in model that violates runtime constraints will run on CPU while the rest of non-violating layers will run on the chosen runtime processor. In disabled mode, models with layers violating runtime constraints will NOT run on the chosen runtime processor and will result in runtime exception. By default, the functionality is enabled.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>The current instance of <a class="reference internal" href="#classzdl_1_1SNPE_1_1SNPEBuilder"><span class="std std-ref">SNPEBuilder</span></a>. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl4SNPE11SNPEBuilder18setInputDimensionsERKN3zdl8DlSystem14TensorShapeMapE">
+<span id="_CPPv3N3zdl4SNPE11SNPEBuilder18setInputDimensionsERKN3zdl8DlSystem14TensorShapeMapE"></span><span id="_CPPv2N3zdl4SNPE11SNPEBuilder18setInputDimensionsERKN3zdl8DlSystem14TensorShapeMapE"></span><span id="zdl::SNPE::SNPEBuilder::setInputDimensions__zdl::DlSystem::TensorShapeMapCR"></span><span class="target" id="classzdl_1_1SNPE_1_1SNPEBuilder_1ad013729d8f175cf7a4834844da627c37"></span><a class="reference internal" href="classzdl_1_1SNPE_1_1SNPEBuilder.html#_CPPv4N3zdl4SNPE11SNPEBuilderE" title="zdl::SNPE::SNPEBuilder"><span class="n"><span class="pre">SNPEBuilder</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="n"><span class="pre">setInputDimensions</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="file_DlContainer_IDlContainer.hpp.html#_CPPv43zdl" title="zdl"><span class="n"><span class="pre">zdl</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="file_DlSystem_DlEnums.hpp.html#_CPPv4N3zdl8DlSystemE" title="zdl::DlSystem"><span class="n"><span class="pre">DlSystem</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="classzdl_1_1DlSystem_1_1TensorShapeMap.html#_CPPv4N3zdl8DlSystem14TensorShapeMapE" title="zdl::DlSystem::TensorShapeMap"><span class="n"><span class="pre">TensorShapeMap</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">inputDimensionsMap</span></span><span class="sig-paren">)</span><br /></dt>
+<dd><p>Sets network’s input dimensions to enable resizing of the spatial dimensions of each layer for fully convolutional networks, and the batch dimension for all networks. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>tensorShapeMap</strong> – <strong>[in]</strong> The map of input names and their new dimensions. The new dimensions overwrite the input dimensions embedded in the model and then resize each layer of the model. If the model contains layers whose dimensions cannot be resized e.g FullyConnected, exception will be thrown when <a class="reference internal" href="file_SNPE_SNPE.hpp.html#classzdl_1_1SNPE_1_1SNPE"><span class="std std-ref">SNPE</span></a> instance is actually built. In general the batch dimension is always resizable. After resizing of layers’ dimensions in model based on new input dimensions, the new model is revalidated against all runtime constraints, whose failures may result in cpu fallback situation.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>The current instance of <a class="reference internal" href="#classzdl_1_1SNPE_1_1SNPEBuilder"><span class="std std-ref">SNPEBuilder</span></a>. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl4SNPE11SNPEBuilder16setInitCacheModeEb">
+<span id="_CPPv3N3zdl4SNPE11SNPEBuilder16setInitCacheModeEb"></span><span id="_CPPv2N3zdl4SNPE11SNPEBuilder16setInitCacheModeEb"></span><span id="zdl::SNPE::SNPEBuilder::setInitCacheMode__b"></span><span class="target" id="classzdl_1_1SNPE_1_1SNPEBuilder_1a62a13c9f00777ea9cd7d52b1d0fa2619"></span><a class="reference internal" href="classzdl_1_1SNPE_1_1SNPEBuilder.html#_CPPv4N3zdl4SNPE11SNPEBuilderE" title="zdl::SNPE::SNPEBuilder"><span class="n"><span class="pre">SNPEBuilder</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="n"><span class="pre">setInitCacheMode</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">cacheMode</span></span><span class="sig-paren">)</span><br /></dt>
+<dd><p>Sets the mode of init caching functionality. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>mode</strong> – <strong>[in]</strong> This flag enables/disables the functionality of init caching. When init caching functionality is enabled, a set of init caches will be created during network building/initialization process and will be added to DLC container. If such DLC container is saved by the user, in subsequent network building/initialization processes these init caches will be loaded from the DLC so as to reduce initialization time. In disable mode, no init caches will be added to DLC container.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>The current instance of <a class="reference internal" href="#classzdl_1_1SNPE_1_1SNPEBuilder"><span class="std std-ref">SNPEBuilder</span></a>. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl4SNPE11SNPEBuilder5buildEv">
+<span id="_CPPv3N3zdl4SNPE11SNPEBuilder5buildEv"></span><span id="_CPPv2N3zdl4SNPE11SNPEBuilder5buildEv"></span><span id="zdl::SNPE::SNPEBuilder::build"></span><span class="target" id="classzdl_1_1SNPE_1_1SNPEBuilder_1aec167402bd0091c38fe40631cf256f9b"></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">unique_ptr</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="file_PlatformValidator_PlatformValidator.hpp.html#_CPPv4N3zdl4SNPEE" title="zdl::SNPE"><span class="n"><span class="pre">SNPE</span></span></a><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">build</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">noexcept</span></span><br /></dt>
+<dd><p>Returns an instance of <a class="reference internal" href="file_SNPE_SNPE.hpp.html#classzdl_1_1SNPE_1_1SNPE"><span class="std std-ref">SNPE</span></a> based on the current parameters. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>A new instance of a <a class="reference internal" href="file_SNPE_SNPE.hpp.html#classzdl_1_1SNPE_1_1SNPE"><span class="std std-ref">SNPE</span></a> object that can be used to execute models or null if any errors occur. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl4SNPE11SNPEBuilder17setPlatformConfigERKN3zdl8DlSystem14PlatformConfigE">
+<span id="_CPPv3N3zdl4SNPE11SNPEBuilder17setPlatformConfigERKN3zdl8DlSystem14PlatformConfigE"></span><span id="_CPPv2N3zdl4SNPE11SNPEBuilder17setPlatformConfigERKN3zdl8DlSystem14PlatformConfigE"></span><span id="zdl::SNPE::SNPEBuilder::setPlatformConfig__zdl::DlSystem::PlatformConfigCR"></span><span class="target" id="classzdl_1_1SNPE_1_1SNPEBuilder_1af20766dfd1011666ca5606c825b22c5c"></span><a class="reference internal" href="classzdl_1_1SNPE_1_1SNPEBuilder.html#_CPPv4N3zdl4SNPE11SNPEBuilderE" title="zdl::SNPE::SNPEBuilder"><span class="n"><span class="pre">SNPEBuilder</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="n"><span class="pre">setPlatformConfig</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="file_DlContainer_IDlContainer.hpp.html#_CPPv43zdl" title="zdl"><span class="n"><span class="pre">zdl</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="file_DlSystem_DlEnums.hpp.html#_CPPv4N3zdl8DlSystemE" title="zdl::DlSystem"><span class="n"><span class="pre">DlSystem</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="classzdl_1_1DlSystem_1_1PlatformConfig.html#_CPPv4N3zdl8DlSystem14PlatformConfigE" title="zdl::DlSystem::PlatformConfig"><span class="n"><span class="pre">PlatformConfig</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">platformConfig</span></span><span class="sig-paren">)</span><br /></dt>
+<dd><p>Sets the platform configuration. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>platformConfig</strong> – <strong>[in]</strong> The platform configuration.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>The current instance of <a class="reference internal" href="#classzdl_1_1SNPE_1_1SNPEBuilder"><span class="std std-ref">SNPEBuilder</span></a>. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl4SNPE11SNPEBuilder24setRuntimeProcessorOrderERKN3zdl8DlSystem11RuntimeListE">
+<span id="_CPPv3N3zdl4SNPE11SNPEBuilder24setRuntimeProcessorOrderERKN3zdl8DlSystem11RuntimeListE"></span><span id="_CPPv2N3zdl4SNPE11SNPEBuilder24setRuntimeProcessorOrderERKN3zdl8DlSystem11RuntimeListE"></span><span id="zdl::SNPE::SNPEBuilder::setRuntimeProcessorOrder__zdl::DlSystem::RuntimeListCR"></span><span class="target" id="classzdl_1_1SNPE_1_1SNPEBuilder_1aa70257966382d2e57d75957d87aa37ac"></span><a class="reference internal" href="classzdl_1_1SNPE_1_1SNPEBuilder.html#_CPPv4N3zdl4SNPE11SNPEBuilderE" title="zdl::SNPE::SNPEBuilder"><span class="n"><span class="pre">SNPEBuilder</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="n"><span class="pre">setRuntimeProcessorOrder</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="file_DlContainer_IDlContainer.hpp.html#_CPPv43zdl" title="zdl"><span class="n"><span class="pre">zdl</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="file_DlSystem_DlEnums.hpp.html#_CPPv4N3zdl8DlSystemE" title="zdl::DlSystem"><span class="n"><span class="pre">DlSystem</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="classzdl_1_1DlSystem_1_1RuntimeList.html#_CPPv4N3zdl8DlSystem11RuntimeListE" title="zdl::DlSystem::RuntimeList"><span class="n"><span class="pre">RuntimeList</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">runtimeList</span></span><span class="sig-paren">)</span><br /></dt>
+<dd><p>Sets network’s runtime order of precedence. Example: CPU_FLOAT32, GPU_FLOAT16, AIP_FIXED8_TF Note:- <a class="reference internal" href="#classzdl_1_1SNPE_1_1SNPEBuilder_1a86ada93a1e7902fb1b1882f33892f5fc"><span class="std std-ref">setRuntimeProcessor()</span></a> or <a class="reference internal" href="#classzdl_1_1SNPE_1_1SNPEBuilder_1a0564fc8e2c4be9669944db08689b36b0"><span class="std std-ref">setCPUFallbackMode()</span></a> will be silently ignored when <a class="reference internal" href="#classzdl_1_1SNPE_1_1SNPEBuilder_1aa70257966382d2e57d75957d87aa37ac"><span class="std std-ref">setRuntimeProcessorOrder()</span></a> is invoked. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>runtimeList</strong> – <strong>[in]</strong> The list of runtime in order of precedence</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>The current instance of <a class="reference internal" href="#classzdl_1_1SNPE_1_1SNPEBuilder"><span class="std std-ref">SNPEBuilder</span></a>. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl4SNPE11SNPEBuilder29setUnconsumedTensorsAsOutputsEb">
+<span id="_CPPv3N3zdl4SNPE11SNPEBuilder29setUnconsumedTensorsAsOutputsEb"></span><span id="_CPPv2N3zdl4SNPE11SNPEBuilder29setUnconsumedTensorsAsOutputsEb"></span><span id="zdl::SNPE::SNPEBuilder::setUnconsumedTensorsAsOutputs__b"></span><span class="target" id="classzdl_1_1SNPE_1_1SNPEBuilder_1a0e8232791e410820b86cf304d5bc9692"></span><a class="reference internal" href="classzdl_1_1SNPE_1_1SNPEBuilder.html#_CPPv4N3zdl4SNPE11SNPEBuilderE" title="zdl::SNPE::SNPEBuilder"><span class="n"><span class="pre">SNPEBuilder</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="n"><span class="pre">setUnconsumedTensorsAsOutputs</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">setOutput</span></span><span class="sig-paren">)</span><br /></dt>
+<dd><p>Sets the unconsumed tensors as output. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>setOutput</strong> – <strong>[in]</strong> This enables unconsumed tensors (i.e) outputs which are not inputs to any layer (basically dead ends) to be marked for output</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>The current instance of <a class="reference internal" href="#classzdl_1_1SNPE_1_1SNPEBuilder"><span class="std std-ref">SNPEBuilder</span></a>. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl4SNPE11SNPEBuilder10setTimeOutE8uint64_t">
+<span id="_CPPv3N3zdl4SNPE11SNPEBuilder10setTimeOutE8uint64_t"></span><span id="_CPPv2N3zdl4SNPE11SNPEBuilder10setTimeOutE8uint64_t"></span><span id="zdl::SNPE::SNPEBuilder::setTimeOut__uint64_t"></span><span class="target" id="classzdl_1_1SNPE_1_1SNPEBuilder_1a77dec96a5bb6be4d96bd350a9cbb9707"></span><a class="reference internal" href="classzdl_1_1SNPE_1_1SNPEBuilder.html#_CPPv4N3zdl4SNPE11SNPEBuilderE" title="zdl::SNPE::SNPEBuilder"><span class="n"><span class="pre">SNPEBuilder</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="n"><span class="pre">setTimeOut</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">uint64_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">timeoutMicroSec</span></span><span class="sig-paren">)</span><br /></dt>
+<dd><p>Execution terminated when exceeding time limit. Only valid for dsp runtime currently. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>timeout</strong> – <strong>[in]</strong> Time limit value in microseconds</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>The current instance of <a class="reference internal" href="#classzdl_1_1SNPE_1_1SNPEBuilder"><span class="std std-ref">SNPEBuilder</span></a>. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl4SNPE11SNPEBuilder17setBufferDataTypeERKN3zdl8DlSystem19IOBufferDataTypeMapE">
+<span id="_CPPv3N3zdl4SNPE11SNPEBuilder17setBufferDataTypeERKN3zdl8DlSystem19IOBufferDataTypeMapE"></span><span id="_CPPv2N3zdl4SNPE11SNPEBuilder17setBufferDataTypeERKN3zdl8DlSystem19IOBufferDataTypeMapE"></span><span id="zdl::SNPE::SNPEBuilder::setBufferDataType__zdl::DlSystem::IOBufferDataTypeMapCR"></span><span class="target" id="classzdl_1_1SNPE_1_1SNPEBuilder_1ae476a8c0128d31f801a629370bba3beb"></span><a class="reference internal" href="classzdl_1_1SNPE_1_1SNPEBuilder.html#_CPPv4N3zdl4SNPE11SNPEBuilderE" title="zdl::SNPE::SNPEBuilder"><span class="n"><span class="pre">SNPEBuilder</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="n"><span class="pre">setBufferDataType</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="file_DlContainer_IDlContainer.hpp.html#_CPPv43zdl" title="zdl"><span class="n"><span class="pre">zdl</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="file_DlSystem_DlEnums.hpp.html#_CPPv4N3zdl8DlSystemE" title="zdl::DlSystem"><span class="n"><span class="pre">DlSystem</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="classzdl_1_1DlSystem_1_1IOBufferDataTypeMap.html#_CPPv4N3zdl8DlSystem19IOBufferDataTypeMapE" title="zdl::DlSystem::IOBufferDataTypeMap"><span class="n"><span class="pre">IOBufferDataTypeMap</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">dataTypeMap</span></span><span class="sig-paren">)</span><br /></dt>
+<dd><p>Sets the datatype of the buffer. Only valid for dsp runtime currently. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>Map</strong> – <strong>[in]</strong> of the buffer names and the datatype that needs to be set.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>The current instance of <a class="reference internal" href="#classzdl_1_1SNPE_1_1SNPEBuilder"><span class="std std-ref">SNPEBuilder</span></a>. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl4SNPE11SNPEBuilder21setSingleThreadedInitEb">
+<span id="_CPPv3N3zdl4SNPE11SNPEBuilder21setSingleThreadedInitEb"></span><span id="_CPPv2N3zdl4SNPE11SNPEBuilder21setSingleThreadedInitEb"></span><span id="zdl::SNPE::SNPEBuilder::setSingleThreadedInit__b"></span><span class="target" id="classzdl_1_1SNPE_1_1SNPEBuilder_1a24fed15fbdcdf920116004170913c6a8"></span><a class="reference internal" href="classzdl_1_1SNPE_1_1SNPEBuilder.html#_CPPv4N3zdl4SNPE11SNPEBuilderE" title="zdl::SNPE::SNPEBuilder"><span class="n"><span class="pre">SNPEBuilder</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="n"><span class="pre">setSingleThreadedInit</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">singleThreadedInit</span></span><span class="sig-paren">)</span><br /></dt>
+<dd><p>Sets up the entire initialization callflow to happen on the user’s thread. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>The current instance of <a class="reference internal" href="#classzdl_1_1SNPE_1_1SNPEBuilder"><span class="std std-ref">SNPEBuilder</span></a>. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl4SNPE11SNPEBuilder20setCpuFixedPointModeEb">
+<span id="_CPPv3N3zdl4SNPE11SNPEBuilder20setCpuFixedPointModeEb"></span><span id="_CPPv2N3zdl4SNPE11SNPEBuilder20setCpuFixedPointModeEb"></span><span id="zdl::SNPE::SNPEBuilder::setCpuFixedPointMode__b"></span><span class="target" id="classzdl_1_1SNPE_1_1SNPEBuilder_1a4053b012a3515174b62bcbe6a51be494"></span><a class="reference internal" href="classzdl_1_1SNPE_1_1SNPEBuilder.html#_CPPv4N3zdl4SNPE11SNPEBuilderE" title="zdl::SNPE::SNPEBuilder"><span class="n"><span class="pre">SNPEBuilder</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="n"><span class="pre">setCpuFixedPointMode</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">cpuFxpMode</span></span><span class="sig-paren">)</span><br /></dt>
+<dd><p>Sets cpu fxp mode to passed value. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>The current instance of <a class="reference internal" href="#classzdl_1_1SNPE_1_1SNPEBuilder"><span class="std std-ref">SNPEBuilder</span></a>. </p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-private-members">Private Members</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl4SNPE11SNPEBuilder6m_ImplE">
+<span id="_CPPv3N3zdl4SNPE11SNPEBuilder6m_ImplE"></span><span id="_CPPv2N3zdl4SNPE11SNPEBuilder6m_ImplE"></span><span id="zdl::SNPE::SNPEBuilder::m_Impl__std::unique_ptr:SNPEBuilderImpl:"></span><span class="target" id="classzdl_1_1SNPE_1_1SNPEBuilder_1abb07227e28c3469a3bae919f191c5402"></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">unique_ptr</span></span><span class="p"><span class="pre">&lt;</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">SNPEBuilderImpl</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">m_Impl</span></span></span><a class="headerlink" href="#_CPPv4N3zdl4SNPE11SNPEBuilder6m_ImplE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2020-2023, Qualcomm Technologies, Inc..
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

@@ -1,0 +1,520 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>File DlOptional.hpp &mdash; Snapdragon Neural Processing Engine SDK</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/custom_css.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/collapsible-lists/css/tree_view.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+        <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Qualcomm® Neural Processing SDK
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                v2.12.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../general/revision_history.html">Revision History</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/revision_history_windows.html">Revision History - Windows</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/overview.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/setup.html">Setup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/usergroup1.html">Network Models</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/usergroup5.html">Input Data and Preprocessing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/usergroup6.html">Tutorials and Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/usergroup10.html">Benchmarking and Accuracy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/tools.html">Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/usergroup11.html">Debug Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/api.html">API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/limitations.html">Limitations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/appx_ref.html">References</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Qualcomm® Neural Processing SDK</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>File DlOptional.hpp</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="file-dloptional-hpp">
+<span id="file-dlsystem-dloptional-hpp"></span><h1>File DlOptional.hpp<a class="headerlink" href="#file-dloptional-hpp" title="Permalink to this headline">¶</a></h1>
+<p>↰ <a class="reference internal" href="dir_DlSystem.html#dir-dlsystem"><span class="std std-ref">Parent directory</span></a> (<code class="docutils literal notranslate"><span class="pre">DlSystem</span></code>)</p>
+<div class="contents local topic" id="contents">
+<p class="topic-title">Contents</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#definition-dlsystem-dloptional-hpp" id="id1">Definition (<code class="docutils literal notranslate"><span class="pre">DlSystem/DlOptional.hpp</span></code>)</a></p></li>
+<li><p><a class="reference internal" href="#includes" id="id2">Includes</a></p></li>
+<li><p><a class="reference internal" href="#included-by" id="id3">Included By</a></p></li>
+<li><p><a class="reference internal" href="#namespaces" id="id4">Namespaces</a></p></li>
+<li><p><a class="reference internal" href="#classes" id="id5">Classes</a></p></li>
+<li><p><a class="reference internal" href="#full-file-listing" id="id6">Full File Listing</a></p></li>
+</ul>
+</div>
+<div class="section" id="definition-dlsystem-dloptional-hpp">
+<h2>Definition (<code class="docutils literal notranslate"><span class="pre">DlSystem/DlOptional.hpp</span></code>)<a class="headerlink" href="#definition-dlsystem-dloptional-hpp" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="program_listing_file_DlSystem_DlOptional.hpp.html">Program Listing for File DlOptional.hpp</a></li>
+</ul>
+</div>
+</div>
+<div class="section" id="includes">
+<h2>Includes<a class="headerlink" href="#includes" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">DlSystem/ZdlExportDefine.hpp</span></code> (<a class="reference internal" href="file_DlSystem_ZdlExportDefine.hpp.html#file-dlsystem-zdlexportdefine-hpp"><span class="std std-ref">File ZdlExportDefine.hpp</span></a>)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">cstdio</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">stdexcept</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">utility</span></code></p></li>
+</ul>
+</div>
+<div class="section" id="included-by">
+<h2>Included By<a class="headerlink" href="#included-by" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="file_SNPE_SNPE.hpp.html#file-snpe-snpe-hpp"><span class="std std-ref">File SNPE.hpp</span></a></p></li>
+<li><p><a class="reference internal" href="file_SNPE_SNPEBuilder.hpp.html#file-snpe-snpebuilder-hpp"><span class="std std-ref">File SNPEBuilder.hpp</span></a></p></li>
+<li><p><a class="reference internal" href="file_SNPE_SNPEFactory.hpp.html#file-snpe-snpefactory-hpp"><span class="std std-ref">File SNPEFactory.hpp</span></a></p></li>
+</ul>
+</div>
+<div class="section" id="namespaces">
+<h2>Namespaces<a class="headerlink" href="#namespaces" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="namespace_zdl.html#namespace-zdl"><span class="std std-ref">Namespace zdl</span></a></p></li>
+<li><p><a class="reference internal" href="namespace_zdl__DlSystem.html#namespace-zdl-dlsystem"><span class="std std-ref">Namespace zdl::DlSystem</span></a></p></li>
+</ul>
+</div>
+<div class="section" id="classes">
+<h2>Classes<a class="headerlink" href="#classes" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="structzdl_1_1DlSystem_1_1Optional_1_1ReferenceCount.html#exhale-struct-structzdl-1-1dlsystem-1-1optional-1-1referencecount"><span class="std std-ref">Struct Optional::ReferenceCount</span></a></p></li>
+<li><p><a class="reference internal" href="classzdl_1_1DlSystem_1_1Optional.html#exhale-class-classzdl-1-1dlsystem-1-1optional"><span class="std std-ref">Class Optional</span></a></p></li>
+</ul>
+</div>
+<div class="section" id="full-file-listing">
+<h2>Full File Listing<a class="headerlink" href="#full-file-listing" title="Permalink to this headline">¶</a></h2>
+<dl class="cpp type">
+<dt class="sig sig-object cpp" id="_CPPv43zdl">
+<span id="_CPPv33zdl"></span><span id="_CPPv23zdl"></span><span id="zdl"></span><span class="target" id="namespacezdl"></span><span class="k"><span class="pre">namespace</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">zdl</span></span></span><br /></dt>
+<dd><dl class="cpp type">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystemE">
+<span id="_CPPv3N3zdl8DlSystemE"></span><span id="_CPPv2N3zdl8DlSystemE"></span><span id="zdl::DlSystem"></span><span class="target" id="namespacezdl_1_1DlSystem"></span><span class="k"><span class="pre">namespace</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">DlSystem</span></span></span><br /></dt>
+<dd><dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem8OptionalE">
+<span id="_CPPv3N3zdl8DlSystem8OptionalE"></span><span id="_CPPv2N3zdl8DlSystem8OptionalE"></span><span id="zdl::DlSystem::Optional"></span><span class="target" id="classzdl_1_1DlSystem_1_1Optional"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Optional</span></span></span><br /></dt>
+<dd><em>#include &lt;DlOptional.hpp&gt;</em><p>Class to manage a value that may or may not exist. The boolean value of the <a class="reference internal" href="#classzdl_1_1DlSystem_1_1Optional"><span class="std std-ref">Optional</span></a> class is true if the object contains a value and false if it does not contain a value.</p>
+<p>The class must be evaluated and confirmed as true (containing a value) before being dereferenced. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-types">Public Types</p>
+<dl class="cpp enum">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem8Optional9LIFECYCLEE">
+<span id="_CPPv3N3zdl8DlSystem8Optional9LIFECYCLEE"></span><span id="_CPPv2N3zdl8DlSystem8Optional9LIFECYCLEE"></span><span class="target" id="group__c__plus__plus__apis_1gadb85a6659b4d327fe024a83d4e4a5466"></span><span class="k"><span class="pre">enum</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">LIFECYCLE</span></span></span><br /></dt>
+<dd><p><em>Values:</em></p>
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem8Optional9LIFECYCLE4NONEE">
+<span id="_CPPv3N3zdl8DlSystem8Optional9LIFECYCLE4NONEE"></span><span id="_CPPv2N3zdl8DlSystem8Optional9LIFECYCLE4NONEE"></span><span class="target" id="group__c__plus__plus__apis_1ggadb85a6659b4d327fe024a83d4e4a5466ab50339a10e1de285ac99d4c3990b8693"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">NONE</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem8Optional9LIFECYCLE15REFERENCE_OWNEDE">
+<span id="_CPPv3N3zdl8DlSystem8Optional9LIFECYCLE15REFERENCE_OWNEDE"></span><span id="_CPPv2N3zdl8DlSystem8Optional9LIFECYCLE15REFERENCE_OWNEDE"></span><span class="target" id="group__c__plus__plus__apis_1ggadb85a6659b4d327fe024a83d4e4a5466afd00a763be130dfefd18c3ebdde01481"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">REFERENCE_OWNED</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">1</span></span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem8Optional9LIFECYCLE13POINTER_OWNEDE">
+<span id="_CPPv3N3zdl8DlSystem8Optional9LIFECYCLE13POINTER_OWNEDE"></span><span id="_CPPv2N3zdl8DlSystem8Optional9LIFECYCLE13POINTER_OWNEDE"></span><span class="target" id="group__c__plus__plus__apis_1ggadb85a6659b4d327fe024a83d4e4a5466ab5dbffb92d3280909da676e042a9f068"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">POINTER_OWNED</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">2</span></span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem8Optional9LIFECYCLE17POINTER_NOT_OWNEDE">
+<span id="_CPPv3N3zdl8DlSystem8Optional9LIFECYCLE17POINTER_NOT_OWNEDE"></span><span id="_CPPv2N3zdl8DlSystem8Optional9LIFECYCLE17POINTER_NOT_OWNEDE"></span><span class="target" id="group__c__plus__plus__apis_1ggadb85a6659b4d327fe024a83d4e4a5466af20e129d06cbf340cc98c66cfae1b7d6"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">POINTER_NOT_OWNED</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">3</span></span><br /></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="cpp type">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem8Optional1UE">
+<span id="_CPPv3N3zdl8DlSystem8Optional1UE"></span><span id="_CPPv2N3zdl8DlSystem8Optional1UE"></span><span class="target" id="group__c__plus__plus__apis_1ga351eec89e628afff9d32450fbb59359b"></span><span class="k"><span class="pre">using</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">U</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="k"><span class="pre">typename</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">remove_pointer</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">T</span></span><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">type</span></span><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem8Optional8OptionalEv">
+<span id="_CPPv3N3zdl8DlSystem8Optional8OptionalEv"></span><span id="_CPPv2N3zdl8DlSystem8Optional8OptionalEv"></span><span id="zdl::DlSystem::Optional::Optional"></span><span class="target" id="group__c__plus__plus__apis_1ga6a64d31dfed79e886e5822d99ef71663"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Optional</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><br /></dt>
+<dd><p>The default constructor is set to not have any value, and is therefore evaluated as false. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4I0EN3zdl8DlSystem8Optional8OptionalERK1TPNSt9enable_ifIXntNSt10is_pointerI1QE5valueEEE4typeE">
+<span id="_CPPv3I0EN3zdl8DlSystem8Optional8OptionalERK1TPNSt9enable_ifIXntNSt10is_pointerI1QE5valueEEE4typeE"></span><span id="_CPPv2I0EN3zdl8DlSystem8Optional8OptionalERK1TPNSt9enable_ifIX!std::is_pointer<Q>::valueEE4typeE"></span><span class="k"><span class="pre">template</span></span><span class="p"><span class="pre">&lt;</span></span><span class="k"><span class="pre">typename</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Q</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="n"><span class="pre">T</span></span><span class="p"><span class="pre">&gt;</span></span><br /><span class="target" id="group__c__plus__plus__apis_1gac71e05d965f23dc782e260f0538d3de9"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Optional</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">T</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">v</span></span>, <span class="k"><span class="pre">typename</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">enable_if</span></span><span class="p"><span class="pre">&lt;</span></span><span class="o"><span class="pre">!</span></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">is_pointer</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="classzdl_1_1DlSystem_1_1Optional.html#_CPPv4I0EN3zdl8DlSystem8Optional8OptionalERK1TPNSt9enable_ifIXntNSt10is_pointerI1QE5valueEEE4typeE" title="zdl::DlSystem::Optional::Optional::Q"><span class="n"><span class="pre">Q</span></span></a><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">type</span></span><span class="p"><span class="pre">*</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><span class="sig-paren">)</span><br /></dt>
+<dd><p>Construct an <a class="reference internal" href="#classzdl_1_1DlSystem_1_1Optional"><span class="std std-ref">Optional</span></a> class using an object. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>Reference</strong> – <strong>[in]</strong> to an object v </p></li>
+<li><p><strong>Optional</strong> – instance of object v </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4I0EN3zdl8DlSystem8Optional8OptionalEP1U9LIFECYCLEPNSt9enable_ifINSt10is_pointerI1QE5valueEE4typeE">
+<span id="_CPPv3I0EN3zdl8DlSystem8Optional8OptionalEP1U9LIFECYCLEPNSt9enable_ifINSt10is_pointerI1QE5valueEE4typeE"></span><span id="_CPPv2I0EN3zdl8DlSystem8Optional8OptionalEP1U9LIFECYCLEPNSt9enable_ifINSt10is_pointerI1QE5valueEE4typeE"></span><span class="k"><span class="pre">template</span></span><span class="p"><span class="pre">&lt;</span></span><span class="k"><span class="pre">typename</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Q</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="n"><span class="pre">T</span></span><span class="p"><span class="pre">&gt;</span></span><br /><span class="target" id="group__c__plus__plus__apis_1gac3c238c7f91c348608a6c6635e001627"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Optional</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="classzdl_1_1DlSystem_1_1Optional.html#_CPPv4N3zdl8DlSystem8Optional1UE" title="zdl::DlSystem::Optional::U"><span class="n"><span class="pre">U</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">v</span></span>, <a class="reference internal" href="classzdl_1_1DlSystem_1_1Optional.html#_CPPv4N3zdl8DlSystem8Optional9LIFECYCLEE" title="zdl::DlSystem::Optional::LIFECYCLE"><span class="n"><span class="pre">LIFECYCLE</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">type</span></span>, <span class="k"><span class="pre">typename</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">enable_if</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">is_pointer</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="classzdl_1_1DlSystem_1_1Optional.html#_CPPv4I0EN3zdl8DlSystem8Optional8OptionalEP1U9LIFECYCLEPNSt9enable_ifINSt10is_pointerI1QE5valueEE4typeE" title="zdl::DlSystem::Optional::Optional::Q"><span class="n"><span class="pre">Q</span></span></a><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">type</span></span><span class="p"><span class="pre">*</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><span class="sig-paren">)</span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem8Optional8OptionalERK8Optional">
+<span id="_CPPv3N3zdl8DlSystem8Optional8OptionalERK8Optional"></span><span id="_CPPv2N3zdl8DlSystem8Optional8OptionalERK8Optional"></span><span id="zdl::DlSystem::Optional::Optional__OptionalCR"></span><span class="target" id="group__c__plus__plus__apis_1gace0a3a06e6da3394a2c2ad1b0518f898"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Optional</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="classzdl_1_1DlSystem_1_1Optional.html#_CPPv4N3zdl8DlSystem8Optional8OptionalERK8Optional" title="zdl::DlSystem::Optional::Optional"><span class="n"><span class="pre">Optional</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">other</span></span><span class="sig-paren">)</span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem8OptionalaSERK8Optional">
+<span id="_CPPv3N3zdl8DlSystem8OptionalaSERK8Optional"></span><span id="_CPPv2N3zdl8DlSystem8OptionalaSERK8Optional"></span><span id="zdl::DlSystem::Optional::assign-operator__OptionalCR"></span><span class="target" id="group__c__plus__plus__apis_1ga60ec4da79da8b72e2f08cce23709580d"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><a class="reference internal" href="classzdl_1_1DlSystem_1_1Optional.html#_CPPv4N3zdl8DlSystem8OptionalE" title="zdl::DlSystem::Optional"><span class="n"><span class="pre">Optional</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="k"><span class="pre">operator</span></span><span class="o"><span class="pre">=</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="classzdl_1_1DlSystem_1_1Optional.html#_CPPv4N3zdl8DlSystem8OptionalE" title="zdl::DlSystem::Optional"><span class="n"><span class="pre">Optional</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">other</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">noexcept</span></span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem8Optional8OptionalERR8Optional">
+<span id="_CPPv3N3zdl8DlSystem8Optional8OptionalERR8Optional"></span><span id="_CPPv2N3zdl8DlSystem8Optional8OptionalERR8Optional"></span><span id="zdl::DlSystem::Optional::Optional__OptionalRR"></span><span class="target" id="group__c__plus__plus__apis_1gab26a18959fbe5e48b87ed14f42a36f68"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Optional</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="classzdl_1_1DlSystem_1_1Optional.html#_CPPv4N3zdl8DlSystem8Optional8OptionalERR8Optional" title="zdl::DlSystem::Optional::Optional"><span class="n"><span class="pre">Optional</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">other</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">noexcept</span></span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem8OptionalaSERR8Optional">
+<span id="_CPPv3N3zdl8DlSystem8OptionalaSERR8Optional"></span><span id="_CPPv2N3zdl8DlSystem8OptionalaSERR8Optional"></span><span id="zdl::DlSystem::Optional::assign-operator__OptionalRR"></span><span class="target" id="group__c__plus__plus__apis_1gae6af6d9dbcf4e1b22554d76a933c81d9"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><a class="reference internal" href="classzdl_1_1DlSystem_1_1Optional.html#_CPPv4N3zdl8DlSystem8OptionalE" title="zdl::DlSystem::Optional"><span class="n"><span class="pre">Optional</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="k"><span class="pre">operator</span></span><span class="o"><span class="pre">=</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="classzdl_1_1DlSystem_1_1Optional.html#_CPPv4N3zdl8DlSystem8OptionalE" title="zdl::DlSystem::Optional"><span class="n"><span class="pre">Optional</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">other</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">noexcept</span></span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem8OptionalD0Ev">
+<span id="_CPPv3N3zdl8DlSystem8OptionalD0Ev"></span><span id="_CPPv2N3zdl8DlSystem8OptionalD0Ev"></span><span id="zdl::DlSystem::Optional::~Optional"></span><span class="target" id="group__c__plus__plus__apis_1ga40964712e195acf44d0bade2d08dbaa5"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">~Optional</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK3zdl8DlSystem8OptionalcvbEv">
+<span id="_CPPv3NK3zdl8DlSystem8OptionalcvbEv"></span><span id="_CPPv2NK3zdl8DlSystem8OptionalcvbEv"></span><span id="zdl::DlSystem::Optional::castto-b-operatorC"></span><span class="target" id="group__c__plus__plus__apis_1gaf7bd9fe670b0c05556a95c51c2e43227"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="sig-name descname"><span class="k"><span class="pre">operator</span></span><span class="w"> </span><span class="kt"><span class="pre">bool</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="k"><span class="pre">noexcept</span></span><br /></dt>
+<dd><p>Boolean value of <a class="reference internal" href="#classzdl_1_1DlSystem_1_1Optional"><span class="std std-ref">Optional</span></a> class is only true when there exists a value. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK3zdl8DlSystem8OptionalntEv">
+<span id="_CPPv3NK3zdl8DlSystem8OptionalntEv"></span><span id="_CPPv2NK3zdl8DlSystem8OptionalntEv"></span><span id="zdl::DlSystem::Optional::not-operatorC"></span><span class="target" id="group__c__plus__plus__apis_1ga3bb59c2c6a9a8809ce7bd56ff38b4712"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="k"><span class="pre">operator</span></span><span class="o"><span class="pre">!</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="k"><span class="pre">noexcept</span></span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem8OptionalmlEv">
+<span id="_CPPv3N3zdl8DlSystem8OptionalmlEv"></span><span id="_CPPv2N3zdl8DlSystem8OptionalmlEv"></span><span id="zdl::DlSystem::Optional::mul-operator"></span><span class="target" id="group__c__plus__plus__apis_1gaac874d62ddefb60623d5b2ed81319dc2"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">T</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="k"><span class="pre">operator</span></span><span class="o"><span class="pre">*</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><br /></dt>
+<dd><p>Get reference of <a class="reference internal" href="#classzdl_1_1DlSystem_1_1Optional"><span class="std std-ref">Optional</span></a> object </p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>User must validate <a class="reference internal" href="#classzdl_1_1DlSystem_1_1Optional"><span class="std std-ref">Optional</span></a> has value before. </p>
+</div>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK3zdl8DlSystem8OptionalmlEv">
+<span id="_CPPv3NK3zdl8DlSystem8OptionalmlEv"></span><span id="_CPPv2NK3zdl8DlSystem8OptionalmlEv"></span><span id="zdl::DlSystem::Optional::mul-operatorC"></span><span class="target" id="group__c__plus__plus__apis_1gae4514a9056ea60200b2017cca97d5628"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">T</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="k"><span class="pre">operator</span></span><span class="o"><span class="pre">*</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><br /></dt>
+<dd><p>Get reference of <a class="reference internal" href="#classzdl_1_1DlSystem_1_1Optional"><span class="std std-ref">Optional</span></a> object </p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>User must validate <a class="reference internal" href="#classzdl_1_1DlSystem_1_1Optional"><span class="std std-ref">Optional</span></a> has value before. </p>
+</div>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem8OptionalcvR1TEv">
+<span id="_CPPv3N3zdl8DlSystem8OptionalcvR1TEv"></span><span id="_CPPv2N3zdl8DlSystem8OptionalcvR1TEv"></span><span id="zdl::DlSystem::Optional::castto-TR-operator"></span><span class="target" id="group__c__plus__plus__apis_1ga45cc86e66a846c2e35509af667bd7ec1"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="sig-name descname"><span class="k"><span class="pre">operator</span></span><span class="w"> </span><span class="n"><span class="pre">T</span></span><span class="p"><span class="pre">&amp;</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem8OptionalptEv">
+<span id="_CPPv3N3zdl8DlSystem8OptionalptEv"></span><span id="_CPPv2N3zdl8DlSystem8OptionalptEv"></span><span id="zdl::DlSystem::Optional::pointer-operator"></span><span class="target" id="group__c__plus__plus__apis_1ga28ff3b900100073f7fb9e6ded37a4e92"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="n"><span class="pre">T</span></span><span class="w"> </span><span class="sig-name descname"><span class="k"><span class="pre">operator</span></span><span class="o"><span class="pre">-&gt;</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem8Optional7releaseEv">
+<span id="_CPPv3N3zdl8DlSystem8Optional7releaseEv"></span><span id="_CPPv2N3zdl8DlSystem8Optional7releaseEv"></span><span id="zdl::DlSystem::Optional::release"></span><span class="target" id="group__c__plus__plus__apis_1gae1825fd347bf837fb48638f604e3e2ec"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">release</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-private-functions">Private Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem8Optional4swapERR8Optional">
+<span id="_CPPv3N3zdl8DlSystem8Optional4swapERR8Optional"></span><span id="_CPPv2N3zdl8DlSystem8Optional4swapERR8Optional"></span><span id="zdl::DlSystem::Optional::swap__OptionalRR"></span><span class="target" id="group__c__plus__plus__apis_1ga305a25aad53c107dbd3033f4c665de5c"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">swap</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="classzdl_1_1DlSystem_1_1Optional.html#_CPPv4N3zdl8DlSystem8OptionalE" title="zdl::DlSystem::Optional"><span class="n"><span class="pre">Optional</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">other</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3zdl8DlSystem8Optional4swapERR8Optional" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4I0ENK3zdl8DlSystem8Optional12GetReferenceENSt9enable_ifINSt7is_sameI1U1QE5valueERK1QE4typeEv">
+<span id="_CPPv3I0ENK3zdl8DlSystem8Optional12GetReferenceEv"></span><span id="_CPPv2I0ENK3zdl8DlSystem8Optional12GetReferenceEv"></span><span class="k"><span class="pre">template</span></span><span class="p"><span class="pre">&lt;</span></span><span class="k"><span class="pre">typename</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Q</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="n"><span class="pre">T</span></span><span class="p"><span class="pre">&gt;</span></span><br /><span class="target" id="group__c__plus__plus__apis_1gacf04eb44b7b6ecd9d002c063f1c2bdc8"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">enable_if</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">is_same</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="classzdl_1_1DlSystem_1_1Optional.html#_CPPv4N3zdl8DlSystem8Optional1UE" title="zdl::DlSystem::Optional::U"><span class="n"><span class="pre">U</span></span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4I0ENK3zdl8DlSystem8Optional12GetReferenceENSt9enable_ifINSt7is_sameI1U1QE5valueERK1QE4typeEv" title="zdl::DlSystem::Optional::GetReference::Q"><span class="n"><span class="pre">Q</span></span></a><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4I0ENK3zdl8DlSystem8Optional12GetReferenceENSt9enable_ifINSt7is_sameI1U1QE5valueERK1QE4typeEv" title="zdl::DlSystem::Optional::GetReference::Q"><span class="n"><span class="pre">Q</span></span></a><span class="p"><span class="pre">&amp;</span></span><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">type</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">GetReference</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="k"><span class="pre">noexcept</span></span><a class="headerlink" href="#_CPPv4I0ENK3zdl8DlSystem8Optional12GetReferenceENSt9enable_ifINSt7is_sameI1U1QE5valueERK1QE4typeEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4I0ENK3zdl8DlSystem8Optional12GetReferenceENSt9enable_ifINSt7is_sameIP1U1QE5valueERK1QE4typeEv">
+<span class="k"><span class="pre">template</span></span><span class="p"><span class="pre">&lt;</span></span><span class="k"><span class="pre">typename</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Q</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="n"><span class="pre">T</span></span><span class="p"><span class="pre">&gt;</span></span><br /><span class="target" id="classzdl_1_1DlSystem_1_1Optional_1gacf04eb44b7b6ecd9d002c063f1c2bdc8"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">enable_if</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">is_same</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="classzdl_1_1DlSystem_1_1Optional.html#_CPPv4N3zdl8DlSystem8Optional1UE" title="zdl::DlSystem::Optional::U"><span class="n"><span class="pre">U</span></span></a><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4I0ENK3zdl8DlSystem8Optional12GetReferenceENSt9enable_ifINSt7is_sameIP1U1QE5valueERK1QE4typeEv" title="zdl::DlSystem::Optional::GetReference::Q"><span class="n"><span class="pre">Q</span></span></a><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4I0ENK3zdl8DlSystem8Optional12GetReferenceENSt9enable_ifINSt7is_sameIP1U1QE5valueERK1QE4typeEv" title="zdl::DlSystem::Optional::GetReference::Q"><span class="n"><span class="pre">Q</span></span></a><span class="p"><span class="pre">&amp;</span></span><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">type</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">GetReference</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="k"><span class="pre">noexcept</span></span><a class="headerlink" href="#_CPPv4I0ENK3zdl8DlSystem8Optional12GetReferenceENSt9enable_ifINSt7is_sameIP1U1QE5valueERK1QE4typeEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4I0EN3zdl8DlSystem8Optional12GetReferenceENSt9enable_ifINSt7is_sameI1U1QE5valueER1QE4typeEv">
+<span id="_CPPv3I0EN3zdl8DlSystem8Optional12GetReferenceEv"></span><span id="_CPPv2I0EN3zdl8DlSystem8Optional12GetReferenceEv"></span><span class="k"><span class="pre">template</span></span><span class="p"><span class="pre">&lt;</span></span><span class="k"><span class="pre">typename</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Q</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="n"><span class="pre">T</span></span><span class="p"><span class="pre">&gt;</span></span><br /><span class="target" id="group__c__plus__plus__apis_1ga97af6981cea26437caf8bc2866321a17"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">enable_if</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">is_same</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="classzdl_1_1DlSystem_1_1Optional.html#_CPPv4N3zdl8DlSystem8Optional1UE" title="zdl::DlSystem::Optional::U"><span class="n"><span class="pre">U</span></span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4I0EN3zdl8DlSystem8Optional12GetReferenceENSt9enable_ifINSt7is_sameI1U1QE5valueER1QE4typeEv" title="zdl::DlSystem::Optional::GetReference::Q"><span class="n"><span class="pre">Q</span></span></a><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4I0EN3zdl8DlSystem8Optional12GetReferenceENSt9enable_ifINSt7is_sameI1U1QE5valueER1QE4typeEv" title="zdl::DlSystem::Optional::GetReference::Q"><span class="n"><span class="pre">Q</span></span></a><span class="p"><span class="pre">&amp;</span></span><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">type</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">GetReference</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">noexcept</span></span><a class="headerlink" href="#_CPPv4I0EN3zdl8DlSystem8Optional12GetReferenceENSt9enable_ifINSt7is_sameI1U1QE5valueER1QE4typeEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4I0EN3zdl8DlSystem8Optional12GetReferenceENSt9enable_ifINSt7is_sameIP1U1QE5valueER1QE4typeEv">
+<span class="k"><span class="pre">template</span></span><span class="p"><span class="pre">&lt;</span></span><span class="k"><span class="pre">typename</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Q</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="n"><span class="pre">T</span></span><span class="p"><span class="pre">&gt;</span></span><br /><span class="target" id="classzdl_1_1DlSystem_1_1Optional_1ga97af6981cea26437caf8bc2866321a17"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">enable_if</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">is_same</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="classzdl_1_1DlSystem_1_1Optional.html#_CPPv4N3zdl8DlSystem8Optional1UE" title="zdl::DlSystem::Optional::U"><span class="n"><span class="pre">U</span></span></a><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4I0EN3zdl8DlSystem8Optional12GetReferenceENSt9enable_ifINSt7is_sameIP1U1QE5valueER1QE4typeEv" title="zdl::DlSystem::Optional::GetReference::Q"><span class="n"><span class="pre">Q</span></span></a><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4I0EN3zdl8DlSystem8Optional12GetReferenceENSt9enable_ifINSt7is_sameIP1U1QE5valueER1QE4typeEv" title="zdl::DlSystem::Optional::GetReference::Q"><span class="n"><span class="pre">Q</span></span></a><span class="p"><span class="pre">&amp;</span></span><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">type</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">GetReference</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">noexcept</span></span><a class="headerlink" href="#_CPPv4I0EN3zdl8DlSystem8Optional12GetReferenceENSt9enable_ifINSt7is_sameIP1U1QE5valueER1QE4typeEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK3zdl8DlSystem8Optional9isPointerEv">
+<span id="_CPPv3NK3zdl8DlSystem8Optional9isPointerEv"></span><span id="_CPPv2NK3zdl8DlSystem8Optional9isPointerEv"></span><span id="zdl::DlSystem::Optional::isPointerC"></span><span class="target" id="group__c__plus__plus__apis_1ga7c9d757843ed67c18c4fe4a4601d6872"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">isPointer</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK3zdl8DlSystem8Optional9isPointerEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK3zdl8DlSystem8Optional7isOwnedEv">
+<span id="_CPPv3NK3zdl8DlSystem8Optional7isOwnedEv"></span><span id="_CPPv2NK3zdl8DlSystem8Optional7isOwnedEv"></span><span id="zdl::DlSystem::Optional::isOwnedC"></span><span class="target" id="group__c__plus__plus__apis_1gac83abfc2cbec1dddacf297a781046b8a"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">isOwned</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK3zdl8DlSystem8Optional7isOwnedEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK3zdl8DlSystem8Optional11isReferenceEv">
+<span id="_CPPv3NK3zdl8DlSystem8Optional11isReferenceEv"></span><span id="_CPPv2NK3zdl8DlSystem8Optional11isReferenceEv"></span><span id="zdl::DlSystem::Optional::isReferenceC"></span><span class="target" id="group__c__plus__plus__apis_1ga8d932bec2cde0ce4e47c7f8e9a3a8a77"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">isReference</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK3zdl8DlSystem8Optional11isReferenceEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK3zdl8DlSystem8Optional7isValidEv">
+<span id="_CPPv3NK3zdl8DlSystem8Optional7isValidEv"></span><span id="_CPPv2NK3zdl8DlSystem8Optional7isValidEv"></span><span id="zdl::DlSystem::Optional::isValidC"></span><span class="target" id="group__c__plus__plus__apis_1ga0e38161bb321f24a800cb12edbd62c0b"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">isValid</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK3zdl8DlSystem8Optional7isValidEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-private-members">Private Members</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem8Optional12m_StoragePtrE">
+<span id="_CPPv3N3zdl8DlSystem8Optional12m_StoragePtrE"></span><span id="_CPPv2N3zdl8DlSystem8Optional12m_StoragePtrE"></span><span id="zdl::DlSystem::Optional::m_StoragePtr__UP"></span><span class="target" id="group__c__plus__plus__apis_1ga1552ff297c803ce247ec88e286e7979f"></span><a class="reference internal" href="classzdl_1_1DlSystem_1_1Optional.html#_CPPv4N3zdl8DlSystem8Optional1UE" title="zdl::DlSystem::Optional::U"><span class="n"><span class="pre">U</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">m_StoragePtr</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="k"><span class="pre">nullptr</span></span><a class="headerlink" href="#_CPPv4N3zdl8DlSystem8Optional12m_StoragePtrE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem8Optional6m_TypeE">
+<span id="_CPPv3N3zdl8DlSystem8Optional6m_TypeE"></span><span id="_CPPv2N3zdl8DlSystem8Optional6m_TypeE"></span><span id="zdl::DlSystem::Optional::m_Type__LIFECYCLE"></span><span class="target" id="group__c__plus__plus__apis_1ga314b497fb183af69d49dac9385688c36"></span><a class="reference internal" href="classzdl_1_1DlSystem_1_1Optional.html#_CPPv4N3zdl8DlSystem8Optional9LIFECYCLEE" title="zdl::DlSystem::Optional::LIFECYCLE"><span class="n"><span class="pre">LIFECYCLE</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">m_Type</span></span></span><a class="headerlink" href="#_CPPv4N3zdl8DlSystem8Optional6m_TypeE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem8Optional7m_CountE">
+<span id="_CPPv3N3zdl8DlSystem8Optional7m_CountE"></span><span id="_CPPv2N3zdl8DlSystem8Optional7m_CountE"></span><span id="zdl::DlSystem::Optional::m_Count__ReferenceCountP"></span><span class="target" id="group__c__plus__plus__apis_1gaad6ca719891ca93903b13d27042172dd"></span><a class="reference internal" href="classzdl_1_1DlSystem_1_1Optional.html#_CPPv4N3zdl8DlSystem8Optional14ReferenceCountE" title="zdl::DlSystem::Optional::ReferenceCount"><span class="n"><span class="pre">ReferenceCount</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">m_Count</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="k"><span class="pre">nullptr</span></span><a class="headerlink" href="#_CPPv4N3zdl8DlSystem8Optional7m_CountE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<dl class="cpp struct">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem8Optional14ReferenceCountE">
+<span id="_CPPv3N3zdl8DlSystem8Optional14ReferenceCountE"></span><span id="_CPPv2N3zdl8DlSystem8Optional14ReferenceCountE"></span><span id="zdl::DlSystem::Optional::ReferenceCount"></span><span class="target" id="structzdl_1_1DlSystem_1_1Optional_1_1ReferenceCount"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">ReferenceCount</span></span></span><br /></dt>
+<dd><em>#include &lt;DlOptional.hpp&gt;</em><div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem8Optional14ReferenceCount9incrementEv">
+<span id="_CPPv3N3zdl8DlSystem8Optional14ReferenceCount9incrementEv"></span><span id="_CPPv2N3zdl8DlSystem8Optional14ReferenceCount9incrementEv"></span><span id="zdl::DlSystem::Optional::ReferenceCount::increment"></span><span class="target" id="group__c__plus__plus__apis_1ga31dd98033952ed7f386368a0382799b5"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">increment</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem8Optional14ReferenceCount9decrementEv">
+<span id="_CPPv3N3zdl8DlSystem8Optional14ReferenceCount9decrementEv"></span><span id="_CPPv2N3zdl8DlSystem8Optional14ReferenceCount9decrementEv"></span><span id="zdl::DlSystem::Optional::ReferenceCount::decrement"></span><span class="target" id="group__c__plus__plus__apis_1gabb326a2a69c5c1e981ca6cbeb8ea5382"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">decrement</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem8Optional14ReferenceCount5countE">
+<span id="_CPPv3N3zdl8DlSystem8Optional14ReferenceCount5countE"></span><span id="_CPPv2N3zdl8DlSystem8Optional14ReferenceCount5countE"></span><span id="zdl::DlSystem::Optional::ReferenceCount::count__s"></span><span class="target" id="group__c__plus__plus__apis_1ga7216717a8ae482adddd5a1d057ed4d7d"></span><span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">count</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</dd></dl>
+
+</dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2020-2023, Qualcomm Technologies, Inc..
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

@@ -1,0 +1,516 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Program Listing for File DlError.h &mdash; Snapdragon Neural Processing Engine SDK</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/custom_css.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/collapsible-lists/css/tree_view.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+        <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Qualcomm® Neural Processing SDK
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                v2.12.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../general/revision_history.html">Revision History</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/revision_history_windows.html">Revision History - Windows</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/overview.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/setup.html">Setup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/usergroup1.html">Network Models</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/usergroup5.html">Input Data and Preprocessing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/usergroup6.html">Tutorials and Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/usergroup10.html">Benchmarking and Accuracy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/tools.html">Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/usergroup11.html">Debug Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/api.html">API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/limitations.html">Limitations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/appx_ref.html">References</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Qualcomm® Neural Processing SDK</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Program Listing for File DlError.h</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="program-listing-for-file-dlerror-h">
+<span id="program-listing-file-dlsystem-dlerror-h"></span><h1>Program Listing for File DlError.h<a class="headerlink" href="#program-listing-for-file-dlerror-h" title="Permalink to this headline">¶</a></h1>
+<p>↰ <a class="reference internal" href="file_DlSystem_DlError.h.html#file-dlsystem-dlerror-h"><span class="std std-ref">Return to documentation for file</span></a> (<code class="docutils literal notranslate"><span class="pre">DlSystem/DlError.h</span></code>)</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="c1">//==============================================================================</span>
+<span class="c1">//</span>
+<span class="c1">//  Copyright (c) 2022-2023 Qualcomm Technologies, Inc.</span>
+<span class="c1">//  All Rights Reserved.</span>
+<span class="c1">//  Confidential and Proprietary - Qualcomm Technologies, Inc.</span>
+<span class="c1">//</span>
+<span class="c1">//==============================================================================</span>
+
+<span class="cm">/**</span>
+<span class="cm"> *  @file</span>
+<span class="cm"> */</span>
+
+<span class="cp">#ifndef _DL_ERROR_H_</span>
+<span class="cp">#define _DL_ERROR_H_</span>
+
+<span class="cp">#ifdef __cplusplus</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;cstdint&gt;</span>
+<span class="cp">#else</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;stdint.h&gt;</span>
+<span class="cp">#endif</span>
+
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;SnpeApiExportDefine.h&quot;</span>
+
+<span class="cp">#ifdef __cplusplus</span>
+<span class="k">extern</span><span class="w"> </span><span class="s">&quot;C&quot;</span><span class="w"> </span><span class="p">{</span>
+<span class="cp">#endif</span>
+
+
+<span class="cm">/**</span>
+<span class="cm"> * Enumeration of error codes</span>
+<span class="cm"> */</span>
+<span class="k">typedef</span><span class="w"> </span><span class="k">enum</span>
+<span class="p">{</span>
+<span class="w">  </span><span class="c1">/// Indicate success: SNPE_SUCCESS = 0</span>
+<span class="w">  </span><span class="n">SNPE_SUCCESS</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+
+<span class="w">  </span><span class="c1">// C API Error Codes</span>
+<span class="w">  </span><span class="c1">// This is a temporary place for them. We still have to figure out how to manage</span>
+<span class="w">  </span><span class="c1">// passing error codes from the C API to C++ if we want to use things like SetLastError</span>
+<span class="w">  </span><span class="n">SNPE_ERRORCODE_CAPI_CREATE_FAILURE</span><span class="w">                              </span><span class="o">=</span><span class="w"> </span><span class="mi">10</span><span class="p">,</span>
+<span class="w">  </span><span class="n">SNPE_ERRORCODE_CAPI_HANDLEGEN_FAILURE</span><span class="w">                           </span><span class="o">=</span><span class="w"> </span><span class="mi">11</span><span class="p">,</span>
+<span class="w">  </span><span class="n">SNPE_ERRORCODE_CAPI_DELETE_FAILURE</span><span class="w">                              </span><span class="o">=</span><span class="w"> </span><span class="mi">12</span><span class="p">,</span>
+<span class="w">  </span><span class="n">SNPE_ERRORCODE_CAPI_BAD_HANDLE</span><span class="w">                                  </span><span class="o">=</span><span class="w"> </span><span class="mi">13</span><span class="p">,</span>
+<span class="w">  </span><span class="n">SNPE_ERRORCODE_CAPI_BAD_ARGUMENT</span><span class="w">                                </span><span class="o">=</span><span class="w"> </span><span class="mi">14</span><span class="p">,</span>
+<span class="w">  </span><span class="n">SNPE_ERRORCODE_CAPI_BAD_ALLOC</span><span class="w">                                   </span><span class="o">=</span><span class="w"> </span><span class="mi">15</span><span class="p">,</span>
+
+<span class="w">  </span><span class="c1">// System config errors</span>
+<span class="w">  </span><span class="n">SNPE_ERRORCODE_CONFIG_MISSING_PARAM</span><span class="w">                             </span><span class="o">=</span><span class="w"> </span><span class="mi">100</span><span class="p">,</span>
+<span class="w">  </span><span class="n">SNPE_ERRORCODE_CONFIG_INVALID_PARAM</span><span class="w">                             </span><span class="o">=</span><span class="w"> </span><span class="mi">101</span><span class="p">,</span>
+<span class="w">  </span><span class="n">SNPE_ERRORCODE_CONFIG_MISSING_FILE</span><span class="w">                              </span><span class="o">=</span><span class="w"> </span><span class="mi">102</span><span class="p">,</span>
+<span class="w">  </span><span class="n">SNPE_ERRORCODE_CONFIG_NNCONFIG_NOT_SET</span><span class="w">                          </span><span class="o">=</span><span class="w"> </span><span class="mi">103</span><span class="p">,</span>
+<span class="w">  </span><span class="n">SNPE_ERRORCODE_CONFIG_NNCONFIG_INVALID</span><span class="w">                          </span><span class="o">=</span><span class="w"> </span><span class="mi">104</span><span class="p">,</span>
+<span class="w">  </span><span class="n">SNPE_ERRORCODE_CONFIG_WRONG_INPUT_NAME</span><span class="w">                          </span><span class="o">=</span><span class="w"> </span><span class="mi">105</span><span class="p">,</span>
+<span class="w">  </span><span class="n">SNPE_ERRORCODE_CONFIG_INCORRECT_INPUT_DIMENSIONS</span><span class="w">                </span><span class="o">=</span><span class="w"> </span><span class="mi">106</span><span class="p">,</span>
+<span class="w">  </span><span class="n">SNPE_ERRORCODE_CONFIG_DIMENSIONS_MODIFICATION_NOT_SUPPORTED</span><span class="w">     </span><span class="o">=</span><span class="w"> </span><span class="mi">107</span><span class="p">,</span>
+<span class="w">  </span><span class="n">SNPE_ERRORCODE_CONFIG_BOTH_OUTPUT_LAYER_TENSOR_NAMES_SET</span><span class="w">        </span><span class="o">=</span><span class="w"> </span><span class="mi">108</span><span class="p">,</span>
+
+<span class="w">  </span><span class="n">SNPE_ERRORCODE_CONFIG_NNCONFIG_ONLY_TENSOR_SUPPORTED</span><span class="w">            </span><span class="o">=</span><span class="w"> </span><span class="mi">120</span><span class="p">,</span>
+<span class="w">  </span><span class="n">SNPE_ERRORCODE_CONFIG_NNCONFIG_ONLY_USER_BUFFER_SUPPORTED</span><span class="w">       </span><span class="o">=</span><span class="w"> </span><span class="mi">121</span><span class="p">,</span>
+
+<span class="w">  </span><span class="c1">// DlSystem errors</span>
+<span class="w">  </span><span class="n">SNPE_ERRORCODE_DLSYSTEM_MISSING_BUFFER</span><span class="w">                          </span><span class="o">=</span><span class="w"> </span><span class="mi">200</span><span class="p">,</span>
+<span class="w">  </span><span class="n">SNPE_ERRORCODE_DLSYSTEM_TENSOR_CAST_FAILED</span><span class="w">                      </span><span class="o">=</span><span class="w"> </span><span class="mi">201</span><span class="p">,</span>
+<span class="w">  </span><span class="n">SNPE_ERRORCODE_DLSYSTEM_FIXED_POINT_PARAM_INVALID</span><span class="w">               </span><span class="o">=</span><span class="w"> </span><span class="mi">202</span><span class="p">,</span>
+<span class="w">  </span><span class="n">SNPE_ERRORCODE_DLSYSTEM_SIZE_MISMATCH</span><span class="w">                           </span><span class="o">=</span><span class="w"> </span><span class="mi">203</span><span class="p">,</span>
+<span class="w">  </span><span class="n">SNPE_ERRORCODE_DLSYSTEM_NAME_NOT_FOUND</span><span class="w">                          </span><span class="o">=</span><span class="w"> </span><span class="mi">204</span><span class="p">,</span>
+<span class="w">  </span><span class="n">SNPE_ERRORCODE_DLSYSTEM_VALUE_MISMATCH</span><span class="w">                          </span><span class="o">=</span><span class="w"> </span><span class="mi">205</span><span class="p">,</span>
+<span class="w">  </span><span class="n">SNPE_ERRORCODE_DLSYSTEM_INSERT_FAILED</span><span class="w">                           </span><span class="o">=</span><span class="w"> </span><span class="mi">206</span><span class="p">,</span>
+<span class="w">  </span><span class="n">SNPE_ERRORCODE_DLSYSTEM_TENSOR_FILE_READ_FAILED</span><span class="w">                 </span><span class="o">=</span><span class="w"> </span><span class="mi">207</span><span class="p">,</span>
+<span class="w">  </span><span class="n">SNPE_ERRORCODE_DLSYSTEM_DIAGLOG_FAILURE</span><span class="w">                         </span><span class="o">=</span><span class="w"> </span><span class="mi">208</span><span class="p">,</span>
+<span class="w">  </span><span class="n">SNPE_ERRORCODE_DLSYSTEM_LAYER_NOT_SET</span><span class="w">                           </span><span class="o">=</span><span class="w"> </span><span class="mi">209</span><span class="p">,</span>
+<span class="w">  </span><span class="n">SNPE_ERRORCODE_DLSYSTEM_WRONG_NUMBER_INPUT_BUFFERS</span><span class="w">              </span><span class="o">=</span><span class="w"> </span><span class="mi">210</span><span class="p">,</span>
+<span class="w">  </span><span class="n">SNPE_ERRORCODE_DLSYSTEM_RUNTIME_TENSOR_SHAPE_MISMATCH</span><span class="w">           </span><span class="o">=</span><span class="w"> </span><span class="mi">211</span><span class="p">,</span>
+<span class="w">  </span><span class="n">SNPE_ERRORCODE_DLSYSTEM_TENSOR_MISSING</span><span class="w">                          </span><span class="o">=</span><span class="w"> </span><span class="mi">212</span><span class="p">,</span>
+<span class="w">  </span><span class="n">SNPE_ERRORCODE_DLSYSTEM_TENSOR_ITERATION_UNSUPPORTED</span><span class="w">            </span><span class="o">=</span><span class="w"> </span><span class="mi">213</span><span class="p">,</span>
+<span class="w">  </span><span class="n">SNPE_ERRORCODE_DLSYSTEM_BUFFER_MANAGER_MISSING</span><span class="w">                  </span><span class="o">=</span><span class="w"> </span><span class="mi">214</span><span class="p">,</span>
+<span class="w">  </span><span class="n">SNPE_ERRORCODE_DLSYSTEM_RUNTIME_BUFFER_SOURCE_UNSUPPORTED</span><span class="w">       </span><span class="o">=</span><span class="w"> </span><span class="mi">215</span><span class="p">,</span>
+<span class="w">  </span><span class="n">SNPE_ERRORCODE_DLSYSTEM_BUFFER_CAST_FAILED</span><span class="w">                      </span><span class="o">=</span><span class="w"> </span><span class="mi">216</span><span class="p">,</span>
+<span class="w">  </span><span class="n">SNPE_ERRORCODE_DLSYSTEM_WRONG_TRANSITION_TYPE</span><span class="w">                   </span><span class="o">=</span><span class="w"> </span><span class="mi">217</span><span class="p">,</span>
+<span class="w">  </span><span class="n">SNPE_ERRORCODE_DLSYSTEM_LAYER_ALREADY_REGISTERED</span><span class="w">                </span><span class="o">=</span><span class="w"> </span><span class="mi">218</span><span class="p">,</span>
+<span class="w">  </span><span class="n">SNPE_ERRORCODE_DLSYSTEM_TENSOR_DIM_INVALID</span><span class="w">                      </span><span class="o">=</span><span class="w"> </span><span class="mi">219</span><span class="p">,</span>
+
+<span class="w">  </span><span class="n">SNPE_ERRORCODE_DLSYSTEM_BUFFERENCODING_UNKNOWN</span><span class="w">                  </span><span class="o">=</span><span class="w"> </span><span class="mi">240</span><span class="p">,</span>
+<span class="w">  </span><span class="n">SNPE_ERRORCODE_DLSYSTEM_BUFFER_INVALID_PARAM</span><span class="w">                    </span><span class="o">=</span><span class="w"> </span><span class="mi">241</span><span class="p">,</span>
+
+<span class="w">  </span><span class="c1">// DlContainer errors</span>
+<span class="w">  </span><span class="n">SNPE_ERRORCODE_DLCONTAINER_MODEL_PARSING_FAILED</span><span class="w">                 </span><span class="o">=</span><span class="w"> </span><span class="mi">300</span><span class="p">,</span>
+<span class="w">  </span><span class="n">SNPE_ERRORCODE_DLCONTAINER_UNKNOWN_LAYER_CODE</span><span class="w">                   </span><span class="o">=</span><span class="w"> </span><span class="mi">301</span><span class="p">,</span>
+<span class="w">  </span><span class="n">SNPE_ERRORCODE_DLCONTAINER_MISSING_LAYER_PARAM</span><span class="w">                  </span><span class="o">=</span><span class="w"> </span><span class="mi">302</span><span class="p">,</span>
+<span class="w">  </span><span class="n">SNPE_ERRORCODE_DLCONTAINER_LAYER_PARAM_NOT_SUPPORTED</span><span class="w">            </span><span class="o">=</span><span class="w"> </span><span class="mi">303</span><span class="p">,</span>
+<span class="w">  </span><span class="n">SNPE_ERRORCODE_DLCONTAINER_LAYER_PARAM_INVALID</span><span class="w">                  </span><span class="o">=</span><span class="w"> </span><span class="mi">304</span><span class="p">,</span>
+<span class="w">  </span><span class="n">SNPE_ERRORCODE_DLCONTAINER_TENSOR_DATA_MISSING</span><span class="w">                  </span><span class="o">=</span><span class="w"> </span><span class="mi">305</span><span class="p">,</span>
+<span class="w">  </span><span class="n">SNPE_ERRORCODE_DLCONTAINER_MODEL_LOAD_FAILED</span><span class="w">                    </span><span class="o">=</span><span class="w"> </span><span class="mi">306</span><span class="p">,</span>
+<span class="w">  </span><span class="n">SNPE_ERRORCODE_DLCONTAINER_MISSING_RECORDS</span><span class="w">                      </span><span class="o">=</span><span class="w"> </span><span class="mi">307</span><span class="p">,</span>
+<span class="w">  </span><span class="n">SNPE_ERRORCODE_DLCONTAINER_INVALID_RECORD</span><span class="w">                       </span><span class="o">=</span><span class="w"> </span><span class="mi">308</span><span class="p">,</span>
+<span class="w">  </span><span class="n">SNPE_ERRORCODE_DLCONTAINER_WRITE_FAILURE</span><span class="w">                        </span><span class="o">=</span><span class="w"> </span><span class="mi">309</span><span class="p">,</span>
+<span class="w">  </span><span class="n">SNPE_ERRORCODE_DLCONTAINER_READ_FAILURE</span><span class="w">                         </span><span class="o">=</span><span class="w"> </span><span class="mi">310</span><span class="p">,</span>
+<span class="w">  </span><span class="n">SNPE_ERRORCODE_DLCONTAINER_BAD_CONTAINER</span><span class="w">                        </span><span class="o">=</span><span class="w"> </span><span class="mi">311</span><span class="p">,</span>
+<span class="w">  </span><span class="n">SNPE_ERRORCODE_DLCONTAINER_BAD_DNN_FORMAT_VERSION</span><span class="w">               </span><span class="o">=</span><span class="w"> </span><span class="mi">312</span><span class="p">,</span>
+<span class="w">  </span><span class="n">SNPE_ERRORCODE_DLCONTAINER_UNKNOWN_AXIS_ANNOTATION</span><span class="w">              </span><span class="o">=</span><span class="w"> </span><span class="mi">313</span><span class="p">,</span>
+<span class="w">  </span><span class="n">SNPE_ERRORCODE_DLCONTAINER_UNKNOWN_SHUFFLE_TYPE</span><span class="w">                 </span><span class="o">=</span><span class="w"> </span><span class="mi">314</span><span class="p">,</span>
+<span class="w">  </span><span class="n">SNPE_ERRORCODE_DLCONTAINER_TEMP_FILE_FAILURE</span><span class="w">                    </span><span class="o">=</span><span class="w"> </span><span class="mi">315</span><span class="p">,</span>
+
+<span class="w">  </span><span class="c1">// Network errors</span>
+<span class="w">  </span><span class="n">SNPE_ERRORCODE_NETWORK_EMPTY_NETWORK</span><span class="w">                            </span><span class="o">=</span><span class="w"> </span><span class="mi">400</span><span class="p">,</span>
+<span class="w">  </span><span class="n">SNPE_ERRORCODE_NETWORK_CREATION_FAILED</span><span class="w">                          </span><span class="o">=</span><span class="w"> </span><span class="mi">401</span><span class="p">,</span>
+<span class="w">  </span><span class="n">SNPE_ERRORCODE_NETWORK_PARTITION_FAILED</span><span class="w">                         </span><span class="o">=</span><span class="w"> </span><span class="mi">402</span><span class="p">,</span>
+<span class="w">  </span><span class="n">SNPE_ERRORCODE_NETWORK_NO_OUTPUT_DEFINED</span><span class="w">                        </span><span class="o">=</span><span class="w"> </span><span class="mi">403</span><span class="p">,</span>
+<span class="w">  </span><span class="n">SNPE_ERRORCODE_NETWORK_MISMATCH_BETWEEN_NAMES_AND_DIMS</span><span class="w">          </span><span class="o">=</span><span class="w"> </span><span class="mi">404</span><span class="p">,</span>
+<span class="w">  </span><span class="n">SNPE_ERRORCODE_NETWORK_MISSING_INPUT_NAMES</span><span class="w">                      </span><span class="o">=</span><span class="w"> </span><span class="mi">405</span><span class="p">,</span>
+<span class="w">  </span><span class="n">SNPE_ERRORCODE_NETWORK_MISSING_OUTPUT_NAMES</span><span class="w">                     </span><span class="o">=</span><span class="w"> </span><span class="mi">406</span><span class="p">,</span>
+<span class="w">  </span><span class="n">SNPE_ERRORCODE_NETWORK_EXECUTION_FAILED</span><span class="w">                         </span><span class="o">=</span><span class="w"> </span><span class="mi">407</span><span class="p">,</span>
+
+<span class="w">  </span><span class="c1">// Host runtime errors</span>
+<span class="w">  </span><span class="n">SNPE_ERRORCODE_HOST_RUNTIME_TARGET_UNAVAILABLE</span><span class="w">                  </span><span class="o">=</span><span class="w"> </span><span class="mi">500</span><span class="p">,</span>
+
+<span class="w">  </span><span class="c1">// CPU runtime errors</span>
+<span class="w">  </span><span class="n">SNPE_ERRORCODE_CPU_LAYER_NOT_SUPPORTED</span><span class="w">                          </span><span class="o">=</span><span class="w"> </span><span class="mi">600</span><span class="p">,</span>
+<span class="w">  </span><span class="n">SNPE_ERRORCODE_CPU_LAYER_PARAM_NOT_SUPPORTED</span><span class="w">                    </span><span class="o">=</span><span class="w"> </span><span class="mi">601</span><span class="p">,</span>
+<span class="w">  </span><span class="n">SNPE_ERRORCODE_CPU_LAYER_PARAM_INVALID</span><span class="w">                          </span><span class="o">=</span><span class="w"> </span><span class="mi">602</span><span class="p">,</span>
+<span class="w">  </span><span class="n">SNPE_ERRORCODE_CPU_LAYER_PARAM_COMBINATION_INVALID</span><span class="w">              </span><span class="o">=</span><span class="w"> </span><span class="mi">603</span><span class="p">,</span>
+<span class="w">  </span><span class="n">SNPE_ERRORCODE_CPU_BUFFER_NOT_FOUND</span><span class="w">                             </span><span class="o">=</span><span class="w"> </span><span class="mi">604</span><span class="p">,</span>
+<span class="w">  </span><span class="n">SNPE_ERRORCODE_CPU_NETWORK_NOT_SUPPORTED</span><span class="w">                        </span><span class="o">=</span><span class="w"> </span><span class="mi">605</span><span class="p">,</span>
+<span class="cp">#ifdef DNN_RUNTIME_HAVE_UDO_CAPABILITY</span>
+<span class="w">  </span><span class="n">SNPE_ERRORCODE_CPU_UDO_OPERATION_FAILED</span><span class="w">                         </span><span class="o">=</span><span class="w"> </span><span class="mi">606</span><span class="p">,</span>
+<span class="cp">#endif </span><span class="c1">//DNN_RUNTIME_HAVE_UDO_CAPABILITY</span>
+
+<span class="w">  </span><span class="c1">// CPU fixed-point runtime errors</span>
+<span class="w">  </span><span class="n">SNPE_ERRORCODE_CPU_FXP_LAYER_NOT_SUPPORTED</span><span class="w">                      </span><span class="o">=</span><span class="w"> </span><span class="mi">700</span><span class="p">,</span>
+<span class="w">  </span><span class="n">SNPE_ERRORCODE_CPU_FXP_LAYER_PARAM_NOT_SUPPORTED</span><span class="w">                </span><span class="o">=</span><span class="w"> </span><span class="mi">701</span><span class="p">,</span>
+<span class="w">  </span><span class="n">SNPE_ERRORCODE_CPU_FXP_LAYER_PARAM_INVALID</span><span class="w">                      </span><span class="o">=</span><span class="w"> </span><span class="mi">702</span><span class="p">,</span>
+<span class="w">  </span><span class="n">SNPE_ERRORCODE_CPU_FXP_OPTION_INVALID</span><span class="w">                           </span><span class="o">=</span><span class="w"> </span><span class="mi">703</span><span class="p">,</span>
+
+<span class="w">  </span><span class="c1">// GPU runtime errors</span>
+<span class="w">  </span><span class="n">SNPE_ERRORCODE_GPU_LAYER_NOT_SUPPORTED</span><span class="w">                          </span><span class="o">=</span><span class="w"> </span><span class="mi">800</span><span class="p">,</span>
+<span class="w">  </span><span class="n">SNPE_ERRORCODE_GPU_LAYER_PARAM_NOT_SUPPORTED</span><span class="w">                    </span><span class="o">=</span><span class="w"> </span><span class="mi">801</span><span class="p">,</span>
+<span class="w">  </span><span class="n">SNPE_ERRORCODE_GPU_LAYER_PARAM_INVALID</span><span class="w">                          </span><span class="o">=</span><span class="w"> </span><span class="mi">802</span><span class="p">,</span>
+<span class="w">  </span><span class="n">SNPE_ERRORCODE_GPU_LAYER_PARAM_COMBINATION_INVALID</span><span class="w">              </span><span class="o">=</span><span class="w"> </span><span class="mi">803</span><span class="p">,</span>
+<span class="w">  </span><span class="n">SNPE_ERRORCODE_GPU_KERNEL_COMPILATION_FAILED</span><span class="w">                    </span><span class="o">=</span><span class="w"> </span><span class="mi">804</span><span class="p">,</span>
+<span class="w">  </span><span class="n">SNPE_ERRORCODE_GPU_CONTEXT_NOT_SET</span><span class="w">                              </span><span class="o">=</span><span class="w"> </span><span class="mi">805</span><span class="p">,</span>
+<span class="w">  </span><span class="n">SNPE_ERRORCODE_GPU_KERNEL_NOT_SET</span><span class="w">                               </span><span class="o">=</span><span class="w"> </span><span class="mi">806</span><span class="p">,</span>
+<span class="w">  </span><span class="n">SNPE_ERRORCODE_GPU_KERNEL_PARAM_INVALID</span><span class="w">                         </span><span class="o">=</span><span class="w"> </span><span class="mi">807</span><span class="p">,</span>
+<span class="w">  </span><span class="n">SNPE_ERRORCODE_GPU_OPENCL_CHECK_FAILED</span><span class="w">                          </span><span class="o">=</span><span class="w"> </span><span class="mi">808</span><span class="p">,</span>
+<span class="w">  </span><span class="n">SNPE_ERRORCODE_GPU_OPENCL_FUNCTION_ERROR</span><span class="w">                        </span><span class="o">=</span><span class="w"> </span><span class="mi">809</span><span class="p">,</span>
+<span class="w">  </span><span class="n">SNPE_ERRORCODE_GPU_BUFFER_NOT_FOUND</span><span class="w">                             </span><span class="o">=</span><span class="w"> </span><span class="mi">810</span><span class="p">,</span>
+<span class="w">  </span><span class="n">SNPE_ERRORCODE_GPU_TENSOR_DIM_INVALID</span><span class="w">                           </span><span class="o">=</span><span class="w"> </span><span class="mi">811</span><span class="p">,</span>
+<span class="w">  </span><span class="n">SNPE_ERRORCODE_GPU_MEMORY_FLAGS_INVALID</span><span class="w">                         </span><span class="o">=</span><span class="w"> </span><span class="mi">812</span><span class="p">,</span>
+<span class="w">  </span><span class="n">SNPE_ERRORCODE_GPU_UNEXPECTED_NUMBER_OF_IO</span><span class="w">                      </span><span class="o">=</span><span class="w"> </span><span class="mi">813</span><span class="p">,</span>
+<span class="w">  </span><span class="n">SNPE_ERRORCODE_GPU_LAYER_PROXY_ERROR</span><span class="w">                            </span><span class="o">=</span><span class="w"> </span><span class="mi">814</span><span class="p">,</span>
+<span class="w">  </span><span class="n">SNPE_ERRORCODE_GPU_BUFFER_IN_USE</span><span class="w">                                </span><span class="o">=</span><span class="w"> </span><span class="mi">815</span><span class="p">,</span>
+<span class="w">  </span><span class="n">SNPE_ERRORCODE_GPU_BUFFER_MODIFICATION_ERROR</span><span class="w">                    </span><span class="o">=</span><span class="w"> </span><span class="mi">816</span><span class="p">,</span>
+<span class="w">  </span><span class="n">SNPE_ERRORCODE_GPU_DATA_ARRANGEMENT_INVALID</span><span class="w">                     </span><span class="o">=</span><span class="w"> </span><span class="mi">817</span><span class="p">,</span>
+<span class="cp">#ifdef DNN_RUNTIME_HAVE_UDO_CAPABILITY</span>
+<span class="w">  </span><span class="n">SNPE_ERRORCODE_GPU_UDO_OPERATION_FAILED</span><span class="w">                         </span><span class="o">=</span><span class="w"> </span><span class="mi">818</span><span class="p">,</span>
+<span class="cp">#endif </span><span class="c1">//DNN_RUNTIME_HAVE_UDO_CAPABILITY</span>
+<span class="w">  </span><span class="c1">// DSP runtime errors</span>
+<span class="w">  </span><span class="n">SNPE_ERRORCODE_DSP_LAYER_NOT_SUPPORTED</span><span class="w">                          </span><span class="o">=</span><span class="w"> </span><span class="mi">900</span><span class="p">,</span>
+<span class="w">  </span><span class="n">SNPE_ERRORCODE_DSP_LAYER_PARAM_NOT_SUPPORTED</span><span class="w">                    </span><span class="o">=</span><span class="w"> </span><span class="mi">901</span><span class="p">,</span>
+<span class="w">  </span><span class="n">SNPE_ERRORCODE_DSP_LAYER_PARAM_INVALID</span><span class="w">                          </span><span class="o">=</span><span class="w"> </span><span class="mi">902</span><span class="p">,</span>
+<span class="w">  </span><span class="n">SNPE_ERRORCODE_DSP_LAYER_PARAM_COMBINATION_INVALID</span><span class="w">              </span><span class="o">=</span><span class="w"> </span><span class="mi">903</span><span class="p">,</span>
+<span class="w">  </span><span class="n">SNPE_ERRORCODE_DSP_STUB_NOT_PRESENT</span><span class="w">                             </span><span class="o">=</span><span class="w"> </span><span class="mi">904</span><span class="p">,</span>
+<span class="w">  </span><span class="n">SNPE_ERRORCODE_DSP_LAYER_NAME_TRUNCATED</span><span class="w">                         </span><span class="o">=</span><span class="w"> </span><span class="mi">905</span><span class="p">,</span>
+<span class="w">  </span><span class="n">SNPE_ERRORCODE_DSP_LAYER_INPUT_BUFFER_NAME_TRUNCATED</span><span class="w">            </span><span class="o">=</span><span class="w"> </span><span class="mi">906</span><span class="p">,</span>
+<span class="w">  </span><span class="n">SNPE_ERRORCODE_DSP_LAYER_OUTPUT_BUFFER_NAME_TRUNCATED</span><span class="w">           </span><span class="o">=</span><span class="w"> </span><span class="mi">907</span><span class="p">,</span>
+<span class="w">  </span><span class="n">SNPE_ERRORCODE_DSP_RUNTIME_COMMUNICATION_ERROR</span><span class="w">                  </span><span class="o">=</span><span class="w"> </span><span class="mi">908</span><span class="p">,</span>
+<span class="w">  </span><span class="n">SNPE_ERRORCODE_DSP_RUNTIME_INVALID_PARAM_ERROR</span><span class="w">                  </span><span class="o">=</span><span class="w"> </span><span class="mi">909</span><span class="p">,</span>
+<span class="w">  </span><span class="n">SNPE_ERRORCODE_DSP_RUNTIME_SYSTEM_ERROR</span><span class="w">                         </span><span class="o">=</span><span class="w"> </span><span class="mi">910</span><span class="p">,</span>
+<span class="w">  </span><span class="n">SNPE_ERRORCODE_DSP_RUNTIME_CRASHED_ERROR</span><span class="w">                        </span><span class="o">=</span><span class="w"> </span><span class="mi">911</span><span class="p">,</span>
+<span class="w">  </span><span class="n">SNPE_ERRORCODE_DSP_BUFFER_SIZE_ERROR</span><span class="w">                            </span><span class="o">=</span><span class="w"> </span><span class="mi">912</span><span class="p">,</span>
+<span class="w">  </span><span class="n">SNPE_ERRORCODE_DSP_UDO_EXECUTE_ERROR</span><span class="w">                            </span><span class="o">=</span><span class="w"> </span><span class="mi">913</span><span class="p">,</span>
+<span class="w">  </span><span class="n">SNPE_ERRORCODE_DSP_UDO_LIB_NOT_REGISTERED_ERROR</span><span class="w">                 </span><span class="o">=</span><span class="w"> </span><span class="mi">914</span><span class="p">,</span>
+<span class="w">  </span><span class="n">SNPE_ERRORCODE_DSP_UDO_INVALID_QUANTIZATION_TYPE_ERROR</span><span class="w">          </span><span class="o">=</span><span class="w"> </span><span class="mi">915</span><span class="p">,</span>
+
+<span class="w">  </span><span class="c1">// Model validataion errors</span>
+<span class="w">  </span><span class="n">SNPE_ERRORCODE_MODEL_VALIDATION_LAYER_NOT_SUPPORTED</span><span class="w">             </span><span class="o">=</span><span class="w"> </span><span class="mi">1000</span><span class="p">,</span>
+<span class="w">  </span><span class="n">SNPE_ERRORCODE_MODEL_VALIDATION_LAYER_PARAM_NOT_SUPPORTED</span><span class="w">       </span><span class="o">=</span><span class="w"> </span><span class="mi">1001</span><span class="p">,</span>
+<span class="w">  </span><span class="n">SNPE_ERRORCODE_MODEL_VALIDATION_LAYER_PARAM_INVALID</span><span class="w">             </span><span class="o">=</span><span class="w"> </span><span class="mi">1002</span><span class="p">,</span>
+<span class="w">  </span><span class="n">SNPE_ERRORCODE_MODEL_VALIDATION_LAYER_PARAM_MISSING</span><span class="w">             </span><span class="o">=</span><span class="w"> </span><span class="mi">1003</span><span class="p">,</span>
+<span class="w">  </span><span class="n">SNPE_ERRORCODE_MODEL_VALIDATION_LAYER_PARAM_COMBINATION_INVALID</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1004</span><span class="p">,</span>
+<span class="w">  </span><span class="n">SNPE_ERRORCODE_MODEL_VALIDATION_LAYER_ORDERING_INVALID</span><span class="w">          </span><span class="o">=</span><span class="w"> </span><span class="mi">1005</span><span class="p">,</span>
+<span class="w">  </span><span class="n">SNPE_ERRORCODE_MODEL_VALIDATION_INVALID_CONSTRAINT</span><span class="w">              </span><span class="o">=</span><span class="w"> </span><span class="mi">1006</span><span class="p">,</span>
+<span class="w">  </span><span class="n">SNPE_ERRORCODE_MODEL_VALIDATION_MISSING_BUFFER</span><span class="w">                  </span><span class="o">=</span><span class="w"> </span><span class="mi">1007</span><span class="p">,</span>
+<span class="w">  </span><span class="n">SNPE_ERRORCODE_MODEL_VALIDATION_BUFFER_REUSE_NOT_SUPPORTED</span><span class="w">      </span><span class="o">=</span><span class="w"> </span><span class="mi">1008</span><span class="p">,</span>
+<span class="w">  </span><span class="n">SNPE_ERRORCODE_MODEL_VALIDATION_LAYER_COULD_NOT_BE_ASSIGNED</span><span class="w">     </span><span class="o">=</span><span class="w"> </span><span class="mi">1009</span><span class="p">,</span>
+<span class="cp">#ifdef DNN_RUNTIME_HAVE_UDO_CAPABILITY</span>
+<span class="w">  </span><span class="n">SNPE_ERRORCODE_MODEL_VALIDATION_UDO_LAYER_FAILED</span><span class="w">                </span><span class="o">=</span><span class="w"> </span><span class="mi">1010</span><span class="p">,</span>
+<span class="cp">#endif </span><span class="c1">// DNN_RUNTIME_HAVE_UDO_CAPABILITY</span>
+
+<span class="w">  </span><span class="c1">// UDL errors</span>
+<span class="w">  </span><span class="n">SNPE_ERRORCODE_UDL_LAYER_EMPTY_UDL_NETWORK</span><span class="w">                      </span><span class="o">=</span><span class="w"> </span><span class="mi">1100</span><span class="p">,</span>
+<span class="w">  </span><span class="n">SNPE_ERRORCODE_UDL_LAYER_PARAM_INVALID</span><span class="w">                          </span><span class="o">=</span><span class="w"> </span><span class="mi">1101</span><span class="p">,</span>
+<span class="w">  </span><span class="n">SNPE_ERRORCODE_UDL_LAYER_INSTANCE_MISSING</span><span class="w">                       </span><span class="o">=</span><span class="w"> </span><span class="mi">1102</span><span class="p">,</span>
+<span class="w">  </span><span class="n">SNPE_ERRORCODE_UDL_LAYER_SETUP_FAILED</span><span class="w">                           </span><span class="o">=</span><span class="w"> </span><span class="mi">1103</span><span class="p">,</span>
+<span class="w">  </span><span class="n">SNPE_ERRORCODE_UDL_EXECUTE_FAILED</span><span class="w">                               </span><span class="o">=</span><span class="w"> </span><span class="mi">1104</span><span class="p">,</span>
+<span class="w">  </span><span class="n">SNPE_ERRORCODE_UDL_BUNDLE_INVALID</span><span class="w">                               </span><span class="o">=</span><span class="w"> </span><span class="mi">1105</span><span class="p">,</span>
+<span class="cp">#ifdef DNN_RUNTIME_HAVE_UDO_CAPABILITY</span>
+<span class="w">  </span><span class="n">SNPE_ERRORCODE_UDO_REGISTRATION_FAILED</span><span class="w">                          </span><span class="o">=</span><span class="w"> </span><span class="mi">1106</span><span class="p">,</span>
+<span class="w">  </span><span class="n">SNPE_ERRORCODE_UDO_GET_PACKAGE_FAILED</span><span class="w">                           </span><span class="o">=</span><span class="w"> </span><span class="mi">1107</span><span class="p">,</span>
+<span class="w">  </span><span class="n">SNPE_ERRORCODE_UDO_GET_IMPLEMENTATION_FAILED</span><span class="w">                    </span><span class="o">=</span><span class="w"> </span><span class="mi">1108</span><span class="p">,</span>
+<span class="cp">#endif </span><span class="c1">// DNN_RUNTIME_HAVE_UDO_CAPABILITY</span>
+
+<span class="w">  </span><span class="c1">// Dependent library errors</span>
+<span class="w">  </span><span class="n">SNPE_ERRORCODE_STD_LIBRARY_ERROR</span><span class="w">                                </span><span class="o">=</span><span class="w"> </span><span class="mi">1200</span><span class="p">,</span>
+
+<span class="w">  </span><span class="c1">// Unknown exception (catch (...)), Has no component attached to this</span>
+<span class="w">  </span><span class="n">SNPE_ERRORCODE_UNKNOWN_EXCEPTION</span><span class="w">                                </span><span class="o">=</span><span class="w"> </span><span class="mi">1210</span><span class="p">,</span>
+
+<span class="w">  </span><span class="c1">// Storage Errors</span>
+<span class="w">  </span><span class="n">SNPE_ERRORCODE_STORAGE_INVALID_KERNEL_REPO</span><span class="w">                      </span><span class="o">=</span><span class="w"> </span><span class="mi">1300</span><span class="p">,</span>
+
+<span class="cp">#ifdef DNN_RUNTIME_HAVE_AIP_RUNTIME</span>
+<span class="w">  </span><span class="c1">// AIP runtime errors</span>
+<span class="w">  </span><span class="n">SNPE_ERRORCODE_AIP_LAYER_NOT_SUPPORTED</span><span class="w">                          </span><span class="o">=</span><span class="w"> </span><span class="mi">1400</span><span class="p">,</span>
+<span class="w">  </span><span class="n">SNPE_ERRORCODE_AIP_LAYER_PARAM_NOT_SUPPORTED</span><span class="w">                    </span><span class="o">=</span><span class="w"> </span><span class="mi">1401</span><span class="p">,</span>
+<span class="w">  </span><span class="n">SNPE_ERRORCODE_AIP_LAYER_PARAM_INVALID</span><span class="w">                          </span><span class="o">=</span><span class="w"> </span><span class="mi">1402</span><span class="p">,</span>
+<span class="w">  </span><span class="n">SNPE_ERRORCODE_AIP_LAYER_PARAM_COMBINATION_INVALID</span><span class="w">              </span><span class="o">=</span><span class="w"> </span><span class="mi">1403</span><span class="p">,</span>
+<span class="w">  </span><span class="n">SNPE_ERRORCODE_AIP_STUB_NOT_PRESENT</span><span class="w">                             </span><span class="o">=</span><span class="w"> </span><span class="mi">1404</span><span class="p">,</span>
+<span class="w">  </span><span class="n">SNPE_ERRORCODE_AIP_LAYER_NAME_TRUNCATED</span><span class="w">                         </span><span class="o">=</span><span class="w"> </span><span class="mi">1405</span><span class="p">,</span>
+<span class="w">  </span><span class="n">SNPE_ERRORCODE_AIP_LAYER_INPUT_BUFFER_NAME_TRUNCATED</span><span class="w">            </span><span class="o">=</span><span class="w"> </span><span class="mi">1406</span><span class="p">,</span>
+<span class="w">  </span><span class="n">SNPE_ERRORCODE_AIP_LAYER_OUTPUT_BUFFER_NAME_TRUNCATED</span><span class="w">           </span><span class="o">=</span><span class="w"> </span><span class="mi">1407</span><span class="p">,</span>
+<span class="w">  </span><span class="n">SNPE_ERRORCODE_AIP_RUNTIME_COMMUNICATION_ERROR</span><span class="w">                  </span><span class="o">=</span><span class="w"> </span><span class="mi">1408</span><span class="p">,</span>
+<span class="w">  </span><span class="n">SNPE_ERRORCODE_AIP_RUNTIME_INVALID_PARAM_ERROR</span><span class="w">                  </span><span class="o">=</span><span class="w"> </span><span class="mi">1409</span><span class="p">,</span>
+<span class="w">  </span><span class="n">SNPE_ERRORCODE_AIP_RUNTIME_SYSTEM_ERROR</span><span class="w">                         </span><span class="o">=</span><span class="w"> </span><span class="mi">1410</span><span class="p">,</span>
+<span class="w">  </span><span class="n">SNPE_ERRORCODE_AIP_RUNTIME_TENSOR_MISSING</span><span class="w">                       </span><span class="o">=</span><span class="w"> </span><span class="mi">1411</span><span class="p">,</span>
+<span class="w">  </span><span class="n">SNPE_ERRORCODE_AIP_RUNTIME_TENSOR_SHAPE_MISMATCH</span><span class="w">                </span><span class="o">=</span><span class="w"> </span><span class="mi">1412</span><span class="p">,</span>
+<span class="w">  </span><span class="n">SNPE_ERRORCODE_AIP_RUNTIME_BAD_AIX_RECORD</span><span class="w">                       </span><span class="o">=</span><span class="w"> </span><span class="mi">1413</span><span class="p">,</span>
+<span class="cp">#endif </span><span class="c1">// DNN_RUNTIME_HAVE_AIP_RUNTIME</span>
+
+<span class="w">  </span><span class="c1">// DlCaching errors</span>
+<span class="w">  </span><span class="n">SNPE_ERRORCODE_DLCACHING_INVALID_METADATA</span><span class="w">                       </span><span class="o">=</span><span class="w"> </span><span class="mi">1500</span><span class="p">,</span>
+<span class="w">  </span><span class="n">SNPE_ERRORCODE_DLCACHING_INVALID_INITBLOB</span><span class="w">                       </span><span class="o">=</span><span class="w"> </span><span class="mi">1501</span><span class="p">,</span>
+
+<span class="w">  </span><span class="c1">// Infrastructure Errors</span>
+<span class="w">  </span><span class="n">SNPE_ERRORCODE_INFRA_CLUSTERMGR_INSTANCE_INVALID</span><span class="w">                </span><span class="o">=</span><span class="w"> </span><span class="mi">1600</span><span class="p">,</span>
+<span class="w">  </span><span class="n">SNPE_ERRORCODE_INFRA_CLUSTERMGR_EXECUTE_SYNC_FAILED</span><span class="w">             </span><span class="o">=</span><span class="w"> </span><span class="mi">1601</span><span class="p">,</span>
+
+<span class="w">  </span><span class="c1">// Memory Errors</span>
+<span class="w">  </span><span class="n">SNPE_ERRORCODE_MEMORY_CORRUPTION_ERROR</span><span class="w">                          </span><span class="o">=</span><span class="w"> </span><span class="mi">1700</span>
+
+<span class="p">}</span><span class="w"> </span><span class="n">Snpe_ErrorCode_t</span><span class="p">;</span>
+
+
+
+<span class="cm">/**</span>
+<span class="cm"> * Clear the last error code</span>
+<span class="cm"> */</span>
+<span class="n">SNPE_API</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="n">Snpe_ErrorCode_clearLastErrorCode</span><span class="p">();</span>
+
+<span class="cm">/**</span>
+<span class="cm">* Returns the error code of the last error encountered.</span>
+<span class="cm">*</span>
+<span class="cm">* @return The error code.</span>
+<span class="cm">*</span>
+<span class="cm">* @note The returned error code is significant only when the return</span>
+<span class="cm">*       value of the call indicated an error.</span>
+<span class="cm">*/</span>
+<span class="n">SNPE_API</span><span class="w"> </span><span class="n">Snpe_ErrorCode_t</span><span class="w"> </span><span class="n">Snpe_ErrorCode_getLastErrorCode</span><span class="p">();</span>
+
+<span class="cm">/**</span>
+<span class="cm">* Returns the error string of the last error encountered.</span>
+<span class="cm">*</span>
+<span class="cm">* @return The error string.</span>
+<span class="cm">*</span>
+<span class="cm">* @note The returned error string is significant only when the return</span>
+<span class="cm">*       value of the call indicated an error.</span>
+<span class="cm">*/</span>
+<span class="n">SNPE_API</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="kt">char</span><span class="o">*</span><span class="w"> </span><span class="n">Snpe_ErrorCode_GetLastErrorString</span><span class="p">();</span>
+
+<span class="cm">/**</span>
+<span class="cm"> * Returns the info string of the last error encountered.</span>
+<span class="cm"> */</span>
+<span class="n">SNPE_API</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="kt">char</span><span class="o">*</span><span class="w"> </span><span class="n">Snpe_ErrorCode_getLastInfoString</span><span class="p">();</span>
+
+<span class="cm">/**</span>
+<span class="cm"> * Returns the uint32_t representation of the error code enum.</span>
+<span class="cm"> *</span>
+<span class="cm"> * @param[in] code The error code to be converted.</span>
+<span class="cm"> *</span>
+<span class="cm"> * @return uint32_t representation of the error code.</span>
+<span class="cm"> */</span>
+<span class="n">SNPE_API</span><span class="w"> </span><span class="kt">uint32_t</span><span class="w"> </span><span class="n">Snpe_ErrorCode_enumToUInt32</span><span class="p">(</span><span class="n">Snpe_ErrorCode_t</span><span class="w"> </span><span class="n">code</span><span class="p">);</span>
+
+
+<span class="cp">#ifdef __cplusplus</span>
+<span class="p">}</span><span class="w">  </span><span class="c1">// extern &quot;C&quot;</span>
+<span class="cp">#endif</span>
+
+
+<span class="cp">#endif </span><span class="c1">// _DL_ERROR_H_</span>
+</pre></div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2020-2023, Qualcomm Technologies, Inc..
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

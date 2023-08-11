@@ -1,0 +1,373 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Program Listing for File ITensor.hpp &mdash; Snapdragon Neural Processing Engine SDK</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/custom_css.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/collapsible-lists/css/tree_view.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+        <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Qualcomm® Neural Processing SDK
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                v2.12.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../general/revision_history.html">Revision History</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/revision_history_windows.html">Revision History - Windows</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/overview.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/setup.html">Setup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/usergroup1.html">Network Models</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/usergroup5.html">Input Data and Preprocessing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/usergroup6.html">Tutorials and Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/usergroup10.html">Benchmarking and Accuracy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/tools.html">Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/usergroup11.html">Debug Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/api.html">API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/limitations.html">Limitations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/appx_ref.html">References</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Qualcomm® Neural Processing SDK</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Program Listing for File ITensor.hpp</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="program-listing-for-file-itensor-hpp">
+<span id="program-listing-file-dlsystem-itensor-hpp"></span><h1>Program Listing for File ITensor.hpp<a class="headerlink" href="#program-listing-for-file-itensor-hpp" title="Permalink to this headline">¶</a></h1>
+<p>↰ <a class="reference internal" href="file_DlSystem_ITensor.hpp.html#file-dlsystem-itensor-hpp"><span class="std std-ref">Return to documentation for file</span></a> (<code class="docutils literal notranslate"><span class="pre">DlSystem/ITensor.hpp</span></code>)</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="c1">//=============================================================================</span>
+<span class="c1">//</span>
+<span class="c1">//  Copyright (c) 2015-2020 Qualcomm Technologies, Inc.</span>
+<span class="c1">//  All Rights Reserved.</span>
+<span class="c1">//  Confidential and Proprietary - Qualcomm Technologies, Inc.</span>
+<span class="c1">//</span>
+<span class="c1">//=============================================================================</span>
+
+<span class="cp">#ifndef _ITENSOR_HPP_</span>
+<span class="cp">#define _ITENSOR_HPP_</span>
+
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;ITensorItr.hpp&quot;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;ITensorItrImpl.hpp&quot;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;TensorShape.hpp&quot;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;ZdlExportDefine.hpp&quot;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;memory&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;ostream&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;cmath&gt;</span>
+
+<span class="k">namespace</span><span class="w"> </span><span class="nn">zdl</span><span class="w"> </span><span class="p">{</span>
+<span class="k">namespace</span><span class="w"> </span><span class="nn">DlSystem</span>
+<span class="p">{</span>
+<span class="w">   </span><span class="k">class</span><span class="w"> </span><span class="nc">ITensor</span><span class="p">;</span>
+<span class="p">}}</span>
+
+<span class="k">namespace</span><span class="w"> </span><span class="nn">zdl</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">namespace</span><span class="w"> </span><span class="nn">DlSystem</span>
+<span class="p">{</span>
+<span class="cm">/** @addtogroup c_plus_plus_apis C++</span>
+<span class="cm">@{ */</span>
+
+<span class="cm">/**</span>
+<span class="cm"> * Represents a tensor which holds n-dimensional data. It is important to</span>
+<span class="cm"> * understand how the tensor data is represented in memory</span>
+<span class="cm"> * relative to the tensor dimensions. Tensors store data in</span>
+<span class="cm"> * memory in row-major order (i.e. the last tensor dimension is</span>
+<span class="cm"> * the fastest varying one). For example, if you have a two</span>
+<span class="cm"> * dimensional tensor with 3 rows and 2 columns (i.e. the tensor</span>
+<span class="cm"> * dimensions are 3,2 as returned in tensor dimension vectors)</span>
+<span class="cm"> * with the following data in terms rows and columns:</span>
+<span class="cm"> *</span>
+<span class="cm"> * | 1 2 | &lt;br/&gt;</span>
+<span class="cm"> * | 3 4 | &lt;br/&gt;</span>
+<span class="cm"> * | 5 6 | &lt;br/&gt;</span>
+<span class="cm"> *</span>
+<span class="cm"> * This data would be stored in memory as 1,2,3,4,5,6.</span>
+<span class="cm"> */</span>
+<span class="k">class</span><span class="w"> </span><span class="nc">ZDL_EXPORT</span><span class="w"> </span><span class="n">ITensor</span>
+<span class="p">{</span>
+<span class="k">public</span><span class="o">:</span>
+
+<span class="w">   </span><span class="k">typedef</span><span class="w"> </span><span class="n">zdl</span><span class="o">::</span><span class="n">DlSystem</span><span class="o">::</span><span class="n">ITensorItr</span><span class="o">&lt;</span><span class="nb">false</span><span class="o">&gt;</span><span class="w"> </span><span class="n">iterator</span><span class="p">;</span>
+<span class="w">   </span><span class="k">typedef</span><span class="w"> </span><span class="n">zdl</span><span class="o">::</span><span class="n">DlSystem</span><span class="o">::</span><span class="n">ITensorItr</span><span class="o">&lt;</span><span class="nb">true</span><span class="o">&gt;</span><span class="w"> </span><span class="n">const_iterator</span><span class="p">;</span>
+
+<span class="w">   </span><span class="k">virtual</span><span class="w"> </span><span class="o">~</span><span class="n">ITensor</span><span class="p">()</span><span class="w"> </span><span class="p">{}</span>
+
+<span class="w">   </span><span class="cm">/**</span>
+<span class="cm">    * Returns a tensor iterator pointing to the beginning</span>
+<span class="cm">    * of the data in the tensor.</span>
+<span class="cm">    *</span>
+<span class="cm">    * @return A tensor iterator that points to the first data</span>
+<span class="cm">    *         element in the tensor.</span>
+<span class="cm">    */</span>
+<span class="w">   </span><span class="k">virtual</span><span class="w"> </span><span class="n">iterator</span><span class="w"> </span><span class="n">begin</span><span class="p">()</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+
+<span class="w">   </span><span class="cm">/**</span>
+<span class="cm">    * Returns the const version of a tensor iterator</span>
+<span class="cm">    * pointing to the beginning of the data in the tensor.</span>
+<span class="cm">    *</span>
+<span class="cm">    * @return A tensor const iterator that points to the first data</span>
+<span class="cm">    *         element in the tensor.</span>
+<span class="cm">    */</span>
+<span class="w">   </span><span class="k">virtual</span><span class="w"> </span><span class="n">const_iterator</span><span class="w"> </span><span class="nf">cbegin</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+
+<span class="w">   </span><span class="cm">/**</span>
+<span class="cm">    * Returns a tensor iterator pointing to the end of the</span>
+<span class="cm">    * data in the tensor. This tensor should not be</span>
+<span class="cm">    * dereferenced.</span>
+<span class="cm">    *</span>
+<span class="cm">    * @return A tensor iterator that points to the end of the data</span>
+<span class="cm">    *         (one past the last element) in the tensor.</span>
+<span class="cm">    */</span>
+<span class="w">   </span><span class="k">virtual</span><span class="w"> </span><span class="n">iterator</span><span class="w"> </span><span class="nf">end</span><span class="p">()</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+
+<span class="w">   </span><span class="cm">/**</span>
+<span class="cm">    * Returns the const version of a tensor iterator</span>
+<span class="cm">    * pointing to the end of the data in the tensor. This</span>
+<span class="cm">    * tensor should not be dereferenced.</span>
+<span class="cm">    *</span>
+<span class="cm">    * @return A tensor const iterator that points to the end of the</span>
+<span class="cm">    *         data (one past the last element) in the tensor.</span>
+<span class="cm">    */</span>
+<span class="w">   </span><span class="k">virtual</span><span class="w"> </span><span class="n">const_iterator</span><span class="w"> </span><span class="nf">cend</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+
+<span class="w">   </span><span class="cm">/**</span>
+<span class="cm">    * @brief Gets the shape of this tensor.</span>
+<span class="cm">    *</span>
+<span class="cm">    * The last element of the vector represents the fastest varying</span>
+<span class="cm">    * dimension and the zeroth element represents the slowest</span>
+<span class="cm">    * varying dimension, etc.</span>
+<span class="cm">    *</span>
+<span class="cm">    * @return A shape class holding the tensor dimensions.</span>
+<span class="cm">    */</span>
+<span class="w">   </span><span class="k">virtual</span><span class="w"> </span><span class="n">TensorShape</span><span class="w"> </span><span class="nf">getShape</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+
+<span class="w">   </span><span class="cm">/**</span>
+<span class="cm">    * Returns the element size of the data in the tensor</span>
+<span class="cm">    * (discounting strides). This is how big a buffer would</span>
+<span class="cm">    * need to be to hold the tensor data contiguously in</span>
+<span class="cm">    * memory.</span>
+<span class="cm">    *</span>
+<span class="cm">    * @return The size of the tensor (in elements).</span>
+<span class="cm">    */</span>
+<span class="w">   </span><span class="k">virtual</span><span class="w"> </span><span class="kt">size_t</span><span class="w"> </span><span class="nf">getSize</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+
+<span class="w">   </span><span class="cm">/**</span>
+<span class="cm">    * @brief Serializes the tensor to an output stream.</span>
+<span class="cm">    *</span>
+<span class="cm">    * @param[in] output The output stream to which to write the tensor</span>
+<span class="cm">    *</span>
+<span class="cm">    * @throw std::runtime_error If the stream is ever in a bad</span>
+<span class="cm">    *        state before the tensor is fully serialized.</span>
+<span class="cm">    */</span>
+<span class="w">   </span><span class="k">virtual</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">serialize</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">ostream</span><span class="w"> </span><span class="o">&amp;</span><span class="n">output</span><span class="p">)</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+
+<span class="w">   </span><span class="k">friend</span><span class="w"> </span><span class="n">iterator</span><span class="p">;</span>
+<span class="w">   </span><span class="k">friend</span><span class="w"> </span><span class="n">const_iterator</span><span class="p">;</span>
+
+<span class="w">   </span><span class="k">virtual</span><span class="w"> </span><span class="kt">bool</span><span class="w"> </span><span class="nf">isQuantized</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="k">return</span><span class="w"> </span><span class="nb">false</span><span class="p">;}</span>
+<span class="w">   </span><span class="k">virtual</span><span class="w"> </span><span class="kt">float</span><span class="w"> </span><span class="nf">GetDelta</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="k">return</span><span class="w"> </span><span class="n">NAN</span><span class="p">;};</span>
+<span class="w">   </span><span class="k">virtual</span><span class="w"> </span><span class="kt">float</span><span class="w"> </span><span class="nf">GetOffset</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="k">return</span><span class="w"> </span><span class="n">NAN</span><span class="p">;};</span>
+
+<span class="k">protected</span><span class="o">:</span>
+
+<span class="w">   </span><span class="cm">/**</span>
+<span class="cm">    * Returns the tensor iterator implementation.</span>
+<span class="cm">    *</span>
+<span class="cm">    * @return A pointer to the tensor iterator implementation.</span>
+<span class="cm">    */</span>
+<span class="w">   </span><span class="k">virtual</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">unique_ptr</span><span class="o">&lt;::</span><span class="n">DlSystem</span><span class="o">::</span><span class="n">ITensorItrImpl</span><span class="o">&gt;</span><span class="w"> </span><span class="n">getItrImpl</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="p">};</span>
+
+<span class="p">}}</span>
+
+<span class="cm">/** @} */</span><span class="w"> </span><span class="cm">/* end_addtogroup c_plus_plus_apis C++ */</span>
+
+<span class="cp">#endif</span>
+</pre></div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2020-2023, Qualcomm Technologies, Inc..
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

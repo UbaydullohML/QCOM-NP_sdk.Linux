@@ -1,0 +1,452 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>File RuntimeList.hpp &mdash; Snapdragon Neural Processing Engine SDK</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/custom_css.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/collapsible-lists/css/tree_view.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+        <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Qualcomm® Neural Processing SDK
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                v2.12.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../general/revision_history.html">Revision History</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/revision_history_windows.html">Revision History - Windows</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/overview.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/setup.html">Setup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/usergroup1.html">Network Models</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/usergroup5.html">Input Data and Preprocessing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/usergroup6.html">Tutorials and Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/usergroup10.html">Benchmarking and Accuracy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/tools.html">Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/usergroup11.html">Debug Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/api.html">API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/limitations.html">Limitations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/appx_ref.html">References</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Qualcomm® Neural Processing SDK</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>File RuntimeList.hpp</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="file-runtimelist-hpp">
+<span id="file-dlsystem-runtimelist-hpp"></span><h1>File RuntimeList.hpp<a class="headerlink" href="#file-runtimelist-hpp" title="Permalink to this headline">¶</a></h1>
+<p>↰ <a class="reference internal" href="dir_DlSystem.html#dir-dlsystem"><span class="std std-ref">Parent directory</span></a> (<code class="docutils literal notranslate"><span class="pre">DlSystem</span></code>)</p>
+<div class="contents local topic" id="contents">
+<p class="topic-title">Contents</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#definition-dlsystem-runtimelist-hpp" id="id1">Definition (<code class="docutils literal notranslate"><span class="pre">DlSystem/RuntimeList.hpp</span></code>)</a></p></li>
+<li><p><a class="reference internal" href="#includes" id="id2">Includes</a></p></li>
+<li><p><a class="reference internal" href="#included-by" id="id3">Included By</a></p></li>
+<li><p><a class="reference internal" href="#namespaces" id="id4">Namespaces</a></p></li>
+<li><p><a class="reference internal" href="#classes" id="id5">Classes</a></p></li>
+<li><p><a class="reference internal" href="#defines" id="id6">Defines</a></p></li>
+<li><p><a class="reference internal" href="#full-file-listing" id="id7">Full File Listing</a></p></li>
+</ul>
+</div>
+<div class="section" id="definition-dlsystem-runtimelist-hpp">
+<h2>Definition (<code class="docutils literal notranslate"><span class="pre">DlSystem/RuntimeList.hpp</span></code>)<a class="headerlink" href="#definition-dlsystem-runtimelist-hpp" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="program_listing_file_DlSystem_RuntimeList.hpp.html">Program Listing for File RuntimeList.hpp</a></li>
+</ul>
+</div>
+</div>
+<div class="section" id="includes">
+<h2>Includes<a class="headerlink" href="#includes" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">DlSystem/DlEnums.hpp</span></code> (<a class="reference internal" href="file_DlSystem_DlEnums.hpp.html#file-dlsystem-dlenums-hpp"><span class="std std-ref">File DlEnums.hpp</span></a>)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">DlSystem/StringList.hpp</span></code> (<a class="reference internal" href="file_DlSystem_StringList.hpp.html#file-dlsystem-stringlist-hpp"><span class="std std-ref">File StringList.hpp</span></a>)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">ZdlExportDefine.hpp</span></code> (<a class="reference internal" href="file_DlSystem_ZdlExportDefine.hpp.html#file-dlsystem-zdlexportdefine-hpp"><span class="std std-ref">File ZdlExportDefine.hpp</span></a>)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">cstddef</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">memory</span></code></p></li>
+</ul>
+</div>
+<div class="section" id="included-by">
+<h2>Included By<a class="headerlink" href="#included-by" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="file_SNPE_SNPEBuilder.hpp.html#file-snpe-snpebuilder-hpp"><span class="std std-ref">File SNPEBuilder.hpp</span></a></p></li>
+</ul>
+</div>
+<div class="section" id="namespaces">
+<h2>Namespaces<a class="headerlink" href="#namespaces" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="namespace_DlSystem.html#namespace-dlsystem"><span class="std std-ref">Namespace DlSystem</span></a></p></li>
+<li><p><a class="reference internal" href="namespace_zdl.html#namespace-zdl"><span class="std std-ref">Namespace zdl</span></a></p></li>
+<li><p><a class="reference internal" href="namespace_zdl__DlSystem.html#namespace-zdl-dlsystem"><span class="std std-ref">Namespace zdl::DlSystem</span></a></p></li>
+</ul>
+</div>
+<div class="section" id="classes">
+<h2>Classes<a class="headerlink" href="#classes" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="classzdl_1_1DlSystem_1_1RuntimeList.html#exhale-class-classzdl-1-1dlsystem-1-1runtimelist"><span class="std std-ref">Class RuntimeList</span></a></p></li>
+</ul>
+</div>
+<div class="section" id="defines">
+<h2>Defines<a class="headerlink" href="#defines" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="define_RuntimeList_8hpp_1ae2ffe68d73636f70fddf80a14683a448.html#exhale-define-runtimelist-8hpp-1ae2ffe68d73636f70fddf80a14683a448"><span class="std std-ref">Define DL_SYSTEM_RUNTIME_LIST_HPP</span></a></p></li>
+</ul>
+</div>
+<div class="section" id="full-file-listing">
+<h2>Full File Listing<a class="headerlink" href="#full-file-listing" title="Permalink to this headline">¶</a></h2>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-defines">Defines</p>
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.DL_SYSTEM_RUNTIME_LIST_HPP">
+<span class="target" id="RuntimeList_8hpp_1ae2ffe68d73636f70fddf80a14683a448"></span><span class="sig-name descname"><span class="n"><span class="pre">DL_SYSTEM_RUNTIME_LIST_HPP</span></span></span><br /></dt>
+<dd></dd></dl>
+
+</div>
+<dl class="cpp type">
+<dt class="sig sig-object cpp" id="_CPPv48DlSystem">
+<span id="_CPPv38DlSystem"></span><span id="_CPPv28DlSystem"></span><span id="DlSystem"></span><span class="target" id="namespaceDlSystem"></span><span class="k"><span class="pre">namespace</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">DlSystem</span></span></span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp type">
+<dt class="sig sig-object cpp" id="_CPPv43zdl">
+<span id="_CPPv33zdl"></span><span id="_CPPv23zdl"></span><span id="zdl"></span><span class="target" id="namespacezdl"></span><span class="k"><span class="pre">namespace</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">zdl</span></span></span><br /></dt>
+<dd><dl class="cpp type">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystemE">
+<span id="_CPPv3N3zdl8DlSystemE"></span><span id="_CPPv2N3zdl8DlSystemE"></span><span id="zdl::DlSystem"></span><span class="target" id="namespacezdl_1_1DlSystem"></span><span class="k"><span class="pre">namespace</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">DlSystem</span></span></span><br /></dt>
+<dd><dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem11RuntimeListE">
+<span id="_CPPv3N3zdl8DlSystem11RuntimeListE"></span><span id="_CPPv2N3zdl8DlSystem11RuntimeListE"></span><span id="zdl::DlSystem::RuntimeList"></span><span class="target" id="classzdl_1_1DlSystem_1_1RuntimeList"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">RuntimeList</span></span></span><br /></dt>
+<dd><em>#include &lt;RuntimeList.hpp&gt;</em><p>A class representing list of runtimes </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem11RuntimeList11RuntimeListEv">
+<span id="_CPPv3N3zdl8DlSystem11RuntimeList11RuntimeListEv"></span><span id="_CPPv2N3zdl8DlSystem11RuntimeList11RuntimeListEv"></span><span id="zdl::DlSystem::RuntimeList::RuntimeList"></span><span class="target" id="group__c__plus__plus__apis_1ga0f5fa8f4a6d2beaf5e5f382e5ed9b759"></span><span class="sig-name descname"><span class="n"><span class="pre">RuntimeList</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><br /></dt>
+<dd><p>Creates a new runtime list </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem11RuntimeList11RuntimeListERK11RuntimeList">
+<span id="_CPPv3N3zdl8DlSystem11RuntimeList11RuntimeListERK11RuntimeList"></span><span id="_CPPv2N3zdl8DlSystem11RuntimeList11RuntimeListERK11RuntimeList"></span><span id="zdl::DlSystem::RuntimeList::RuntimeList__RuntimeListCR"></span><span class="target" id="group__c__plus__plus__apis_1ga2123d0523a797101a5c8128b05250a86"></span><span class="sig-name descname"><span class="n"><span class="pre">RuntimeList</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="classzdl_1_1DlSystem_1_1RuntimeList.html#_CPPv4N3zdl8DlSystem11RuntimeList11RuntimeListERK11RuntimeList" title="zdl::DlSystem::RuntimeList::RuntimeList"><span class="n"><span class="pre">RuntimeList</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">other</span></span><span class="sig-paren">)</span><br /></dt>
+<dd><p>copy constructor. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>other</strong> – <strong>[in]</strong> object to copy. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem11RuntimeList11RuntimeListERKN3zdl8DlSystem9Runtime_tE">
+<span id="_CPPv3N3zdl8DlSystem11RuntimeList11RuntimeListERKN3zdl8DlSystem9Runtime_tE"></span><span id="_CPPv2N3zdl8DlSystem11RuntimeList11RuntimeListERKN3zdl8DlSystem9Runtime_tE"></span><span id="zdl::DlSystem::RuntimeList::RuntimeList__zdl::DlSystem::Runtime_tCR"></span><span class="target" id="group__c__plus__plus__apis_1ga75500290a784424756c50229bc0f24a7"></span><span class="sig-name descname"><span class="n"><span class="pre">RuntimeList</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="file_DlContainer_IDlContainer.hpp.html#_CPPv43zdl" title="zdl"><span class="n"><span class="pre">zdl</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="file_DlSystem_DlEnums.hpp.html#_CPPv4N3zdl8DlSystemE" title="zdl::DlSystem"><span class="n"><span class="pre">DlSystem</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="enum_group__c__plus__plus__apis_1ga44a623125cbc82942472581f8a9c3f4c.html#_CPPv4N3zdl8DlSystem9Runtime_tE" title="zdl::DlSystem::Runtime_t"><span class="n"><span class="pre">Runtime_t</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">runtime</span></span><span class="sig-paren">)</span><br /></dt>
+<dd><p>constructor with single Runtime_t object </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>Runtime_t</strong> – <strong>[in]</strong> object </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem11RuntimeListaSERK11RuntimeList">
+<span id="_CPPv3N3zdl8DlSystem11RuntimeListaSERK11RuntimeList"></span><span id="_CPPv2N3zdl8DlSystem11RuntimeListaSERK11RuntimeList"></span><span id="zdl::DlSystem::RuntimeList::assign-operator__RuntimeListCR"></span><span class="target" id="group__c__plus__plus__apis_1ga94e3aeb85be1d4ff1dc16fda6f48af27"></span><a class="reference internal" href="classzdl_1_1DlSystem_1_1RuntimeList.html#_CPPv4N3zdl8DlSystem11RuntimeListE" title="zdl::DlSystem::RuntimeList"><span class="n"><span class="pre">RuntimeList</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="k"><span class="pre">operator</span></span><span class="o"><span class="pre">=</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="classzdl_1_1DlSystem_1_1RuntimeList.html#_CPPv4N3zdl8DlSystem11RuntimeListE" title="zdl::DlSystem::RuntimeList"><span class="n"><span class="pre">RuntimeList</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">other</span></span><span class="sig-paren">)</span><br /></dt>
+<dd><p>assignment operator. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem11RuntimeListixE6size_t">
+<span id="_CPPv3N3zdl8DlSystem11RuntimeListixE6size_t"></span><span id="_CPPv2N3zdl8DlSystem11RuntimeListixE6size_t"></span><span id="zdl::DlSystem::RuntimeList::subscript-operator__s"></span><span class="target" id="group__c__plus__plus__apis_1ga4ad7b8ec83e72aed4e95a1d0ec9e3a88"></span><a class="reference internal" href="enum_group__c__plus__plus__apis_1ga44a623125cbc82942472581f8a9c3f4c.html#_CPPv4N3zdl8DlSystem9Runtime_tE" title="zdl::DlSystem::Runtime_t"><span class="n"><span class="pre">Runtime_t</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="k"><span class="pre">operator</span></span><span class="o"><span class="pre">[]</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">index</span></span><span class="sig-paren">)</span><br /></dt>
+<dd><p>subscript operator. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem11RuntimeList3addERKN3zdl8DlSystem9Runtime_tE">
+<span id="_CPPv3N3zdl8DlSystem11RuntimeList3addERKN3zdl8DlSystem9Runtime_tE"></span><span id="_CPPv2N3zdl8DlSystem11RuntimeList3addERKN3zdl8DlSystem9Runtime_tE"></span><span id="zdl::DlSystem::RuntimeList::add__zdl::DlSystem::Runtime_tCR"></span><span class="target" id="group__c__plus__plus__apis_1gabf31724da2f655c4d7b9bc06a0f26d4e"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">add</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="file_DlContainer_IDlContainer.hpp.html#_CPPv43zdl" title="zdl"><span class="n"><span class="pre">zdl</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="file_DlSystem_DlEnums.hpp.html#_CPPv4N3zdl8DlSystemE" title="zdl::DlSystem"><span class="n"><span class="pre">DlSystem</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="enum_group__c__plus__plus__apis_1ga44a623125cbc82942472581f8a9c3f4c.html#_CPPv4N3zdl8DlSystem9Runtime_tE" title="zdl::DlSystem::Runtime_t"><span class="n"><span class="pre">Runtime_t</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">runtime</span></span><span class="sig-paren">)</span><br /></dt>
+<dd><p>Adds runtime to the end of the runtime list order of precedence is former followed by latter entry. </p>
+<p>
+Ruturns false If the runtime already exists </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>runtime</strong> – <strong>[in]</strong> to add</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem11RuntimeList6removeEKN3zdl8DlSystem9Runtime_tE">
+<span id="_CPPv3N3zdl8DlSystem11RuntimeList6removeEKN3zdl8DlSystem9Runtime_tE"></span><span id="_CPPv2N3zdl8DlSystem11RuntimeList6removeEKN3zdl8DlSystem9Runtime_tE"></span><span id="zdl::DlSystem::RuntimeList::remove__zdl::DlSystem::Runtime_tC"></span><span class="target" id="group__c__plus__plus__apis_1ga01f4e0eeb41eb835356ba06f111d8204"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">remove</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="file_DlContainer_IDlContainer.hpp.html#_CPPv43zdl" title="zdl"><span class="n"><span class="pre">zdl</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="file_DlSystem_DlEnums.hpp.html#_CPPv4N3zdl8DlSystemE" title="zdl::DlSystem"><span class="n"><span class="pre">DlSystem</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="enum_group__c__plus__plus__apis_1ga44a623125cbc82942472581f8a9c3f4c.html#_CPPv4N3zdl8DlSystem9Runtime_tE" title="zdl::DlSystem::Runtime_t"><span class="n"><span class="pre">Runtime_t</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">runtime</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">noexcept</span></span><br /></dt>
+<dd><p>Removes the runtime from the list. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>runtime</strong> – <strong>[in]</strong> to be removed</p>
+</dd>
+</dl>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If the runtime is not found, nothing is done. </p>
+</div>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK3zdl8DlSystem11RuntimeList4sizeEv">
+<span id="_CPPv3NK3zdl8DlSystem11RuntimeList4sizeEv"></span><span id="_CPPv2NK3zdl8DlSystem11RuntimeList4sizeEv"></span><span id="zdl::DlSystem::RuntimeList::sizeC"></span><span class="target" id="group__c__plus__plus__apis_1ga510ada131024b65c899377d4f45a071f"></span><span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">size</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="k"><span class="pre">noexcept</span></span><br /></dt>
+<dd><p>Returns the number of runtimes in the list. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK3zdl8DlSystem11RuntimeList5emptyEv">
+<span id="_CPPv3NK3zdl8DlSystem11RuntimeList5emptyEv"></span><span id="_CPPv2NK3zdl8DlSystem11RuntimeList5emptyEv"></span><span id="zdl::DlSystem::RuntimeList::emptyC"></span><span class="target" id="group__c__plus__plus__apis_1ga73328018ec7390ecd319d4788facd28c"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">empty</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="k"><span class="pre">noexcept</span></span><br /></dt>
+<dd><p>Returns true if the list is empty. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem11RuntimeList5clearEv">
+<span id="_CPPv3N3zdl8DlSystem11RuntimeList5clearEv"></span><span id="_CPPv2N3zdl8DlSystem11RuntimeList5clearEv"></span><span id="zdl::DlSystem::RuntimeList::clear"></span><span class="target" id="group__c__plus__plus__apis_1ga5ebf7caf51a0fb43554f1a35cdd24c05"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">clear</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">noexcept</span></span><br /></dt>
+<dd><p>Removes all runtime from the list </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK3zdl8DlSystem11RuntimeList19getRuntimeListNamesEv">
+<span id="_CPPv3NK3zdl8DlSystem11RuntimeList19getRuntimeListNamesEv"></span><span id="_CPPv2NK3zdl8DlSystem11RuntimeList19getRuntimeListNamesEv"></span><span id="zdl::DlSystem::RuntimeList::getRuntimeListNamesC"></span><span class="target" id="group__c__plus__plus__apis_1ga459d6f775ea49d493fb8daa195587d87"></span><a class="reference internal" href="file_DlContainer_IDlContainer.hpp.html#_CPPv43zdl" title="zdl"><span class="n"><span class="pre">zdl</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="file_DlSystem_DlEnums.hpp.html#_CPPv4N3zdl8DlSystemE" title="zdl::DlSystem"><span class="n"><span class="pre">DlSystem</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="classzdl_1_1DlSystem_1_1StringList.html#_CPPv4N3zdl8DlSystem10StringListE" title="zdl::DlSystem::StringList"><span class="n"><span class="pre">StringList</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getRuntimeListNames</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><br /></dt>
+<dd><p>Returns a <a class="reference internal" href="file_DlSystem_StringList.hpp.html#classzdl_1_1DlSystem_1_1StringList"><span class="std std-ref">StringList</span></a> of names from the runtime list in order of precedence </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem11RuntimeListD0Ev">
+<span id="_CPPv3N3zdl8DlSystem11RuntimeListD0Ev"></span><span id="_CPPv2N3zdl8DlSystem11RuntimeListD0Ev"></span><span id="zdl::DlSystem::RuntimeList::~RuntimeList"></span><span class="target" id="group__c__plus__plus__apis_1gad4e3fe5b8f8360c74a4cbf5ad86d5785"></span><span class="sig-name descname"><span class="n"><span class="pre">~RuntimeList</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-static-functions">Public Static Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem11RuntimeList15stringToRuntimeEPKc">
+<span id="_CPPv3N3zdl8DlSystem11RuntimeList15stringToRuntimeEPKc"></span><span id="_CPPv2N3zdl8DlSystem11RuntimeList15stringToRuntimeEPKc"></span><span id="zdl::DlSystem::RuntimeList::stringToRuntime__cCP"></span><span class="target" id="group__c__plus__plus__apis_1gae7389cef3f3a5f58acb5e7bdbbc452b8"></span><span class="k"><span class="pre">static</span></span><span class="w"> </span><a class="reference internal" href="file_DlContainer_IDlContainer.hpp.html#_CPPv43zdl" title="zdl"><span class="n"><span class="pre">zdl</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="file_DlSystem_DlEnums.hpp.html#_CPPv4N3zdl8DlSystemE" title="zdl::DlSystem"><span class="n"><span class="pre">DlSystem</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="enum_group__c__plus__plus__apis_1ga44a623125cbc82942472581f8a9c3f4c.html#_CPPv4N3zdl8DlSystem9Runtime_tE" title="zdl::DlSystem::Runtime_t"><span class="n"><span class="pre">Runtime_t</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">stringToRuntime</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">runtimeStr</span></span><span class="sig-paren">)</span><br /></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>runtime</strong> – <strong>[in]</strong> string Returns a Runtime enum corresponding to the in param string </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem11RuntimeList15runtimeToStringEKN3zdl8DlSystem9Runtime_tE">
+<span id="_CPPv3N3zdl8DlSystem11RuntimeList15runtimeToStringEKN3zdl8DlSystem9Runtime_tE"></span><span id="_CPPv2N3zdl8DlSystem11RuntimeList15runtimeToStringEKN3zdl8DlSystem9Runtime_tE"></span><span id="zdl::DlSystem::RuntimeList::runtimeToString__zdl::DlSystem::Runtime_tC"></span><span class="target" id="group__c__plus__plus__apis_1gaed0e6c83857407c1b5367f2ac9cd8a17"></span><span class="k"><span class="pre">static</span></span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">runtimeToString</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="file_DlContainer_IDlContainer.hpp.html#_CPPv43zdl" title="zdl"><span class="n"><span class="pre">zdl</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="file_DlSystem_DlEnums.hpp.html#_CPPv4N3zdl8DlSystemE" title="zdl::DlSystem"><span class="n"><span class="pre">DlSystem</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="enum_group__c__plus__plus__apis_1ga44a623125cbc82942472581f8a9c3f4c.html#_CPPv4N3zdl8DlSystem9Runtime_tE" title="zdl::DlSystem::Runtime_t"><span class="n"><span class="pre">Runtime_t</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">runtime</span></span><span class="sig-paren">)</span><br /></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>runtime</strong> – <strong>[in]</strong> Returns a string corresponding to the in param runtime enum </p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-private-functions">Private Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem11RuntimeList8deepCopyERK11RuntimeList">
+<span id="_CPPv3N3zdl8DlSystem11RuntimeList8deepCopyERK11RuntimeList"></span><span id="_CPPv2N3zdl8DlSystem11RuntimeList8deepCopyERK11RuntimeList"></span><span id="zdl::DlSystem::RuntimeList::deepCopy__RuntimeListCR"></span><span class="target" id="group__c__plus__plus__apis_1gace8b62c2d0e1097d362110aca34aeb8a"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">deepCopy</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="classzdl_1_1DlSystem_1_1RuntimeList.html#_CPPv4N3zdl8DlSystem11RuntimeListE" title="zdl::DlSystem::RuntimeList"><span class="n"><span class="pre">RuntimeList</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">other</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3zdl8DlSystem11RuntimeList8deepCopyERK11RuntimeList" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-private-members">Private Members</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem11RuntimeList17m_RuntimeListImplE">
+<span id="_CPPv3N3zdl8DlSystem11RuntimeList17m_RuntimeListImplE"></span><span id="_CPPv2N3zdl8DlSystem11RuntimeList17m_RuntimeListImplE"></span><span id="zdl::DlSystem::RuntimeList::m_RuntimeListImpl__std::unique_ptr:DlSystem::RuntimeListImpl:"></span><span class="target" id="group__c__plus__plus__apis_1gab0a847c14cf31cdb9806dd1c2e15338d"></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">unique_ptr</span></span><span class="p"><span class="pre">&lt;</span></span><span class="p"><span class="pre">::</span></span><a class="reference internal" href="file_DlSystem_IOBufferDataTypeMap.hpp.html#_CPPv48DlSystem" title="DlSystem"><span class="n"><span class="pre">DlSystem</span></span></a><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">RuntimeListImpl</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">m_RuntimeListImpl</span></span></span><a class="headerlink" href="#_CPPv4N3zdl8DlSystem11RuntimeList17m_RuntimeListImplE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2020-2023, Qualcomm Technologies, Inc..
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

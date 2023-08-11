@@ -1,0 +1,386 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Class IDlContainer &mdash; Snapdragon Neural Processing Engine SDK</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/custom_css.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/collapsible-lists/css/tree_view.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+        <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Qualcomm® Neural Processing SDK
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                v2.12.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../general/revision_history.html">Revision History</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/revision_history_windows.html">Revision History - Windows</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/overview.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/setup.html">Setup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/usergroup1.html">Network Models</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/usergroup5.html">Input Data and Preprocessing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/usergroup6.html">Tutorials and Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/usergroup10.html">Benchmarking and Accuracy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/tools.html">Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/usergroup11.html">Debug Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/api.html">API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/limitations.html">Limitations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/appx_ref.html">References</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Qualcomm® Neural Processing SDK</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Class IDlContainer</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="class-idlcontainer">
+<span id="exhale-class-classzdl-1-1dlcontainer-1-1idlcontainer"></span><h1>Class IDlContainer<a class="headerlink" href="#class-idlcontainer" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_DlContainer_IDlContainer.hpp.html#file-dlcontainer-idlcontainer-hpp"><span class="std std-ref">File IDlContainer.hpp</span></a></p></li>
+</ul>
+<div class="section" id="class-documentation">
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline">¶</a></h2>
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl11DlContainer12IDlContainerE">
+<span id="_CPPv3N3zdl11DlContainer12IDlContainerE"></span><span id="_CPPv2N3zdl11DlContainer12IDlContainerE"></span><span id="zdl::DlContainer::IDlContainer"></span><span class="target" id="classzdl_1_1DlContainer_1_1IDlContainer"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-prename descclassname"><a class="reference internal" href="file_DlContainer_IDlContainer.hpp.html#_CPPv43zdl" title="zdl"><span class="n"><span class="pre">zdl</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="file_DlContainer_IDlContainer.hpp.html#_CPPv4N3zdl11DlContainerE" title="zdl::DlContainer"><span class="n"><span class="pre">DlContainer</span></span></a><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">IDlContainer</span></span></span><a class="headerlink" href="#_CPPv4N3zdl11DlContainer12IDlContainerE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Represents a container for a neural network model which can be used to load the model into the <a class="reference internal" href="file_SNPE_SNPEFactory.hpp.html#namespacezdl_1_1SNPE"><span class="std std-ref">SNPE</span></a> runtime. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK3zdl11DlContainer12IDlContainer10getCatalogERNSt3setINSt6stringEEE">
+<span id="_CPPv3NK3zdl11DlContainer12IDlContainer10getCatalogERNSt3setINSt6stringEEE"></span><span id="_CPPv2NK3zdl11DlContainer12IDlContainer10getCatalogERNSt3setINSt6stringEEE"></span><span id="zdl::DlContainer::IDlContainer::getCatalog__std::set:ss:RC"></span><span class="target" id="classzdl_1_1DlContainer_1_1IDlContainer_1a32138a5d25cfbe4c177721138bccb3e0"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getCatalog</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">set</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">catalog</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><a class="headerlink" href="#_CPPv4NK3zdl11DlContainer12IDlContainer10getCatalogERNSt3setINSt6stringEEE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Get the record catalog for a container.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>catalog</strong> – <strong>[out]</strong> Buffer that will hold the record names on return. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK3zdl11DlContainer12IDlContainer10getCatalogERNSt3setIN3zdl8DlSystem6StringEEE">
+<span id="_CPPv3NK3zdl11DlContainer12IDlContainer10getCatalogERNSt3setIN3zdl8DlSystem6StringEEE"></span><span id="_CPPv2NK3zdl11DlContainer12IDlContainer10getCatalogERNSt3setIN3zdl8DlSystem6StringEEE"></span><span id="zdl::DlContainer::IDlContainer::getCatalog__std::set:zdl::DlSystem::String:RC"></span><span class="target" id="classzdl_1_1DlContainer_1_1IDlContainer_1a68ee5fd5ec652c1c062aed0c6ec6d163"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getCatalog</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">set</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="file_DlContainer_IDlContainer.hpp.html#_CPPv43zdl" title="zdl"><span class="n"><span class="pre">zdl</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="file_DlSystem_DlEnums.hpp.html#_CPPv4N3zdl8DlSystemE" title="zdl::DlSystem"><span class="n"><span class="pre">DlSystem</span></span></a><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">String</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">catalog</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><a class="headerlink" href="#_CPPv4NK3zdl11DlContainer12IDlContainer10getCatalogERNSt3setIN3zdl8DlSystem6StringEEE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Get the record catalog for a container.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>catalog</strong> – <strong>[out]</strong> Buffer that will hold the record names on return. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK3zdl11DlContainer12IDlContainer9getRecordERKNSt6stringER9DlcRecord">
+<span id="_CPPv3NK3zdl11DlContainer12IDlContainer9getRecordERKNSt6stringER9DlcRecord"></span><span id="_CPPv2NK3zdl11DlContainer12IDlContainer9getRecordERKNSt6stringER9DlcRecord"></span><span id="zdl::DlContainer::IDlContainer::getRecord__ssCR.DlcRecordRC"></span><span class="target" id="classzdl_1_1DlContainer_1_1IDlContainer_1ab911101954300884273cdcdcc8511daf"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getRecord</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">name</span></span>, <a class="reference internal" href="file_DlContainer_IDlContainer.hpp.html#_CPPv4N3zdl11DlContainer9DlcRecordE" title="zdl::DlContainer::DlcRecord"><span class="n"><span class="pre">DlcRecord</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">record</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><a class="headerlink" href="#_CPPv4NK3zdl11DlContainer12IDlContainer9getRecordERKNSt6stringER9DlcRecord" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Get a record from a container by name.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>name</strong> – <strong>[in]</strong> Name of the record to fetch. </p></li>
+<li><p><strong>record</strong> – <strong>[out]</strong> The passed in record will be populated with the record data on return. Note that the caller will own the data in the record and is responsible for freeing it if needed. </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK3zdl11DlContainer12IDlContainer9getRecordERKN3zdl8DlSystem6StringER9DlcRecord">
+<span id="_CPPv3NK3zdl11DlContainer12IDlContainer9getRecordERKN3zdl8DlSystem6StringER9DlcRecord"></span><span id="_CPPv2NK3zdl11DlContainer12IDlContainer9getRecordERKN3zdl8DlSystem6StringER9DlcRecord"></span><span id="zdl::DlContainer::IDlContainer::getRecord__zdl::DlSystem::StringCR.DlcRecordRC"></span><span class="target" id="classzdl_1_1DlContainer_1_1IDlContainer_1a9217dae6402bf86cf6484c8038e89726"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getRecord</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="file_DlContainer_IDlContainer.hpp.html#_CPPv43zdl" title="zdl"><span class="n"><span class="pre">zdl</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="file_DlSystem_DlEnums.hpp.html#_CPPv4N3zdl8DlSystemE" title="zdl::DlSystem"><span class="n"><span class="pre">DlSystem</span></span></a><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">String</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">name</span></span>, <a class="reference internal" href="file_DlContainer_IDlContainer.hpp.html#_CPPv4N3zdl11DlContainer9DlcRecordE" title="zdl::DlContainer::DlcRecord"><span class="n"><span class="pre">DlcRecord</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">record</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><a class="headerlink" href="#_CPPv4NK3zdl11DlContainer12IDlContainer9getRecordERKN3zdl8DlSystem6StringER9DlcRecord" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Get a record from a container by name.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>name</strong> – <strong>[in]</strong> Name of the record to fetch. </p></li>
+<li><p><strong>record</strong> – <strong>[out]</strong> The passed in record will be populated with the record data on return. Note that the caller will own the data in the record and is responsible for freeing it if needed. </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl11DlContainer12IDlContainer4saveERKNSt6stringE">
+<span id="_CPPv3N3zdl11DlContainer12IDlContainer4saveERKNSt6stringE"></span><span id="_CPPv2N3zdl11DlContainer12IDlContainer4saveERKNSt6stringE"></span><span id="zdl::DlContainer::IDlContainer::save__ssCR"></span><span class="target" id="classzdl_1_1DlContainer_1_1IDlContainer_1a0655e4f4c5dab4d850b604affbb7d70b"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">save</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">filename</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><a class="headerlink" href="#_CPPv4N3zdl11DlContainer12IDlContainer4saveERKNSt6stringE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Save the container to an archive on disk. This function will save the container if the filename is different from the file that it was opened from, or if at least one record was modified since the container was opened.</p>
+<p>It will truncate any existing file at the target path.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>filename</strong> – Container archive file path.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>indication of success/failure </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl11DlContainer12IDlContainer4saveERKN3zdl8DlSystem6StringE">
+<span id="_CPPv3N3zdl11DlContainer12IDlContainer4saveERKN3zdl8DlSystem6StringE"></span><span id="_CPPv2N3zdl11DlContainer12IDlContainer4saveERKN3zdl8DlSystem6StringE"></span><span id="zdl::DlContainer::IDlContainer::save__zdl::DlSystem::StringCR"></span><span class="target" id="classzdl_1_1DlContainer_1_1IDlContainer_1a380fdb34a9d71b3f79c424877c4a4139"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">save</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="file_DlContainer_IDlContainer.hpp.html#_CPPv43zdl" title="zdl"><span class="n"><span class="pre">zdl</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="file_DlSystem_DlEnums.hpp.html#_CPPv4N3zdl8DlSystemE" title="zdl::DlSystem"><span class="n"><span class="pre">DlSystem</span></span></a><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">String</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">filename</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><a class="headerlink" href="#_CPPv4N3zdl11DlContainer12IDlContainer4saveERKN3zdl8DlSystem6StringE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Save the container to an archive on disk. This function will save the container if the filename is different from the file that it was opened from, or if at least one record was modified since the container was opened.</p>
+<p>It will truncate any existing file at the target path.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>filename</strong> – Container archive file path.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>indication of success/failure </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl11DlContainer12IDlContainerD0Ev">
+<span id="_CPPv3N3zdl11DlContainer12IDlContainerD0Ev"></span><span id="_CPPv2N3zdl11DlContainer12IDlContainerD0Ev"></span><span id="zdl::DlContainer::IDlContainer::~IDlContainer"></span><span class="target" id="classzdl_1_1DlContainer_1_1IDlContainer_1ab4e7a9a9ddb9e6ffe18be51f2cb24723"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">~IDlContainer</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3zdl11DlContainer12IDlContainerD0Ev" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-static-functions">Public Static Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl11DlContainer12IDlContainer4openERKNSt6stringE">
+<span id="_CPPv3N3zdl11DlContainer12IDlContainer4openERKNSt6stringE"></span><span id="_CPPv2N3zdl11DlContainer12IDlContainer4openERKNSt6stringE"></span><span id="zdl::DlContainer::IDlContainer::open__ssCR"></span><span class="target" id="group__c__plus__plus__apis_1gaea172542dcf8adfc979548c2e7fa8031"></span><span class="k"><span class="pre">static</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">unique_ptr</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="#_CPPv4N3zdl11DlContainer12IDlContainerE" title="zdl::DlContainer::IDlContainer"><span class="n"><span class="pre">IDlContainer</span></span></a><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">open</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">filename</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">noexcept</span></span><a class="headerlink" href="#_CPPv4N3zdl11DlContainer12IDlContainer4openERKNSt6stringE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Initializes a container from a container archive file.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>filename</strong> – <strong>[in]</strong> Container archive file path.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>A pointer to the initialized container </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl11DlContainer12IDlContainer4openERKN3zdl8DlSystem6StringE">
+<span id="_CPPv3N3zdl11DlContainer12IDlContainer4openERKN3zdl8DlSystem6StringE"></span><span id="_CPPv2N3zdl11DlContainer12IDlContainer4openERKN3zdl8DlSystem6StringE"></span><span id="zdl::DlContainer::IDlContainer::open__zdl::DlSystem::StringCR"></span><span class="target" id="group__c__plus__plus__apis_1ga52247b29da06c3565951a4f72fbf88ed"></span><span class="k"><span class="pre">static</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">unique_ptr</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="#_CPPv4N3zdl11DlContainer12IDlContainerE" title="zdl::DlContainer::IDlContainer"><span class="n"><span class="pre">IDlContainer</span></span></a><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">open</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="file_DlContainer_IDlContainer.hpp.html#_CPPv43zdl" title="zdl"><span class="n"><span class="pre">zdl</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="file_DlSystem_DlEnums.hpp.html#_CPPv4N3zdl8DlSystemE" title="zdl::DlSystem"><span class="n"><span class="pre">DlSystem</span></span></a><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">String</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">filename</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">noexcept</span></span><a class="headerlink" href="#_CPPv4N3zdl11DlContainer12IDlContainer4openERKN3zdl8DlSystem6StringE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Initializes a container from a container archive file.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>filename</strong> – <strong>[in]</strong> Container archive file path.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>A pointer to the initialized container </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl11DlContainer12IDlContainer4openERKNSt6vectorI7uint8_tEE">
+<span id="_CPPv3N3zdl11DlContainer12IDlContainer4openERKNSt6vectorI7uint8_tEE"></span><span id="_CPPv2N3zdl11DlContainer12IDlContainer4openERKNSt6vectorI7uint8_tEE"></span><span id="zdl::DlContainer::IDlContainer::open__std::vector:uint8_t:CR"></span><span class="target" id="group__c__plus__plus__apis_1ga13591b478ba7e40286f4b6181c97f6b6"></span><span class="k"><span class="pre">static</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">unique_ptr</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="#_CPPv4N3zdl11DlContainer12IDlContainerE" title="zdl::DlContainer::IDlContainer"><span class="n"><span class="pre">IDlContainer</span></span></a><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">open</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">uint8_t</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">buffer</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">noexcept</span></span><a class="headerlink" href="#_CPPv4N3zdl11DlContainer12IDlContainer4openERKNSt6vectorI7uint8_tEE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Initializes a container from a byte buffer.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>buffer</strong> – <strong>[in]</strong> Byte buffer holding the contents of an archive file.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>A pointer to the initialized container </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl11DlContainer12IDlContainer4openEPK7uint8_tK6size_t">
+<span id="_CPPv3N3zdl11DlContainer12IDlContainer4openEPK7uint8_tK6size_t"></span><span id="_CPPv2N3zdl11DlContainer12IDlContainer4openEPK7uint8_tK6size_t"></span><span id="zdl::DlContainer::IDlContainer::open__uint8_tCP.sC"></span><span class="target" id="group__c__plus__plus__apis_1ga2ac9e230b34863086d26ae92fa416709"></span><span class="k"><span class="pre">static</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">unique_ptr</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="#_CPPv4N3zdl11DlContainer12IDlContainerE" title="zdl::DlContainer::IDlContainer"><span class="n"><span class="pre">IDlContainer</span></span></a><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">open</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">uint8_t</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">buffer</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">size</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">noexcept</span></span><a class="headerlink" href="#_CPPv4N3zdl11DlContainer12IDlContainer4openEPK7uint8_tK6size_t" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Initializes a container from a byte buffer.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>buffer</strong> – <strong>[in]</strong> Byte buffer holding the contents of an archive file.</p></li>
+<li><p><strong>size</strong> – <strong>[in]</strong> Size of the byte buffer.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>A pointer to the initialized container </p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2020-2023, Qualcomm Technologies, Inc..
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

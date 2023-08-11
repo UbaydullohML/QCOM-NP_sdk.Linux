@@ -1,0 +1,433 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>File StringList.hpp &mdash; Snapdragon Neural Processing Engine SDK</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/custom_css.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/collapsible-lists/css/tree_view.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+        <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Qualcomm® Neural Processing SDK
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                v2.12.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../general/revision_history.html">Revision History</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/revision_history_windows.html">Revision History - Windows</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/overview.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/setup.html">Setup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/usergroup1.html">Network Models</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/usergroup5.html">Input Data and Preprocessing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/usergroup6.html">Tutorials and Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/usergroup10.html">Benchmarking and Accuracy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/tools.html">Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/usergroup11.html">Debug Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/api.html">API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/limitations.html">Limitations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/appx_ref.html">References</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Qualcomm® Neural Processing SDK</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>File StringList.hpp</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="file-stringlist-hpp">
+<span id="file-dlsystem-stringlist-hpp"></span><h1>File StringList.hpp<a class="headerlink" href="#file-stringlist-hpp" title="Permalink to this headline">¶</a></h1>
+<p>↰ <a class="reference internal" href="dir_DlSystem.html#dir-dlsystem"><span class="std std-ref">Parent directory</span></a> (<code class="docutils literal notranslate"><span class="pre">DlSystem</span></code>)</p>
+<div class="contents local topic" id="contents">
+<p class="topic-title">Contents</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#definition-dlsystem-stringlist-hpp" id="id1">Definition (<code class="docutils literal notranslate"><span class="pre">DlSystem/StringList.hpp</span></code>)</a></p></li>
+<li><p><a class="reference internal" href="#includes" id="id2">Includes</a></p></li>
+<li><p><a class="reference internal" href="#included-by" id="id3">Included By</a></p></li>
+<li><p><a class="reference internal" href="#namespaces" id="id4">Namespaces</a></p></li>
+<li><p><a class="reference internal" href="#classes" id="id5">Classes</a></p></li>
+<li><p><a class="reference internal" href="#full-file-listing" id="id6">Full File Listing</a></p></li>
+</ul>
+</div>
+<div class="section" id="definition-dlsystem-stringlist-hpp">
+<h2>Definition (<code class="docutils literal notranslate"><span class="pre">DlSystem/StringList.hpp</span></code>)<a class="headerlink" href="#definition-dlsystem-stringlist-hpp" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="program_listing_file_DlSystem_StringList.hpp.html">Program Listing for File StringList.hpp</a></li>
+</ul>
+</div>
+</div>
+<div class="section" id="includes">
+<h2>Includes<a class="headerlink" href="#includes" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">ZdlExportDefine.hpp</span></code> (<a class="reference internal" href="file_DlSystem_ZdlExportDefine.hpp.html#file-dlsystem-zdlexportdefine-hpp"><span class="std std-ref">File ZdlExportDefine.hpp</span></a>)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">cstdio</span></code></p></li>
+</ul>
+</div>
+<div class="section" id="included-by">
+<h2>Included By<a class="headerlink" href="#included-by" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="file_DlSystem_RuntimeList.hpp.html#file-dlsystem-runtimelist-hpp"><span class="std std-ref">File RuntimeList.hpp</span></a></p></li>
+<li><p><a class="reference internal" href="file_DlSystem_TensorMap.hpp.html#file-dlsystem-tensormap-hpp"><span class="std std-ref">File TensorMap.hpp</span></a></p></li>
+<li><p><a class="reference internal" href="file_DlSystem_TensorShapeMap.hpp.html#file-dlsystem-tensorshapemap-hpp"><span class="std std-ref">File TensorShapeMap.hpp</span></a></p></li>
+<li><p><a class="reference internal" href="file_DlSystem_UserBufferMap.hpp.html#file-dlsystem-userbuffermap-hpp"><span class="std std-ref">File UserBufferMap.hpp</span></a></p></li>
+<li><p><a class="reference internal" href="file_SNPE_SNPE.hpp.html#file-snpe-snpe-hpp"><span class="std std-ref">File SNPE.hpp</span></a></p></li>
+</ul>
+</div>
+<div class="section" id="namespaces">
+<h2>Namespaces<a class="headerlink" href="#namespaces" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="namespace_zdl.html#namespace-zdl"><span class="std std-ref">Namespace zdl</span></a></p></li>
+<li><p><a class="reference internal" href="namespace_zdl__DlSystem.html#namespace-zdl-dlsystem"><span class="std std-ref">Namespace zdl::DlSystem</span></a></p></li>
+</ul>
+</div>
+<div class="section" id="classes">
+<h2>Classes<a class="headerlink" href="#classes" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="classzdl_1_1DlSystem_1_1StringList.html#exhale-class-classzdl-1-1dlsystem-1-1stringlist"><span class="std std-ref">Class StringList</span></a></p></li>
+</ul>
+</div>
+<div class="section" id="full-file-listing">
+<h2>Full File Listing<a class="headerlink" href="#full-file-listing" title="Permalink to this headline">¶</a></h2>
+<dl class="cpp type">
+<dt class="sig sig-object cpp" id="_CPPv43zdl">
+<span id="_CPPv33zdl"></span><span id="_CPPv23zdl"></span><span id="zdl"></span><span class="target" id="namespacezdl"></span><span class="k"><span class="pre">namespace</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">zdl</span></span></span><br /></dt>
+<dd><dl class="cpp type">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystemE">
+<span id="_CPPv3N3zdl8DlSystemE"></span><span id="_CPPv2N3zdl8DlSystemE"></span><span id="zdl::DlSystem"></span><span class="target" id="namespacezdl_1_1DlSystem"></span><span class="k"><span class="pre">namespace</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">DlSystem</span></span></span><br /></dt>
+<dd><dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem10StringListE">
+<span id="_CPPv3N3zdl8DlSystem10StringListE"></span><span id="_CPPv2N3zdl8DlSystem10StringListE"></span><span id="zdl::DlSystem::StringList"></span><span class="target" id="classzdl_1_1DlSystem_1_1StringList"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">StringList</span></span></span><br /></dt>
+<dd><em>#include &lt;StringList.hpp&gt;</em><p>Class for holding an order list of null-terminated ASCII strings. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem10StringList10StringListEv">
+<span id="_CPPv3N3zdl8DlSystem10StringList10StringListEv"></span><span id="_CPPv2N3zdl8DlSystem10StringList10StringListEv"></span><span id="zdl::DlSystem::StringList::StringList"></span><span class="target" id="group__c__plus__plus__apis_1ga8e815b821b3c0597f1bbc85dc6828fda"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">StringList</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem10StringList10StringListE6size_t">
+<span id="_CPPv3N3zdl8DlSystem10StringList10StringListE6size_t"></span><span id="_CPPv2N3zdl8DlSystem10StringList10StringListE6size_t"></span><span id="zdl::DlSystem::StringList::StringList__s"></span><span class="target" id="group__c__plus__plus__apis_1gadc41bdbe03fee1d8a73c70b88432a67a"></span><span class="k"><span class="pre">explicit</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">StringList</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">length</span></span><span class="sig-paren">)</span><br /></dt>
+<dd><p>Construct a string list with some pre-allocated memory. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>length</strong> – <strong>[in]</strong> Number of elements for which to pre-allocate space. </p>
+</dd>
+</dl>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Contents of the list will be uninitialized </p>
+</div>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem10StringList6appendEPKc">
+<span id="_CPPv3N3zdl8DlSystem10StringList6appendEPKc"></span><span id="_CPPv2N3zdl8DlSystem10StringList6appendEPKc"></span><span id="zdl::DlSystem::StringList::append__cCP"></span><span class="target" id="group__c__plus__plus__apis_1ga46d77e7f27f3c06b7f4822dcb70e8a87"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">append</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">str</span></span><span class="sig-paren">)</span><br /></dt>
+<dd><p>Append a string to the list. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>str</strong> – <strong>[in]</strong> Null-terminated ASCII string to append to the list. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK3zdl8DlSystem10StringList2atE6size_t">
+<span id="_CPPv3NK3zdl8DlSystem10StringList2atE6size_t"></span><span id="_CPPv2NK3zdl8DlSystem10StringList2atE6size_t"></span><span id="zdl::DlSystem::StringList::at__sC"></span><span class="target" id="group__c__plus__plus__apis_1ga98ed18b41f61e46afb40cd212005204e"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">at</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">idx</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="k"><span class="pre">noexcept</span></span><br /></dt>
+<dd><p>Returns the string at the indicated position, or an empty string if the positions is greater than the size of the list. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>idx</strong> – <strong>[in]</strong> Position in the list of the desired string </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK3zdl8DlSystem10StringList5beginEv">
+<span id="_CPPv3NK3zdl8DlSystem10StringList5beginEv"></span><span id="_CPPv2NK3zdl8DlSystem10StringList5beginEv"></span><span id="zdl::DlSystem::StringList::beginC"></span><span class="target" id="group__c__plus__plus__apis_1ga33aabbd54404d237c7342566f5d74c70"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">begin</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="k"><span class="pre">noexcept</span></span><br /></dt>
+<dd><p>Pointer to the first string in the list. Can be used to iterate through the list. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK3zdl8DlSystem10StringList3endEv">
+<span id="_CPPv3NK3zdl8DlSystem10StringList3endEv"></span><span id="_CPPv2NK3zdl8DlSystem10StringList3endEv"></span><span id="zdl::DlSystem::StringList::endC"></span><span class="target" id="group__c__plus__plus__apis_1ga791398fa026866a637fa2bc605bce37a"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">end</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="k"><span class="pre">noexcept</span></span><br /></dt>
+<dd><p>Pointer to one after the last string in the list. Can be used to iterate through the list. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK3zdl8DlSystem10StringList4sizeEv">
+<span id="_CPPv3NK3zdl8DlSystem10StringList4sizeEv"></span><span id="_CPPv2NK3zdl8DlSystem10StringList4sizeEv"></span><span id="zdl::DlSystem::StringList::sizeC"></span><span class="target" id="group__c__plus__plus__apis_1ga9a4bd1973dbac25b463c0c12e5df18ef"></span><span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">size</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="k"><span class="pre">noexcept</span></span><br /></dt>
+<dd><p>Return the number of valid string pointers held by this list. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem10StringListaSERK10StringList">
+<span id="_CPPv3N3zdl8DlSystem10StringListaSERK10StringList"></span><span id="_CPPv2N3zdl8DlSystem10StringListaSERK10StringList"></span><span id="zdl::DlSystem::StringList::assign-operator__StringListCR"></span><span class="target" id="group__c__plus__plus__apis_1ga629d5e83b4c6523441001a75d891cb94"></span><a class="reference internal" href="classzdl_1_1DlSystem_1_1StringList.html#_CPPv4N3zdl8DlSystem10StringListE" title="zdl::DlSystem::StringList"><span class="n"><span class="pre">StringList</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="k"><span class="pre">operator</span></span><span class="o"><span class="pre">=</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="classzdl_1_1DlSystem_1_1StringList.html#_CPPv4N3zdl8DlSystem10StringListE" title="zdl::DlSystem::StringList"><span class="n"><span class="pre">StringList</span></span></a><span class="p"><span class="pre">&amp;</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">noexcept</span></span><br /></dt>
+<dd><p>assignment operator. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem10StringList10StringListERK10StringList">
+<span id="_CPPv3N3zdl8DlSystem10StringList10StringListERK10StringList"></span><span id="_CPPv2N3zdl8DlSystem10StringList10StringListERK10StringList"></span><span id="zdl::DlSystem::StringList::StringList__StringListCR"></span><span class="target" id="group__c__plus__plus__apis_1gabbae7bb0037732da72585f668448bf97"></span><span class="sig-name descname"><span class="n"><span class="pre">StringList</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="classzdl_1_1DlSystem_1_1StringList.html#_CPPv4N3zdl8DlSystem10StringList10StringListERK10StringList" title="zdl::DlSystem::StringList::StringList"><span class="n"><span class="pre">StringList</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">other</span></span><span class="sig-paren">)</span><br /></dt>
+<dd><p>copy constructor. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>other</strong> – <strong>[in]</strong> object to copy. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem10StringList10StringListERR10StringList">
+<span id="_CPPv3N3zdl8DlSystem10StringList10StringListERR10StringList"></span><span id="_CPPv2N3zdl8DlSystem10StringList10StringListERR10StringList"></span><span id="zdl::DlSystem::StringList::StringList__StringListRR"></span><span class="target" id="group__c__plus__plus__apis_1ga213bc36727a604c47d99f6f4c2129351"></span><span class="sig-name descname"><span class="n"><span class="pre">StringList</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="classzdl_1_1DlSystem_1_1StringList.html#_CPPv4N3zdl8DlSystem10StringList10StringListERR10StringList" title="zdl::DlSystem::StringList::StringList"><span class="n"><span class="pre">StringList</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">other</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">noexcept</span></span><br /></dt>
+<dd><p>move constructor. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>other</strong> – <strong>[in]</strong> object to move. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem10StringListD0Ev">
+<span id="_CPPv3N3zdl8DlSystem10StringListD0Ev"></span><span id="_CPPv2N3zdl8DlSystem10StringListD0Ev"></span><span id="zdl::DlSystem::StringList::~StringList"></span><span class="target" id="group__c__plus__plus__apis_1ga82b545351c5244f2e527221fd3ea869a"></span><span class="sig-name descname"><span class="n"><span class="pre">~StringList</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-private-functions">Private Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem10StringList4copyERK10StringList">
+<span id="_CPPv3N3zdl8DlSystem10StringList4copyERK10StringList"></span><span id="_CPPv2N3zdl8DlSystem10StringList4copyERK10StringList"></span><span id="zdl::DlSystem::StringList::copy__StringListCR"></span><span class="target" id="group__c__plus__plus__apis_1ga910c952e2b444a9831bc7921542eba19"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">copy</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="classzdl_1_1DlSystem_1_1StringList.html#_CPPv4N3zdl8DlSystem10StringListE" title="zdl::DlSystem::StringList"><span class="n"><span class="pre">StringList</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">other</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3zdl8DlSystem10StringList4copyERK10StringList" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem10StringList6resizeE6size_t">
+<span id="_CPPv3N3zdl8DlSystem10StringList6resizeE6size_t"></span><span id="_CPPv2N3zdl8DlSystem10StringList6resizeE6size_t"></span><span id="zdl::DlSystem::StringList::resize__s"></span><span class="target" id="group__c__plus__plus__apis_1ga9bba1270a377c4c6896bb4f583b850cb"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">resize</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">length</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3zdl8DlSystem10StringList6resizeE6size_t" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem10StringList5clearEv">
+<span id="_CPPv3N3zdl8DlSystem10StringList5clearEv"></span><span id="_CPPv2N3zdl8DlSystem10StringList5clearEv"></span><span id="zdl::DlSystem::StringList::clear"></span><span class="target" id="group__c__plus__plus__apis_1ga0106888ad3da77973af6ec9af552bf1b"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">clear</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3zdl8DlSystem10StringList5clearEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-private-members">Private Members</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem10StringList9m_StringsE">
+<span id="_CPPv3N3zdl8DlSystem10StringList9m_StringsE"></span><span id="_CPPv2N3zdl8DlSystem10StringList9m_StringsE"></span><span id="zdl::DlSystem::StringList::m_Strings__cCPP"></span><span class="target" id="group__c__plus__plus__apis_1gae4de5ea58df74ec55d050267dcc74cf2"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">m_Strings</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="k"><span class="pre">nullptr</span></span><a class="headerlink" href="#_CPPv4N3zdl8DlSystem10StringList9m_StringsE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem10StringList5m_EndE">
+<span id="_CPPv3N3zdl8DlSystem10StringList5m_EndE"></span><span id="_CPPv2N3zdl8DlSystem10StringList5m_EndE"></span><span id="zdl::DlSystem::StringList::m_End__cCPP"></span><span class="target" id="group__c__plus__plus__apis_1ga46147a394a0f1f195d14d965c2728aa8"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">m_End</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="k"><span class="pre">nullptr</span></span><a class="headerlink" href="#_CPPv4N3zdl8DlSystem10StringList5m_EndE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem10StringList6m_SizeE">
+<span id="_CPPv3N3zdl8DlSystem10StringList6m_SizeE"></span><span id="_CPPv2N3zdl8DlSystem10StringList6m_SizeE"></span><span id="zdl::DlSystem::StringList::m_Size__s"></span><span class="target" id="group__c__plus__plus__apis_1ga1f36031914639d6c958f61cbec1455c9"></span><span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">m_Size</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><a class="headerlink" href="#_CPPv4N3zdl8DlSystem10StringList6m_SizeE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-private-static-attributes">Private Static Attributes</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem10StringList7s_EmptyE">
+<span id="_CPPv3N3zdl8DlSystem10StringList7s_EmptyE"></span><span id="_CPPv2N3zdl8DlSystem10StringList7s_EmptyE"></span><span id="zdl::DlSystem::StringList::s_Empty__cCP"></span><span class="target" id="group__c__plus__plus__apis_1ga3199d1d7e4b17008c7c8afd1291077a4"></span><span class="k"><span class="pre">static</span></span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">s_Empty</span></span></span><a class="headerlink" href="#_CPPv4N3zdl8DlSystem10StringList7s_EmptyE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2020-2023, Qualcomm Technologies, Inc..
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

@@ -1,0 +1,769 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Program Listing for File NativeNetwork.java &mdash; Snapdragon Neural Processing Engine SDK</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/custom_css.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/collapsible-lists/css/tree_view.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+        <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Qualcomm® Neural Processing SDK
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                v2.12.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../general/revision_history.html">Revision History</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/revision_history_windows.html">Revision History - Windows</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/overview.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/setup.html">Setup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/usergroup1.html">Network Models</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/usergroup5.html">Input Data and Preprocessing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/usergroup6.html">Tutorials and Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/usergroup10.html">Benchmarking and Accuracy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/tools.html">Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/usergroup11.html">Debug Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/api.html">API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/limitations.html">Limitations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/appx_ref.html">References</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Qualcomm® Neural Processing SDK</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Program Listing for File NativeNetwork.java</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="program-listing-for-file-nativenetwork-java">
+<span id="program-listing-file-internal-nativenetwork-java"></span><h1>Program Listing for File NativeNetwork.java<a class="headerlink" href="#program-listing-for-file-nativenetwork-java" title="Permalink to this headline">¶</a></h1>
+<p>↰ <a class="reference internal" href="file_internal_NativeNetwork.java.html#file-internal-nativenetwork-java"><span class="std std-ref">Return to documentation for file</span></a> (<code class="docutils literal notranslate"><span class="pre">internal/NativeNetwork.java</span></code>)</p>
+<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="cm">/*</span>
+<span class="cm"> * Copyright (c) 2017-2021, 2023 Qualcomm Technologies, Inc.</span>
+<span class="cm"> * All Rights Reserved.</span>
+<span class="cm"> * Confidential and Proprietary - Qualcomm Technologies, Inc.</span>
+<span class="cm"> */</span>
+<span class="kn">package</span><span class="w"> </span><span class="nn">com.qualcomm.qti.snpe.internal</span><span class="p">;</span>
+
+<span class="kn">import</span><span class="w"> </span><span class="nn">android.os.SystemClock</span><span class="p">;</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">android.util.Log</span><span class="p">;</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">android.util.Pair</span><span class="p">;</span>
+
+<span class="kn">import</span><span class="w"> </span><span class="nn">com.qualcomm.qti.snpe.FloatTensor</span><span class="p">;</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">com.qualcomm.qti.snpe.NeuralNetwork</span><span class="p">;</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">com.qualcomm.qti.snpe.SNPE</span><span class="p">;</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">com.qualcomm.qti.snpe.TF8UserBufferTensor</span><span class="p">;</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">com.qualcomm.qti.snpe.Tensor</span><span class="p">;</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">com.qualcomm.qti.snpe.TensorAttributes</span><span class="p">;</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">com.qualcomm.qti.snpe.UserBufferTensor</span><span class="p">;</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">com.qualcomm.qti.snpe.SnpeError</span><span class="p">;</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">com.qualcomm.qti.snpe.internal.util.JniInputBundle</span><span class="p">;</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">com.qualcomm.qti.snpe.internal.util.JniOutputBundle</span><span class="p">;</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">com.qualcomm.qti.snpe.internal.util.NativeBufferOutputStream</span><span class="p">;</span>
+
+<span class="kn">import</span><span class="w"> </span><span class="nn">java.io.File</span><span class="p">;</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">java.nio.ByteBuffer</span><span class="p">;</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">java.util.HashMap</span><span class="p">;</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">java.util.HashSet</span><span class="p">;</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">java.util.LinkedList</span><span class="p">;</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">java.util.List</span><span class="p">;</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">java.util.Map</span><span class="p">;</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">java.util.Set</span><span class="p">;</span>
+
+<span class="kd">public</span><span class="w"> </span><span class="kd">final</span><span class="w"> </span><span class="kd">class</span> <span class="nc">NativeNetwork</span><span class="w"> </span><span class="kd">implements</span><span class="w"> </span><span class="n">NeuralNetwork</span><span class="w"> </span><span class="p">{</span>
+
+<span class="w">    </span><span class="kd">private</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kd">final</span><span class="w"> </span><span class="n">HashMap</span><span class="o">&lt;</span><span class="n">Runtime</span><span class="p">,</span><span class="w"> </span><span class="n">Boolean</span><span class="o">&gt;</span><span class="w"> </span><span class="n">mRuntimeAvailability</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">HashMap</span><span class="o">&lt;&gt;</span><span class="p">();</span>
+
+<span class="w">    </span><span class="kd">private</span><span class="w"> </span><span class="n">Set</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span><span class="w"> </span><span class="n">mOutputLayerNames</span><span class="p">;</span>
+
+<span class="w">    </span><span class="kd">private</span><span class="w"> </span><span class="n">TensorAttributesMap</span><span class="w"> </span><span class="n">mInputTensors</span><span class="p">;</span>
+
+<span class="w">    </span><span class="kd">private</span><span class="w"> </span><span class="n">TensorAttributesMap</span><span class="w"> </span><span class="n">mOutputTensors</span><span class="p">;</span>
+
+<span class="w">    </span><span class="kd">private</span><span class="w"> </span><span class="kt">long</span><span class="w"> </span><span class="n">mNativeHandle</span><span class="p">;</span>
+
+<span class="w">    </span><span class="kd">private</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="n">mModelVersion</span><span class="p">;</span>
+
+<span class="w">    </span><span class="kd">private</span><span class="w"> </span><span class="n">Runtime</span><span class="w"> </span><span class="n">mTargetRuntime</span><span class="p">;</span>
+
+<span class="w">    </span><span class="kd">private</span><span class="w"> </span><span class="kt">boolean</span><span class="w"> </span><span class="n">mIsDebugEnabled</span><span class="p">;</span>
+
+<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">synchronized</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">boolean</span><span class="w"> </span><span class="nf">isRuntimeAvailable</span><span class="p">(</span><span class="kd">final</span><span class="w"> </span><span class="n">Runtime</span><span class="w"> </span><span class="n">runtime</span><span class="p">,</span><span class="w"> </span><span class="kd">final</span><span class="w"> </span><span class="n">RuntimeCheckOption</span><span class="w"> </span><span class="n">runtimeCheckOption</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="k">try</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">mRuntimeAvailability</span><span class="p">.</span><span class="na">containsKey</span><span class="p">(</span><span class="n">runtime</span><span class="p">))</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="n">mRuntimeAvailability</span><span class="p">.</span><span class="na">put</span><span class="p">(</span><span class="n">runtime</span><span class="p">,</span><span class="w"> </span><span class="n">nativeIsRuntimeAvailable</span><span class="p">(</span><span class="n">runtime</span><span class="p">.</span><span class="na">ordinal</span><span class="p">,</span><span class="w"> </span><span class="n">runtimeCheckOption</span><span class="p">.</span><span class="na">ordinal</span><span class="p">));</span>
+<span class="w">            </span><span class="p">}</span>
+<span class="w">        </span><span class="p">}</span><span class="w"> </span><span class="k">catch</span><span class="w"> </span><span class="p">(</span><span class="n">IllegalStateException</span><span class="w"> </span><span class="n">e</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="k">throw</span><span class="w"> </span><span class="n">SnpeError</span><span class="p">.</span><span class="na">getInstance</span><span class="p">().</span><span class="na">getSnpeNativeError</span><span class="p">(</span><span class="n">e</span><span class="p">.</span><span class="na">getMessage</span><span class="p">());</span>
+<span class="w">        </span><span class="p">}</span>
+
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="n">mRuntimeAvailability</span><span class="p">.</span><span class="na">get</span><span class="p">(</span><span class="n">runtime</span><span class="p">);</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="nf">NativeNetwork</span><span class="p">(</span><span class="kd">final</span><span class="w"> </span><span class="n">Runtime</span><span class="w"> </span><span class="n">runtime</span><span class="p">,</span><span class="w"> </span><span class="kd">final</span><span class="w"> </span><span class="n">NativeBufferOutputStream</span><span class="w"> </span><span class="n">modelBuffer</span><span class="p">,</span>
+<span class="w">                         </span><span class="kd">final</span><span class="w"> </span><span class="n">Set</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span><span class="w"> </span><span class="n">outputLayerNames</span><span class="p">,</span><span class="w"> </span><span class="kd">final</span><span class="w"> </span><span class="kt">boolean</span><span class="w"> </span><span class="n">isDebugEnabled</span><span class="p">,</span>
+<span class="w">                         </span><span class="kd">final</span><span class="w"> </span><span class="n">PerformanceProfile</span><span class="w"> </span><span class="n">performanceProfile</span><span class="p">,</span>
+<span class="w">                         </span><span class="kd">final</span><span class="w"> </span><span class="n">ExecutionPriorityHint</span><span class="w"> </span><span class="n">executionPriorityHint</span><span class="p">,</span>
+<span class="w">                         </span><span class="kt">boolean</span><span class="w"> </span><span class="n">isCpuFallbackEnabled</span><span class="p">,</span>
+<span class="w">                         </span><span class="kt">boolean</span><span class="w"> </span><span class="n">unsignedPD</span><span class="p">,</span>
+<span class="w">                         </span><span class="kt">boolean</span><span class="w"> </span><span class="n">useUserSuppliedBuffers</span><span class="p">,</span>
+<span class="w">                         </span><span class="kt">boolean</span><span class="w"> </span><span class="n">isInitCacheEnabled</span><span class="p">,</span>
+<span class="w">                         </span><span class="kt">boolean</span><span class="w"> </span><span class="n">isDlCacheAvailable</span><span class="p">,</span>
+<span class="w">                         </span><span class="kt">boolean</span><span class="w"> </span><span class="n">cpuFxpMode</span><span class="p">,</span>
+<span class="w">                         </span><span class="kd">final</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="n">storageDirectory</span><span class="p">,</span>
+<span class="w">                         </span><span class="kd">final</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="n">dspCachePath</span><span class="p">,</span>
+<span class="w">                         </span><span class="kd">final</span><span class="w"> </span><span class="n">Map</span><span class="o">&lt;</span><span class="n">String</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="o">[]&gt;</span><span class="w"> </span><span class="n">inputDimensions</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="kd">final</span><span class="w"> </span><span class="n">JniInputBundle</span><span class="w"> </span><span class="n">initBundle</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">createInitBundle</span><span class="p">(</span><span class="n">runtime</span><span class="p">,</span>
+<span class="w">                </span><span class="n">outputLayerNames</span><span class="p">,</span><span class="w"> </span><span class="n">isDebugEnabled</span><span class="p">,</span><span class="w"> </span><span class="n">performanceProfile</span><span class="p">,</span>
+<span class="w">                </span><span class="n">executionPriorityHint</span><span class="p">,</span><span class="w"> </span><span class="n">isCpuFallbackEnabled</span><span class="p">,</span><span class="w"> </span><span class="n">unsignedPD</span><span class="p">,</span>
+<span class="w">                </span><span class="n">useUserSuppliedBuffers</span><span class="p">,</span><span class="w"> </span><span class="n">isInitCacheEnabled</span><span class="p">,</span><span class="w"> </span><span class="n">isDlCacheAvailable</span><span class="p">,</span>
+<span class="w">                </span><span class="n">cpuFxpMode</span><span class="p">,</span><span class="w"> </span><span class="n">storageDirectory</span><span class="p">,</span><span class="w"> </span><span class="n">dspCachePath</span><span class="p">,</span><span class="w"> </span><span class="n">inputDimensions</span><span class="p">);</span>
+<span class="w">        </span><span class="kd">final</span><span class="w"> </span><span class="n">ByteBuffer</span><span class="w"> </span><span class="n">bundleBuffer</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">initBundle</span><span class="p">.</span><span class="na">marshall</span><span class="p">();</span>
+
+<span class="w">        </span><span class="kd">final</span><span class="w"> </span><span class="kt">long</span><span class="w"> </span><span class="n">start</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SystemClock</span><span class="p">.</span><span class="na">elapsedRealtime</span><span class="p">();</span>
+<span class="w">        </span><span class="k">try</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="n">mNativeHandle</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">nativeInitFromBuffer</span><span class="p">(</span><span class="n">modelBuffer</span><span class="p">.</span><span class="na">getNativeAddress</span><span class="p">(),</span>
+<span class="w">                    </span><span class="n">bundleBuffer</span><span class="p">,</span><span class="w"> </span><span class="n">bundleBuffer</span><span class="p">.</span><span class="na">capacity</span><span class="p">());</span>
+<span class="w">        </span><span class="p">}</span><span class="w"> </span><span class="k">catch</span><span class="w"> </span><span class="p">(</span><span class="n">IllegalStateException</span><span class="w"> </span><span class="n">e</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="k">throw</span><span class="w"> </span><span class="n">SnpeError</span><span class="p">.</span><span class="na">getInstance</span><span class="p">().</span><span class="na">getSnpeNativeError</span><span class="p">(</span><span class="n">e</span><span class="p">.</span><span class="na">getMessage</span><span class="p">());</span>
+<span class="w">        </span><span class="p">}</span>
+
+<span class="w">        </span><span class="kd">final</span><span class="w"> </span><span class="kt">long</span><span class="w"> </span><span class="n">end</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SystemClock</span><span class="p">.</span><span class="na">elapsedRealtime</span><span class="p">();</span>
+<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">isDebugEnabled</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="n">Log</span><span class="p">.</span><span class="na">d</span><span class="p">(</span><span class="n">SNPE</span><span class="p">.</span><span class="na">LOG_TAG</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Network initialization took &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="p">(</span><span class="n">end</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">start</span><span class="p">)</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&quot; ms&quot;</span><span class="p">);</span>
+<span class="w">        </span><span class="p">}</span>
+
+<span class="w">        </span><span class="n">init</span><span class="p">(</span><span class="n">runtime</span><span class="p">,</span><span class="w"> </span><span class="n">outputLayerNames</span><span class="p">,</span><span class="w"> </span><span class="n">isDebugEnabled</span><span class="p">);</span>
+
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="kd">private</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">init</span><span class="p">(</span><span class="n">Runtime</span><span class="w"> </span><span class="n">runtime</span><span class="p">,</span><span class="w"> </span><span class="n">Set</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span><span class="w"> </span><span class="n">outputLayerNames</span><span class="p">,</span><span class="w"> </span><span class="kt">boolean</span><span class="w"> </span><span class="n">isDebugEnabled</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="kd">final</span><span class="w"> </span><span class="n">JniOutputBundle</span><span class="w"> </span><span class="n">outputBundle</span><span class="p">;</span>
+<span class="w">        </span><span class="k">try</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="n">outputBundle</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">nativeGetModelMetadata</span><span class="p">(</span><span class="n">mNativeHandle</span><span class="p">);</span>
+<span class="w">        </span><span class="p">}</span><span class="w"> </span><span class="k">catch</span><span class="w"> </span><span class="p">(</span><span class="n">IllegalStateException</span><span class="w"> </span><span class="n">e</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="k">throw</span><span class="w"> </span><span class="n">SnpeError</span><span class="p">.</span><span class="na">getInstance</span><span class="p">().</span><span class="na">getSnpeNativeError</span><span class="p">(</span><span class="n">e</span><span class="p">.</span><span class="na">getMessage</span><span class="p">());</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">        </span><span class="n">mModelVersion</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">outputBundle</span><span class="p">.</span><span class="na">readString</span><span class="p">();</span>
+<span class="w">        </span><span class="n">mOutputLayerNames</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">readOutputLayerNames</span><span class="p">(</span><span class="n">outputBundle</span><span class="p">);</span>
+<span class="w">        </span><span class="n">mInputTensors</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">TensorAttributesMap</span><span class="p">(</span><span class="n">outputBundle</span><span class="p">);</span>
+<span class="w">        </span><span class="n">mOutputTensors</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">TensorAttributesMap</span><span class="p">(</span><span class="n">outputBundle</span><span class="p">);</span>
+<span class="w">        </span><span class="n">mTargetRuntime</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">runtime</span><span class="p">;</span>
+<span class="w">        </span><span class="n">mIsDebugEnabled</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">isDebugEnabled</span><span class="p">;</span>
+
+
+<span class="w">        </span><span class="n">assertSelectedOutputLayer</span><span class="p">(</span><span class="n">mOutputLayerNames</span><span class="p">,</span><span class="w"> </span><span class="n">outputLayerNames</span><span class="p">);</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="nf">NativeNetwork</span><span class="p">(</span><span class="kd">final</span><span class="w"> </span><span class="n">Runtime</span><span class="w"> </span><span class="n">runtime</span><span class="p">,</span><span class="w"> </span><span class="kd">final</span><span class="w"> </span><span class="n">File</span><span class="w"> </span><span class="n">modelFile</span><span class="p">,</span>
+<span class="w">                         </span><span class="kd">final</span><span class="w"> </span><span class="n">Set</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span><span class="w"> </span><span class="n">outputLayerNames</span><span class="p">,</span><span class="w"> </span><span class="kd">final</span><span class="w"> </span><span class="kt">boolean</span><span class="w"> </span><span class="n">isDebugEnabled</span><span class="p">,</span>
+<span class="w">                         </span><span class="kd">final</span><span class="w"> </span><span class="n">PerformanceProfile</span><span class="w"> </span><span class="n">performanceProfile</span><span class="p">,</span>
+<span class="w">                         </span><span class="kd">final</span><span class="w"> </span><span class="n">ExecutionPriorityHint</span><span class="w"> </span><span class="n">executionPriorityHint</span><span class="p">,</span>
+<span class="w">                         </span><span class="kt">boolean</span><span class="w"> </span><span class="n">isCpuFallbackEnabled</span><span class="p">,</span><span class="w"> </span><span class="kt">boolean</span><span class="w"> </span><span class="n">unsignedPD</span><span class="p">,</span>
+<span class="w">                         </span><span class="kt">boolean</span><span class="w"> </span><span class="n">useUserSuppliedBuffers</span><span class="p">,</span>
+<span class="w">                         </span><span class="kt">boolean</span><span class="w"> </span><span class="n">isInitCacheEnabled</span><span class="p">,</span>
+<span class="w">                         </span><span class="kt">boolean</span><span class="w"> </span><span class="n">isDlCacheAvailable</span><span class="p">,</span>
+<span class="w">                         </span><span class="kt">boolean</span><span class="w"> </span><span class="n">cpuFxpMode</span><span class="p">,</span>
+<span class="w">                         </span><span class="kd">final</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="n">storageDirectory</span><span class="p">,</span><span class="w"> </span><span class="kd">final</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="n">dspCachePath</span><span class="p">,</span>
+<span class="w">                         </span><span class="kd">final</span><span class="w"> </span><span class="n">Map</span><span class="o">&lt;</span><span class="n">String</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="o">[]&gt;</span><span class="w"> </span><span class="n">inputDimensions</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="kd">final</span><span class="w"> </span><span class="n">JniInputBundle</span><span class="w"> </span><span class="n">initBundle</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">createInitBundle</span><span class="p">(</span><span class="n">runtime</span><span class="p">,</span>
+<span class="w">                </span><span class="n">outputLayerNames</span><span class="p">,</span><span class="w"> </span><span class="n">isDebugEnabled</span><span class="p">,</span><span class="w"> </span><span class="n">performanceProfile</span><span class="p">,</span>
+<span class="w">                </span><span class="n">executionPriorityHint</span><span class="p">,</span><span class="w"> </span><span class="n">isCpuFallbackEnabled</span><span class="p">,</span><span class="w"> </span><span class="n">unsignedPD</span><span class="p">,</span>
+<span class="w">                </span><span class="n">useUserSuppliedBuffers</span><span class="p">,</span><span class="w"> </span><span class="n">isInitCacheEnabled</span><span class="p">,</span><span class="w"> </span><span class="n">isDlCacheAvailable</span><span class="p">,</span>
+<span class="w">                </span><span class="n">cpuFxpMode</span><span class="p">,</span><span class="w"> </span><span class="n">storageDirectory</span><span class="p">,</span><span class="w"> </span><span class="n">dspCachePath</span><span class="p">,</span><span class="w"> </span><span class="n">inputDimensions</span><span class="p">);</span>
+<span class="w">        </span><span class="kd">final</span><span class="w"> </span><span class="n">ByteBuffer</span><span class="w"> </span><span class="n">bundleBuffer</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">initBundle</span><span class="p">.</span><span class="na">marshall</span><span class="p">();</span>
+
+<span class="w">        </span><span class="kd">final</span><span class="w"> </span><span class="kt">long</span><span class="w"> </span><span class="n">start</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SystemClock</span><span class="p">.</span><span class="na">elapsedRealtime</span><span class="p">();</span>
+<span class="w">        </span><span class="k">try</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="n">mNativeHandle</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">nativeInitFromFile</span><span class="p">(</span><span class="n">modelFile</span><span class="p">.</span><span class="na">getAbsolutePath</span><span class="p">(),</span>
+<span class="w">                    </span><span class="n">bundleBuffer</span><span class="p">,</span><span class="w"> </span><span class="n">bundleBuffer</span><span class="p">.</span><span class="na">capacity</span><span class="p">());</span>
+<span class="w">        </span><span class="p">}</span><span class="w"> </span><span class="k">catch</span><span class="w"> </span><span class="p">(</span><span class="n">IllegalStateException</span><span class="w"> </span><span class="n">e</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="k">throw</span><span class="w"> </span><span class="n">SnpeError</span><span class="p">.</span><span class="na">getInstance</span><span class="p">().</span><span class="na">getSnpeNativeError</span><span class="p">(</span><span class="n">e</span><span class="p">.</span><span class="na">getMessage</span><span class="p">());</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">        </span><span class="kd">final</span><span class="w"> </span><span class="kt">long</span><span class="w"> </span><span class="n">end</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SystemClock</span><span class="p">.</span><span class="na">elapsedRealtime</span><span class="p">();</span>
+
+<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">isDebugEnabled</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="n">Log</span><span class="p">.</span><span class="na">d</span><span class="p">(</span><span class="n">SNPE</span><span class="p">.</span><span class="na">LOG_TAG</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Network initialization took &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="p">(</span><span class="n">end</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">start</span><span class="p">)</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&quot; ms&quot;</span><span class="p">);</span>
+<span class="w">        </span><span class="p">}</span>
+
+<span class="w">        </span><span class="n">init</span><span class="p">(</span><span class="n">runtime</span><span class="p">,</span><span class="w"> </span><span class="n">outputLayerNames</span><span class="p">,</span><span class="w"> </span><span class="n">isDebugEnabled</span><span class="p">);</span>
+
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="nd">@Override</span>
+<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="n">Map</span><span class="o">&lt;</span><span class="n">String</span><span class="p">,</span><span class="w"> </span><span class="n">FloatTensor</span><span class="o">&gt;</span><span class="w"> </span><span class="nf">execute</span><span class="p">(</span><span class="kd">final</span><span class="w"> </span><span class="n">Map</span><span class="o">&lt;</span><span class="n">String</span><span class="p">,</span><span class="w"> </span><span class="n">FloatTensor</span><span class="o">&gt;</span><span class="w"> </span><span class="n">inputs</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">inputs</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="kc">null</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="n">inputs</span><span class="p">.</span><span class="na">isEmpty</span><span class="p">())</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="k">throw</span><span class="w"> </span><span class="n">SnpeError</span><span class="p">.</span><span class="na">getInstance</span><span class="p">().</span><span class="na">getInvalidInputError</span><span class="p">(</span><span class="n">SnpeError</span><span class="p">.</span><span class="na">Error</span><span class="p">.</span><span class="na">INVALID_INPUT_TENSOR_NULL_EMPTY</span><span class="p">);</span>
+<span class="w">        </span><span class="p">}</span>
+
+<span class="w">        </span><span class="kd">final</span><span class="w"> </span><span class="n">Map</span><span class="o">&lt;</span><span class="n">String</span><span class="p">,</span><span class="w"> </span><span class="n">NativeFloatTensor</span><span class="o">&gt;</span><span class="w"> </span><span class="n">nativeTensorsMap</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">HashMap</span><span class="o">&lt;&gt;</span><span class="p">();</span>
+<span class="w">        </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="n">String</span><span class="w"> </span><span class="n">name</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="n">inputs</span><span class="p">.</span><span class="na">keySet</span><span class="p">())</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="kd">final</span><span class="w"> </span><span class="n">Tensor</span><span class="w"> </span><span class="n">tensor</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">inputs</span><span class="p">.</span><span class="na">get</span><span class="p">(</span><span class="n">name</span><span class="p">);</span>
+<span class="w">            </span><span class="n">assertInputTensor</span><span class="p">(</span><span class="n">name</span><span class="p">,</span><span class="w"> </span><span class="n">tensor</span><span class="p">);</span>
+<span class="w">            </span><span class="n">nativeTensorsMap</span><span class="p">.</span><span class="na">put</span><span class="p">(</span><span class="n">name</span><span class="p">,</span><span class="w"> </span><span class="n">NativeFloatTensor</span><span class="p">.</span><span class="na">class</span><span class="p">.</span><span class="na">cast</span><span class="p">(</span><span class="n">tensor</span><span class="p">));</span>
+<span class="w">        </span><span class="p">}</span>
+
+<span class="w">        </span><span class="kd">final</span><span class="w"> </span><span class="n">JniInputBundle</span><span class="w"> </span><span class="n">bundle</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">JniInputBundle</span><span class="p">();</span>
+<span class="w">        </span><span class="kd">final</span><span class="w"> </span><span class="n">List</span><span class="o">&lt;</span><span class="n">ByteBuffer</span><span class="o">&gt;</span><span class="w"> </span><span class="n">buffers</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">writeInputTensors</span><span class="p">(</span><span class="n">bundle</span><span class="p">,</span><span class="w"> </span><span class="n">nativeTensorsMap</span><span class="p">);</span>
+
+<span class="w">        </span><span class="kd">final</span><span class="w"> </span><span class="n">ByteBuffer</span><span class="w"> </span><span class="n">bundleBuffer</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">bundle</span><span class="p">.</span><span class="na">marshall</span><span class="p">();</span>
+<span class="w">        </span><span class="kd">final</span><span class="w"> </span><span class="n">JniOutputBundle</span><span class="w"> </span><span class="n">outputBundle</span><span class="p">;</span>
+<span class="w">        </span><span class="kd">final</span><span class="w"> </span><span class="kt">long</span><span class="w"> </span><span class="n">start</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SystemClock</span><span class="p">.</span><span class="na">elapsedRealtime</span><span class="p">();</span>
+<span class="w">        </span><span class="k">try</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="n">outputBundle</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">nativeForward</span><span class="p">(</span><span class="n">mNativeHandle</span><span class="p">,</span><span class="w"> </span><span class="n">bundleBuffer</span><span class="p">,</span>
+<span class="w">                    </span><span class="n">bundleBuffer</span><span class="p">.</span><span class="na">capacity</span><span class="p">(),</span><span class="w"> </span><span class="n">buffers</span><span class="p">.</span><span class="na">toArray</span><span class="p">(</span><span class="k">new</span><span class="w"> </span><span class="n">ByteBuffer</span><span class="o">[</span><span class="n">buffers</span><span class="p">.</span><span class="na">size</span><span class="p">()</span><span class="o">]</span><span class="p">));</span>
+<span class="w">        </span><span class="p">}</span><span class="w"> </span><span class="k">catch</span><span class="w"> </span><span class="p">(</span><span class="n">IllegalStateException</span><span class="w"> </span><span class="n">e</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="k">throw</span><span class="w"> </span><span class="n">SnpeError</span><span class="p">.</span><span class="na">getInstance</span><span class="p">().</span><span class="na">getSnpeNativeError</span><span class="p">(</span><span class="n">e</span><span class="p">.</span><span class="na">getMessage</span><span class="p">());</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">        </span><span class="kd">final</span><span class="w"> </span><span class="kt">long</span><span class="w"> </span><span class="n">end</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SystemClock</span><span class="p">.</span><span class="na">elapsedRealtime</span><span class="p">();</span>
+
+<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">mIsDebugEnabled</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="n">Log</span><span class="p">.</span><span class="na">d</span><span class="p">(</span><span class="n">SNPE</span><span class="p">.</span><span class="na">LOG_TAG</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Network forward took &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="p">(</span><span class="n">end</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">start</span><span class="p">)</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&quot; ms&quot;</span><span class="p">);</span>
+<span class="w">        </span><span class="p">}</span>
+
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="n">readOutputTensors</span><span class="p">(</span><span class="n">outputBundle</span><span class="p">);</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="nd">@Override</span>
+<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kt">boolean</span><span class="w"> </span><span class="nf">execute</span><span class="p">(</span><span class="n">Map</span><span class="o">&lt;</span><span class="n">String</span><span class="p">,</span><span class="w"> </span><span class="o">?</span><span class="w"> </span><span class="kd">extends</span><span class="w"> </span><span class="n">UserBufferTensor</span><span class="o">&gt;</span><span class="w"> </span><span class="n">inputs</span><span class="p">,</span>
+<span class="w">                           </span><span class="n">Map</span><span class="o">&lt;</span><span class="n">String</span><span class="p">,</span><span class="w"> </span><span class="o">?</span><span class="w"> </span><span class="kd">extends</span><span class="w"> </span><span class="n">UserBufferTensor</span><span class="o">&gt;</span><span class="w"> </span><span class="n">outputs</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">inputs</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="kc">null</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="n">inputs</span><span class="p">.</span><span class="na">isEmpty</span><span class="p">())</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="k">throw</span><span class="w"> </span><span class="n">SnpeError</span><span class="p">.</span><span class="na">getInstance</span><span class="p">().</span><span class="na">getInvalidInputError</span><span class="p">(</span><span class="n">SnpeError</span><span class="p">.</span><span class="na">Error</span><span class="p">.</span><span class="na">INVALID_INPUT_TENSOR_NULL_EMPTY</span><span class="p">);</span>
+<span class="w">        </span><span class="p">}</span>
+
+<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">outputs</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="kc">null</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="n">outputs</span><span class="p">.</span><span class="na">isEmpty</span><span class="p">())</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="k">throw</span><span class="w"> </span><span class="n">SnpeError</span><span class="p">.</span><span class="na">getInstance</span><span class="p">().</span><span class="na">getInvalidInputError</span><span class="p">(</span><span class="n">SnpeError</span><span class="p">.</span><span class="na">Error</span><span class="p">.</span><span class="na">INVALID_OUTPUT_TENSOR_NULL_EMPTY</span><span class="p">);</span>
+<span class="w">        </span><span class="p">}</span>
+
+<span class="w">        </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="n">String</span><span class="w"> </span><span class="n">name</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="n">inputs</span><span class="p">.</span><span class="na">keySet</span><span class="p">())</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="n">assertInputTensor</span><span class="p">(</span><span class="n">name</span><span class="p">,</span><span class="w"> </span><span class="n">inputs</span><span class="p">.</span><span class="na">get</span><span class="p">(</span><span class="n">name</span><span class="p">));</span>
+<span class="w">        </span><span class="p">}</span>
+
+<span class="w">        </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="n">String</span><span class="w"> </span><span class="n">name</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="n">outputs</span><span class="p">.</span><span class="na">keySet</span><span class="p">())</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="n">assertOutputTensor</span><span class="p">(</span><span class="n">name</span><span class="p">,</span><span class="w"> </span><span class="n">outputs</span><span class="p">.</span><span class="na">get</span><span class="p">(</span><span class="n">name</span><span class="p">));</span>
+<span class="w">        </span><span class="p">}</span>
+
+<span class="w">        </span><span class="kd">final</span><span class="w"> </span><span class="n">JniInputBundle</span><span class="w"> </span><span class="n">bundle</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">JniInputBundle</span><span class="p">();</span>
+<span class="w">        </span><span class="n">writeUserBufferTensors</span><span class="p">(</span><span class="n">bundle</span><span class="p">,</span><span class="w"> </span><span class="n">inputs</span><span class="p">);</span>
+<span class="w">        </span><span class="n">writeUserBufferTensors</span><span class="p">(</span><span class="n">bundle</span><span class="p">,</span><span class="w"> </span><span class="n">outputs</span><span class="p">);</span>
+
+<span class="w">        </span><span class="kd">final</span><span class="w"> </span><span class="n">ByteBuffer</span><span class="w"> </span><span class="n">bundleBuffer</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">bundle</span><span class="p">.</span><span class="na">marshall</span><span class="p">();</span>
+
+<span class="w">        </span><span class="kd">final</span><span class="w"> </span><span class="kt">long</span><span class="w"> </span><span class="n">start</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SystemClock</span><span class="p">.</span><span class="na">elapsedRealtime</span><span class="p">();</span>
+<span class="w">        </span><span class="kd">final</span><span class="w"> </span><span class="n">JniOutputBundle</span><span class="w"> </span><span class="n">outputBundle</span><span class="p">;</span>
+<span class="w">        </span><span class="k">try</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="n">outputBundle</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">nativeUserBufferForward</span><span class="p">(</span><span class="n">mNativeHandle</span><span class="p">,</span><span class="w"> </span><span class="n">bundleBuffer</span><span class="p">,</span><span class="w"> </span><span class="n">bundleBuffer</span><span class="p">.</span><span class="na">capacity</span><span class="p">());</span>
+<span class="w">        </span><span class="p">}</span><span class="w"> </span><span class="k">catch</span><span class="w"> </span><span class="p">(</span><span class="n">Exception</span><span class="w"> </span><span class="n">e</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="k">throw</span><span class="w"> </span><span class="n">SnpeError</span><span class="p">.</span><span class="na">getInstance</span><span class="p">().</span><span class="na">getSnpeNativeError</span><span class="p">(</span><span class="n">e</span><span class="p">.</span><span class="na">getMessage</span><span class="p">());</span>
+<span class="w">        </span><span class="p">}</span>
+
+<span class="w">        </span><span class="kd">final</span><span class="w"> </span><span class="kt">long</span><span class="w"> </span><span class="n">end</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SystemClock</span><span class="p">.</span><span class="na">elapsedRealtime</span><span class="p">();</span>
+
+<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">mIsDebugEnabled</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="n">Log</span><span class="p">.</span><span class="na">d</span><span class="p">(</span><span class="n">SNPE</span><span class="p">.</span><span class="na">LOG_TAG</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Network forward took &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="p">(</span><span class="n">end</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">start</span><span class="p">)</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&quot; ms&quot;</span><span class="p">);</span>
+<span class="w">        </span><span class="p">}</span>
+
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="n">readOutputUserBufferTensors</span><span class="p">(</span><span class="n">outputBundle</span><span class="p">,</span><span class="w"> </span><span class="n">outputs</span><span class="p">);</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="nd">@Override</span>
+<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="n">FloatTensor</span><span class="w"> </span><span class="nf">createFloatTensor</span><span class="p">(</span><span class="kd">final</span><span class="w"> </span><span class="kt">int</span><span class="p">...</span><span class="w"> </span><span class="n">shape</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">shape</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="kc">null</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="n">shape</span><span class="p">.</span><span class="na">length</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="k">throw</span><span class="w"> </span><span class="n">SnpeError</span><span class="p">.</span><span class="na">getInstance</span><span class="p">().</span><span class="na">getIllegalError</span><span class="p">(</span><span class="n">SnpeError</span><span class="p">.</span><span class="na">Error</span><span class="p">.</span><span class="na">ILLEGAL_TENSOR_SHAPE_NULL_EMPTY</span><span class="p">);</span>
+<span class="w">        </span><span class="p">}</span>
+
+<span class="w">        </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">dim</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="n">shape</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">dim</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="k">throw</span><span class="w"> </span><span class="n">SnpeError</span><span class="p">.</span><span class="na">getInstance</span><span class="p">().</span><span class="na">getIllegalError</span><span class="p">(</span><span class="n">SnpeError</span><span class="p">.</span><span class="na">Error</span><span class="p">.</span><span class="na">ILLEGAL_SHAPE_DIM</span><span class="p">);</span>
+<span class="w">            </span><span class="p">}</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">NativeFloatTensor</span><span class="p">(</span><span class="n">shape</span><span class="p">);</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="nd">@Override</span>
+<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="n">TF8UserBufferTensor</span><span class="w"> </span><span class="nf">createTF8UserBufferTensor</span><span class="p">(</span><span class="kd">final</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">size</span><span class="p">,</span><span class="w"> </span><span class="kd">final</span><span class="w"> </span><span class="kt">int</span><span class="o">[]</span><span class="w"> </span><span class="n">strides</span><span class="p">,</span>
+<span class="w">                                                         </span><span class="kt">int</span><span class="w"> </span><span class="n">stepExactly0</span><span class="p">,</span><span class="w"> </span><span class="kt">float</span><span class="w"> </span><span class="n">quantizedStepSize</span><span class="p">,</span>
+<span class="w">                                                         </span><span class="n">ByteBuffer</span><span class="w"> </span><span class="n">userBuffer</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">size</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="k">throw</span><span class="w"> </span><span class="n">SnpeError</span><span class="p">.</span><span class="na">getInstance</span><span class="p">().</span><span class="na">getIllegalError</span><span class="p">(</span><span class="n">SnpeError</span><span class="p">.</span><span class="na">Error</span><span class="p">.</span><span class="na">ILLEGAL_BUFFER_SIZE</span><span class="p">);</span>
+<span class="w">        </span><span class="p">}</span>
+
+<span class="w">        </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">stride</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="n">strides</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">stride</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="k">throw</span><span class="w"> </span><span class="n">SnpeError</span><span class="p">.</span><span class="na">getInstance</span><span class="p">().</span><span class="na">getIllegalError</span><span class="p">(</span><span class="n">SnpeError</span><span class="p">.</span><span class="na">Error</span><span class="p">.</span><span class="na">ILLEGAL_STRIDE</span><span class="p">);</span>
+<span class="w">            </span><span class="p">}</span>
+<span class="w">        </span><span class="p">}</span>
+
+<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">stepExactly0</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">TF8UserBufferTensor</span><span class="p">.</span><span class="na">TF8_MIN_VAL</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="n">stepExactly0</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">TF8UserBufferTensor</span><span class="p">.</span><span class="na">TF8_MAX_VAL</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="k">throw</span><span class="w"> </span><span class="n">SnpeError</span><span class="p">.</span><span class="na">getInstance</span><span class="p">().</span><span class="na">getIllegalError</span><span class="p">(</span><span class="n">SnpeError</span><span class="p">.</span><span class="na">Error</span><span class="p">.</span><span class="na">ILLEGAL_STEP_ZERO</span><span class="p">);</span>
+<span class="w">        </span><span class="p">}</span>
+
+<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">quantizedStepSize</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="mf">0.0</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="k">throw</span><span class="w"> </span><span class="n">SnpeError</span><span class="p">.</span><span class="na">getInstance</span><span class="p">().</span><span class="na">getIllegalError</span><span class="p">(</span><span class="n">SnpeError</span><span class="p">.</span><span class="na">Error</span><span class="p">.</span><span class="na">ILLEGAL_STEP_VALUE</span><span class="p">);</span>
+<span class="w">        </span><span class="p">}</span>
+
+<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">userBuffer</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="kc">null</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="k">throw</span><span class="w"> </span><span class="n">SnpeError</span><span class="p">.</span><span class="na">getInstance</span><span class="p">().</span><span class="na">getIllegalError</span><span class="p">(</span><span class="n">SnpeError</span><span class="p">.</span><span class="na">Error</span><span class="p">.</span><span class="na">ILLEGAL_BUFFER_NULL</span><span class="p">);</span>
+<span class="w">        </span><span class="p">}</span>
+
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">NativeTF8UserBufferTensor</span><span class="p">(</span><span class="n">size</span><span class="p">,</span><span class="w"> </span><span class="n">strides</span><span class="p">,</span><span class="w"> </span><span class="n">stepExactly0</span><span class="p">,</span><span class="w"> </span><span class="n">quantizedStepSize</span><span class="p">,</span><span class="w"> </span><span class="n">userBuffer</span><span class="p">);</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="nd">@Override</span>
+<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="n">Map</span><span class="o">&lt;</span><span class="n">String</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="o">[]&gt;</span><span class="w"> </span><span class="nf">getInputTensorsShapes</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">HashMap</span><span class="o">&lt;&gt;</span><span class="p">(</span><span class="n">mInputTensors</span><span class="p">.</span><span class="na">getTensorShapes</span><span class="p">());</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="nd">@Override</span>
+<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="n">Map</span><span class="o">&lt;</span><span class="n">String</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="o">[]&gt;</span><span class="w"> </span><span class="nf">getOutputTensorsShapes</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">HashMap</span><span class="o">&lt;&gt;</span><span class="p">(</span><span class="n">mOutputTensors</span><span class="p">.</span><span class="na">getTensorShapes</span><span class="p">());</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="nd">@Override</span>
+<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="n">Set</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span><span class="w"> </span><span class="nf">getInputTensorsNames</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="n">mInputTensors</span><span class="p">.</span><span class="na">keySet</span><span class="p">();</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="nd">@Override</span>
+<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="n">Set</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span><span class="w"> </span><span class="nf">getOutputTensorsNames</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="n">mOutputTensors</span><span class="p">.</span><span class="na">keySet</span><span class="p">();</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="nd">@Override</span>
+<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="n">TensorAttributes</span><span class="w"> </span><span class="nf">getTensorAttributes</span><span class="p">(</span><span class="n">String</span><span class="w"> </span><span class="n">name</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">mInputTensors</span><span class="p">.</span><span class="na">containsKey</span><span class="p">(</span><span class="n">name</span><span class="p">))</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="k">return</span><span class="w"> </span><span class="n">mInputTensors</span><span class="p">.</span><span class="na">get</span><span class="p">(</span><span class="n">name</span><span class="p">);</span>
+<span class="w">        </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">mOutputTensors</span><span class="p">.</span><span class="na">containsKey</span><span class="p">(</span><span class="n">name</span><span class="p">))</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="k">return</span><span class="w"> </span><span class="n">mOutputTensors</span><span class="p">.</span><span class="na">get</span><span class="p">(</span><span class="n">name</span><span class="p">);</span>
+<span class="w">        </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="k">throw</span><span class="w"> </span><span class="n">SnpeError</span><span class="p">.</span><span class="na">getInstance</span><span class="p">().</span><span class="na">getIllegalError</span><span class="p">(</span><span class="n">SnpeError</span><span class="p">.</span><span class="na">Error</span><span class="p">.</span><span class="na">ILLEGAL_TENSOR_NAME</span><span class="p">,</span><span class="w"> </span><span class="n">name</span><span class="p">);</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="nd">@Override</span>
+<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="nf">getModelVersion</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="n">mModelVersion</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="nd">@Override</span>
+<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="n">Runtime</span><span class="w"> </span><span class="nf">getRuntime</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="n">mTargetRuntime</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="nd">@Override</span>
+<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="n">Set</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span><span class="w"> </span><span class="nf">getOutputLayers</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="n">mOutputLayerNames</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="nd">@Override</span>
+<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">synchronized</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">release</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">mNativeHandle</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="k">throw</span><span class="w"> </span><span class="n">SnpeError</span><span class="p">.</span><span class="na">getInstance</span><span class="p">().</span><span class="na">getIllegalError</span><span class="p">(</span><span class="n">SnpeError</span><span class="p">.</span><span class="na">Error</span><span class="p">.</span><span class="na">ILLEGAL_NETWORK_RELEASE</span><span class="p">);</span>
+<span class="w">        </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="n">doRelease</span><span class="p">();</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="nd">@Override</span>
+<span class="w">    </span><span class="kd">protected</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">finalize</span><span class="p">()</span><span class="w"> </span><span class="kd">throws</span><span class="w"> </span><span class="n">Throwable</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="kd">super</span><span class="p">.</span><span class="na">finalize</span><span class="p">();</span>
+<span class="w">        </span><span class="n">doRelease</span><span class="p">();</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="c1">// Private =====================================================================================</span>
+
+<span class="w">    </span><span class="kd">private</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">doRelease</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">mNativeHandle</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="k">try</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="n">nativeRelease</span><span class="p">(</span><span class="n">mNativeHandle</span><span class="p">);</span>
+<span class="w">            </span><span class="p">}</span><span class="w"> </span><span class="k">catch</span><span class="w"> </span><span class="p">(</span><span class="n">IllegalStateException</span><span class="w"> </span><span class="n">e</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="k">throw</span><span class="w"> </span><span class="n">SnpeError</span><span class="p">.</span><span class="na">getInstance</span><span class="p">().</span><span class="na">getSnpeNativeError</span><span class="p">(</span><span class="n">e</span><span class="p">.</span><span class="na">getMessage</span><span class="p">());</span>
+<span class="w">            </span><span class="p">}</span>
+
+<span class="w">            </span><span class="n">mNativeHandle</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="kd">private</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="n">Set</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span><span class="w"> </span><span class="nf">readOutputLayerNames</span><span class="p">(</span><span class="kd">final</span><span class="w"> </span><span class="n">JniOutputBundle</span><span class="w"> </span><span class="n">modelMetadata</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="kd">final</span><span class="w"> </span><span class="n">Set</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span><span class="w"> </span><span class="n">outputNames</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">HashSet</span><span class="o">&lt;&gt;</span><span class="p">();</span>
+<span class="w">        </span><span class="kd">final</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">layersCount</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">modelMetadata</span><span class="p">.</span><span class="na">readInt</span><span class="p">();</span>
+<span class="w">        </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">layersCount</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="n">outputNames</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="n">modelMetadata</span><span class="p">.</span><span class="na">readString</span><span class="p">());</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="n">outputNames</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="kd">private</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">assertSelectedOutputLayer</span><span class="p">(</span><span class="kd">final</span><span class="w"> </span><span class="n">Set</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span><span class="w"> </span><span class="n">outputLayerNames</span><span class="p">,</span>
+<span class="w">                                                  </span><span class="kd">final</span><span class="w"> </span><span class="n">Set</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span><span class="w"> </span><span class="n">selectedLayerNames</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="n">String</span><span class="w"> </span><span class="n">selectedLayer</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="n">selectedLayerNames</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">outputLayerNames</span><span class="p">.</span><span class="na">contains</span><span class="p">(</span><span class="n">selectedLayer</span><span class="p">))</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="k">throw</span><span class="w"> </span><span class="n">SnpeError</span><span class="p">.</span><span class="na">getInstance</span><span class="p">().</span><span class="na">getIllegalError</span><span class="p">(</span><span class="n">SnpeError</span><span class="p">.</span><span class="na">Error</span><span class="p">.</span><span class="na">ILLEGAL_SELECTED_LAYER</span><span class="p">,</span><span class="w"> </span><span class="n">selectedLayer</span><span class="p">);</span>
+<span class="w">            </span><span class="p">}</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="kd">private</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="n">JniInputBundle</span><span class="w"> </span><span class="nf">createInitBundle</span><span class="p">(</span><span class="kd">final</span><span class="w"> </span><span class="n">Runtime</span><span class="w"> </span><span class="n">runtime</span><span class="p">,</span>
+<span class="w">                                                   </span><span class="kd">final</span><span class="w"> </span><span class="n">Set</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span><span class="w"> </span><span class="n">layerNames</span><span class="p">,</span>
+<span class="w">                                                   </span><span class="kd">final</span><span class="w"> </span><span class="kt">boolean</span><span class="w"> </span><span class="n">isDebugEnabled</span><span class="p">,</span>
+<span class="w">                                                   </span><span class="kd">final</span><span class="w"> </span><span class="n">PerformanceProfile</span><span class="w"> </span><span class="n">performanceProfile</span><span class="p">,</span>
+<span class="w">                                                   </span><span class="kd">final</span><span class="w"> </span><span class="n">ExecutionPriorityHint</span><span class="w"> </span><span class="n">executionPriorityHint</span><span class="p">,</span>
+<span class="w">                                                   </span><span class="kt">boolean</span><span class="w"> </span><span class="n">isCpuFallbackEnabled</span><span class="p">,</span>
+<span class="w">                                                   </span><span class="kt">boolean</span><span class="w"> </span><span class="n">unsignedPD</span><span class="p">,</span>
+<span class="w">                                                   </span><span class="kt">boolean</span><span class="w"> </span><span class="n">useUserSuppliedBuffers</span><span class="p">,</span>
+<span class="w">                                                   </span><span class="kt">boolean</span><span class="w"> </span><span class="n">isInitCacheEnabled</span><span class="p">,</span>
+<span class="w">                                                   </span><span class="kt">boolean</span><span class="w"> </span><span class="n">isDlCacheAvailable</span><span class="p">,</span>
+<span class="w">                                                   </span><span class="kt">boolean</span><span class="w"> </span><span class="n">cpuFxpMode</span><span class="p">,</span>
+<span class="w">                                                   </span><span class="kd">final</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="n">storageDirectory</span><span class="p">,</span>
+<span class="w">                                                   </span><span class="kd">final</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="n">dspCachePath</span><span class="p">,</span>
+<span class="w">                                                   </span><span class="kd">final</span><span class="w"> </span><span class="n">Map</span><span class="o">&lt;</span><span class="n">String</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="o">[]&gt;</span><span class="w"> </span><span class="n">inputDimensions</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="kd">final</span><span class="w"> </span><span class="n">JniInputBundle</span><span class="w"> </span><span class="n">bundle</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">JniInputBundle</span><span class="p">();</span>
+<span class="w">        </span><span class="n">bundle</span><span class="p">.</span><span class="na">writeInt</span><span class="p">(</span><span class="n">runtime</span><span class="p">.</span><span class="na">ordinal</span><span class="p">);</span>
+<span class="w">        </span><span class="n">bundle</span><span class="p">.</span><span class="na">writeInt</span><span class="p">(</span><span class="n">performanceProfile</span><span class="p">.</span><span class="na">ordinal</span><span class="p">);</span>
+<span class="w">        </span><span class="n">bundle</span><span class="p">.</span><span class="na">writeInt</span><span class="p">(</span><span class="n">executionPriorityHint</span><span class="p">.</span><span class="na">ordinal</span><span class="p">);</span>
+<span class="w">        </span><span class="n">bundle</span><span class="p">.</span><span class="na">writeStrings</span><span class="p">(</span><span class="n">layerNames</span><span class="p">);</span>
+<span class="w">        </span><span class="n">bundle</span><span class="p">.</span><span class="na">writeBoolean</span><span class="p">(</span><span class="n">isDebugEnabled</span><span class="p">);</span>
+<span class="w">        </span><span class="n">bundle</span><span class="p">.</span><span class="na">writeBoolean</span><span class="p">(</span><span class="n">isCpuFallbackEnabled</span><span class="p">);</span>
+<span class="w">        </span><span class="n">bundle</span><span class="p">.</span><span class="na">writeBoolean</span><span class="p">(</span><span class="n">unsignedPD</span><span class="p">);</span>
+<span class="w">        </span><span class="n">bundle</span><span class="p">.</span><span class="na">writeBoolean</span><span class="p">(</span><span class="n">useUserSuppliedBuffers</span><span class="p">);</span>
+<span class="w">        </span><span class="n">bundle</span><span class="p">.</span><span class="na">writeBoolean</span><span class="p">(</span><span class="n">isInitCacheEnabled</span><span class="p">);</span>
+<span class="w">        </span><span class="n">bundle</span><span class="p">.</span><span class="na">writeBoolean</span><span class="p">(</span><span class="n">isDlCacheAvailable</span><span class="p">);</span>
+<span class="w">        </span><span class="n">bundle</span><span class="p">.</span><span class="na">writeBoolean</span><span class="p">(</span><span class="n">cpuFxpMode</span><span class="p">);</span>
+<span class="w">        </span><span class="n">bundle</span><span class="p">.</span><span class="na">writeString</span><span class="p">(</span><span class="n">storageDirectory</span><span class="p">);</span>
+<span class="w">        </span><span class="n">bundle</span><span class="p">.</span><span class="na">writeString</span><span class="p">(</span><span class="n">dspCachePath</span><span class="p">);</span>
+<span class="w">        </span><span class="n">bundle</span><span class="p">.</span><span class="na">writeInt</span><span class="p">(</span><span class="n">inputDimensions</span><span class="p">.</span><span class="na">size</span><span class="p">());</span>
+<span class="w">        </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="n">Map</span><span class="p">.</span><span class="na">Entry</span><span class="o">&lt;</span><span class="n">String</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="o">[]&gt;</span><span class="w"> </span><span class="n">pair</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="n">inputDimensions</span><span class="p">.</span><span class="na">entrySet</span><span class="p">())</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="n">bundle</span><span class="p">.</span><span class="na">writeString</span><span class="p">(</span><span class="n">pair</span><span class="p">.</span><span class="na">getKey</span><span class="p">());</span>
+<span class="w">            </span><span class="n">bundle</span><span class="p">.</span><span class="na">writeInts</span><span class="p">(</span><span class="n">pair</span><span class="p">.</span><span class="na">getValue</span><span class="p">());</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="n">bundle</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="kd">private</span><span class="w"> </span><span class="n">Map</span><span class="o">&lt;</span><span class="n">String</span><span class="p">,</span><span class="w"> </span><span class="n">FloatTensor</span><span class="o">&gt;</span><span class="w"> </span><span class="nf">readOutputTensors</span><span class="p">(</span><span class="kd">final</span><span class="w"> </span><span class="n">JniOutputBundle</span><span class="w"> </span><span class="n">outputBundle</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="kd">final</span><span class="w"> </span><span class="n">Map</span><span class="o">&lt;</span><span class="n">String</span><span class="p">,</span><span class="w"> </span><span class="n">FloatTensor</span><span class="o">&gt;</span><span class="w"> </span><span class="n">outputsMap</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">HashMap</span><span class="o">&lt;&gt;</span><span class="p">();</span>
+<span class="w">        </span><span class="kd">final</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">outputCount</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">outputBundle</span><span class="p">.</span><span class="na">readInt</span><span class="p">();</span>
+<span class="w">        </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">outputCount</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="n">Pair</span><span class="o">&lt;</span><span class="n">String</span><span class="p">,</span><span class="w"> </span><span class="n">FloatTensor</span><span class="o">&gt;</span><span class="w"> </span><span class="n">tuple</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">readTensor</span><span class="p">(</span><span class="n">outputBundle</span><span class="p">);</span>
+<span class="w">            </span><span class="n">outputsMap</span><span class="p">.</span><span class="na">put</span><span class="p">(</span><span class="n">tuple</span><span class="p">.</span><span class="na">first</span><span class="p">,</span><span class="w"> </span><span class="n">tuple</span><span class="p">.</span><span class="na">second</span><span class="p">);</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="n">outputsMap</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="kd">private</span><span class="w"> </span><span class="n">Pair</span><span class="o">&lt;</span><span class="n">String</span><span class="p">,</span><span class="w"> </span><span class="n">FloatTensor</span><span class="o">&gt;</span><span class="w"> </span><span class="nf">readTensor</span><span class="p">(</span><span class="kd">final</span><span class="w"> </span><span class="n">JniOutputBundle</span><span class="w"> </span><span class="n">outputBundle</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="kd">final</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="n">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">outputBundle</span><span class="p">.</span><span class="na">readString</span><span class="p">();</span>
+<span class="w">        </span><span class="kd">final</span><span class="w"> </span><span class="kt">int</span><span class="o">[]</span><span class="w"> </span><span class="n">shape</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">outputBundle</span><span class="p">.</span><span class="na">readIntArray</span><span class="p">();</span>
+<span class="w">        </span><span class="kd">final</span><span class="w"> </span><span class="kt">float</span><span class="o">[]</span><span class="w"> </span><span class="n">data</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">outputBundle</span><span class="p">.</span><span class="na">readFloatArray</span><span class="p">();</span>
+<span class="w">        </span><span class="kd">final</span><span class="w"> </span><span class="n">NativeFloatTensor</span><span class="w"> </span><span class="n">tensor</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">NativeFloatTensor</span><span class="p">(</span><span class="n">shape</span><span class="p">);</span>
+<span class="w">        </span><span class="n">tensor</span><span class="p">.</span><span class="na">write</span><span class="p">(</span><span class="n">data</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="n">data</span><span class="p">.</span><span class="na">length</span><span class="p">);</span>
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="n">Pair</span><span class="p">.</span><span class="o">&lt;</span><span class="n">String</span><span class="p">,</span><span class="w"> </span><span class="n">FloatTensor</span><span class="o">&gt;</span><span class="n">create</span><span class="p">(</span><span class="n">name</span><span class="p">,</span><span class="w"> </span><span class="n">tensor</span><span class="p">);</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="kd">private</span><span class="w"> </span><span class="kt">boolean</span><span class="w"> </span><span class="nf">readOutputUserBufferTensors</span><span class="p">(</span><span class="kd">final</span><span class="w"> </span><span class="n">JniOutputBundle</span><span class="w"> </span><span class="n">outputBundle</span><span class="p">,</span>
+<span class="w">                                                </span><span class="kd">final</span><span class="w"> </span><span class="n">Map</span><span class="o">&lt;</span><span class="n">String</span><span class="p">,</span><span class="w"> </span><span class="o">?</span><span class="w"> </span><span class="kd">extends</span><span class="w"> </span><span class="n">UserBufferTensor</span><span class="o">&gt;</span><span class="w"> </span><span class="n">outputMap</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="kd">final</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">outputCount</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">outputBundle</span><span class="p">.</span><span class="na">readInt</span><span class="p">();</span>
+<span class="w">        </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">outputCount</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="kd">final</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="n">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">outputBundle</span><span class="p">.</span><span class="na">readString</span><span class="p">();</span>
+<span class="w">            </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">outputMap</span><span class="p">.</span><span class="na">containsKey</span><span class="p">(</span><span class="n">name</span><span class="p">))</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="kc">false</span><span class="p">;</span>
+<span class="w">            </span><span class="p">}</span>
+
+<span class="w">            </span><span class="n">readUserBufferTensor</span><span class="p">(</span><span class="n">outputBundle</span><span class="p">,</span><span class="w"> </span><span class="n">outputMap</span><span class="p">.</span><span class="na">get</span><span class="p">(</span><span class="n">name</span><span class="p">));</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="kc">true</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="kd">private</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">readUserBufferTensor</span><span class="p">(</span><span class="kd">final</span><span class="w"> </span><span class="n">JniOutputBundle</span><span class="w"> </span><span class="n">outputBundle</span><span class="p">,</span>
+<span class="w">                                      </span><span class="kd">final</span><span class="w"> </span><span class="n">UserBufferTensor</span><span class="w"> </span><span class="n">outputTensor</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">outputTensor</span><span class="p">.</span><span class="na">getEncoding</span><span class="p">()</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">UserBufferTensor</span><span class="p">.</span><span class="na">Encoding</span><span class="p">.</span><span class="na">TF8</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="p">(</span><span class="n">outputTensor</span><span class="w"> </span><span class="k">instanceof</span><span class="w"> </span><span class="n">NativeTF8UserBufferTensor</span><span class="p">))</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="k">throw</span><span class="w"> </span><span class="n">SnpeError</span><span class="p">.</span><span class="na">getInstance</span><span class="p">().</span><span class="na">getIllegalError</span><span class="p">(</span><span class="n">SnpeError</span><span class="p">.</span><span class="na">Error</span><span class="p">.</span><span class="na">ILLEGAL_USER_BUFFER_TENSOR</span><span class="p">);</span>
+<span class="w">            </span><span class="p">}</span>
+
+<span class="w">            </span><span class="n">NativeTF8UserBufferTensor</span><span class="w"> </span><span class="n">tf8Tensor</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">NativeTF8UserBufferTensor</span><span class="p">.</span><span class="na">class</span><span class="p">.</span><span class="na">cast</span><span class="p">(</span><span class="n">outputTensor</span><span class="p">);</span>
+<span class="w">            </span><span class="n">tf8Tensor</span><span class="p">.</span><span class="na">setStepExactly0</span><span class="p">(</span><span class="n">outputBundle</span><span class="p">.</span><span class="na">readInt</span><span class="p">());</span>
+<span class="w">            </span><span class="n">tf8Tensor</span><span class="p">.</span><span class="na">setQuantizedStepSize</span><span class="p">(</span><span class="n">outputBundle</span><span class="p">.</span><span class="na">readFloat</span><span class="p">());</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="kd">private</span><span class="w"> </span><span class="n">List</span><span class="o">&lt;</span><span class="n">ByteBuffer</span><span class="o">&gt;</span><span class="w"> </span><span class="nf">writeInputTensors</span><span class="p">(</span><span class="kd">final</span><span class="w"> </span><span class="n">JniInputBundle</span><span class="w"> </span><span class="n">bundle</span><span class="p">,</span>
+<span class="w">                                               </span><span class="kd">final</span><span class="w"> </span><span class="n">Map</span><span class="o">&lt;</span><span class="n">String</span><span class="p">,</span><span class="w"> </span><span class="n">NativeFloatTensor</span><span class="o">&gt;</span><span class="w"> </span><span class="n">tensorMap</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="kd">final</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">inputsCount</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">tensorMap</span><span class="p">.</span><span class="na">size</span><span class="p">();</span>
+<span class="w">        </span><span class="n">bundle</span><span class="p">.</span><span class="na">writeInt</span><span class="p">(</span><span class="n">inputsCount</span><span class="p">);</span>
+<span class="w">        </span><span class="kd">final</span><span class="w"> </span><span class="n">List</span><span class="o">&lt;</span><span class="n">ByteBuffer</span><span class="o">&gt;</span><span class="w"> </span><span class="n">buffers</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">LinkedList</span><span class="o">&lt;&gt;</span><span class="p">();</span>
+<span class="w">        </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="n">String</span><span class="w"> </span><span class="n">name</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="n">tensorMap</span><span class="p">.</span><span class="na">keySet</span><span class="p">())</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="kd">final</span><span class="w"> </span><span class="n">ByteBuffer</span><span class="w"> </span><span class="n">buffer</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">writeTensor</span><span class="p">(</span><span class="n">bundle</span><span class="p">,</span><span class="w"> </span><span class="n">name</span><span class="p">,</span><span class="w"> </span><span class="n">tensorMap</span><span class="p">.</span><span class="na">get</span><span class="p">(</span><span class="n">name</span><span class="p">));</span>
+<span class="w">            </span><span class="n">buffers</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="n">buffer</span><span class="p">);</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="n">buffers</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="kd">private</span><span class="w"> </span><span class="n">ByteBuffer</span><span class="w"> </span><span class="nf">writeTensor</span><span class="p">(</span><span class="kd">final</span><span class="w"> </span><span class="n">JniInputBundle</span><span class="w"> </span><span class="n">bundle</span><span class="p">,</span><span class="w"> </span><span class="kd">final</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="n">name</span><span class="p">,</span>
+<span class="w">                                   </span><span class="kd">final</span><span class="w"> </span><span class="n">NativeFloatTensor</span><span class="w"> </span><span class="n">tensor</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">bundle</span><span class="p">.</span><span class="na">writeLong</span><span class="p">(</span><span class="n">tensor</span><span class="p">.</span><span class="na">getNativeHandle</span><span class="p">());</span>
+<span class="w">        </span><span class="n">bundle</span><span class="p">.</span><span class="na">writeString</span><span class="p">(</span><span class="n">name</span><span class="p">);</span>
+
+<span class="w">        </span><span class="kd">final</span><span class="w"> </span><span class="n">ByteBuffer</span><span class="w"> </span><span class="n">buffer</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">tensor</span><span class="p">.</span><span class="na">asByteBuffer</span><span class="p">();</span>
+<span class="w">        </span><span class="n">bundle</span><span class="p">.</span><span class="na">writeInt</span><span class="p">(</span><span class="n">buffer</span><span class="p">.</span><span class="na">capacity</span><span class="p">());</span>
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="n">buffer</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="kd">private</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">writeUserBufferTensors</span><span class="p">(</span><span class="kd">final</span><span class="w"> </span><span class="n">JniInputBundle</span><span class="w"> </span><span class="n">bundle</span><span class="p">,</span>
+<span class="w">                                        </span><span class="kd">final</span><span class="w"> </span><span class="n">Map</span><span class="o">&lt;</span><span class="n">String</span><span class="p">,</span><span class="w"> </span><span class="o">?</span><span class="w"> </span><span class="kd">extends</span><span class="w"> </span><span class="n">UserBufferTensor</span><span class="o">&gt;</span><span class="w"> </span><span class="n">tensorMap</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="kd">final</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">inputsCount</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">tensorMap</span><span class="p">.</span><span class="na">size</span><span class="p">();</span>
+<span class="w">        </span><span class="n">bundle</span><span class="p">.</span><span class="na">writeInt</span><span class="p">(</span><span class="n">inputsCount</span><span class="p">);</span>
+<span class="w">        </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="n">String</span><span class="w"> </span><span class="n">name</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="n">tensorMap</span><span class="p">.</span><span class="na">keySet</span><span class="p">())</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="n">bundle</span><span class="p">.</span><span class="na">writeLong</span><span class="p">(</span><span class="n">NativeUserBufferHandle</span><span class="p">.</span><span class="na">class</span><span class="p">.</span><span class="na">cast</span><span class="p">(</span><span class="n">tensorMap</span><span class="p">.</span><span class="na">get</span><span class="p">(</span><span class="n">name</span><span class="p">)).</span><span class="na">getNativeHandle</span><span class="p">());</span>
+<span class="w">            </span><span class="n">bundle</span><span class="p">.</span><span class="na">writeString</span><span class="p">(</span><span class="n">name</span><span class="p">);</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="kd">private</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">assertInputTensor</span><span class="p">(</span><span class="kd">final</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="n">name</span><span class="p">,</span><span class="w"> </span><span class="kd">final</span><span class="w"> </span><span class="n">Tensor</span><span class="w"> </span><span class="n">tensor</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">tensor</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="kc">null</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="k">throw</span><span class="w"> </span><span class="n">SnpeError</span><span class="p">.</span><span class="na">getInstance</span><span class="p">().</span><span class="na">getInvalidInputError</span><span class="p">(</span><span class="n">SnpeError</span><span class="p">.</span><span class="na">Error</span><span class="p">.</span><span class="na">INVALID_TENSOR_NULL</span><span class="p">,</span><span class="w"> </span><span class="n">name</span><span class="p">);</span>
+<span class="w">        </span><span class="p">}</span>
+
+<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="p">(</span><span class="n">tensor</span><span class="w"> </span><span class="k">instanceof</span><span class="w"> </span><span class="n">NativeFloatTensor</span><span class="p">))</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="k">throw</span><span class="w"> </span><span class="n">SnpeError</span><span class="p">.</span><span class="na">getInstance</span><span class="p">().</span><span class="na">getInvalidInputError</span><span class="p">(</span><span class="n">SnpeError</span><span class="p">.</span><span class="na">Error</span><span class="p">.</span><span class="na">INVALID_TENSOR_INSTANCE</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;&quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">NativeFloatTensor</span><span class="p">.</span><span class="na">class</span><span class="p">);</span>
+<span class="w">        </span><span class="p">}</span>
+
+<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">mInputTensors</span><span class="p">.</span><span class="na">containsKey</span><span class="p">(</span><span class="n">name</span><span class="p">))</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="k">throw</span><span class="w"> </span><span class="n">SnpeError</span><span class="p">.</span><span class="na">getInstance</span><span class="p">().</span><span class="na">getInvalidInputError</span><span class="p">(</span><span class="n">SnpeError</span><span class="p">.</span><span class="na">Error</span><span class="p">.</span><span class="na">INVALID_INPUT_NETWORK_TENSORS</span><span class="p">,</span><span class="w"> </span><span class="n">name</span><span class="p">);</span>
+<span class="w">        </span><span class="p">}</span>
+
+<span class="w">        </span><span class="kd">final</span><span class="w"> </span><span class="kt">int</span><span class="o">[]</span><span class="w"> </span><span class="n">expectedShape</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">mInputTensors</span><span class="p">.</span><span class="na">get</span><span class="p">(</span><span class="n">name</span><span class="p">).</span><span class="na">getDims</span><span class="p">();</span>
+<span class="w">        </span><span class="n">TensorUtil</span><span class="p">.</span><span class="na">assertShape</span><span class="p">(</span><span class="n">name</span><span class="p">,</span><span class="w"> </span><span class="n">expectedShape</span><span class="p">,</span><span class="w"> </span><span class="n">tensor</span><span class="p">.</span><span class="na">getShape</span><span class="p">());</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="kd">private</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">assertInputTensor</span><span class="p">(</span><span class="kd">final</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="n">name</span><span class="p">,</span><span class="w"> </span><span class="kd">final</span><span class="w"> </span><span class="n">UserBufferTensor</span><span class="w"> </span><span class="n">tensor</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">tensor</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="kc">null</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="k">throw</span><span class="w"> </span><span class="n">SnpeError</span><span class="p">.</span><span class="na">getInstance</span><span class="p">().</span><span class="na">getInvalidInputError</span><span class="p">(</span><span class="n">SnpeError</span><span class="p">.</span><span class="na">Error</span><span class="p">.</span><span class="na">INVALID_TENSOR_NULL</span><span class="p">,</span><span class="w"> </span><span class="n">name</span><span class="p">);</span>
+<span class="w">        </span><span class="p">}</span>
+
+<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="p">(</span><span class="n">tensor</span><span class="w"> </span><span class="k">instanceof</span><span class="w"> </span><span class="n">NativeUserBufferHandle</span><span class="p">))</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="k">throw</span><span class="w"> </span><span class="n">SnpeError</span><span class="p">.</span><span class="na">getInstance</span><span class="p">().</span><span class="na">getInvalidInputError</span><span class="p">(</span><span class="n">SnpeError</span><span class="p">.</span><span class="na">Error</span><span class="p">.</span><span class="na">INVALID_TENSOR_INSTANCE</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;&quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">NativeUserBufferHandle</span><span class="p">.</span><span class="na">class</span><span class="p">);</span>
+<span class="w">        </span><span class="p">}</span>
+
+<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">mInputTensors</span><span class="p">.</span><span class="na">containsKey</span><span class="p">(</span><span class="n">name</span><span class="p">))</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="k">throw</span><span class="w"> </span><span class="n">SnpeError</span><span class="p">.</span><span class="na">getInstance</span><span class="p">().</span><span class="na">getInvalidInputError</span><span class="p">(</span><span class="n">SnpeError</span><span class="p">.</span><span class="na">Error</span><span class="p">.</span><span class="na">INVALID_INPUT_NETWORK_TENSORS</span><span class="p">,</span><span class="w"> </span><span class="n">name</span><span class="p">);</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="kd">private</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">assertOutputTensor</span><span class="p">(</span><span class="kd">final</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="n">name</span><span class="p">,</span><span class="w"> </span><span class="kd">final</span><span class="w"> </span><span class="n">UserBufferTensor</span><span class="w"> </span><span class="n">tensor</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">tensor</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="kc">null</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="k">throw</span><span class="w"> </span><span class="n">SnpeError</span><span class="p">.</span><span class="na">getInstance</span><span class="p">().</span><span class="na">getInvalidInputError</span><span class="p">(</span><span class="n">SnpeError</span><span class="p">.</span><span class="na">Error</span><span class="p">.</span><span class="na">INVALID_TENSOR_NULL</span><span class="p">,</span><span class="w"> </span><span class="n">name</span><span class="p">);</span>
+<span class="w">        </span><span class="p">}</span>
+
+<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="p">(</span><span class="n">tensor</span><span class="w"> </span><span class="k">instanceof</span><span class="w"> </span><span class="n">NativeUserBufferHandle</span><span class="p">))</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="k">throw</span><span class="w"> </span><span class="n">SnpeError</span><span class="p">.</span><span class="na">getInstance</span><span class="p">().</span><span class="na">getInvalidInputError</span><span class="p">(</span><span class="n">SnpeError</span><span class="p">.</span><span class="na">Error</span><span class="p">.</span><span class="na">INVALID_OUTPUT_INSTANCE</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;&quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">NativeUserBufferHandle</span><span class="p">.</span><span class="na">class</span><span class="p">);</span>
+<span class="w">        </span><span class="p">}</span>
+
+<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">mOutputTensors</span><span class="p">.</span><span class="na">containsKey</span><span class="p">(</span><span class="n">name</span><span class="p">))</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="k">throw</span><span class="w"> </span><span class="n">SnpeError</span><span class="p">.</span><span class="na">getInstance</span><span class="p">().</span><span class="na">getInvalidInputError</span><span class="p">(</span><span class="n">SnpeError</span><span class="p">.</span><span class="na">Error</span><span class="p">.</span><span class="na">INVALID_OUTPUT_NETWORK_TENSORS</span><span class="p">,</span><span class="w"> </span><span class="n">name</span><span class="p">);</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="c1">// Native ======================================================================================</span>
+
+<span class="w">    </span><span class="kd">private</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kd">native</span><span class="w"> </span><span class="kt">boolean</span><span class="w"> </span><span class="nf">nativeIsRuntimeAvailable</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">ordinal</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">runtimeCheckOption</span><span class="p">);</span>
+
+<span class="w">    </span><span class="kd">private</span><span class="w"> </span><span class="kd">native</span><span class="w"> </span><span class="kt">long</span><span class="w"> </span><span class="nf">nativeInitFromBuffer</span><span class="p">(</span><span class="kt">long</span><span class="w"> </span><span class="n">nativeModelStreamHandle</span><span class="p">,</span>
+<span class="w">                                             </span><span class="n">ByteBuffer</span><span class="w"> </span><span class="n">bundle</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">bundleSize</span><span class="p">);</span>
+
+<span class="w">    </span><span class="kd">private</span><span class="w"> </span><span class="kd">native</span><span class="w"> </span><span class="kt">long</span><span class="w"> </span><span class="nf">nativeInitFromFile</span><span class="p">(</span><span class="n">String</span><span class="w"> </span><span class="n">absolutePath</span><span class="p">,</span><span class="w"> </span><span class="n">ByteBuffer</span><span class="w"> </span><span class="n">bundleBuffer</span><span class="p">,</span>
+<span class="w">                                           </span><span class="kt">int</span><span class="w"> </span><span class="n">capacity</span><span class="p">);</span>
+
+<span class="w">    </span><span class="kd">private</span><span class="w"> </span><span class="kd">native</span><span class="w"> </span><span class="n">JniOutputBundle</span><span class="w"> </span><span class="nf">nativeGetModelMetadata</span><span class="p">(</span><span class="kt">long</span><span class="w"> </span><span class="n">nativeHandle</span><span class="p">);</span>
+
+<span class="w">    </span><span class="kd">private</span><span class="w"> </span><span class="kd">native</span><span class="w"> </span><span class="n">JniOutputBundle</span><span class="w"> </span><span class="nf">nativeForward</span><span class="p">(</span><span class="kt">long</span><span class="w"> </span><span class="n">nativeHandle</span><span class="p">,</span><span class="w"> </span><span class="n">ByteBuffer</span><span class="w"> </span><span class="n">bundle</span><span class="p">,</span>
+<span class="w">                                                 </span><span class="kt">int</span><span class="w"> </span><span class="n">bundleSize</span><span class="p">,</span><span class="w"> </span><span class="n">ByteBuffer</span><span class="o">[]</span><span class="w"> </span><span class="n">byteBuffers</span><span class="p">);</span>
+
+<span class="w">    </span><span class="kd">private</span><span class="w"> </span><span class="kd">native</span><span class="w"> </span><span class="n">JniOutputBundle</span><span class="w"> </span><span class="nf">nativeUserBufferForward</span><span class="p">(</span><span class="kt">long</span><span class="w"> </span><span class="n">nativeHandle</span><span class="p">,</span><span class="w"> </span><span class="n">ByteBuffer</span><span class="w"> </span><span class="n">bundle</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">bundleSize</span><span class="p">);</span>
+
+<span class="w">    </span><span class="kd">private</span><span class="w"> </span><span class="kd">native</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">nativeRelease</span><span class="p">(</span><span class="kt">long</span><span class="w"> </span><span class="n">nativeHandle</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2020-2023, Qualcomm Technologies, Inc..
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

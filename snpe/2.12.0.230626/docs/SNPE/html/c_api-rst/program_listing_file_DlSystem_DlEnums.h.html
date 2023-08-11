@@ -1,0 +1,489 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Program Listing for File DlEnums.h &mdash; Snapdragon Neural Processing Engine SDK</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/custom_css.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/collapsible-lists/css/tree_view.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+        <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Qualcomm® Neural Processing SDK
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                v2.12.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../general/revision_history.html">Revision History</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/revision_history_windows.html">Revision History - Windows</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/overview.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/setup.html">Setup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/usergroup1.html">Network Models</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/usergroup5.html">Input Data and Preprocessing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/usergroup6.html">Tutorials and Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/usergroup10.html">Benchmarking and Accuracy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/tools.html">Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/usergroup11.html">Debug Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/api.html">API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/limitations.html">Limitations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/appx_ref.html">References</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Qualcomm® Neural Processing SDK</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Program Listing for File DlEnums.h</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="program-listing-for-file-dlenums-h">
+<span id="program-listing-file-dlsystem-dlenums-h"></span><h1>Program Listing for File DlEnums.h<a class="headerlink" href="#program-listing-for-file-dlenums-h" title="Permalink to this headline">¶</a></h1>
+<p>↰ <a class="reference internal" href="file_DlSystem_DlEnums.h.html#file-dlsystem-dlenums-h"><span class="std std-ref">Return to documentation for file</span></a> (<code class="docutils literal notranslate"><span class="pre">DlSystem/DlEnums.h</span></code>)</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="c1">//==============================================================================</span>
+<span class="c1">//</span>
+<span class="c1">//  Copyright (c) 2022-2023 Qualcomm Technologies, Inc.</span>
+<span class="c1">//  All Rights Reserved.</span>
+<span class="c1">//  Confidential and Proprietary - Qualcomm Technologies, Inc.</span>
+<span class="c1">//</span>
+<span class="c1">//==============================================================================</span>
+
+<span class="cm">/**</span>
+<span class="cm"> *  @file</span>
+<span class="cm"> */</span>
+
+<span class="cp">#ifndef _DL_ENUMS_H_</span>
+<span class="cp">#define _DL_ENUMS_H_</span>
+
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;DlSystem/SnpeApiExportDefine.h&quot;</span>
+
+<span class="cp">#ifdef __cplusplus</span>
+<span class="k">extern</span><span class="w"> </span><span class="s">&quot;C&quot;</span><span class="w"> </span><span class="p">{</span>
+<span class="cp">#endif</span>
+
+
+<span class="cm">/**</span>
+<span class="cm"> * Enumeration of supported target runtimes.</span>
+<span class="cm"> */</span>
+<span class="k">typedef</span><span class="w"> </span><span class="k">enum</span>
+<span class="p">{</span>
+<span class="w">  </span><span class="c1">/// Run the processing on Snapdragon CPU.</span>
+<span class="w">  </span><span class="c1">/// Data: float 32bit</span>
+<span class="w">  </span><span class="c1">/// Math: float 32bit</span>
+<span class="w">  </span><span class="n">SNPE_RUNTIME_CPU_FLOAT32</span><span class="w">  </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+
+<span class="w">  </span><span class="c1">/// Run the processing on the Adreno GPU.</span>
+<span class="w">  </span><span class="c1">/// Data: float 16bit</span>
+<span class="w">  </span><span class="c1">/// Math: float 32bit</span>
+<span class="w">  </span><span class="n">SNPE_RUNTIME_GPU_FLOAT32_16_HYBRID</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+
+<span class="w">  </span><span class="c1">/// Run the processing on the Hexagon DSP.</span>
+<span class="w">  </span><span class="c1">/// Data: 8bit fixed point Tensorflow style format</span>
+<span class="w">  </span><span class="c1">/// Math: 8bit fixed point Tensorflow style format</span>
+<span class="w">  </span><span class="n">SNPE_RUNTIME_DSP_FIXED8_TF</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span>
+
+<span class="w">  </span><span class="c1">/// Run the processing on the Adreno GPU.</span>
+<span class="w">  </span><span class="c1">/// Data: float 16bit</span>
+<span class="w">  </span><span class="c1">/// Math: float 16bit</span>
+<span class="w">  </span><span class="n">SNPE_RUNTIME_GPU_FLOAT16</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span>
+
+<span class="w">  </span><span class="c1">/// Run the processing on Snapdragon AIX+HVX.</span>
+<span class="w">  </span><span class="c1">/// Data: 8bit fixed point Tensorflow style format</span>
+<span class="w">  </span><span class="c1">/// Math: 8bit fixed point Tensorflow style format</span>
+<span class="w">  </span><span class="n">SNPE_RUNTIME_AIP_FIXED8_TF</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span>
+<span class="w">  </span><span class="n">SNPE_RUNTIME_AIP_FIXED_TF</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SNPE_RUNTIME_AIP_FIXED8_TF</span><span class="p">,</span>
+
+<span class="w">  </span><span class="c1">/// Default legacy enum to retain backward compatibility.</span>
+<span class="w">  </span><span class="c1">/// CPU = CPU_FLOAT32</span>
+<span class="w">  </span><span class="n">SNPE_RUNTIME_CPU</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SNPE_RUNTIME_CPU_FLOAT32</span><span class="p">,</span>
+
+<span class="w">  </span><span class="c1">/// Default legacy enum to retain backward compatibility.</span>
+<span class="w">  </span><span class="c1">/// GPU = GPU_FLOAT32_16_HYBRID</span>
+<span class="w">  </span><span class="n">SNPE_RUNTIME_GPU</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SNPE_RUNTIME_GPU_FLOAT32_16_HYBRID</span><span class="p">,</span>
+
+<span class="w">  </span><span class="c1">/// Default legacy enum to retain backward compatibility.</span>
+<span class="w">  </span><span class="c1">/// DSP = DSP_FIXED8_TF</span>
+<span class="w">  </span><span class="n">SNPE_RUNTIME_DSP</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SNPE_RUNTIME_DSP_FIXED8_TF</span><span class="p">,</span>
+
+<span class="w">  </span><span class="c1">/// Special value indicating the property is unset.</span>
+<span class="w">  </span><span class="n">SNPE_RUNTIME_UNSET</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">-1</span>
+<span class="p">}</span><span class="w"> </span><span class="n">Snpe_Runtime_t</span><span class="p">;</span>
+
+<span class="cm">/**</span>
+<span class="cm"> * Enumeration of runtime available check options.</span>
+<span class="cm"> */</span>
+<span class="k">typedef</span><span class="w"> </span><span class="k">enum</span>
+<span class="p">{</span>
+<span class="w">  </span><span class="c1">/// Perform standard runtime available check</span>
+<span class="w">  </span><span class="n">SNPE_RUNTIME_CHECK_OPTION_DEFAULT</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span>
+<span class="w">  </span><span class="c1">/// Perform standard runtime available check</span>
+<span class="w">  </span><span class="n">SNPE_RUNTIME_CHECK_OPTION_NORMAL_CHECK</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">  </span><span class="c1">/// Perform basic runtime available check, may be runtime specific</span>
+<span class="w">  </span><span class="n">SNPE_RUNTIME_CHECK_OPTION_BASIC_CHECK</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+<span class="w">  </span><span class="c1">/// Perform unsignedPD runtime available check</span>
+<span class="w">  </span><span class="n">SNPE_RUNTIME_CHECK_OPTION_UNSIGNEDPD_CHECK</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span>
+<span class="p">}</span><span class="w"> </span><span class="n">Snpe_RuntimeCheckOption_t</span><span class="p">;</span>
+
+<span class="cm">/**</span>
+<span class="cm"> * Enumeration of various performance profiles that can be requested.</span>
+<span class="cm"> */</span>
+<span class="k">typedef</span><span class="w"> </span><span class="k">enum</span>
+<span class="p">{</span>
+<span class="w">  </span><span class="c1">/// Run in a standard mode.</span>
+<span class="w">  </span><span class="c1">/// This mode will be deprecated in the future and replaced with BALANCED.</span>
+<span class="w">  </span><span class="n">SNPE_PERFORMANCE_PROFILE_DEFAULT</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">  </span><span class="c1">/// Run in a balanced mode.</span>
+<span class="w">  </span><span class="n">SNPE_PERFORMANCE_PROFILE_BALANCED</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+
+<span class="w">  </span><span class="c1">/// Run in high performance mode</span>
+<span class="w">  </span><span class="n">SNPE_PERFORMANCE_PROFILE_HIGH_PERFORMANCE</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+
+<span class="w">  </span><span class="c1">/// Run in a power sensitive mode, at the expense of performance.</span>
+<span class="w">  </span><span class="n">SNPE_PERFORMANCE_PROFILE_POWER_SAVER</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span>
+
+<span class="w">  </span><span class="c1">/// Use system settings.  SNPE makes no calls to any performance related APIs.</span>
+<span class="w">  </span><span class="n">SNPE_PERFORMANCE_PROFILE_SYSTEM_SETTINGS</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span>
+
+<span class="w">  </span><span class="c1">/// Run in sustained high performance mode</span>
+<span class="w">  </span><span class="n">SNPE_PERFORMANCE_PROFILE_SUSTAINED_HIGH_PERFORMANCE</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">4</span><span class="p">,</span>
+
+<span class="w">  </span><span class="c1">/// Run in burst mode</span>
+<span class="w">  </span><span class="n">SNPE_PERFORMANCE_PROFILE_BURST</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span>
+
+<span class="w">  </span><span class="c1">/// Run in lower clock than POWER_SAVER, at the expense of performance.</span>
+<span class="w">  </span><span class="n">SNPE_PERFORMANCE_PROFILE_LOW_POWER_SAVER</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">6</span><span class="p">,</span>
+
+<span class="w">  </span><span class="c1">/// Run in higher clock and provides better performance than POWER_SAVER.</span>
+<span class="w">  </span><span class="n">SNPE_PERFORMANCE_PROFILE_HIGH_POWER_SAVER</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">7</span><span class="p">,</span>
+
+<span class="w">  </span><span class="c1">/// Run in lower balanced mode</span>
+<span class="w">  </span><span class="n">SNPE_PERFORMANCE_PROFILE_LOW_BALANCED</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">8</span><span class="p">,</span>
+
+<span class="w">  </span><span class="c1">/// Run in lowest clock at the expense of performance</span>
+<span class="w">  </span><span class="n">SNPE_PERFORMANCE_PROFILE_EXTREME_POWER_SAVER</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">9</span><span class="p">,</span>
+
+<span class="p">}</span><span class="w"> </span><span class="n">Snpe_PerformanceProfile_t</span><span class="p">;</span>
+
+<span class="cm">/**</span>
+<span class="cm"> * Enumeration of various profilngLevels that can be requested.</span>
+<span class="cm"> */</span>
+<span class="k">typedef</span><span class="w"> </span><span class="k">enum</span>
+<span class="p">{</span>
+<span class="w">  </span><span class="c1">/// No profiling.</span>
+<span class="w">  </span><span class="c1">/// Collects no runtime stats in the DiagLog</span>
+<span class="w">  </span><span class="n">SNPE_PROFILING_LEVEL_OFF</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+
+<span class="w">  </span><span class="c1">/// Basic profiling</span>
+<span class="w">  </span><span class="c1">/// Collects some runtime stats in the DiagLog</span>
+<span class="w">  </span><span class="n">SNPE_PROFILING_LEVEL_BASIC</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+
+<span class="w">  </span><span class="c1">/// Detailed profiling</span>
+<span class="w">  </span><span class="c1">/// Collects more runtime stats in the DiagLog, including per-layer statistics</span>
+<span class="w">  </span><span class="c1">/// Performance may be impacted</span>
+<span class="w">  </span><span class="n">SNPE_PROFILING_LEVEL_DETAILED</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span>
+
+<span class="w">  </span><span class="c1">/// Moderate profiling</span>
+<span class="w">  </span><span class="c1">/// Collects more runtime stats in the DiagLog, no per-layer statistics</span>
+<span class="w">  </span><span class="n">SNPE_PROFILING_LEVEL_MODERATE</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span>
+
+<span class="w">  </span><span class="c1">/// Linting profiling</span>
+<span class="w">  </span><span class="c1">/// HTP exclusive profiling level that collects in-depth performance metrics</span>
+<span class="w">  </span><span class="c1">/// for each op in the graph including main thread execution time and time spent</span>
+<span class="w">  </span><span class="c1">/// on parallel background ops</span>
+<span class="w">  </span><span class="n">SNPE_PROFILING_LEVEL_LINTING</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">4</span>
+
+<span class="p">}</span><span class="w"> </span><span class="n">Snpe_ProfilingLevel_t</span><span class="p">;</span>
+
+<span class="cm">/**</span>
+<span class="cm"> * Enumeration of various execution priority hints.</span>
+<span class="cm"> */</span>
+<span class="k">typedef</span><span class="w"> </span><span class="k">enum</span>
+<span class="p">{</span>
+<span class="w">  </span><span class="c1">/// Normal priority</span>
+<span class="w">  </span><span class="n">SNPE_EXECUTION_PRIORITY_NORMAL</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+
+<span class="w">  </span><span class="c1">/// Higher than normal priority</span>
+<span class="w">  </span><span class="n">SNPE_EXECUTION_PRIORITY_HIGH</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+
+<span class="w">  </span><span class="c1">/// Lower priority</span>
+<span class="w">  </span><span class="n">SNPE_EXECUTION_PRIORITY_LOW</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span>
+
+<span class="w">  </span><span class="c1">/// Between Normal and High priority</span>
+<span class="w">  </span><span class="n">SNPE_EXECUTION_PRIORITY_NORMAL_HIGH</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">3</span>
+
+<span class="p">}</span><span class="w"> </span><span class="n">Snpe_ExecutionPriorityHint_t</span><span class="p">;</span>
+
+<span class="cm">/**</span>
+<span class="cm"> * Enumeration that lists the supported image encoding formats.</span>
+<span class="cm"> */</span>
+<span class="k">typedef</span><span class="w"> </span><span class="k">enum</span>
+<span class="p">{</span>
+<span class="w">  </span><span class="c1">/// For unknown image type. Also used as a default value for ImageEncoding_t.</span>
+<span class="w">  </span><span class="n">SNPE_IMAGE_ENCODING_UNKNOWN</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+
+<span class="w">  </span><span class="c1">/// The RGB format consists of 3 bytes per pixel: one byte for</span>
+<span class="w">  </span><span class="c1">/// Red, one for Green, and one for Blue. The byte ordering is</span>
+<span class="w">  </span><span class="c1">/// endian independent and is always in RGB byte order.</span>
+<span class="w">  </span><span class="n">SNPE_IMAGE_ENCODING_RGB</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+
+<span class="w">  </span><span class="c1">/// The ARGB32 format consists of 4 bytes per pixel: one byte for</span>
+<span class="w">  </span><span class="c1">/// Red, one for Green, one for Blue, and one for the alpha channel.</span>
+<span class="w">  </span><span class="c1">/// The alpha channel is ignored. The byte ordering depends on the</span>
+<span class="w">  </span><span class="c1">/// underlying CPU. For little endian CPUs, the byte order is BGRA.</span>
+<span class="w">  </span><span class="c1">/// For big endian CPUs, the byte order is ARGB.</span>
+<span class="w">  </span><span class="n">SNPE_IMAGE_ENCODING_ARGB32</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span>
+
+<span class="w">  </span><span class="c1">/// The RGBA format consists of 4 bytes per pixel: one byte for</span>
+<span class="w">  </span><span class="c1">/// Red, one for Green, one for Blue, and one for the alpha channel.</span>
+<span class="w">  </span><span class="c1">/// The alpha channel is ignored. The byte ordering is endian independent</span>
+<span class="w">  </span><span class="c1">/// and is always in RGBA byte order.</span>
+<span class="w">  </span><span class="n">SNPE_IMAGE_ENCODING_RGBA</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span>
+
+<span class="w">  </span><span class="c1">/// The GRAYSCALE format is for 8-bit grayscale.</span>
+<span class="w">  </span><span class="n">SNPE_IMAGE_ENCODING_GRAYSCALE</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">4</span><span class="p">,</span>
+
+<span class="w">  </span><span class="c1">/// NV21 is the Android version of YUV. The Chrominance is down</span>
+<span class="w">  </span><span class="c1">/// sampled and has a subsampling ratio of 4:2:0. Note that this</span>
+<span class="w">  </span><span class="c1">/// image format has 3 channels, but the U and V channels</span>
+<span class="w">  </span><span class="c1">/// are subsampled. For every four Y pixels there is one U and one V pixel. @newpage</span>
+<span class="w">  </span><span class="n">SNPE_IMAGE_ENCODING_NV21</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span>
+
+<span class="w">  </span><span class="c1">/// The BGR format consists of 3 bytes per pixel: one byte for</span>
+<span class="w">  </span><span class="c1">/// Red, one for Green and one for Blue. The byte ordering is</span>
+<span class="w">  </span><span class="c1">/// endian independent and is always BGR byte order.</span>
+<span class="w">  </span><span class="n">SNPE_IMAGE_ENCODING_BGR</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">6</span>
+<span class="p">}</span><span class="w"> </span><span class="n">Snpe_ImageEncoding_t</span><span class="p">;</span>
+
+<span class="cm">/**</span>
+<span class="cm"> * Enumeration that lists the supported LogLevels that can be set by users.</span>
+<span class="cm"> */</span>
+<span class="k">typedef</span><span class="w"> </span><span class="k">enum</span>
+<span class="p">{</span>
+<span class="w">  </span><span class="c1">/// Enumeration variable to be used by user to set logging level to FATAL.</span>
+<span class="w">  </span><span class="n">SNPE_LOG_LEVEL_FATAL</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+
+<span class="w">  </span><span class="c1">/// Enumeration variable to be used by user to set logging level to ERROR.</span>
+<span class="w">  </span><span class="n">SNPE_LOG_LEVEL_ERROR</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+
+<span class="w">  </span><span class="c1">/// Enumeration variable to be used by user to set logging level to WARN.</span>
+<span class="w">  </span><span class="n">SNPE_LOG_LEVEL_WARN</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span>
+
+<span class="w">  </span><span class="c1">/// Enumeration variable to be used by user to set logging level to INFO.</span>
+<span class="w">  </span><span class="n">SNPE_LOG_LEVEL_INFO</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span>
+
+<span class="w">  </span><span class="c1">/// Enumeration variable to be used by user to set logging level to VERBOSE.</span>
+<span class="w">  </span><span class="n">SNPE_LOG_LEVEL_VERBOSE</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">4</span>
+<span class="p">}</span><span class="w"> </span><span class="n">Snpe_LogLevel_t</span><span class="p">;</span>
+
+<span class="cm">/**</span>
+<span class="cm"> * Enumeration that list the supported data types for buffers</span>
+<span class="cm"> */</span>
+<span class="k">typedef</span><span class="w"> </span><span class="k">enum</span>
+<span class="p">{</span>
+<span class="w">  </span><span class="c1">/// Unspecified</span>
+<span class="w">  </span><span class="n">SNPE_IO_BUFFER_DATATYPE_UNSPECIFIED</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+
+<span class="w">  </span><span class="c1">/// 32-bit floating point</span>
+<span class="w">  </span><span class="n">SNPE_IO_BUFFER_DATATYPE_FLOATING_POINT_32</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+
+<span class="w">  </span><span class="c1">/// 16-bit floating point</span>
+<span class="w">  </span><span class="n">SNPE_IO_BUFFER_DATATYPE_FLOATING_POINT_16</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span>
+
+<span class="w">  </span><span class="c1">/// 8-bit fixed point</span>
+<span class="w">  </span><span class="n">SNPE_IO_BUFFER_DATATYPE_FIXED_POINT_8</span><span class="w"> </span><span class="o">=</span><span class="w">  </span><span class="mi">3</span><span class="p">,</span>
+
+<span class="w">  </span><span class="c1">/// 16-bit fixed point</span>
+<span class="w">  </span><span class="n">SNPE_IO_BUFFER_DATATYPE_FIXED_POINT_16</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">4</span>
+<span class="p">}</span><span class="w"> </span><span class="n">Snpe_IOBufferDataType_t</span><span class="p">;</span>
+
+
+<span class="cp">#ifdef __cplusplus</span>
+<span class="p">}</span><span class="w">  </span><span class="c1">// extern &quot;C&quot;</span>
+<span class="cp">#endif</span>
+
+<span class="cp">#endif </span><span class="c1">// _DL_ENUMS_H_</span>
+</pre></div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2020-2023, Qualcomm Technologies, Inc..
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

@@ -1,0 +1,3242 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Full API &mdash; Snapdragon Neural Processing Engine SDK</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/custom_css.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/collapsible-lists/css/tree_view.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+        <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Qualcomm® Neural Processing SDK
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                v2.12.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../general/revision_history.html">Revision History</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/revision_history_windows.html">Revision History - Windows</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/overview.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/setup.html">Setup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/usergroup1.html">Network Models</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/usergroup5.html">Input Data and Preprocessing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/usergroup6.html">Tutorials and Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/usergroup10.html">Benchmarking and Accuracy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/tools.html">Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/usergroup11.html">Debug Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/api.html">API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/limitations.html">Limitations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/appx_ref.html">References</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Qualcomm® Neural Processing SDK</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Full API</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="full-api">
+<h1>Full API<a class="headerlink" href="#full-api" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="classes-and-structs">
+<h2>Classes and Structs<a class="headerlink" href="#classes-and-structs" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="structSnpeUdo__ImpInfo__t.html">Struct SnpeUdo_ImpInfo_t</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="structSnpeUdo__ImpInfo__t.html#struct-documentation">Struct Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="structSnpeUdo__LibraryInfo__t.html">Struct SnpeUdo_LibraryInfo_t</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="structSnpeUdo__LibraryInfo__t.html#struct-documentation">Struct Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="structSnpeUdo__LibVersion__t.html">Struct SnpeUdo_LibVersion_t</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="structSnpeUdo__LibVersion__t.html#struct-documentation">Struct Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="structSnpeUdo__OpCoreInfo__t.html">Struct SnpeUdo_OpCoreInfo_t</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="structSnpeUdo__OpCoreInfo__t.html#struct-documentation">Struct Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="structSnpeUdo__OpDefinition__t.html">Struct SnpeUdo_OpDefinition_t</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="structSnpeUdo__OpDefinition__t.html#struct-documentation">Struct Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="structSnpeUdo__OperationInfo__t.html">Struct SnpeUdo_OperationInfo_t</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="structSnpeUdo__OperationInfo__t.html#struct-documentation">Struct Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="structSnpeUdo__Param__t.html">Struct SnpeUdo_Param_t</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="structSnpeUdo__Param__t.html#struct-documentation">Struct Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="structSnpeUdo__PerCoreDatatype__t.html">Struct SnpeUdo_PerCoreDatatype_t</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="structSnpeUdo__PerCoreDatatype__t.html#struct-documentation">Struct Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="structSnpeUdo__QuantizeParams__t.html">Struct SnpeUdo_QuantizeParams_t</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="structSnpeUdo__QuantizeParams__t.html#struct-documentation">Struct Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="structSnpeUdo__RegInfo__t.html">Struct SnpeUdo_RegInfo_t</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="structSnpeUdo__RegInfo__t.html#struct-documentation">Struct Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="structSnpeUdo__ScalarParam__t.html">Struct SnpeUdo_ScalarParam_t</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="structSnpeUdo__ScalarParam__t.html#struct-documentation">Struct Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="structSnpeUdo__TensorInfo__t.html">Struct SnpeUdo_TensorInfo_t</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="structSnpeUdo__TensorInfo__t.html#struct-documentation">Struct Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="structSnpeUdo__TensorParam__t.html">Struct SnpeUdo_TensorParam_t</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="structSnpeUdo__TensorParam__t.html#struct-documentation">Struct Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="structSnpeUdo__TFQuantize__t.html">Struct SnpeUdo_TFQuantize_t</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="structSnpeUdo__TFQuantize__t.html#struct-documentation">Struct Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="structSnpeUdo__Version__t.html">Struct SnpeUdo_Version_t</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="structSnpeUdo__Version__t.html#struct-documentation">Struct Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="structUdo__PkgVersion__t.html">Struct Udo_PkgVersion_t</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="structUdo__PkgVersion__t.html#struct-documentation">Struct Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="enums">
+<h2>Enums<a class="headerlink" href="#enums" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="enum_DlError_8h_1aa40d44ade537087ac80f867eb4e7d50f.html">Enum Snpe_ErrorCode_t</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="enum_DlError_8h_1aa40d44ade537087ac80f867eb4e7d50f.html#enum-documentation">Enum Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="enum_DlEnums_8h_1a5cdef49ab6a3d845d5da0089bda28fce.html">Enum Snpe_ExecutionPriorityHint_t</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="enum_DlEnums_8h_1a5cdef49ab6a3d845d5da0089bda28fce.html#enum-documentation">Enum Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="enum_DlEnums_8h_1a7be6c70ddf7eb36043a75789554da047.html">Enum Snpe_ImageEncoding_t</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="enum_DlEnums_8h_1a7be6c70ddf7eb36043a75789554da047.html#enum-documentation">Enum Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="enum_DlEnums_8h_1acf0d8cb125f583245b27d62ae299f0a9.html">Enum Snpe_IOBufferDataType_t</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="enum_DlEnums_8h_1acf0d8cb125f583245b27d62ae299f0a9.html#enum-documentation">Enum Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="enum_DlEnums_8h_1a4f988c3d3afbaf6e886d9d853e9ea651.html">Enum Snpe_LogLevel_t</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="enum_DlEnums_8h_1a4f988c3d3afbaf6e886d9d853e9ea651.html#enum-documentation">Enum Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="enum_DlEnums_8h_1a2bbf863c52b6010323663938721ed29a.html">Enum Snpe_PerformanceProfile_t</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="enum_DlEnums_8h_1a2bbf863c52b6010323663938721ed29a.html#enum-documentation">Enum Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="enum_PlatformConfig_8h_1ae334d2f4b000086a48b381368fadd576.html">Enum Snpe_PlatformConfig_PlatformType_t</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="enum_PlatformConfig_8h_1ae334d2f4b000086a48b381368fadd576.html#enum-documentation">Enum Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="enum_DlEnums_8h_1a56dcaf62bd867a86649e4cab49a4aadd.html">Enum Snpe_ProfilingLevel_t</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="enum_DlEnums_8h_1a56dcaf62bd867a86649e4cab49a4aadd.html#enum-documentation">Enum Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="enum_DlEnums_8h_1a851ce6c63b2bd5515681a906330f7d01.html">Enum Snpe_Runtime_t</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="enum_DlEnums_8h_1a851ce6c63b2bd5515681a906330f7d01.html#enum-documentation">Enum Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="enum_DlEnums_8h_1acdec3885743492063797091205a08274.html">Enum Snpe_RuntimeCheckOption_t</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="enum_DlEnums_8h_1acdec3885743492063797091205a08274.html#enum-documentation">Enum Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="enum_IUserBuffer_8h_1a14deba0524ffaede522cfeb820fb4c74.html">Enum Snpe_UserBufferEncoding_ElementType_t</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="enum_IUserBuffer_8h_1a14deba0524ffaede522cfeb820fb4c74.html#enum-documentation">Enum Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="enum_IUserBuffer_8h_1a7cc7a3b17366f31e43994d87f54581ad.html">Enum Snpe_UserBufferSource_SourceType_t</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="enum_IUserBuffer_8h_1a7cc7a3b17366f31e43994d87f54581ad.html#enum-documentation">Enum Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="enum_group__c__plus__plus__apis_1ga9ee718ab1d7e3422532434c22af9ab6f.html">Enum SnpeUdo_CoreType_t</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="enum_group__c__plus__plus__apis_1ga9ee718ab1d7e3422532434c22af9ab6f.html#enum-documentation">Enum Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="enum_group__c__plus__plus__apis_1ga629ab0e5dcda1a3f5d878e6a0aa33fe5.html">Enum SnpeUdo_DataType_t</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="enum_group__c__plus__plus__apis_1ga629ab0e5dcda1a3f5d878e6a0aa33fe5.html#enum-documentation">Enum Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="enum_group__c__plus__plus__apis_1ga1f02bf39ff236da33ba951188e94b2ea.html">Enum SnpeUdo_ErrorType_t</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="enum_group__c__plus__plus__apis_1ga1f02bf39ff236da33ba951188e94b2ea.html#enum-documentation">Enum Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="enum_group__c__plus__plus__apis_1gaafb3f03ea2c30e0d13b6bdc1198e8c08.html">Enum SnpeUdo_ParamType_t</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="enum_group__c__plus__plus__apis_1gaafb3f03ea2c30e0d13b6bdc1198e8c08.html#enum-documentation">Enum Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="enum_group__c__plus__plus__apis_1gab2c4271bafb2a63b9df8785387b7e583.html">Enum SnpeUdo_QuantizationType_t</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="enum_group__c__plus__plus__apis_1gab2c4271bafb2a63b9df8785387b7e583.html#enum-documentation">Enum Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="enum_group__c__plus__plus__apis_1ga00d2bc98fcace38b177f41157b19180d.html">Enum SnpeUdo_TensorLayout_t</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="enum_group__c__plus__plus__apis_1ga00d2bc98fcace38b177f41157b19180d.html#enum-documentation">Enum Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="unions">
+<h2>Unions<a class="headerlink" href="#unions" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="unionSnpeUdo__Value__t.html">Union SnpeUdo_Value_t</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="unionSnpeUdo__Value__t.html#union-documentation">Union Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="functions">
+<h2>Functions<a class="headerlink" href="#functions" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_DlContainer_8h_1abbb9d0f44b089d0beaf5cc6f94bce9e9.html">Function Snpe_DlContainer_Delete</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_DlContainer_8h_1abbb9d0f44b089d0beaf5cc6f94bce9e9.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_DlContainer_8h_1aea59719dbbeb7af69a975c5e48848dc0.html">Function Snpe_DlContainer_GetCatalog</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_DlContainer_8h_1aea59719dbbeb7af69a975c5e48848dc0.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_DlContainer_8h_1abb3ffd5648d6e45f2e34d4813ce56f6e.html">Function Snpe_DlContainer_GetRecord</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_DlContainer_8h_1abb3ffd5648d6e45f2e34d4813ce56f6e.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_DlContainer_8h_1af699cab20fd3b211835310054cd6bfd9.html">Function Snpe_DlContainer_Open</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_DlContainer_8h_1af699cab20fd3b211835310054cd6bfd9.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_DlContainer_8h_1a446c4715a613d5314a6c3938034836d1.html">Function Snpe_DlContainer_OpenBuffer</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_DlContainer_8h_1a446c4715a613d5314a6c3938034836d1.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_DlContainer_8h_1aff3d07f88a9bbb701d7e26d01dcc2c99.html">Function Snpe_DlContainer_Save</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_DlContainer_8h_1aff3d07f88a9bbb701d7e26d01dcc2c99.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_DlContainer_8h_1a089bc59081349f0454ce62f52cc2bb11.html">Function Snpe_DlcRecord_Create</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_DlContainer_8h_1a089bc59081349f0454ce62f52cc2bb11.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_DlContainer_8h_1a9cf5e0bdd596d4cedb946707d574861b.html">Function Snpe_DlcRecord_CreateName</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_DlContainer_8h_1a9cf5e0bdd596d4cedb946707d574861b.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_DlContainer_8h_1ae735d72f2a97abc6e12b63950dc76b3a.html">Function Snpe_DlcRecord_Data</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_DlContainer_8h_1ae735d72f2a97abc6e12b63950dc76b3a.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_DlContainer_8h_1a2fd77b3435f8f4cc4a91661f229facd8.html">Function Snpe_DlcRecord_Delete</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_DlContainer_8h_1a2fd77b3435f8f4cc4a91661f229facd8.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_DlContainer_8h_1a9b47a3bbd937b946da6671df6370b421.html">Function Snpe_DlcRecord_Name</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_DlContainer_8h_1a9b47a3bbd937b946da6671df6370b421.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_DlContainer_8h_1a740d56f2559a13e99d86e169311d6b77.html">Function Snpe_DlcRecord_Size</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_DlContainer_8h_1a740d56f2559a13e99d86e169311d6b77.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_DlVersion_8h_1aa8f0ccec0911f5ee4891f9419b9af4a0.html">Function Snpe_DlVersion_Create</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_DlVersion_8h_1aa8f0ccec0911f5ee4891f9419b9af4a0.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_DlVersion_8h_1a64864ce5d7ffbad971a67cf268ffe2ad.html">Function Snpe_DlVersion_Delete</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_DlVersion_8h_1a64864ce5d7ffbad971a67cf268ffe2ad.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_DlVersion_8h_1a050c917d44b9b6dfc7b8d6507d51160b.html">Function Snpe_DlVersion_FromString</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_DlVersion_8h_1a050c917d44b9b6dfc7b8d6507d51160b.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_DlVersion_8h_1a7adf15d360bb10695ec78f2223416cd2.html">Function Snpe_DlVersion_GetBuild</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_DlVersion_8h_1a7adf15d360bb10695ec78f2223416cd2.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_DlVersion_8h_1abae2d551b0bfc8a230352df737e5a553.html">Function Snpe_DlVersion_GetMajor</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_DlVersion_8h_1abae2d551b0bfc8a230352df737e5a553.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_DlVersion_8h_1afb7d608befa5b3dcfeb95015871f76a5.html">Function Snpe_DlVersion_GetMinor</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_DlVersion_8h_1afb7d608befa5b3dcfeb95015871f76a5.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_DlVersion_8h_1a055768efa26f7221067bb4f15a0957d0.html">Function Snpe_DlVersion_GetTeeny</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_DlVersion_8h_1a055768efa26f7221067bb4f15a0957d0.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_DlVersion_8h_1af2223b5c3e02c12ea98db0ad96ab0c06.html">Function Snpe_DlVersion_ToString</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_DlVersion_8h_1af2223b5c3e02c12ea98db0ad96ab0c06.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_DlError_8h_1aefd7a1c3d80b65454556293634f08e18.html">Function Snpe_ErrorCode_clearLastErrorCode</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_DlError_8h_1aefd7a1c3d80b65454556293634f08e18.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_DlError_8h_1a1c3b47970cf8dec817358b7d26f7b8f5.html">Function Snpe_ErrorCode_enumToUInt32</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_DlError_8h_1a1c3b47970cf8dec817358b7d26f7b8f5.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_DlError_8h_1af420e258c61362ea433a4b0c7d8720b6.html">Function Snpe_ErrorCode_getLastErrorCode</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_DlError_8h_1af420e258c61362ea433a4b0c7d8720b6.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_DlError_8h_1a4169203a204e288356f0712d2226905f.html">Function Snpe_ErrorCode_GetLastErrorString</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_DlError_8h_1a4169203a204e288356f0712d2226905f.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_DlError_8h_1a350f3d9f30d31c4a75cda9d4a4485e88.html">Function Snpe_ErrorCode_getLastInfoString</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_DlError_8h_1a350f3d9f30d31c4a75cda9d4a4485e88.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_IBufferAttributes_8h_1a59aab0c7376eca02d444e50108b04c48.html">Function Snpe_IBufferAttributes_Delete</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_IBufferAttributes_8h_1a59aab0c7376eca02d444e50108b04c48.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_IBufferAttributes_8h_1a653e167ee7b1f3ccc4fb500fcadecb2a.html">Function Snpe_IBufferAttributes_GetAlignments</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_IBufferAttributes_8h_1a653e167ee7b1f3ccc4fb500fcadecb2a.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_IBufferAttributes_8h_1a10a32cfbdcdef3ff35ee0edde9304e57.html">Function Snpe_IBufferAttributes_GetDims</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_IBufferAttributes_8h_1a10a32cfbdcdef3ff35ee0edde9304e57.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_IBufferAttributes_8h_1aefe0c4fd994f16203792895e1aa3ee9f.html">Function Snpe_IBufferAttributes_GetElementSize</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_IBufferAttributes_8h_1aefe0c4fd994f16203792895e1aa3ee9f.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_IBufferAttributes_8h_1a3cbe3f00de5601afb5cb22a430271476.html">Function Snpe_IBufferAttributes_GetEncoding_Ref</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_IBufferAttributes_8h_1a3cbe3f00de5601afb5cb22a430271476.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_IBufferAttributes_8h_1a6b30f1826e950e8ac00bc9cd055400a8.html">Function Snpe_IBufferAttributes_GetEncodingType</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_IBufferAttributes_8h_1a6b30f1826e950e8ac00bc9cd055400a8.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_IDiagLog_8h_1a497e1492fb235cddec05f4a1a9ab6ff4.html">Function Snpe_IDiagLog_GetOptions</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_IDiagLog_8h_1a497e1492fb235cddec05f4a1a9ab6ff4.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_IDiagLog_8h_1ac237f7b49816703456e2c05aa25c0c5d.html">Function Snpe_IDiagLog_SetDiagLogMask</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_IDiagLog_8h_1ac237f7b49816703456e2c05aa25c0c5d.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_IDiagLog_8h_1afd9f5666b280614ed9065b0f0f758754.html">Function Snpe_IDiagLog_SetOptions</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_IDiagLog_8h_1afd9f5666b280614ed9065b0f0f758754.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_IDiagLog_8h_1aafe3284334d25524183bcae77e27136e.html">Function Snpe_IDiagLog_Start</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_IDiagLog_8h_1aafe3284334d25524183bcae77e27136e.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_IDiagLog_8h_1affbce2c0c1a2db0bb59b79f79c0c61b8.html">Function Snpe_IDiagLog_Stop</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_IDiagLog_8h_1affbce2c0c1a2db0bb59b79f79c0c61b8.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_IOBufferDataTypeMap_8h_1a9d66db6851eda144eac2d8c571caee38.html">Function Snpe_IOBufferDataTypeMap_Add</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_IOBufferDataTypeMap_8h_1a9d66db6851eda144eac2d8c571caee38.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_IOBufferDataTypeMap_8h_1afe8b4bce8bd8ef923fd65e471f0f27a0.html">Function Snpe_IOBufferDataTypeMap_Clear</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_IOBufferDataTypeMap_8h_1afe8b4bce8bd8ef923fd65e471f0f27a0.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_IOBufferDataTypeMap_8h_1a4e50f6e507efd66113bc42a4b5a38d85.html">Function Snpe_IOBufferDataTypeMap_Create</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_IOBufferDataTypeMap_8h_1a4e50f6e507efd66113bc42a4b5a38d85.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_IOBufferDataTypeMap_8h_1abb962596f0530c3fdb61e049c2c21e74.html">Function Snpe_IOBufferDataTypeMap_Delete</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_IOBufferDataTypeMap_8h_1abb962596f0530c3fdb61e049c2c21e74.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_IOBufferDataTypeMap_8h_1a5d09f53ce774a9938f0b6fe2bd335e14.html">Function Snpe_IOBufferDataTypeMap_Empty</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_IOBufferDataTypeMap_8h_1a5d09f53ce774a9938f0b6fe2bd335e14.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_IOBufferDataTypeMap_8h_1ad239bf8eea13966e477d49d2d352f82f.html">Function Snpe_IOBufferDataTypeMap_Find</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_IOBufferDataTypeMap_8h_1ad239bf8eea13966e477d49d2d352f82f.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_IOBufferDataTypeMap_8h_1a0b1d5f9a6079e660964796ddaeebea09.html">Function Snpe_IOBufferDataTypeMap_GetBufferDataType</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_IOBufferDataTypeMap_8h_1a0b1d5f9a6079e660964796ddaeebea09.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_IOBufferDataTypeMap_8h_1aa491ff4abb0906e5934f9e1eb3e54a3d.html">Function Snpe_IOBufferDataTypeMap_GetBufferDataTypeOfFirst</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_IOBufferDataTypeMap_8h_1aa491ff4abb0906e5934f9e1eb3e54a3d.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_IOBufferDataTypeMap_8h_1a85dc53466b84b34bd56a24add4877155.html">Function Snpe_IOBufferDataTypeMap_Remove</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_IOBufferDataTypeMap_8h_1a85dc53466b84b34bd56a24add4877155.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_IOBufferDataTypeMap_8h_1ae76262f0b5b836091fb1dd641c6c037b.html">Function Snpe_IOBufferDataTypeMap_Size</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_IOBufferDataTypeMap_8h_1ae76262f0b5b836091fb1dd641c6c037b.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_ITensor_8h_1a6c766f59295cec033270a6b1a36ed08b.html">Function Snpe_ITensor_Delete</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_ITensor_8h_1a6c766f59295cec033270a6b1a36ed08b.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_ITensor_8h_1a53ad7f03471be7ba5fe7a4d64dc0cc1d.html">Function Snpe_ITensor_GetData</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_ITensor_8h_1a53ad7f03471be7ba5fe7a4d64dc0cc1d.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_ITensor_8h_1a7a4ae294d2c7679ccd4ea07795324375.html">Function Snpe_ITensor_GetDelta</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_ITensor_8h_1a7a4ae294d2c7679ccd4ea07795324375.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_ITensor_8h_1af2ff8721a2e0fc80eb06aae76d22de8d.html">Function Snpe_ITensor_GetOffset</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_ITensor_8h_1af2ff8721a2e0fc80eb06aae76d22de8d.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_ITensor_8h_1abc5ce93952d58245d3cd09c777de327d.html">Function Snpe_ITensor_GetShape</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_ITensor_8h_1abc5ce93952d58245d3cd09c777de327d.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_ITensor_8h_1aedf44777b964d1c6e50a64d26220280f.html">Function Snpe_ITensor_GetSize</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_ITensor_8h_1aedf44777b964d1c6e50a64d26220280f.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_ITensor_8h_1af89910d0daa9297eaeb7d0bad57f0b5e.html">Function Snpe_ITensor_IsQuantized</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_ITensor_8h_1af89910d0daa9297eaeb7d0bad57f0b5e.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_IUserBuffer_8h_1a5aa61e847ad4f9cc11ab0ca02c4d7c8d.html">Function Snpe_IUserBuffer_Delete</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_IUserBuffer_8h_1a5aa61e847ad4f9cc11ab0ca02c4d7c8d.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_IUserBuffer_8h_1a939544e36fb8b25e3561c525cd51477d.html">Function Snpe_IUserBuffer_GetEncoding_Ref</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_IUserBuffer_8h_1a939544e36fb8b25e3561c525cd51477d.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_IUserBuffer_8h_1a13274d994592d49e56f1efd02ddc94d6.html">Function Snpe_IUserBuffer_GetOutputSize</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_IUserBuffer_8h_1a13274d994592d49e56f1efd02ddc94d6.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_IUserBuffer_8h_1ade2e020c53c474f88cea6fd834536a04.html">Function Snpe_IUserBuffer_GetSize</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_IUserBuffer_8h_1ade2e020c53c474f88cea6fd834536a04.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_IUserBuffer_8h_1a48f302e79c0f1dc7fe47eb60f8fa8a25.html">Function Snpe_IUserBuffer_GetStrides_Ref</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_IUserBuffer_8h_1a48f302e79c0f1dc7fe47eb60f8fa8a25.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_IUserBuffer_8h_1a1dc95a48fddfb5d99769019c8237ef6a.html">Function Snpe_IUserBuffer_SetBufferAddress</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_IUserBuffer_8h_1a1dc95a48fddfb5d99769019c8237ef6a.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_Options_8h_1a06ed9da4651948b9814c33bdc20151ff.html">Function Snpe_Options_Create</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_Options_8h_1a06ed9da4651948b9814c33bdc20151ff.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_Options_8h_1ab04b98555bc4f1edc0757552aef114b7.html">Function Snpe_Options_Delete</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_Options_8h_1ab04b98555bc4f1edc0757552aef114b7.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_Options_8h_1a32f5ea53f3382f86d5c781f6e2b00c1b.html">Function Snpe_Options_GetDiagLogMask</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_Options_8h_1a32f5ea53f3382f86d5c781f6e2b00c1b.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_Options_8h_1aa9654bdd7380025c9edb44d953ce178e.html">Function Snpe_Options_GetLogFileDirectory</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_Options_8h_1aa9654bdd7380025c9edb44d953ce178e.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_Options_8h_1a99a11bac664d03426c3d1e5317fc15fb.html">Function Snpe_Options_GetLogFileName</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_Options_8h_1a99a11bac664d03426c3d1e5317fc15fb.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_Options_8h_1a4887e91af17eb5dd9eb22e95816a0156.html">Function Snpe_Options_GetLogFileReplace</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_Options_8h_1a4887e91af17eb5dd9eb22e95816a0156.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_Options_8h_1a329b62405159b77458dc0b2f9450683e.html">Function Snpe_Options_GetLogFileRotateCount</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_Options_8h_1a329b62405159b77458dc0b2f9450683e.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_Options_8h_1a7ef64760645073543491c79b224c1b13.html">Function Snpe_Options_SetDiagLogMask</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_Options_8h_1a7ef64760645073543491c79b224c1b13.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_Options_8h_1aaa532014078ca5700376392332818045.html">Function Snpe_Options_SetLogFileDirectory</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_Options_8h_1aaa532014078ca5700376392332818045.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_Options_8h_1afd95f4032c91d92d144ee773f7649b28.html">Function Snpe_Options_SetLogFileName</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_Options_8h_1afd95f4032c91d92d144ee773f7649b28.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_Options_8h_1ac865124a75cc81aceeac05f3af24f01a.html">Function Snpe_Options_SetLogFileReplace</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_Options_8h_1ac865124a75cc81aceeac05f3af24f01a.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_Options_8h_1aead3d763c6de6d20ae85cbe108514fe2.html">Function Snpe_Options_SetLogFileRotateCount</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_Options_8h_1aead3d763c6de6d20ae85cbe108514fe2.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_PlatformConfig_8h_1aa4a009280dba6e76b49d4ed5c1e28043.html">Function Snpe_PlatformConfig_Create</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_PlatformConfig_8h_1aa4a009280dba6e76b49d4ed5c1e28043.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_PlatformConfig_8h_1a5d9423cbe238ab3a4cd455a1650fdea1.html">Function Snpe_PlatformConfig_CreateCopy</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_PlatformConfig_8h_1a5d9423cbe238ab3a4cd455a1650fdea1.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_PlatformConfig_8h_1a8a9875561fe10200b5e2234cb18c0563.html">Function Snpe_PlatformConfig_Delete</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_PlatformConfig_8h_1a8a9875561fe10200b5e2234cb18c0563.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_PlatformConfig_8h_1ab15d1ceb703e55de69bef40a18d9ceab.html">Function Snpe_PlatformConfig_GetIsUserGLBuffer</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_PlatformConfig_8h_1ab15d1ceb703e55de69bef40a18d9ceab.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_PlatformConfig_8h_1a30bdf4626d0aff6eaab2e410a77485cf.html">Function Snpe_PlatformConfig_GetPlatformOptions</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_PlatformConfig_8h_1a30bdf4626d0aff6eaab2e410a77485cf.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_PlatformConfig_8h_1a09035dd66efabaf81133d4de395e53d6.html">Function Snpe_PlatformConfig_GetPlatformType</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_PlatformConfig_8h_1a09035dd66efabaf81133d4de395e53d6.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_PlatformConfig_8h_1a5c9c7f16cbb42be059a4da2f19bc95d6.html">Function Snpe_PlatformConfig_GetUserGpuConfig</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_PlatformConfig_8h_1a5c9c7f16cbb42be059a4da2f19bc95d6.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_PlatformConfig_8h_1a1808b0aef8b1c03221c868d3ae13ffb8.html">Function Snpe_PlatformConfig_IsOptionsValid</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_PlatformConfig_8h_1a1808b0aef8b1c03221c868d3ae13ffb8.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_PlatformConfig_8h_1a8a4ccc338ce2fd443a55cad53bbe1eb0.html">Function Snpe_PlatformConfig_IsValid</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_PlatformConfig_8h_1a8a4ccc338ce2fd443a55cad53bbe1eb0.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_PlatformConfig_8h_1aa6c0a569d77bfeb32d6b1f0ad2688bdb.html">Function Snpe_PlatformConfig_RemovePlatformOptionValue</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_PlatformConfig_8h_1aa6c0a569d77bfeb32d6b1f0ad2688bdb.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_PlatformConfig_8h_1a60323050945c07ea886aa8111e54f949.html">Function Snpe_PlatformConfig_SetIsUserGLBuffer</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_PlatformConfig_8h_1a60323050945c07ea886aa8111e54f949.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_PlatformConfig_8h_1a0b8b7434f4e784079aa826472af852a5.html">Function Snpe_PlatformConfig_SetPlatformOptions</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_PlatformConfig_8h_1a0b8b7434f4e784079aa826472af852a5.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_PlatformConfig_8h_1a76a8e175f5b3d29f18049aabc5631590.html">Function Snpe_PlatformConfig_SetPlatformOptionValue</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_PlatformConfig_8h_1a76a8e175f5b3d29f18049aabc5631590.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_PlatformConfig_8h_1ad263a0fb98fe565c882c4797b6dbea6b.html">Function Snpe_PlatformConfig_SetUserGpuConfig</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_PlatformConfig_8h_1ad263a0fb98fe565c882c4797b6dbea6b.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_PlatformValidator_8h_1add5cd6a339ded2d1be4b46e0a158b276.html">Function Snpe_PlatformValidator_Create</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_PlatformValidator_8h_1add5cd6a339ded2d1be4b46e0a158b276.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_PlatformValidator_8h_1ad134d7e857952c1fe5e66be22c579756.html">Function Snpe_PlatformValidator_Delete</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_PlatformValidator_8h_1ad134d7e857952c1fe5e66be22c579756.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_PlatformValidator_8h_1a013a13eaeab0642415f6326499d0a791.html">Function Snpe_PlatformValidator_GetCoreVersion</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_PlatformValidator_8h_1a013a13eaeab0642415f6326499d0a791.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_PlatformValidator_8h_1a330b38708dab504113c17d87d7d8be1d.html">Function Snpe_PlatformValidator_GetLibVersion</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_PlatformValidator_8h_1a330b38708dab504113c17d87d7d8be1d.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_PlatformValidator_8h_1acc2b1ec61ead97da11bb869a141c1498.html">Function Snpe_PlatformValidator_IsRuntimeAvailable</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_PlatformValidator_8h_1acc2b1ec61ead97da11bb869a141c1498.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_PlatformValidator_8h_1a39700dd55fecf7751b3d837bbdc4b81a.html">Function Snpe_PlatformValidator_RuntimeCheck</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_PlatformValidator_8h_1a39700dd55fecf7751b3d837bbdc4b81a.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_PlatformValidator_8h_1af389ca74672eee575553cc968c3b68a5.html">Function Snpe_PlatformValidator_SetRuntime</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_PlatformValidator_8h_1af389ca74672eee575553cc968c3b68a5.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_RuntimeList_8h_1acade96feb39428f34d948a64f70cdbba.html">Function Snpe_RuntimeList_Add</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_RuntimeList_8h_1acade96feb39428f34d948a64f70cdbba.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_RuntimeList_8h_1a090816142f285ecffa22d95cdb6ab6aa.html">Function Snpe_RuntimeList_Assign</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_RuntimeList_8h_1a090816142f285ecffa22d95cdb6ab6aa.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_RuntimeList_8h_1a2ea767ecfe8fbaec4eec533756f67d3a.html">Function Snpe_RuntimeList_Clear</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_RuntimeList_8h_1a2ea767ecfe8fbaec4eec533756f67d3a.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_RuntimeList_8h_1affe13d956b2892177ceb6562a9986fc2.html">Function Snpe_RuntimeList_Create</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_RuntimeList_8h_1affe13d956b2892177ceb6562a9986fc2.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_RuntimeList_8h_1a7d9690b6c716079f0ef6d2d2bf777fba.html">Function Snpe_RuntimeList_CreateCopy</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_RuntimeList_8h_1a7d9690b6c716079f0ef6d2d2bf777fba.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_RuntimeList_8h_1a5249f0e06286879e014780b68a986757.html">Function Snpe_RuntimeList_Delete</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_RuntimeList_8h_1a5249f0e06286879e014780b68a986757.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_RuntimeList_8h_1a15dc4676890bf68693f43bc10a8b1e0f.html">Function Snpe_RuntimeList_Empty</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_RuntimeList_8h_1a15dc4676890bf68693f43bc10a8b1e0f.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_RuntimeList_8h_1a1c441eb6ae29eca075a5445124fc0a3b.html">Function Snpe_RuntimeList_GetRuntime</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_RuntimeList_8h_1a1c441eb6ae29eca075a5445124fc0a3b.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_RuntimeList_8h_1a062127cafe726286b7c2a4e7aa1b568b.html">Function Snpe_RuntimeList_GetRuntimeListNames</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_RuntimeList_8h_1a062127cafe726286b7c2a4e7aa1b568b.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_RuntimeList_8h_1abb405b84e23a6a79af53f7123a19c4b6.html">Function Snpe_RuntimeList_Remove</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_RuntimeList_8h_1abb405b84e23a6a79af53f7123a19c4b6.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_RuntimeList_8h_1a9ae25a5d55c2d24ad639c45b52371f3b.html">Function Snpe_RuntimeList_RuntimeToString</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_RuntimeList_8h_1a9ae25a5d55c2d24ad639c45b52371f3b.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_RuntimeList_8h_1a3d88c09a43c318ceba56f2a273c0a034.html">Function Snpe_RuntimeList_SetRuntime</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_RuntimeList_8h_1a3d88c09a43c318ceba56f2a273c0a034.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_RuntimeList_8h_1a205ba0ba7fe2c5aeb9aeaf21c7f30226.html">Function Snpe_RuntimeList_Size</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_RuntimeList_8h_1a205ba0ba7fe2c5aeb9aeaf21c7f30226.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_RuntimeList_8h_1ab228c54cc228f1991daf3ca8e84c3fac.html">Function Snpe_RuntimeList_StringToRuntime</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_RuntimeList_8h_1ab228c54cc228f1991daf3ca8e84c3fac.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_SNPE_8h_1a2677050c0fbe448e17f79c1efff6f504.html">Function Snpe_SNPE_Delete</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_SNPE_8h_1a2677050c0fbe448e17f79c1efff6f504.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_SNPE_8h_1a72c576e0ac5b8e6d0ef25807390cc868.html">Function Snpe_SNPE_DeregisterIonBuffers</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_SNPE_8h_1a72c576e0ac5b8e6d0ef25807390cc868.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_SNPE_8h_1ad1626f5914813b7edfafb9dd310effee.html">Function Snpe_SNPE_ExecuteITensor</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_SNPE_8h_1ad1626f5914813b7edfafb9dd310effee.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_SNPE_8h_1acc69e6751f96c68b47b68e04d66f1ba0.html">Function Snpe_SNPE_ExecuteITensors</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_SNPE_8h_1acc69e6751f96c68b47b68e04d66f1ba0.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_SNPE_8h_1a9f00b6e336eafaf501a7ecbc36db3baa.html">Function Snpe_SNPE_ExecuteUserBuffers</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_SNPE_8h_1a9f00b6e336eafaf501a7ecbc36db3baa.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_SNPE_8h_1ad35310d8e6c24adbd855a7cf1fe6f87d.html">Function Snpe_SNPE_GetDiagLogInterface_Ref</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_SNPE_8h_1ad35310d8e6c24adbd855a7cf1fe6f87d.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_SNPE_8h_1a4ad7b54efaf4e20bfa5059dc6accf1fe.html">Function Snpe_SNPE_GetInputDimensions</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_SNPE_8h_1a4ad7b54efaf4e20bfa5059dc6accf1fe.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_SNPE_8h_1ac2a94419692985b131c19e911f9c2da2.html">Function Snpe_SNPE_GetInputDimensionsOfFirstTensor</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_SNPE_8h_1ac2a94419692985b131c19e911f9c2da2.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_SNPE_8h_1a83f7d22020c5bec6750a1a7d5c49f4bb.html">Function Snpe_SNPE_GetInputOutputBufferAttributes</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_SNPE_8h_1a83f7d22020c5bec6750a1a7d5c49f4bb.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_SNPE_8h_1ad334518ecae4044eb953b67b9c01d006.html">Function Snpe_SNPE_GetInputTensorNames</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_SNPE_8h_1ad334518ecae4044eb953b67b9c01d006.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_SNPE_8h_1afd100555cfd88ec7412bf71c9ba2dac4.html">Function Snpe_SNPE_GetModelVersion</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_SNPE_8h_1afd100555cfd88ec7412bf71c9ba2dac4.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_SNPE_8h_1aa9dd5920d3a1c30785541f68827ed16e.html">Function Snpe_SNPE_GetOutputLayerNames</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_SNPE_8h_1aa9dd5920d3a1c30785541f68827ed16e.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_SNPE_8h_1afe34a209444082091a1c78ca2c9f91ea.html">Function Snpe_SNPE_GetOutputTensorNames</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_SNPE_8h_1afe34a209444082091a1c78ca2c9f91ea.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_SNPE_8h_1a8be19fa2efd4b6b16e69a3ae2e74e57b.html">Function Snpe_SNPE_GetOutputTensorNamesByLayerName</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_SNPE_8h_1a8be19fa2efd4b6b16e69a3ae2e74e57b.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_SNPE_8h_1a845e2a3dfe1fe32f17617035ed573c56.html">Function Snpe_SNPE_RegisterIonBuffers</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_SNPE_8h_1a845e2a3dfe1fe32f17617035ed573c56.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_SNPEBuilder_8h_1ac61ef58c0d5b4c50b2dec6c48cede397.html">Function Snpe_SNPEBuilder_Build</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_SNPEBuilder_8h_1ac61ef58c0d5b4c50b2dec6c48cede397.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_SNPEBuilder_8h_1a01fbdaba9c2a1ec80846eaf7fb0ac95a.html">Function Snpe_SNPEBuilder_Create</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_SNPEBuilder_8h_1a01fbdaba9c2a1ec80846eaf7fb0ac95a.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_SNPEBuilder_8h_1adbe59b4f89f284d69a0df09f71e63b21.html">Function Snpe_SNPEBuilder_Delete</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_SNPEBuilder_8h_1adbe59b4f89f284d69a0df09f71e63b21.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_SNPEBuilder_8h_1af54741960cca688c749268c1b5f2e5b7.html">Function Snpe_SNPEBuilder_SetBufferDataType</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_SNPEBuilder_8h_1af54741960cca688c749268c1b5f2e5b7.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_SNPEBuilder_8h_1a52d48c5197b97e1f222474467ef0f710.html">Function Snpe_SNPEBuilder_SetCpuFixedPointMode</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_SNPEBuilder_8h_1a52d48c5197b97e1f222474467ef0f710.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_SNPEBuilder_8h_1ab9d175ec0d751f6159695157afe74f32.html">Function Snpe_SNPEBuilder_SetDebugMode</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_SNPEBuilder_8h_1ab9d175ec0d751f6159695157afe74f32.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_SNPEBuilder_8h_1aa1d078c97ce5e85a585fefe37ee5b8c0.html">Function Snpe_SNPEBuilder_SetExecutionPriorityHint</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_SNPEBuilder_8h_1aa1d078c97ce5e85a585fefe37ee5b8c0.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_SNPEBuilder_8h_1af5f87bad68a05cf1fc3c18e992600bd8.html">Function Snpe_SNPEBuilder_SetInitCacheMode</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_SNPEBuilder_8h_1af5f87bad68a05cf1fc3c18e992600bd8.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_SNPEBuilder_8h_1a7554ce9986adc92cf149a109bfa31b77.html">Function Snpe_SNPEBuilder_SetInputDimensions</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_SNPEBuilder_8h_1a7554ce9986adc92cf149a109bfa31b77.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_SNPEBuilder_8h_1a16d1645f334c18f0f5e92fc6746fbb60.html">Function Snpe_SNPEBuilder_SetOutputLayers</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_SNPEBuilder_8h_1a16d1645f334c18f0f5e92fc6746fbb60.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_SNPEBuilder_8h_1a2c76fb68ad626ae02bf07e68f8bf0290.html">Function Snpe_SNPEBuilder_SetOutputTensors</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_SNPEBuilder_8h_1a2c76fb68ad626ae02bf07e68f8bf0290.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_SNPEBuilder_8h_1aa946d8bf0bd9ad23acc69746a9fe8eac.html">Function Snpe_SNPEBuilder_SetPerformanceProfile</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_SNPEBuilder_8h_1aa946d8bf0bd9ad23acc69746a9fe8eac.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_SNPEBuilder_8h_1a340b427c7ca4f05764a73ec7b0f540ba.html">Function Snpe_SNPEBuilder_SetPlatformConfig</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_SNPEBuilder_8h_1a340b427c7ca4f05764a73ec7b0f540ba.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_SNPEBuilder_8h_1aed06432b1ff5792f7a9c7db6c3c77c73.html">Function Snpe_SNPEBuilder_SetProfilingLevel</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_SNPEBuilder_8h_1aed06432b1ff5792f7a9c7db6c3c77c73.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_SNPEBuilder_8h_1adac2ed4af1f98049f03e38898aaab520.html">Function Snpe_SNPEBuilder_SetRuntimeProcessorOrder</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_SNPEBuilder_8h_1adac2ed4af1f98049f03e38898aaab520.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_SNPEBuilder_8h_1af315dec4c39c28b41914781e9b0e849d.html">Function Snpe_SNPEBuilder_SetSingleThreadedInit</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_SNPEBuilder_8h_1af315dec4c39c28b41914781e9b0e849d.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_SNPEBuilder_8h_1a917f01727ed87dfe38a47d1a0d8d096d.html">Function Snpe_SNPEBuilder_SetTimeOut</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_SNPEBuilder_8h_1a917f01727ed87dfe38a47d1a0d8d096d.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_SNPEBuilder_8h_1a617b7706851055e3ad4256dbdd57baa1.html">Function Snpe_SNPEBuilder_SetUnconsumedTensorsAsOutputs</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_SNPEBuilder_8h_1a617b7706851055e3ad4256dbdd57baa1.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_SNPEBuilder_8h_1a542187dad3f5c861dc8862d0563be997.html">Function Snpe_SNPEBuilder_SetUseUserSuppliedBuffers</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_SNPEBuilder_8h_1a542187dad3f5c861dc8862d0563be997.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_StringList_8h_1a303d73817efbbc189b2d7658676d30e1.html">Function Snpe_StringList_Append</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_StringList_8h_1a303d73817efbbc189b2d7658676d30e1.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_StringList_8h_1a8a4fbeb9a8d8c2e3b567b35e15fdd155.html">Function Snpe_StringList_Assign</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_StringList_8h_1a8a4fbeb9a8d8c2e3b567b35e15fdd155.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_StringList_8h_1a5f76c09a47953ade475a13c22e4c7e74.html">Function Snpe_StringList_At</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_StringList_8h_1a5f76c09a47953ade475a13c22e4c7e74.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_StringList_8h_1ab6794ee83b6bee9429a44c7fd78515aa.html">Function Snpe_StringList_Begin</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_StringList_8h_1ab6794ee83b6bee9429a44c7fd78515aa.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_StringList_8h_1abd6d436a0d38eeacf30e8e842ebc502b.html">Function Snpe_StringList_Create</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_StringList_8h_1abd6d436a0d38eeacf30e8e842ebc502b.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_StringList_8h_1a26facadcbd686235cbe257584b02cc3c.html">Function Snpe_StringList_CreateCopy</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_StringList_8h_1a26facadcbd686235cbe257584b02cc3c.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_StringList_8h_1a87e7a213905720eafa73ecb31d11dbd3.html">Function Snpe_StringList_CreateSize</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_StringList_8h_1a87e7a213905720eafa73ecb31d11dbd3.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_StringList_8h_1ab5cbad04cd313314a9f15fcc76119037.html">Function Snpe_StringList_Delete</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_StringList_8h_1ab5cbad04cd313314a9f15fcc76119037.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_StringList_8h_1ab10fae1b5d1b97ed8c4b94c53289a750.html">Function Snpe_StringList_End</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_StringList_8h_1ab10fae1b5d1b97ed8c4b94c53289a750.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_StringList_8h_1a5edc4ffacc3a0b8023ee14a45a621a69.html">Function Snpe_StringList_Size</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_StringList_8h_1a5edc4ffacc3a0b8023ee14a45a621a69.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_TensorMap_8h_1a780250fe0d39b998331639bbf1d60bdd.html">Function Snpe_TensorMap_Add</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_TensorMap_8h_1a780250fe0d39b998331639bbf1d60bdd.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_TensorMap_8h_1a06dc5ed7cfba99a799fc14b3c4a14b80.html">Function Snpe_TensorMap_Assign</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_TensorMap_8h_1a06dc5ed7cfba99a799fc14b3c4a14b80.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_TensorMap_8h_1a3152ff737b675881ba9b38448ff8a80e.html">Function Snpe_TensorMap_Clear</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_TensorMap_8h_1a3152ff737b675881ba9b38448ff8a80e.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_TensorMap_8h_1af3fef70e4ffb806d56036d1738891eac.html">Function Snpe_TensorMap_Create</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_TensorMap_8h_1af3fef70e4ffb806d56036d1738891eac.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_TensorMap_8h_1ad3debfe61426c3b0b778b556d5b23735.html">Function Snpe_TensorMap_CreateCopy</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_TensorMap_8h_1ad3debfe61426c3b0b778b556d5b23735.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_TensorMap_8h_1acc094df1288433598f1dad3861a54fac.html">Function Snpe_TensorMap_Delete</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_TensorMap_8h_1acc094df1288433598f1dad3861a54fac.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_TensorMap_8h_1a6784d0797d803b40330efb1f7660bdf2.html">Function Snpe_TensorMap_GetTensor_Ref</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_TensorMap_8h_1a6784d0797d803b40330efb1f7660bdf2.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_TensorMap_8h_1a96cc2553157251502cc1894014391e19.html">Function Snpe_TensorMap_GetTensorNames</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_TensorMap_8h_1a96cc2553157251502cc1894014391e19.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_TensorMap_8h_1a4bcafce598af8d46b1a1ffb4988ac065.html">Function Snpe_TensorMap_Remove</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_TensorMap_8h_1a4bcafce598af8d46b1a1ffb4988ac065.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_TensorMap_8h_1a977342978b9d1a290ec00c0355c3547d.html">Function Snpe_TensorMap_Size</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_TensorMap_8h_1a977342978b9d1a290ec00c0355c3547d.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_TensorShape_8h_1aab963922a6c0ea7a5b55c4f052a99da7.html">Function Snpe_TensorShape_Assign</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_TensorShape_8h_1aab963922a6c0ea7a5b55c4f052a99da7.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_TensorShape_8h_1aa3127c82179154e371915bb66931b218.html">Function Snpe_TensorShape_At</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_TensorShape_8h_1aa3127c82179154e371915bb66931b218.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_TensorShape_8h_1ac4c912002c8e3d3073fd1e6eb432d716.html">Function Snpe_TensorShape_Concatenate</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_TensorShape_8h_1ac4c912002c8e3d3073fd1e6eb432d716.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_TensorShape_8h_1aa520a063dd8bae073089936c82201018.html">Function Snpe_TensorShape_Create</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_TensorShape_8h_1aa520a063dd8bae073089936c82201018.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_TensorShape_8h_1a3bccc262d71b399366516e6e1e53a58c.html">Function Snpe_TensorShape_CreateCopy</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_TensorShape_8h_1a3bccc262d71b399366516e6e1e53a58c.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_TensorShape_8h_1a144dd299498e0a990dcc63570bae080d.html">Function Snpe_TensorShape_CreateDimsSize</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_TensorShape_8h_1a144dd299498e0a990dcc63570bae080d.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_TensorShape_8h_1ad848e732f3df3629eb8a920b17221229.html">Function Snpe_TensorShape_Delete</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_TensorShape_8h_1ad848e732f3df3629eb8a920b17221229.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_TensorShape_8h_1a02dfc828046a848edf6a7425e9a1c343.html">Function Snpe_TensorShape_GetDimensions</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_TensorShape_8h_1a02dfc828046a848edf6a7425e9a1c343.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_TensorShape_8h_1a03a0a2d5e6607859f25db695a842c344.html">Function Snpe_TensorShape_Rank</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_TensorShape_8h_1a03a0a2d5e6607859f25db695a842c344.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_TensorShape_8h_1a05e507e4af8e4034f21492973293fe0b.html">Function Snpe_TensorShape_Set</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_TensorShape_8h_1a05e507e4af8e4034f21492973293fe0b.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_TensorShapeMap_8h_1a474da024279b009d68379385c55ed2be.html">Function Snpe_TensorShapeMap_Add</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_TensorShapeMap_8h_1a474da024279b009d68379385c55ed2be.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_TensorShapeMap_8h_1a510afe25d0cba4f3927e1d61c5dddc77.html">Function Snpe_TensorShapeMap_Assign</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_TensorShapeMap_8h_1a510afe25d0cba4f3927e1d61c5dddc77.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_TensorShapeMap_8h_1a3d671f7ae15aec13fd0365027e1187ae.html">Function Snpe_TensorShapeMap_Clear</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_TensorShapeMap_8h_1a3d671f7ae15aec13fd0365027e1187ae.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_TensorShapeMap_8h_1a68caefd48510c5d60798425b5cc1003a.html">Function Snpe_TensorShapeMap_Create</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_TensorShapeMap_8h_1a68caefd48510c5d60798425b5cc1003a.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_TensorShapeMap_8h_1a6828d4c846db3cdaa4935d884d4cd62d.html">Function Snpe_TensorShapeMap_CreateCopy</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_TensorShapeMap_8h_1a6828d4c846db3cdaa4935d884d4cd62d.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_TensorShapeMap_8h_1a20169713d2e6bdc793b6062663f26b92.html">Function Snpe_TensorShapeMap_Delete</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_TensorShapeMap_8h_1a20169713d2e6bdc793b6062663f26b92.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_TensorShapeMap_8h_1ae229b004447d90bca84cce550775919a.html">Function Snpe_TensorShapeMap_GetTensorShape</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_TensorShapeMap_8h_1ae229b004447d90bca84cce550775919a.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_TensorShapeMap_8h_1a32b1b9991a5596547478126b1d4bc3fb.html">Function Snpe_TensorShapeMap_GetTensorShapeNames</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_TensorShapeMap_8h_1a32b1b9991a5596547478126b1d4bc3fb.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_TensorShapeMap_8h_1a900aba53ade40aa5c4c4b6060edc83fe.html">Function Snpe_TensorShapeMap_Remove</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_TensorShapeMap_8h_1a900aba53ade40aa5c4c4b6060edc83fe.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_TensorShapeMap_8h_1a5f7ce0434bcd410e470544f73e270639.html">Function Snpe_TensorShapeMap_Size</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_TensorShapeMap_8h_1a5f7ce0434bcd410e470544f73e270639.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_IUserBuffer_8h_1a01ca0c80cbea9b35a25a3d4340779f5f.html">Function Snpe_UserBufferEncoding_Delete</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_IUserBuffer_8h_1a01ca0c80cbea9b35a25a3d4340779f5f.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_IUserBuffer_8h_1aabd94a2eb24040b675ea75619cc1f5eb.html">Function Snpe_UserBufferEncoding_GetElementSize</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_IUserBuffer_8h_1aabd94a2eb24040b675ea75619cc1f5eb.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_IUserBuffer_8h_1a843b79b87e0e641c807f661be88aac9a.html">Function Snpe_UserBufferEncoding_GetElementType</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_IUserBuffer_8h_1a843b79b87e0e641c807f661be88aac9a.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_IUserBuffer_8h_1ad2c79837a605b98b80d296a46dd9e213.html">Function Snpe_UserBufferEncodingBool_Create</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_IUserBuffer_8h_1ad2c79837a605b98b80d296a46dd9e213.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_IUserBuffer_8h_1a059dcfc4cdb15166bebdad85d1d884fd.html">Function Snpe_UserBufferEncodingBool_CreateCopy</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_IUserBuffer_8h_1a059dcfc4cdb15166bebdad85d1d884fd.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_IUserBuffer_8h_1a4621c1ea938ef090f59021efebd37ba8.html">Function Snpe_UserBufferEncodingBool_Delete</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_IUserBuffer_8h_1a4621c1ea938ef090f59021efebd37ba8.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_IUserBuffer_8h_1a87fb0eafcf56f603a57628be804b4986.html">Function Snpe_UserBufferEncodingBool_GetElementSize</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_IUserBuffer_8h_1a87fb0eafcf56f603a57628be804b4986.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_IUserBuffer_8h_1affe50d5cc3ca6822ff6aab76db959926.html">Function Snpe_UserBufferEncodingFloat_Create</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_IUserBuffer_8h_1affe50d5cc3ca6822ff6aab76db959926.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_IUserBuffer_8h_1a14fad4e98b8d0462719bf8389279d8e6.html">Function Snpe_UserBufferEncodingFloat_CreateCopy</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_IUserBuffer_8h_1a14fad4e98b8d0462719bf8389279d8e6.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_IUserBuffer_8h_1a038b1d58c570163650ff4755cf4c4cfb.html">Function Snpe_UserBufferEncodingFloat_Delete</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_IUserBuffer_8h_1a038b1d58c570163650ff4755cf4c4cfb.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_IUserBuffer_8h_1a8d862fb74153df1f60341bfd4e3cb680.html">Function Snpe_UserBufferEncodingFloat_GetElementSize</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_IUserBuffer_8h_1a8d862fb74153df1f60341bfd4e3cb680.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_IUserBuffer_8h_1afa8050e36ef4f12504bb1c98e6072e0c.html">Function Snpe_UserBufferEncodingFloatN_Create</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_IUserBuffer_8h_1afa8050e36ef4f12504bb1c98e6072e0c.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_IUserBuffer_8h_1a1f94d9b0eb891431fd315981e5350b74.html">Function Snpe_UserBufferEncodingFloatN_CreateCopy</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_IUserBuffer_8h_1a1f94d9b0eb891431fd315981e5350b74.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_IUserBuffer_8h_1ad6dfeba28695443396ceade9adcba7b7.html">Function Snpe_UserBufferEncodingFloatN_Delete</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_IUserBuffer_8h_1ad6dfeba28695443396ceade9adcba7b7.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_IUserBuffer_8h_1a5384c76c2b346ae4d85e6d4aca7a48f6.html">Function Snpe_UserBufferEncodingFloatN_GetElementSize</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_IUserBuffer_8h_1a5384c76c2b346ae4d85e6d4aca7a48f6.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_IUserBuffer_8h_1a060e3a28c3aadb6a0c4399c5cc6958b8.html">Function Snpe_UserBufferEncodingFloatN_GetTypeFromWidth</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_IUserBuffer_8h_1a060e3a28c3aadb6a0c4399c5cc6958b8.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_IUserBuffer_8h_1a87422045254d21c8af394c37cd5f9da6.html">Function Snpe_UserBufferEncodingIntN_Create</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_IUserBuffer_8h_1a87422045254d21c8af394c37cd5f9da6.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_IUserBuffer_8h_1ac2ee8402f8a744d08d58ec7d2fcb6882.html">Function Snpe_UserBufferEncodingIntN_CreateCopy</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_IUserBuffer_8h_1ac2ee8402f8a744d08d58ec7d2fcb6882.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_IUserBuffer_8h_1a69b9aa14cacb3a422031d4f0ff3f8f93.html">Function Snpe_UserBufferEncodingIntN_Delete</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_IUserBuffer_8h_1a69b9aa14cacb3a422031d4f0ff3f8f93.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_IUserBuffer_8h_1ac4b694959eadb895417cf6b22aac6efb.html">Function Snpe_UserBufferEncodingIntN_GetElementSize</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_IUserBuffer_8h_1ac4b694959eadb895417cf6b22aac6efb.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_IUserBuffer_8h_1a7d6ce93c21bca414baab5ba60b97a05d.html">Function Snpe_UserBufferEncodingIntN_GetTypeFromWidth</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_IUserBuffer_8h_1a7d6ce93c21bca414baab5ba60b97a05d.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_IUserBuffer_8h_1a284285f2487f135df6ce519d3bc17b7f.html">Function Snpe_UserBufferEncodingTfN_Create</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_IUserBuffer_8h_1a284285f2487f135df6ce519d3bc17b7f.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_IUserBuffer_8h_1a91f57de5940336194f46b85e5461b179.html">Function Snpe_UserBufferEncodingTfN_CreateCopy</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_IUserBuffer_8h_1a91f57de5940336194f46b85e5461b179.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_IUserBuffer_8h_1ab1ea84c788134b371498bba7e80ec60b.html">Function Snpe_UserBufferEncodingTfN_Delete</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_IUserBuffer_8h_1ab1ea84c788134b371498bba7e80ec60b.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_IUserBuffer_8h_1a618605e2e8af7f7bffff1538b6879bdf.html">Function Snpe_UserBufferEncodingTfN_GetElementSize</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_IUserBuffer_8h_1a618605e2e8af7f7bffff1538b6879bdf.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_IUserBuffer_8h_1a7f2473fd06678d9048f1f4db294311c9.html">Function Snpe_UserBufferEncodingTfN_GetMax</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_IUserBuffer_8h_1a7f2473fd06678d9048f1f4db294311c9.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_IUserBuffer_8h_1a3ba4cd5a9b3cab64f7c4c0aa39910f10.html">Function Snpe_UserBufferEncodingTfN_GetMin</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_IUserBuffer_8h_1a3ba4cd5a9b3cab64f7c4c0aa39910f10.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_IUserBuffer_8h_1a777fd40f7744a522226fe164306e30b2.html">Function Snpe_UserBufferEncodingTfN_GetQuantizedStepSize</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_IUserBuffer_8h_1a777fd40f7744a522226fe164306e30b2.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_IUserBuffer_8h_1a39e59632fe274cfd12090b8d7899a4a5.html">Function Snpe_UserBufferEncodingTfN_GetStepExactly0</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_IUserBuffer_8h_1a39e59632fe274cfd12090b8d7899a4a5.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_IUserBuffer_8h_1a8af430364bd6fe6552bb41acb405e8c3.html">Function Snpe_UserBufferEncodingTfN_GetTypeFromWidth</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_IUserBuffer_8h_1a8af430364bd6fe6552bb41acb405e8c3.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_IUserBuffer_8h_1aa53bcd5b60fe2e2bb810b6e5654673bf.html">Function Snpe_UserBufferEncodingTfN_SetQuantizedStepSize</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_IUserBuffer_8h_1aa53bcd5b60fe2e2bb810b6e5654673bf.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_IUserBuffer_8h_1a9052aa4bf404cae7718114b7ae8ee20d.html">Function Snpe_UserBufferEncodingTfN_SetStepExactly0</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_IUserBuffer_8h_1a9052aa4bf404cae7718114b7ae8ee20d.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_IUserBuffer_8h_1af5c1c9e02c70ed6db2133bcc1c8057ea.html">Function Snpe_UserBufferEncodingUintN_Create</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_IUserBuffer_8h_1af5c1c9e02c70ed6db2133bcc1c8057ea.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_IUserBuffer_8h_1ae522e89f9d909774d440dc56f96cfeaf.html">Function Snpe_UserBufferEncodingUintN_CreateCopy</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_IUserBuffer_8h_1ae522e89f9d909774d440dc56f96cfeaf.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_IUserBuffer_8h_1a524b2b367f2f51dbb6fcd05cc5af305a.html">Function Snpe_UserBufferEncodingUintN_Delete</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_IUserBuffer_8h_1a524b2b367f2f51dbb6fcd05cc5af305a.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_IUserBuffer_8h_1aa63a0b61785541c8b3b5468e06c12a38.html">Function Snpe_UserBufferEncodingUintN_GetElementSize</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_IUserBuffer_8h_1aa63a0b61785541c8b3b5468e06c12a38.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_IUserBuffer_8h_1a8b8d2459ee1ca0700f47d68c190634e6.html">Function Snpe_UserBufferEncodingUintN_GetTypeFromWidth</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_IUserBuffer_8h_1a8b8d2459ee1ca0700f47d68c190634e6.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_IUserBuffer_8h_1a3b9a536fc41e06f2d58634a8c5973105.html">Function Snpe_UserBufferEncodingUnsigned8Bit_Create</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_IUserBuffer_8h_1a3b9a536fc41e06f2d58634a8c5973105.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_IUserBuffer_8h_1ac55084d6c1ab681888537aeb3eeb71fb.html">Function Snpe_UserBufferEncodingUnsigned8Bit_CreateCopy</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_IUserBuffer_8h_1ac55084d6c1ab681888537aeb3eeb71fb.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_IUserBuffer_8h_1a5d2e34455a45954f109826318ed9624d.html">Function Snpe_UserBufferEncodingUnsigned8Bit_Delete</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_IUserBuffer_8h_1a5d2e34455a45954f109826318ed9624d.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_IUserBuffer_8h_1aafd94e6be21f613f1336d31b00bff787.html">Function Snpe_UserBufferEncodingUnsigned8Bit_GetElementSize</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_IUserBuffer_8h_1aafd94e6be21f613f1336d31b00bff787.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_UserBufferMap_8h_1ad5abcb4dcce82064ee4b001a02434881.html">Function Snpe_UserBufferMap_Add</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_UserBufferMap_8h_1ad5abcb4dcce82064ee4b001a02434881.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_UserBufferMap_8h_1a8d35adf845fa083f830577105089fcd2.html">Function Snpe_UserBufferMap_Assign</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_UserBufferMap_8h_1a8d35adf845fa083f830577105089fcd2.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_UserBufferMap_8h_1ac001b9f30603414627392f1c495ed874.html">Function Snpe_UserBufferMap_Clear</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_UserBufferMap_8h_1ac001b9f30603414627392f1c495ed874.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_UserBufferMap_8h_1ad51a37b5fd846b814e5cb9b03be8713d.html">Function Snpe_UserBufferMap_Create</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_UserBufferMap_8h_1ad51a37b5fd846b814e5cb9b03be8713d.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_UserBufferMap_8h_1a806ad2e0adce32258a6ae2b7c77d4fc2.html">Function Snpe_UserBufferMap_CreateCopy</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_UserBufferMap_8h_1a806ad2e0adce32258a6ae2b7c77d4fc2.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_UserBufferMap_8h_1a322bb7d7411e2a6b56912fd93f81037e.html">Function Snpe_UserBufferMap_Delete</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_UserBufferMap_8h_1a322bb7d7411e2a6b56912fd93f81037e.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_UserBufferMap_8h_1a553333ff67c8a612c291035e7ec29c77.html">Function Snpe_UserBufferMap_GetUserBuffer_Ref</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_UserBufferMap_8h_1a553333ff67c8a612c291035e7ec29c77.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_UserBufferMap_8h_1a05b642f4428a1b58761be12b82cc54a3.html">Function Snpe_UserBufferMap_GetUserBufferNames</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_UserBufferMap_8h_1a05b642f4428a1b58761be12b82cc54a3.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_UserBufferMap_8h_1ab3dda10011fb77f8ed190adf9e38551b.html">Function Snpe_UserBufferMap_Remove</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_UserBufferMap_8h_1ab3dda10011fb77f8ed190adf9e38551b.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_UserBufferMap_8h_1a2a88c6c0d01a47ef333bf7ad6d79229d.html">Function Snpe_UserBufferMap_Size</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_UserBufferMap_8h_1a2a88c6c0d01a47ef333bf7ad6d79229d.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_IUserBuffer_8h_1a981ab304bfbed26b9009d1578c7cc1af.html">Function Snpe_UserBufferSource_Delete</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_IUserBuffer_8h_1a981ab304bfbed26b9009d1578c7cc1af.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_IUserBuffer_8h_1a3738eb3eae97c6d46e0771721a60ea2e.html">Function Snpe_UserBufferSource_GetSourceType</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_IUserBuffer_8h_1a3738eb3eae97c6d46e0771721a60ea2e.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_IUserBuffer_8h_1a77f51844a610688e4fe0c6f6f733a4f1.html">Function Snpe_UserBufferSourceGLBuffer_Create</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_IUserBuffer_8h_1a77f51844a610688e4fe0c6f6f733a4f1.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_IUserBuffer_8h_1a75d56e6fa3721797942e596a11374c69.html">Function Snpe_UserBufferSourceGLBuffer_Delete</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_IUserBuffer_8h_1a75d56e6fa3721797942e596a11374c69.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_PlatformConfig_8h_1a56f03a621bfc07da67858c87c360e82b.html">Function Snpe_UserGLConfig_Create</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_PlatformConfig_8h_1a56f03a621bfc07da67858c87c360e82b.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_PlatformConfig_8h_1a168beb5f943f869b16f4b15d3ef7ad7c.html">Function Snpe_UserGLConfig_Delete</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_PlatformConfig_8h_1a168beb5f943f869b16f4b15d3ef7ad7c.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_PlatformConfig_8h_1af2a02eb8c2499fc7ccd3c7e0b046339e.html">Function Snpe_UserGLConfig_GetUserGLContext</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_PlatformConfig_8h_1af2a02eb8c2499fc7ccd3c7e0b046339e.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_PlatformConfig_8h_1a89068d3cd120968c5bee46f0308693d9.html">Function Snpe_UserGLConfig_GetUserGLDisplay</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_PlatformConfig_8h_1a89068d3cd120968c5bee46f0308693d9.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_PlatformConfig_8h_1a0a70ecc6f1bef647900e6a71e158b373.html">Function Snpe_UserGLConfig_SetUserGLContext</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_PlatformConfig_8h_1a0a70ecc6f1bef647900e6a71e158b373.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_PlatformConfig_8h_1a63948896fe2dfbd6190c95f9b224e29a.html">Function Snpe_UserGLConfig_SetUserGLDisplay</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_PlatformConfig_8h_1a63948896fe2dfbd6190c95f9b224e29a.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_PlatformConfig_8h_1a7106d7531252e1c8116af2134341f582.html">Function Snpe_UserGpuConfig_Create</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_PlatformConfig_8h_1a7106d7531252e1c8116af2134341f582.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_PlatformConfig_8h_1acf4d15e6b20a11670d62a860d194208e.html">Function Snpe_UserGpuConfig_Delete</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_PlatformConfig_8h_1acf4d15e6b20a11670d62a860d194208e.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_PlatformConfig_8h_1a323e5d8affb83c06ab1316bb9c7cbe0b.html">Function Snpe_UserGpuConfig_Get_Ref</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_PlatformConfig_8h_1a323e5d8affb83c06ab1316bb9c7cbe0b.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_PlatformConfig_8h_1af132181e126c055a3dfd0a3b08bc7e5d.html">Function Snpe_UserGpuConfig_Set</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_PlatformConfig_8h_1af132181e126c055a3dfd0a3b08bc7e5d.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_UserMemoryMap_8h_1a1960cfa06b911ffa6f464d670b0d2eca.html">Function Snpe_UserMemoryMap_Add</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_UserMemoryMap_8h_1a1960cfa06b911ffa6f464d670b0d2eca.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_UserMemoryMap_8h_1a45836d582a1fdc673fa5e64c62292373.html">Function Snpe_UserMemoryMap_Assign</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_UserMemoryMap_8h_1a45836d582a1fdc673fa5e64c62292373.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_UserMemoryMap_8h_1ae0adf68fb4edc5e89bfe33e357203f5c.html">Function Snpe_UserMemoryMap_Clear</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_UserMemoryMap_8h_1ae0adf68fb4edc5e89bfe33e357203f5c.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_UserMemoryMap_8h_1a88771cb87994f3a674b7cf9d5c87a2a0.html">Function Snpe_UserMemoryMap_Copy</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_UserMemoryMap_8h_1a88771cb87994f3a674b7cf9d5c87a2a0.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_UserMemoryMap_8h_1ab1f9d35c1e3bf56ca94e46561485cce0.html">Function Snpe_UserMemoryMap_Create</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_UserMemoryMap_8h_1ab1f9d35c1e3bf56ca94e46561485cce0.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_UserMemoryMap_8h_1a79570aad8a2f467655549cf51cb2b86d.html">Function Snpe_UserMemoryMap_Delete</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_UserMemoryMap_8h_1a79570aad8a2f467655549cf51cb2b86d.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_UserMemoryMap_8h_1ab15b4fe69472b882377f0860503b2548.html">Function Snpe_UserMemoryMap_GetUserBufferNames</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_UserMemoryMap_8h_1ab15b4fe69472b882377f0860503b2548.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_UserMemoryMap_8h_1a646ee3cdc95bca24e4a407f9408301f8.html">Function Snpe_UserMemoryMap_GetUserMemoryAddressAtIndex</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_UserMemoryMap_8h_1a646ee3cdc95bca24e4a407f9408301f8.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_UserMemoryMap_8h_1ac88d90125a876080bab8bd785f574af1.html">Function Snpe_UserMemoryMap_GetUserMemoryAddressCount</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_UserMemoryMap_8h_1ac88d90125a876080bab8bd785f574af1.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_UserMemoryMap_8h_1abda3b45d7c5ad456d54a03e9bddbf0f7.html">Function Snpe_UserMemoryMap_Remove</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_UserMemoryMap_8h_1abda3b45d7c5ad456d54a03e9bddbf0f7.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_UserMemoryMap_8h_1a343dabe26d0cefd609d3c91a6c4c1afc.html">Function Snpe_UserMemoryMap_Size</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_UserMemoryMap_8h_1a343dabe26d0cefd609d3c91a6c4c1afc.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_SNPEUtil_8h_1a0eb9a124fdd8bcfba4168dfc0e8c0c90.html">Function Snpe_Util_AddOpPackage</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_SNPEUtil_8h_1a0eb9a124fdd8bcfba4168dfc0e8c0c90.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_SNPEUtil_8h_1ae3a35411d1e231ab3e768e62de5e6568.html">Function Snpe_Util_CreateITensor</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_SNPEUtil_8h_1ae3a35411d1e231ab3e768e62de5e6568.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_SNPEUtil_8h_1a2be4071484eb19e05fbab5cd7e0f98c2.html">Function Snpe_Util_CreateITensor_NV21</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_SNPEUtil_8h_1a2be4071484eb19e05fbab5cd7e0f98c2.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_SNPEUtil_8h_1a6317ba49b9a8c9a6b25a37b449df2f92.html">Function Snpe_Util_CreateITensorDataSize</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_SNPEUtil_8h_1a6317ba49b9a8c9a6b25a37b449df2f92.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_SNPEUtil_8h_1a6de0d9edac24b9d40c1583a99fcd88c4.html">Function Snpe_Util_CreateUserBuffer</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_SNPEUtil_8h_1a6de0d9edac24b9d40c1583a99fcd88c4.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_SNPEUtil_8h_1a5427dbfc54d6c1e416eef48ce5595dad.html">Function Snpe_Util_CreateUserBufferFromSource</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_SNPEUtil_8h_1a5427dbfc54d6c1e416eef48ce5595dad.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_SNPEUtil_8h_1afa570a349803f5c3f875139cad64b138.html">Function Snpe_Util_CreateUserGlBuffer</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_SNPEUtil_8h_1afa570a349803f5c3f875139cad64b138.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_SNPEUtil_8h_1a18b17b3deb99b9c6ce401c4124055179.html">Function Snpe_Util_GetLastError</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_SNPEUtil_8h_1a18b17b3deb99b9c6ce401c4124055179.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_SNPEUtil_8h_1ae11da8d0513c2374624d488bf4c76c20.html">Function Snpe_Util_GetLibraryVersion</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_SNPEUtil_8h_1ae11da8d0513c2374624d488bf4c76c20.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_SNPEUtil_8h_1a23e0f3f44c5ff5ac89a7a8f74aecba28.html">Function Snpe_Util_InitializeLogging</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_SNPEUtil_8h_1a23e0f3f44c5ff5ac89a7a8f74aecba28.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_SNPEUtil_8h_1a4245f3bf270e24528a92f6baab4fba91.html">Function Snpe_Util_InitializeLoggingPath</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_SNPEUtil_8h_1a4245f3bf270e24528a92f6baab4fba91.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_SNPEUtil_8h_1a19f1079a470734df5075a52df331c663.html">Function Snpe_Util_IsGLCLInteropSupported</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_SNPEUtil_8h_1a19f1079a470734df5075a52df331c663.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_SNPEUtil_8h_1ae8eb4fc4f502327271ed17bb907c2acb.html">Function Snpe_Util_IsRuntimeAvailable</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_SNPEUtil_8h_1ae8eb4fc4f502327271ed17bb907c2acb.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_SNPEUtil_8h_1aa9d48a9194b2d0604917295a5bee2c31.html">Function Snpe_Util_IsRuntimeAvailableCheckOption</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_SNPEUtil_8h_1aa9d48a9194b2d0604917295a5bee2c31.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_SNPEUtil_8h_1ab30e87b36fcd1f5fd5da069179ea2857.html">Function Snpe_Util_SetLogLevel</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_SNPEUtil_8h_1ab30e87b36fcd1f5fd5da069179ea2857.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_SNPEUtil_8h_1a2a228e1f600af3839ed690f1a99c3d26.html">Function Snpe_Util_SetSNPEStorageLocation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_SNPEUtil_8h_1a2a228e1f600af3839ed690f1a99c3d26.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_SNPEUtil_8h_1a3a4c36b743fafa1b22453373ded1a05f.html">Function Snpe_Util_TerminateLogging</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_SNPEUtil_8h_1a3a4c36b743fafa1b22453373ded1a05f.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_group__c__plus__plus__apis_1gad10f05e7b03751b4952e42c198087696.html">Function SnpeUdo_getRegInfo</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_group__c__plus__plus__apis_1gad10f05e7b03751b4952e42c198087696.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_group__c__plus__plus__apis_1gac0e8d3c9682417fb37c23c1f5f8e6767.html">Function SnpeUdo_getRegLibraryVersion</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_group__c__plus__plus__apis_1gac0e8d3c9682417fb37c23c1f5f8e6767.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_group__c__plus__plus__apis_1gac23e07be91ff77179f261c2769b455aa.html">Function SnpeUdo_getVersion</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_group__c__plus__plus__apis_1gac23e07be91ff77179f261c2769b455aa.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_group__c__plus__plus__apis_1ga31aa95f2882a46d49e8d84ece2cdc02b.html">Function SnpeUdo_initRegLibrary</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_group__c__plus__plus__apis_1ga31aa95f2882a46d49e8d84ece2cdc02b.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_group__c__plus__plus__apis_1ga7c4e2fa24b6fe0afd21a73e424b129ae.html">Function SnpeUdo_terminateRegLibrary</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_group__c__plus__plus__apis_1ga7c4e2fa24b6fe0afd21a73e424b129ae.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_group__c__plus__plus__apis_1gaa89690a5bfe1db94b57708af925bacb8.html">Function SnpeUdo_validateOperation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_group__c__plus__plus__apis_1gaa89690a5bfe1db94b57708af925bacb8.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="defines">
+<h2>Defines<a class="headerlink" href="#defines" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="define_UdoBase_8h_1a06a58d58368a525f56d5bbc0b7596739.html">Define API_VERSION_MAJOR</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="define_UdoBase_8h_1a06a58d58368a525f56d5bbc0b7596739.html#define-documentation">Define Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="define_UdoBase_8h_1ab91d6a2aef1b817c5fc0eb5ed4f5d74d.html">Define API_VERSION_MINOR</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="define_UdoBase_8h_1ab91d6a2aef1b817c5fc0eb5ed4f5d74d.html#define-documentation">Define Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="define_UdoBase_8h_1a19de0a71fe35ab4c76cd2d41f8021c64.html">Define API_VERSION_TEENY</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="define_UdoBase_8h_1a19de0a71fe35ab4c76cd2d41f8021c64.html#define-documentation">Define Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="define_SnpeApiExportDefine_8h_1a667963fd6f8fa52f608ccf1d6d93de3b.html">Define SNPE_API</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="define_SnpeApiExportDefine_8h_1a667963fd6f8fa52f608ccf1d6d93de3b.html#define-documentation">Define Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="define_group__c__plus__plus__apis_1ga7b836190dc60bde47ed286d790ee677b.html">Define SNPE_UDO_MAX_STRING_SIZE</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="define_group__c__plus__plus__apis_1ga7b836190dc60bde47ed286d790ee677b.html#define-documentation">Define Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="typedefs">
+<h2>Typedefs<a class="headerlink" href="#typedefs" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="typedef_DlContainer_8h_1a8ac3074f1b064d0f22f271ad45e02fc0.html">Typedef Snpe_DlContainer_Handle_t</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="typedef_DlContainer_8h_1a8ac3074f1b064d0f22f271ad45e02fc0.html#typedef-documentation">Typedef Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="typedef_DlContainer_8h_1a9cfdfaa8859e7155f58354e0851c5cb9.html">Typedef Snpe_DlcRecord_Handle_t</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="typedef_DlContainer_8h_1a9cfdfaa8859e7155f58354e0851c5cb9.html#typedef-documentation">Typedef Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="typedef_DlVersion_8h_1ab07d7501afd32b6713513727f7515078.html">Typedef Snpe_DlVersion_Handle_t</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="typedef_DlVersion_8h_1ab07d7501afd32b6713513727f7515078.html#typedef-documentation">Typedef Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="typedef_IBufferAttributes_8h_1a5339ab1d422c3bf2213bbbd856b093de.html">Typedef Snpe_IBufferAttributes_Handle_t</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="typedef_IBufferAttributes_8h_1a5339ab1d422c3bf2213bbbd856b093de.html#typedef-documentation">Typedef Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="typedef_IDiagLog_8h_1af59e8dec1469302c030352eb74def6da.html">Typedef Snpe_IDiagLog_Handle_t</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="typedef_IDiagLog_8h_1af59e8dec1469302c030352eb74def6da.html#typedef-documentation">Typedef Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="typedef_IOBufferDataTypeMap_8h_1aefe34c573293c5fc354d68eba2e77dba.html">Typedef Snpe_IOBufferDataTypeMap_Handle_t</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="typedef_IOBufferDataTypeMap_8h_1aefe34c573293c5fc354d68eba2e77dba.html#typedef-documentation">Typedef Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="typedef_ITensor_8h_1aac1985017a981e69e6a6efcf88f6ed34.html">Typedef Snpe_ITensor_Handle_t</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="typedef_ITensor_8h_1aac1985017a981e69e6a6efcf88f6ed34.html#typedef-documentation">Typedef Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="typedef_IUserBuffer_8h_1a3a160bced295466d70289dcf1deeffbf.html">Typedef Snpe_IUserBuffer_Handle_t</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="typedef_IUserBuffer_8h_1a3a160bced295466d70289dcf1deeffbf.html#typedef-documentation">Typedef Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="typedef_Options_8h_1aa7fda22ffedb317a63d165fe52f00514.html">Typedef Snpe_Options_Handle_t</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="typedef_Options_8h_1aa7fda22ffedb317a63d165fe52f00514.html#typedef-documentation">Typedef Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="typedef_PlatformConfig_8h_1ae58aee13fd1d72185e173efc1a26eee1.html">Typedef Snpe_PlatformConfig_Handle_t</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="typedef_PlatformConfig_8h_1ae58aee13fd1d72185e173efc1a26eee1.html#typedef-documentation">Typedef Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="typedef_PlatformValidator_8h_1a02225a7783ad66bc2aa70cb0eb3572e3.html">Typedef Snpe_PlatformValidator_Handle_t</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="typedef_PlatformValidator_8h_1a02225a7783ad66bc2aa70cb0eb3572e3.html#typedef-documentation">Typedef Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="typedef_RuntimeList_8h_1af5de4fb49e732ad0d0ffc094b6d8d94e.html">Typedef Snpe_RuntimeList_Handle_t</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="typedef_RuntimeList_8h_1af5de4fb49e732ad0d0ffc094b6d8d94e.html#typedef-documentation">Typedef Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="typedef_SNPE_8h_1ac4d946a1db4097746e726714e145e08a.html">Typedef Snpe_SNPE_Handle_t</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="typedef_SNPE_8h_1ac4d946a1db4097746e726714e145e08a.html#typedef-documentation">Typedef Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="typedef_SNPEBuilder_8h_1a5525f7c887b922195624658ef8f12478.html">Typedef Snpe_SNPEBuilder_Handle_t</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="typedef_SNPEBuilder_8h_1a5525f7c887b922195624658ef8f12478.html#typedef-documentation">Typedef Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="typedef_StringList_8h_1a86a9e0d044299b1ed6b8a85280830503.html">Typedef Snpe_StringList_Handle_t</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="typedef_StringList_8h_1a86a9e0d044299b1ed6b8a85280830503.html#typedef-documentation">Typedef Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="typedef_TensorMap_8h_1a34b8c6fc57325c0bde640c8b949b04b9.html">Typedef Snpe_TensorMap_Handle_t</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="typedef_TensorMap_8h_1a34b8c6fc57325c0bde640c8b949b04b9.html#typedef-documentation">Typedef Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="typedef_TensorShape_8h_1aa2c4ee3ae82899680c05757c4c44c1ee.html">Typedef Snpe_TensorShape_Handle_t</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="typedef_TensorShape_8h_1aa2c4ee3ae82899680c05757c4c44c1ee.html#typedef-documentation">Typedef Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="typedef_TensorShapeMap_8h_1ae8e826453db558bff10f2ac433681685.html">Typedef Snpe_TensorShapeMap_Handle_t</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="typedef_TensorShapeMap_8h_1ae8e826453db558bff10f2ac433681685.html#typedef-documentation">Typedef Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="typedef_IUserBuffer_8h_1af8d0448ead613b976948e31bc968f66b.html">Typedef Snpe_UserBufferEncoding_Handle_t</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="typedef_IUserBuffer_8h_1af8d0448ead613b976948e31bc968f66b.html#typedef-documentation">Typedef Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="typedef_UserBufferMap_8h_1a2989cd43b0d4716b6c313ee6cbbd349e.html">Typedef Snpe_UserBufferMap_Handle_t</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="typedef_UserBufferMap_8h_1a2989cd43b0d4716b6c313ee6cbbd349e.html#typedef-documentation">Typedef Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="typedef_IUserBuffer_8h_1a4b8f1afe8831088740526bf3a4126259.html">Typedef Snpe_UserBufferSource_Handle_t</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="typedef_IUserBuffer_8h_1a4b8f1afe8831088740526bf3a4126259.html#typedef-documentation">Typedef Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="typedef_PlatformConfig_8h_1afef16cd933904acd2bbf5f4b5aa1e6c2.html">Typedef Snpe_UserGLConfig_Handle_t</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="typedef_PlatformConfig_8h_1afef16cd933904acd2bbf5f4b5aa1e6c2.html#typedef-documentation">Typedef Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="typedef_PlatformConfig_8h_1ad221ab29696dd469998a3f404b0d9879.html">Typedef Snpe_UserGpuConfig_Handle_t</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="typedef_PlatformConfig_8h_1ad221ab29696dd469998a3f404b0d9879.html#typedef-documentation">Typedef Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="typedef_UserMemoryMap_8h_1a5a9166be9dec139b8e14df375997b726.html">Typedef Snpe_UserMemoryMap_Handle_t</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="typedef_UserMemoryMap_8h_1a5a9166be9dec139b8e14df375997b726.html#typedef-documentation">Typedef Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="typedef_group__c__plus__plus__apis_1ga1b06de77986995ac48881aa40c6ccccd.html">Typedef SnpeUdo_Bitmask_t</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="typedef_group__c__plus__plus__apis_1ga1b06de77986995ac48881aa40c6ccccd.html#typedef-documentation">Typedef Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="typedef_group__c__plus__plus__apis_1gafc7621340c621338be0e3e4d5b698848.html">Typedef SnpeUdo_GetRegInfoFunction_t</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="typedef_group__c__plus__plus__apis_1gafc7621340c621338be0e3e4d5b698848.html#typedef-documentation">Typedef Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="typedef_group__c__plus__plus__apis_1ga92822526ce54b3346ac2510bbedb0018.html">Typedef SnpeUdo_getRegLibraryVersion_t</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="typedef_group__c__plus__plus__apis_1ga92822526ce54b3346ac2510bbedb0018.html#typedef-documentation">Typedef Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="typedef_group__c__plus__plus__apis_1ga76873be6b2fbeb6f26cf4eeaa929a24a.html">Typedef SnpeUdo_GetVersionFunction_t</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="typedef_group__c__plus__plus__apis_1ga76873be6b2fbeb6f26cf4eeaa929a24a.html#typedef-documentation">Typedef Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="typedef_group__c__plus__plus__apis_1gaab98c4de0515b848f853540c2a45052b.html">Typedef SnpeUdo_InitRegLibraryFunction_t</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="typedef_group__c__plus__plus__apis_1gaab98c4de0515b848f853540c2a45052b.html#typedef-documentation">Typedef Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="typedef_group__c__plus__plus__apis_1ga1efd1795e7cb10d2c818c2a06e62cbda.html">Typedef SnpeUdo_String_t</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="typedef_group__c__plus__plus__apis_1ga1efd1795e7cb10d2c818c2a06e62cbda.html#typedef-documentation">Typedef Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="typedef_group__c__plus__plus__apis_1ga0862d514f56cca56e4fbef3be644d2a4.html">Typedef SnpeUdo_TerminateRegLibraryFunction_t</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="typedef_group__c__plus__plus__apis_1ga0862d514f56cca56e4fbef3be644d2a4.html#typedef-documentation">Typedef Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="typedef_group__c__plus__plus__apis_1gaefef1fbaf4c1e8774284fae74550a6a1.html">Typedef SnpeUdo_ValidateOperationFunction_t</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="typedef_group__c__plus__plus__apis_1gaefef1fbaf4c1e8774284fae74550a6a1.html#typedef-documentation">Typedef Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="typedef_group__c__plus__plus__apis_1ga679e7ce851e2a77affaa30a8127aa497.html">Typedef Udo_Bitmask_t</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="typedef_group__c__plus__plus__apis_1ga679e7ce851e2a77affaa30a8127aa497.html#typedef-documentation">Typedef Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="typedef_group__c__plus__plus__apis_1gab85f309acfea7ca95e114308750023e8.html">Typedef Udo_CoreType_t</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="typedef_group__c__plus__plus__apis_1gab85f309acfea7ca95e114308750023e8.html#typedef-documentation">Typedef Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="typedef_group__c__plus__plus__apis_1ga9ecf4bdcecc473f24a4e33962db6f489.html">Typedef Udo_DataType_t</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="typedef_group__c__plus__plus__apis_1ga9ecf4bdcecc473f24a4e33962db6f489.html#typedef-documentation">Typedef Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="typedef_group__c__plus__plus__apis_1gad80698aa42a55c250c01e604752c2f4b.html">Typedef Udo_ErrorType_t</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="typedef_group__c__plus__plus__apis_1gad80698aa42a55c250c01e604752c2f4b.html#typedef-documentation">Typedef Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="typedef_group__c__plus__plus__apis_1gae7c3e3cb16c89efea819b8b964496cf8.html">Typedef Udo_GetVersionFunction_t</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="typedef_group__c__plus__plus__apis_1gae7c3e3cb16c89efea819b8b964496cf8.html#typedef-documentation">Typedef Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="typedef_group__c__plus__plus__apis_1ga562d8455baee0bf847b6999a8f70a41e.html">Typedef Udo_ImpInfo_t</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="typedef_group__c__plus__plus__apis_1ga562d8455baee0bf847b6999a8f70a41e.html#typedef-documentation">Typedef Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="typedef_group__c__plus__plus__apis_1gab79b7a8564fc8376bbbd304a7b557e38.html">Typedef Udo_LibraryInfo_t</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="typedef_group__c__plus__plus__apis_1gab79b7a8564fc8376bbbd304a7b557e38.html#typedef-documentation">Typedef Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="typedef_group__c__plus__plus__apis_1ga1ab71263fe74aad9370b6fc53687e572.html">Typedef Udo_OpCoreInfo_t</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="typedef_group__c__plus__plus__apis_1ga1ab71263fe74aad9370b6fc53687e572.html#typedef-documentation">Typedef Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="typedef_group__c__plus__plus__apis_1ga2eb27d6fddaf6eb07ecb423d2a692628.html">Typedef Udo_OpDefinition_t</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="typedef_group__c__plus__plus__apis_1ga2eb27d6fddaf6eb07ecb423d2a692628.html#typedef-documentation">Typedef Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="typedef_group__c__plus__plus__apis_1gac7df5ae48bcb70f858ee3038458f7535.html">Typedef Udo_OperationInfo_t</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="typedef_group__c__plus__plus__apis_1gac7df5ae48bcb70f858ee3038458f7535.html#typedef-documentation">Typedef Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="typedef_group__c__plus__plus__apis_1gaa271c0428364cd56dd787b8fb5bfc19e.html">Typedef Udo_Param_t</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="typedef_group__c__plus__plus__apis_1gaa271c0428364cd56dd787b8fb5bfc19e.html#typedef-documentation">Typedef Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="typedef_group__c__plus__plus__apis_1gad0f8c2357db4f0e593dee312a1ddde80.html">Typedef Udo_ParamType_t</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="typedef_group__c__plus__plus__apis_1gad0f8c2357db4f0e593dee312a1ddde80.html#typedef-documentation">Typedef Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="typedef_group__c__plus__plus__apis_1gaea09edc65098ebda8282fd1a607d1a40.html">Typedef Udo_PerCoreDatatype_t</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="typedef_group__c__plus__plus__apis_1gaea09edc65098ebda8282fd1a607d1a40.html#typedef-documentation">Typedef Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="typedef_group__c__plus__plus__apis_1ga75decd2b76077d1f7b2116e039279b0c.html">Typedef Udo_QuantizationType_t</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="typedef_group__c__plus__plus__apis_1ga75decd2b76077d1f7b2116e039279b0c.html#typedef-documentation">Typedef Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="typedef_group__c__plus__plus__apis_1ga5d94398ae44868f3c76a1dabda560473.html">Typedef Udo_QuantizeParams_t</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="typedef_group__c__plus__plus__apis_1ga5d94398ae44868f3c76a1dabda560473.html#typedef-documentation">Typedef Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="typedef_group__c__plus__plus__apis_1gaa1afc9bc405e9cd02d43529b9e14b929.html">Typedef Udo_RegInfo_t</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="typedef_group__c__plus__plus__apis_1gaa1afc9bc405e9cd02d43529b9e14b929.html#typedef-documentation">Typedef Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="typedef_group__c__plus__plus__apis_1gaabfcf11621caacddd54df327f7457171.html">Typedef Udo_ScalarParam_t</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="typedef_group__c__plus__plus__apis_1gaabfcf11621caacddd54df327f7457171.html#typedef-documentation">Typedef Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="typedef_group__c__plus__plus__apis_1ga079046340a6395a59780ba36743d16a5.html">Typedef Udo_String_t</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="typedef_group__c__plus__plus__apis_1ga079046340a6395a59780ba36743d16a5.html#typedef-documentation">Typedef Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="typedef_group__c__plus__plus__apis_1ga45a95450eb6acc1648ce419b44f9b6ed.html">Typedef Udo_TensorInfo_t</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="typedef_group__c__plus__plus__apis_1ga45a95450eb6acc1648ce419b44f9b6ed.html#typedef-documentation">Typedef Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="typedef_group__c__plus__plus__apis_1gaccdb2c1d830ccff7c6f855f361de0609.html">Typedef Udo_TensorLayout_t</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="typedef_group__c__plus__plus__apis_1gaccdb2c1d830ccff7c6f855f361de0609.html#typedef-documentation">Typedef Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="typedef_group__c__plus__plus__apis_1ga14c4948c0e2fbeb41a031a36514f78b2.html">Typedef Udo_TensorParam_t</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="typedef_group__c__plus__plus__apis_1ga14c4948c0e2fbeb41a031a36514f78b2.html#typedef-documentation">Typedef Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="typedef_group__c__plus__plus__apis_1ga9ed4d272ea19191ce0ff5981fcb57285.html">Typedef Udo_TFQuantize_t</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="typedef_group__c__plus__plus__apis_1ga9ed4d272ea19191ce0ff5981fcb57285.html#typedef-documentation">Typedef Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="typedef_group__c__plus__plus__apis_1gab59461620adcb481158cecfd633eec6e.html">Typedef Udo_Value_t</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="typedef_group__c__plus__plus__apis_1gab59461620adcb481158cecfd633eec6e.html#typedef-documentation">Typedef Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="typedef_group__c__plus__plus__apis_1gadec31b7c9cfebfd7a82e34e2c416d177.html">Typedef Udo_Version_t</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="typedef_group__c__plus__plus__apis_1gadec31b7c9cfebfd7a82e34e2c416d177.html#typedef-documentation">Typedef Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2020-2023, Qualcomm Technologies, Inc..
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

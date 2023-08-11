@@ -1,0 +1,412 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>File IOBufferDataTypeMap.hpp &mdash; Snapdragon Neural Processing Engine SDK</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/custom_css.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/collapsible-lists/css/tree_view.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+        <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Qualcomm® Neural Processing SDK
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                v2.12.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../general/revision_history.html">Revision History</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/revision_history_windows.html">Revision History - Windows</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/overview.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/setup.html">Setup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/usergroup1.html">Network Models</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/usergroup5.html">Input Data and Preprocessing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/usergroup6.html">Tutorials and Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/usergroup10.html">Benchmarking and Accuracy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/tools.html">Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/usergroup11.html">Debug Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/api.html">API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/limitations.html">Limitations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/appx_ref.html">References</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Qualcomm® Neural Processing SDK</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>File IOBufferDataTypeMap.hpp</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="file-iobufferdatatypemap-hpp">
+<span id="file-dlsystem-iobufferdatatypemap-hpp"></span><h1>File IOBufferDataTypeMap.hpp<a class="headerlink" href="#file-iobufferdatatypemap-hpp" title="Permalink to this headline">¶</a></h1>
+<p>↰ <a class="reference internal" href="dir_DlSystem.html#dir-dlsystem"><span class="std std-ref">Parent directory</span></a> (<code class="docutils literal notranslate"><span class="pre">DlSystem</span></code>)</p>
+<div class="contents local topic" id="contents">
+<p class="topic-title">Contents</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#definition-dlsystem-iobufferdatatypemap-hpp" id="id1">Definition (<code class="docutils literal notranslate"><span class="pre">DlSystem/IOBufferDataTypeMap.hpp</span></code>)</a></p></li>
+<li><p><a class="reference internal" href="#includes" id="id2">Includes</a></p></li>
+<li><p><a class="reference internal" href="#included-by" id="id3">Included By</a></p></li>
+<li><p><a class="reference internal" href="#namespaces" id="id4">Namespaces</a></p></li>
+<li><p><a class="reference internal" href="#classes" id="id5">Classes</a></p></li>
+<li><p><a class="reference internal" href="#full-file-listing" id="id6">Full File Listing</a></p></li>
+</ul>
+</div>
+<div class="section" id="definition-dlsystem-iobufferdatatypemap-hpp">
+<h2>Definition (<code class="docutils literal notranslate"><span class="pre">DlSystem/IOBufferDataTypeMap.hpp</span></code>)<a class="headerlink" href="#definition-dlsystem-iobufferdatatypemap-hpp" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="program_listing_file_DlSystem_IOBufferDataTypeMap.hpp.html">Program Listing for File IOBufferDataTypeMap.hpp</a></li>
+</ul>
+</div>
+</div>
+<div class="section" id="includes">
+<h2>Includes<a class="headerlink" href="#includes" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">DlSystem/DlEnums.hpp</span></code> (<a class="reference internal" href="file_DlSystem_DlEnums.hpp.html#file-dlsystem-dlenums-hpp"><span class="std std-ref">File DlEnums.hpp</span></a>)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">cstddef</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">memory</span></code></p></li>
+</ul>
+</div>
+<div class="section" id="included-by">
+<h2>Included By<a class="headerlink" href="#included-by" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="file_SNPE_SNPEBuilder.hpp.html#file-snpe-snpebuilder-hpp"><span class="std std-ref">File SNPEBuilder.hpp</span></a></p></li>
+</ul>
+</div>
+<div class="section" id="namespaces">
+<h2>Namespaces<a class="headerlink" href="#namespaces" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="namespace_DlSystem.html#namespace-dlsystem"><span class="std std-ref">Namespace DlSystem</span></a></p></li>
+<li><p><a class="reference internal" href="namespace_zdl.html#namespace-zdl"><span class="std std-ref">Namespace zdl</span></a></p></li>
+<li><p><a class="reference internal" href="namespace_zdl__DlSystem.html#namespace-zdl-dlsystem"><span class="std std-ref">Namespace zdl::DlSystem</span></a></p></li>
+</ul>
+</div>
+<div class="section" id="classes">
+<h2>Classes<a class="headerlink" href="#classes" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="classzdl_1_1DlSystem_1_1IOBufferDataTypeMap.html#exhale-class-classzdl-1-1dlsystem-1-1iobufferdatatypemap"><span class="std std-ref">Class IOBufferDataTypeMap</span></a></p></li>
+</ul>
+</div>
+<div class="section" id="full-file-listing">
+<h2>Full File Listing<a class="headerlink" href="#full-file-listing" title="Permalink to this headline">¶</a></h2>
+<dl class="cpp type">
+<dt class="sig sig-object cpp" id="_CPPv48DlSystem">
+<span id="_CPPv38DlSystem"></span><span id="_CPPv28DlSystem"></span><span id="DlSystem"></span><span class="target" id="namespaceDlSystem"></span><span class="k"><span class="pre">namespace</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">DlSystem</span></span></span><a class="headerlink" href="#_CPPv48DlSystem" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp type">
+<dt class="sig sig-object cpp" id="_CPPv43zdl">
+<span id="_CPPv33zdl"></span><span id="_CPPv23zdl"></span><span id="zdl"></span><span class="target" id="namespacezdl"></span><span class="k"><span class="pre">namespace</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">zdl</span></span></span><br /></dt>
+<dd><dl class="cpp type">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystemE">
+<span id="_CPPv3N3zdl8DlSystemE"></span><span id="_CPPv2N3zdl8DlSystemE"></span><span id="zdl::DlSystem"></span><span class="target" id="namespacezdl_1_1DlSystem"></span><span class="k"><span class="pre">namespace</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">DlSystem</span></span></span><br /></dt>
+<dd><dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem19IOBufferDataTypeMapE">
+<span id="_CPPv3N3zdl8DlSystem19IOBufferDataTypeMapE"></span><span id="_CPPv2N3zdl8DlSystem19IOBufferDataTypeMapE"></span><span id="zdl::DlSystem::IOBufferDataTypeMap"></span><span class="target" id="classzdl_1_1DlSystem_1_1IOBufferDataTypeMap"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">IOBufferDataTypeMap</span></span></span><br /></dt>
+<dd><em>#include &lt;IOBufferDataTypeMap.hpp&gt;</em><p>The IoBufferDataTypeMap class definition </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem19IOBufferDataTypeMap19IOBufferDataTypeMapEv">
+<span id="_CPPv3N3zdl8DlSystem19IOBufferDataTypeMap19IOBufferDataTypeMapEv"></span><span id="_CPPv2N3zdl8DlSystem19IOBufferDataTypeMap19IOBufferDataTypeMapEv"></span><span id="zdl::DlSystem::IOBufferDataTypeMap::IOBufferDataTypeMap"></span><span class="target" id="group__c__plus__plus__apis_1ga2476ae2715fb6f22a5a9d07452c6f040"></span><span class="sig-name descname"><span class="n"><span class="pre">IOBufferDataTypeMap</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><br /></dt>
+<dd><p>Creates a new Buffer Data type map </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem19IOBufferDataTypeMap3addEPKcN3zdl8DlSystem18IOBufferDataType_tE">
+<span id="_CPPv3N3zdl8DlSystem19IOBufferDataTypeMap3addEPKcN3zdl8DlSystem18IOBufferDataType_tE"></span><span id="_CPPv2N3zdl8DlSystem19IOBufferDataTypeMap3addEPKcN3zdl8DlSystem18IOBufferDataType_tE"></span><span id="zdl::DlSystem::IOBufferDataTypeMap::add__cCP.zdl::DlSystem::IOBufferDataType_t"></span><span class="target" id="group__c__plus__plus__apis_1gacd571cbcca93cdb90524ae74223828bd"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">add</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">name</span></span>, <a class="reference internal" href="file_DlContainer_IDlContainer.hpp.html#_CPPv43zdl" title="zdl"><span class="n"><span class="pre">zdl</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="file_DlSystem_DlEnums.hpp.html#_CPPv4N3zdl8DlSystemE" title="zdl::DlSystem"><span class="n"><span class="pre">DlSystem</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="enum_namespacezdl_1_1DlSystem_1aade6a059ec7d85b25ad69976c55e217a.html#_CPPv4N3zdl8DlSystem18IOBufferDataType_tE" title="zdl::DlSystem::IOBufferDataType_t"><span class="n"><span class="pre">IOBufferDataType_t</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">bufferDataType</span></span><span class="sig-paren">)</span><br /></dt>
+<dd><p>Adds a name and the corresponding buffer data type to the map. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>[name]</strong> – name The name of the buffer </p></li>
+<li><p><strong>[bufferDataType]</strong> – buffer Data Type of the buffer</p></li>
+</ul>
+</dd>
+</dl>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If a buffer with the same name already exists, no new buffer is added. </p>
+</div>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem19IOBufferDataTypeMap6removeEPKc">
+<span id="_CPPv3N3zdl8DlSystem19IOBufferDataTypeMap6removeEPKc"></span><span id="_CPPv2N3zdl8DlSystem19IOBufferDataTypeMap6removeEPKc"></span><span id="zdl::DlSystem::IOBufferDataTypeMap::remove__cCP"></span><span class="target" id="group__c__plus__plus__apis_1gad038438baa3ce12069b2b62cf478e95d"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">remove</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">name</span></span><span class="sig-paren">)</span><br /></dt>
+<dd><p>Removes a buffer name from the map. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>[name]</strong> – name The name of the buffer </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem19IOBufferDataTypeMap17getBufferDataTypeEPKc">
+<span id="_CPPv3N3zdl8DlSystem19IOBufferDataTypeMap17getBufferDataTypeEPKc"></span><span id="_CPPv2N3zdl8DlSystem19IOBufferDataTypeMap17getBufferDataTypeEPKc"></span><span id="zdl::DlSystem::IOBufferDataTypeMap::getBufferDataType__cCP"></span><span class="target" id="group__c__plus__plus__apis_1gab4036629d75e1321872c539b59646247"></span><a class="reference internal" href="file_DlContainer_IDlContainer.hpp.html#_CPPv43zdl" title="zdl"><span class="n"><span class="pre">zdl</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="file_DlSystem_DlEnums.hpp.html#_CPPv4N3zdl8DlSystemE" title="zdl::DlSystem"><span class="n"><span class="pre">DlSystem</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="enum_namespacezdl_1_1DlSystem_1aade6a059ec7d85b25ad69976c55e217a.html#_CPPv4N3zdl8DlSystem18IOBufferDataType_tE" title="zdl::DlSystem::IOBufferDataType_t"><span class="n"><span class="pre">IOBufferDataType_t</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getBufferDataType</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">name</span></span><span class="sig-paren">)</span><br /></dt>
+<dd><p>Returns the type of the named buffer. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>[name]</strong> – name The name of the buffer</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>The type of the buffer, or UNSPECIFIED if the buffer does not exist </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem19IOBufferDataTypeMap17getBufferDataTypeEv">
+<span id="_CPPv3N3zdl8DlSystem19IOBufferDataTypeMap17getBufferDataTypeEv"></span><span id="_CPPv2N3zdl8DlSystem19IOBufferDataTypeMap17getBufferDataTypeEv"></span><span id="zdl::DlSystem::IOBufferDataTypeMap::getBufferDataType"></span><span class="target" id="group__c__plus__plus__apis_1ga7cf7334558dbad4f5ce2d9cf61ea0925"></span><a class="reference internal" href="file_DlContainer_IDlContainer.hpp.html#_CPPv43zdl" title="zdl"><span class="n"><span class="pre">zdl</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="file_DlSystem_DlEnums.hpp.html#_CPPv4N3zdl8DlSystemE" title="zdl::DlSystem"><span class="n"><span class="pre">DlSystem</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="enum_namespacezdl_1_1DlSystem_1aade6a059ec7d85b25ad69976c55e217a.html#_CPPv4N3zdl8DlSystem18IOBufferDataType_tE" title="zdl::DlSystem::IOBufferDataType_t"><span class="n"><span class="pre">IOBufferDataType_t</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getBufferDataType</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><br /></dt>
+<dd><p>Returns the type of the first buffer. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>The type of the first buffer, or UNSPECIFIED if the map is empty. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem19IOBufferDataTypeMap4sizeEv">
+<span id="_CPPv3N3zdl8DlSystem19IOBufferDataTypeMap4sizeEv"></span><span id="_CPPv2N3zdl8DlSystem19IOBufferDataTypeMap4sizeEv"></span><span id="zdl::DlSystem::IOBufferDataTypeMap::size"></span><span class="target" id="group__c__plus__plus__apis_1ga90706554aef1134bfe8e5b0901c41319"></span><span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">size</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><br /></dt>
+<dd><p>Returns the size of the buffer type map. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>The size of the map </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem19IOBufferDataTypeMap4findEPKc">
+<span id="_CPPv3N3zdl8DlSystem19IOBufferDataTypeMap4findEPKc"></span><span id="_CPPv2N3zdl8DlSystem19IOBufferDataTypeMap4findEPKc"></span><span id="zdl::DlSystem::IOBufferDataTypeMap::find__cCP"></span><span class="target" id="group__c__plus__plus__apis_1ga8f0b20146b76dc796e53dce5b06b50dc"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">find</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">name</span></span><span class="sig-paren">)</span><br /></dt>
+<dd><p>Checks the existence of the named buffer in the map. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>True if the named buffer exists, false otherwise. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem19IOBufferDataTypeMap5clearEv">
+<span id="_CPPv3N3zdl8DlSystem19IOBufferDataTypeMap5clearEv"></span><span id="_CPPv2N3zdl8DlSystem19IOBufferDataTypeMap5clearEv"></span><span id="zdl::DlSystem::IOBufferDataTypeMap::clear"></span><span class="target" id="group__c__plus__plus__apis_1gac783c5ad47168c1a45f4920a82934911"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">clear</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><br /></dt>
+<dd><p>Resets the map. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem19IOBufferDataTypeMap5emptyEv">
+<span id="_CPPv3N3zdl8DlSystem19IOBufferDataTypeMap5emptyEv"></span><span id="_CPPv2N3zdl8DlSystem19IOBufferDataTypeMap5emptyEv"></span><span id="zdl::DlSystem::IOBufferDataTypeMap::empty"></span><span class="target" id="group__c__plus__plus__apis_1gaab293e27750e9ecbecb57bb6af4f4dfa"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">empty</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><br /></dt>
+<dd><p>Checks whether the map is empty. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>True if the map is empty, false otherwise. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem19IOBufferDataTypeMapD0Ev">
+<span id="_CPPv3N3zdl8DlSystem19IOBufferDataTypeMapD0Ev"></span><span id="_CPPv2N3zdl8DlSystem19IOBufferDataTypeMapD0Ev"></span><span id="zdl::DlSystem::IOBufferDataTypeMap::~IOBufferDataTypeMap"></span><span class="target" id="group__c__plus__plus__apis_1gaa6b35469a1b521fb71715d74c9b87f8f"></span><span class="sig-name descname"><span class="n"><span class="pre">~IOBufferDataTypeMap</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><br /></dt>
+<dd><p>Destroys the map. </p>
+</dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-private-members">Private Members</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem19IOBufferDataTypeMap25m_IOBufferDataTypeMapImplE">
+<span id="_CPPv3N3zdl8DlSystem19IOBufferDataTypeMap25m_IOBufferDataTypeMapImplE"></span><span id="_CPPv2N3zdl8DlSystem19IOBufferDataTypeMap25m_IOBufferDataTypeMapImplE"></span><span id="zdl::DlSystem::IOBufferDataTypeMap::m_IOBufferDataTypeMapImpl__std::shared_ptr:DlSystem::IOBufferDataTypeMapImpl:"></span><span class="target" id="group__c__plus__plus__apis_1ga067d13094e7384436424387c893a581e"></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">shared_ptr</span></span><span class="p"><span class="pre">&lt;</span></span><span class="p"><span class="pre">::</span></span><a class="reference internal" href="#_CPPv48DlSystem" title="DlSystem"><span class="n"><span class="pre">DlSystem</span></span></a><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">IOBufferDataTypeMapImpl</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">m_IOBufferDataTypeMapImpl</span></span></span><a class="headerlink" href="#_CPPv4N3zdl8DlSystem19IOBufferDataTypeMap25m_IOBufferDataTypeMapImplE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2020-2023, Qualcomm Technologies, Inc..
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

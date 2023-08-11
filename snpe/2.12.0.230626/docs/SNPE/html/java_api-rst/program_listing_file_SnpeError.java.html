@@ -1,0 +1,909 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Program Listing for File SnpeError.java &mdash; Snapdragon Neural Processing Engine SDK</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/custom_css.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/collapsible-lists/css/tree_view.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+        <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Qualcomm® Neural Processing SDK
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                v2.12.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../general/revision_history.html">Revision History</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/revision_history_windows.html">Revision History - Windows</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/overview.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/setup.html">Setup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/usergroup1.html">Network Models</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/usergroup5.html">Input Data and Preprocessing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/usergroup6.html">Tutorials and Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/usergroup10.html">Benchmarking and Accuracy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/tools.html">Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/usergroup11.html">Debug Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/api.html">API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/limitations.html">Limitations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/appx_ref.html">References</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Qualcomm® Neural Processing SDK</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Program Listing for File SnpeError.java</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="program-listing-for-file-snpeerror-java">
+<span id="program-listing-file-snpeerror-java"></span><h1>Program Listing for File SnpeError.java<a class="headerlink" href="#program-listing-for-file-snpeerror-java" title="Permalink to this headline">¶</a></h1>
+<p>↰ <a class="reference internal" href="file_SnpeError.java.html#file-snpeerror-java"><span class="std std-ref">Return to documentation for file</span></a> (<code class="docutils literal notranslate"><span class="pre">SnpeError.java</span></code>)</p>
+<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="cm">/*</span>
+<span class="cm"> * Copyright (c) 2019-2020 Qualcomm Technologies, Inc.</span>
+<span class="cm"> * All Rights Reserved.</span>
+<span class="cm"> * Confidential and Proprietary - Qualcomm Technologies, Inc.</span>
+<span class="cm"> */</span>
+
+<span class="kn">package</span><span class="w"> </span><span class="nn">com.qualcomm.qti.snpe</span><span class="p">;</span>
+
+<span class="cm">/**</span>
+<span class="cm"> * @addtogroup java_apis</span>
+<span class="cm"> * @{</span>
+<span class="cm"> */</span>
+
+<span class="cm">/**</span>
+<span class="cm"> * {@link SnpeError} throws exceptions with code and message</span>
+<span class="cm"> */</span>
+<span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">SnpeError</span><span class="w"> </span><span class="p">{</span>
+
+<span class="w">    </span><span class="kd">private</span><span class="w"> </span><span class="nf">SnpeError</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="kd">private</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="n">SnpeError</span><span class="w"> </span><span class="n">mInstance</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">null</span><span class="p">;</span>
+
+<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="n">SnpeError</span><span class="w"> </span><span class="nf">getInstance</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">mInstance</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="kc">null</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="n">mInstance</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">SnpeError</span><span class="p">();</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="n">mInstance</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="n">NativeException</span><span class="w"> </span><span class="nf">getSnpeNativeError</span><span class="p">(</span><span class="n">String</span><span class="w"> </span><span class="n">message</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">Error</span><span class="w"> </span><span class="n">error</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Error</span><span class="p">.</span><span class="na">getError</span><span class="p">(</span><span class="n">message</span><span class="p">);</span>
+<span class="w">        </span><span class="n">NativeException</span><span class="w"> </span><span class="n">exception</span><span class="p">;</span>
+<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">error</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="kc">null</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="n">exception</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">NativeException</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="n">message</span><span class="p">);</span>
+<span class="w">        </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="n">exception</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">NativeException</span><span class="p">(</span><span class="n">error</span><span class="p">.</span><span class="na">code</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;error_code : &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">error</span><span class="p">.</span><span class="na">code</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&quot; error_message: &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">error</span><span class="p">.</span><span class="na">message</span><span class="p">);</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="n">exception</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="n">InvalidInputException</span><span class="w"> </span><span class="nf">getInvalidInputError</span><span class="p">(</span><span class="n">Error</span><span class="w"> </span><span class="n">error</span><span class="p">,</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="n">info</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">InvalidInputException</span><span class="p">(</span><span class="n">error</span><span class="p">.</span><span class="na">code</span><span class="p">,</span><span class="w"> </span><span class="n">getErrorMessage</span><span class="p">(</span><span class="n">error</span><span class="p">.</span><span class="na">code</span><span class="p">,</span><span class="w"> </span><span class="n">error</span><span class="p">.</span><span class="na">message</span><span class="p">,</span><span class="w"> </span><span class="n">info</span><span class="p">));</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="n">InvalidInputException</span><span class="w"> </span><span class="nf">getInvalidInputError</span><span class="p">(</span><span class="n">Error</span><span class="w"> </span><span class="n">error</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">InvalidInputException</span><span class="p">(</span><span class="n">error</span><span class="p">.</span><span class="na">code</span><span class="p">,</span><span class="w"> </span><span class="n">getErrorMessage</span><span class="p">(</span><span class="n">error</span><span class="p">.</span><span class="na">code</span><span class="p">,</span><span class="w"> </span><span class="n">error</span><span class="p">.</span><span class="na">message</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;&quot;</span><span class="p">));</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="n">IllegalArgsOrStateException</span><span class="w"> </span><span class="nf">getIllegalError</span><span class="p">(</span><span class="n">Error</span><span class="w"> </span><span class="n">error</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">IllegalArgsOrStateException</span><span class="p">(</span><span class="n">error</span><span class="p">.</span><span class="na">code</span><span class="p">,</span><span class="w"> </span><span class="n">getErrorMessage</span><span class="p">(</span><span class="n">error</span><span class="p">.</span><span class="na">code</span><span class="p">,</span><span class="w"> </span><span class="n">error</span><span class="p">.</span><span class="na">message</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;&quot;</span><span class="p">));</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="n">IllegalArgsOrStateException</span><span class="w"> </span><span class="nf">getIllegalError</span><span class="p">(</span><span class="n">Error</span><span class="w"> </span><span class="n">error</span><span class="p">,</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="n">info</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">IllegalArgsOrStateException</span><span class="p">(</span><span class="n">error</span><span class="p">.</span><span class="na">code</span><span class="p">,</span><span class="w"> </span><span class="n">getErrorMessage</span><span class="p">(</span><span class="n">error</span><span class="p">.</span><span class="na">code</span><span class="p">,</span><span class="w"> </span><span class="n">error</span><span class="p">.</span><span class="na">message</span><span class="p">,</span><span class="w"> </span><span class="n">info</span><span class="p">));</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="n">SnpeIOException</span><span class="w"> </span><span class="nf">getIOError</span><span class="p">(</span><span class="n">Error</span><span class="w"> </span><span class="n">error</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">SnpeIOException</span><span class="p">(</span><span class="n">error</span><span class="p">.</span><span class="na">code</span><span class="p">,</span><span class="w"> </span><span class="n">getErrorMessage</span><span class="p">(</span><span class="n">error</span><span class="p">.</span><span class="na">code</span><span class="p">,</span><span class="w"> </span><span class="n">error</span><span class="p">.</span><span class="na">message</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;&quot;</span><span class="p">));</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="n">SnpeIOException</span><span class="w"> </span><span class="nf">getIOError</span><span class="p">(</span><span class="n">Error</span><span class="w"> </span><span class="n">error</span><span class="p">,</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="n">info</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">SnpeIOException</span><span class="p">(</span><span class="n">error</span><span class="p">.</span><span class="na">code</span><span class="p">,</span><span class="w"> </span><span class="n">getErrorMessage</span><span class="p">(</span><span class="n">error</span><span class="p">.</span><span class="na">code</span><span class="p">,</span><span class="w"> </span><span class="n">error</span><span class="p">.</span><span class="na">message</span><span class="p">,</span><span class="w"> </span><span class="n">info</span><span class="p">));</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="kd">private</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="nf">getErrorMessage</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">code</span><span class="p">,</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="n">message</span><span class="p">,</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="n">info</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;error_code : &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">code</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&quot; error_message: &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">message</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">info</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="cm">/**</span>
+<span class="cm">     * {@link Error} error messages with their codes</span>
+<span class="cm">     */</span>
+<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">enum</span><span class="w"> </span><span class="n">Error</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="c1">//native network error</span>
+
+<span class="w">        </span><span class="cm">/**</span>
+<span class="cm">         * Exception thrown while accessing network bundle</span>
+<span class="cm">         * @details code = 10</span>
+<span class="cm">         * @details message = Unable to access network initialization bundle!</span>
+<span class="cm">         *</span>
+<span class="cm">         */</span>
+<span class="w">        </span><span class="n">NETWORK_BUNDLE_ACCESS_ERROR</span>
+<span class="w">        </span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Unable to access network initialization bundle!&quot;</span><span class="p">),</span>
+<span class="w">        </span><span class="cm">/**</span>
+<span class="cm">         * Exception thrown while accessing network object</span>
+<span class="cm">         * @details code = 11</span>
+<span class="cm">         * @details message = Unable to access network object!</span>
+<span class="cm">         *</span>
+<span class="cm">         */</span>
+<span class="w">        </span><span class="n">NETWORK_OBJECT_ACCESS_ERROR</span><span class="p">(</span><span class="mi">11</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Unable to access network object!&quot;</span><span class="p">),</span>
+<span class="w">        </span><span class="cm">/**</span>
+<span class="cm">         * Exception thrown while releasing network.</span>
+<span class="cm">         * @details code = 12</span>
+<span class="cm">         * @details message = Unable to release managed network!</span>
+<span class="cm">         *</span>
+<span class="cm">         */</span>
+<span class="w">        </span><span class="n">NETWORK_RELEASE_ERROR</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Unable to release managed network!&quot;</span><span class="p">),</span>
+<span class="w">        </span><span class="cm">/**</span>
+<span class="cm">         * Exception thrown while reading model file from file path.</span>
+<span class="cm">         * @details code = 13</span>
+<span class="cm">         * @details message = Unable to read model file path!</span>
+<span class="cm">         *</span>
+<span class="cm">         */</span>
+<span class="w">        </span><span class="n">MODEL_READ_ERROR</span><span class="p">(</span><span class="mi">13</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Unable to read model file path!&quot;</span><span class="p">),</span>
+<span class="w">        </span><span class="cm">/**</span>
+<span class="cm">         * Exception thrown while accessing model BufferOutputStream.</span>
+<span class="cm">         * @details code = 14</span>
+<span class="cm">         * @details message = Unable to access model NativeBufferOutputStream!</span>
+<span class="cm">         *</span>
+<span class="cm">         */</span>
+<span class="w">        </span><span class="n">BUFFER_STREAM_ACCESS_ERROR</span><span class="p">(</span><span class="mi">14</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Unable to access model NativeBufferOutputStream!&quot;</span><span class="p">),</span>
+<span class="w">        </span><span class="cm">/**</span>
+<span class="cm">         * Exception thrown when passed ordinal is greater than supported runtimes size.</span>
+<span class="cm">         * @details code = 15</span>
+<span class="cm">         * @details message = Runtime ordinal error!</span>
+<span class="cm">         *</span>
+<span class="cm">         */</span>
+<span class="w">        </span><span class="n">RUNTIME_ORDINAL_ERROR</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Runtime ordinal error&quot;</span><span class="p">),</span>
+<span class="w">        </span><span class="cm">/**</span>
+<span class="cm">         * Exception thrown while casting user buffer encoding to TF8.</span>
+<span class="cm">         * @details code = 16</span>
+<span class="cm">         * @details message = Failed to cast UserBuffer encoding to TF8.</span>
+<span class="cm">         *</span>
+<span class="cm">         */</span>
+<span class="w">        </span><span class="n">BUFFER_ENCODING_ERROR</span><span class="p">(</span><span class="mi">16</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Failed to cast UserBuffer Encoding to TF8.&quot;</span><span class="p">),</span>
+<span class="w">        </span><span class="cm">/**</span>
+<span class="cm">         * Exception thrown while accessing network tensor.</span>
+<span class="cm">         * @details code = 17</span>
+<span class="cm">         * @details message = Unable to access network tensor.</span>
+<span class="cm">         *</span>
+<span class="cm">         */</span>
+<span class="w">        </span><span class="n">NETWORK_TENSOR_ACCESS_ERROR</span><span class="p">(</span><span class="mi">17</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Unable to access network tensor.&quot;</span><span class="p">),</span>
+<span class="w">        </span><span class="cm">/**</span>
+<span class="cm">         * Exception thrown while accessing input tensor byte buffer.</span>
+<span class="cm">         * @details code = 18</span>
+<span class="cm">         * @details message = Unable to access input tensor ByteBuffer!</span>
+<span class="cm">         *</span>
+<span class="cm">         */</span>
+<span class="w">        </span><span class="n">INPUT_TENSOR_ACCESS_ERROR</span><span class="p">(</span><span class="mi">18</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Unable to access input tensor ByteBuffer!&quot;</span><span class="p">),</span>
+
+<span class="w">        </span><span class="c1">//invalid input error</span>
+<span class="w">        </span><span class="cm">/**</span>
+<span class="cm">         * Exception thrown if input tensor map is null or empty.</span>
+<span class="cm">         * @details code = 19</span>
+<span class="cm">         * @details message = Input tensor map can not be null or empty!</span>
+<span class="cm">         *</span>
+<span class="cm">         */</span>
+<span class="w">        </span><span class="n">INVALID_INPUT_TENSOR_NULL_EMPTY</span><span class="p">(</span><span class="mi">19</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Input tensor map can not be null or empty!&quot;</span><span class="p">),</span>
+<span class="w">        </span><span class="cm">/**</span>
+<span class="cm">         * Exception thrown if output tensor map is null or empty.</span>
+<span class="cm">         * @details code = 20</span>
+<span class="cm">         * @details message = Output tensor map can not be null or empty</span>
+<span class="cm">         *</span>
+<span class="cm">         */</span>
+<span class="w">        </span><span class="n">INVALID_OUTPUT_TENSOR_NULL_EMPTY</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Output tensor map can not be null or empty&quot;</span><span class="p">),</span>
+<span class="w">        </span><span class="cm">/**</span>
+<span class="cm">         * Exception thrown if tensor is null.</span>
+<span class="cm">         * @details code = 21</span>
+<span class="cm">         * @details message = Tensor can not be null : &quot;name&quot;</span>
+<span class="cm">         *</span>
+<span class="cm">         */</span>
+<span class="w">        </span><span class="n">INVALID_TENSOR_NULL</span><span class="p">(</span><span class="mi">21</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Tensor can not be null:&quot;</span><span class="p">),</span>
+<span class="w">        </span><span class="cm">/**</span>
+<span class="cm">         * Exception thrown if input tensor instance is not of the expected type.</span>
+<span class="cm">         * @details code = 22</span>
+<span class="cm">         * @details message = Input Tensor must be an instance of &quot;correct_instance_type&quot;</span>
+<span class="cm">         *</span>
+<span class="cm">         */</span>
+<span class="w">        </span><span class="n">INVALID_TENSOR_INSTANCE</span><span class="p">(</span><span class="mi">22</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Input Tensor must be an instance of &quot;</span><span class="p">),</span>
+<span class="w">        </span><span class="cm">/**</span>
+<span class="cm">         * Exception thrown if tensor is not present in input tensors.</span>
+<span class="cm">         * @details code = 23</span>
+<span class="cm">         * @details message = Tensor not amongst network input tensors: &quot;incorrect_tensor_name&quot;</span>
+<span class="cm">         *</span>
+<span class="cm">         */</span>
+<span class="w">        </span><span class="n">INVALID_INPUT_NETWORK_TENSORS</span><span class="p">(</span><span class="mi">23</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Tensor not amongst network input tensors: &quot;</span><span class="p">),</span>
+<span class="w">        </span><span class="cm">/**</span>
+<span class="cm">         * Exception thrown if output tensor instance is not of the expected type.</span>
+<span class="cm">         * @details code = 24</span>
+<span class="cm">         * @details message = Output Tensor must be an instance of &quot;correct_instance_type&quot;</span>
+<span class="cm">         *</span>
+<span class="cm">         */</span>
+<span class="w">        </span><span class="n">INVALID_OUTPUT_INSTANCE</span><span class="p">(</span><span class="mi">24</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Output Tensor must be an instance of &quot;</span><span class="p">),</span>
+<span class="w">        </span><span class="cm">/**</span>
+<span class="cm">         * Exception thrown if tensor is not present in output tensors.</span>
+<span class="cm">         * @details code = 25</span>
+<span class="cm">         * @details message = Tensor not amongst network output tensors: &quot;incorrect_tensor_name&quot;</span>
+<span class="cm">         *</span>
+<span class="cm">         */</span>
+<span class="w">        </span><span class="n">INVALID_OUTPUT_NETWORK_TENSORS</span><span class="p">(</span><span class="mi">25</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Tensor not amongst network output tensors: &quot;</span><span class="p">),</span>
+<span class="w">        </span><span class="cm">/**</span>
+<span class="cm">         * Exception thrown if tensor shape is invalid</span>
+<span class="cm">         * @details code = 26</span>
+<span class="cm">         * @details message = Tensor &quot;tensor_name&quot; has unexpected shape</span>
+<span class="cm">         * Expected: &quot;expected_length&quot;, Actual: &quot;actual_length&quot;</span>
+<span class="cm">         *</span>
+<span class="cm">         */</span>
+<span class="w">        </span><span class="n">INVALID_TENSOR_SHAPE</span><span class="p">(</span><span class="mi">26</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;&quot;</span><span class="p">),</span>
+<span class="w">        </span><span class="cm">/**</span>
+<span class="cm">         * Exception thrown if tensor dimension is invalid</span>
+<span class="cm">         * @details code = 27</span>
+<span class="cm">         * @details message = Tensor &quot;tensor_name&quot; has unexpected dimension : &quot;dimension_value&quot;</span>
+<span class="cm">         * Expected : &quot;expected_dimension&quot;, Actual: &quot;actual_dimension&quot;</span>
+<span class="cm">         *</span>
+<span class="cm">         */</span>
+<span class="w">        </span><span class="n">INVALID_TENSOR_DIMENSION</span><span class="p">(</span><span class="mi">27</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;&quot;</span><span class="p">),</span>
+
+<span class="w">        </span><span class="c1">//illegal argument</span>
+<span class="w">        </span><span class="cm">/**</span>
+<span class="cm">         * Exception thrown if tensor shape is null or empty.</span>
+<span class="cm">         * @details code = 28</span>
+<span class="cm">         * @details message = Tensor shape can not be null or empty!.</span>
+<span class="cm">         *</span>
+<span class="cm">         */</span>
+<span class="w">        </span><span class="n">ILLEGAL_TENSOR_SHAPE_NULL_EMPTY</span><span class="p">(</span><span class="mi">28</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Tensor shape can not be null or empty!&quot;</span><span class="p">),</span>
+<span class="w">        </span><span class="cm">/**</span>
+<span class="cm">         * Exception thrown if shape dimension is less than 1.</span>
+<span class="cm">         * @details code = 29</span>
+<span class="cm">         * @details message = Shape dimension can not be &lt; 1!</span>
+<span class="cm">         *</span>
+<span class="cm">         */</span>
+<span class="w">        </span><span class="n">ILLEGAL_SHAPE_DIM</span><span class="p">(</span><span class="mi">29</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Shape dimension can not be &lt; 1!&quot;</span><span class="p">),</span>
+<span class="w">        </span><span class="cm">/**</span>
+<span class="cm">         * Exception thrown if buffer size is less than or equal to zero.</span>
+<span class="cm">         * @details code = 30</span>
+<span class="cm">         * @details message = Buffer size has to be greater than 0.</span>
+<span class="cm">         *</span>
+<span class="cm">         */</span>
+<span class="w">        </span><span class="n">ILLEGAL_BUFFER_SIZE</span><span class="p">(</span><span class="mi">30</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Buffer size has to be greater than 0&quot;</span><span class="p">),</span>
+<span class="w">        </span><span class="cm">/**</span>
+<span class="cm">         * Exception thrown if stride is less than 1.</span>
+<span class="cm">         * @details code = 31</span>
+<span class="cm">         * @details message = Strides can not be less than 1</span>
+<span class="cm">         *</span>
+<span class="cm">         */</span>
+<span class="w">        </span><span class="n">ILLEGAL_STRIDE</span><span class="p">(</span><span class="mi">31</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Strides can not be less than 1&quot;</span><span class="p">),</span>
+<span class="w">        </span><span class="cm">/**</span>
+<span class="cm">         * Exception thrown if step representing 0.0 is not a valid 8-bit value.</span>
+<span class="cm">         * @details code = 32</span>
+<span class="cm">         * @details message = Step representing 0.0 has to be a valid 8-bit value</span>
+<span class="cm">         *</span>
+<span class="cm">         */</span>
+<span class="w">        </span><span class="n">ILLEGAL_STEP_ZERO</span><span class="p">(</span><span class="mi">32</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Step representing 0.0 has to be a valid 8-bit value&quot;</span><span class="p">),</span>
+<span class="w">        </span><span class="cm">/**</span>
+<span class="cm">         * Exception thrown if step size is a negative value.</span>
+<span class="cm">         * @details code = 33</span>
+<span class="cm">         * @details message = Step size has to be a positive value.</span>
+<span class="cm">         *</span>
+<span class="cm">         */</span>
+<span class="w">        </span><span class="n">ILLEGAL_STEP_VALUE</span><span class="p">(</span><span class="mi">33</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Step size has to be a positive value&quot;</span><span class="p">),</span>
+<span class="w">        </span><span class="cm">/**</span>
+<span class="cm">         * Exception thrown if buffer is null.</span>
+<span class="cm">         * @details code = 34</span>
+<span class="cm">         * @details message = Buffer must be allocated, not null</span>
+<span class="cm">         *</span>
+<span class="cm">         */</span>
+<span class="w">        </span><span class="n">ILLEGAL_BUFFER_NULL</span><span class="p">(</span><span class="mi">34</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Buffer must be allocated, not null&quot;</span><span class="p">),</span>
+<span class="w">        </span><span class="cm">/**</span>
+<span class="cm">         * Exception thrown if network has unknown tensor.</span>
+<span class="cm">         * @details code = 35</span>
+<span class="cm">         * @details message = Network has no tensor with name &quot;unknown_tensor_name&quot;</span>
+<span class="cm">         *</span>
+<span class="cm">         */</span>
+<span class="w">        </span><span class="n">ILLEGAL_TENSOR_NAME</span><span class="p">(</span><span class="mi">35</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Network has no tensor with name &quot;</span><span class="p">),</span>
+<span class="w">        </span><span class="cm">/**</span>
+<span class="cm">         * Exception thrown if trying to release an already released network instance.</span>
+<span class="cm">         * @details code = 36</span>
+<span class="cm">         * @details message = Network instance already released!</span>
+<span class="cm">         *</span>
+<span class="cm">         */</span>
+<span class="w">        </span><span class="n">ILLEGAL_NETWORK_RELEASE</span><span class="p">(</span><span class="mi">36</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Network instance already released!&quot;</span><span class="p">),</span>
+<span class="w">        </span><span class="cm">/**</span>
+<span class="cm">         * Exception thrown if selected layer is not present in output layers.</span>
+<span class="cm">         * @details code = 37</span>
+<span class="cm">         * @details message = Selected layer is not amongst network output layers: &quot;incorrect_layer_name&quot;</span>
+<span class="cm">         *</span>
+<span class="cm">         */</span>
+<span class="w">        </span><span class="n">ILLEGAL_SELECTED_LAYER</span><span class="p">(</span><span class="mi">37</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Selected layer is not amongst network output layers: &quot;</span><span class="p">),</span>
+<span class="w">        </span><span class="cm">/**</span>
+<span class="cm">         * Exception thrown if user buffer tensor enscodings don&#39;t match.</span>
+<span class="cm">         * @details code = 38</span>
+<span class="cm">         * @details message = UserBuffer tensor encodings do not match.</span>
+<span class="cm">         *</span>
+<span class="cm">         */</span>
+<span class="w">        </span><span class="n">ILLEGAL_USER_BUFFER_TENSOR</span><span class="p">(</span><span class="mi">38</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;UserBuffer tensor encodings do not match&quot;</span><span class="p">),</span>
+
+<span class="w">        </span><span class="c1">//native float tensor error</span>
+<span class="w">        </span><span class="cm">/**</span>
+<span class="cm">         * Exception thrown while accessing tensor initialization bundle.</span>
+<span class="cm">         * @details code = 39</span>
+<span class="cm">         * @details message = Unable to access tensor initialization bundle!</span>
+<span class="cm">         *</span>
+<span class="cm">         */</span>
+<span class="w">        </span><span class="n">TENSOR_BUNDLE_ACCESS_ERROR</span><span class="p">(</span><span class="mi">39</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Unable to access tensor initialization bundle!&quot;</span><span class="p">),</span>
+<span class="w">        </span><span class="cm">/**</span>
+<span class="cm">         * Exception thrown while creating native tensor</span>
+<span class="cm">         * @details code = 40</span>
+<span class="cm">         * @details message = Unable to create native tensor!</span>
+<span class="cm">         *</span>
+<span class="cm">         */</span>
+<span class="w">        </span><span class="n">TENSOR_CREATION_ERROR</span><span class="p">(</span><span class="mi">40</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Unable to create native tensor!&quot;</span><span class="p">),</span>
+<span class="w">        </span><span class="cm">/**</span>
+<span class="cm">         * Exception thrown while releasing tensor</span>
+<span class="cm">         * @details code = 41</span>
+<span class="cm">         * @details message = Unable to release managed tensor!</span>
+<span class="cm">         *</span>
+<span class="cm">         */</span>
+<span class="w">        </span><span class="n">TENSOR_MANAGE_ERROR</span><span class="p">(</span><span class="mi">41</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Unable to release managed tensor!&quot;</span><span class="p">),</span>
+<span class="w">        </span><span class="cm">/**</span>
+<span class="cm">         * Exception thrown while trying to release already released float tensor.</span>
+<span class="cm">         * @details code = 42</span>
+<span class="cm">         * @details message = FloatTensor instance already released!</span>
+<span class="cm">         *</span>
+<span class="cm">         */</span>
+<span class="w">        </span><span class="n">TENSOR_RELEASE_ERROR</span><span class="p">(</span><span class="mi">42</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;FloatTensor instance already released!&quot;</span><span class="p">),</span>
+
+<span class="w">        </span><span class="c1">//native user buffer error</span>
+<span class="w">        </span><span class="cm">/**</span>
+<span class="cm">         * Exception thrown while accessing buffer tensor initialization bundle.</span>
+<span class="cm">         * @details code = 43</span>
+<span class="cm">         * @details message = Unable to access user buffer tensor initialization bundle!</span>
+<span class="cm">         *</span>
+<span class="cm">         */</span>
+<span class="w">        </span><span class="n">BUFFER_BUNDLE_ACCESS_ERROR</span><span class="p">(</span><span class="mi">43</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Unable to access user buffer tensor initialization bundle!&quot;</span><span class="p">),</span>
+
+<span class="w">        </span><span class="cm">/**</span>
+<span class="cm">         * Exception thrown while accessing user buffer tensor address!</span>
+<span class="cm">         * @details code = 44</span>
+<span class="cm">         * @details message = Unable to access user buffer tensor address!</span>
+<span class="cm">         *</span>
+<span class="cm">         */</span>
+<span class="w">        </span><span class="n">BUFFER_TENSOR_ADDRESS_ACCESS_ERROR</span><span class="p">(</span><span class="mi">44</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Unable to access user buffer tensor address!&quot;</span><span class="p">),</span>
+
+<span class="w">        </span><span class="cm">/**</span>
+<span class="cm">         * Exception thrown if byte buffer is not a direct buffer.</span>
+<span class="cm">         * @details code = 45</span>
+<span class="cm">         * @details message = ByteBuffer is not a direct buffer.</span>
+<span class="cm">         *</span>
+<span class="cm">         */</span>
+<span class="w">        </span><span class="n">BYTE_BUFFER_DIRECT_ERROR</span><span class="p">(</span><span class="mi">45</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;ByteBuffer is not a direct buffer&quot;</span><span class="p">),</span>
+<span class="w">        </span><span class="cm">/**</span>
+<span class="cm">         * Exception thrown if byteBuffer has a different byte order than that of underlying platform.</span>
+<span class="cm">         * @details code = 46</span>
+<span class="cm">         * @details message = ByteBuffer has a different byte order than that of underlying platform.</span>
+<span class="cm">         *</span>
+<span class="cm">         */</span>
+<span class="w">        </span><span class="n">BYTE_BUFFER_ORDER_ERROR</span><span class="p">(</span><span class="mi">46</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;ByteBuffer has a different byte order than that of underlying platform&quot;</span><span class="p">),</span>
+<span class="w">        </span><span class="cm">/**</span>
+<span class="cm">         * Exception thrown while trying to release TF8UserBufferTensor if it is already released.</span>
+<span class="cm">         * @details code = 47</span>
+<span class="cm">         * @details message = TF8UserBufferTensor instance already released!</span>
+<span class="cm">         *</span>
+<span class="cm">         */</span>
+<span class="w">        </span><span class="n">USER_BUFFER_RELEASE_ERROR</span><span class="p">(</span><span class="mi">47</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;TF8UserBufferTensor instance already released!&quot;</span><span class="p">),</span>
+
+<span class="w">        </span><span class="c1">// native buffer output stream error</span>
+<span class="w">        </span><span class="cm">/**</span>
+<span class="cm">         * Exception thrown while retrieving NativeBufferOutputStream.</span>
+<span class="cm">         * @details code = 48</span>
+<span class="cm">         * @details message = Unable to retrieve managed NativeBufferOutputStream</span>
+<span class="cm">         *</span>
+<span class="cm">         */</span>
+<span class="w">        </span><span class="n">BUFFER_OS_RETRIEVE_ERROR_MESSAGE</span><span class="p">(</span><span class="mi">48</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Unable to retrieve managed NativeBufferOutputStream&quot;</span><span class="p">),</span>
+
+<span class="w">        </span><span class="cm">/**</span>
+<span class="cm">         * Error thrown while accessing NativeBufferOutputStream source buffer.</span>
+<span class="cm">         * @details code = 49</span>
+<span class="cm">         * @details message = Unable to access NativeBufferOutputStream source buffer!</span>
+<span class="cm">         *</span>
+<span class="cm">         */</span>
+<span class="w">        </span><span class="n">BUFFER_OS_SOURCE_ACCESS_ERROR_MESSAGE</span><span class="p">(</span><span class="mi">49</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Unable to access NativeBufferOutputStream source buffer!&quot;</span><span class="p">),</span>
+<span class="w">        </span><span class="cm">/**</span>
+<span class="cm">         * Exception thrown while releasing NativeBufferOutputStream.</span>
+<span class="cm">         * @details code = 50</span>
+<span class="cm">         * @details message = Unable to release managed NativeBufferOutputStream</span>
+<span class="cm">         *</span>
+<span class="cm">         */</span>
+<span class="w">        </span><span class="n">BUFFER_OS_RELEASE_ERROR</span><span class="p">(</span><span class="mi">50</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Unable to release managed NativeBufferOutputStream&quot;</span><span class="p">),</span>
+<span class="w">        </span><span class="cm">/**</span>
+<span class="cm">         * Exception thrown while writing into buffer.</span>
+<span class="cm">         * @details code = 51</span>
+<span class="cm">         * @details message = Not allowed to write beyond buffer size.</span>
+<span class="cm">         *</span>
+<span class="cm">         */</span>
+<span class="w">        </span><span class="n">BUFFER_OS_SIZE_ERROR</span><span class="p">(</span><span class="mi">51</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Not allowed to write beyond buffer size.&quot;</span><span class="p">),</span>
+<span class="w">        </span><span class="cm">/**</span>
+<span class="cm">         * Exception thrown if stream size is invalid.</span>
+<span class="cm">         * @details code = 52</span>
+<span class="cm">         * @details message = Buffer stream size is invalid: &quot;invalid_size&quot;</span>
+<span class="cm">         *</span>
+<span class="cm">         */</span>
+<span class="w">        </span><span class="n">BUFFER_STREAM_INVALID_ERROR</span><span class="p">(</span><span class="mi">52</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Buffer stream size is invalid: &quot;</span><span class="p">),</span>
+<span class="w">        </span><span class="cm">/**</span>
+<span class="cm">         * Exception thrown if source buffer is not direct.</span>
+<span class="cm">         * @details code = 53</span>
+<span class="cm">         * @details message = Source buffer must be direct!&quot;</span>
+<span class="cm">         *</span>
+<span class="cm">         */</span>
+<span class="w">        </span><span class="n">BUFFER_SOURCE_NOT_DIRECT_ERROR</span><span class="p">(</span><span class="mi">53</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Source buffer must be direct!&quot;</span><span class="p">),</span>
+
+<span class="w">        </span><span class="c1">//snpe error</span>
+<span class="w">        </span><span class="cm">/**</span>
+<span class="cm">         * Exception thrown for native JNI cache initialization failure.</span>
+<span class="cm">         * @details code = 54</span>
+<span class="cm">         * @details message = Failed to initialize native JNI caches.</span>
+<span class="cm">         *</span>
+<span class="cm">         */</span>
+<span class="w">        </span><span class="n">JNI_INITIALIZE_ERROR</span><span class="p">(</span><span class="mi">54</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Failed to initialize native JNI caches.&quot;</span><span class="p">),</span>
+<span class="w">        </span><span class="cm">/**</span>
+<span class="cm">         * Exception thrown for  DSP LIBRARY PATH cache initialization failure.</span>
+<span class="cm">         * @details code = 55</span>
+<span class="cm">         * @details message = Failed to initialize DSP LIBRARY PATH.</span>
+<span class="cm">         *</span>
+<span class="cm">         */</span>
+<span class="w">        </span><span class="n">DSP_INITIALIZE_ERROR</span><span class="p">(</span><span class="mi">55</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Failed to initialize DSP LIBRARY PATH.&quot;</span><span class="p">),</span>
+<span class="w">        </span><span class="cm">/**</span>
+<span class="cm">         * Exception thrown if runtime order is null or empty.</span>
+<span class="cm">         * @details code = 56</span>
+<span class="cm">         * @details message = Runtime order can not be null or empty.</span>
+<span class="cm">         *</span>
+<span class="cm">         */</span>
+<span class="w">        </span><span class="n">RUNTIME_ORDER_NULL_OR_EMPTY_ERROR</span><span class="p">(</span><span class="mi">56</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Runtime order can not be null or empty.&quot;</span><span class="p">),</span>
+<span class="w">        </span><span class="cm">/**</span>
+<span class="cm">         * Exception thrown if runtime order is null.</span>
+<span class="cm">         * @details code = 57</span>
+<span class="cm">         * @details message = Runtime order can not be null.</span>
+<span class="cm">         *</span>
+<span class="cm">         */</span>
+<span class="w">        </span><span class="n">RUNTIME_NULL_ERROR</span><span class="p">(</span><span class="mi">57</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Runtime order can not be null.&quot;</span><span class="p">),</span>
+<span class="w">        </span><span class="cm">/**</span>
+<span class="cm">         * Exception thrown if input dimensions are null.</span>
+<span class="cm">         * @details code = 58</span>
+<span class="cm">         * @details message = Input dimensions can not be null.</span>
+<span class="cm">         *</span>
+<span class="cm">         */</span>
+<span class="w">        </span><span class="n">INPUT_DIMEN_NULL_OR_EMPTY_ERROR</span><span class="p">(</span><span class="mi">58</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Input dimensions can not be null.&quot;</span><span class="p">),</span>
+<span class="w">        </span><span class="cm">/**</span>
+<span class="cm">         * Exception thrown if output layers are null.</span>
+<span class="cm">         * @details code = 59</span>
+<span class="cm">         * @details message = Output layers can not be null.</span>
+<span class="cm">         *</span>
+<span class="cm">         */</span>
+<span class="w">        </span><span class="n">OUTPUT_LAYER_NULL_ERROR</span><span class="p">(</span><span class="mi">59</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Output layers can not be null.&quot;</span><span class="p">),</span>
+<span class="w">        </span><span class="cm">/**</span>
+<span class="cm">         * Exception thrown if model file is null.</span>
+<span class="cm">         * @details code = 60</span>
+<span class="cm">         * @details message = Model file can not be null.</span>
+<span class="cm">         *</span>
+<span class="cm">         */</span>
+<span class="w">        </span><span class="n">MODEL_FILE_NULL_ERROR</span><span class="p">(</span><span class="mi">60</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Model file can not be null.&quot;</span><span class="p">),</span>
+<span class="w">        </span><span class="cm">/**</span>
+<span class="cm">         * Exception thrown if file does not exist.</span>
+<span class="cm">         * @details code = 60</span>
+<span class="cm">         * @details message = File does not exist: &quot;filename&quot;</span>
+<span class="cm">         *</span>
+<span class="cm">         */</span>
+<span class="w">        </span><span class="n">FILE_EXISTENCE_ERROR</span><span class="p">(</span><span class="mi">61</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;File does not exist: &quot;</span><span class="p">),</span>
+<span class="w">        </span><span class="cm">/**</span>
+<span class="cm">         * Exception thrown if file is not readable.</span>
+<span class="cm">         * @details code = 60</span>
+<span class="cm">         * @details message = Can not read from file:  &quot;filename&quot;</span>
+<span class="cm">         *</span>
+<span class="cm">         */</span>
+<span class="w">        </span><span class="n">FILE_READ_ERROR</span><span class="p">(</span><span class="mi">62</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Can not read from file: &quot;</span><span class="p">),</span>
+<span class="w">        </span><span class="cm">/**</span>
+<span class="cm">         * Exception thrown if performance profile is null.</span>
+<span class="cm">         * @details code = 63</span>
+<span class="cm">         * @details message = Performance profile can not be null.</span>
+<span class="cm">         *</span>
+<span class="cm">         */</span>
+<span class="w">        </span><span class="n">PERFORMANCE_PROFILE_NULL_ERROR</span><span class="p">(</span><span class="mi">63</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Performance profile can not be null.&quot;</span><span class="p">),</span>
+<span class="w">        </span><span class="cm">/**</span>
+<span class="cm">         * Exception thrown if execution priority hint is null.</span>
+<span class="cm">         * @details code = 64</span>
+<span class="cm">         * @details message = Execution priority hint can not be null.</span>
+<span class="cm">         *</span>
+<span class="cm">         */</span>
+<span class="w">        </span><span class="n">EXECUTION_PRIORITY_NULL_ERROR</span><span class="p">(</span><span class="mi">64</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Execution priority hint can not be null.&quot;</span><span class="p">),</span>
+<span class="w">        </span><span class="cm">/**</span>
+<span class="cm">         * Exception thrown if cacheTag is null.</span>
+<span class="cm">         * @details code = 65</span>
+<span class="cm">         * @details message = cacheTag is null.</span>
+<span class="cm">         *</span>
+<span class="cm">         */</span>
+<span class="w">        </span><span class="n">CACHE_TAG_NULL_ERROR</span><span class="p">(</span><span class="mi">65</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;cacheTag is null&quot;</span><span class="p">),</span>
+<span class="w">        </span><span class="cm">/**</span>
+<span class="cm">         * Exception thrown if cacheTag is empty.</span>
+<span class="cm">         * @details code = 66</span>
+<span class="cm">         * @details message = cacheTag is empty.</span>
+<span class="cm">         *</span>
+<span class="cm">         */</span>
+<span class="w">        </span><span class="n">CACHE_TAG_EMPTY_ERROR</span><span class="p">(</span><span class="mi">66</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;cacheTag is empty&quot;</span><span class="p">),</span>
+<span class="w">        </span><span class="cm">/**</span>
+<span class="cm">         * Exception thrown if context is null.</span>
+<span class="cm">         * @details code = 67</span>
+<span class="cm">         * @details message = context is null.</span>
+<span class="cm">         *</span>
+<span class="cm">         */</span>
+<span class="w">        </span><span class="n">CONTEXT_NULL_ERROR</span><span class="p">(</span><span class="mi">67</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;context is null&quot;</span><span class="p">),</span>
+<span class="w">        </span><span class="cm">/**</span>
+<span class="cm">         * Exception thrown if directory path is null.</span>
+<span class="cm">         * @details code = 68</span>
+<span class="cm">         * @details message = Directory path is null.</span>
+<span class="cm">         *</span>
+<span class="cm">         */</span>
+<span class="w">        </span><span class="n">DIRECTORY_PATH_NULL_ERROR</span><span class="p">(</span><span class="mi">68</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Directory path is null&quot;</span><span class="p">),</span>
+<span class="w">        </span><span class="cm">/**</span>
+<span class="cm">         * Exception thrown if directory path is empty.</span>
+<span class="cm">         * @details code = 69</span>
+<span class="cm">         * @details message = Directory path is empty.</span>
+<span class="cm">         *</span>
+<span class="cm">         */</span>
+<span class="w">        </span><span class="n">DIRECTORY_PATH_EMPTY_ERROR</span><span class="p">(</span><span class="mi">69</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Directory path is empty&quot;</span><span class="p">),</span>
+<span class="w">        </span><span class="cm">/**</span>
+<span class="cm">         * Exception thrown if directory path is empty.</span>
+<span class="cm">         * @details code = 70</span>
+<span class="cm">         * @details message = Directory does not exist:&quot;directory_name&quot;.</span>
+<span class="cm">         *</span>
+<span class="cm">         */</span>
+<span class="w">        </span><span class="n">DIRECTORY_EXISTENCE_ERROR</span><span class="p">(</span><span class="mi">70</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Directory does not exist:&quot;</span><span class="p">),</span>
+<span class="w">        </span><span class="cm">/**</span>
+<span class="cm">         * Exception thrown if the file is not a directoty.</span>
+<span class="cm">         * @details code = 71</span>
+<span class="cm">         * @details message = Not a directory: &quot;directory_name&quot;.</span>
+<span class="cm">         *</span>
+<span class="cm">         */</span>
+<span class="w">        </span><span class="n">NOT_A_DIRECTORY_ERROR</span><span class="p">(</span><span class="mi">71</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Not a directory: &quot;</span><span class="p">),</span>
+<span class="w">        </span><span class="cm">/**</span>
+<span class="cm">         * Exception thrown if the file is not writable.</span>
+<span class="cm">         * @details code = 72</span>
+<span class="cm">         * @details message = Can not write into file:  &quot;file_name&quot;.</span>
+<span class="cm">         *</span>
+<span class="cm">         */</span>
+<span class="w">        </span><span class="n">FILE_WRITE_ERROR</span><span class="p">(</span><span class="mi">72</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Can not write into file: &quot;</span><span class="p">),</span>
+<span class="w">        </span><span class="cm">/**</span>
+<span class="cm">         * Exception thrown if no selected runtime is supported.</span>
+<span class="cm">         * @details code = 73</span>
+<span class="cm">         * @details message = None of the selected runtime targets are supported.</span>
+<span class="cm">         *</span>
+<span class="cm">         */</span>
+<span class="w">        </span><span class="n">RUNTIME_TARGET_NOT_SUPPORTED_ERROR</span><span class="p">(</span><span class="mi">73</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;None of the selected runtime targets are supported.&quot;</span><span class="p">),</span>
+
+<span class="w">        </span><span class="c1">//io util error</span>
+<span class="w">        </span><span class="cm">/**</span>
+<span class="cm">         * Exception thrown if stream is null.</span>
+<span class="cm">         * @details code = 74</span>
+<span class="cm">         * @details message = Stream can not be null.</span>
+<span class="cm">         *</span>
+<span class="cm">         */</span>
+<span class="w">        </span><span class="n">IO_STREAM_NULL_ERROR</span><span class="p">(</span><span class="mi">74</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Stream can not be null.&quot;</span><span class="p">),</span>
+
+<span class="w">        </span><span class="cm">/**</span>
+<span class="cm">         * Exception thrown if model size is less than or equal to 0.</span>
+<span class="cm">         * @details code = 75</span>
+<span class="cm">         * @details message = Model size can not be &lt;= 0.</span>
+<span class="cm">         *</span>
+<span class="cm">         */</span>
+<span class="w">        </span><span class="n">IO_MODEL_SIZE_INVALID_ERROR</span><span class="p">(</span><span class="mi">75</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Model size can not be &lt;= 0.&quot;</span><span class="p">),</span>
+<span class="w">        </span><span class="cm">/**</span>
+<span class="cm">         * Exception thrown if there is a mismatch between model&#39;s expected stream size and actual stream size.</span>
+<span class="cm">         * @details code = 76</span>
+<span class="cm">         * @details message = The expected model stream size and actual mismatch.</span>
+<span class="cm">         *</span>
+<span class="cm">         */</span>
+<span class="w">        </span><span class="n">IO_SIZE_MISMATCH_ERROR</span><span class="p">(</span><span class="mi">76</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;The expected model stream size and actual mismatch.&quot;</span><span class="p">);</span>
+
+
+<span class="w">        </span><span class="kd">private</span><span class="w"> </span><span class="kd">final</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">code</span><span class="p">;</span>
+<span class="w">        </span><span class="kd">private</span><span class="w"> </span><span class="kd">final</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="n">message</span><span class="p">;</span>
+
+<span class="w">        </span><span class="n">Error</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">code</span><span class="p">,</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="n">message</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="k">this</span><span class="p">.</span><span class="na">code</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">code</span><span class="p">;</span>
+<span class="w">            </span><span class="k">this</span><span class="p">.</span><span class="na">message</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">message</span><span class="p">;</span>
+<span class="w">        </span><span class="p">}</span>
+
+<span class="w">        </span><span class="c1">// errors thrown from JNI layer</span>
+<span class="w">        </span><span class="kd">private</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="n">Error</span><span class="w"> </span><span class="nf">getError</span><span class="p">(</span><span class="n">String</span><span class="w"> </span><span class="n">message</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="n">Error</span><span class="w"> </span><span class="n">error</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">null</span><span class="p">;</span>
+<span class="w">            </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">message</span><span class="p">.</span><span class="na">contains</span><span class="p">(</span><span class="n">NETWORK_BUNDLE_ACCESS_ERROR</span><span class="p">.</span><span class="na">message</span><span class="p">))</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="n">error</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">NETWORK_BUNDLE_ACCESS_ERROR</span><span class="p">;</span>
+<span class="w">            </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">message</span><span class="p">.</span><span class="na">contains</span><span class="p">(</span><span class="n">NETWORK_OBJECT_ACCESS_ERROR</span><span class="p">.</span><span class="na">message</span><span class="p">))</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="n">error</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">NETWORK_OBJECT_ACCESS_ERROR</span><span class="p">;</span>
+<span class="w">            </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">message</span><span class="p">.</span><span class="na">contains</span><span class="p">(</span><span class="n">NETWORK_RELEASE_ERROR</span><span class="p">.</span><span class="na">message</span><span class="p">))</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="n">error</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">NETWORK_RELEASE_ERROR</span><span class="p">;</span>
+<span class="w">            </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">message</span><span class="p">.</span><span class="na">contains</span><span class="p">(</span><span class="n">MODEL_READ_ERROR</span><span class="p">.</span><span class="na">message</span><span class="p">))</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="n">error</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">MODEL_READ_ERROR</span><span class="p">;</span>
+<span class="w">            </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">message</span><span class="p">.</span><span class="na">contains</span><span class="p">(</span><span class="n">BUFFER_STREAM_ACCESS_ERROR</span><span class="p">.</span><span class="na">message</span><span class="p">))</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="n">error</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">BUFFER_STREAM_ACCESS_ERROR</span><span class="p">;</span>
+<span class="w">            </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">message</span><span class="p">.</span><span class="na">contains</span><span class="p">(</span><span class="n">RUNTIME_ORDINAL_ERROR</span><span class="p">.</span><span class="na">message</span><span class="p">))</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="n">error</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">RUNTIME_ORDINAL_ERROR</span><span class="p">;</span>
+<span class="w">            </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">message</span><span class="p">.</span><span class="na">contains</span><span class="p">(</span><span class="n">BUFFER_ENCODING_ERROR</span><span class="p">.</span><span class="na">message</span><span class="p">))</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="n">error</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">BUFFER_ENCODING_ERROR</span><span class="p">;</span>
+<span class="w">            </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">message</span><span class="p">.</span><span class="na">contains</span><span class="p">(</span><span class="n">NETWORK_TENSOR_ACCESS_ERROR</span><span class="p">.</span><span class="na">message</span><span class="p">))</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="n">error</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">NETWORK_TENSOR_ACCESS_ERROR</span><span class="p">;</span>
+<span class="w">            </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">message</span><span class="p">.</span><span class="na">contains</span><span class="p">(</span><span class="n">INPUT_TENSOR_ACCESS_ERROR</span><span class="p">.</span><span class="na">message</span><span class="p">))</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="n">error</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">INPUT_TENSOR_ACCESS_ERROR</span><span class="p">;</span>
+<span class="w">            </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">message</span><span class="p">.</span><span class="na">contains</span><span class="p">(</span><span class="n">TENSOR_BUNDLE_ACCESS_ERROR</span><span class="p">.</span><span class="na">message</span><span class="p">))</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="n">error</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">TENSOR_BUNDLE_ACCESS_ERROR</span><span class="p">;</span>
+<span class="w">            </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">message</span><span class="p">.</span><span class="na">contains</span><span class="p">(</span><span class="n">TENSOR_CREATION_ERROR</span><span class="p">.</span><span class="na">message</span><span class="p">))</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="n">error</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">TENSOR_CREATION_ERROR</span><span class="p">;</span>
+<span class="w">            </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">message</span><span class="p">.</span><span class="na">contains</span><span class="p">(</span><span class="n">TENSOR_MANAGE_ERROR</span><span class="p">.</span><span class="na">message</span><span class="p">))</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="n">error</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">TENSOR_MANAGE_ERROR</span><span class="p">;</span>
+<span class="w">            </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">message</span><span class="p">.</span><span class="na">contains</span><span class="p">(</span><span class="n">BUFFER_BUNDLE_ACCESS_ERROR</span><span class="p">.</span><span class="na">message</span><span class="p">))</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="n">error</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">BUFFER_BUNDLE_ACCESS_ERROR</span><span class="p">;</span>
+<span class="w">            </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">message</span><span class="p">.</span><span class="na">contains</span><span class="p">(</span><span class="n">BUFFER_TENSOR_ADDRESS_ACCESS_ERROR</span><span class="p">.</span><span class="na">message</span><span class="p">))</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="n">error</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">BUFFER_TENSOR_ADDRESS_ACCESS_ERROR</span><span class="p">;</span>
+<span class="w">            </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">message</span><span class="p">.</span><span class="na">contains</span><span class="p">(</span><span class="n">BUFFER_OS_RETRIEVE_ERROR_MESSAGE</span><span class="p">.</span><span class="na">message</span><span class="p">))</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="n">error</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">BUFFER_OS_RETRIEVE_ERROR_MESSAGE</span><span class="p">;</span>
+<span class="w">            </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">message</span><span class="p">.</span><span class="na">contains</span><span class="p">(</span><span class="n">BUFFER_OS_SOURCE_ACCESS_ERROR_MESSAGE</span><span class="p">.</span><span class="na">message</span><span class="p">))</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="n">error</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">BUFFER_OS_SOURCE_ACCESS_ERROR_MESSAGE</span><span class="p">;</span>
+<span class="w">            </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">message</span><span class="p">.</span><span class="na">contains</span><span class="p">(</span><span class="n">BUFFER_OS_RELEASE_ERROR</span><span class="p">.</span><span class="na">message</span><span class="p">))</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="n">error</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">BUFFER_OS_RELEASE_ERROR</span><span class="p">;</span>
+<span class="w">            </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">message</span><span class="p">.</span><span class="na">contains</span><span class="p">(</span><span class="n">BUFFER_OS_SIZE_ERROR</span><span class="p">.</span><span class="na">message</span><span class="p">))</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="n">error</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">BUFFER_OS_SIZE_ERROR</span><span class="p">;</span>
+<span class="w">            </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">message</span><span class="p">.</span><span class="na">contains</span><span class="p">(</span><span class="n">JNI_INITIALIZE_ERROR</span><span class="p">.</span><span class="na">message</span><span class="p">))</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="n">error</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">JNI_INITIALIZE_ERROR</span><span class="p">;</span>
+<span class="w">            </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">message</span><span class="p">.</span><span class="na">contains</span><span class="p">(</span><span class="n">DSP_INITIALIZE_ERROR</span><span class="p">.</span><span class="na">message</span><span class="p">))</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="n">error</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">DSP_INITIALIZE_ERROR</span><span class="p">;</span>
+<span class="w">            </span><span class="p">}</span>
+
+<span class="w">            </span><span class="k">return</span><span class="w"> </span><span class="n">error</span><span class="p">;</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="kd">class</span> <span class="nc">SnpeException</span><span class="w"> </span><span class="kd">extends</span><span class="w"> </span><span class="n">RuntimeException</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="kd">private</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">code</span><span class="p">;</span>
+
+<span class="w">        </span><span class="kd">private</span><span class="w"> </span><span class="nf">SnpeException</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">code</span><span class="p">,</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="n">detailMessage</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="kd">super</span><span class="p">(</span><span class="n">detailMessage</span><span class="p">);</span>
+<span class="w">            </span><span class="k">this</span><span class="p">.</span><span class="na">code</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">code</span><span class="p">;</span>
+<span class="w">        </span><span class="p">}</span>
+
+<span class="w">        </span><span class="kd">public</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">getErrorCode</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="k">return</span><span class="w"> </span><span class="n">code</span><span class="p">;</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="cm">/**</span>
+<span class="cm">     * Exception type for errors related to invalid inputs.</span>
+<span class="cm">     * @details throws exception for invalid inputs with code and message.</span>
+<span class="cm">     */</span>
+<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">InvalidInputException</span><span class="w"> </span><span class="kd">extends</span><span class="w"> </span><span class="n">SnpeException</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="kd">private</span><span class="w"> </span><span class="nf">InvalidInputException</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">code</span><span class="p">,</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="n">detailMessage</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="kd">super</span><span class="p">(</span><span class="n">code</span><span class="p">,</span><span class="w"> </span><span class="n">detailMessage</span><span class="p">);</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="cm">/**</span>
+<span class="cm">     * Exception type for errors related to native network.</span>
+<span class="cm">     * @details throws runtime exception with code and message for errors related to native network.</span>
+<span class="cm">     */</span>
+<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">NativeException</span><span class="w"> </span><span class="kd">extends</span><span class="w"> </span><span class="n">SnpeException</span><span class="w"> </span><span class="p">{</span>
+
+<span class="w">        </span><span class="kd">private</span><span class="w"> </span><span class="nf">NativeException</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">code</span><span class="p">,</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="n">detailMessage</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="kd">super</span><span class="p">(</span><span class="n">code</span><span class="p">,</span><span class="w"> </span><span class="n">detailMessage</span><span class="p">);</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="cm">/**</span>
+<span class="cm">     * Exception type for errors related to IllegalState or IllegalArgument.</span>
+<span class="cm">     *  @details throws runtime exception with code and message for errors related to illegal state or illegal arguments.</span>
+<span class="cm">     */</span>
+<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">IllegalArgsOrStateException</span><span class="w"> </span><span class="kd">extends</span><span class="w"> </span><span class="n">SnpeException</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="kd">private</span><span class="w"> </span><span class="nf">IllegalArgsOrStateException</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">code</span><span class="p">,</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="n">detailMessage</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="kd">super</span><span class="p">(</span><span class="n">code</span><span class="p">,</span><span class="w"> </span><span class="n">detailMessage</span><span class="p">);</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="cm">/**</span>
+<span class="cm">     * Exception type for errors related to IO Operations.</span>
+<span class="cm">     * @details throws IO Exception with code and message</span>
+<span class="cm">     */</span>
+<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">SnpeIOException</span><span class="w"> </span><span class="kd">extends</span><span class="w"> </span><span class="n">SnpeException</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="kd">private</span><span class="w"> </span><span class="nf">SnpeIOException</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">code</span><span class="p">,</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="n">detailMessage</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="kd">super</span><span class="p">(</span><span class="n">code</span><span class="p">,</span><span class="w"> </span><span class="n">detailMessage</span><span class="p">);</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+
+<span class="cm">/**</span>
+<span class="cm"> * @}</span>
+<span class="cm"> */</span><span class="w"> </span><span class="cm">/* end addtogroup java_apis */</span>
+</pre></div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2020-2023, Qualcomm Technologies, Inc..
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

@@ -1,0 +1,376 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Class UserBufferEncodingTfN &mdash; Snapdragon Neural Processing Engine SDK</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/custom_css.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/collapsible-lists/css/tree_view.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+        <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Qualcomm® Neural Processing SDK
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                v2.12.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../general/revision_history.html">Revision History</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/revision_history_windows.html">Revision History - Windows</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/overview.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/setup.html">Setup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/usergroup1.html">Network Models</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/usergroup5.html">Input Data and Preprocessing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/usergroup6.html">Tutorials and Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/usergroup10.html">Benchmarking and Accuracy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/tools.html">Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/usergroup11.html">Debug Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/api.html">API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/limitations.html">Limitations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/appx_ref.html">References</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Qualcomm® Neural Processing SDK</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Class UserBufferEncodingTfN</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="class-userbufferencodingtfn">
+<span id="exhale-class-classzdl-1-1dlsystem-1-1userbufferencodingtfn"></span><h1>Class UserBufferEncodingTfN<a class="headerlink" href="#class-userbufferencodingtfn" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_DlSystem_IUserBuffer.hpp.html#file-dlsystem-iuserbuffer-hpp"><span class="std std-ref">File IUserBuffer.hpp</span></a></p></li>
+</ul>
+<div class="section" id="inheritance-relationships">
+<h2>Inheritance Relationships<a class="headerlink" href="#inheritance-relationships" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="base-type">
+<h3>Base Type<a class="headerlink" href="#base-type" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">zdl::DlSystem::UserBufferEncoding</span></code> (<a class="reference internal" href="classzdl_1_1DlSystem_1_1UserBufferEncoding.html#exhale-class-classzdl-1-1dlsystem-1-1userbufferencoding"><span class="std std-ref">Class UserBufferEncoding</span></a>)</p></li>
+</ul>
+</div>
+<div class="section" id="derived-type">
+<h3>Derived Type<a class="headerlink" href="#derived-type" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">zdl::DlSystem::UserBufferEncodingTf8</span></code> (<a class="reference internal" href="classzdl_1_1DlSystem_1_1UserBufferEncodingTf8.html#exhale-class-classzdl-1-1dlsystem-1-1userbufferencodingtf8"><span class="std std-ref">Class UserBufferEncodingTf8</span></a>)</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="class-documentation">
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline">¶</a></h2>
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem21UserBufferEncodingTfNE">
+<span id="_CPPv3N3zdl8DlSystem21UserBufferEncodingTfNE"></span><span id="_CPPv2N3zdl8DlSystem21UserBufferEncodingTfNE"></span><span id="zdl::DlSystem::UserBufferEncodingTfN"></span><span class="target" id="classzdl_1_1DlSystem_1_1UserBufferEncodingTfN"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-prename descclassname"><a class="reference internal" href="file_DlContainer_IDlContainer.hpp.html#_CPPv43zdl" title="zdl"><span class="n"><span class="pre">zdl</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="file_DlSystem_DlEnums.hpp.html#_CPPv4N3zdl8DlSystemE" title="zdl::DlSystem"><span class="n"><span class="pre">DlSystem</span></span></a><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">UserBufferEncodingTfN</span></span></span><span class="w"> </span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="k"><span class="pre">public</span></span><span class="w"> </span><a class="reference internal" href="file_DlContainer_IDlContainer.hpp.html#_CPPv43zdl" title="zdl"><span class="n"><span class="pre">zdl</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="file_DlSystem_DlEnums.hpp.html#_CPPv4N3zdl8DlSystemE" title="zdl::DlSystem"><span class="n"><span class="pre">DlSystem</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="classzdl_1_1DlSystem_1_1UserBufferEncoding.html#_CPPv4N3zdl8DlSystem18UserBufferEncodingE" title="zdl::DlSystem::UserBufferEncoding"><span class="n"><span class="pre">UserBufferEncoding</span></span></a><a class="headerlink" href="#_CPPv4N3zdl8DlSystem21UserBufferEncodingTfNE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>An encoding type where each element is represented by tf8, which is an 8-bit quantizd value, which has an exact representation of 0.0 </p>
+<p>Subclassed by <a class="reference internal" href="file_DlSystem_IUserBuffer.hpp.html#classzdl_1_1DlSystem_1_1UserBufferEncodingTf8"><span class="std std-ref">zdl::DlSystem::UserBufferEncodingTf8</span></a></p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem21UserBufferEncodingTfN21UserBufferEncodingTfNEv">
+<span id="_CPPv3N3zdl8DlSystem21UserBufferEncodingTfN21UserBufferEncodingTfNEv"></span><span id="_CPPv2N3zdl8DlSystem21UserBufferEncodingTfN21UserBufferEncodingTfNEv"></span><span id="zdl::DlSystem::UserBufferEncodingTfN::UserBufferEncodingTfN"></span><span class="target" id="classzdl_1_1DlSystem_1_1UserBufferEncodingTfN_1ac7334a76546cfc85a6d639c92c708a89"></span><span class="sig-name descname"><span class="n"><span class="pre">UserBufferEncodingTfN</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="k"><span class="pre">delete</span></span><a class="headerlink" href="#_CPPv4N3zdl8DlSystem21UserBufferEncodingTfN21UserBufferEncodingTfNEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem21UserBufferEncodingTfN21UserBufferEncodingTfNE8uint64_tf7uint8_t">
+<span id="_CPPv3N3zdl8DlSystem21UserBufferEncodingTfN21UserBufferEncodingTfNE8uint64_tf7uint8_t"></span><span id="_CPPv2N3zdl8DlSystem21UserBufferEncodingTfN21UserBufferEncodingTfNE8uint64_tf7uint8_t"></span><span id="zdl::DlSystem::UserBufferEncodingTfN::UserBufferEncodingTfN__uint64_t.float.uint8_t"></span><span class="target" id="classzdl_1_1DlSystem_1_1UserBufferEncodingTfN_1a020744c5d541073f9ea9044c6d0408af"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">UserBufferEncodingTfN</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">uint64_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">stepFor0</span></span>, <span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">stepSize</span></span>, <span class="n"><span class="pre">uint8_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">bWidth</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">8</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3zdl8DlSystem21UserBufferEncodingTfN21UserBufferEncodingTfNE8uint64_tf7uint8_t" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem21UserBufferEncodingTfN21UserBufferEncodingTfNERKN3zdl8DlSystem18UserBufferEncodingE">
+<span id="_CPPv3N3zdl8DlSystem21UserBufferEncodingTfN21UserBufferEncodingTfNERKN3zdl8DlSystem18UserBufferEncodingE"></span><span id="_CPPv2N3zdl8DlSystem21UserBufferEncodingTfN21UserBufferEncodingTfNERKN3zdl8DlSystem18UserBufferEncodingE"></span><span id="zdl::DlSystem::UserBufferEncodingTfN::UserBufferEncodingTfN__zdl::DlSystem::UserBufferEncodingCR"></span><span class="target" id="classzdl_1_1DlSystem_1_1UserBufferEncodingTfN_1a7cbd42ff8898859041d52454580e9c14"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">UserBufferEncodingTfN</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="file_DlContainer_IDlContainer.hpp.html#_CPPv43zdl" title="zdl"><span class="n"><span class="pre">zdl</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="file_DlSystem_DlEnums.hpp.html#_CPPv4N3zdl8DlSystemE" title="zdl::DlSystem"><span class="n"><span class="pre">DlSystem</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="classzdl_1_1DlSystem_1_1UserBufferEncoding.html#_CPPv4N3zdl8DlSystem18UserBufferEncodingE" title="zdl::DlSystem::UserBufferEncoding"><span class="n"><span class="pre">UserBufferEncoding</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">ubEncoding</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3zdl8DlSystem21UserBufferEncodingTfN21UserBufferEncodingTfNERKN3zdl8DlSystem18UserBufferEncodingE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK3zdl8DlSystem21UserBufferEncodingTfN14getElementSizeEv">
+<span id="_CPPv3NK3zdl8DlSystem21UserBufferEncodingTfN14getElementSizeEv"></span><span id="_CPPv2NK3zdl8DlSystem21UserBufferEncodingTfN14getElementSizeEv"></span><span id="zdl::DlSystem::UserBufferEncodingTfN::getElementSizeC"></span><span class="target" id="classzdl_1_1DlSystem_1_1UserBufferEncodingTfN_1a4afb35cc32f7968a2d4f3c4c21535665"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getElementSize</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="k"><span class="pre">noexcept</span></span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4NK3zdl8DlSystem21UserBufferEncodingTfN14getElementSizeEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Retrieves the size of the element, in bytes. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Size of the element, in bytes. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem21UserBufferEncodingTfN15setStepExactly0E8uint64_t">
+<span id="_CPPv3N3zdl8DlSystem21UserBufferEncodingTfN15setStepExactly0E8uint64_t"></span><span id="_CPPv2N3zdl8DlSystem21UserBufferEncodingTfN15setStepExactly0E8uint64_t"></span><span id="zdl::DlSystem::UserBufferEncodingTfN::setStepExactly0__uint64_t"></span><span class="target" id="classzdl_1_1DlSystem_1_1UserBufferEncodingTfN_1afcf91b0ae85aa2481160f8702924bbd9"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">setStepExactly0</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">uint64_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">stepExactly0</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3zdl8DlSystem21UserBufferEncodingTfN15setStepExactly0E8uint64_t" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Sets the step value that represents 0. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>stepExactly0</strong> – <strong>[in]</strong> The step value that represents 0 </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem21UserBufferEncodingTfN20setQuantizedStepSizeEKf">
+<span id="_CPPv3N3zdl8DlSystem21UserBufferEncodingTfN20setQuantizedStepSizeEKf"></span><span id="_CPPv2N3zdl8DlSystem21UserBufferEncodingTfN20setQuantizedStepSizeEKf"></span><span id="zdl::DlSystem::UserBufferEncodingTfN::setQuantizedStepSize__floatC"></span><span class="target" id="classzdl_1_1DlSystem_1_1UserBufferEncodingTfN_1a0ed86cd4df7e69686e80b7268ba4d1ee"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">setQuantizedStepSize</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">quantizedStepSize</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3zdl8DlSystem21UserBufferEncodingTfN20setQuantizedStepSizeEKf" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Sets the float value that each step represents. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>quantizedStepSize</strong> – <strong>[in]</strong> The float value of each step size </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK3zdl8DlSystem21UserBufferEncodingTfN15getStepExactly0Ev">
+<span id="_CPPv3NK3zdl8DlSystem21UserBufferEncodingTfN15getStepExactly0Ev"></span><span id="_CPPv2NK3zdl8DlSystem21UserBufferEncodingTfN15getStepExactly0Ev"></span><span id="zdl::DlSystem::UserBufferEncodingTfN::getStepExactly0C"></span><span class="target" id="classzdl_1_1DlSystem_1_1UserBufferEncodingTfN_1a65232b993f36976e63ff5da3e61d4b3b"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="n"><span class="pre">uint64_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getStepExactly0</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK3zdl8DlSystem21UserBufferEncodingTfN15getStepExactly0Ev" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Retrieves the step that represents 0.0. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Step value </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK3zdl8DlSystem21UserBufferEncodingTfN6getMinEv">
+<span id="_CPPv3NK3zdl8DlSystem21UserBufferEncodingTfN6getMinEv"></span><span id="_CPPv2NK3zdl8DlSystem21UserBufferEncodingTfN6getMinEv"></span><span id="zdl::DlSystem::UserBufferEncodingTfN::getMinC"></span><span class="target" id="classzdl_1_1DlSystem_1_1UserBufferEncodingTfN_1a5ffb6ea0599f38197640f74349f5082f"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getMin</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK3zdl8DlSystem21UserBufferEncodingTfN6getMinEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Calculates the minimum floating point value that can be represented with this encoding.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Minimum representable floating point value </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK3zdl8DlSystem21UserBufferEncodingTfN6getMaxEv">
+<span id="_CPPv3NK3zdl8DlSystem21UserBufferEncodingTfN6getMaxEv"></span><span id="_CPPv2NK3zdl8DlSystem21UserBufferEncodingTfN6getMaxEv"></span><span id="zdl::DlSystem::UserBufferEncodingTfN::getMaxC"></span><span class="target" id="classzdl_1_1DlSystem_1_1UserBufferEncodingTfN_1a5180224e25796ff083e71d43e628686b"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getMax</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK3zdl8DlSystem21UserBufferEncodingTfN6getMaxEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Calculates the maximum floating point value that can be represented with this encoding.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Maximum representable floating point value </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK3zdl8DlSystem21UserBufferEncodingTfN20getQuantizedStepSizeEv">
+<span id="_CPPv3NK3zdl8DlSystem21UserBufferEncodingTfN20getQuantizedStepSizeEv"></span><span id="_CPPv2NK3zdl8DlSystem21UserBufferEncodingTfN20getQuantizedStepSizeEv"></span><span id="zdl::DlSystem::UserBufferEncodingTfN::getQuantizedStepSizeC"></span><span class="target" id="classzdl_1_1DlSystem_1_1UserBufferEncodingTfN_1abf0af89adef130a0cbc6b4b272c3a150"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getQuantizedStepSize</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK3zdl8DlSystem21UserBufferEncodingTfN20getQuantizedStepSizeEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Retrieves the step size. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Step size </p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem21UserBufferEncodingTfN8bitWidthE">
+<span id="_CPPv3N3zdl8DlSystem21UserBufferEncodingTfN8bitWidthE"></span><span id="_CPPv2N3zdl8DlSystem21UserBufferEncodingTfN8bitWidthE"></span><span id="zdl::DlSystem::UserBufferEncodingTfN::bitWidth__uint8_t"></span><span class="target" id="classzdl_1_1DlSystem_1_1UserBufferEncodingTfN_1afdd1c249594f3d822c54459fd164eb88"></span><span class="n"><span class="pre">uint8_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">bitWidth</span></span></span><a class="headerlink" href="#_CPPv4N3zdl8DlSystem21UserBufferEncodingTfN8bitWidthE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-static-functions">Public Static Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem21UserBufferEncodingTfN16getTypeFromWidthE7uint8_t">
+<span id="_CPPv3N3zdl8DlSystem21UserBufferEncodingTfN16getTypeFromWidthE7uint8_t"></span><span id="_CPPv2N3zdl8DlSystem21UserBufferEncodingTfN16getTypeFromWidthE7uint8_t"></span><span id="zdl::DlSystem::UserBufferEncodingTfN::getTypeFromWidth__uint8_t"></span><span class="target" id="classzdl_1_1DlSystem_1_1UserBufferEncodingTfN_1afb39d1e2326081b37678702c9c2916f1"></span><span class="k"><span class="pre">static</span></span><span class="w"> </span><span class="n"><span class="pre">ElementType_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getTypeFromWidth</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">uint8_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">width</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3zdl8DlSystem21UserBufferEncodingTfN16getTypeFromWidthE7uint8_t" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-protected-attributes">Protected Attributes</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem21UserBufferEncodingTfN14m_StepExactly0E">
+<span id="_CPPv3N3zdl8DlSystem21UserBufferEncodingTfN14m_StepExactly0E"></span><span id="_CPPv2N3zdl8DlSystem21UserBufferEncodingTfN14m_StepExactly0E"></span><span id="zdl::DlSystem::UserBufferEncodingTfN::m_StepExactly0__uint64_t"></span><span class="target" id="classzdl_1_1DlSystem_1_1UserBufferEncodingTfN_1a4baa54e4e14295b5211a6f966d662f14"></span><span class="n"><span class="pre">uint64_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">m_StepExactly0</span></span></span><a class="headerlink" href="#_CPPv4N3zdl8DlSystem21UserBufferEncodingTfN14m_StepExactly0E" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem21UserBufferEncodingTfN19m_QuantizedStepSizeE">
+<span id="_CPPv3N3zdl8DlSystem21UserBufferEncodingTfN19m_QuantizedStepSizeE"></span><span id="_CPPv2N3zdl8DlSystem21UserBufferEncodingTfN19m_QuantizedStepSizeE"></span><span id="zdl::DlSystem::UserBufferEncodingTfN::m_QuantizedStepSize__float"></span><span class="target" id="classzdl_1_1DlSystem_1_1UserBufferEncodingTfN_1a854c85a476f71fd8e1c415abc1501bdc"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">m_QuantizedStepSize</span></span></span><a class="headerlink" href="#_CPPv4N3zdl8DlSystem21UserBufferEncodingTfN19m_QuantizedStepSizeE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2020-2023, Qualcomm Technologies, Inc..
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

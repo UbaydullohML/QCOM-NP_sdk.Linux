@@ -1,0 +1,926 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Program Listing for File IUserBuffer.h &mdash; Snapdragon Neural Processing Engine SDK</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/custom_css.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/collapsible-lists/css/tree_view.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+        <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Qualcomm® Neural Processing SDK
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                v2.12.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../general/revision_history.html">Revision History</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/revision_history_windows.html">Revision History - Windows</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/overview.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/setup.html">Setup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/usergroup1.html">Network Models</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/usergroup5.html">Input Data and Preprocessing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/usergroup6.html">Tutorials and Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/usergroup10.html">Benchmarking and Accuracy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/tools.html">Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/usergroup11.html">Debug Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/api.html">API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/limitations.html">Limitations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/appx_ref.html">References</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Qualcomm® Neural Processing SDK</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Program Listing for File IUserBuffer.h</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="program-listing-for-file-iuserbuffer-h">
+<span id="program-listing-file-dlsystem-iuserbuffer-h"></span><h1>Program Listing for File IUserBuffer.h<a class="headerlink" href="#program-listing-for-file-iuserbuffer-h" title="Permalink to this headline">¶</a></h1>
+<p>↰ <a class="reference internal" href="file_DlSystem_IUserBuffer.h.html#file-dlsystem-iuserbuffer-h"><span class="std std-ref">Return to documentation for file</span></a> (<code class="docutils literal notranslate"><span class="pre">DlSystem/IUserBuffer.h</span></code>)</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="c1">//==============================================================================</span>
+<span class="c1">//</span>
+<span class="c1">// Copyright (c) 2022-2023 Qualcomm Technologies, Inc.</span>
+<span class="c1">// All Rights Reserved.</span>
+<span class="c1">// Confidential and Proprietary - Qualcomm Technologies, Inc.</span>
+<span class="c1">//</span>
+<span class="c1">//==============================================================================</span>
+
+<span class="cm">/**</span>
+<span class="cm"> *  @file</span>
+<span class="cm"> */</span>
+
+<span class="cp">#ifndef _IUSER_BUFFER_H</span>
+<span class="cp">#define _IUSER_BUFFER_H</span>
+
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;stddef.h&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;stdint.h&gt;</span>
+
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;DlSystem/SnpeApiExportDefine.h&quot;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;DlSystem/TensorShape.h&quot;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;DlSystem/DlError.h&quot;</span>
+
+<span class="cp">#ifdef __cplusplus</span>
+<span class="k">extern</span><span class="w"> </span><span class="s">&quot;C&quot;</span><span class="w"> </span><span class="p">{</span>
+<span class="cp">#endif</span>
+
+
+<span class="cm">/**</span>
+<span class="cm"> * A typedef to indicate a SNPE UserByfferEncoding handle</span>
+<span class="cm"> */</span>
+<span class="k">typedef</span><span class="w"> </span><span class="kt">void</span><span class="o">*</span><span class="w"> </span><span class="n">Snpe_UserBufferEncoding_Handle_t</span><span class="p">;</span>
+
+<span class="cm">/**</span>
+<span class="cm"> * @brief .</span>
+<span class="cm"> *</span>
+<span class="cm"> * An enum class of all supported element types in a IUserBuffer</span>
+<span class="cm"> */</span>
+<span class="c1">//enum class Snpe_UserBufferEncoding_ElementType_t</span>
+<span class="k">typedef</span><span class="w"> </span><span class="k">enum</span>
+<span class="p">{</span>
+<span class="w">  </span><span class="c1">/// Unknown element type.</span>
+<span class="w">  </span><span class="n">SNPE_USERBUFFERENCODING_ELEMENTTYPE_UNKNOWN</span><span class="w">         </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+
+<span class="w">  </span><span class="c1">/// Each element is presented by float.</span>
+<span class="w">  </span><span class="n">SNPE_USERBUFFERENCODING_ELEMENTTYPE_FLOAT</span><span class="w">           </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+
+<span class="w">  </span><span class="c1">/// Each element is presented by an unsigned int.</span>
+<span class="w">  </span><span class="n">SNPE_USERBUFFERENCODING_ELEMENTTYPE_UNSIGNED8BIT</span><span class="w">    </span><span class="o">=</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span>
+
+<span class="w">  </span><span class="c1">/// Each element is presented by float16.</span>
+<span class="w">  </span><span class="n">SNPE_USERBUFFERENCODING_ELEMENTTYPE_FLOAT16</span><span class="w">         </span><span class="o">=</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span>
+
+<span class="w">  </span><span class="c1">/// Each element is presented by an 8-bit quantized value.</span>
+<span class="w">  </span><span class="n">SNPE_USERBUFFERENCODING_ELEMENTTYPE_TF8</span><span class="w">             </span><span class="o">=</span><span class="w"> </span><span class="mi">10</span><span class="p">,</span>
+
+<span class="w">  </span><span class="c1">/// Each element is presented by an 16-bit quantized value.</span>
+<span class="w">  </span><span class="n">SNPE_USERBUFFERENCODING_ELEMENTTYPE_TF16</span><span class="w">            </span><span class="o">=</span><span class="w"> </span><span class="mi">11</span><span class="p">,</span>
+
+<span class="w">  </span><span class="c1">/// Each element is presented by Int32</span>
+<span class="w">  </span><span class="n">SNPE_USERBUFFERENCODING_ELEMENTTYPE_INT32</span><span class="w">           </span><span class="o">=</span><span class="w"> </span><span class="mi">12</span><span class="p">,</span>
+
+<span class="w">  </span><span class="c1">/// Each element is presented by UInt32</span>
+<span class="w">  </span><span class="n">SNPE_USERBUFFERENCODING_ELEMENTTYPE_UINT32</span><span class="w">          </span><span class="o">=</span><span class="w"> </span><span class="mi">13</span><span class="p">,</span>
+
+<span class="w">  </span><span class="c1">/// Each element is presented by Int8</span>
+<span class="w">  </span><span class="n">SNPE_USERBUFFERENCODING_ELEMENTTYPE_INT8</span><span class="w">            </span><span class="o">=</span><span class="w"> </span><span class="mi">14</span><span class="p">,</span>
+
+<span class="w">  </span><span class="c1">/// Each element is presented by UInt8</span>
+<span class="w">  </span><span class="n">SNPE_USERBUFFERENCODING_ELEMENTTYPE_UINT8</span><span class="w">           </span><span class="o">=</span><span class="w"> </span><span class="mi">15</span><span class="p">,</span>
+
+<span class="w">  </span><span class="c1">/// Each element is presented by Int16</span>
+<span class="w">  </span><span class="n">SNPE_USERBUFFERENCODING_ELEMENTTYPE_INT16</span><span class="w">           </span><span class="o">=</span><span class="w"> </span><span class="mi">16</span><span class="p">,</span>
+
+<span class="w">  </span><span class="c1">/// Each element is presented by UInt16</span>
+<span class="w">  </span><span class="n">SNPE_USERBUFFERENCODING_ELEMENTTYPE_UINT16</span><span class="w">          </span><span class="o">=</span><span class="w"> </span><span class="mi">17</span><span class="p">,</span>
+
+<span class="w">  </span><span class="c1">/// Each element is present by Bool8</span>
+<span class="w">  </span><span class="n">SNPE_USERBUFFERENCODING_ELEMENTTYPE_BOOL8</span><span class="w">           </span><span class="o">=</span><span class="w"> </span><span class="mi">18</span><span class="p">,</span>
+
+<span class="p">}</span><span class="n">Snpe_UserBufferEncoding_ElementType_t</span><span class="p">;</span>
+
+
+<span class="cm">/**</span>
+<span class="cm"> * @brief Retrieves the element type</span>
+<span class="cm"> *</span>
+<span class="cm"> * @param[in] userBufferEncodingHandle : Handle to access userBufferEncoding</span>
+<span class="cm"> *</span>
+<span class="cm"> * @return Element type</span>
+<span class="cm"> */</span>
+<span class="n">SNPE_API</span>
+<span class="n">Snpe_UserBufferEncoding_ElementType_t</span><span class="w"> </span><span class="n">Snpe_UserBufferEncoding_GetElementType</span><span class="p">(</span><span class="n">Snpe_UserBufferEncoding_Handle_t</span><span class="w"> </span><span class="n">userBufferEncodingHandle</span><span class="p">);</span>
+
+<span class="cm">/**</span>
+<span class="cm"> * @brief Retrieves the size of the element, in bytes.</span>
+<span class="cm"> *</span>
+<span class="cm"> * @param[in] userBufferEncodingHandle : Handle to access userBufferEncoding</span>
+<span class="cm"> *</span>
+<span class="cm"> * @return Size of the element, in bytes.</span>
+<span class="cm"> */</span>
+<span class="n">SNPE_API</span>
+<span class="kt">size_t</span><span class="w"> </span><span class="n">Snpe_UserBufferEncoding_GetElementSize</span><span class="p">(</span><span class="n">Snpe_UserBufferEncoding_Handle_t</span><span class="w"> </span><span class="n">userBufferEncodingHandle</span><span class="p">);</span>
+
+<span class="cm">/**</span>
+<span class="cm"> * @brief Destroys/frees a UserBufferEncoding</span>
+<span class="cm"> *</span>
+<span class="cm"> * @param[in] userBufferEncodingHandle : Handle to access UserBufferEncoding</span>
+<span class="cm"> *</span>
+<span class="cm"> * @return indication of success/failures</span>
+<span class="cm"> */</span>
+<span class="n">SNPE_API</span>
+<span class="n">Snpe_ErrorCode_t</span><span class="w"> </span><span class="n">Snpe_UserBufferEncoding_Delete</span><span class="p">(</span><span class="n">Snpe_UserBufferEncoding_Handle_t</span><span class="w"> </span><span class="n">userBufferEncodingHandle</span><span class="p">);</span>
+
+
+<span class="cm">/**</span>
+<span class="cm"> * @brief .</span>
+<span class="cm"> *</span>
+<span class="cm"> * A base class buffer source type</span>
+<span class="cm"> *</span>
+<span class="cm"> * @note User buffer from CPU support all kinds of runtimes;</span>
+<span class="cm"> *       User buffer from GLBUFFER support only GPU runtime.</span>
+<span class="cm"> */</span>
+<span class="k">typedef</span><span class="w"> </span><span class="kt">void</span><span class="o">*</span><span class="w"> </span><span class="n">Snpe_UserBufferSource_Handle_t</span><span class="p">;</span>
+
+<span class="k">typedef</span><span class="w"> </span><span class="k">enum</span>
+<span class="p">{</span>
+<span class="w">  </span><span class="c1">/// Unknown buffer source type.</span>
+<span class="w">  </span><span class="n">SNPE_USERBUFFERSOURCE_SOURCETYPE_UNKNOWN</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+
+<span class="w">  </span><span class="c1">/// The network inputs are from CPU buffer.</span>
+<span class="w">  </span><span class="n">SNPE_USERBUFFERSOURCE_SOURCETYPE_CPU</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+
+<span class="w">  </span><span class="c1">/// The network inputs are from OpenGL buffer.</span>
+<span class="w">  </span><span class="n">SNPE_USERBUFFERSOURCE_SOURCETYPE_GLBUFFER</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">2</span>
+<span class="p">}</span><span class="n">Snpe_UserBufferSource_SourceType_t</span><span class="p">;</span>
+
+<span class="cm">/**</span>
+<span class="cm"> * @brief Retrieves the source type</span>
+<span class="cm"> *</span>
+<span class="cm"> * @param[in] userBufferSourceHandle : Handle to access userBufferSource</span>
+<span class="cm"> *</span>
+<span class="cm"> * @return Source type</span>
+<span class="cm"> */</span>
+<span class="n">SNPE_API</span>
+<span class="n">Snpe_UserBufferSource_SourceType_t</span><span class="w"> </span><span class="n">Snpe_UserBufferSource_GetSourceType</span><span class="p">(</span><span class="n">Snpe_UserBufferSource_Handle_t</span><span class="w"> </span><span class="n">userBufferSourceHandle</span><span class="p">);</span>
+
+<span class="cm">/**</span>
+<span class="cm"> * @brief Destroys/frees a UserBufferSource</span>
+<span class="cm"> *</span>
+<span class="cm"> * @param[in] userBufferSourceHandle : Handle to access UserBufferSource</span>
+<span class="cm"> *</span>
+<span class="cm"> * @return indication of success/failures</span>
+<span class="cm"> */</span>
+<span class="n">SNPE_API</span>
+<span class="n">Snpe_ErrorCode_t</span><span class="w"> </span><span class="n">Snpe_UserBufferSource_Delete</span><span class="p">(</span><span class="n">Snpe_UserBufferSource_Handle_t</span><span class="w"> </span><span class="n">userBufferSourceHandle</span><span class="p">);</span>
+
+<span class="cm">/**</span>
+<span class="cm"> * @brief .</span>
+<span class="cm"> *</span>
+<span class="cm"> * An source type where input data is delivered from OpenGL buffer</span>
+<span class="cm"> */</span>
+<span class="n">SNPE_API</span>
+<span class="n">Snpe_UserBufferSource_Handle_t</span><span class="w"> </span><span class="n">Snpe_UserBufferSourceGLBuffer_Create</span><span class="p">();</span>
+
+<span class="cm">/**</span>
+<span class="cm"> * @brief Destroys the userBuffer</span>
+<span class="cm"> *</span>
+<span class="cm"> * @param[in] userBufferSourceHandle : Handle to access the UserBuffer</span>
+<span class="cm"> *</span>
+<span class="cm"> * @return Error code. Returns SNPE_SUCCESS if destruction successful</span>
+<span class="cm"> */</span>
+<span class="n">SNPE_API</span>
+<span class="n">Snpe_ErrorCode_t</span><span class="w"> </span><span class="n">Snpe_UserBufferSourceGLBuffer_Delete</span><span class="p">(</span><span class="n">Snpe_UserBufferSource_Handle_t</span><span class="w"> </span><span class="n">userBufferSourceHandle</span><span class="p">);</span>
+
+<span class="c1">// Encoding 8 Bit</span>
+<span class="cm">/**</span>
+<span class="cm"> * @brief .</span>
+<span class="cm"> *</span>
+<span class="cm"> * An encoding type where each element is represented by an unsigned int.</span>
+<span class="cm"> *</span>
+<span class="cm"> * Userbuffer size assumes uint8 encoding for each element.</span>
+<span class="cm"> * (i.e., a tensor with dimensions (2,3) will be represented by (2 * 3) * 1 = 6 bytes in memory).</span>
+<span class="cm"> */</span>
+<span class="n">SNPE_API</span>
+<span class="n">Snpe_UserBufferEncoding_Handle_t</span><span class="w"> </span><span class="n">Snpe_UserBufferEncodingUnsigned8Bit_Create</span><span class="p">();</span>
+
+<span class="cm">/**</span>
+<span class="cm"> * @brief Copy Constructor for UserBufferEncodingUnsigned8Bit</span>
+<span class="cm"> *</span>
+<span class="cm"> * An encoding type where each element is represented by an unsigned int.</span>
+<span class="cm"> *</span>
+<span class="cm"> * Userbuffer size assumes uint8 encoding for each element.</span>
+<span class="cm"> * (i.e., a tensor with dimensions (2,3) will be represented by (2 * 3) * 1 = 6 bytes in memory).</span>
+<span class="cm"> *</span>
+<span class="cm"> * @param[in] otherHandle : a handle to another UserBufferEncodingUnsigned8Bit to copy</span>
+<span class="cm"> *</span>
+<span class="cm"> * @return a handle to the UserBufferEncodingUnsigned8Bit</span>
+<span class="cm"> */</span>
+<span class="n">SNPE_API</span>
+<span class="n">Snpe_UserBufferEncoding_Handle_t</span><span class="w"> </span><span class="n">Snpe_UserBufferEncodingUnsigned8Bit_CreateCopy</span><span class="p">(</span><span class="n">Snpe_UserBufferEncoding_Handle_t</span><span class="w"> </span><span class="n">otherHandle</span><span class="p">);</span>
+
+<span class="cm">/**</span>
+<span class="cm"> * @brief Destroys the encodingUnsigned8Bit</span>
+<span class="cm"> *</span>
+<span class="cm"> * @param[in] userBufferEncodingHandle : Handle to access the encodingUnsigned8Bit</span>
+<span class="cm"> *</span>
+<span class="cm"> * @return Error code. Returns SNPE_SUCCESS if destruction successful</span>
+<span class="cm"> */</span>
+<span class="n">SNPE_API</span>
+<span class="n">Snpe_ErrorCode_t</span><span class="w"> </span><span class="n">Snpe_UserBufferEncodingUnsigned8Bit_Delete</span><span class="p">(</span><span class="n">Snpe_UserBufferEncoding_Handle_t</span><span class="w"> </span><span class="n">userBufferEncodingHandle</span><span class="p">);</span>
+
+<span class="cm">/**</span>
+<span class="cm"> * @brief Retrieves the size of the element, in bytes.</span>
+<span class="cm"> *</span>
+<span class="cm"> * @param[in] userBufferEncodingHandle : Handle to access the encoding</span>
+<span class="cm"> *</span>
+<span class="cm"> * @return Size of the element, in bytes.</span>
+<span class="cm"> */</span>
+<span class="n">SNPE_API</span>
+<span class="kt">size_t</span><span class="w"> </span><span class="n">Snpe_UserBufferEncodingUnsigned8Bit_GetElementSize</span><span class="p">(</span><span class="n">Snpe_UserBufferEncoding_Handle_t</span><span class="w"> </span><span class="n">userBufferEncodingHandle</span><span class="p">);</span>
+
+
+<span class="c1">// Encoding Float</span>
+<span class="cm">/**</span>
+<span class="cm"> * @brief .</span>
+<span class="cm"> *</span>
+<span class="cm"> * An encoding type where each element is represented by a float.</span>
+<span class="cm"> *</span>
+<span class="cm"> * Userbuffer size assumes float encoding for each element.</span>
+<span class="cm"> * (i.e., a tensor with dimensions (2,3) will be represented by (2 * 3) * 4 = 24 bytes in memory).</span>
+<span class="cm"> */</span>
+<span class="n">SNPE_API</span>
+<span class="n">Snpe_UserBufferEncoding_Handle_t</span><span class="w"> </span><span class="n">Snpe_UserBufferEncodingFloat_Create</span><span class="p">();</span>
+
+<span class="cm">/**</span>
+<span class="cm"> * @brief Copy Constructor for UserBufferEncodingFloat</span>
+<span class="cm"> *</span>
+<span class="cm"> * An encoding type where each element is represented by a float.</span>
+<span class="cm"> *</span>
+<span class="cm"> * Userbuffer size assumes float encoding for each element.</span>
+<span class="cm"> * (i.e., a tensor with dimensions (2,3) will be represented by (2 * 3) * 4 = 24 bytes in memory).</span>
+<span class="cm"> *</span>
+<span class="cm"> * @param[in] otherHandle : a handle to another UserBufferEncodingFloat to copy</span>
+<span class="cm"> *</span>
+<span class="cm"> * @return a handle to the constructed UserBufferEncodingFloat</span>
+<span class="cm"> */</span>
+<span class="n">SNPE_API</span>
+<span class="n">Snpe_UserBufferEncoding_Handle_t</span><span class="w"> </span><span class="n">Snpe_UserBufferEncodingFloat_CreateCopy</span><span class="p">(</span><span class="n">Snpe_UserBufferEncoding_Handle_t</span><span class="w"> </span><span class="n">otherHandle</span><span class="p">);</span>
+
+<span class="cm">/**</span>
+<span class="cm"> * @brief Destroys the encodingFloat</span>
+<span class="cm"> *</span>
+<span class="cm"> * @param[in] userBufferEncodingHandle : Handle to access the encoding</span>
+<span class="cm"> *</span>
+<span class="cm"> * @return Error code. Returns SNPE_SUCCESS if destruction successful</span>
+<span class="cm"> */</span>
+<span class="n">SNPE_API</span>
+<span class="n">Snpe_ErrorCode_t</span><span class="w"> </span><span class="n">Snpe_UserBufferEncodingFloat_Delete</span><span class="p">(</span><span class="n">Snpe_UserBufferEncoding_Handle_t</span><span class="w"> </span><span class="n">userBufferEncodingHandle</span><span class="p">);</span>
+
+<span class="cm">/**</span>
+<span class="cm"> * @brief Retrieves the size of the element, in bytes.</span>
+<span class="cm"> *</span>
+<span class="cm"> * @param[in] userBufferEncodingHandle : Handle to access the encoding</span>
+<span class="cm"> *</span>
+<span class="cm"> * @return Size of the element, in bytes.</span>
+<span class="cm"> */</span>
+<span class="n">SNPE_API</span>
+<span class="kt">size_t</span><span class="w"> </span><span class="n">Snpe_UserBufferEncodingFloat_GetElementSize</span><span class="p">(</span><span class="n">Snpe_UserBufferEncoding_Handle_t</span><span class="w"> </span><span class="n">userBufferEncodingHandle</span><span class="p">);</span>
+
+<span class="c1">// Encoding FloatN</span>
+<span class="cm">/**</span>
+<span class="cm"> * @brief .</span>
+<span class="cm"> *</span>
+<span class="cm"> * An encoding type where each element is represented by a float N</span>
+<span class="cm"> *</span>
+<span class="cm"> * Userbuffer size assumes float N encoding for each element.</span>
+<span class="cm"> * (i.e., a tensor with dimensions (2,3) with a provided bitwidth of 16 will be represented by (2 * 3) * 2 = 12 bytes in memory).</span>
+<span class="cm"> */</span>
+<span class="n">SNPE_API</span>
+<span class="n">Snpe_UserBufferEncoding_Handle_t</span><span class="w"> </span><span class="n">Snpe_UserBufferEncodingFloatN_Create</span><span class="p">(</span><span class="kt">uint8_t</span><span class="w"> </span><span class="n">bWidth</span><span class="p">);</span>
+
+<span class="cm">/**</span>
+<span class="cm"> * @brief Copy Constructor for UserBufferEncodingFloatN</span>
+<span class="cm"> *</span>
+<span class="cm"> * An encoding type where each element is represented by a float N</span>
+<span class="cm"> *</span>
+<span class="cm"> * Userbuffer size assumes float N encoding for each element.</span>
+<span class="cm"> * (i.e., a tensor with dimensions (2,3) with a provided bitwidth of 16 will be represented by (2 * 3) * 2 = 12 bytes in memory).</span>
+<span class="cm"> *</span>
+<span class="cm"> * @param[in] otherHandle : a handle to another UserBufferEncodingFloatN to copy</span>
+<span class="cm"> *</span>
+<span class="cm"> * @return a handle to the constructed UserBufferEncodingFloatN</span>
+<span class="cm"> */</span>
+<span class="n">SNPE_API</span>
+<span class="n">Snpe_UserBufferEncoding_Handle_t</span><span class="w"> </span><span class="n">Snpe_UserBufferEncodingFloatN_CreateCopy</span><span class="p">(</span><span class="n">Snpe_UserBufferEncoding_Handle_t</span><span class="w"> </span><span class="n">otherHandle</span><span class="p">);</span>
+
+
+<span class="cm">/**</span>
+<span class="cm"> * @brief Destroys the encodingFloatN</span>
+<span class="cm"> *</span>
+<span class="cm"> * @param[in] userBufferEncodingHandle : Handle to access the encoding</span>
+<span class="cm"> *</span>
+<span class="cm"> * @return Error code. Returns SNPE_SUCCESS if destruction successful</span>
+<span class="cm"> */</span>
+<span class="n">SNPE_API</span>
+<span class="n">Snpe_ErrorCode_t</span><span class="w"> </span><span class="n">Snpe_UserBufferEncodingFloatN_Delete</span><span class="p">(</span><span class="n">Snpe_UserBufferEncoding_Handle_t</span><span class="w"> </span><span class="n">userBufferEncodingHandle</span><span class="p">);</span>
+
+<span class="cm">/**</span>
+<span class="cm"> * @brief Retrieves the size of the element, in bytes.</span>
+<span class="cm"> *</span>
+<span class="cm"> * @param[in] userBufferEncodingHandle : Handle to access the encoding</span>
+<span class="cm"> *</span>
+<span class="cm"> * @return Size of the element, in bytes.</span>
+<span class="cm"> */</span>
+<span class="n">SNPE_API</span>
+<span class="kt">size_t</span><span class="w"> </span><span class="n">Snpe_UserBufferEncodingFloatN_GetElementSize</span><span class="p">(</span><span class="n">Snpe_UserBufferEncoding_Handle_t</span><span class="w"> </span><span class="n">userBufferEncodingHandle</span><span class="p">);</span>
+
+
+<span class="cm">/**</span>
+<span class="cm"> * @brief Get the Float type corresponding to a given bitwidth</span>
+<span class="cm"> *</span>
+<span class="cm"> * @param width bitwidth of Float type</span>
+<span class="cm"> *</span>
+<span class="cm"> * @return ElementType corresponding to a Float of width bits</span>
+<span class="cm"> */</span>
+<span class="n">SNPE_API</span>
+<span class="n">Snpe_UserBufferEncoding_ElementType_t</span><span class="w"> </span><span class="n">Snpe_UserBufferEncodingFloatN_GetTypeFromWidth</span><span class="p">(</span><span class="kt">uint8_t</span><span class="w"> </span><span class="n">width</span><span class="p">);</span>
+
+<span class="cm">/**</span>
+<span class="cm"> * @brief .</span>
+<span class="cm"> *</span>
+<span class="cm"> * An encoding type where each element is represented by tfN, which is an</span>
+<span class="cm"> * N-bit quantized value, which has an exact representation of 0.0</span>
+<span class="cm"> *</span>
+<span class="cm"> * Userbuffer size assumes tf N encoding for each element.</span>
+<span class="cm"> * (i.e., a tensor with dimensions (2,3) with a provided bitwidth of 16 will be represented by (2 * 3) * 2 = 12 bytes in memory).</span>
+<span class="cm"> */</span>
+<span class="n">SNPE_API</span>
+<span class="n">Snpe_UserBufferEncoding_Handle_t</span><span class="w"> </span><span class="n">Snpe_UserBufferEncodingTfN_Create</span><span class="p">(</span><span class="kt">uint64_t</span><span class="w"> </span><span class="n">stepFor0</span><span class="p">,</span><span class="w"> </span><span class="kt">float</span><span class="w"> </span><span class="n">stepSize</span><span class="p">,</span><span class="w"> </span><span class="kt">uint8_t</span><span class="w"> </span><span class="n">bWidth</span><span class="p">);</span>
+
+<span class="cm">/**</span>
+<span class="cm"> * @brief Copy Constructor for UserBufferEncodingTfN</span>
+<span class="cm"> *</span>
+<span class="cm"> * An encoding type where each element is represented by tfN, which is an</span>
+<span class="cm"> * N-bit quantized value, which has an exact representation of 0.0</span>
+<span class="cm"> *</span>
+<span class="cm"> * Userbuffer size assumes tf N encoding for each element.</span>
+<span class="cm"> * (i.e., a tensor with dimensions (2,3) with a provided bitwidth of 16 will be represented by (2 * 3) * 2 = 12 bytes in memory).</span>
+<span class="cm"> * @param otherHandle the UserBufferEncodingTfN to copy</span>
+<span class="cm"> * @return a handle to a newly constructed UserBufferEncodingTfN</span>
+<span class="cm"> */</span>
+<span class="n">SNPE_API</span>
+<span class="n">Snpe_UserBufferEncoding_Handle_t</span><span class="w"> </span><span class="n">Snpe_UserBufferEncodingTfN_CreateCopy</span><span class="p">(</span><span class="n">Snpe_UserBufferEncoding_Handle_t</span><span class="w"> </span><span class="n">otherHandle</span><span class="p">);</span>
+
+<span class="cm">/**</span>
+<span class="cm"> * @brief Destroys the encodingTfN</span>
+<span class="cm"> *</span>
+<span class="cm"> * @param[in] userBufferEncodingHandle : Handle to access the encoding</span>
+<span class="cm"> *</span>
+<span class="cm"> * @return Error code. Returns SNPE_SUCCESS if destruction successful</span>
+<span class="cm"> */</span>
+<span class="n">SNPE_API</span>
+<span class="n">Snpe_ErrorCode_t</span><span class="w"> </span><span class="n">Snpe_UserBufferEncodingTfN_Delete</span><span class="p">(</span><span class="n">Snpe_UserBufferEncoding_Handle_t</span><span class="w"> </span><span class="n">userBufferEncodingHandle</span><span class="p">);</span>
+
+<span class="cm">/**</span>
+<span class="cm"> * @brief Retrieves the size of the element, in bytes.</span>
+<span class="cm"> *</span>
+<span class="cm"> * @param[in] userBufferEncodingHandle : Handle to access the encoding</span>
+<span class="cm"> *</span>
+<span class="cm"> * @return Size of the element, in bytes.</span>
+<span class="cm"> */</span>
+<span class="n">SNPE_API</span>
+<span class="kt">size_t</span><span class="w"> </span><span class="n">Snpe_UserBufferEncodingTfN_GetElementSize</span><span class="p">(</span><span class="n">Snpe_UserBufferEncoding_Handle_t</span><span class="w"> </span><span class="n">userBufferEncodingHandle</span><span class="p">);</span>
+
+<span class="cm">/**</span>
+<span class="cm"> * @brief Sets the step value that represents 0</span>
+<span class="cm"> *</span>
+<span class="cm"> * @param[in] userBufferEncodingHandle : Handle to access the encoding</span>
+<span class="cm"> *</span>
+<span class="cm"> * @param[in] stepExactly0 : The step value that represents 0</span>
+<span class="cm"> *</span>
+<span class="cm"> */</span>
+<span class="n">SNPE_API</span>
+<span class="kt">void</span><span class="w"> </span><span class="n">Snpe_UserBufferEncodingTfN_SetStepExactly0</span><span class="p">(</span><span class="n">Snpe_UserBufferEncoding_Handle_t</span><span class="w"> </span><span class="n">userBufferEncodingHandle</span><span class="p">,</span><span class="w"> </span><span class="kt">uint64_t</span><span class="w"> </span><span class="n">stepExactly0</span><span class="p">);</span>
+
+<span class="cm">/**</span>
+<span class="cm"> * @brief Sets the float value that each step represents</span>
+<span class="cm"> *</span>
+<span class="cm"> * @param[in] userBufferEncodingHandle : Handle to access the encoding</span>
+<span class="cm"> *</span>
+<span class="cm"> * @param[in] quantizedStepSize : The float value of each step size</span>
+<span class="cm"> *</span>
+<span class="cm"> */</span>
+<span class="n">SNPE_API</span>
+<span class="kt">void</span><span class="w"> </span><span class="n">Snpe_UserBufferEncodingTfN_SetQuantizedStepSize</span><span class="p">(</span><span class="n">Snpe_UserBufferEncoding_Handle_t</span><span class="w"> </span><span class="n">userBufferEncodingHandle</span><span class="p">,</span><span class="w"> </span><span class="kt">float</span><span class="w"> </span><span class="n">quantizedStepSize</span><span class="p">);</span>
+
+<span class="cm">/**</span>
+<span class="cm"> * @brief Retrieves the step that represents 0.0</span>
+<span class="cm"> *</span>
+<span class="cm"> * @param[in] userBufferEncodingHandle : Handle to access the encoding</span>
+<span class="cm"> *</span>
+<span class="cm"> * @return Step value</span>
+<span class="cm"> */</span>
+<span class="n">SNPE_API</span>
+<span class="kt">uint64_t</span><span class="w"> </span><span class="n">Snpe_UserBufferEncodingTfN_GetStepExactly0</span><span class="p">(</span><span class="n">Snpe_UserBufferEncoding_Handle_t</span><span class="w"> </span><span class="n">userBufferEncodingHandle</span><span class="p">);</span>
+
+<span class="cm">/**</span>
+<span class="cm"> * @brief Retrieves the step size</span>
+<span class="cm"> *</span>
+<span class="cm"> * @param[in] userBufferEncodingHandle : Handle to access the encoding</span>
+<span class="cm"> *</span>
+<span class="cm"> * @return Step size</span>
+<span class="cm"> */</span>
+<span class="n">SNPE_API</span>
+<span class="kt">float</span><span class="w"> </span><span class="n">Snpe_UserBufferEncodingTfN_GetQuantizedStepSize</span><span class="p">(</span><span class="n">Snpe_UserBufferEncoding_Handle_t</span><span class="w"> </span><span class="n">userBufferEncodingHandle</span><span class="p">);</span>
+
+<span class="cm">/**</span>
+<span class="cm"> * Calculates the minimum floating point value that</span>
+<span class="cm"> * can be represented with this encoding.</span>
+<span class="cm"> *</span>
+<span class="cm"> * @param[in] userBufferEncodingHandle : Handle to access the encoding</span>
+<span class="cm"> *</span>
+<span class="cm"> * @return Minimum representable floating point value</span>
+<span class="cm"> */</span>
+<span class="n">SNPE_API</span>
+<span class="kt">float</span><span class="w"> </span><span class="n">Snpe_UserBufferEncodingTfN_GetMin</span><span class="p">(</span><span class="n">Snpe_UserBufferEncoding_Handle_t</span><span class="w"> </span><span class="n">userBufferEncodingHandle</span><span class="p">);</span>
+
+<span class="cm">/**</span>
+<span class="cm"> * Calculates the maximum floating point value that</span>
+<span class="cm"> * can be represented with this encoding.</span>
+<span class="cm"> *</span>
+<span class="cm"> * @param[in] userBufferEncodingHandle : Handle to access the encoding</span>
+<span class="cm"> *</span>
+<span class="cm"> * @return Maximum representable floating point value</span>
+<span class="cm"> */</span>
+<span class="n">SNPE_API</span>
+<span class="kt">float</span><span class="w"> </span><span class="n">Snpe_UserBufferEncodingTfN_GetMax</span><span class="p">(</span><span class="n">Snpe_UserBufferEncoding_Handle_t</span><span class="w"> </span><span class="n">userBufferEncodingHandle</span><span class="p">);</span>
+
+<span class="cm">/**</span>
+<span class="cm"> * @brief Get the tfN type corresponding to a given bitwidth</span>
+<span class="cm"> *</span>
+<span class="cm"> * @param width bitwidth of tfN type</span>
+<span class="cm"> *</span>
+<span class="cm"> * @return ElementType corresponding to a tfN of width bits</span>
+<span class="cm"> */</span>
+<span class="n">SNPE_API</span>
+<span class="n">Snpe_UserBufferEncoding_ElementType_t</span><span class="w"> </span><span class="n">Snpe_UserBufferEncodingTfN_GetTypeFromWidth</span><span class="p">(</span><span class="kt">uint8_t</span><span class="w"> </span><span class="n">width</span><span class="p">);</span>
+
+<span class="c1">// Encoding Int N</span>
+<span class="cm">/**</span>
+<span class="cm"> * @brief .</span>
+<span class="cm"> *</span>
+<span class="cm"> * An encoding type where each element is represented by a Int</span>
+<span class="cm"> *</span>
+<span class="cm"> * Userbuffer size assumes int N encoding for each element.</span>
+<span class="cm"> * (i.e., a tensor with dimensions (2,3) with a provided bitwidth of 32 will be represented by (2 * 3) * 4 = 24 bytes in memory).</span>
+<span class="cm"> */</span>
+<span class="n">SNPE_API</span>
+<span class="n">Snpe_UserBufferEncoding_Handle_t</span><span class="w"> </span><span class="n">Snpe_UserBufferEncodingIntN_Create</span><span class="p">(</span><span class="kt">uint8_t</span><span class="w"> </span><span class="n">bWidth</span><span class="p">);</span>
+
+<span class="cm">/**</span>
+<span class="cm"> * @brief Copy Constructor for UserBufferEncodingIntN</span>
+<span class="cm"> *</span>
+<span class="cm"> * An encoding type where each element is represented by a Int</span>
+<span class="cm"> *</span>
+<span class="cm"> * Userbuffer size assumes int N encoding for each element.</span>
+<span class="cm"> * (i.e., a tensor with dimensions (2,3) with a provided bitwidth of 32 will be represented by (2 * 3) * 4 = 24 bytes in memory).</span>
+<span class="cm"> * @param otherHandle the UserBufferEncodingIntN to copy</span>
+<span class="cm"> * @return a handle to a newly constructed UserBufferEncodingIntN</span>
+<span class="cm"> */</span>
+<span class="n">SNPE_API</span>
+<span class="n">Snpe_UserBufferEncoding_Handle_t</span><span class="w"> </span><span class="n">Snpe_UserBufferEncodingIntN_CreateCopy</span><span class="p">(</span><span class="n">Snpe_UserBufferEncoding_Handle_t</span><span class="w"> </span><span class="n">userBufferEncodingHandle</span><span class="p">);</span>
+
+<span class="cm">/**</span>
+<span class="cm"> * @brief Destroys the encodingIntN</span>
+<span class="cm"> *</span>
+<span class="cm"> * @param[in] userBufferEncodingHandle : Handle to access the encoding</span>
+<span class="cm"> *</span>
+<span class="cm"> * @return Error code. Returns SNPE_SUCCESS if destruction successful</span>
+<span class="cm"> */</span>
+<span class="n">SNPE_API</span>
+<span class="n">Snpe_ErrorCode_t</span><span class="w"> </span><span class="n">Snpe_UserBufferEncodingIntN_Delete</span><span class="p">(</span><span class="n">Snpe_UserBufferEncoding_Handle_t</span><span class="w"> </span><span class="n">userBufferEncodingHandle</span><span class="p">);</span>
+
+<span class="cm">/**</span>
+<span class="cm"> * @brief Retrieves the size of the element, in bytes.</span>
+<span class="cm"> *</span>
+<span class="cm"> * @param[in] userBufferEncodingHandle : Handle to access the encoding</span>
+<span class="cm"> *</span>
+<span class="cm"> * @return Size of the element, in bytes.</span>
+<span class="cm"> */</span>
+<span class="n">SNPE_API</span>
+<span class="kt">size_t</span><span class="w"> </span><span class="n">Snpe_UserBufferEncodingIntN_GetElementSize</span><span class="p">(</span><span class="n">Snpe_UserBufferEncoding_Handle_t</span><span class="w"> </span><span class="n">userBufferEncodingHandle</span><span class="p">);</span>
+
+<span class="cm">/**</span>
+<span class="cm"> * @brief Get the int type corresponding to a given bitwidth</span>
+<span class="cm"> *</span>
+<span class="cm"> * @param width bitwidth of int type</span>
+<span class="cm"> *</span>
+<span class="cm"> * @return ElementType corresponding to a int of width bits</span>
+<span class="cm"> */</span>
+<span class="n">SNPE_API</span>
+<span class="n">Snpe_UserBufferEncoding_ElementType_t</span><span class="w"> </span><span class="n">Snpe_UserBufferEncodingIntN_GetTypeFromWidth</span><span class="p">(</span><span class="kt">uint8_t</span><span class="w"> </span><span class="n">bWidth</span><span class="p">);</span>
+
+<span class="c1">// Encoding Uint N</span>
+<span class="cm">/**</span>
+<span class="cm"> * @brief .</span>
+<span class="cm"> *</span>
+<span class="cm"> * An encoding type where each element is represented by a Uint</span>
+<span class="cm"> *</span>
+<span class="cm"> * Userbuffer size assumes uint N encoding for each element.</span>
+<span class="cm"> * (i.e., a tensor with dimensions (2,3) with a provided bitwidth of 32 will be represented by (2 * 3) * 4 = 24 bytes in memory).</span>
+<span class="cm"> */</span>
+<span class="n">SNPE_API</span>
+<span class="n">Snpe_UserBufferEncoding_Handle_t</span><span class="w"> </span><span class="n">Snpe_UserBufferEncodingUintN_Create</span><span class="p">(</span><span class="kt">uint8_t</span><span class="w"> </span><span class="n">bWidth</span><span class="p">);</span>
+
+<span class="cm">/**</span>
+<span class="cm"> * @brief Copy Constructor for UserBufferEncodingUintN</span>
+<span class="cm"> *</span>
+<span class="cm"> * An encoding type where each element is represented by a Uint</span>
+<span class="cm"> *</span>
+<span class="cm"> * Userbuffer size assumes uint N encoding for each element.</span>
+<span class="cm"> * (i.e., a tensor with dimensions (2,3) with a provided bitwidth of 32 will be represented by (2 * 3) * 4 = 24 bytes in memory).</span>
+<span class="cm"> * @param otherHandle the UserBufferEncodingUintN to copy</span>
+<span class="cm"> * @return a handle to a newly constructed UserBufferEncodingUintN</span>
+<span class="cm"> */</span>
+<span class="n">SNPE_API</span>
+<span class="n">Snpe_UserBufferEncoding_Handle_t</span><span class="w"> </span><span class="n">Snpe_UserBufferEncodingUintN_CreateCopy</span><span class="p">(</span><span class="n">Snpe_UserBufferEncoding_Handle_t</span><span class="w"> </span><span class="n">userBufferEncodingHandle</span><span class="p">);</span>
+
+<span class="cm">/**</span>
+<span class="cm"> * @brief Destroys the encodingUintN</span>
+<span class="cm"> *</span>
+<span class="cm"> * @param[in] userBufferEncodingHandle : Handle to access the encoding</span>
+<span class="cm"> *</span>
+<span class="cm"> * @return Error code. Returns SNPE_SUCCESS if destruction successful</span>
+<span class="cm"> */</span>
+<span class="n">SNPE_API</span>
+<span class="n">Snpe_ErrorCode_t</span><span class="w"> </span><span class="n">Snpe_UserBufferEncodingUintN_Delete</span><span class="p">(</span><span class="n">Snpe_UserBufferEncoding_Handle_t</span><span class="w"> </span><span class="n">userBufferEncodingHandle</span><span class="p">);</span>
+
+<span class="cm">/**</span>
+<span class="cm"> * @brief Retrieves the size of the element, in bytes.</span>
+<span class="cm"> *</span>
+<span class="cm"> * @param[in] userBufferEncodingHandle : Handle to access the encoding</span>
+<span class="cm"> *</span>
+<span class="cm"> * @return Size of the element, in bytes.</span>
+<span class="cm"> */</span>
+<span class="n">SNPE_API</span>
+<span class="kt">size_t</span><span class="w"> </span><span class="n">Snpe_UserBufferEncodingUintN_GetElementSize</span><span class="p">(</span><span class="n">Snpe_UserBufferEncoding_Handle_t</span><span class="w"> </span><span class="n">userBufferEncodingHandle</span><span class="p">);</span>
+
+<span class="cm">/**</span>
+<span class="cm"> * @brief Get the uint type corresponding to a given bitwidth</span>
+<span class="cm"> *</span>
+<span class="cm"> * @param width bitwidth of uint type</span>
+<span class="cm"> *</span>
+<span class="cm"> * @return ElementType corresponding to a uint of width bits</span>
+<span class="cm"> */</span>
+<span class="n">SNPE_API</span>
+<span class="n">Snpe_UserBufferEncoding_ElementType_t</span><span class="w"> </span><span class="n">Snpe_UserBufferEncodingUintN_GetTypeFromWidth</span><span class="p">(</span><span class="kt">uint8_t</span><span class="w"> </span><span class="n">bWidth</span><span class="p">);</span>
+
+
+<span class="c1">// Encoding Bool</span>
+<span class="cm">/**</span>
+<span class="cm"> * @brief .</span>
+<span class="cm"> *</span>
+<span class="cm"> * An encoding type where each element is represented by a Bool</span>
+<span class="cm"> */</span>
+<span class="n">SNPE_API</span>
+<span class="n">Snpe_UserBufferEncoding_Handle_t</span><span class="w"> </span><span class="n">Snpe_UserBufferEncodingBool_Create</span><span class="p">(</span><span class="kt">uint8_t</span><span class="w"> </span><span class="n">bWidth</span><span class="p">);</span>
+
+<span class="cm">/**</span>
+<span class="cm"> * @brief Copy Constructor for UserBufferEncodingBool</span>
+<span class="cm"> *</span>
+<span class="cm"> * An encoding type where each element is represented by a bool</span>
+<span class="cm"> *</span>
+<span class="cm"> * @param otherHandle the UserBufferEncodingBool to copy</span>
+<span class="cm"> * @return a handle to a newly constructed UserBufferEncodingBool</span>
+<span class="cm"> */</span>
+<span class="n">SNPE_API</span>
+<span class="n">Snpe_UserBufferEncoding_Handle_t</span><span class="w"> </span><span class="n">Snpe_UserBufferEncodingBool_CreateCopy</span><span class="p">(</span><span class="n">Snpe_UserBufferEncoding_Handle_t</span><span class="w"> </span><span class="n">userBufferEncodingHandle</span><span class="p">);</span>
+
+<span class="cm">/**</span>
+<span class="cm"> * @brief Destroys the encodingBool</span>
+<span class="cm"> *</span>
+<span class="cm"> * @param[in] userBufferHandle : Handle to access the encoding</span>
+<span class="cm"> *</span>
+<span class="cm"> * @return Error code. Returns SNPE_SUCCESS if destruction successful</span>
+<span class="cm"> */</span>
+<span class="n">SNPE_API</span>
+<span class="n">Snpe_ErrorCode_t</span><span class="w"> </span><span class="n">Snpe_UserBufferEncodingBool_Delete</span><span class="p">(</span><span class="n">Snpe_UserBufferEncoding_Handle_t</span><span class="w"> </span><span class="n">userBufferHandle</span><span class="p">);</span>
+
+<span class="cm">/**</span>
+<span class="cm"> * @brief Retrieves the size of the element, in bytes.</span>
+<span class="cm"> *</span>
+<span class="cm"> * @param[in] userBufferHandle : Handle to access the encoding</span>
+<span class="cm"> *</span>
+<span class="cm"> * @return Size of the element, in bytes.</span>
+<span class="cm"> */</span>
+<span class="n">SNPE_API</span>
+<span class="kt">size_t</span><span class="w"> </span><span class="n">Snpe_UserBufferEncodingBool_GetElementSize</span><span class="p">(</span><span class="n">Snpe_UserBufferEncoding_Handle_t</span><span class="w"> </span><span class="n">userBufferHandle</span><span class="p">);</span>
+
+
+
+<span class="cm">/**</span>
+<span class="cm"> * A typedef to indicate a SNPE IUserBuffer handle</span>
+<span class="cm"> * UserBuffer contains a pointer and info on how to walk it and interpret its content.</span>
+<span class="cm"> */</span>
+<span class="k">typedef</span><span class="w"> </span><span class="kt">void</span><span class="o">*</span><span class="w"> </span><span class="n">Snpe_IUserBuffer_Handle_t</span><span class="p">;</span>
+
+<span class="cm">/**</span>
+<span class="cm"> * Destroys/frees an IUserBuffer</span>
+<span class="cm"> *</span>
+<span class="cm"> * @param[in] userBufferHandle : Handle to access the IUserBuffer</span>
+<span class="cm"> *</span>
+<span class="cm"> * @return SNPE_SUCCESS if Delete operation successful.</span>
+<span class="cm"> */</span>
+<span class="n">SNPE_API</span>
+<span class="n">Snpe_ErrorCode_t</span><span class="w"> </span><span class="n">Snpe_IUserBuffer_Delete</span><span class="p">(</span><span class="n">Snpe_IUserBuffer_Handle_t</span><span class="w"> </span><span class="n">userBufferHandle</span><span class="p">);</span>
+
+
+<span class="cm">/**</span>
+<span class="cm"> * @brief Retrieves the total number of bytes between elements in each dimension if</span>
+<span class="cm"> * the buffer were to be interpreted as a multi-dimensional array.</span>
+<span class="cm"> *</span>
+<span class="cm"> * @param[in] userBufferHandle : Handle to access the user Buffer</span>
+<span class="cm"> *</span>
+<span class="cm"> * @warning Do not modify the TensorShape returned by reference. Treat it as a const reference.</span>
+<span class="cm"> *</span>
+<span class="cm"> * @return A const reference to the number of bytes between elements in each dimension.</span>
+<span class="cm"> * e.g. A tightly packed tensor of floats with dimensions [4, 3, 2] would</span>
+<span class="cm"> * return strides of [24, 8, 4].</span>
+<span class="cm"> */</span>
+<span class="n">SNPE_API</span>
+<span class="n">Snpe_TensorShape_Handle_t</span><span class="w"> </span><span class="n">Snpe_IUserBuffer_GetStrides_Ref</span><span class="p">(</span><span class="n">Snpe_IUserBuffer_Handle_t</span><span class="w"> </span><span class="n">userBufferHandle</span><span class="p">);</span>
+
+<span class="cm">/**</span>
+<span class="cm"> * @brief Retrieves the size of the buffer, in bytes.</span>
+<span class="cm"> *</span>
+<span class="cm"> * @param[in] userBufferHandle : Handle to access the user Buffer</span>
+<span class="cm"> *</span>
+<span class="cm"> * @return Size of the underlying buffer, in bytes.</span>
+<span class="cm"> */</span>
+<span class="n">SNPE_API</span>
+<span class="kt">size_t</span><span class="w"> </span><span class="n">Snpe_IUserBuffer_GetSize</span><span class="p">(</span><span class="n">Snpe_IUserBuffer_Handle_t</span><span class="w"> </span><span class="n">userBufferHandle</span><span class="p">);</span>
+
+<span class="cm">/**</span>
+<span class="cm"> * @brief Retrieves the size of the inference data in the buffer, in bytes.</span>
+<span class="cm"> *</span>
+<span class="cm"> * The inference results from a dynamic-sized model may not be exactly the same size</span>
+<span class="cm"> * as the UserBuffer provided to SNPE. This function can be used to get the amount</span>
+<span class="cm"> * of output inference data, which may be less or greater than the size of the UserBuffer.</span>
+<span class="cm"> *</span>
+<span class="cm"> * If the inference results fit in the UserBuffer, getOutputSize() would be less than</span>
+<span class="cm"> * or equal to getSize(). But if the inference results were more than the capacity of</span>
+<span class="cm"> * the provided UserBuffer, the results would be truncated to fit the UserBuffer. But,</span>
+<span class="cm"> * getOutputSize() would be greater than getSize(), which indicates a bigger buffer</span>
+<span class="cm"> * needs to be provided to SNPE to hold all of the inference results.</span>
+<span class="cm"> *</span>
+<span class="cm"> * @param[in] userBufferHandle : Handle to access the user Buffer</span>
+<span class="cm"> *</span>
+<span class="cm"> * @return Size required for the buffer to hold all inference results, which can be less</span>
+<span class="cm"> * or more than the size of the buffer, in bytes.</span>
+<span class="cm"> */</span>
+<span class="n">SNPE_API</span>
+<span class="kt">size_t</span><span class="w"> </span><span class="n">Snpe_IUserBuffer_GetOutputSize</span><span class="p">(</span><span class="n">Snpe_IUserBuffer_Handle_t</span><span class="w"> </span><span class="n">userBufferHandle</span><span class="p">);</span>
+
+<span class="cm">/**</span>
+<span class="cm"> * @brief Changes the underlying memory that backs the UserBuffer.</span>
+<span class="cm"> *</span>
+<span class="cm"> * This can be used to avoid creating multiple UserBuffer objects</span>
+<span class="cm"> * when the only thing that differs is the memory location.</span>
+<span class="cm"> *</span>
+<span class="cm"> * @param[in] userBufferHandle : Handle to access the user Buffer</span>
+<span class="cm"> *</span>
+<span class="cm"> * @param[in] buffer : Pointer to the memory location</span>
+<span class="cm"> *</span>
+<span class="cm"> * @return Whether the set succeeds.</span>
+<span class="cm"> */</span>
+<span class="n">SNPE_API</span>
+<span class="kt">int</span><span class="w"> </span><span class="n">Snpe_IUserBuffer_SetBufferAddress</span><span class="p">(</span><span class="n">Snpe_IUserBuffer_Handle_t</span><span class="w"> </span><span class="n">userBufferHandle</span><span class="p">,</span><span class="w"> </span><span class="kt">void</span><span class="o">*</span><span class="w"> </span><span class="n">buffer</span><span class="p">);</span>
+
+<span class="cm">/**</span>
+<span class="cm"> * @brief Gets a reference to the data encoding object of</span>
+<span class="cm"> *        the underlying buffer</span>
+<span class="cm"> *</span>
+<span class="cm"> * This is necessary when the UserBuffer is re-used, and the encoding</span>
+<span class="cm"> * parameters can change.  For example, each input can be quantized with</span>
+<span class="cm"> * different step sizes.</span>
+<span class="cm"> *</span>
+<span class="cm"> * @param[in] userBufferHandle : Handle to access the user Buffer</span>
+<span class="cm"> *</span>
+<span class="cm"> * @return Data encoding meta-data</span>
+<span class="cm"> */</span>
+<span class="n">SNPE_API</span>
+<span class="n">Snpe_UserBufferEncoding_Handle_t</span><span class="w"> </span><span class="n">Snpe_IUserBuffer_GetEncoding_Ref</span><span class="p">(</span><span class="n">Snpe_IUserBuffer_Handle_t</span><span class="w"> </span><span class="n">userBufferHandle</span><span class="p">);</span>
+
+
+<span class="cp">#ifdef __cplusplus</span>
+<span class="p">}</span><span class="w">  </span><span class="c1">// extern &quot;C&quot;</span>
+<span class="cp">#endif</span>
+
+<span class="cp">#endif </span><span class="c1">// _IUSER_BUFFER_H</span>
+</pre></div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2020-2023, Qualcomm Technologies, Inc..
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

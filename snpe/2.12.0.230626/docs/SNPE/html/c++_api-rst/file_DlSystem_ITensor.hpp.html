@@ -1,0 +1,445 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>File ITensor.hpp &mdash; Snapdragon Neural Processing Engine SDK</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/custom_css.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/collapsible-lists/css/tree_view.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+        <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Qualcomm® Neural Processing SDK
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                v2.12.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../general/revision_history.html">Revision History</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/revision_history_windows.html">Revision History - Windows</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/overview.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/setup.html">Setup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/usergroup1.html">Network Models</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/usergroup5.html">Input Data and Preprocessing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/usergroup6.html">Tutorials and Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/usergroup10.html">Benchmarking and Accuracy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/tools.html">Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/usergroup11.html">Debug Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/api.html">API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/limitations.html">Limitations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/appx_ref.html">References</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Qualcomm® Neural Processing SDK</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>File ITensor.hpp</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="file-itensor-hpp">
+<span id="file-dlsystem-itensor-hpp"></span><h1>File ITensor.hpp<a class="headerlink" href="#file-itensor-hpp" title="Permalink to this headline">¶</a></h1>
+<p>↰ <a class="reference internal" href="dir_DlSystem.html#dir-dlsystem"><span class="std std-ref">Parent directory</span></a> (<code class="docutils literal notranslate"><span class="pre">DlSystem</span></code>)</p>
+<div class="contents local topic" id="contents">
+<p class="topic-title">Contents</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#definition-dlsystem-itensor-hpp" id="id1">Definition (<code class="docutils literal notranslate"><span class="pre">DlSystem/ITensor.hpp</span></code>)</a></p></li>
+<li><p><a class="reference internal" href="#includes" id="id2">Includes</a></p></li>
+<li><p><a class="reference internal" href="#included-by" id="id3">Included By</a></p></li>
+<li><p><a class="reference internal" href="#namespaces" id="id4">Namespaces</a></p></li>
+<li><p><a class="reference internal" href="#classes" id="id5">Classes</a></p></li>
+<li><p><a class="reference internal" href="#full-file-listing" id="id6">Full File Listing</a></p></li>
+</ul>
+</div>
+<div class="section" id="definition-dlsystem-itensor-hpp">
+<h2>Definition (<code class="docutils literal notranslate"><span class="pre">DlSystem/ITensor.hpp</span></code>)<a class="headerlink" href="#definition-dlsystem-itensor-hpp" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="program_listing_file_DlSystem_ITensor.hpp.html">Program Listing for File ITensor.hpp</a></li>
+</ul>
+</div>
+</div>
+<div class="section" id="includes">
+<h2>Includes<a class="headerlink" href="#includes" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">ITensorItr.hpp</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">ITensorItrImpl.hpp</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">TensorShape.hpp</span></code> (<a class="reference internal" href="file_DlSystem_TensorShape.hpp.html#file-dlsystem-tensorshape-hpp"><span class="std std-ref">File TensorShape.hpp</span></a>)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">ZdlExportDefine.hpp</span></code> (<a class="reference internal" href="file_DlSystem_ZdlExportDefine.hpp.html#file-dlsystem-zdlexportdefine-hpp"><span class="std std-ref">File ZdlExportDefine.hpp</span></a>)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">cmath</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">memory</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">ostream</span></code></p></li>
+</ul>
+</div>
+<div class="section" id="included-by">
+<h2>Included By<a class="headerlink" href="#included-by" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="file_DlSystem_ITensorFactory.hpp.html#file-dlsystem-itensorfactory-hpp"><span class="std std-ref">File ITensorFactory.hpp</span></a></p></li>
+<li><p><a class="reference internal" href="file_DlSystem_TensorMap.hpp.html#file-dlsystem-tensormap-hpp"><span class="std std-ref">File TensorMap.hpp</span></a></p></li>
+<li><p><a class="reference internal" href="file_SNPE_SNPE.hpp.html#file-snpe-snpe-hpp"><span class="std std-ref">File SNPE.hpp</span></a></p></li>
+</ul>
+</div>
+<div class="section" id="namespaces">
+<h2>Namespaces<a class="headerlink" href="#namespaces" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="namespace_zdl.html#namespace-zdl"><span class="std std-ref">Namespace zdl</span></a></p></li>
+<li><p><a class="reference internal" href="namespace_zdl__DlSystem.html#namespace-zdl-dlsystem"><span class="std std-ref">Namespace zdl::DlSystem</span></a></p></li>
+</ul>
+</div>
+<div class="section" id="classes">
+<h2>Classes<a class="headerlink" href="#classes" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="classzdl_1_1DlSystem_1_1ITensor.html#exhale-class-classzdl-1-1dlsystem-1-1itensor"><span class="std std-ref">Class ITensor</span></a></p></li>
+</ul>
+</div>
+<div class="section" id="full-file-listing">
+<h2>Full File Listing<a class="headerlink" href="#full-file-listing" title="Permalink to this headline">¶</a></h2>
+<dl class="cpp type">
+<dt class="sig sig-object cpp" id="_CPPv43zdl">
+<span id="_CPPv33zdl"></span><span id="_CPPv23zdl"></span><span id="zdl"></span><span class="target" id="namespacezdl"></span><span class="k"><span class="pre">namespace</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">zdl</span></span></span><br /></dt>
+<dd><dl class="cpp type">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystemE">
+<span id="_CPPv3N3zdl8DlSystemE"></span><span id="_CPPv2N3zdl8DlSystemE"></span><span id="zdl::DlSystem"></span><span class="target" id="namespacezdl_1_1DlSystem"></span><span class="k"><span class="pre">namespace</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">DlSystem</span></span></span><br /></dt>
+<dd><dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem7ITensorE">
+<span id="_CPPv3N3zdl8DlSystem7ITensorE"></span><span id="_CPPv2N3zdl8DlSystem7ITensorE"></span><span id="zdl::DlSystem::ITensor"></span><span class="target" id="classzdl_1_1DlSystem_1_1ITensor"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">ITensor</span></span></span><br /></dt>
+<dd><em>#include &lt;ITensor.hpp&gt;</em><p>Represents a tensor which holds n-dimensional data. It is important to understand how the tensor data is represented in memory relative to the tensor dimensions. Tensors store data in memory in row-major order (i.e. the last tensor dimension is the fastest varying one). For example, if you have a two dimensional tensor with 3 rows and 2 columns (i.e. the tensor dimensions are 3,2 as returned in tensor dimension vectors) with the following data in terms rows and columns:</p>
+<p><p>| 1 2 |</p>
+<p>| 3 4 |</p>
+
+ | 5 6 | </p>
+<p>This data would be stored in memory as 1,2,3,4,5,6. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-types">Public Types</p>
+<dl class="cpp type">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem7ITensor8iteratorE">
+<span id="_CPPv3N3zdl8DlSystem7ITensor8iteratorE"></span><span id="_CPPv2N3zdl8DlSystem7ITensor8iteratorE"></span><span id="zdl::DlSystem::ITensor::iterator"></span><span class="target" id="group__c__plus__plus__apis_1gab1439ac89ed076ca6d12350ee4eb5a15"></span><span class="k"><span class="pre">typedef</span></span><span class="w"> </span><a class="reference internal" href="file_DlContainer_IDlContainer.hpp.html#_CPPv43zdl" title="zdl"><span class="n"><span class="pre">zdl</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="file_DlSystem_DlEnums.hpp.html#_CPPv4N3zdl8DlSystemE" title="zdl::DlSystem"><span class="n"><span class="pre">DlSystem</span></span></a><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">ITensorItr</span></span><span class="p"><span class="pre">&lt;</span></span><span class="k"><span class="pre">false</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">iterator</span></span></span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp type">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem7ITensor14const_iteratorE">
+<span id="_CPPv3N3zdl8DlSystem7ITensor14const_iteratorE"></span><span id="_CPPv2N3zdl8DlSystem7ITensor14const_iteratorE"></span><span id="zdl::DlSystem::ITensor::const_iterator"></span><span class="target" id="group__c__plus__plus__apis_1ga6bce94ad727997a49905175c8e7ffa40"></span><span class="k"><span class="pre">typedef</span></span><span class="w"> </span><a class="reference internal" href="file_DlContainer_IDlContainer.hpp.html#_CPPv43zdl" title="zdl"><span class="n"><span class="pre">zdl</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="file_DlSystem_DlEnums.hpp.html#_CPPv4N3zdl8DlSystemE" title="zdl::DlSystem"><span class="n"><span class="pre">DlSystem</span></span></a><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">ITensorItr</span></span><span class="p"><span class="pre">&lt;</span></span><span class="k"><span class="pre">true</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">const_iterator</span></span></span><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem7ITensorD0Ev">
+<span id="_CPPv3N3zdl8DlSystem7ITensorD0Ev"></span><span id="_CPPv2N3zdl8DlSystem7ITensorD0Ev"></span><span id="zdl::DlSystem::ITensor::~ITensor"></span><span class="target" id="group__c__plus__plus__apis_1gad67b8ef834eff5827f3d21b1371e0e1b"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">~ITensor</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem7ITensor5beginEv">
+<span id="_CPPv3N3zdl8DlSystem7ITensor5beginEv"></span><span id="_CPPv2N3zdl8DlSystem7ITensor5beginEv"></span><span id="zdl::DlSystem::ITensor::begin"></span><span class="target" id="group__c__plus__plus__apis_1ga5b471bbc545d0f3d7f67386ec888e034"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><a class="reference internal" href="classzdl_1_1DlSystem_1_1ITensor.html#_CPPv4N3zdl8DlSystem7ITensor8iteratorE" title="zdl::DlSystem::ITensor::iterator"><span class="n"><span class="pre">iterator</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">begin</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><br /></dt>
+<dd><p>Returns a tensor iterator pointing to the beginning of the data in the tensor.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>A tensor iterator that points to the first data element in the tensor. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK3zdl8DlSystem7ITensor6cbeginEv">
+<span id="_CPPv3NK3zdl8DlSystem7ITensor6cbeginEv"></span><span id="_CPPv2NK3zdl8DlSystem7ITensor6cbeginEv"></span><span id="zdl::DlSystem::ITensor::cbeginC"></span><span class="target" id="group__c__plus__plus__apis_1gaf775cc19fa61aa9117c2173dd3ddda90"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><a class="reference internal" href="classzdl_1_1DlSystem_1_1ITensor.html#_CPPv4N3zdl8DlSystem7ITensor14const_iteratorE" title="zdl::DlSystem::ITensor::const_iterator"><span class="n"><span class="pre">const_iterator</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">cbegin</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><br /></dt>
+<dd><p>Returns the const version of a tensor iterator pointing to the beginning of the data in the tensor.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>A tensor const iterator that points to the first data element in the tensor. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem7ITensor3endEv">
+<span id="_CPPv3N3zdl8DlSystem7ITensor3endEv"></span><span id="_CPPv2N3zdl8DlSystem7ITensor3endEv"></span><span id="zdl::DlSystem::ITensor::end"></span><span class="target" id="group__c__plus__plus__apis_1ga53f3a778420338d81d63103963812c3c"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><a class="reference internal" href="classzdl_1_1DlSystem_1_1ITensor.html#_CPPv4N3zdl8DlSystem7ITensor8iteratorE" title="zdl::DlSystem::ITensor::iterator"><span class="n"><span class="pre">iterator</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">end</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><br /></dt>
+<dd><p>Returns a tensor iterator pointing to the end of the data in the tensor. This tensor should not be dereferenced.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>A tensor iterator that points to the end of the data (one past the last element) in the tensor. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK3zdl8DlSystem7ITensor4cendEv">
+<span id="_CPPv3NK3zdl8DlSystem7ITensor4cendEv"></span><span id="_CPPv2NK3zdl8DlSystem7ITensor4cendEv"></span><span id="zdl::DlSystem::ITensor::cendC"></span><span class="target" id="group__c__plus__plus__apis_1ga6ba19399d512fe61d6d2c81372bf0816"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><a class="reference internal" href="classzdl_1_1DlSystem_1_1ITensor.html#_CPPv4N3zdl8DlSystem7ITensor14const_iteratorE" title="zdl::DlSystem::ITensor::const_iterator"><span class="n"><span class="pre">const_iterator</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">cend</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><br /></dt>
+<dd><p>Returns the const version of a tensor iterator pointing to the end of the data in the tensor. This tensor should not be dereferenced.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>A tensor const iterator that points to the end of the data (one past the last element) in the tensor. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK3zdl8DlSystem7ITensor8getShapeEv">
+<span id="_CPPv3NK3zdl8DlSystem7ITensor8getShapeEv"></span><span id="_CPPv2NK3zdl8DlSystem7ITensor8getShapeEv"></span><span id="zdl::DlSystem::ITensor::getShapeC"></span><span class="target" id="group__c__plus__plus__apis_1ga5242b7d7b22cbc5f84e8de8da8040cce"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><a class="reference internal" href="classzdl_1_1DlSystem_1_1TensorShape.html#_CPPv4N3zdl8DlSystem11TensorShapeE" title="zdl::DlSystem::TensorShape"><span class="n"><span class="pre">TensorShape</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getShape</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><br /></dt>
+<dd><p>Gets the shape of this tensor. </p>
+<p>The last element of the vector represents the fastest varying dimension and the zeroth element represents the slowest varying dimension, etc.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>A shape class holding the tensor dimensions. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK3zdl8DlSystem7ITensor7getSizeEv">
+<span id="_CPPv3NK3zdl8DlSystem7ITensor7getSizeEv"></span><span id="_CPPv2NK3zdl8DlSystem7ITensor7getSizeEv"></span><span id="zdl::DlSystem::ITensor::getSizeC"></span><span class="target" id="group__c__plus__plus__apis_1ga70d0180c6806fe1e5c4ed3acffb1bc5c"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getSize</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><br /></dt>
+<dd><p>Returns the element size of the data in the tensor (discounting strides). This is how big a buffer would need to be to hold the tensor data contiguously in memory.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>The size of the tensor (in elements). </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK3zdl8DlSystem7ITensor9serializeERNSt7ostreamE">
+<span id="_CPPv3NK3zdl8DlSystem7ITensor9serializeERNSt7ostreamE"></span><span id="_CPPv2NK3zdl8DlSystem7ITensor9serializeERNSt7ostreamE"></span><span id="zdl::DlSystem::ITensor::serialize__osRC"></span><span class="target" id="group__c__plus__plus__apis_1gae8e055e0fdb86d22155180b755b35d1f"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">serialize</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">ostream</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">output</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><br /></dt>
+<dd><p>Serializes the tensor to an output stream. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>output</strong> – <strong>[in]</strong> The output stream to which to write the tensor</p>
+</dd>
+<dt class="field-even">Throws</dt>
+<dd class="field-even"><p><strong>std::runtime_error</strong> – If the stream is ever in a bad state before the tensor is fully serialized. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem7ITensor11isQuantizedEv">
+<span id="_CPPv3N3zdl8DlSystem7ITensor11isQuantizedEv"></span><span id="_CPPv2N3zdl8DlSystem7ITensor11isQuantizedEv"></span><span id="zdl::DlSystem::ITensor::isQuantized"></span><span class="target" id="group__c__plus__plus__apis_1ga7f4558a9cb34499f82855495f9e06c1f"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">isQuantized</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem7ITensor8GetDeltaEv">
+<span id="_CPPv3N3zdl8DlSystem7ITensor8GetDeltaEv"></span><span id="_CPPv2N3zdl8DlSystem7ITensor8GetDeltaEv"></span><span id="zdl::DlSystem::ITensor::GetDelta"></span><span class="target" id="group__c__plus__plus__apis_1ga600a1217d4877f99b5d55a39bb5d690e"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">GetDelta</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem7ITensor9GetOffsetEv">
+<span id="_CPPv3N3zdl8DlSystem7ITensor9GetOffsetEv"></span><span id="_CPPv2N3zdl8DlSystem7ITensor9GetOffsetEv"></span><span id="zdl::DlSystem::ITensor::GetOffset"></span><span class="target" id="group__c__plus__plus__apis_1ga4599c50e2a5ab9e48f77d85383f47bb1"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">GetOffset</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp">
+<span class="target" id="group__c__plus__plus__apis_1gaef7266b2c5b489330802c3e478354a85"></span><span class="sig-name descname"><span class="pre">friend</span> <span class="pre">iterator</span></span></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp">
+<span class="target" id="group__c__plus__plus__apis_1ga4a486dcfdd55d30d2201c92f829d9171"></span><span class="sig-name descname"><span class="pre">friend</span> <span class="pre">const_iterator</span></span></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-protected-functions">Protected Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK3zdl8DlSystem7ITensor10getItrImplEv">
+<span id="_CPPv3NK3zdl8DlSystem7ITensor10getItrImplEv"></span><span id="_CPPv2NK3zdl8DlSystem7ITensor10getItrImplEv"></span><span id="zdl::DlSystem::ITensor::getItrImplC"></span><span class="target" id="group__c__plus__plus__apis_1ga2879bed8fb296496cb69b5916f415849"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">unique_ptr</span></span><span class="p"><span class="pre">&lt;</span></span><span class="p"><span class="pre">::</span></span><a class="reference internal" href="file_DlSystem_IOBufferDataTypeMap.hpp.html#_CPPv48DlSystem" title="DlSystem"><span class="n"><span class="pre">DlSystem</span></span></a><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">ITensorItrImpl</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getItrImpl</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><br /></dt>
+<dd><p>Returns the tensor iterator implementation.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>A pointer to the tensor iterator implementation. </p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+</dd></dl>
+
+</dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2020-2023, Qualcomm Technologies, Inc..
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

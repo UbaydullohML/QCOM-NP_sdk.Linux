@@ -1,0 +1,755 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Program Listing for File SNPE.java &mdash; Snapdragon Neural Processing Engine SDK</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/custom_css.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/collapsible-lists/css/tree_view.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+        <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Qualcomm® Neural Processing SDK
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                v2.12.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../general/revision_history.html">Revision History</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/revision_history_windows.html">Revision History - Windows</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/overview.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/setup.html">Setup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/usergroup1.html">Network Models</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/usergroup5.html">Input Data and Preprocessing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/usergroup6.html">Tutorials and Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/usergroup10.html">Benchmarking and Accuracy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/tools.html">Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/usergroup11.html">Debug Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/api.html">API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/limitations.html">Limitations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/appx_ref.html">References</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Qualcomm® Neural Processing SDK</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Program Listing for File SNPE.java</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="program-listing-for-file-snpe-java">
+<span id="program-listing-file-snpe-java"></span><h1>Program Listing for File SNPE.java<a class="headerlink" href="#program-listing-for-file-snpe-java" title="Permalink to this headline">¶</a></h1>
+<p>↰ <a class="reference internal" href="file_SNPE.java.html#file-snpe-java"><span class="std std-ref">Return to documentation for file</span></a> (<code class="docutils literal notranslate"><span class="pre">SNPE.java</span></code>)</p>
+<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="cm">/*</span>
+<span class="cm"> * Copyright (c) 2017-2021, 2023 Qualcomm Technologies, Inc.</span>
+<span class="cm"> * All Rights Reserved.</span>
+<span class="cm"> * Confidential and Proprietary - Qualcomm Technologies, Inc.</span>
+<span class="cm"> */</span>
+<span class="kn">package</span><span class="w"> </span><span class="nn">com.qualcomm.qti.snpe</span><span class="p">;</span>
+
+<span class="kn">import</span><span class="w"> </span><span class="nn">android.app.Application</span><span class="p">;</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">android.content.Context</span><span class="p">;</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">android.util.Log</span><span class="p">;</span>
+
+<span class="kn">import</span><span class="w"> </span><span class="nn">com.qualcomm.qti.snpe.internal.NativeNetwork</span><span class="p">;</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">com.qualcomm.qti.snpe.internal.util.IOUtil</span><span class="p">;</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">com.qualcomm.qti.snpe.internal.util.NativeBufferOutputStream</span><span class="p">;</span>
+
+<span class="kn">import</span><span class="w"> </span><span class="nn">java.io.File</span><span class="p">;</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">java.io.IOException</span><span class="p">;</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">java.io.InputStream</span><span class="p">;</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">java.util.Arrays</span><span class="p">;</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">java.util.HashMap</span><span class="p">;</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">java.util.HashSet</span><span class="p">;</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">java.util.Map</span><span class="p">;</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">java.util.Set</span><span class="p">;</span>
+
+<span class="kn">import static</span><span class="w"> </span><span class="nn">com.qualcomm.qti.snpe.NeuralNetwork.ExecutionPriorityHint</span><span class="p">;</span>
+<span class="kn">import static</span><span class="w"> </span><span class="nn">com.qualcomm.qti.snpe.NeuralNetwork.ExecutionPriorityHint.NORMAL</span><span class="p">;</span>
+<span class="kn">import static</span><span class="w"> </span><span class="nn">com.qualcomm.qti.snpe.NeuralNetwork.PerformanceProfile</span><span class="p">;</span>
+<span class="kn">import static</span><span class="w"> </span><span class="nn">com.qualcomm.qti.snpe.NeuralNetwork.PerformanceProfile.DEFAULT</span><span class="p">;</span>
+<span class="kn">import static</span><span class="w"> </span><span class="nn">com.qualcomm.qti.snpe.NeuralNetwork.LogLevel</span><span class="p">;</span>
+<span class="kn">import static</span><span class="w"> </span><span class="nn">com.qualcomm.qti.snpe.SnpeError.Error.CACHE_TAG_EMPTY_ERROR</span><span class="p">;</span>
+<span class="kn">import static</span><span class="w"> </span><span class="nn">com.qualcomm.qti.snpe.SnpeError.Error.CACHE_TAG_NULL_ERROR</span><span class="p">;</span>
+<span class="kn">import static</span><span class="w"> </span><span class="nn">com.qualcomm.qti.snpe.SnpeError.Error.CONTEXT_NULL_ERROR</span><span class="p">;</span>
+<span class="kn">import static</span><span class="w"> </span><span class="nn">com.qualcomm.qti.snpe.SnpeError.Error.DIRECTORY_EXISTENCE_ERROR</span><span class="p">;</span>
+<span class="kn">import static</span><span class="w"> </span><span class="nn">com.qualcomm.qti.snpe.SnpeError.Error.DIRECTORY_PATH_EMPTY_ERROR</span><span class="p">;</span>
+<span class="kn">import static</span><span class="w"> </span><span class="nn">com.qualcomm.qti.snpe.SnpeError.Error.DIRECTORY_PATH_NULL_ERROR</span><span class="p">;</span>
+<span class="kn">import static</span><span class="w"> </span><span class="nn">com.qualcomm.qti.snpe.SnpeError.Error.EXECUTION_PRIORITY_NULL_ERROR</span><span class="p">;</span>
+<span class="kn">import static</span><span class="w"> </span><span class="nn">com.qualcomm.qti.snpe.SnpeError.Error.FILE_EXISTENCE_ERROR</span><span class="p">;</span>
+<span class="kn">import static</span><span class="w"> </span><span class="nn">com.qualcomm.qti.snpe.SnpeError.Error.FILE_READ_ERROR</span><span class="p">;</span>
+<span class="kn">import static</span><span class="w"> </span><span class="nn">com.qualcomm.qti.snpe.SnpeError.Error.FILE_WRITE_ERROR</span><span class="p">;</span>
+<span class="kn">import static</span><span class="w"> </span><span class="nn">com.qualcomm.qti.snpe.SnpeError.Error.INPUT_DIMEN_NULL_OR_EMPTY_ERROR</span><span class="p">;</span>
+<span class="kn">import static</span><span class="w"> </span><span class="nn">com.qualcomm.qti.snpe.SnpeError.Error.MODEL_FILE_NULL_ERROR</span><span class="p">;</span>
+<span class="kn">import static</span><span class="w"> </span><span class="nn">com.qualcomm.qti.snpe.SnpeError.Error.NOT_A_DIRECTORY_ERROR</span><span class="p">;</span>
+<span class="kn">import static</span><span class="w"> </span><span class="nn">com.qualcomm.qti.snpe.SnpeError.Error.OUTPUT_LAYER_NULL_ERROR</span><span class="p">;</span>
+<span class="kn">import static</span><span class="w"> </span><span class="nn">com.qualcomm.qti.snpe.SnpeError.Error.PERFORMANCE_PROFILE_NULL_ERROR</span><span class="p">;</span>
+<span class="kn">import static</span><span class="w"> </span><span class="nn">com.qualcomm.qti.snpe.SnpeError.Error.RUNTIME_NULL_ERROR</span><span class="p">;</span>
+<span class="kn">import static</span><span class="w"> </span><span class="nn">com.qualcomm.qti.snpe.SnpeError.Error.RUNTIME_ORDER_NULL_OR_EMPTY_ERROR</span><span class="p">;</span>
+<span class="kn">import static</span><span class="w"> </span><span class="nn">com.qualcomm.qti.snpe.SnpeError.Error.RUNTIME_TARGET_NOT_SUPPORTED_ERROR</span><span class="p">;</span>
+
+<span class="cm">/**</span>
+<span class="cm"> * @addtogroup java_apis</span>
+<span class="cm"> * @{</span>
+<span class="cm"> */</span>
+
+<span class="cm">/**</span>
+<span class="cm"> * {@link SNPE} class - top level APIs of the Snapdragon Neural Network Engine.</span>
+<span class="cm"> */</span>
+<span class="kd">public</span><span class="w"> </span><span class="kd">abstract</span><span class="w"> </span><span class="kd">class</span> <span class="nc">SNPE</span><span class="w"> </span><span class="p">{</span>
+
+<span class="w">    </span><span class="cm">/**</span>
+<span class="cm">     * Log tag used internally by the SDK. @see {@link android.util.Log}</span>
+<span class="cm">     */</span>
+<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kd">final</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="n">LOG_TAG</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;snpe-android&quot;</span><span class="p">;</span>
+
+<span class="w">    </span><span class="kd">private</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="n">sRuntimeVersion</span><span class="p">;</span>
+
+<span class="w">    </span><span class="kd">private</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">boolean</span><span class="w"> </span><span class="n">sInitialized</span><span class="p">;</span>
+
+<span class="w">    </span><span class="kd">private</span><span class="w"> </span><span class="nf">SNPE</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="cm">/*Not meant to be instantiated.*/</span><span class="w"> </span><span class="p">}</span>
+
+<span class="w">    </span><span class="kd">private</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kd">synchronized</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">init</span><span class="p">(</span><span class="kd">final</span><span class="w"> </span><span class="n">Application</span><span class="w"> </span><span class="n">application</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">sInitialized</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="n">System</span><span class="p">.</span><span class="na">loadLibrary</span><span class="p">(</span><span class="s">&quot;snpe-android&quot;</span><span class="p">);</span>
+<span class="w">            </span><span class="k">try</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="n">SNPE</span><span class="p">.</span><span class="na">nativeInit</span><span class="p">(</span><span class="n">application</span><span class="p">.</span><span class="na">getApplicationInfo</span><span class="p">().</span><span class="na">nativeLibraryDir</span><span class="p">);</span>
+<span class="w">            </span><span class="p">}</span><span class="w"> </span><span class="k">catch</span><span class="w"> </span><span class="p">(</span><span class="n">IllegalStateException</span><span class="w"> </span><span class="n">e</span><span class="p">){</span>
+<span class="w">                </span><span class="k">throw</span><span class="w"> </span><span class="n">SnpeError</span><span class="p">.</span><span class="na">getInstance</span><span class="p">().</span><span class="na">getSnpeNativeError</span><span class="p">(</span><span class="n">e</span><span class="p">.</span><span class="na">getMessage</span><span class="p">());</span>
+<span class="w">            </span><span class="p">}</span>
+
+<span class="w">            </span><span class="n">sInitialized</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">true</span><span class="p">;</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="cm">/**</span>
+<span class="cm">     * Returns the version of the Snapdragon Neural Network Engine.</span>
+<span class="cm">     */</span>
+<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="nf">getRuntimeVersion</span><span class="p">(</span><span class="kd">final</span><span class="w"> </span><span class="n">Application</span><span class="w"> </span><span class="n">application</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">SNPE</span><span class="p">.</span><span class="na">init</span><span class="p">(</span><span class="n">application</span><span class="p">);</span>
+<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">sRuntimeVersion</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="kc">null</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="n">sRuntimeVersion</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">nativeGetRuntimeVersion</span><span class="p">();</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="n">sRuntimeVersion</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="cm">/**</span>
+<span class="cm">    * Registers a UDO Package Registration Library</span>
+<span class="cm">    * @param application the application registering the package</span>
+<span class="cm">    * @param regLibraryPath Path to registration library</span>
+<span class="cm">    * @return true for successful registration, false for unsuccessful registration</span>
+<span class="cm">    */</span>
+<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">boolean</span><span class="w"> </span><span class="nf">addOpPackage</span><span class="p">(</span><span class="kd">final</span><span class="w"> </span><span class="n">Application</span><span class="w"> </span><span class="n">application</span><span class="p">,</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="n">regLibraryPath</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">       </span><span class="n">SNPE</span><span class="p">.</span><span class="na">init</span><span class="p">(</span><span class="n">application</span><span class="p">);</span>
+<span class="w">       </span><span class="k">if</span><span class="p">(</span><span class="n">regLibraryPath</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="kc">null</span><span class="p">){</span>
+<span class="w">            </span><span class="k">return</span><span class="w"> </span><span class="kc">false</span><span class="p">;</span>
+<span class="w">       </span><span class="p">}</span>
+<span class="w">       </span><span class="k">return</span><span class="w"> </span><span class="n">nativeAddOpPackage</span><span class="p">(</span><span class="n">regLibraryPath</span><span class="p">);</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="cm">/**</span>
+<span class="cm">     * Class exposes a way to configure and create {@link NeuralNetwork} instances.</span>
+<span class="cm">     */</span>
+<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kd">class</span> <span class="nc">NeuralNetworkBuilder</span><span class="w"> </span><span class="p">{</span>
+
+<span class="w">        </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kd">class</span> <span class="nc">ModelNotSet</span><span class="w"> </span><span class="kd">extends</span><span class="w"> </span><span class="n">RuntimeException</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="p">}</span>
+
+<span class="w">        </span><span class="kd">private</span><span class="w"> </span><span class="n">NeuralNetwork</span><span class="p">.</span><span class="na">Runtime</span><span class="o">[]</span><span class="w"> </span><span class="n">mRuntimeOrder</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">NeuralNetwork</span><span class="p">.</span><span class="na">Runtime</span><span class="o">[]</span><span class="p">{</span>
+<span class="w">                </span><span class="n">NeuralNetwork</span><span class="p">.</span><span class="na">Runtime</span><span class="p">.</span><span class="na">CPU</span>
+<span class="w">        </span><span class="p">};</span>
+
+<span class="w">        </span><span class="kd">private</span><span class="w"> </span><span class="n">PerformanceProfile</span><span class="w"> </span><span class="n">mPerformanceProfile</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">DEFAULT</span><span class="p">;</span>
+
+<span class="w">        </span><span class="kd">private</span><span class="w"> </span><span class="n">ExecutionPriorityHint</span><span class="w"> </span><span class="n">mExecutionPriorityHint</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">NORMAL</span><span class="p">;</span>
+
+<span class="w">        </span><span class="kd">private</span><span class="w"> </span><span class="kd">final</span><span class="w"> </span><span class="n">Map</span><span class="o">&lt;</span><span class="n">String</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="o">[]&gt;</span><span class="w"> </span><span class="n">mInputDimensions</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">HashMap</span><span class="o">&lt;&gt;</span><span class="p">();</span>
+
+<span class="w">        </span><span class="kd">private</span><span class="w"> </span><span class="kd">final</span><span class="w"> </span><span class="n">Set</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span><span class="w"> </span><span class="n">mOutputLayerNames</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">HashSet</span><span class="o">&lt;&gt;</span><span class="p">();</span>
+
+<span class="w">        </span><span class="kd">private</span><span class="w"> </span><span class="kt">boolean</span><span class="w"> </span><span class="n">mIsDebugEnabled</span><span class="p">;</span>
+
+<span class="w">        </span><span class="kd">private</span><span class="w"> </span><span class="n">NativeBufferOutputStream</span><span class="w"> </span><span class="n">mModelBuffer</span><span class="p">;</span>
+
+<span class="w">        </span><span class="kd">private</span><span class="w"> </span><span class="n">File</span><span class="w"> </span><span class="n">mModelFile</span><span class="p">;</span>
+
+<span class="w">        </span><span class="kd">private</span><span class="w"> </span><span class="kt">boolean</span><span class="w"> </span><span class="n">mIsCpuFallbackEnabled</span><span class="p">;</span>
+
+<span class="w">        </span><span class="kd">private</span><span class="w"> </span><span class="kt">boolean</span><span class="w"> </span><span class="n">mUnsignedPD</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">false</span><span class="p">;</span>
+
+<span class="w">        </span><span class="kd">private</span><span class="w"> </span><span class="n">NeuralNetwork</span><span class="p">.</span><span class="na">RuntimeCheckOption</span><span class="w"> </span><span class="n">mRuntimeCheckOption</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">NeuralNetwork</span><span class="p">.</span><span class="na">RuntimeCheckOption</span><span class="p">.</span><span class="na">NORMAL_CHECK</span><span class="p">;</span>
+
+<span class="w">        </span><span class="kd">private</span><span class="w"> </span><span class="kt">boolean</span><span class="w"> </span><span class="n">mUseUserSuppliedBuffers</span><span class="p">;</span>
+
+<span class="w">        </span><span class="kd">private</span><span class="w"> </span><span class="kt">boolean</span><span class="w"> </span><span class="n">mIsInitCacheEnabled</span><span class="p">;</span>
+
+<span class="w">        </span><span class="kd">private</span><span class="w"> </span><span class="kt">boolean</span><span class="w"> </span><span class="n">mCpuFixedPointMode</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">false</span><span class="p">;</span>
+
+<span class="w">        </span><span class="kd">private</span><span class="w"> </span><span class="kt">boolean</span><span class="w"> </span><span class="n">mIsDLCacheAvailable</span><span class="o">=</span><span class="kc">true</span><span class="p">;</span><span class="w"> </span><span class="c1">// to avoid saving dl cache for runtimes other than DSP and AIP</span>
+
+<span class="w">        </span><span class="kd">private</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="n">mStorageDirectory</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;&quot;</span><span class="p">;</span>
+
+<span class="w">        </span><span class="kd">private</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="n">mDlCachePath</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;&quot;</span><span class="p">;</span>
+
+<span class="w">        </span><span class="kd">public</span><span class="w"> </span><span class="nf">NeuralNetworkBuilder</span><span class="p">(</span><span class="kd">final</span><span class="w"> </span><span class="n">Application</span><span class="w"> </span><span class="n">application</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="n">SNPE</span><span class="p">.</span><span class="na">init</span><span class="p">(</span><span class="n">application</span><span class="p">);</span>
+<span class="w">        </span><span class="p">}</span>
+
+<span class="w">        </span><span class="cm">/**</span>
+<span class="cm">         * Sets the runtime selection order for the neural network.</span>
+<span class="cm">         *</span>
+<span class="cm">         * @param order array with the priority order for selecting an available runtime.</span>
+<span class="cm">         * @return the builder itself.</span>
+<span class="cm">         */</span>
+<span class="w">        </span><span class="kd">public</span><span class="w"> </span><span class="n">NeuralNetworkBuilder</span><span class="w"> </span><span class="nf">setRuntimeOrder</span><span class="p">(</span><span class="kd">final</span><span class="w"> </span><span class="n">NeuralNetwork</span><span class="p">.</span><span class="na">Runtime</span><span class="p">...</span><span class="w"> </span><span class="n">order</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">order</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="kc">null</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="n">order</span><span class="p">.</span><span class="na">length</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="k">throw</span><span class="w"> </span><span class="n">SnpeError</span><span class="p">.</span><span class="na">getInstance</span><span class="p">().</span><span class="na">getIllegalError</span><span class="p">(</span><span class="n">RUNTIME_ORDER_NULL_OR_EMPTY_ERROR</span><span class="p">);</span>
+<span class="w">            </span><span class="p">}</span>
+
+<span class="w">            </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="n">NeuralNetwork</span><span class="p">.</span><span class="na">Runtime</span><span class="w"> </span><span class="n">runtime</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="n">order</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">runtime</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="kc">null</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                    </span><span class="k">throw</span><span class="w"> </span><span class="n">SnpeError</span><span class="p">.</span><span class="na">getInstance</span><span class="p">().</span><span class="na">getIllegalError</span><span class="p">(</span><span class="n">RUNTIME_NULL_ERROR</span><span class="p">);</span>
+<span class="w">                </span><span class="p">}</span>
+<span class="w">            </span><span class="p">}</span>
+
+<span class="w">            </span><span class="n">mRuntimeOrder</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">NeuralNetwork</span><span class="p">.</span><span class="na">Runtime</span><span class="o">[</span><span class="n">order</span><span class="p">.</span><span class="na">length</span><span class="o">]</span><span class="p">;</span>
+<span class="w">            </span><span class="n">System</span><span class="p">.</span><span class="na">arraycopy</span><span class="p">(</span><span class="n">order</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="n">mRuntimeOrder</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="n">order</span><span class="p">.</span><span class="na">length</span><span class="p">);</span>
+<span class="w">            </span><span class="k">return</span><span class="w"> </span><span class="k">this</span><span class="p">;</span>
+<span class="w">        </span><span class="p">}</span>
+
+<span class="w">        </span><span class="cm">/**</span>
+<span class="cm">         * Sets network&#39;s input dimensions to enable resizing of dimensions of the network.</span>
+<span class="cm">         *</span>
+<span class="cm">         * @param inputDimensions map of input names and their new dimensions.</span>
+<span class="cm">         * @return the builder itself</span>
+<span class="cm">         */</span>
+<span class="w">        </span><span class="kd">public</span><span class="w"> </span><span class="n">NeuralNetworkBuilder</span><span class="w"> </span><span class="nf">setInputDimensions</span><span class="p">(</span><span class="kd">final</span><span class="w"> </span><span class="n">Map</span><span class="o">&lt;</span><span class="n">String</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="o">[]&gt;</span><span class="w"> </span><span class="n">inputDimensions</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">inputDimensions</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="kc">null</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="k">throw</span><span class="w"> </span><span class="n">SnpeError</span><span class="p">.</span><span class="na">getInstance</span><span class="p">().</span><span class="na">getIllegalError</span><span class="p">(</span><span class="n">INPUT_DIMEN_NULL_OR_EMPTY_ERROR</span><span class="p">);</span>
+<span class="w">            </span><span class="p">}</span>
+
+<span class="w">            </span><span class="n">mInputDimensions</span><span class="p">.</span><span class="na">clear</span><span class="p">();</span>
+<span class="w">            </span><span class="n">mInputDimensions</span><span class="p">.</span><span class="na">putAll</span><span class="p">(</span><span class="n">inputDimensions</span><span class="p">);</span>
+<span class="w">            </span><span class="k">return</span><span class="w"> </span><span class="k">this</span><span class="p">;</span>
+<span class="w">        </span><span class="p">}</span>
+
+<span class="w">        </span><span class="cm">/**</span>
+<span class="cm">         * Sets the output layers to return when {@link NeuralNetwork#execute(Map)} is called.</span>
+<span class="cm">         *</span>
+<span class="cm">         * @param outputLayers name of the output layers to retrieve.</span>
+<span class="cm">         * @return the builder itself.</span>
+<span class="cm">         */</span>
+<span class="w">        </span><span class="kd">public</span><span class="w"> </span><span class="n">NeuralNetworkBuilder</span><span class="w"> </span><span class="nf">setOutputLayers</span><span class="p">(</span><span class="kd">final</span><span class="w"> </span><span class="n">String</span><span class="p">...</span><span class="w"> </span><span class="n">outputLayers</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">outputLayers</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="kc">null</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="k">throw</span><span class="w"> </span><span class="n">SnpeError</span><span class="p">.</span><span class="na">getInstance</span><span class="p">().</span><span class="na">getIllegalError</span><span class="p">(</span><span class="n">OUTPUT_LAYER_NULL_ERROR</span><span class="p">);</span>
+<span class="w">            </span><span class="p">}</span>
+<span class="w">            </span><span class="n">mOutputLayerNames</span><span class="p">.</span><span class="na">clear</span><span class="p">();</span>
+<span class="w">            </span><span class="n">mOutputLayerNames</span><span class="p">.</span><span class="na">addAll</span><span class="p">(</span><span class="n">Arrays</span><span class="p">.</span><span class="na">asList</span><span class="p">(</span><span class="n">outputLayers</span><span class="p">));</span>
+<span class="w">            </span><span class="k">return</span><span class="w"> </span><span class="k">this</span><span class="p">;</span>
+<span class="w">        </span><span class="p">}</span>
+
+<span class="w">        </span><span class="cm">/**</span>
+<span class="cm">         * Reads the model from the provided {@link InputStream}. The caller is responsible</span>
+<span class="cm">         * to close the stream after calling this method.</span>
+<span class="cm">         * &lt;b&gt;After build() has been called, it is required that this method be invoked</span>
+<span class="cm">         * to re-set the input stream before every successive call to build() on the same instance.&lt;/b&gt;</span>
+<span class="cm">         *</span>
+<span class="cm">         * @param stream input stream from where to read the model from.</span>
+<span class="cm">         * @param size   number of bytes to read from the stream.</span>
+<span class="cm">         * @return the builder itself.</span>
+<span class="cm">         * @throws IOException if not able to read from the stream.</span>
+<span class="cm">         */</span>
+<span class="w">        </span><span class="kd">public</span><span class="w"> </span><span class="n">NeuralNetworkBuilder</span><span class="w"> </span><span class="nf">setModel</span><span class="p">(</span><span class="kd">final</span><span class="w"> </span><span class="n">InputStream</span><span class="w"> </span><span class="n">stream</span><span class="p">,</span><span class="w"> </span><span class="kd">final</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">size</span><span class="p">)</span>
+<span class="w">                </span><span class="kd">throws</span><span class="w"> </span><span class="n">IOException</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="n">resetModel</span><span class="p">();</span>
+<span class="w">            </span><span class="n">mModelBuffer</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">IOUtil</span><span class="p">.</span><span class="na">bufferFromStream</span><span class="p">(</span><span class="n">stream</span><span class="p">,</span><span class="w"> </span><span class="n">size</span><span class="p">);</span>
+<span class="w">            </span><span class="k">return</span><span class="w"> </span><span class="k">this</span><span class="p">;</span>
+<span class="w">        </span><span class="p">}</span>
+
+<span class="w">        </span><span class="cm">/**</span>
+<span class="cm">         * Sets the file from where to read the DLC model from.</span>
+<span class="cm">         *</span>
+<span class="cm">         * @param file DLC model file.</span>
+<span class="cm">         * @return the builder itself.</span>
+<span class="cm">         * @throws IOException if not able to read from the stream.</span>
+<span class="cm">         */</span>
+<span class="w">        </span><span class="kd">public</span><span class="w"> </span><span class="n">NeuralNetworkBuilder</span><span class="w"> </span><span class="nf">setModel</span><span class="p">(</span><span class="kd">final</span><span class="w"> </span><span class="n">File</span><span class="w"> </span><span class="n">file</span><span class="p">)</span><span class="w"> </span><span class="kd">throws</span><span class="w"> </span><span class="n">IOException</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">file</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="kc">null</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="k">throw</span><span class="w"> </span><span class="n">SnpeError</span><span class="p">.</span><span class="na">getInstance</span><span class="p">().</span><span class="na">getIllegalError</span><span class="p">(</span><span class="n">MODEL_FILE_NULL_ERROR</span><span class="p">);</span>
+<span class="w">            </span><span class="p">}</span>
+
+<span class="w">            </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">file</span><span class="p">.</span><span class="na">exists</span><span class="p">())</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="k">throw</span><span class="w"> </span><span class="n">SnpeError</span><span class="p">.</span><span class="na">getInstance</span><span class="p">().</span><span class="na">getIOError</span><span class="p">(</span><span class="n">FILE_EXISTENCE_ERROR</span><span class="p">,</span><span class="n">file</span><span class="p">.</span><span class="na">getAbsolutePath</span><span class="p">());</span>
+<span class="w">            </span><span class="p">}</span>
+
+<span class="w">            </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">file</span><span class="p">.</span><span class="na">canRead</span><span class="p">())</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="k">throw</span><span class="w"> </span><span class="n">SnpeError</span><span class="p">.</span><span class="na">getInstance</span><span class="p">().</span><span class="na">getIOError</span><span class="p">(</span><span class="n">FILE_READ_ERROR</span><span class="p">,</span><span class="n">file</span><span class="p">.</span><span class="na">getAbsolutePath</span><span class="p">());</span>
+<span class="w">            </span><span class="p">}</span>
+
+<span class="w">            </span><span class="n">resetModel</span><span class="p">();</span>
+<span class="w">            </span><span class="n">mModelFile</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">file</span><span class="p">;</span>
+<span class="w">            </span><span class="k">return</span><span class="w"> </span><span class="k">this</span><span class="p">;</span>
+<span class="w">        </span><span class="p">}</span>
+
+<span class="w">        </span><span class="kd">public</span><span class="w"> </span><span class="n">NeuralNetworkBuilder</span><span class="w"> </span><span class="nf">setDebugEnabled</span><span class="p">(</span><span class="kd">final</span><span class="w"> </span><span class="kt">boolean</span><span class="w"> </span><span class="n">isEnabled</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="n">mIsDebugEnabled</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">isEnabled</span><span class="p">;</span>
+<span class="w">            </span><span class="k">return</span><span class="w"> </span><span class="k">this</span><span class="p">;</span>
+<span class="w">        </span><span class="p">}</span>
+
+<span class="w">        </span><span class="cm">/**</span>
+<span class="cm">         * Selects a performance profile to use during the network execution.</span>
+<span class="cm">         *</span>
+<span class="cm">         * @param profile target performance profile.</span>
+<span class="cm">         * @return the builder itself.</span>
+<span class="cm">         */</span>
+<span class="w">        </span><span class="kd">public</span><span class="w"> </span><span class="n">NeuralNetworkBuilder</span><span class="w"> </span><span class="nf">setPerformanceProfile</span><span class="p">(</span><span class="kd">final</span><span class="w"> </span><span class="n">PerformanceProfile</span><span class="w"> </span><span class="n">profile</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">profile</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="kc">null</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="k">throw</span><span class="w"> </span><span class="n">SnpeError</span><span class="p">.</span><span class="na">getInstance</span><span class="p">().</span><span class="na">getIllegalError</span><span class="p">(</span><span class="n">PERFORMANCE_PROFILE_NULL_ERROR</span><span class="p">);</span>
+<span class="w">            </span><span class="p">}</span>
+<span class="w">            </span><span class="n">mPerformanceProfile</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">profile</span><span class="p">;</span>
+<span class="w">            </span><span class="k">return</span><span class="w"> </span><span class="k">this</span><span class="p">;</span>
+<span class="w">        </span><span class="p">}</span>
+
+<span class="w">        </span><span class="cm">/**</span>
+<span class="cm">         * Passes an execution priority hint to the runtime</span>
+<span class="cm">         *</span>
+<span class="cm">         * @param priority target execution priority.</span>
+<span class="cm">         * @return the builder itself.</span>
+<span class="cm">         */</span>
+<span class="w">        </span><span class="kd">public</span><span class="w"> </span><span class="n">NeuralNetworkBuilder</span><span class="w"> </span><span class="nf">setExecutionPriorityHint</span><span class="p">(</span><span class="kd">final</span><span class="w"> </span><span class="n">ExecutionPriorityHint</span><span class="w"> </span><span class="n">priority</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">priority</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="kc">null</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="k">throw</span><span class="w"> </span><span class="n">SnpeError</span><span class="p">.</span><span class="na">getInstance</span><span class="p">().</span><span class="na">getIllegalError</span><span class="p">(</span><span class="n">EXECUTION_PRIORITY_NULL_ERROR</span><span class="p">);</span>
+<span class="w">            </span><span class="p">}</span>
+<span class="w">            </span><span class="n">mExecutionPriorityHint</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">priority</span><span class="p">;</span>
+<span class="w">            </span><span class="k">return</span><span class="w"> </span><span class="k">this</span><span class="p">;</span>
+<span class="w">        </span><span class="p">}</span>
+
+<span class="w">        </span><span class="cm">/**</span>
+<span class="cm">         * Enables/Disables falling back to CPU if a layer is not supported in the</span>
+<span class="cm">         * selected runtime.</span>
+<span class="cm">         *</span>
+<span class="cm">         * @param enabled</span>
+<span class="cm">         */</span>
+<span class="w">        </span><span class="kd">public</span><span class="w"> </span><span class="n">NeuralNetworkBuilder</span><span class="w"> </span><span class="nf">setCpuFallbackEnabled</span><span class="p">(</span><span class="kt">boolean</span><span class="w"> </span><span class="n">enabled</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="n">mIsCpuFallbackEnabled</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">enabled</span><span class="p">;</span>
+<span class="w">            </span><span class="k">return</span><span class="w"> </span><span class="k">this</span><span class="p">;</span>
+<span class="w">        </span><span class="p">}</span>
+
+<span class="w">        </span><span class="cm">/**</span>
+<span class="cm">         * Sets Unsigned PD constraint while building network</span>
+<span class="cm">         *</span>
+<span class="cm">         * @param enabled</span>
+<span class="cm">         */</span>
+<span class="w">        </span><span class="kd">public</span><span class="w"> </span><span class="n">NeuralNetworkBuilder</span><span class="w"> </span><span class="nf">setUnsignedPD</span><span class="p">(</span><span class="kt">boolean</span><span class="w"> </span><span class="n">enabled</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="n">mUnsignedPD</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">enabled</span><span class="p">;</span>
+<span class="w">            </span><span class="k">return</span><span class="w"> </span><span class="k">this</span><span class="p">;</span>
+<span class="w">        </span><span class="p">}</span>
+
+<span class="w">        </span><span class="cm">/**</span>
+<span class="cm">         * Sets a runtimeCheck option that is used for runtime availability check</span>
+<span class="cm">         *</span>
+<span class="cm">         * @param runtimeCheckOption runtime available check option</span>
+<span class="cm">         */</span>
+<span class="w">        </span><span class="kd">public</span><span class="w"> </span><span class="n">NeuralNetworkBuilder</span><span class="w"> </span><span class="nf">setRuntimeCheckOption</span><span class="p">(</span><span class="kd">final</span><span class="w"> </span><span class="n">NeuralNetwork</span><span class="p">.</span><span class="na">RuntimeCheckOption</span><span class="w"> </span><span class="n">runtimeCheckOption</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="n">mRuntimeCheckOption</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">runtimeCheckOption</span><span class="p">;</span>
+<span class="w">            </span><span class="k">return</span><span class="w"> </span><span class="k">this</span><span class="p">;</span>
+<span class="w">        </span><span class="p">}</span>
+
+<span class="w">        </span><span class="cm">/**</span>
+<span class="cm">         * Sets whether this network will perform inference with input from</span>
+<span class="cm">         * user-supplied buffers.</span>
+<span class="cm">         *</span>
+<span class="cm">         * @param enabled</span>
+<span class="cm">         */</span>
+<span class="w">        </span><span class="kd">public</span><span class="w"> </span><span class="n">NeuralNetworkBuilder</span><span class="w"> </span><span class="nf">setUseUserSuppliedBuffers</span><span class="p">(</span><span class="kt">boolean</span><span class="w"> </span><span class="n">enabled</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="n">mUseUserSuppliedBuffers</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">enabled</span><span class="p">;</span>
+<span class="w">            </span><span class="k">return</span><span class="w"> </span><span class="k">this</span><span class="p">;</span>
+<span class="w">        </span><span class="p">}</span>
+
+
+<span class="w">        </span><span class="cm">/**</span>
+<span class="cm">         * Enable/disable the functionality of init caching.</span>
+<span class="cm">         * Init caching creates a set of init caches during network building/initialization process and adds them to DLC container. If such DLC container is saved by the user, in subsequent network building/initialization processes these init caches will be loaded from the DLC so as to reduce initialization time.</span>
+<span class="cm">         *</span>
+<span class="cm">         * @param isInitCacheEnabled enables/disables the functionality of init caching.</span>
+<span class="cm">         * @param cacheTag The init caches are saved into a location under this tag name.</span>
+<span class="cm">         * @param context The android context from which the network is created.</span>
+<span class="cm">         *</span>
+<span class="cm">         * @return The current instance of NeuralNetworkBuilder.</span>
+<span class="cm">         */</span>
+<span class="w">        </span><span class="kd">public</span><span class="w"> </span><span class="n">NeuralNetworkBuilder</span><span class="w"> </span><span class="nf">setInitCacheEnabled</span><span class="p">(</span><span class="kt">boolean</span><span class="w"> </span><span class="n">isInitCacheEnabled</span><span class="p">,</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="n">cacheTag</span><span class="p">,</span><span class="w"> </span><span class="n">Context</span><span class="w"> </span><span class="n">context</span><span class="p">)</span><span class="w"> </span><span class="kd">throws</span><span class="w"> </span><span class="n">SnpeError</span><span class="p">.</span><span class="na">IllegalArgsOrStateException</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">cacheTag</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="kc">null</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="k">throw</span><span class="w"> </span><span class="n">SnpeError</span><span class="p">.</span><span class="na">getInstance</span><span class="p">().</span><span class="na">getIllegalError</span><span class="p">(</span><span class="n">CACHE_TAG_NULL_ERROR</span><span class="p">);</span>
+<span class="w">            </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">cacheTag</span><span class="p">.</span><span class="na">trim</span><span class="p">().</span><span class="na">isEmpty</span><span class="p">())</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="k">throw</span><span class="w"> </span><span class="n">SnpeError</span><span class="p">.</span><span class="na">getInstance</span><span class="p">().</span><span class="na">getIllegalError</span><span class="p">(</span><span class="n">CACHE_TAG_EMPTY_ERROR</span><span class="p">);</span>
+<span class="w">            </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">context</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="kc">null</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="k">throw</span><span class="w"> </span><span class="n">SnpeError</span><span class="p">.</span><span class="na">getInstance</span><span class="p">().</span><span class="na">getIllegalError</span><span class="p">(</span><span class="n">CONTEXT_NULL_ERROR</span><span class="p">);</span>
+<span class="w">            </span><span class="p">}</span>
+<span class="w">            </span><span class="n">mDlCachePath</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">context</span><span class="p">.</span><span class="na">getFilesDir</span><span class="p">()</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&quot;/&quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">cacheTag</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&quot;.dlc&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="n">mIsInitCacheEnabled</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">isInitCacheEnabled</span><span class="p">;</span>
+<span class="w">            </span><span class="k">return</span><span class="w"> </span><span class="k">this</span><span class="p">;</span>
+<span class="w">        </span><span class="p">}</span>
+
+<span class="w">        </span><span class="cm">/**</span>
+<span class="cm">         * Sets the fixed point execution of a quantized DLC on CPU runtime.</span>
+<span class="cm">         * If a floating point DLC is executed with this option set, the</span>
+<span class="cm">         * execution will be in floating point mode in CPU. If a quantized</span>
+<span class="cm">         * DLC is executed without this option set, the execution will be</span>
+<span class="cm">         * in floating point mode in CPU.</span>
+<span class="cm">         *</span>
+<span class="cm">         * @param cpuFxpMode Boolean If set to true, enables the fixed point mode.</span>
+<span class="cm">         *</span>
+<span class="cm">         * @return The current instance of NeuralNetworkBuilder.</span>
+<span class="cm">         */</span>
+<span class="w">        </span><span class="kd">public</span><span class="w"> </span><span class="n">NeuralNetworkBuilder</span><span class="w"> </span><span class="nf">setCpuFixedPointMode</span><span class="p">(</span><span class="kt">boolean</span><span class="w"> </span><span class="n">fxpMode</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="n">mCpuFixedPointMode</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">fxpMode</span><span class="p">;</span>
+<span class="w">            </span><span class="k">return</span><span class="w"> </span><span class="k">this</span><span class="p">;</span>
+<span class="w">        </span><span class="p">}</span>
+
+<span class="w">        </span><span class="cm">/**</span>
+<span class="cm">         * Set the SNPE storage location for all SNPE instances in this process. This may only be called once, and if so must be called before creating any SNPE instances</span>
+<span class="cm">         *</span>
+<span class="cm">         * @param  Absolute path to a directory which SNPE may use for caching and other storage purposes.</span>
+<span class="cm">         *</span>
+<span class="cm">         * @return The current instance of NeuralNetworkBuilder.</span>
+<span class="cm">         */</span>
+<span class="w">        </span><span class="kd">public</span><span class="w"> </span><span class="n">NeuralNetworkBuilder</span><span class="w"> </span><span class="nf">setStorageDirectory</span><span class="p">(</span><span class="n">String</span><span class="w"> </span><span class="n">storageDirectory</span><span class="p">)</span><span class="w"> </span><span class="kd">throws</span><span class="w"> </span><span class="n">SnpeError</span><span class="p">.</span><span class="na">SnpeIOException</span><span class="w"> </span><span class="p">{</span>
+
+<span class="w">            </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">storageDirectory</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="kc">null</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="k">throw</span><span class="w"> </span><span class="n">SnpeError</span><span class="p">.</span><span class="na">getInstance</span><span class="p">().</span><span class="na">getIOError</span><span class="p">(</span><span class="n">DIRECTORY_PATH_NULL_ERROR</span><span class="p">);</span>
+<span class="w">            </span><span class="p">}</span>
+
+<span class="w">            </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">storageDirectory</span><span class="p">.</span><span class="na">trim</span><span class="p">().</span><span class="na">isEmpty</span><span class="p">())</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="k">throw</span><span class="w"> </span><span class="n">SnpeError</span><span class="p">.</span><span class="na">getInstance</span><span class="p">().</span><span class="na">getIOError</span><span class="p">(</span><span class="n">DIRECTORY_PATH_EMPTY_ERROR</span><span class="p">);</span>
+<span class="w">            </span><span class="p">}</span>
+
+<span class="w">            </span><span class="n">File</span><span class="w"> </span><span class="n">file</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">File</span><span class="p">(</span><span class="n">storageDirectory</span><span class="p">);</span>
+
+<span class="w">            </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">file</span><span class="p">.</span><span class="na">exists</span><span class="p">())</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="k">throw</span><span class="w"> </span><span class="n">SnpeError</span><span class="p">.</span><span class="na">getInstance</span><span class="p">().</span><span class="na">getIOError</span><span class="p">(</span><span class="n">DIRECTORY_EXISTENCE_ERROR</span><span class="p">,</span><span class="n">file</span><span class="p">.</span><span class="na">getAbsolutePath</span><span class="p">());</span>
+<span class="w">            </span><span class="p">}</span>
+
+<span class="w">            </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">file</span><span class="p">.</span><span class="na">isDirectory</span><span class="p">())</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="k">throw</span><span class="w"> </span><span class="n">SnpeError</span><span class="p">.</span><span class="na">getInstance</span><span class="p">().</span><span class="na">getIOError</span><span class="p">(</span><span class="n">NOT_A_DIRECTORY_ERROR</span><span class="p">,</span><span class="w"> </span><span class="n">file</span><span class="p">.</span><span class="na">getAbsolutePath</span><span class="p">());</span>
+<span class="w">            </span><span class="p">}</span>
+
+<span class="w">            </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">file</span><span class="p">.</span><span class="na">canRead</span><span class="p">())</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="k">throw</span><span class="w"> </span><span class="n">SnpeError</span><span class="p">.</span><span class="na">getInstance</span><span class="p">().</span><span class="na">getIOError</span><span class="p">(</span><span class="n">FILE_READ_ERROR</span><span class="p">,</span><span class="w"> </span><span class="n">file</span><span class="p">.</span><span class="na">getAbsolutePath</span><span class="p">());</span>
+<span class="w">            </span><span class="p">}</span>
+
+<span class="w">            </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">file</span><span class="p">.</span><span class="na">canWrite</span><span class="p">())</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="k">throw</span><span class="w"> </span><span class="n">SnpeError</span><span class="p">.</span><span class="na">getInstance</span><span class="p">().</span><span class="na">getIOError</span><span class="p">(</span><span class="n">FILE_WRITE_ERROR</span><span class="p">,</span><span class="n">file</span><span class="p">.</span><span class="na">getAbsolutePath</span><span class="p">());</span>
+<span class="w">            </span><span class="p">}</span>
+
+<span class="w">            </span><span class="n">mStorageDirectory</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">storageDirectory</span><span class="p">;</span>
+<span class="w">            </span><span class="k">return</span><span class="w"> </span><span class="k">this</span><span class="p">;</span>
+<span class="w">        </span><span class="p">}</span>
+
+<span class="w">        </span><span class="kd">private</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">resetModel</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="n">resetStreamModel</span><span class="p">();</span>
+<span class="w">            </span><span class="n">resetFileModel</span><span class="p">();</span>
+<span class="w">        </span><span class="p">}</span>
+
+<span class="w">        </span><span class="kd">private</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">resetFileModel</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="n">mModelFile</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">null</span><span class="p">;</span>
+<span class="w">        </span><span class="p">}</span>
+
+<span class="w">        </span><span class="kd">private</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">resetStreamModel</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">mModelBuffer</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="kc">null</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="n">mModelBuffer</span><span class="p">.</span><span class="na">release</span><span class="p">();</span>
+<span class="w">                </span><span class="n">mModelBuffer</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">null</span><span class="p">;</span>
+<span class="w">            </span><span class="p">}</span>
+<span class="w">        </span><span class="p">}</span>
+
+<span class="w">        </span><span class="cm">/**</span>
+<span class="cm">         * Builds a {@link NeuralNetwork} instance based on this builder&#39;s configuration.</span>
+<span class="cm">         *</span>
+<span class="cm">         * @return New network instance.</span>
+<span class="cm">         */</span>
+<span class="w">        </span><span class="kd">public</span><span class="w"> </span><span class="n">NeuralNetwork</span><span class="w"> </span><span class="nf">build</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="k">if</span><span class="p">((</span><span class="n">selectRuntime</span><span class="p">()</span><span class="o">==</span><span class="w"> </span><span class="n">NeuralNetwork</span><span class="p">.</span><span class="na">Runtime</span><span class="p">.</span><span class="na">DSP</span><span class="o">||</span><span class="n">selectRuntime</span><span class="p">()</span><span class="o">==</span><span class="w"> </span><span class="n">NeuralNetwork</span><span class="p">.</span><span class="na">Runtime</span><span class="p">.</span><span class="na">AIP</span><span class="p">)</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">mIsInitCacheEnabled</span><span class="p">){</span>
+<span class="w">                </span><span class="n">handleDLCaching</span><span class="p">();</span>
+<span class="w">            </span><span class="p">}</span>
+
+<span class="w">            </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">mModelBuffer</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="kc">null</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="kd">final</span><span class="w"> </span><span class="n">NativeNetwork</span><span class="w"> </span><span class="n">network</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">NativeNetwork</span><span class="p">(</span><span class="n">selectRuntime</span><span class="p">(),</span>
+<span class="w">                        </span><span class="n">mModelBuffer</span><span class="p">,</span><span class="w"> </span><span class="n">mOutputLayerNames</span><span class="p">,</span><span class="w"> </span><span class="n">mIsDebugEnabled</span><span class="p">,</span>
+<span class="w">                        </span><span class="n">mPerformanceProfile</span><span class="p">,</span><span class="w"> </span><span class="n">mExecutionPriorityHint</span><span class="p">,</span>
+<span class="w">                        </span><span class="n">mIsCpuFallbackEnabled</span><span class="p">,</span><span class="w"> </span><span class="n">mUnsignedPD</span><span class="p">,</span>
+<span class="w">                        </span><span class="n">mUseUserSuppliedBuffers</span><span class="p">,</span><span class="w"> </span><span class="n">mIsInitCacheEnabled</span><span class="p">,</span>
+<span class="w">                        </span><span class="n">mIsDLCacheAvailable</span><span class="p">,</span><span class="w"> </span><span class="n">mCpuFixedPointMode</span><span class="p">,</span>
+<span class="w">                        </span><span class="n">mStorageDirectory</span><span class="p">,</span><span class="w"> </span><span class="n">mDlCachePath</span><span class="p">,</span><span class="w"> </span><span class="n">mInputDimensions</span><span class="p">);</span>
+<span class="w">                </span><span class="n">resetStreamModel</span><span class="p">();</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="n">network</span><span class="p">;</span>
+<span class="w">            </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">mModelFile</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="kc">null</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">NativeNetwork</span><span class="p">(</span><span class="n">selectRuntime</span><span class="p">(),</span><span class="w"> </span><span class="n">mModelFile</span><span class="p">,</span>
+<span class="w">                        </span><span class="n">mOutputLayerNames</span><span class="p">,</span><span class="w"> </span><span class="n">mIsDebugEnabled</span><span class="p">,</span><span class="w"> </span><span class="n">mPerformanceProfile</span><span class="p">,</span>
+<span class="w">                        </span><span class="n">mExecutionPriorityHint</span><span class="p">,</span><span class="w"> </span><span class="n">mIsCpuFallbackEnabled</span><span class="p">,</span>
+<span class="w">                        </span><span class="n">mUnsignedPD</span><span class="p">,</span><span class="w"> </span><span class="n">mUseUserSuppliedBuffers</span><span class="p">,</span>
+<span class="w">                        </span><span class="n">mIsInitCacheEnabled</span><span class="p">,</span><span class="w"> </span><span class="n">mIsDLCacheAvailable</span><span class="p">,</span>
+<span class="w">                        </span><span class="n">mCpuFixedPointMode</span><span class="p">,</span><span class="w"> </span><span class="n">mStorageDirectory</span><span class="p">,</span>
+<span class="w">                        </span><span class="n">mDlCachePath</span><span class="p">,</span><span class="w"> </span><span class="n">mInputDimensions</span><span class="p">);</span>
+<span class="w">            </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="k">throw</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">ModelNotSet</span><span class="p">();</span>
+<span class="w">            </span><span class="p">}</span>
+<span class="w">        </span><span class="p">}</span>
+
+<span class="w">        </span><span class="kd">private</span><span class="w"> </span><span class="n">NeuralNetwork</span><span class="p">.</span><span class="na">Runtime</span><span class="w"> </span><span class="nf">selectRuntime</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="n">NeuralNetwork</span><span class="p">.</span><span class="na">Runtime</span><span class="w"> </span><span class="n">selected</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">null</span><span class="p">;</span>
+<span class="w">            </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="n">NeuralNetwork</span><span class="p">.</span><span class="na">Runtime</span><span class="w"> </span><span class="n">runtime</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="n">mRuntimeOrder</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">isRuntimeSupported</span><span class="p">(</span><span class="n">runtime</span><span class="p">))</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                    </span><span class="n">selected</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">runtime</span><span class="p">;</span>
+<span class="w">                    </span><span class="k">break</span><span class="p">;</span>
+<span class="w">                </span><span class="p">}</span>
+<span class="w">            </span><span class="p">}</span>
+
+<span class="w">            </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">selected</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="kc">null</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="k">throw</span><span class="w"> </span><span class="n">SnpeError</span><span class="p">.</span><span class="na">getInstance</span><span class="p">().</span><span class="na">getIllegalError</span><span class="p">(</span><span class="n">RUNTIME_TARGET_NOT_SUPPORTED_ERROR</span><span class="p">);</span>
+<span class="w">            </span><span class="p">}</span>
+<span class="w">            </span><span class="k">return</span><span class="w"> </span><span class="n">selected</span><span class="p">;</span>
+<span class="w">        </span><span class="p">}</span>
+
+<span class="w">        </span><span class="kd">public</span><span class="w"> </span><span class="kt">boolean</span><span class="w"> </span><span class="nf">isRuntimeSupported</span><span class="p">(</span><span class="kd">final</span><span class="w"> </span><span class="n">NeuralNetwork</span><span class="p">.</span><span class="na">Runtime</span><span class="w"> </span><span class="n">runtime</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="k">return</span><span class="w"> </span><span class="n">NativeNetwork</span><span class="p">.</span><span class="na">isRuntimeAvailable</span><span class="p">(</span><span class="n">runtime</span><span class="p">,</span><span class="w"> </span><span class="n">mRuntimeCheckOption</span><span class="p">);</span>
+<span class="w">        </span><span class="p">}</span>
+
+
+<span class="w">        </span><span class="cm">/*Checks if a dlc cache file exists in app private directory or not.</span>
+<span class="cm">         * If it doesn&#39;t exist, set initCacheEnabled to true</span>
+<span class="cm">         * to save the cached file else load the cached file */</span>
+<span class="w">        </span><span class="kd">private</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">handleDLCaching</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="k">try</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                    </span><span class="n">File</span><span class="w"> </span><span class="n">file</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">File</span><span class="p">(</span><span class="n">mDlCachePath</span><span class="p">);</span>
+<span class="w">                    </span><span class="n">mIsDLCacheAvailable</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">file</span><span class="p">.</span><span class="na">exists</span><span class="p">();</span>
+<span class="w">                    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">mIsDLCacheAvailable</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                        </span><span class="n">resetModel</span><span class="p">();</span>
+<span class="w">                        </span><span class="n">mModelFile</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">file</span><span class="p">;</span>
+<span class="w">                    </span><span class="p">}</span>
+<span class="w">                </span><span class="p">}</span><span class="w"> </span><span class="k">catch</span><span class="w"> </span><span class="p">(</span><span class="n">Exception</span><span class="w"> </span><span class="n">ex</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">mIsDebugEnabled</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                        </span><span class="n">Log</span><span class="p">.</span><span class="na">d</span><span class="p">(</span><span class="n">SNPE</span><span class="p">.</span><span class="na">LOG_TAG</span><span class="p">,</span><span class="w"> </span><span class="n">ex</span><span class="p">.</span><span class="na">getMessage</span><span class="p">());</span>
+<span class="w">                    </span><span class="p">}</span>
+<span class="w">                </span><span class="p">}</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kd">class</span> <span class="nc">Logger</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="kd">private</span><span class="w"> </span><span class="nf">Logger</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="p">}</span>
+
+<span class="w">        </span><span class="kd">public</span><span class="w"> </span><span class="kt">boolean</span><span class="w"> </span><span class="nf">initializeLogging</span><span class="p">(</span><span class="kd">final</span><span class="w"> </span><span class="n">Application</span><span class="w"> </span><span class="n">application</span><span class="p">,</span><span class="w"> </span><span class="kd">final</span><span class="w"> </span><span class="n">NeuralNetwork</span><span class="p">.</span><span class="na">LogLevel</span><span class="w"> </span><span class="n">logLevel</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="n">SNPE</span><span class="p">.</span><span class="na">init</span><span class="p">(</span><span class="n">application</span><span class="p">);</span>
+<span class="w">            </span><span class="k">return</span><span class="w"> </span><span class="n">nativeInitializeLogging</span><span class="p">(</span><span class="n">logLevel</span><span class="p">.</span><span class="na">ordinal</span><span class="p">());</span>
+<span class="w">        </span><span class="p">}</span>
+
+<span class="w">        </span><span class="kd">public</span><span class="w"> </span><span class="kt">boolean</span><span class="w"> </span><span class="nf">setLogLevel</span><span class="p">(</span><span class="n">NeuralNetwork</span><span class="p">.</span><span class="na">LogLevel</span><span class="w"> </span><span class="n">logLevel</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="k">return</span><span class="w"> </span><span class="n">nativeSetLogLevel</span><span class="p">(</span><span class="n">logLevel</span><span class="p">.</span><span class="na">ordinal</span><span class="p">());</span>
+<span class="w">        </span><span class="p">}</span>
+
+<span class="w">        </span><span class="kd">public</span><span class="w"> </span><span class="kt">boolean</span><span class="w"> </span><span class="nf">terminateLogging</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="k">return</span><span class="w"> </span><span class="n">nativeTerminateLogging</span><span class="p">();</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="n">Logger</span><span class="w"> </span><span class="n">logger</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Logger</span><span class="p">();</span>
+
+<span class="w">    </span><span class="kd">private</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kd">native</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="nf">nativeGetRuntimeVersion</span><span class="p">();</span>
+
+<span class="w">    </span><span class="kd">private</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kd">native</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">nativeInit</span><span class="p">(</span><span class="n">String</span><span class="w"> </span><span class="n">nativeLibraryDir</span><span class="p">);</span>
+
+<span class="w">    </span><span class="kd">private</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kd">native</span><span class="w"> </span><span class="kt">boolean</span><span class="w"> </span><span class="nf">nativeAddOpPackage</span><span class="p">(</span><span class="n">String</span><span class="w"> </span><span class="n">regLibraryPath</span><span class="p">);</span>
+
+<span class="w">    </span><span class="kd">private</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kd">native</span><span class="w"> </span><span class="kt">boolean</span><span class="w"> </span><span class="nf">nativeInitializeLogging</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">logLevel</span><span class="p">);</span>
+
+<span class="w">    </span><span class="kd">private</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kd">native</span><span class="w"> </span><span class="kt">boolean</span><span class="w"> </span><span class="nf">nativeSetLogLevel</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">logLevel</span><span class="p">);</span>
+
+<span class="w">    </span><span class="kd">private</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kd">native</span><span class="w"> </span><span class="kt">boolean</span><span class="w"> </span><span class="nf">nativeTerminateLogging</span><span class="p">();</span>
+<span class="p">}</span>
+
+<span class="cm">/**</span>
+<span class="cm"> * @}</span>
+<span class="cm"> */</span><span class="w"> </span><span class="cm">/* end addtogroup java_apis */</span>
+</pre></div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2020-2023, Qualcomm Technologies, Inc..
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

@@ -1,0 +1,480 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>File TensorShape.hpp &mdash; Snapdragon Neural Processing Engine SDK</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/custom_css.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/collapsible-lists/css/tree_view.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+        <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Qualcomm® Neural Processing SDK
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                v2.12.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../general/revision_history.html">Revision History</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/revision_history_windows.html">Revision History - Windows</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/overview.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/setup.html">Setup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/usergroup1.html">Network Models</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/usergroup5.html">Input Data and Preprocessing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/usergroup6.html">Tutorials and Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/usergroup10.html">Benchmarking and Accuracy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/tools.html">Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/usergroup11.html">Debug Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/api.html">API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/limitations.html">Limitations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/appx_ref.html">References</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Qualcomm® Neural Processing SDK</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>File TensorShape.hpp</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="file-tensorshape-hpp">
+<span id="file-dlsystem-tensorshape-hpp"></span><h1>File TensorShape.hpp<a class="headerlink" href="#file-tensorshape-hpp" title="Permalink to this headline">¶</a></h1>
+<p>↰ <a class="reference internal" href="dir_DlSystem.html#dir-dlsystem"><span class="std std-ref">Parent directory</span></a> (<code class="docutils literal notranslate"><span class="pre">DlSystem</span></code>)</p>
+<div class="contents local topic" id="contents">
+<p class="topic-title">Contents</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#definition-dlsystem-tensorshape-hpp" id="id1">Definition (<code class="docutils literal notranslate"><span class="pre">DlSystem/TensorShape.hpp</span></code>)</a></p></li>
+<li><p><a class="reference internal" href="#includes" id="id2">Includes</a></p></li>
+<li><p><a class="reference internal" href="#included-by" id="id3">Included By</a></p></li>
+<li><p><a class="reference internal" href="#namespaces" id="id4">Namespaces</a></p></li>
+<li><p><a class="reference internal" href="#classes" id="id5">Classes</a></p></li>
+<li><p><a class="reference internal" href="#typedefs" id="id6">Typedefs</a></p></li>
+<li><p><a class="reference internal" href="#full-file-listing" id="id7">Full File Listing</a></p></li>
+</ul>
+</div>
+<div class="section" id="definition-dlsystem-tensorshape-hpp">
+<h2>Definition (<code class="docutils literal notranslate"><span class="pre">DlSystem/TensorShape.hpp</span></code>)<a class="headerlink" href="#definition-dlsystem-tensorshape-hpp" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="program_listing_file_DlSystem_TensorShape.hpp.html">Program Listing for File TensorShape.hpp</a></li>
+</ul>
+</div>
+</div>
+<div class="section" id="includes">
+<h2>Includes<a class="headerlink" href="#includes" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">ZdlExportDefine.hpp</span></code> (<a class="reference internal" href="file_DlSystem_ZdlExportDefine.hpp.html#file-dlsystem-zdlexportdefine-hpp"><span class="std std-ref">File ZdlExportDefine.hpp</span></a>)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">cstdio</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">initializer_list</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">memory</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">vector</span></code></p></li>
+</ul>
+</div>
+<div class="section" id="included-by">
+<h2>Included By<a class="headerlink" href="#included-by" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="file_DlSystem_IUserBuffer.hpp.html#file-dlsystem-iuserbuffer-hpp"><span class="std std-ref">File IUserBuffer.hpp</span></a></p></li>
+<li><p><a class="reference internal" href="file_DlSystem_IBufferAttributes.hpp.html#file-dlsystem-ibufferattributes-hpp"><span class="std std-ref">File IBufferAttributes.hpp</span></a></p></li>
+<li><p><a class="reference internal" href="file_DlSystem_ITensor.hpp.html#file-dlsystem-itensor-hpp"><span class="std std-ref">File ITensor.hpp</span></a></p></li>
+<li><p><a class="reference internal" href="file_DlSystem_ITensorFactory.hpp.html#file-dlsystem-itensorfactory-hpp"><span class="std std-ref">File ITensorFactory.hpp</span></a></p></li>
+<li><p><a class="reference internal" href="file_DlSystem_IUserBufferFactory.hpp.html#file-dlsystem-iuserbufferfactory-hpp"><span class="std std-ref">File IUserBufferFactory.hpp</span></a></p></li>
+<li><p><a class="reference internal" href="file_DlSystem_TensorShapeMap.hpp.html#file-dlsystem-tensorshapemap-hpp"><span class="std std-ref">File TensorShapeMap.hpp</span></a></p></li>
+<li><p><a class="reference internal" href="file_SNPE_SNPE.hpp.html#file-snpe-snpe-hpp"><span class="std std-ref">File SNPE.hpp</span></a></p></li>
+</ul>
+</div>
+<div class="section" id="namespaces">
+<h2>Namespaces<a class="headerlink" href="#namespaces" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="namespace_DlSystem.html#namespace-dlsystem"><span class="std std-ref">Namespace DlSystem</span></a></p></li>
+<li><p><a class="reference internal" href="namespace_zdl.html#namespace-zdl"><span class="std std-ref">Namespace zdl</span></a></p></li>
+<li><p><a class="reference internal" href="namespace_zdl__DlSystem.html#namespace-zdl-dlsystem"><span class="std std-ref">Namespace zdl::DlSystem</span></a></p></li>
+</ul>
+</div>
+<div class="section" id="classes">
+<h2>Classes<a class="headerlink" href="#classes" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="classzdl_1_1DlSystem_1_1TensorShape.html#exhale-class-classzdl-1-1dlsystem-1-1tensorshape"><span class="std std-ref">Class TensorShape</span></a></p></li>
+</ul>
+</div>
+<div class="section" id="typedefs">
+<h2>Typedefs<a class="headerlink" href="#typedefs" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="typedef_group__c__plus__plus__apis_1ga3d55c6f347b11414e36a8ecb8a617a08.html#exhale-typedef-group-c-plus-plus-apis-1ga3d55c6f347b11414e36a8ecb8a617a08"><span class="std std-ref">Typedef zdl::DlSystem::Dimension</span></a></p></li>
+</ul>
+</div>
+<div class="section" id="full-file-listing">
+<h2>Full File Listing<a class="headerlink" href="#full-file-listing" title="Permalink to this headline">¶</a></h2>
+<dl class="cpp type">
+<dt class="sig sig-object cpp" id="_CPPv48DlSystem">
+<span id="_CPPv38DlSystem"></span><span id="_CPPv28DlSystem"></span><span id="DlSystem"></span><span class="target" id="namespaceDlSystem"></span><span class="k"><span class="pre">namespace</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">DlSystem</span></span></span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp type">
+<dt class="sig sig-object cpp" id="_CPPv43zdl">
+<span id="_CPPv33zdl"></span><span id="_CPPv23zdl"></span><span id="zdl"></span><span class="target" id="namespacezdl"></span><span class="k"><span class="pre">namespace</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">zdl</span></span></span><br /></dt>
+<dd><dl class="cpp type">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystemE">
+<span id="_CPPv3N3zdl8DlSystemE"></span><span id="_CPPv2N3zdl8DlSystemE"></span><span id="zdl::DlSystem"></span><span class="target" id="namespacezdl_1_1DlSystem"></span><span class="k"><span class="pre">namespace</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">DlSystem</span></span></span><br /></dt>
+<dd><div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-typedefs">Typedefs</p>
+<dl class="cpp type">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem9DimensionE">
+<span id="_CPPv3N3zdl8DlSystem9DimensionE"></span><span id="_CPPv2N3zdl8DlSystem9DimensionE"></span><span class="target" id="group__c__plus__plus__apis_1ga3d55c6f347b11414e36a8ecb8a617a08"></span><span class="k"><span class="pre">using</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Dimension</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="n"><span class="pre">size_t</span></span><a class="headerlink" href="#_CPPv4N3zdl8DlSystem9DimensionE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Convenient typedef to represent dimension </p>
+</dd></dl>
+
+</div>
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem11TensorShapeE">
+<span id="_CPPv3N3zdl8DlSystem11TensorShapeE"></span><span id="_CPPv2N3zdl8DlSystem11TensorShapeE"></span><span id="zdl::DlSystem::TensorShape"></span><span class="target" id="classzdl_1_1DlSystem_1_1TensorShape"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">TensorShape</span></span></span><br /></dt>
+<dd><em>#include &lt;TensorShape.hpp&gt;</em><p>A class representing the shape of tensor. It is used at the time of creation of tensor. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem11TensorShape11TensorShapeENSt16initializer_listI9DimensionEE">
+<span id="_CPPv3N3zdl8DlSystem11TensorShape11TensorShapeENSt16initializer_listI9DimensionEE"></span><span id="_CPPv2N3zdl8DlSystem11TensorShape11TensorShapeENSt16initializer_listI9DimensionEE"></span><span id="zdl::DlSystem::TensorShape::TensorShape__std::initializer_list:Dimension:"></span><span class="target" id="group__c__plus__plus__apis_1gada5c7e2a8f072546f55dfc093fa8162f"></span><span class="sig-name descname"><span class="n"><span class="pre">TensorShape</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">initializer_list</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="#_CPPv4N3zdl8DlSystem9DimensionE" title="zdl::DlSystem::Dimension"><span class="n"><span class="pre">Dimension</span></span></a><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">dims</span></span><span class="sig-paren">)</span><br /></dt>
+<dd><p>Creates a new shape with a list of dims specified in initializer list fashion.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>dims</strong> – <strong>[in]</strong> The dimensions are specified in which the last element of the vector represents the fastest varying dimension and the zeroth element represents the slowest varying, etc. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem11TensorShape11TensorShapeEPK9Dimension6size_t">
+<span id="_CPPv3N3zdl8DlSystem11TensorShape11TensorShapeEPK9Dimension6size_t"></span><span id="_CPPv2N3zdl8DlSystem11TensorShape11TensorShapeEPK9Dimension6size_t"></span><span id="zdl::DlSystem::TensorShape::TensorShape__DimensionCP.s"></span><span class="target" id="group__c__plus__plus__apis_1gad06d607456a3ac805d6bdf463ed3c680"></span><span class="sig-name descname"><span class="n"><span class="pre">TensorShape</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N3zdl8DlSystem9DimensionE" title="zdl::DlSystem::Dimension"><span class="n"><span class="pre">Dimension</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">dims</span></span>, <span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">size</span></span><span class="sig-paren">)</span><br /></dt>
+<dd><p>Creates a new shape with a list of dims specified in array</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>dims</strong> – <strong>[in]</strong> The dimensions are specified in which the last element of the vector represents the fastest varying dimension and the zeroth element represents the slowest varying, etc.</p></li>
+<li><p><strong>size</strong> – <strong>[in]</strong> Size of the array. </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem11TensorShape11TensorShapeENSt6vectorI9DimensionEE">
+<span id="_CPPv3N3zdl8DlSystem11TensorShape11TensorShapeENSt6vectorI9DimensionEE"></span><span id="_CPPv2N3zdl8DlSystem11TensorShape11TensorShapeENSt6vectorI9DimensionEE"></span><span id="zdl::DlSystem::TensorShape::TensorShape__std::vector:Dimension:"></span><span class="target" id="group__c__plus__plus__apis_1ga37a87439674b3b24566b02c9094e1df1"></span><span class="sig-name descname"><span class="n"><span class="pre">TensorShape</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="#_CPPv4N3zdl8DlSystem9DimensionE" title="zdl::DlSystem::Dimension"><span class="n"><span class="pre">Dimension</span></span></a><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">dims</span></span><span class="sig-paren">)</span><br /></dt>
+<dd><p>Creates a new shape with a vector of dims specified in vector fashion.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>dims</strong> – <strong>[in]</strong> The dimensions are specified in which the last element of the vector represents the fastest varying dimension and the zeroth element represents the slowest varying, etc. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem11TensorShape11TensorShapeERK11TensorShape">
+<span id="_CPPv3N3zdl8DlSystem11TensorShape11TensorShapeERK11TensorShape"></span><span id="_CPPv2N3zdl8DlSystem11TensorShape11TensorShapeERK11TensorShape"></span><span id="zdl::DlSystem::TensorShape::TensorShape__TensorShapeCR"></span><span class="target" id="group__c__plus__plus__apis_1ga1626a03f3698a06f95ddea9c31bf0b1a"></span><span class="sig-name descname"><span class="n"><span class="pre">TensorShape</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="classzdl_1_1DlSystem_1_1TensorShape.html#_CPPv4N3zdl8DlSystem11TensorShape11TensorShapeERK11TensorShape" title="zdl::DlSystem::TensorShape::TensorShape"><span class="n"><span class="pre">TensorShape</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">other</span></span><span class="sig-paren">)</span><br /></dt>
+<dd><p>copy constructor. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>other</strong> – <strong>[in]</strong> object to copy. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem11TensorShapeaSERK11TensorShape">
+<span id="_CPPv3N3zdl8DlSystem11TensorShapeaSERK11TensorShape"></span><span id="_CPPv2N3zdl8DlSystem11TensorShapeaSERK11TensorShape"></span><span id="zdl::DlSystem::TensorShape::assign-operator__TensorShapeCR"></span><span class="target" id="group__c__plus__plus__apis_1gafd28dfe5f42aab403dc7e0b7fdb996f1"></span><a class="reference internal" href="classzdl_1_1DlSystem_1_1TensorShape.html#_CPPv4N3zdl8DlSystem11TensorShapeE" title="zdl::DlSystem::TensorShape"><span class="n"><span class="pre">TensorShape</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="k"><span class="pre">operator</span></span><span class="o"><span class="pre">=</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="classzdl_1_1DlSystem_1_1TensorShape.html#_CPPv4N3zdl8DlSystem11TensorShapeE" title="zdl::DlSystem::TensorShape"><span class="n"><span class="pre">TensorShape</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">other</span></span><span class="sig-paren">)</span><br /></dt>
+<dd><p>assignment operator. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem11TensorShape11TensorShapeEv">
+<span id="_CPPv3N3zdl8DlSystem11TensorShape11TensorShapeEv"></span><span id="_CPPv2N3zdl8DlSystem11TensorShape11TensorShapeEv"></span><span id="zdl::DlSystem::TensorShape::TensorShape"></span><span class="target" id="group__c__plus__plus__apis_1gae91fb484b1b0466f0a9b22ee6c12ed66"></span><span class="sig-name descname"><span class="n"><span class="pre">TensorShape</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><br /></dt>
+<dd><p>Creates a new shape with no dims. It can be extended later by invoking concatenate. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem11TensorShape11concatenateENSt16initializer_listI9DimensionEE">
+<span id="_CPPv3N3zdl8DlSystem11TensorShape11concatenateENSt16initializer_listI9DimensionEE"></span><span id="_CPPv2N3zdl8DlSystem11TensorShape11concatenateENSt16initializer_listI9DimensionEE"></span><span id="zdl::DlSystem::TensorShape::concatenate__std::initializer_list:Dimension:"></span><span class="target" id="group__c__plus__plus__apis_1ga5b1d07437360a428ce8948df6d04d3bf"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">concatenate</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">initializer_list</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="#_CPPv4N3zdl8DlSystem9DimensionE" title="zdl::DlSystem::Dimension"><span class="n"><span class="pre">Dimension</span></span></a><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">dims</span></span><span class="sig-paren">)</span><br /></dt>
+<dd><p>Concatenates additional dimensions specified in initializer list fashion to the existing dimensions.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>dims</strong> – <strong>[in]</strong> The dimensions are specified in which the last element of the vector represents the fastest varying dimension and the zeroth element represents the slowest varying, etc. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem11TensorShape11concatenateEPK9Dimension6size_t">
+<span id="_CPPv3N3zdl8DlSystem11TensorShape11concatenateEPK9Dimension6size_t"></span><span id="_CPPv2N3zdl8DlSystem11TensorShape11concatenateEPK9Dimension6size_t"></span><span id="zdl::DlSystem::TensorShape::concatenate__DimensionCP.s"></span><span class="target" id="group__c__plus__plus__apis_1ga9ec94812ffc381e91d0d8b12fde2fd8c"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">concatenate</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N3zdl8DlSystem9DimensionE" title="zdl::DlSystem::Dimension"><span class="n"><span class="pre">Dimension</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">dims</span></span>, <span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">size</span></span><span class="sig-paren">)</span><br /></dt>
+<dd><p>Concatenates additional dimensions specified in the array to the existing dimensions.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>dims</strong> – <strong>[in]</strong> The dimensions are specified in which the last element of the vector represents the fastest varying dimension and the zeroth element represents the slowest varying, etc.</p></li>
+<li><p><strong>size</strong> – <strong>[in]</strong> Size of the array. </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem11TensorShape11concatenateERK9Dimension">
+<span id="_CPPv3N3zdl8DlSystem11TensorShape11concatenateERK9Dimension"></span><span id="_CPPv2N3zdl8DlSystem11TensorShape11concatenateERK9Dimension"></span><span id="zdl::DlSystem::TensorShape::concatenate__DimensionCR"></span><span class="target" id="group__c__plus__plus__apis_1gad5d7fe5afc5f438e97e9975b75b63739"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">concatenate</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N3zdl8DlSystem9DimensionE" title="zdl::DlSystem::Dimension"><span class="n"><span class="pre">Dimension</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">dim</span></span><span class="sig-paren">)</span><br /></dt>
+<dd><p>Concatenates an additional dimension to the existing dimensions.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>dim</strong> – <strong>[in]</strong> The dimensions are specified in which the last element of the vector represents the fastest varying dimension and the zeroth element represents the slowest varying, etc. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem11TensorShapeixE6size_t">
+<span id="_CPPv3N3zdl8DlSystem11TensorShapeixE6size_t"></span><span id="_CPPv2N3zdl8DlSystem11TensorShapeixE6size_t"></span><span id="zdl::DlSystem::TensorShape::subscript-operator__s"></span><span class="target" id="group__c__plus__plus__apis_1ga2244883c95427c44e5ccce9eb743ff4e"></span><a class="reference internal" href="#_CPPv4N3zdl8DlSystem9DimensionE" title="zdl::DlSystem::Dimension"><span class="n"><span class="pre">Dimension</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="k"><span class="pre">operator</span></span><span class="o"><span class="pre">[]</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">index</span></span><span class="sig-paren">)</span><br /></dt>
+<dd><p>Retrieves a single dimension, based on its index.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Throws</dt>
+<dd class="field-odd"><p><strong>std::out_of_range</strong> – if the index is &gt;= the number of dimensions (or rank). </p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>The value of dimension</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK3zdl8DlSystem11TensorShapeixE6size_t">
+<span id="_CPPv3NK3zdl8DlSystem11TensorShapeixE6size_t"></span><span id="_CPPv2NK3zdl8DlSystem11TensorShapeixE6size_t"></span><span id="zdl::DlSystem::TensorShape::subscript-operator__sC"></span><span class="target" id="group__c__plus__plus__apis_1gaa34a1d7afb14466d44485a83b7799ae7"></span><a class="reference internal" href="#_CPPv4N3zdl8DlSystem9DimensionE" title="zdl::DlSystem::Dimension"><span class="n"><span class="pre">Dimension</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="k"><span class="pre">operator</span></span><span class="o"><span class="pre">[]</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">index</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK3zdl8DlSystem11TensorShape4rankEv">
+<span id="_CPPv3NK3zdl8DlSystem11TensorShape4rankEv"></span><span id="_CPPv2NK3zdl8DlSystem11TensorShape4rankEv"></span><span id="zdl::DlSystem::TensorShape::rankC"></span><span class="target" id="group__c__plus__plus__apis_1ga50d09a4ab5c7c6378825ea1078e66a4a"></span><span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">rank</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><br /></dt>
+<dd><p>Retrieves the rank i.e. number of dimensions.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>The rank </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK3zdl8DlSystem11TensorShape13getDimensionsEv">
+<span id="_CPPv3NK3zdl8DlSystem11TensorShape13getDimensionsEv"></span><span id="_CPPv2NK3zdl8DlSystem11TensorShape13getDimensionsEv"></span><span id="zdl::DlSystem::TensorShape::getDimensionsC"></span><span class="target" id="group__c__plus__plus__apis_1gade1116cdfaa11b3153eb9a3d5a6bbe63"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N3zdl8DlSystem9DimensionE" title="zdl::DlSystem::Dimension"><span class="n"><span class="pre">Dimension</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">getDimensions</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><br /></dt>
+<dd><p>Retrieves a pointer to the first dimension of shape</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>nullptr if no dimension exists; otherwise, points to the first dimension. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem11TensorShapeD0Ev">
+<span id="_CPPv3N3zdl8DlSystem11TensorShapeD0Ev"></span><span id="_CPPv2N3zdl8DlSystem11TensorShapeD0Ev"></span><span id="zdl::DlSystem::TensorShape::~TensorShape"></span><span class="target" id="group__c__plus__plus__apis_1ga4bbb19202e24c76b30ead82c81bcccff"></span><span class="sig-name descname"><span class="n"><span class="pre">~TensorShape</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-private-functions">Private Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem11TensorShape4swapERK11TensorShape">
+<span id="_CPPv3N3zdl8DlSystem11TensorShape4swapERK11TensorShape"></span><span id="_CPPv2N3zdl8DlSystem11TensorShape4swapERK11TensorShape"></span><span id="zdl::DlSystem::TensorShape::swap__TensorShapeCR"></span><span class="target" id="group__c__plus__plus__apis_1ga3b1b5064e063914e3aba065cf0d9a995"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">swap</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="classzdl_1_1DlSystem_1_1TensorShape.html#_CPPv4N3zdl8DlSystem11TensorShapeE" title="zdl::DlSystem::TensorShape"><span class="n"><span class="pre">TensorShape</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">other</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3zdl8DlSystem11TensorShape4swapERK11TensorShape" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-private-members">Private Members</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem11TensorShape17m_TensorShapeImplE">
+<span id="_CPPv3N3zdl8DlSystem11TensorShape17m_TensorShapeImplE"></span><span id="_CPPv2N3zdl8DlSystem11TensorShape17m_TensorShapeImplE"></span><span id="zdl::DlSystem::TensorShape::m_TensorShapeImpl__std::unique_ptr:DlSystem::TensorShapeImpl:"></span><span class="target" id="group__c__plus__plus__apis_1gad1f5feb95d2cb797bf20684fd420ad11"></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">unique_ptr</span></span><span class="p"><span class="pre">&lt;</span></span><span class="p"><span class="pre">::</span></span><a class="reference internal" href="file_DlSystem_IOBufferDataTypeMap.hpp.html#_CPPv48DlSystem" title="DlSystem"><span class="n"><span class="pre">DlSystem</span></span></a><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">TensorShapeImpl</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">m_TensorShapeImpl</span></span></span><a class="headerlink" href="#_CPPv4N3zdl8DlSystem11TensorShape17m_TensorShapeImplE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2020-2023, Qualcomm Technologies, Inc..
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

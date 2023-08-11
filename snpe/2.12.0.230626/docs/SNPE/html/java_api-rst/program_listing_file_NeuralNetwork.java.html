@@ -1,0 +1,466 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Program Listing for File NeuralNetwork.java &mdash; Snapdragon Neural Processing Engine SDK</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/custom_css.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/collapsible-lists/css/tree_view.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+        <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Qualcomm® Neural Processing SDK
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                v2.12.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../general/revision_history.html">Revision History</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/revision_history_windows.html">Revision History - Windows</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/overview.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/setup.html">Setup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/usergroup1.html">Network Models</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/usergroup5.html">Input Data and Preprocessing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/usergroup6.html">Tutorials and Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/usergroup10.html">Benchmarking and Accuracy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/tools.html">Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/usergroup11.html">Debug Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/api.html">API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/limitations.html">Limitations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/appx_ref.html">References</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Qualcomm® Neural Processing SDK</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Program Listing for File NeuralNetwork.java</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="program-listing-for-file-neuralnetwork-java">
+<span id="program-listing-file-neuralnetwork-java"></span><h1>Program Listing for File NeuralNetwork.java<a class="headerlink" href="#program-listing-for-file-neuralnetwork-java" title="Permalink to this headline">¶</a></h1>
+<p>↰ <a class="reference internal" href="file_NeuralNetwork.java.html#file-neuralnetwork-java"><span class="std std-ref">Return to documentation for file</span></a> (<code class="docutils literal notranslate"><span class="pre">NeuralNetwork.java</span></code>)</p>
+<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="cm">/*</span>
+<span class="cm"> * Copyright (c) 2017-2021, 2023 Qualcomm Technologies, Inc.</span>
+<span class="cm"> * All Rights Reserved.</span>
+<span class="cm"> * Confidential and Proprietary - Qualcomm Technologies, Inc.</span>
+<span class="cm"> */</span>
+
+<span class="kn">package</span><span class="w"> </span><span class="nn">com.qualcomm.qti.snpe</span><span class="p">;</span>
+
+<span class="kn">import</span><span class="w"> </span><span class="nn">java.util.Map</span><span class="p">;</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">java.util.Set</span><span class="p">;</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">java.nio.ByteBuffer</span><span class="p">;</span>
+
+
+<span class="cm">/**</span>
+<span class="cm"> * @addtogroup java_apis</span>
+<span class="cm"> * @{</span>
+<span class="cm"> */</span>
+
+<span class="cm">/**</span>
+<span class="cm"> * {@link NeuralNetwork} helper functions and properties.</span>
+<span class="cm"> */</span>
+<span class="kd">public</span><span class="w"> </span><span class="kd">interface</span> <span class="nc">NeuralNetwork</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="cm">/**</span>
+<span class="cm">     * Target runtime where neural network can be executed.</span>
+<span class="cm">     *</span>
+<span class="cm">     * @see com.qualcomm.qti.snpe.SNPE.NeuralNetworkBuilder#isRuntimeSupported(Runtime)</span>
+<span class="cm">     */</span>
+<span class="w">    </span><span class="kd">enum</span><span class="w"> </span><span class="n">Runtime</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">CPU</span><span class="p">(</span><span class="mi">0</span><span class="p">),</span><span class="w"> </span><span class="cm">/*** &lt; CPU*/</span>
+<span class="w">        </span><span class="n">GPU</span><span class="p">(</span><span class="mi">1</span><span class="p">),</span><span class="w"> </span><span class="cm">/*** &lt; GPU with 16 bit data storage and 32 bit math*/</span>
+<span class="w">        </span><span class="n">DSP</span><span class="p">(</span><span class="mi">2</span><span class="p">),</span><span class="w"> </span><span class="cm">/*** &lt; DSP with both data storage and math in 8bit tensorflow style fixed point*/</span>
+<span class="w">        </span><span class="n">GPU_FLOAT16</span><span class="p">(</span><span class="mi">3</span><span class="p">),</span><span class="w"> </span><span class="cm">/*** &lt; GPU with 16 bit data storage and 16 bit math*/</span>
+<span class="w">        </span><span class="n">AIP</span><span class="p">(</span><span class="mi">5</span><span class="p">);</span><span class="w"> </span><span class="cm">/*** &lt; AIP*/</span>
+
+<span class="w">        </span><span class="kd">public</span><span class="w"> </span><span class="kd">final</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">ordinal</span><span class="p">;</span>
+
+<span class="w">        </span><span class="cm">/**</span>
+<span class="cm">         * Select the runtime - CPU, GPU, DSP, GPU_FLOAT16, or AIP</span>
+<span class="cm">         *</span>
+<span class="cm">         * @param ordinal runtime value</span>
+<span class="cm">         */</span>
+<span class="w">        </span><span class="n">Runtime</span><span class="p">(</span><span class="kd">final</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">ordinal</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="k">this</span><span class="p">.</span><span class="na">ordinal</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">ordinal</span><span class="p">;</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="cm">/**</span>
+<span class="cm">     * Defines a performance profile for the runtime.</span>
+<span class="cm">     */</span>
+<span class="w">    </span><span class="kd">enum</span><span class="w"> </span><span class="n">PerformanceProfile</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">DEFAULT</span><span class="p">(</span><span class="mi">0</span><span class="p">),</span><span class="w">                     </span><span class="cm">/**&lt; DEFAULT */</span>
+<span class="w">        </span><span class="n">BALANCED</span><span class="p">(</span><span class="mi">0</span><span class="p">),</span><span class="w">                    </span><span class="cm">/**&lt; BALANCED */</span>
+<span class="w">        </span><span class="n">HIGH_PERFORMANCE</span><span class="p">(</span><span class="mi">1</span><span class="p">),</span><span class="w">            </span><span class="cm">/**&lt; HIGH_PERFORMANCE*/</span>
+<span class="w">        </span><span class="n">POWER_SAVER</span><span class="p">(</span><span class="mi">2</span><span class="p">),</span><span class="w">                 </span><span class="cm">/**&lt; POWER_SAVER */</span>
+<span class="w">        </span><span class="n">SYSTEM_SETTINGS</span><span class="p">(</span><span class="mi">3</span><span class="p">),</span><span class="w">             </span><span class="cm">/**&lt; SYSTEM_SETTINGS */</span>
+<span class="w">        </span><span class="n">SUSTAINED_HIGH_PERFORMANCE</span><span class="p">(</span><span class="mi">4</span><span class="p">),</span><span class="w">  </span><span class="cm">/**&lt; SUSTAINED_HIGH_PERFORMANCE */</span>
+<span class="w">        </span><span class="n">BURST</span><span class="p">(</span><span class="mi">5</span><span class="p">),</span><span class="w">                       </span><span class="cm">/**&lt; BURST */</span>
+<span class="w">        </span><span class="n">LOW_POWER_SAVER</span><span class="p">(</span><span class="mi">6</span><span class="p">),</span><span class="w">             </span><span class="cm">/**&lt; LOW_POWER_SAVER */</span>
+<span class="w">        </span><span class="n">HIGH_POWER_SAVER</span><span class="p">(</span><span class="mi">7</span><span class="p">),</span><span class="w">            </span><span class="cm">/**&lt; HIGH_POWER_SAVER */</span>
+<span class="w">        </span><span class="n">LOW_BALANCED</span><span class="p">(</span><span class="mi">8</span><span class="p">);</span><span class="w">                </span><span class="cm">/**&lt; LOW_BALANCED */</span>
+
+<span class="w">        </span><span class="kd">public</span><span class="w"> </span><span class="kd">final</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">ordinal</span><span class="p">;</span>
+
+<span class="w">        </span><span class="cm">/**</span>
+<span class="cm">         * Select the performance profile</span>
+<span class="cm">         * &lt;p&gt;</span>
+<span class="cm">         * DEFAULT - request for default performance mode (OS decision)</span>
+<span class="cm">         * &lt;p&gt;</span>
+<span class="cm">         * HIGH_PERFORMANCE - request for high performance mode</span>
+<span class="cm">         *</span>
+<span class="cm">         * @param ordinal performance profile</span>
+<span class="cm">         */</span>
+<span class="w">        </span><span class="n">PerformanceProfile</span><span class="p">(</span><span class="kd">final</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">ordinal</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="k">this</span><span class="p">.</span><span class="na">ordinal</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">ordinal</span><span class="p">;</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="cm">/**</span>
+<span class="cm">     * Execution priority hints</span>
+<span class="cm">     */</span>
+<span class="w">    </span><span class="kd">enum</span><span class="w"> </span><span class="n">ExecutionPriorityHint</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">NORMAL</span><span class="p">(</span><span class="mi">0</span><span class="p">),</span><span class="w"> </span><span class="cm">/*** &lt;NORMAL*/</span>
+<span class="w">        </span><span class="n">HIGH</span><span class="p">(</span><span class="mi">1</span><span class="p">),</span><span class="w"> </span><span class="cm">/*** &lt;HIGH*/</span>
+<span class="w">        </span><span class="n">LOW</span><span class="p">(</span><span class="mi">2</span><span class="p">),</span><span class="w"> </span><span class="cm">/*** &lt;LOW*/</span>
+<span class="w">        </span><span class="n">NORMAL_HIGH</span><span class="p">(</span><span class="mi">3</span><span class="p">);</span><span class="w"> </span><span class="cm">/***&lt;NORMAL_HIGH*/</span>
+
+<span class="w">        </span><span class="kd">public</span><span class="w"> </span><span class="kd">final</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">ordinal</span><span class="p">;</span>
+
+<span class="w">        </span><span class="cm">/**</span>
+<span class="cm">         * Select the execution priority hint</span>
+<span class="cm">         * &lt;p&gt;</span>
+<span class="cm">         * NORMAL - normal priority</span>
+<span class="cm">         * HIGH - higher than normal priority</span>
+<span class="cm">         * LOW - lower than normal priority</span>
+<span class="cm">         * NORMAL_HIGH - between normal and high priority</span>
+<span class="cm">         *</span>
+<span class="cm">         * @param ordinal execution priority hint</span>
+<span class="cm">         */</span>
+<span class="w">        </span><span class="n">ExecutionPriorityHint</span><span class="p">(</span><span class="kd">final</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">ordinal</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="k">this</span><span class="p">.</span><span class="na">ordinal</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">ordinal</span><span class="p">;</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="kd">enum</span><span class="w"> </span><span class="n">RuntimeCheckOption</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">DEFAULT</span><span class="p">(</span><span class="mi">0</span><span class="p">),</span>
+<span class="w">        </span><span class="n">NORMAL_CHECK</span><span class="p">(</span><span class="mi">0</span><span class="p">),</span>
+<span class="w">        </span><span class="n">BASIC_CHECK</span><span class="p">(</span><span class="mi">1</span><span class="p">),</span>
+<span class="w">        </span><span class="n">UNSIGNEDPD_CHECK</span><span class="p">(</span><span class="mi">2</span><span class="p">);</span>
+
+<span class="w">        </span><span class="kd">public</span><span class="w"> </span><span class="kd">final</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">ordinal</span><span class="p">;</span>
+
+<span class="w">        </span><span class="n">RuntimeCheckOption</span><span class="p">(</span><span class="kd">final</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">ordinal</span><span class="p">){</span>
+<span class="w">            </span><span class="k">this</span><span class="p">.</span><span class="na">ordinal</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">ordinal</span><span class="p">;</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="cm">/**</span>
+<span class="cm">     * Log level</span>
+<span class="cm">     */</span>
+<span class="w">    </span><span class="kd">enum</span><span class="w"> </span><span class="n">LogLevel</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">LOG_FATAL</span><span class="p">(</span><span class="mi">0</span><span class="p">),</span><span class="w">      </span><span class="cm">/*** &lt;LOG_FATAL*/</span>
+<span class="w">        </span><span class="n">LOG_ERROR</span><span class="p">(</span><span class="mi">1</span><span class="p">),</span><span class="w">      </span><span class="cm">/*** &lt;LOG_ERROR*/</span>
+<span class="w">        </span><span class="n">LOG_WARN</span><span class="p">(</span><span class="mi">2</span><span class="p">),</span><span class="w">       </span><span class="cm">/*** &lt;LOG_WARN*/</span>
+<span class="w">        </span><span class="n">LOG_VERBOSE</span><span class="p">(</span><span class="mi">3</span><span class="p">),</span><span class="w">    </span><span class="cm">/*** &lt;LOG_VERBOSE*/</span>
+<span class="w">        </span><span class="n">LOG_INFO</span><span class="p">(</span><span class="mi">4</span><span class="p">);</span><span class="w">       </span><span class="cm">/*** &lt;LOG_INFO*/</span>
+
+<span class="w">        </span><span class="kd">public</span><span class="w"> </span><span class="kd">final</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">ordinal</span><span class="p">;</span>
+
+<span class="w">        </span><span class="cm">/**</span>
+<span class="cm">         * Select the logging level</span>
+<span class="cm">         * &lt;p&gt;</span>
+<span class="cm">         * LOG_FATAL - FATAL logging level</span>
+<span class="cm">         * LOG_ERROR - ERROR logging level</span>
+<span class="cm">         * LOG_WARN - WARN logging level</span>
+<span class="cm">         * LOG_VERBOSE - VERBOSE logging level</span>
+<span class="cm">         * LOG_INFO - INFO logging level</span>
+<span class="cm">         *</span>
+<span class="cm">         * @param ordinal log level</span>
+<span class="cm">         */</span>
+<span class="w">        </span><span class="n">LogLevel</span><span class="p">(</span><span class="kd">final</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">ordinal</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="k">this</span><span class="p">.</span><span class="na">ordinal</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">ordinal</span><span class="p">;</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">    </span><span class="p">}</span>
+
+
+<span class="w">    </span><span class="cm">/**</span>
+<span class="cm">     * @return The neural network&#39;s selected runtime.</span>
+<span class="cm">     * @see com.qualcomm.qti.snpe.SNPE.NeuralNetworkBuilder#setRuntimeOrder(Runtime...)</span>
+<span class="cm">     */</span>
+<span class="w">    </span><span class="n">NeuralNetwork</span><span class="p">.</span><span class="na">Runtime</span><span class="w"> </span><span class="nf">getRuntime</span><span class="p">();</span>
+
+<span class="w">    </span><span class="cm">/**</span>
+<span class="cm">     * @return The selected output layer(s) name(s).</span>
+<span class="cm">     * @see com.qualcomm.qti.snpe.SNPE.NeuralNetworkBuilder#setOutputLayers(String...)</span>
+<span class="cm">     */</span>
+<span class="w">    </span><span class="n">Set</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span><span class="w"> </span><span class="nf">getOutputLayers</span><span class="p">();</span>
+
+<span class="w">    </span><span class="cm">/**</span>
+<span class="cm">     * Forward propagates the inputs through the neural network.</span>
+<span class="cm">     *</span>
+<span class="cm">     * @param inputs map of input name and tensor.</span>
+<span class="cm">     * @return a map of output name and tensor.</span>
+<span class="cm">     */</span>
+<span class="w">    </span><span class="n">Map</span><span class="o">&lt;</span><span class="n">String</span><span class="p">,</span><span class="w"> </span><span class="n">FloatTensor</span><span class="o">&gt;</span><span class="w"> </span><span class="nf">execute</span><span class="p">(</span><span class="n">Map</span><span class="o">&lt;</span><span class="n">String</span><span class="p">,</span><span class="w"> </span><span class="n">FloatTensor</span><span class="o">&gt;</span><span class="w"> </span><span class="n">inputs</span><span class="p">);</span>
+
+<span class="w">    </span><span class="cm">/**</span>
+<span class="cm">     * Forward propagates the inputs through the neural network.</span>
+<span class="cm">     *</span>
+<span class="cm">     * @param inputs map of input name and user buffer tensor.</span>
+<span class="cm">     * @return a map of output name and user buffer tensor.</span>
+<span class="cm">     */</span>
+<span class="w">    </span><span class="kt">boolean</span><span class="w"> </span><span class="nf">execute</span><span class="p">(</span><span class="n">Map</span><span class="o">&lt;</span><span class="n">String</span><span class="p">,</span><span class="w"> </span><span class="o">?</span><span class="w"> </span><span class="kd">extends</span><span class="w"> </span><span class="n">UserBufferTensor</span><span class="o">&gt;</span><span class="w"> </span><span class="n">inputs</span><span class="p">,</span>
+<span class="w">                    </span><span class="n">Map</span><span class="o">&lt;</span><span class="n">String</span><span class="p">,</span><span class="w"> </span><span class="o">?</span><span class="w"> </span><span class="kd">extends</span><span class="w"> </span><span class="n">UserBufferTensor</span><span class="o">&gt;</span><span class="w"> </span><span class="n">outputs</span><span class="p">);</span>
+
+<span class="w">    </span><span class="cm">/**</span>
+<span class="cm">     * @return a map of the input tensors(s) shape(s).</span>
+<span class="cm">     */</span>
+<span class="w">    </span><span class="n">Map</span><span class="o">&lt;</span><span class="n">String</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="o">[]&gt;</span><span class="w"> </span><span class="nf">getInputTensorsShapes</span><span class="p">();</span>
+
+<span class="w">    </span><span class="cm">/**</span>
+<span class="cm">     * @return a map of the input tensors(s) shape(s).</span>
+<span class="cm">     */</span>
+<span class="w">    </span><span class="n">Map</span><span class="o">&lt;</span><span class="n">String</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="o">[]&gt;</span><span class="w"> </span><span class="nf">getOutputTensorsShapes</span><span class="p">();</span>
+
+<span class="w">    </span><span class="cm">/**</span>
+<span class="cm">     * @return a set with the input tensor(s) name(s).</span>
+<span class="cm">     */</span>
+<span class="w">    </span><span class="n">Set</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span><span class="w"> </span><span class="nf">getInputTensorsNames</span><span class="p">();</span>
+
+<span class="w">    </span><span class="cm">/**</span>
+<span class="cm">     * @return a set with the output tensor(s) name(s).</span>
+<span class="cm">     */</span>
+<span class="w">    </span><span class="n">Set</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span><span class="w"> </span><span class="nf">getOutputTensorsNames</span><span class="p">();</span>
+
+<span class="w">    </span><span class="cm">/**</span>
+<span class="cm">     * @param name name of the network tensor.</span>
+<span class="cm">     * @return object representing the attributes of the tensor.</span>
+<span class="cm">     */</span>
+<span class="w">    </span><span class="n">TensorAttributes</span><span class="w"> </span><span class="nf">getTensorAttributes</span><span class="p">(</span><span class="n">String</span><span class="w"> </span><span class="n">name</span><span class="p">);</span>
+
+<span class="w">    </span><span class="cm">/**</span>
+<span class="cm">     * @return the user defined model version.</span>
+<span class="cm">     */</span>
+<span class="w">    </span><span class="n">String</span><span class="w"> </span><span class="nf">getModelVersion</span><span class="p">();</span>
+
+<span class="w">    </span><span class="cm">/**</span>
+<span class="cm">     * Releases the neural network&#39;s resources. After this call you can no longer invoke any</span>
+<span class="cm">     * methods on this class instance.</span>
+<span class="cm">     */</span>
+<span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="nf">release</span><span class="p">();</span>
+
+<span class="w">    </span><span class="cm">/**</span>
+<span class="cm">     * Creates a {@link FloatTensor} instance with the specified shape.</span>
+<span class="cm">     *</span>
+<span class="cm">     * @param shape tensor shape.</span>
+<span class="cm">     * @return newly created instance.</span>
+<span class="cm">     */</span>
+<span class="w">    </span><span class="n">FloatTensor</span><span class="w"> </span><span class="nf">createFloatTensor</span><span class="p">(</span><span class="kt">int</span><span class="p">...</span><span class="w"> </span><span class="n">shape</span><span class="p">);</span>
+
+<span class="w">    </span><span class="cm">/**</span>
+<span class="cm">     * Creates a {@link TF8UserBufferTensor} instance to wrap a user buffer.</span>
+<span class="cm">     *</span>
+<span class="cm">     * @param size              total size of the buffer, in bytes</span>
+<span class="cm">     * @param strides           total number of bytes between elements in each dimension</span>
+<span class="cm">     * @param stepExactly0      step value that represents exactly 0.0</span>
+<span class="cm">     * @param quantizedStepSize step size</span>
+<span class="cm">     * @param userBuffer        byte buffer that contains user data. This buffer must</span>
+<span class="cm">     *                          have been allocated using direct allocation and possess</span>
+<span class="cm">     *                          native byte ordering.</span>
+<span class="cm">     * @return newly created instance</span>
+<span class="cm">     */</span>
+<span class="w">    </span><span class="n">TF8UserBufferTensor</span><span class="w"> </span><span class="nf">createTF8UserBufferTensor</span><span class="p">(</span><span class="kd">final</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">size</span><span class="p">,</span><span class="w"> </span><span class="kd">final</span><span class="w"> </span><span class="kt">int</span><span class="o">[]</span><span class="w"> </span><span class="n">strides</span><span class="p">,</span>
+<span class="w">                                                  </span><span class="kt">int</span><span class="w"> </span><span class="n">stepExactly0</span><span class="p">,</span><span class="w"> </span><span class="kt">float</span><span class="w"> </span><span class="n">quantizedStepSize</span><span class="p">,</span>
+<span class="w">                                                  </span><span class="n">ByteBuffer</span><span class="w"> </span><span class="n">userBuffer</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="cm">/**</span>
+<span class="cm"> * @}</span>
+<span class="cm"> */</span><span class="w"> </span><span class="cm">/* end addtogroup java_apis */</span>
+</pre></div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2020-2023, Qualcomm Technologies, Inc..
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

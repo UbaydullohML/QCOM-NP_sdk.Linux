@@ -1,0 +1,404 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>File PlatformValidator.hpp &mdash; Snapdragon Neural Processing Engine SDK</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/custom_css.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/collapsible-lists/css/tree_view.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+        <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Qualcomm® Neural Processing SDK
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                v2.12.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../general/revision_history.html">Revision History</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/revision_history_windows.html">Revision History - Windows</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/overview.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/setup.html">Setup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/usergroup1.html">Network Models</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/usergroup5.html">Input Data and Preprocessing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/usergroup6.html">Tutorials and Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/usergroup10.html">Benchmarking and Accuracy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/tools.html">Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/usergroup11.html">Debug Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/api.html">API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/limitations.html">Limitations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/appx_ref.html">References</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Qualcomm® Neural Processing SDK</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>File PlatformValidator.hpp</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="file-platformvalidator-hpp">
+<span id="file-platformvalidator-platformvalidator-hpp"></span><h1>File PlatformValidator.hpp<a class="headerlink" href="#file-platformvalidator-hpp" title="Permalink to this headline">¶</a></h1>
+<p>↰ <a class="reference internal" href="dir_PlatformValidator.html#dir-platformvalidator"><span class="std std-ref">Parent directory</span></a> (<code class="docutils literal notranslate"><span class="pre">PlatformValidator</span></code>)</p>
+<div class="contents local topic" id="contents">
+<p class="topic-title">Contents</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#definition-platformvalidator-platformvalidator-hpp" id="id1">Definition (<code class="docutils literal notranslate"><span class="pre">PlatformValidator/PlatformValidator.hpp</span></code>)</a></p></li>
+<li><p><a class="reference internal" href="#includes" id="id2">Includes</a></p></li>
+<li><p><a class="reference internal" href="#namespaces" id="id3">Namespaces</a></p></li>
+<li><p><a class="reference internal" href="#classes" id="id4">Classes</a></p></li>
+<li><p><a class="reference internal" href="#defines" id="id5">Defines</a></p></li>
+<li><p><a class="reference internal" href="#full-file-listing" id="id6">Full File Listing</a></p></li>
+</ul>
+</div>
+<div class="section" id="definition-platformvalidator-platformvalidator-hpp">
+<h2>Definition (<code class="docutils literal notranslate"><span class="pre">PlatformValidator/PlatformValidator.hpp</span></code>)<a class="headerlink" href="#definition-platformvalidator-platformvalidator-hpp" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="program_listing_file_PlatformValidator_PlatformValidator.hpp.html">Program Listing for File PlatformValidator.hpp</a></li>
+</ul>
+</div>
+</div>
+<div class="section" id="includes">
+<h2>Includes<a class="headerlink" href="#includes" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">DlSystem/DlEnums.hpp</span></code> (<a class="reference internal" href="file_DlSystem_DlEnums.hpp.html#file-dlsystem-dlenums-hpp"><span class="std std-ref">File DlEnums.hpp</span></a>)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">DlSystem/ZdlExportDefine.hpp</span></code> (<a class="reference internal" href="file_DlSystem_ZdlExportDefine.hpp.html#file-dlsystem-zdlexportdefine-hpp"><span class="std std-ref">File ZdlExportDefine.hpp</span></a>)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">memory</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">string</span></code></p></li>
+</ul>
+</div>
+<div class="section" id="namespaces">
+<h2>Namespaces<a class="headerlink" href="#namespaces" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="namespace_zdl.html#namespace-zdl"><span class="std std-ref">Namespace zdl</span></a></p></li>
+<li><p><a class="reference internal" href="namespace_zdl__SNPE.html#namespace-zdl-snpe"><span class="std std-ref">Namespace zdl::SNPE</span></a></p></li>
+</ul>
+</div>
+<div class="section" id="classes">
+<h2>Classes<a class="headerlink" href="#classes" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="classzdl_1_1SNPE_1_1PlatformValidator.html#exhale-class-classzdl-1-1snpe-1-1platformvalidator"><span class="std std-ref">Class PlatformValidator</span></a></p></li>
+</ul>
+</div>
+<div class="section" id="defines">
+<h2>Defines<a class="headerlink" href="#defines" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="define_PlatformValidator_8hpp_1a42ff3abf929397db0e3958da49e8a759.html#exhale-define-platformvalidator-8hpp-1a42ff3abf929397db0e3958da49e8a759"><span class="std std-ref">Define DO_PRAGMA</span></a></p></li>
+<li><p><a class="reference internal" href="define_PlatformValidator_8hpp_1ad368591e5aed07de720f5a8f0b75aeee.html#exhale-define-platformvalidator-8hpp-1ad368591e5aed07de720f5a8f0b75aeee"><span class="std std-ref">Define NO_WARNING</span></a></p></li>
+<li><p><a class="reference internal" href="define_PlatformValidator_8hpp_1a824f6ebcd33e49e4b80303411b7e22ac.html#exhale-define-platformvalidator-8hpp-1a824f6ebcd33e49e4b80303411b7e22ac"><span class="std std-ref">Define SNPE_DISABLE_WARNINGS</span></a></p></li>
+<li><p><a class="reference internal" href="define_PlatformValidator_8hpp_1ae7124e59531cb24f746e575be3ee3f4e.html#exhale-define-platformvalidator-8hpp-1ae7124e59531cb24f746e575be3ee3f4e"><span class="std std-ref">Define SNPE_ENABLE_WARNINGS</span></a></p></li>
+</ul>
+</div>
+<div class="section" id="full-file-listing">
+<h2>Full File Listing<a class="headerlink" href="#full-file-listing" title="Permalink to this headline">¶</a></h2>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-defines">Defines</p>
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.DO_PRAGMA">
+<span class="target" id="PlatformValidator_8hpp_1a42ff3abf929397db0e3958da49e8a759"></span><span class="sig-name descname"><span class="n"><span class="pre">DO_PRAGMA</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">s</span></span><span class="sig-paren">)</span> <span class="pre">_Pragma(#s)</span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.NO_WARNING">
+<span class="target" id="PlatformValidator_8hpp_1ad368591e5aed07de720f5a8f0b75aeee"></span><span class="sig-name descname"><span class="n"><span class="pre">NO_WARNING</span></span></span> <span class="pre">&quot;-Wunused-variable&quot;</span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.SNPE_DISABLE_WARNINGS">
+<span class="target" id="PlatformValidator_8hpp_1a824f6ebcd33e49e4b80303411b7e22ac"></span><span class="sig-name descname"><span class="n"><span class="pre">SNPE_DISABLE_WARNINGS</span></span></span><span class="sig-paren">(</span><span class="p"><span class="pre">...</span></span><span class="sig-paren">)</span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp macro">
+<dt class="sig sig-object cpp" id="c.SNPE_ENABLE_WARNINGS">
+<span class="target" id="PlatformValidator_8hpp_1ae7124e59531cb24f746e575be3ee3f4e"></span><span class="sig-name descname"><span class="n"><span class="pre">SNPE_ENABLE_WARNINGS</span></span></span><br /></dt>
+<dd></dd></dl>
+
+</div>
+<dl class="cpp type">
+<dt class="sig sig-object cpp" id="_CPPv43zdl">
+<span id="_CPPv33zdl"></span><span id="_CPPv23zdl"></span><span id="zdl"></span><span class="target" id="namespacezdl"></span><span class="k"><span class="pre">namespace</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">zdl</span></span></span><br /></dt>
+<dd><dl class="cpp type">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl4SNPEE">
+<span id="_CPPv3N3zdl4SNPEE"></span><span id="_CPPv2N3zdl4SNPEE"></span><span id="zdl::SNPE"></span><span class="target" id="namespacezdl_1_1SNPE"></span><span class="k"><span class="pre">namespace</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SNPE</span></span></span><a class="headerlink" href="#_CPPv4N3zdl4SNPEE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl4SNPE17PlatformValidatorE">
+<span id="_CPPv3N3zdl4SNPE17PlatformValidatorE"></span><span id="_CPPv2N3zdl4SNPE17PlatformValidatorE"></span><span id="zdl::SNPE::PlatformValidator"></span><span class="target" id="classzdl_1_1SNPE_1_1PlatformValidator"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">PlatformValidator</span></span></span><br /></dt>
+<dd><em>#include &lt;PlatformValidator.hpp&gt;</em><p>The class for checking <a class="reference internal" href="file_SNPE_SNPE.hpp.html#classzdl_1_1SNPE_1_1SNPE"><span class="std std-ref">SNPE</span></a> compatibility/capability of a device. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl4SNPE17PlatformValidator17PlatformValidatorEv">
+<span id="_CPPv3N3zdl4SNPE17PlatformValidator17PlatformValidatorEv"></span><span id="_CPPv2N3zdl4SNPE17PlatformValidator17PlatformValidatorEv"></span><span id="zdl::SNPE::PlatformValidator::PlatformValidator"></span><span class="target" id="classzdl_1_1SNPE_1_1PlatformValidator_1af29e33510c8092c52807fdb6eae35098"></span><span class="sig-name descname"><span class="n"><span class="pre">PlatformValidator</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><br /></dt>
+<dd><p>Default Constructor of the <a class="reference internal" href="#classzdl_1_1SNPE_1_1PlatformValidator"><span class="std std-ref">PlatformValidator</span></a> Class. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>A new instance of a <a class="reference internal" href="#classzdl_1_1SNPE_1_1PlatformValidator"><span class="std std-ref">PlatformValidator</span></a> object that can be used to check the <a class="reference internal" href="file_SNPE_SNPE.hpp.html#classzdl_1_1SNPE_1_1SNPE"><span class="std std-ref">SNPE</span></a> compatibility of a device </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl4SNPE17PlatformValidatorD0Ev">
+<span id="_CPPv3N3zdl4SNPE17PlatformValidatorD0Ev"></span><span id="_CPPv2N3zdl4SNPE17PlatformValidatorD0Ev"></span><span id="zdl::SNPE::PlatformValidator::~PlatformValidator"></span><span class="target" id="classzdl_1_1SNPE_1_1PlatformValidator_1ade8ddfe32e9db5d2d365f12103e3c220"></span><span class="sig-name descname"><span class="n"><span class="pre">~PlatformValidator</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl4SNPE17PlatformValidator10setRuntimeEN3zdl8DlSystem9Runtime_tE">
+<span id="_CPPv3N3zdl4SNPE17PlatformValidator10setRuntimeEN3zdl8DlSystem9Runtime_tE"></span><span id="_CPPv2N3zdl4SNPE17PlatformValidator10setRuntimeEN3zdl8DlSystem9Runtime_tE"></span><span id="zdl::SNPE::PlatformValidator::setRuntime__zdl::DlSystem::Runtime_t"></span><span class="target" id="classzdl_1_1SNPE_1_1PlatformValidator_1a1624b5b788110422f5919b2c2cf2c3ac"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">setRuntime</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="file_DlContainer_IDlContainer.hpp.html#_CPPv43zdl" title="zdl"><span class="n"><span class="pre">zdl</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="file_DlSystem_DlEnums.hpp.html#_CPPv4N3zdl8DlSystemE" title="zdl::DlSystem"><span class="n"><span class="pre">DlSystem</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="enum_group__c__plus__plus__apis_1ga44a623125cbc82942472581f8a9c3f4c.html#_CPPv4N3zdl8DlSystem9Runtime_tE" title="zdl::DlSystem::Runtime_t"><span class="n"><span class="pre">Runtime_t</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">runtime</span></span><span class="sig-paren">)</span><br /></dt>
+<dd><p>Sets the runtime processor for compatibility check. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Void </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl4SNPE17PlatformValidator18isRuntimeAvailableEv">
+<span id="_CPPv3N3zdl4SNPE17PlatformValidator18isRuntimeAvailableEv"></span><span id="_CPPv2N3zdl4SNPE17PlatformValidator18isRuntimeAvailableEv"></span><span id="zdl::SNPE::PlatformValidator::isRuntimeAvailable"></span><span class="target" id="classzdl_1_1SNPE_1_1PlatformValidator_1af258ba45a61b457d3887721731167b29"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">isRuntimeAvailable</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><br /></dt>
+<dd><p>Checks if the Runtime prerequisites for <a class="reference internal" href="file_SNPE_SNPE.hpp.html#classzdl_1_1SNPE_1_1SNPE"><span class="std std-ref">SNPE</span></a> are available. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>True if the Runtime prerequisites are available, else false. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl4SNPE17PlatformValidator14getCoreVersionEv">
+<span id="_CPPv3N3zdl4SNPE17PlatformValidator14getCoreVersionEv"></span><span id="_CPPv2N3zdl4SNPE17PlatformValidator14getCoreVersionEv"></span><span id="zdl::SNPE::PlatformValidator::getCoreVersion"></span><span class="target" id="classzdl_1_1SNPE_1_1PlatformValidator_1a32995eace093ad52d2a37a6ecfc4c4ad"></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getCoreVersion</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><br /></dt>
+<dd><p>Returns the core version for the Runtime selected. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>String which contains the actual core version value </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl4SNPE17PlatformValidator13getLibVersionEv">
+<span id="_CPPv3N3zdl4SNPE17PlatformValidator13getLibVersionEv"></span><span id="_CPPv2N3zdl4SNPE17PlatformValidator13getLibVersionEv"></span><span id="zdl::SNPE::PlatformValidator::getLibVersion"></span><span class="target" id="classzdl_1_1SNPE_1_1PlatformValidator_1a7de8f60d6152345c447824cac47536c8"></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getLibVersion</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><br /></dt>
+<dd><p>Returns the library version for the Runtime selected. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>String which contains the actual lib version value </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl4SNPE17PlatformValidator12runtimeCheckEv">
+<span id="_CPPv3N3zdl4SNPE17PlatformValidator12runtimeCheckEv"></span><span id="_CPPv2N3zdl4SNPE17PlatformValidator12runtimeCheckEv"></span><span id="zdl::SNPE::PlatformValidator::runtimeCheck"></span><span class="target" id="classzdl_1_1SNPE_1_1PlatformValidator_1ab916f41f0c3ede4b1cbf4ef1bae3a2be"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">runtimeCheck</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><br /></dt>
+<dd><p>Runs a small program on the runtime and Checks if <a class="reference internal" href="file_SNPE_SNPE.hpp.html#classzdl_1_1SNPE_1_1SNPE"><span class="std std-ref">SNPE</span></a> is supported for Runtime. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>If True, the device is ready for <a class="reference internal" href="file_SNPE_SNPE.hpp.html#classzdl_1_1SNPE_1_1SNPE"><span class="std std-ref">SNPE</span></a> execution, else not. </p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-private-members">Private Members</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl4SNPE17PlatformValidator13m_runtimeTypeE">
+<span id="_CPPv3N3zdl4SNPE17PlatformValidator13m_runtimeTypeE"></span><span id="_CPPv2N3zdl4SNPE17PlatformValidator13m_runtimeTypeE"></span><span id="zdl::SNPE::PlatformValidator::m_runtimeType__zdl::DlSystem::Runtime_t"></span><span class="target" id="classzdl_1_1SNPE_1_1PlatformValidator_1a3e4995bc271bcc3797704cc4e108bec2"></span><a class="reference internal" href="file_DlContainer_IDlContainer.hpp.html#_CPPv43zdl" title="zdl"><span class="n"><span class="pre">zdl</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="file_DlSystem_DlEnums.hpp.html#_CPPv4N3zdl8DlSystemE" title="zdl::DlSystem"><span class="n"><span class="pre">DlSystem</span></span></a><span class="p"><span class="pre">::</span></span><a class="reference internal" href="enum_group__c__plus__plus__apis_1ga44a623125cbc82942472581f8a9c3f4c.html#_CPPv4N3zdl8DlSystem9Runtime_tE" title="zdl::DlSystem::Runtime_t"><span class="n"><span class="pre">Runtime_t</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">m_runtimeType</span></span></span><a class="headerlink" href="#_CPPv4N3zdl4SNPE17PlatformValidator13m_runtimeTypeE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl4SNPE17PlatformValidator26m_platformValidatorRuntimeE">
+<span id="_CPPv3N3zdl4SNPE17PlatformValidator26m_platformValidatorRuntimeE"></span><span id="_CPPv2N3zdl4SNPE17PlatformValidator26m_platformValidatorRuntimeE"></span><span id="zdl::SNPE::PlatformValidator::m_platformValidatorRuntime__std::unique_ptr:IPlatformValidatorRuntime:"></span><span class="target" id="classzdl_1_1SNPE_1_1PlatformValidator_1ab8c24f697e3cefa4de901696c425fa9b"></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">unique_ptr</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">IPlatformValidatorRuntime</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">m_platformValidatorRuntime</span></span></span><a class="headerlink" href="#_CPPv4N3zdl4SNPE17PlatformValidator26m_platformValidatorRuntimeE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2020-2023, Qualcomm Technologies, Inc..
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

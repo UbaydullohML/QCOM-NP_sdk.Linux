@@ -1,0 +1,842 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Full API &mdash; Snapdragon Neural Processing Engine SDK</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/custom_css.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/collapsible-lists/css/tree_view.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+        <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Qualcomm® Neural Processing SDK
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                v2.12.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../general/revision_history.html">Revision History</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/revision_history_windows.html">Revision History - Windows</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/overview.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/setup.html">Setup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/usergroup1.html">Network Models</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/usergroup5.html">Input Data and Preprocessing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/usergroup6.html">Tutorials and Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/usergroup10.html">Benchmarking and Accuracy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/tools.html">Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/usergroup11.html">Debug Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/api.html">API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/limitations.html">Limitations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/appx_ref.html">References</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Qualcomm® Neural Processing SDK</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Full API</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="full-api">
+<h1>Full API<a class="headerlink" href="#full-api" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="namespaces">
+<h2>Namespaces<a class="headerlink" href="#namespaces" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="namespace_DlSystem.html">Namespace DlSystem</a></li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="namespace_zdl.html">Namespace zdl</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="namespace_zdl.html#namespaces">Namespaces</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="namespace_zdl__DiagLog.html">Namespace zdl::DiagLog</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="namespace_zdl__DiagLog.html#classes">Classes</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="namespace_zdl__DlContainer.html">Namespace zdl::DlContainer</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="namespace_zdl__DlContainer.html#classes">Classes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="namespace_zdl__DlContainer.html#variables">Variables</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="namespace_zdl__DlSystem.html">Namespace zdl::DlSystem</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="namespace_zdl__DlSystem.html#classes">Classes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="namespace_zdl__DlSystem.html#enums">Enums</a></li>
+<li class="toctree-l2"><a class="reference internal" href="namespace_zdl__DlSystem.html#functions">Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="namespace_zdl__DlSystem.html#typedefs">Typedefs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="namespace_zdl__DlSystem.html#unions">Unions</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="namespace_zdl__SNPE.html">Namespace zdl::SNPE</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="namespace_zdl__SNPE.html#classes">Classes</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="classes-and-structs">
+<h2>Classes and Structs<a class="headerlink" href="#classes-and-structs" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="structzdl_1_1DlContainer_1_1DlcRecord.html">Struct DlcRecord</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="structzdl_1_1DlContainer_1_1DlcRecord.html#struct-documentation">Struct Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="structzdl_1_1DlSystem_1_1Optional_1_1ReferenceCount.html">Struct Optional::ReferenceCount</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="structzdl_1_1DlSystem_1_1Optional_1_1ReferenceCount.html#nested-relationships">Nested Relationships</a></li>
+<li class="toctree-l2"><a class="reference internal" href="structzdl_1_1DlSystem_1_1Optional_1_1ReferenceCount.html#struct-documentation">Struct Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="structzdl_1_1DlSystem_1_1UserGLConfig.html">Struct UserGLConfig</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="structzdl_1_1DlSystem_1_1UserGLConfig.html#struct-documentation">Struct Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="structzdl_1_1DlSystem_1_1UserGpuConfig.html">Struct UserGpuConfig</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="structzdl_1_1DlSystem_1_1UserGpuConfig.html#struct-documentation">Struct Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="classzdl_1_1DiagLog_1_1IDiagLog.html">Class IDiagLog</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="classzdl_1_1DiagLog_1_1IDiagLog.html#class-documentation">Class Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="classzdl_1_1DiagLog_1_1Options.html">Class Options</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="classzdl_1_1DiagLog_1_1Options.html#class-documentation">Class Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="classzdl_1_1DlContainer_1_1IDlContainer.html">Class IDlContainer</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="classzdl_1_1DlContainer_1_1IDlContainer.html#class-documentation">Class Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="classzdl_1_1DlSystem_1_1IBufferAttributes.html">Class IBufferAttributes</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="classzdl_1_1DlSystem_1_1IBufferAttributes.html#class-documentation">Class Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="classzdl_1_1DlSystem_1_1IOBufferDataTypeMap.html">Class IOBufferDataTypeMap</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="classzdl_1_1DlSystem_1_1IOBufferDataTypeMap.html#class-documentation">Class Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="classzdl_1_1DlSystem_1_1ITensor.html">Class ITensor</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="classzdl_1_1DlSystem_1_1ITensor.html#class-documentation">Class Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="classzdl_1_1DlSystem_1_1ITensorFactory.html">Class ITensorFactory</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="classzdl_1_1DlSystem_1_1ITensorFactory.html#class-documentation">Class Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="classzdl_1_1DlSystem_1_1IUserBuffer.html">Class IUserBuffer</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="classzdl_1_1DlSystem_1_1IUserBuffer.html#class-documentation">Class Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="classzdl_1_1DlSystem_1_1IUserBufferFactory.html">Class IUserBufferFactory</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="classzdl_1_1DlSystem_1_1IUserBufferFactory.html#class-documentation">Class Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="classzdl_1_1DlSystem_1_1Optional.html">Class Optional</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="classzdl_1_1DlSystem_1_1Optional.html#nested-relationships">Nested Relationships</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="classzdl_1_1DlSystem_1_1Optional.html#nested-types">Nested Types</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="classzdl_1_1DlSystem_1_1Optional.html#class-documentation">Class Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="classzdl_1_1DlSystem_1_1PlatformConfig.html">Class PlatformConfig</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="classzdl_1_1DlSystem_1_1PlatformConfig.html#nested-relationships">Nested Relationships</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="classzdl_1_1DlSystem_1_1PlatformConfig.html#nested-types">Nested Types</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="classzdl_1_1DlSystem_1_1PlatformConfig.html#class-documentation">Class Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="classzdl_1_1DlSystem_1_1RuntimeList.html">Class RuntimeList</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="classzdl_1_1DlSystem_1_1RuntimeList.html#class-documentation">Class Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="classzdl_1_1DlSystem_1_1StringList.html">Class StringList</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="classzdl_1_1DlSystem_1_1StringList.html#class-documentation">Class Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="classzdl_1_1DlSystem_1_1TensorMap.html">Class TensorMap</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="classzdl_1_1DlSystem_1_1TensorMap.html#class-documentation">Class Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="classzdl_1_1DlSystem_1_1TensorShape.html">Class TensorShape</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="classzdl_1_1DlSystem_1_1TensorShape.html#class-documentation">Class Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="classzdl_1_1DlSystem_1_1TensorShapeMap.html">Class TensorShapeMap</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="classzdl_1_1DlSystem_1_1TensorShapeMap.html#class-documentation">Class Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="classzdl_1_1DlSystem_1_1UserBufferEncoding.html">Class UserBufferEncoding</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="classzdl_1_1DlSystem_1_1UserBufferEncoding.html#inheritance-relationships">Inheritance Relationships</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="classzdl_1_1DlSystem_1_1UserBufferEncoding.html#derived-types">Derived Types</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="classzdl_1_1DlSystem_1_1UserBufferEncoding.html#class-documentation">Class Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="classzdl_1_1DlSystem_1_1UserBufferEncodingBool.html">Class UserBufferEncodingBool</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="classzdl_1_1DlSystem_1_1UserBufferEncodingBool.html#inheritance-relationships">Inheritance Relationships</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="classzdl_1_1DlSystem_1_1UserBufferEncodingBool.html#base-type">Base Type</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="classzdl_1_1DlSystem_1_1UserBufferEncodingBool.html#class-documentation">Class Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="classzdl_1_1DlSystem_1_1UserBufferEncodingFloat.html">Class UserBufferEncodingFloat</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="classzdl_1_1DlSystem_1_1UserBufferEncodingFloat.html#inheritance-relationships">Inheritance Relationships</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="classzdl_1_1DlSystem_1_1UserBufferEncodingFloat.html#base-type">Base Type</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="classzdl_1_1DlSystem_1_1UserBufferEncodingFloat.html#class-documentation">Class Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="classzdl_1_1DlSystem_1_1UserBufferEncodingFloatN.html">Class UserBufferEncodingFloatN</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="classzdl_1_1DlSystem_1_1UserBufferEncodingFloatN.html#inheritance-relationships">Inheritance Relationships</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="classzdl_1_1DlSystem_1_1UserBufferEncodingFloatN.html#base-type">Base Type</a></li>
+<li class="toctree-l3"><a class="reference internal" href="classzdl_1_1DlSystem_1_1UserBufferEncodingFloatN.html#derived-type">Derived Type</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="classzdl_1_1DlSystem_1_1UserBufferEncodingFloatN.html#class-documentation">Class Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="classzdl_1_1DlSystem_1_1UserBufferEncodingIntN.html">Class UserBufferEncodingIntN</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="classzdl_1_1DlSystem_1_1UserBufferEncodingIntN.html#inheritance-relationships">Inheritance Relationships</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="classzdl_1_1DlSystem_1_1UserBufferEncodingIntN.html#base-type">Base Type</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="classzdl_1_1DlSystem_1_1UserBufferEncodingIntN.html#class-documentation">Class Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="classzdl_1_1DlSystem_1_1UserBufferEncodingTf8.html">Class UserBufferEncodingTf8</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="classzdl_1_1DlSystem_1_1UserBufferEncodingTf8.html#inheritance-relationships">Inheritance Relationships</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="classzdl_1_1DlSystem_1_1UserBufferEncodingTf8.html#base-type">Base Type</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="classzdl_1_1DlSystem_1_1UserBufferEncodingTf8.html#class-documentation">Class Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="classzdl_1_1DlSystem_1_1UserBufferEncodingTfN.html">Class UserBufferEncodingTfN</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="classzdl_1_1DlSystem_1_1UserBufferEncodingTfN.html#inheritance-relationships">Inheritance Relationships</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="classzdl_1_1DlSystem_1_1UserBufferEncodingTfN.html#base-type">Base Type</a></li>
+<li class="toctree-l3"><a class="reference internal" href="classzdl_1_1DlSystem_1_1UserBufferEncodingTfN.html#derived-type">Derived Type</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="classzdl_1_1DlSystem_1_1UserBufferEncodingTfN.html#class-documentation">Class Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="classzdl_1_1DlSystem_1_1UserBufferEncodingUintN.html">Class UserBufferEncodingUintN</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="classzdl_1_1DlSystem_1_1UserBufferEncodingUintN.html#inheritance-relationships">Inheritance Relationships</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="classzdl_1_1DlSystem_1_1UserBufferEncodingUintN.html#base-type">Base Type</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="classzdl_1_1DlSystem_1_1UserBufferEncodingUintN.html#class-documentation">Class Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="classzdl_1_1DlSystem_1_1UserBufferEncodingUnsigned8Bit.html">Class UserBufferEncodingUnsigned8Bit</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="classzdl_1_1DlSystem_1_1UserBufferEncodingUnsigned8Bit.html#inheritance-relationships">Inheritance Relationships</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="classzdl_1_1DlSystem_1_1UserBufferEncodingUnsigned8Bit.html#base-type">Base Type</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="classzdl_1_1DlSystem_1_1UserBufferEncodingUnsigned8Bit.html#class-documentation">Class Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="classzdl_1_1DlSystem_1_1UserBufferMap.html">Class UserBufferMap</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="classzdl_1_1DlSystem_1_1UserBufferMap.html#class-documentation">Class Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="classzdl_1_1DlSystem_1_1UserBufferSource.html">Class UserBufferSource</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="classzdl_1_1DlSystem_1_1UserBufferSource.html#inheritance-relationships">Inheritance Relationships</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="classzdl_1_1DlSystem_1_1UserBufferSource.html#derived-type">Derived Type</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="classzdl_1_1DlSystem_1_1UserBufferSource.html#class-documentation">Class Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="classzdl_1_1DlSystem_1_1UserBufferSourceGLBuffer.html">Class UserBufferSourceGLBuffer</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="classzdl_1_1DlSystem_1_1UserBufferSourceGLBuffer.html#inheritance-relationships">Inheritance Relationships</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="classzdl_1_1DlSystem_1_1UserBufferSourceGLBuffer.html#base-type">Base Type</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="classzdl_1_1DlSystem_1_1UserBufferSourceGLBuffer.html#class-documentation">Class Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="classzdl_1_1DlSystem_1_1Version__t.html">Class Version_t</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="classzdl_1_1DlSystem_1_1Version__t.html#class-documentation">Class Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="classzdl_1_1SNPE_1_1PlatformValidator.html">Class PlatformValidator</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="classzdl_1_1SNPE_1_1PlatformValidator.html#class-documentation">Class Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="classzdl_1_1SNPE_1_1SNPE.html">Class SNPE</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="classzdl_1_1SNPE_1_1SNPE.html#class-documentation">Class Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="classzdl_1_1SNPE_1_1SNPEBuilder.html">Class SNPEBuilder</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="classzdl_1_1SNPE_1_1SNPEBuilder.html#class-documentation">Class Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="classzdl_1_1SNPE_1_1SNPEFactory.html">Class SNPEFactory</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="classzdl_1_1SNPE_1_1SNPEFactory.html#class-documentation">Class Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="enums">
+<h2>Enums<a class="headerlink" href="#enums" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="enum_namespacezdl_1_1DlSystem_1a1408c17b1313b7297a780bd98a11fa8b.html">Enum ErrorCode</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="enum_namespacezdl_1_1DlSystem_1a1408c17b1313b7297a780bd98a11fa8b.html#enum-documentation">Enum Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="enum_group__c__plus__plus__apis_1ga9c7653c2efeb5c04504617b1e42fa3dd.html">Enum ExecutionPriorityHint_t</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="enum_group__c__plus__plus__apis_1ga9c7653c2efeb5c04504617b1e42fa3dd.html#enum-documentation">Enum Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="enum_namespacezdl_1_1DlSystem_1a089fe11470d9688acdaf6be24347d2ea.html">Enum ImageEncoding_t</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="enum_namespacezdl_1_1DlSystem_1a089fe11470d9688acdaf6be24347d2ea.html#enum-documentation">Enum Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="enum_namespacezdl_1_1DlSystem_1aade6a059ec7d85b25ad69976c55e217a.html">Enum IOBufferDataType_t</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="enum_namespacezdl_1_1DlSystem_1aade6a059ec7d85b25ad69976c55e217a.html#enum-documentation">Enum Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="enum_namespacezdl_1_1DlSystem_1a67eae0105e452633b31592bd956fdd1b.html">Enum LogLevel_t</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="enum_namespacezdl_1_1DlSystem_1a67eae0105e452633b31592bd956fdd1b.html#enum-documentation">Enum Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="enum_group__c__plus__plus__apis_1gaaff6a40e793d0fcae2fb62c566f643b4.html">Enum PerformanceProfile_t</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="enum_group__c__plus__plus__apis_1gaaff6a40e793d0fcae2fb62c566f643b4.html#enum-documentation">Enum Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="enum_group__c__plus__plus__apis_1ga957611cdf88dc2986791d2a258c2805c.html">Enum ProfilingLevel_t</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="enum_group__c__plus__plus__apis_1ga957611cdf88dc2986791d2a258c2805c.html#enum-documentation">Enum Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="enum_group__c__plus__plus__apis_1ga44a623125cbc82942472581f8a9c3f4c.html">Enum Runtime_t</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="enum_group__c__plus__plus__apis_1ga44a623125cbc82942472581f8a9c3f4c.html#enum-documentation">Enum Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="enum_group__c__plus__plus__apis_1ga0078d3486836026012b02b8911ed8f67.html">Enum RuntimeCheckOption_t</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="enum_group__c__plus__plus__apis_1ga0078d3486836026012b02b8911ed8f67.html#enum-documentation">Enum Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="unions">
+<h2>Unions<a class="headerlink" href="#unions" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="unionzdl_1_1DlSystem_1_1PlatformConfig_1_1PlatformConfigInfo.html">Union PlatformConfig::PlatformConfigInfo</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="unionzdl_1_1DlSystem_1_1PlatformConfig_1_1PlatformConfigInfo.html#nested-relationships">Nested Relationships</a></li>
+<li class="toctree-l2"><a class="reference internal" href="unionzdl_1_1DlSystem_1_1PlatformConfig_1_1PlatformConfigInfo.html#union-documentation">Union Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="functions">
+<h2>Functions<a class="headerlink" href="#functions" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_group__c__plus__plus__apis_1gadfd5508cdf2b03c03fd2593915edf5cf.html">Function zdl::DlSystem::enumToUInt32</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_group__c__plus__plus__apis_1gadfd5508cdf2b03c03fd2593915edf5cf.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_group__c__plus__plus__apis_1ga92488e5eec05650f89e0b3061d12f476.html">Function zdl::DlSystem::getLastErrorCode</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_group__c__plus__plus__apis_1ga92488e5eec05650f89e0b3061d12f476.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_group__c__plus__plus__apis_1ga0cd70e9a9bd0a4edd4288df59a595773.html">Function zdl::DlSystem::getLastErrorString</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_group__c__plus__plus__apis_1ga0cd70e9a9bd0a4edd4288df59a595773.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_group__c__plus__plus__apis_1ga18be65c9c75b3b69fa4e1323b43e1e8e.html">Function zdl::DlSystem::getLastInfoString</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_group__c__plus__plus__apis_1ga18be65c9c75b3b69fa4e1323b43e1e8e.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="variables">
+<h2>Variables<a class="headerlink" href="#variables" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="variable_group__c__plus__plus__apis_1ga079c9b3901d97815de028dc1a6f31176.html">Variable zdl::DlContainer::ARCHIVE_MAX_RECORDS</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="variable_group__c__plus__plus__apis_1ga079c9b3901d97815de028dc1a6f31176.html#variable-documentation">Variable Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="variable_group__c__plus__plus__apis_1ga99489ebf85082d87c770cb96975a3565.html">Variable zdl::DlContainer::RECORD_DATA_MAX_SIZE</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="variable_group__c__plus__plus__apis_1ga99489ebf85082d87c770cb96975a3565.html#variable-documentation">Variable Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="variable_group__c__plus__plus__apis_1ga8f99b9a7b3a11786018e6dfda4a53895.html">Variable zdl::DlContainer::RECORD_NAME_MAX_SIZE</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="variable_group__c__plus__plus__apis_1ga8f99b9a7b3a11786018e6dfda4a53895.html#variable-documentation">Variable Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="defines">
+<h2>Defines<a class="headerlink" href="#defines" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="define_RuntimeList_8hpp_1ae2ffe68d73636f70fddf80a14683a448.html">Define DL_SYSTEM_RUNTIME_LIST_HPP</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="define_RuntimeList_8hpp_1ae2ffe68d73636f70fddf80a14683a448.html#define-documentation">Define Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="define_PlatformValidator_8hpp_1a42ff3abf929397db0e3958da49e8a759.html">Define DO_PRAGMA</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="define_PlatformValidator_8hpp_1a42ff3abf929397db0e3958da49e8a759.html#define-documentation">Define Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="define_PlatformValidator_8hpp_1ad368591e5aed07de720f5a8f0b75aeee.html">Define NO_WARNING</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="define_PlatformValidator_8hpp_1ad368591e5aed07de720f5a8f0b75aeee.html#define-documentation">Define Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="define_PlatformValidator_8hpp_1a824f6ebcd33e49e4b80303411b7e22ac.html">Define SNPE_DISABLE_WARNINGS</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="define_PlatformValidator_8hpp_1a824f6ebcd33e49e4b80303411b7e22ac.html#define-documentation">Define Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="define_PlatformValidator_8hpp_1ae7124e59531cb24f746e575be3ee3f4e.html">Define SNPE_ENABLE_WARNINGS</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="define_PlatformValidator_8hpp_1ae7124e59531cb24f746e575be3ee3f4e.html#define-documentation">Define Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="define_ZdlExportDefine_8hpp_1a27e5a33bf9416f88785a7d55b06db8ac.html">Define ZDL_EXPORT</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="define_ZdlExportDefine_8hpp_1a27e5a33bf9416f88785a7d55b06db8ac.html#define-documentation">Define Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="typedefs">
+<h2>Typedefs<a class="headerlink" href="#typedefs" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="typedef_group__c__plus__plus__apis_1ga3d55c6f347b11414e36a8ecb8a617a08.html">Typedef zdl::DlSystem::Dimension</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="typedef_group__c__plus__plus__apis_1ga3d55c6f347b11414e36a8ecb8a617a08.html#typedef-documentation">Typedef Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2020-2023, Qualcomm Technologies, Inc..
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

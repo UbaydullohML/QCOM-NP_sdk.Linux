@@ -1,0 +1,687 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>File DlEnums.hpp &mdash; Snapdragon Neural Processing Engine SDK</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/custom_css.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/collapsible-lists/css/tree_view.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+        <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Qualcomm® Neural Processing SDK
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                v2.12.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../general/revision_history.html">Revision History</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/revision_history_windows.html">Revision History - Windows</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/overview.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/setup.html">Setup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/usergroup1.html">Network Models</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/usergroup5.html">Input Data and Preprocessing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/usergroup6.html">Tutorials and Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/usergroup10.html">Benchmarking and Accuracy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/tools.html">Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/usergroup11.html">Debug Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/api.html">API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/limitations.html">Limitations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/appx_ref.html">References</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Qualcomm® Neural Processing SDK</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>File DlEnums.hpp</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="file-dlenums-hpp">
+<span id="file-dlsystem-dlenums-hpp"></span><h1>File DlEnums.hpp<a class="headerlink" href="#file-dlenums-hpp" title="Permalink to this headline">¶</a></h1>
+<p>↰ <a class="reference internal" href="dir_DlSystem.html#dir-dlsystem"><span class="std std-ref">Parent directory</span></a> (<code class="docutils literal notranslate"><span class="pre">DlSystem</span></code>)</p>
+<div class="contents local topic" id="contents">
+<p class="topic-title">Contents</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#definition-dlsystem-dlenums-hpp" id="id1">Definition (<code class="docutils literal notranslate"><span class="pre">DlSystem/DlEnums.hpp</span></code>)</a></p></li>
+<li><p><a class="reference internal" href="#includes" id="id2">Includes</a></p></li>
+<li><p><a class="reference internal" href="#included-by" id="id3">Included By</a></p></li>
+<li><p><a class="reference internal" href="#namespaces" id="id4">Namespaces</a></p></li>
+<li><p><a class="reference internal" href="#enums" id="id5">Enums</a></p></li>
+<li><p><a class="reference internal" href="#full-file-listing" id="id6">Full File Listing</a></p></li>
+</ul>
+</div>
+<div class="section" id="definition-dlsystem-dlenums-hpp">
+<h2>Definition (<code class="docutils literal notranslate"><span class="pre">DlSystem/DlEnums.hpp</span></code>)<a class="headerlink" href="#definition-dlsystem-dlenums-hpp" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="program_listing_file_DlSystem_DlEnums.hpp.html">Program Listing for File DlEnums.hpp</a></li>
+</ul>
+</div>
+</div>
+<div class="section" id="includes">
+<h2>Includes<a class="headerlink" href="#includes" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">DlSystem/ZdlExportDefine.hpp</span></code> (<a class="reference internal" href="file_DlSystem_ZdlExportDefine.hpp.html#file-dlsystem-zdlexportdefine-hpp"><span class="std std-ref">File ZdlExportDefine.hpp</span></a>)</p></li>
+</ul>
+</div>
+<div class="section" id="included-by">
+<h2>Included By<a class="headerlink" href="#included-by" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="file_DlSystem_IOBufferDataTypeMap.hpp.html#file-dlsystem-iobufferdatatypemap-hpp"><span class="std std-ref">File IOBufferDataTypeMap.hpp</span></a></p></li>
+<li><p><a class="reference internal" href="file_DlSystem_IUserBufferFactory.hpp.html#file-dlsystem-iuserbufferfactory-hpp"><span class="std std-ref">File IUserBufferFactory.hpp</span></a></p></li>
+<li><p><a class="reference internal" href="file_DlSystem_RuntimeList.hpp.html#file-dlsystem-runtimelist-hpp"><span class="std std-ref">File RuntimeList.hpp</span></a></p></li>
+<li><p><a class="reference internal" href="file_PlatformValidator_PlatformValidator.hpp.html#file-platformvalidator-platformvalidator-hpp"><span class="std std-ref">File PlatformValidator.hpp</span></a></p></li>
+<li><p><a class="reference internal" href="file_SNPE_SNPEBuilder.hpp.html#file-snpe-snpebuilder-hpp"><span class="std std-ref">File SNPEBuilder.hpp</span></a></p></li>
+<li><p><a class="reference internal" href="file_SNPE_SNPEFactory.hpp.html#file-snpe-snpefactory-hpp"><span class="std std-ref">File SNPEFactory.hpp</span></a></p></li>
+</ul>
+</div>
+<div class="section" id="namespaces">
+<h2>Namespaces<a class="headerlink" href="#namespaces" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="namespace_zdl.html#namespace-zdl"><span class="std std-ref">Namespace zdl</span></a></p></li>
+<li><p><a class="reference internal" href="namespace_zdl__DlSystem.html#namespace-zdl-dlsystem"><span class="std std-ref">Namespace zdl::DlSystem</span></a></p></li>
+</ul>
+</div>
+<div class="section" id="enums">
+<h2>Enums<a class="headerlink" href="#enums" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="enum_group__c__plus__plus__apis_1ga9c7653c2efeb5c04504617b1e42fa3dd.html#exhale-enum-group-c-plus-plus-apis-1ga9c7653c2efeb5c04504617b1e42fa3dd"><span class="std std-ref">Enum ExecutionPriorityHint_t</span></a></p></li>
+<li><p><a class="reference internal" href="enum_namespacezdl_1_1DlSystem_1a089fe11470d9688acdaf6be24347d2ea.html#exhale-enum-namespacezdl-1-1dlsystem-1a089fe11470d9688acdaf6be24347d2ea"><span class="std std-ref">Enum ImageEncoding_t</span></a></p></li>
+<li><p><a class="reference internal" href="enum_namespacezdl_1_1DlSystem_1aade6a059ec7d85b25ad69976c55e217a.html#exhale-enum-namespacezdl-1-1dlsystem-1aade6a059ec7d85b25ad69976c55e217a"><span class="std std-ref">Enum IOBufferDataType_t</span></a></p></li>
+<li><p><a class="reference internal" href="enum_namespacezdl_1_1DlSystem_1a67eae0105e452633b31592bd956fdd1b.html#exhale-enum-namespacezdl-1-1dlsystem-1a67eae0105e452633b31592bd956fdd1b"><span class="std std-ref">Enum LogLevel_t</span></a></p></li>
+<li><p><a class="reference internal" href="enum_group__c__plus__plus__apis_1gaaff6a40e793d0fcae2fb62c566f643b4.html#exhale-enum-group-c-plus-plus-apis-1gaaff6a40e793d0fcae2fb62c566f643b4"><span class="std std-ref">Enum PerformanceProfile_t</span></a></p></li>
+<li><p><a class="reference internal" href="enum_group__c__plus__plus__apis_1ga957611cdf88dc2986791d2a258c2805c.html#exhale-enum-group-c-plus-plus-apis-1ga957611cdf88dc2986791d2a258c2805c"><span class="std std-ref">Enum ProfilingLevel_t</span></a></p></li>
+<li><p><a class="reference internal" href="enum_group__c__plus__plus__apis_1ga44a623125cbc82942472581f8a9c3f4c.html#exhale-enum-group-c-plus-plus-apis-1ga44a623125cbc82942472581f8a9c3f4c"><span class="std std-ref">Enum Runtime_t</span></a></p></li>
+<li><p><a class="reference internal" href="enum_group__c__plus__plus__apis_1ga0078d3486836026012b02b8911ed8f67.html#exhale-enum-group-c-plus-plus-apis-1ga0078d3486836026012b02b8911ed8f67"><span class="std std-ref">Enum RuntimeCheckOption_t</span></a></p></li>
+</ul>
+</div>
+<div class="section" id="full-file-listing">
+<h2>Full File Listing<a class="headerlink" href="#full-file-listing" title="Permalink to this headline">¶</a></h2>
+<dl class="cpp type">
+<dt class="sig sig-object cpp" id="_CPPv43zdl">
+<span id="_CPPv33zdl"></span><span id="_CPPv23zdl"></span><span id="zdl"></span><span class="target" id="namespacezdl"></span><span class="k"><span class="pre">namespace</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">zdl</span></span></span><br /></dt>
+<dd><dl class="cpp type">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystemE">
+<span id="_CPPv3N3zdl8DlSystemE"></span><span id="_CPPv2N3zdl8DlSystemE"></span><span id="zdl::DlSystem"></span><span class="target" id="namespacezdl_1_1DlSystem"></span><span class="k"><span class="pre">namespace</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">DlSystem</span></span></span><a class="headerlink" href="#_CPPv4N3zdl8DlSystemE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-enums">Enums</p>
+<dl class="cpp enum">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem9Runtime_tE">
+<span id="_CPPv3N3zdl8DlSystem9Runtime_tE"></span><span id="_CPPv2N3zdl8DlSystem9Runtime_tE"></span><span class="target" id="group__c__plus__plus__apis_1ga44a623125cbc82942472581f8a9c3f4c"></span><span class="k"><span class="pre">enum</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Runtime_t</span></span></span><br /></dt>
+<dd><p>Enumeration of supported target runtimes. </p>
+<p><em>Values:</em></p>
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem9Runtime_t11CPU_FLOAT32E">
+<span id="_CPPv3N3zdl8DlSystem9Runtime_t11CPU_FLOAT32E"></span><span id="_CPPv2N3zdl8DlSystem9Runtime_t11CPU_FLOAT32E"></span><span class="target" id="group__c__plus__plus__apis_1gga44a623125cbc82942472581f8a9c3f4ca802a23be4084111f01e3c1e0b3294bcb"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">CPU_FLOAT32</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><br /></dt>
+<dd><p>Run the processing on Snapdragon CPU. Data: float 32bit Math: float 32bit </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem9Runtime_t21GPU_FLOAT32_16_HYBRIDE">
+<span id="_CPPv3N3zdl8DlSystem9Runtime_t21GPU_FLOAT32_16_HYBRIDE"></span><span id="_CPPv2N3zdl8DlSystem9Runtime_t21GPU_FLOAT32_16_HYBRIDE"></span><span class="target" id="group__c__plus__plus__apis_1gga44a623125cbc82942472581f8a9c3f4ca6678b1ea92950a93edf4045412e89f5f"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">GPU_FLOAT32_16_HYBRID</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">1</span></span><br /></dt>
+<dd><p>Run the processing on the Adreno GPU. Data: float 16bit Math: float 32bit </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem9Runtime_t13DSP_FIXED8_TFE">
+<span id="_CPPv3N3zdl8DlSystem9Runtime_t13DSP_FIXED8_TFE"></span><span id="_CPPv2N3zdl8DlSystem9Runtime_t13DSP_FIXED8_TFE"></span><span class="target" id="group__c__plus__plus__apis_1gga44a623125cbc82942472581f8a9c3f4caed49e078f9108df998647631e0483c87"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">DSP_FIXED8_TF</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">2</span></span><br /></dt>
+<dd><p>Run the processing on the Hexagon DSP. Data: 8bit fixed point Tensorflow style format Math: 8bit fixed point Tensorflow style format </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem9Runtime_t11GPU_FLOAT16E">
+<span id="_CPPv3N3zdl8DlSystem9Runtime_t11GPU_FLOAT16E"></span><span id="_CPPv2N3zdl8DlSystem9Runtime_t11GPU_FLOAT16E"></span><span class="target" id="group__c__plus__plus__apis_1gga44a623125cbc82942472581f8a9c3f4cad2af295a7fca84910ec79a4b7337721f"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">GPU_FLOAT16</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">3</span></span><br /></dt>
+<dd><p>Run the processing on the Adreno GPU. Data: float 16bit Math: float 16bit </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem9Runtime_t13AIP_FIXED8_TFE">
+<span id="_CPPv3N3zdl8DlSystem9Runtime_t13AIP_FIXED8_TFE"></span><span id="_CPPv2N3zdl8DlSystem9Runtime_t13AIP_FIXED8_TFE"></span><span class="target" id="group__c__plus__plus__apis_1gga44a623125cbc82942472581f8a9c3f4caf101368ceeb38cb43653774ad713b9c3"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">AIP_FIXED8_TF</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">5</span></span><br /></dt>
+<dd><p>Run the processing on Snapdragon AIX+HVX. Data: 8bit fixed point Tensorflow style format Math: 8bit fixed point Tensorflow style format </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem9Runtime_t12AIP_FIXED_TFE">
+<span id="_CPPv3N3zdl8DlSystem9Runtime_t12AIP_FIXED_TFE"></span><span id="_CPPv2N3zdl8DlSystem9Runtime_t12AIP_FIXED_TFE"></span><span class="target" id="group__c__plus__plus__apis_1gga44a623125cbc82942472581f8a9c3f4cabe2934bb6488c97b649cb980d1ece4e1"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">AIP_FIXED_TF</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><a class="reference internal" href="enum_group__c__plus__plus__apis_1ga44a623125cbc82942472581f8a9c3f4c.html#_CPPv4N3zdl8DlSystem9Runtime_t13AIP_FIXED8_TFE" title="zdl::DlSystem::Runtime_t::AIP_FIXED8_TF"><span class="n"><span class="pre">AIP_FIXED8_TF</span></span></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem9Runtime_t3CPUE">
+<span id="_CPPv3N3zdl8DlSystem9Runtime_t3CPUE"></span><span id="_CPPv2N3zdl8DlSystem9Runtime_t3CPUE"></span><span class="target" id="group__c__plus__plus__apis_1gga44a623125cbc82942472581f8a9c3f4ca2b55387dd066c5bac646ac61543d152d"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">CPU</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><a class="reference internal" href="enum_group__c__plus__plus__apis_1ga44a623125cbc82942472581f8a9c3f4c.html#_CPPv4N3zdl8DlSystem9Runtime_t11CPU_FLOAT32E" title="zdl::DlSystem::Runtime_t::CPU_FLOAT32"><span class="n"><span class="pre">CPU_FLOAT32</span></span></a><br /></dt>
+<dd><p>Default legacy enum to retain backward compatibility. CPU = CPU_FLOAT32 </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem9Runtime_t3GPUE">
+<span id="_CPPv3N3zdl8DlSystem9Runtime_t3GPUE"></span><span id="_CPPv2N3zdl8DlSystem9Runtime_t3GPUE"></span><span class="target" id="group__c__plus__plus__apis_1gga44a623125cbc82942472581f8a9c3f4ca52f9ec21735243ad9917cda3ca077d32"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">GPU</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><a class="reference internal" href="enum_group__c__plus__plus__apis_1ga44a623125cbc82942472581f8a9c3f4c.html#_CPPv4N3zdl8DlSystem9Runtime_t21GPU_FLOAT32_16_HYBRIDE" title="zdl::DlSystem::Runtime_t::GPU_FLOAT32_16_HYBRID"><span class="n"><span class="pre">GPU_FLOAT32_16_HYBRID</span></span></a><br /></dt>
+<dd><p>Default legacy enum to retain backward compatibility. GPU = GPU_FLOAT32_16_HYBRID </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem9Runtime_t3DSPE">
+<span id="_CPPv3N3zdl8DlSystem9Runtime_t3DSPE"></span><span id="_CPPv2N3zdl8DlSystem9Runtime_t3DSPE"></span><span class="target" id="group__c__plus__plus__apis_1gga44a623125cbc82942472581f8a9c3f4cac0dc8df68b79ed124e7c649d1df58fb5"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">DSP</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><a class="reference internal" href="enum_group__c__plus__plus__apis_1ga44a623125cbc82942472581f8a9c3f4c.html#_CPPv4N3zdl8DlSystem9Runtime_t13DSP_FIXED8_TFE" title="zdl::DlSystem::Runtime_t::DSP_FIXED8_TF"><span class="n"><span class="pre">DSP_FIXED8_TF</span></span></a><br /></dt>
+<dd><p>Default legacy enum to retain backward compatibility. DSP = DSP_FIXED8_TF </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem9Runtime_t5UNSETE">
+<span id="_CPPv3N3zdl8DlSystem9Runtime_t5UNSETE"></span><span id="_CPPv2N3zdl8DlSystem9Runtime_t5UNSETE"></span><span class="target" id="group__c__plus__plus__apis_1gga44a623125cbc82942472581f8a9c3f4ca666a87025ab0d8965e221050c8948001"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">UNSET</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="o"><span class="pre">-</span></span><span class="m"><span class="pre">1</span></span><br /></dt>
+<dd><p>Special value indicating the property is unset. </p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="cpp enum">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem20RuntimeCheckOption_tE">
+<span id="_CPPv3N3zdl8DlSystem20RuntimeCheckOption_tE"></span><span id="_CPPv2N3zdl8DlSystem20RuntimeCheckOption_tE"></span><span class="target" id="group__c__plus__plus__apis_1ga0078d3486836026012b02b8911ed8f67"></span><span class="k"><span class="pre">enum</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">RuntimeCheckOption_t</span></span></span><br /></dt>
+<dd><p>Enumeration of runtime available check options. </p>
+<p><em>Values:</em></p>
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem20RuntimeCheckOption_t7DEFAULTE">
+<span id="_CPPv3N3zdl8DlSystem20RuntimeCheckOption_t7DEFAULTE"></span><span id="_CPPv2N3zdl8DlSystem20RuntimeCheckOption_t7DEFAULTE"></span><span class="target" id="group__c__plus__plus__apis_1gga0078d3486836026012b02b8911ed8f67a5b39c8b553c821e7cddc6da64b5bd2ee"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">DEFAULT</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">2</span></span><br /></dt>
+<dd><p>Perform standard runtime available check. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem20RuntimeCheckOption_t12NORMAL_CHECKE">
+<span id="_CPPv3N3zdl8DlSystem20RuntimeCheckOption_t12NORMAL_CHECKE"></span><span id="_CPPv2N3zdl8DlSystem20RuntimeCheckOption_t12NORMAL_CHECKE"></span><span class="target" id="group__c__plus__plus__apis_1gga0078d3486836026012b02b8911ed8f67a963b163367a20d73446d6bab09b0cc47"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">NORMAL_CHECK</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><br /></dt>
+<dd><p>Perform standard runtime available check. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem20RuntimeCheckOption_t11BASIC_CHECKE">
+<span id="_CPPv3N3zdl8DlSystem20RuntimeCheckOption_t11BASIC_CHECKE"></span><span id="_CPPv2N3zdl8DlSystem20RuntimeCheckOption_t11BASIC_CHECKE"></span><span class="target" id="group__c__plus__plus__apis_1gga0078d3486836026012b02b8911ed8f67a1716aa3ed64a12b858555bcfb975c5a2"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">BASIC_CHECK</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">1</span></span><br /></dt>
+<dd><p>Perform basic runtime available check, may be runtime specific. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem20RuntimeCheckOption_t16UNSIGNEDPD_CHECKE">
+<span id="_CPPv3N3zdl8DlSystem20RuntimeCheckOption_t16UNSIGNEDPD_CHECKE"></span><span id="_CPPv2N3zdl8DlSystem20RuntimeCheckOption_t16UNSIGNEDPD_CHECKE"></span><span class="target" id="group__c__plus__plus__apis_1gga0078d3486836026012b02b8911ed8f67a1de73d5ee84deacbcb668439d04fdd07"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">UNSIGNEDPD_CHECK</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">2</span></span><br /></dt>
+<dd><p>Perform unsignedPD runtime available check. </p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="cpp enum">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem20PerformanceProfile_tE">
+<span id="_CPPv3N3zdl8DlSystem20PerformanceProfile_tE"></span><span id="_CPPv2N3zdl8DlSystem20PerformanceProfile_tE"></span><span class="target" id="group__c__plus__plus__apis_1gaaff6a40e793d0fcae2fb62c566f643b4"></span><span class="k"><span class="pre">enum</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">PerformanceProfile_t</span></span></span><br /></dt>
+<dd><p>Enumeration of various performance profiles that can be requested. </p>
+<p><em>Values:</em></p>
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem20PerformanceProfile_t7DEFAULTE">
+<span id="_CPPv3N3zdl8DlSystem20PerformanceProfile_t7DEFAULTE"></span><span id="_CPPv2N3zdl8DlSystem20PerformanceProfile_t7DEFAULTE"></span><span class="target" id="group__c__plus__plus__apis_1ggaaff6a40e793d0fcae2fb62c566f643b4a5b39c8b553c821e7cddc6da64b5bd2ee"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">DEFAULT</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><br /></dt>
+<dd><p>Run in a standard mode. This mode will be deprecated in the future and replaced with BALANCED. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem20PerformanceProfile_t8BALANCEDE">
+<span id="_CPPv3N3zdl8DlSystem20PerformanceProfile_t8BALANCEDE"></span><span id="_CPPv2N3zdl8DlSystem20PerformanceProfile_t8BALANCEDE"></span><span class="target" id="group__c__plus__plus__apis_1ggaaff6a40e793d0fcae2fb62c566f643b4a0cb4635d100151dcaac6f91db856c402"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">BALANCED</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><br /></dt>
+<dd><p>Run in a balanced mode. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem20PerformanceProfile_t16HIGH_PERFORMANCEE">
+<span id="_CPPv3N3zdl8DlSystem20PerformanceProfile_t16HIGH_PERFORMANCEE"></span><span id="_CPPv2N3zdl8DlSystem20PerformanceProfile_t16HIGH_PERFORMANCEE"></span><span class="target" id="group__c__plus__plus__apis_1ggaaff6a40e793d0fcae2fb62c566f643b4ad83cca9f99d06cad23f93af79fc66880"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">HIGH_PERFORMANCE</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">1</span></span><br /></dt>
+<dd><p>Run in high performance mode. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem20PerformanceProfile_t11POWER_SAVERE">
+<span id="_CPPv3N3zdl8DlSystem20PerformanceProfile_t11POWER_SAVERE"></span><span id="_CPPv2N3zdl8DlSystem20PerformanceProfile_t11POWER_SAVERE"></span><span class="target" id="group__c__plus__plus__apis_1ggaaff6a40e793d0fcae2fb62c566f643b4af2d75fad5ddf19cf46bf1759586f990e"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">POWER_SAVER</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">2</span></span><br /></dt>
+<dd><p>Run in a power sensitive mode, at the expense of performance. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem20PerformanceProfile_t15SYSTEM_SETTINGSE">
+<span id="_CPPv3N3zdl8DlSystem20PerformanceProfile_t15SYSTEM_SETTINGSE"></span><span id="_CPPv2N3zdl8DlSystem20PerformanceProfile_t15SYSTEM_SETTINGSE"></span><span class="target" id="group__c__plus__plus__apis_1ggaaff6a40e793d0fcae2fb62c566f643b4a0be844c784007c4f0ba869a13bdeb30d"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SYSTEM_SETTINGS</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">3</span></span><br /></dt>
+<dd><p>Use system settings. <a class="reference internal" href="file_SNPE_SNPEFactory.hpp.html#namespacezdl_1_1SNPE"><span class="std std-ref">SNPE</span></a> makes no calls to any performance related APIs. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem20PerformanceProfile_t26SUSTAINED_HIGH_PERFORMANCEE">
+<span id="_CPPv3N3zdl8DlSystem20PerformanceProfile_t26SUSTAINED_HIGH_PERFORMANCEE"></span><span id="_CPPv2N3zdl8DlSystem20PerformanceProfile_t26SUSTAINED_HIGH_PERFORMANCEE"></span><span class="target" id="group__c__plus__plus__apis_1ggaaff6a40e793d0fcae2fb62c566f643b4a962e963431433af3e14ad59e7d4589b8"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SUSTAINED_HIGH_PERFORMANCE</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">4</span></span><br /></dt>
+<dd><p>Run in sustained high performance mode. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem20PerformanceProfile_t5BURSTE">
+<span id="_CPPv3N3zdl8DlSystem20PerformanceProfile_t5BURSTE"></span><span id="_CPPv2N3zdl8DlSystem20PerformanceProfile_t5BURSTE"></span><span class="target" id="group__c__plus__plus__apis_1ggaaff6a40e793d0fcae2fb62c566f643b4a9d2b6b239fcfd0ec88ac1ee2d87eb108"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">BURST</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">5</span></span><br /></dt>
+<dd><p>Run in burst mode. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem20PerformanceProfile_t15LOW_POWER_SAVERE">
+<span id="_CPPv3N3zdl8DlSystem20PerformanceProfile_t15LOW_POWER_SAVERE"></span><span id="_CPPv2N3zdl8DlSystem20PerformanceProfile_t15LOW_POWER_SAVERE"></span><span class="target" id="group__c__plus__plus__apis_1ggaaff6a40e793d0fcae2fb62c566f643b4a63ac21440aeb2bf05940b94f10e03174"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">LOW_POWER_SAVER</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">6</span></span><br /></dt>
+<dd><p>Run in lower clock than POWER_SAVER, at the expense of performance. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem20PerformanceProfile_t16HIGH_POWER_SAVERE">
+<span id="_CPPv3N3zdl8DlSystem20PerformanceProfile_t16HIGH_POWER_SAVERE"></span><span id="_CPPv2N3zdl8DlSystem20PerformanceProfile_t16HIGH_POWER_SAVERE"></span><span class="target" id="group__c__plus__plus__apis_1ggaaff6a40e793d0fcae2fb62c566f643b4a5508955d1679e6d2d2fd89bcca2279a7"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">HIGH_POWER_SAVER</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">7</span></span><br /></dt>
+<dd><p>Run in higher clock and provides better performance than POWER_SAVER. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem20PerformanceProfile_t12LOW_BALANCEDE">
+<span id="_CPPv3N3zdl8DlSystem20PerformanceProfile_t12LOW_BALANCEDE"></span><span id="_CPPv2N3zdl8DlSystem20PerformanceProfile_t12LOW_BALANCEDE"></span><span class="target" id="group__c__plus__plus__apis_1ggaaff6a40e793d0fcae2fb62c566f643b4a4bf4654134c4e2e3cb82ccc6c90ddf2e"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">LOW_BALANCED</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">8</span></span><br /></dt>
+<dd><p>Run in lower balanced mode. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem20PerformanceProfile_t19EXTREME_POWER_SAVERE">
+<span id="_CPPv3N3zdl8DlSystem20PerformanceProfile_t19EXTREME_POWER_SAVERE"></span><span id="_CPPv2N3zdl8DlSystem20PerformanceProfile_t19EXTREME_POWER_SAVERE"></span><span class="target" id="group__c__plus__plus__apis_1ggaaff6a40e793d0fcae2fb62c566f643b4a899d0b5ce07e1dc03ba324562d5d2485"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EXTREME_POWER_SAVER</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">9</span></span><br /></dt>
+<dd><p>Run in lowest clock at the expense of performance. </p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="cpp enum">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem16ProfilingLevel_tE">
+<span id="_CPPv3N3zdl8DlSystem16ProfilingLevel_tE"></span><span id="_CPPv2N3zdl8DlSystem16ProfilingLevel_tE"></span><span class="target" id="group__c__plus__plus__apis_1ga957611cdf88dc2986791d2a258c2805c"></span><span class="k"><span class="pre">enum</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">ProfilingLevel_t</span></span></span><br /></dt>
+<dd><p>Enumeration of various profilngLevels that can be requested. </p>
+<p><em>Values:</em></p>
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem16ProfilingLevel_t3OFFE">
+<span id="_CPPv3N3zdl8DlSystem16ProfilingLevel_t3OFFE"></span><span id="_CPPv2N3zdl8DlSystem16ProfilingLevel_t3OFFE"></span><span class="target" id="group__c__plus__plus__apis_1gga957611cdf88dc2986791d2a258c2805ca88559a0cfd8250c9d65970cc145c92d4"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">OFF</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><br /></dt>
+<dd><p>No profiling. Collects no runtime stats in the <a class="reference internal" href="file_SNPE_SNPE.hpp.html#namespacezdl_1_1DiagLog"><span class="std std-ref">DiagLog</span></a> </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem16ProfilingLevel_t5BASICE">
+<span id="_CPPv3N3zdl8DlSystem16ProfilingLevel_t5BASICE"></span><span id="_CPPv2N3zdl8DlSystem16ProfilingLevel_t5BASICE"></span><span class="target" id="group__c__plus__plus__apis_1gga957611cdf88dc2986791d2a258c2805cae4ac03f6c9f00665644e868dd1fb9f1e"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">BASIC</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">1</span></span><br /></dt>
+<dd><p>Basic profiling Collects some runtime stats in the <a class="reference internal" href="file_SNPE_SNPE.hpp.html#namespacezdl_1_1DiagLog"><span class="std std-ref">DiagLog</span></a> </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem16ProfilingLevel_t8DETAILEDE">
+<span id="_CPPv3N3zdl8DlSystem16ProfilingLevel_t8DETAILEDE"></span><span id="_CPPv2N3zdl8DlSystem16ProfilingLevel_t8DETAILEDE"></span><span class="target" id="group__c__plus__plus__apis_1gga957611cdf88dc2986791d2a258c2805cabd990d94a212daf00c8198366850fcbe"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">DETAILED</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">2</span></span><br /></dt>
+<dd><p>Detailed profiling Collects more runtime stats in the <a class="reference internal" href="file_SNPE_SNPE.hpp.html#namespacezdl_1_1DiagLog"><span class="std std-ref">DiagLog</span></a>, including per-layer statistics Performance may be impacted </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem16ProfilingLevel_t8MODERATEE">
+<span id="_CPPv3N3zdl8DlSystem16ProfilingLevel_t8MODERATEE"></span><span id="_CPPv2N3zdl8DlSystem16ProfilingLevel_t8MODERATEE"></span><span class="target" id="group__c__plus__plus__apis_1gga957611cdf88dc2986791d2a258c2805ca5137485eff3ff278d233d993c8539599"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">MODERATE</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">3</span></span><br /></dt>
+<dd><p>Moderate profiling Collects more runtime stats in the <a class="reference internal" href="file_SNPE_SNPE.hpp.html#namespacezdl_1_1DiagLog"><span class="std std-ref">DiagLog</span></a>, no per-layer statistics </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem16ProfilingLevel_t7LINTINGE">
+<span id="_CPPv3N3zdl8DlSystem16ProfilingLevel_t7LINTINGE"></span><span id="_CPPv2N3zdl8DlSystem16ProfilingLevel_t7LINTINGE"></span><span class="target" id="group__c__plus__plus__apis_1gga957611cdf88dc2986791d2a258c2805ca7d0a33eee66270d2eaa183dd46cd3c5e"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">LINTING</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">4</span></span><br /></dt>
+<dd><p>Linting profiling HTP exclusive profiling level that collects in-depth performance metrics for each op in the graph including main thread execution time and time spent on parallel background ops </p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="cpp enum">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem23ExecutionPriorityHint_tE">
+<span id="_CPPv3N3zdl8DlSystem23ExecutionPriorityHint_tE"></span><span id="_CPPv2N3zdl8DlSystem23ExecutionPriorityHint_tE"></span><span class="target" id="group__c__plus__plus__apis_1ga9c7653c2efeb5c04504617b1e42fa3dd"></span><span class="k"><span class="pre">enum</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">ExecutionPriorityHint_t</span></span></span><br /></dt>
+<dd><p>Enumeration of various execution priority hints. </p>
+<p><em>Values:</em></p>
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem23ExecutionPriorityHint_t6NORMALE">
+<span id="_CPPv3N3zdl8DlSystem23ExecutionPriorityHint_t6NORMALE"></span><span id="_CPPv2N3zdl8DlSystem23ExecutionPriorityHint_t6NORMALE"></span><span class="target" id="group__c__plus__plus__apis_1gga9c7653c2efeb5c04504617b1e42fa3dda1e23852820b9154316c7c06e2b7ba051"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">NORMAL</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><br /></dt>
+<dd><p>Normal priority. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem23ExecutionPriorityHint_t4HIGHE">
+<span id="_CPPv3N3zdl8DlSystem23ExecutionPriorityHint_t4HIGHE"></span><span id="_CPPv2N3zdl8DlSystem23ExecutionPriorityHint_t4HIGHE"></span><span class="target" id="group__c__plus__plus__apis_1gga9c7653c2efeb5c04504617b1e42fa3ddab89de3b4b81c4facfac906edf29aec8c"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">HIGH</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">1</span></span><br /></dt>
+<dd><p>Higher than normal priority. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem23ExecutionPriorityHint_t3LOWE">
+<span id="_CPPv3N3zdl8DlSystem23ExecutionPriorityHint_t3LOWE"></span><span id="_CPPv2N3zdl8DlSystem23ExecutionPriorityHint_t3LOWE"></span><span class="target" id="group__c__plus__plus__apis_1gga9c7653c2efeb5c04504617b1e42fa3dda41bc94cbd8eebea13ce0491b2ac11b88"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">LOW</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">2</span></span><br /></dt>
+<dd><p>Lower priority. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem23ExecutionPriorityHint_t11NORMAL_HIGHE">
+<span id="_CPPv3N3zdl8DlSystem23ExecutionPriorityHint_t11NORMAL_HIGHE"></span><span id="_CPPv2N3zdl8DlSystem23ExecutionPriorityHint_t11NORMAL_HIGHE"></span><span class="target" id="group__c__plus__plus__apis_1gga9c7653c2efeb5c04504617b1e42fa3dda375063ae1ee4660409349a4d71ca1dae"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">NORMAL_HIGH</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">3</span></span><br /></dt>
+<dd><p>Between Normal and High priority. </p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="cpp enum">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem15ImageEncoding_tE">
+<span id="_CPPv3N3zdl8DlSystem15ImageEncoding_tE"></span><span id="_CPPv2N3zdl8DlSystem15ImageEncoding_tE"></span><span class="target" id="namespacezdl_1_1DlSystem_1a089fe11470d9688acdaf6be24347d2ea"></span><span class="k"><span class="pre">enum</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">ImageEncoding_t</span></span></span><br /></dt>
+<dd><p>Enumeration that lists the supported image encoding formats. </p>
+<p><em>Values:</em></p>
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem15ImageEncoding_t7UNKNOWNE">
+<span id="_CPPv3N3zdl8DlSystem15ImageEncoding_t7UNKNOWNE"></span><span id="_CPPv2N3zdl8DlSystem15ImageEncoding_t7UNKNOWNE"></span><span class="target" id="namespacezdl_1_1DlSystem_1a089fe11470d9688acdaf6be24347d2eaa696b031073e74bf2cb98e5ef201d4aa3"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">UNKNOWN</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><br /></dt>
+<dd><p>For unknown image type. Also used as a default value for ImageEncoding_t. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem15ImageEncoding_t3RGBE">
+<span id="_CPPv3N3zdl8DlSystem15ImageEncoding_t3RGBE"></span><span id="_CPPv2N3zdl8DlSystem15ImageEncoding_t3RGBE"></span><span class="target" id="namespacezdl_1_1DlSystem_1a089fe11470d9688acdaf6be24347d2eaa889574aebacda6bfd3e534e2b49b8028"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">RGB</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">1</span></span><br /></dt>
+<dd><p>The RGB format consists of 3 bytes per pixel: one byte for Red, one for Green, and one for Blue. The byte ordering is endian independent and is always in RGB byte order. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem15ImageEncoding_t6ARGB32E">
+<span id="_CPPv3N3zdl8DlSystem15ImageEncoding_t6ARGB32E"></span><span id="_CPPv2N3zdl8DlSystem15ImageEncoding_t6ARGB32E"></span><span class="target" id="namespacezdl_1_1DlSystem_1a089fe11470d9688acdaf6be24347d2eaabd1a8774728755ce2375121da15268a3"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">ARGB32</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">2</span></span><br /></dt>
+<dd><p>The ARGB32 format consists of 4 bytes per pixel: one byte for Red, one for Green, one for Blue, and one for the alpha channel. The alpha channel is ignored. The byte ordering depends on the underlying CPU. For little endian CPUs, the byte order is BGRA. For big endian CPUs, the byte order is ARGB. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem15ImageEncoding_t4RGBAE">
+<span id="_CPPv3N3zdl8DlSystem15ImageEncoding_t4RGBAE"></span><span id="_CPPv2N3zdl8DlSystem15ImageEncoding_t4RGBAE"></span><span class="target" id="namespacezdl_1_1DlSystem_1a089fe11470d9688acdaf6be24347d2eaaea3495a278957dc58165e48a8945469f"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">RGBA</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">3</span></span><br /></dt>
+<dd><p>The RGBA format consists of 4 bytes per pixel: one byte for Red, one for Green, one for Blue, and one for the alpha channel. The alpha channel is ignored. The byte ordering is endian independent and is always in RGBA byte order. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem15ImageEncoding_t9GRAYSCALEE">
+<span id="_CPPv3N3zdl8DlSystem15ImageEncoding_t9GRAYSCALEE"></span><span id="_CPPv2N3zdl8DlSystem15ImageEncoding_t9GRAYSCALEE"></span><span class="target" id="namespacezdl_1_1DlSystem_1a089fe11470d9688acdaf6be24347d2eaabfc52a030be6cc5e47fe83a81e3175a0"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">GRAYSCALE</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">4</span></span><br /></dt>
+<dd><p>The GRAYSCALE format is for 8-bit grayscale. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem15ImageEncoding_t4NV21E">
+<span id="_CPPv3N3zdl8DlSystem15ImageEncoding_t4NV21E"></span><span id="_CPPv2N3zdl8DlSystem15ImageEncoding_t4NV21E"></span><span class="target" id="namespacezdl_1_1DlSystem_1a089fe11470d9688acdaf6be24347d2eaa8e9f6aa1af7e0abbc7e64521e6ffe1b4"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">NV21</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">5</span></span><br /></dt>
+<dd><p>NV21 is the Android version of YUV. The Chrominance is down sampled and has a subsampling ratio of 4:2:0. Note that this image format has 3 channels, but the U and V channels are subsampled. For every four Y pixels there is one U and one V pixel. &#64;newpage </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem15ImageEncoding_t3BGRE">
+<span id="_CPPv3N3zdl8DlSystem15ImageEncoding_t3BGRE"></span><span id="_CPPv2N3zdl8DlSystem15ImageEncoding_t3BGRE"></span><span class="target" id="namespacezdl_1_1DlSystem_1a089fe11470d9688acdaf6be24347d2eaa2ad5640ebdec72fc79531d1778c6c2dc"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">BGR</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">6</span></span><br /></dt>
+<dd><p>The BGR format consists of 3 bytes per pixel: one byte for Red, one for Green and one for Blue. The byte ordering is endian independent and is always BGR byte order. </p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="cpp enum">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem10LogLevel_tE">
+<span id="_CPPv3N3zdl8DlSystem10LogLevel_tE"></span><span id="_CPPv2N3zdl8DlSystem10LogLevel_tE"></span><span class="target" id="namespacezdl_1_1DlSystem_1a67eae0105e452633b31592bd956fdd1b"></span><span class="k"><span class="pre">enum</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">LogLevel_t</span></span></span><br /></dt>
+<dd><p>Enumeration that lists the supported LogLevels that can be set by users. </p>
+<p><em>Values:</em></p>
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem10LogLevel_t9LOG_FATALE">
+<span id="_CPPv3N3zdl8DlSystem10LogLevel_t9LOG_FATALE"></span><span id="_CPPv2N3zdl8DlSystem10LogLevel_t9LOG_FATALE"></span><span class="target" id="namespacezdl_1_1DlSystem_1a67eae0105e452633b31592bd956fdd1bab3a01170f5777f9867632e3e4a04e3a9"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">LOG_FATAL</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><br /></dt>
+<dd><p>Enumeration variable to be used by user to set logging level to FATAL. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem10LogLevel_t9LOG_ERRORE">
+<span id="_CPPv3N3zdl8DlSystem10LogLevel_t9LOG_ERRORE"></span><span id="_CPPv2N3zdl8DlSystem10LogLevel_t9LOG_ERRORE"></span><span class="target" id="namespacezdl_1_1DlSystem_1a67eae0105e452633b31592bd956fdd1ba4490aa3d29644e716440fada68f54032"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">LOG_ERROR</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">1</span></span><br /></dt>
+<dd><p>Enumeration variable to be used by user to set logging level to ERROR. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem10LogLevel_t8LOG_WARNE">
+<span id="_CPPv3N3zdl8DlSystem10LogLevel_t8LOG_WARNE"></span><span id="_CPPv2N3zdl8DlSystem10LogLevel_t8LOG_WARNE"></span><span class="target" id="namespacezdl_1_1DlSystem_1a67eae0105e452633b31592bd956fdd1ba803a17d78b6923b90494820a5000d22b"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">LOG_WARN</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">2</span></span><br /></dt>
+<dd><p>Enumeration variable to be used by user to set logging level to WARN. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem10LogLevel_t8LOG_INFOE">
+<span id="_CPPv3N3zdl8DlSystem10LogLevel_t8LOG_INFOE"></span><span id="_CPPv2N3zdl8DlSystem10LogLevel_t8LOG_INFOE"></span><span class="target" id="namespacezdl_1_1DlSystem_1a67eae0105e452633b31592bd956fdd1ba41abf3cca8cee8cdae01749df7a991c6"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">LOG_INFO</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">3</span></span><br /></dt>
+<dd><p>Enumeration variable to be used by user to set logging level to INFO. </p>
+</dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem10LogLevel_t11LOG_VERBOSEE">
+<span id="_CPPv3N3zdl8DlSystem10LogLevel_t11LOG_VERBOSEE"></span><span id="_CPPv2N3zdl8DlSystem10LogLevel_t11LOG_VERBOSEE"></span><span class="target" id="namespacezdl_1_1DlSystem_1a67eae0105e452633b31592bd956fdd1ba673e841c68db57daad3d2b949a08e5cf"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">LOG_VERBOSE</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">4</span></span><br /></dt>
+<dd><p>Enumeration variable to be used by user to set logging level to VERBOSE. </p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="cpp enum">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem18IOBufferDataType_tE">
+<span id="_CPPv3N3zdl8DlSystem18IOBufferDataType_tE"></span><span id="_CPPv2N3zdl8DlSystem18IOBufferDataType_tE"></span><span class="target" id="namespacezdl_1_1DlSystem_1aade6a059ec7d85b25ad69976c55e217a"></span><span class="k"><span class="pre">enum</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">IOBufferDataType_t</span></span></span><br /></dt>
+<dd><p><em>Values:</em></p>
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem18IOBufferDataType_t11UNSPECIFIEDE">
+<span id="_CPPv3N3zdl8DlSystem18IOBufferDataType_t11UNSPECIFIEDE"></span><span id="_CPPv2N3zdl8DlSystem18IOBufferDataType_t11UNSPECIFIEDE"></span><span class="target" id="namespacezdl_1_1DlSystem_1aade6a059ec7d85b25ad69976c55e217aae5c45f61e29cbfbb0902e17e04665fb9"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">UNSPECIFIED</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem18IOBufferDataType_t17FLOATING_POINT_32E">
+<span id="_CPPv3N3zdl8DlSystem18IOBufferDataType_t17FLOATING_POINT_32E"></span><span id="_CPPv2N3zdl8DlSystem18IOBufferDataType_t17FLOATING_POINT_32E"></span><span class="target" id="namespacezdl_1_1DlSystem_1aade6a059ec7d85b25ad69976c55e217aaf6267010adfb13eab7491bc70e3b266d"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">FLOATING_POINT_32</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">1</span></span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem18IOBufferDataType_t17FLOATING_POINT_16E">
+<span id="_CPPv3N3zdl8DlSystem18IOBufferDataType_t17FLOATING_POINT_16E"></span><span id="_CPPv2N3zdl8DlSystem18IOBufferDataType_t17FLOATING_POINT_16E"></span><span class="target" id="namespacezdl_1_1DlSystem_1aade6a059ec7d85b25ad69976c55e217aa0f0af43f9de38155b557d930c92e1bd1"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">FLOATING_POINT_16</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">2</span></span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem18IOBufferDataType_t13FIXED_POINT_8E">
+<span id="_CPPv3N3zdl8DlSystem18IOBufferDataType_t13FIXED_POINT_8E"></span><span id="_CPPv2N3zdl8DlSystem18IOBufferDataType_t13FIXED_POINT_8E"></span><span class="target" id="namespacezdl_1_1DlSystem_1aade6a059ec7d85b25ad69976c55e217aaeeec56607c0a40d8502acbc6e3e26577"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">FIXED_POINT_8</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">3</span></span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem18IOBufferDataType_t14FIXED_POINT_16E">
+<span id="_CPPv3N3zdl8DlSystem18IOBufferDataType_t14FIXED_POINT_16E"></span><span id="_CPPv2N3zdl8DlSystem18IOBufferDataType_t14FIXED_POINT_16E"></span><span class="target" id="namespacezdl_1_1DlSystem_1aade6a059ec7d85b25ad69976c55e217aa6757a7c5b18719bd56e8945baca719b9"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">FIXED_POINT_16</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">4</span></span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem18IOBufferDataType_t6INT_32E">
+<span id="_CPPv3N3zdl8DlSystem18IOBufferDataType_t6INT_32E"></span><span id="_CPPv2N3zdl8DlSystem18IOBufferDataType_t6INT_32E"></span><span class="target" id="namespacezdl_1_1DlSystem_1aade6a059ec7d85b25ad69976c55e217aa0ee9ad504be0b43fb47f6b9b6b9efa1d"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">INT_32</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">5</span></span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem18IOBufferDataType_t7UINT_32E">
+<span id="_CPPv3N3zdl8DlSystem18IOBufferDataType_t7UINT_32E"></span><span id="_CPPv2N3zdl8DlSystem18IOBufferDataType_t7UINT_32E"></span><span class="target" id="namespacezdl_1_1DlSystem_1aade6a059ec7d85b25ad69976c55e217aaaa5a4a2d0c612e11979ae4d8ea4571be"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">UINT_32</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">6</span></span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem18IOBufferDataType_t5INT_8E">
+<span id="_CPPv3N3zdl8DlSystem18IOBufferDataType_t5INT_8E"></span><span id="_CPPv2N3zdl8DlSystem18IOBufferDataType_t5INT_8E"></span><span class="target" id="namespacezdl_1_1DlSystem_1aade6a059ec7d85b25ad69976c55e217aaabd2c1dbb7d315111131fdaff31b70b0"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">INT_8</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">7</span></span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem18IOBufferDataType_t6UINT_8E">
+<span id="_CPPv3N3zdl8DlSystem18IOBufferDataType_t6UINT_8E"></span><span id="_CPPv2N3zdl8DlSystem18IOBufferDataType_t6UINT_8E"></span><span class="target" id="namespacezdl_1_1DlSystem_1aade6a059ec7d85b25ad69976c55e217aaa3e102d822b1c3bf2d77c7427fe4294f"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">UINT_8</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">8</span></span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem18IOBufferDataType_t6INT_16E">
+<span id="_CPPv3N3zdl8DlSystem18IOBufferDataType_t6INT_16E"></span><span id="_CPPv2N3zdl8DlSystem18IOBufferDataType_t6INT_16E"></span><span class="target" id="namespacezdl_1_1DlSystem_1aade6a059ec7d85b25ad69976c55e217aaf88cb6ab88499920f0fa561920083804"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">INT_16</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">9</span></span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem18IOBufferDataType_t7UINT_16E">
+<span id="_CPPv3N3zdl8DlSystem18IOBufferDataType_t7UINT_16E"></span><span id="_CPPv2N3zdl8DlSystem18IOBufferDataType_t7UINT_16E"></span><span class="target" id="namespacezdl_1_1DlSystem_1aade6a059ec7d85b25ad69976c55e217aa4fd14f951d03c517bd311d6e5404431d"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">UINT_16</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">10</span></span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N3zdl8DlSystem18IOBufferDataType_t6BOOL_8E">
+<span id="_CPPv3N3zdl8DlSystem18IOBufferDataType_t6BOOL_8E"></span><span id="_CPPv2N3zdl8DlSystem18IOBufferDataType_t6BOOL_8E"></span><span class="target" id="namespacezdl_1_1DlSystem_1aade6a059ec7d85b25ad69976c55e217aacfdaa6672b54b4df0e95a740458b5fd7"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">BOOL_8</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">11</span></span><br /></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2020-2023, Qualcomm Technologies, Inc..
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

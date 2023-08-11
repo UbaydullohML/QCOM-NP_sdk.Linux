@@ -1,0 +1,485 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Program Listing for File SNPE.hpp &mdash; Snapdragon Neural Processing Engine SDK</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/custom_css.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/collapsible-lists/css/tree_view.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+        <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Qualcomm® Neural Processing SDK
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                v2.12.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../general/revision_history.html">Revision History</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/revision_history_windows.html">Revision History - Windows</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/overview.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/setup.html">Setup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/usergroup1.html">Network Models</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/usergroup5.html">Input Data and Preprocessing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/usergroup6.html">Tutorials and Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/usergroup10.html">Benchmarking and Accuracy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/tools.html">Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/usergroup11.html">Debug Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/api.html">API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/limitations.html">Limitations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/appx_ref.html">References</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Qualcomm® Neural Processing SDK</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Program Listing for File SNPE.hpp</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="program-listing-for-file-snpe-hpp">
+<span id="program-listing-file-snpe-snpe-hpp"></span><h1>Program Listing for File SNPE.hpp<a class="headerlink" href="#program-listing-for-file-snpe-hpp" title="Permalink to this headline">¶</a></h1>
+<p>↰ <a class="reference internal" href="file_SNPE_SNPE.hpp.html#file-snpe-snpe-hpp"><span class="std std-ref">Return to documentation for file</span></a> (<code class="docutils literal notranslate"><span class="pre">SNPE/SNPE.hpp</span></code>)</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="c1">//==============================================================================</span>
+<span class="c1">//</span>
+<span class="c1">//  Copyright (c) 2015-2021 Qualcomm Technologies, Inc.</span>
+<span class="c1">//  All Rights Reserved.</span>
+<span class="c1">//  Confidential and Proprietary - Qualcomm Technologies, Inc.</span>
+<span class="c1">//</span>
+<span class="c1">//==============================================================================</span>
+
+<span class="cp">#ifndef _SNPE_SNPE_HPP_</span>
+<span class="cp">#define _SNPE_SNPE_HPP_</span>
+
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;DlSystem/DlOptional.hpp&quot;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;DlSystem/DlVersion.hpp&quot;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;DlSystem/IBufferAttributes.hpp&quot;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;DlSystem/ITensor.hpp&quot;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;DlSystem/TensorShape.hpp&quot;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;DlSystem/TensorMap.hpp&quot;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;DlSystem/String.hpp&quot;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;DlSystem/StringList.hpp&quot;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;DlSystem/IUserBuffer.hpp&quot;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;DlSystem/UserBufferMap.hpp&quot;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;DlSystem/UserMemoryMap.hpp&quot;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;DlSystem/ZdlExportDefine.hpp&quot;</span>
+
+<span class="k">namespace</span><span class="w"> </span><span class="nn">zdl</span><span class="w"> </span><span class="p">{</span>
+<span class="w">   </span><span class="k">namespace</span><span class="w"> </span><span class="nn">SNPE</span>
+<span class="w">   </span><span class="p">{</span>
+<span class="w">      </span><span class="k">class</span><span class="w"> </span><span class="nc">SnpeRuntime</span><span class="p">;</span>
+<span class="w">   </span><span class="p">}</span>
+<span class="p">}</span>
+<span class="k">namespace</span><span class="w"> </span><span class="nn">zdl</span><span class="w"> </span><span class="p">{</span>
+<span class="w">   </span><span class="k">namespace</span><span class="w"> </span><span class="nn">DiagLog</span>
+<span class="w">   </span><span class="p">{</span>
+<span class="w">      </span><span class="k">class</span><span class="w"> </span><span class="nc">IDiagLog</span><span class="p">;</span>
+<span class="w">   </span><span class="p">}</span>
+<span class="p">}</span>
+
+<span class="k">namespace</span><span class="w"> </span><span class="nn">zdl</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">namespace</span><span class="w"> </span><span class="nn">SNPE</span><span class="w"> </span><span class="p">{</span>
+<span class="cm">/** @addtogroup c_plus_plus_apis C++</span>
+<span class="cm">@{ */</span>
+
+<span class="cm">/**</span>
+<span class="cm"> * @brief .</span>
+<span class="cm"> *</span>
+<span class="cm"> * The SNPE interface class definition</span>
+<span class="cm"> */</span>
+<span class="k">class</span><span class="w"> </span><span class="nc">ZDL_EXPORT</span><span class="w"> </span><span class="n">SNPE</span><span class="w"> </span><span class="k">final</span>
+<span class="p">{</span>
+<span class="k">public</span><span class="o">:</span>
+
+<span class="w">   </span><span class="c1">// keep this undocumented to be hidden in doxygen using HIDE_UNDOC_MEMBERS</span>
+<span class="w">   </span><span class="k">explicit</span><span class="w"> </span><span class="n">SNPE</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">unique_ptr</span><span class="o">&lt;</span><span class="n">zdl</span><span class="o">::</span><span class="n">SNPE</span><span class="o">::</span><span class="n">SnpeRuntime</span><span class="o">&gt;&amp;&amp;</span><span class="w"> </span><span class="n">runtime</span><span class="p">)</span><span class="w"> </span><span class="k">noexcept</span><span class="p">;</span>
+<span class="w">   </span><span class="o">~</span><span class="n">SNPE</span><span class="p">();</span>
+
+<span class="w">   </span><span class="cm">/**</span>
+<span class="cm">    * @brief Gets the names of input tensors to the network</span>
+<span class="cm">    *</span>
+<span class="cm">    * To support multiple input scenarios, where multiple tensors are</span>
+<span class="cm">    * passed through execute() in a TensorMap, each tensor needs to</span>
+<span class="cm">    * be uniquely named. The names of tensors can be retrieved</span>
+<span class="cm">    * through this function.</span>
+<span class="cm">    *</span>
+<span class="cm">    * In the case of a single input, one name will be returned.</span>
+<span class="cm">    *</span>
+<span class="cm">    * @note Note that because the returned value is an Optional list,</span>
+<span class="cm">    * the list must be verified as boolean true value before being</span>
+<span class="cm">    * dereferenced.</span>
+<span class="cm">    *</span>
+<span class="cm">    * @return An Optional List of input tensor names.</span>
+<span class="cm">    *</span>
+<span class="cm">    * @see zdl::DlSystem::Optional</span>
+<span class="cm">    */</span>
+<span class="w">   </span><span class="n">zdl</span><span class="o">::</span><span class="n">DlSystem</span><span class="o">::</span><span class="n">Optional</span><span class="o">&lt;</span><span class="n">zdl</span><span class="o">::</span><span class="n">DlSystem</span><span class="o">::</span><span class="n">StringList</span><span class="o">&gt;</span>
+<span class="w">      </span><span class="n">getInputTensorNames</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="k">noexcept</span><span class="p">;</span>
+
+<span class="w">    </span><span class="cm">/**</span>
+<span class="cm">     * @brief Gets the names of output tensors to the network</span>
+<span class="cm">     *</span>
+<span class="cm">     * @return List of output tensor names.</span>
+<span class="cm">     */</span>
+<span class="w">   </span><span class="n">zdl</span><span class="o">::</span><span class="n">DlSystem</span><span class="o">::</span><span class="n">Optional</span><span class="o">&lt;</span><span class="n">zdl</span><span class="o">::</span><span class="n">DlSystem</span><span class="o">::</span><span class="n">StringList</span><span class="o">&gt;</span>
+<span class="w">      </span><span class="n">getOutputTensorNames</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="k">noexcept</span><span class="p">;</span>
+
+<span class="w">   </span><span class="cm">/**</span>
+<span class="cm">    * @brief Gets the name of output tensor from the input layer name</span>
+<span class="cm">    *</span>
+<span class="cm">    * @return Output tensor name.</span>
+<span class="cm">    */</span>
+<span class="w">   </span><span class="n">zdl</span><span class="o">::</span><span class="n">DlSystem</span><span class="o">::</span><span class="n">StringList</span>
+<span class="w">      </span><span class="nf">getOutputTensorNamesByLayerName</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="o">*</span><span class="n">name</span><span class="p">)</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="k">noexcept</span><span class="p">;</span>
+
+<span class="w">   </span><span class="cm">/**</span>
+<span class="cm">    * @brief Processes the input data and returns the output</span>
+<span class="cm">    *</span>
+<span class="cm">    * @param[in] A map of tensors that contains the input data for</span>
+<span class="cm">    *            each input. The names of tensors needs to be</span>
+<span class="cm">    *            matched with names retrieved through</span>
+<span class="cm">    *            getInputTensorNames()</span>
+<span class="cm">    *</span>
+<span class="cm">    * @param[in,out] An empty map of tensors that will contain the output</span>
+<span class="cm">    *                data of potentially multiple layers (the key</span>
+<span class="cm">    *                in the map is the layer name) upon return</span>
+<span class="cm">    *</span>
+<span class="cm">    * @note output tensormap has to be empty.  To forward propagate</span>
+<span class="cm">    *       and get results in user-supplied tensors, use</span>
+<span class="cm">    *       executeWithSuppliedOutputTensors.</span>
+<span class="cm">    */</span>
+<span class="w">   </span><span class="kt">bool</span><span class="w"> </span><span class="nf">execute</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">zdl</span><span class="o">::</span><span class="n">DlSystem</span><span class="o">::</span><span class="n">TensorMap</span><span class="w"> </span><span class="o">&amp;</span><span class="n">input</span><span class="p">,</span>
+<span class="w">                </span><span class="n">zdl</span><span class="o">::</span><span class="n">DlSystem</span><span class="o">::</span><span class="n">TensorMap</span><span class="w"> </span><span class="o">&amp;</span><span class="n">output</span><span class="p">)</span><span class="w"> </span><span class="k">noexcept</span><span class="p">;</span>
+
+<span class="w">   </span><span class="cm">/**</span>
+<span class="cm">    * @brief Processes the input data and returns the output</span>
+<span class="cm">    *</span>
+<span class="cm">    * @param[in] A single tensor contains the input data.</span>
+<span class="cm">    *</span>
+<span class="cm">    * @param[in,out] An empty map of tensors that will contain the output</span>
+<span class="cm">    *                data of potentially multiple layers (the key</span>
+<span class="cm">    *                in the map is the layer name) upon return</span>
+<span class="cm">    *</span>
+<span class="cm">    * @note output tensormap has to be empty.</span>
+<span class="cm">    */</span>
+<span class="w">   </span><span class="kt">bool</span><span class="w"> </span><span class="nf">execute</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">zdl</span><span class="o">::</span><span class="n">DlSystem</span><span class="o">::</span><span class="n">ITensor</span><span class="w"> </span><span class="o">*</span><span class="n">input</span><span class="p">,</span>
+<span class="w">                </span><span class="n">zdl</span><span class="o">::</span><span class="n">DlSystem</span><span class="o">::</span><span class="n">TensorMap</span><span class="w"> </span><span class="o">&amp;</span><span class="n">output</span><span class="p">)</span><span class="w"> </span><span class="k">noexcept</span><span class="p">;</span>
+
+<span class="w">   </span><span class="cm">/**</span>
+<span class="cm">    * @brief Processes the input data and returns the output, using</span>
+<span class="cm">    *        user-supplied buffers</span>
+<span class="cm">    *</span>
+<span class="cm">    * @param[in] A map of UserBuffers that contains the input data for</span>
+<span class="cm">    *            each input. The names of UserBuffers needs to be</span>
+<span class="cm">    *            matched with names retrieved through</span>
+<span class="cm">    *            getInputTensorNames()</span>
+<span class="cm">    *</span>
+<span class="cm">    * @param[in,out] A map of UserBuffers that will hold the output</span>
+<span class="cm">    *                data of potentially multiple layers (the key</span>
+<span class="cm">    *                in the map is the UserBuffer name)</span>
+<span class="cm">    *</span>
+<span class="cm">    * @note input and output UserBuffer maps must be fully pre-populated. with</span>
+<span class="cm">    *       dimensions matching what the network expects.</span>
+<span class="cm">    *       For example, if there are 5 output UserBuffers they all have to be</span>
+<span class="cm">    *       present in map.</span>
+<span class="cm">    *</span>
+<span class="cm">    *       Caller must guarantee that for the duration of execute(), the buffer</span>
+<span class="cm">    *       stored in UserBuffer would remain valid.  For more detail on buffer</span>
+<span class="cm">    *       ownership and lifetime requirements, please refer to zdl::DlSystem::UserBuffer</span>
+<span class="cm">    *       documentation.</span>
+<span class="cm">    */</span>
+<span class="w">   </span><span class="kt">bool</span><span class="w"> </span><span class="nf">execute</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">zdl</span><span class="o">::</span><span class="n">DlSystem</span><span class="o">::</span><span class="n">UserBufferMap</span><span class="w"> </span><span class="o">&amp;</span><span class="n">input</span><span class="p">,</span>
+<span class="w">                </span><span class="k">const</span><span class="w"> </span><span class="n">zdl</span><span class="o">::</span><span class="n">DlSystem</span><span class="o">::</span><span class="n">UserBufferMap</span><span class="w"> </span><span class="o">&amp;</span><span class="n">output</span><span class="p">)</span><span class="w"> </span><span class="k">noexcept</span><span class="p">;</span>
+
+
+<span class="w">    </span><span class="cm">/**</span>
+<span class="cm">    * @brief Register Client ION Buffers</span>
+<span class="cm">    * @param[in] A UserMemoryMap of virtual addresses</span>
+<span class="cm">    *</span>
+<span class="cm">    */</span>
+<span class="w">   </span><span class="kt">bool</span><span class="w"> </span><span class="nf">registerIonBuffers</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">zdl</span><span class="o">::</span><span class="n">DlSystem</span><span class="o">::</span><span class="n">UserMemoryMap</span><span class="o">&amp;</span><span class="w"> </span><span class="n">ionBufferMap</span><span class="p">)</span><span class="w"> </span><span class="k">noexcept</span><span class="p">;</span>
+
+<span class="w">    </span><span class="cm">/**</span>
+<span class="cm">    * @brief Deregister Client ION Buffers</span>
+<span class="cm">    * @param[in] A StringList of ION Buffer names</span>
+<span class="cm">    *</span>
+<span class="cm">    */</span>
+<span class="w">   </span><span class="kt">bool</span><span class="w"> </span><span class="nf">deregisterIonBuffers</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">zdl</span><span class="o">::</span><span class="n">DlSystem</span><span class="o">::</span><span class="n">StringList</span><span class="o">&amp;</span><span class="w"> </span><span class="n">ionBufferNames</span><span class="p">)</span><span class="w"> </span><span class="k">noexcept</span><span class="p">;</span>
+
+<span class="w">    </span><span class="cm">/**</span>
+<span class="cm">    * @brief Returns the version string embedded at model conversion</span>
+<span class="cm">    * time.</span>
+<span class="cm">    *</span>
+<span class="cm">    * @return Model version string, which is a free-form string</span>
+<span class="cm">    *         supplied at the time of the conversion</span>
+<span class="cm">    *</span>
+<span class="cm">    */</span>
+<span class="w">   </span><span class="n">zdl</span><span class="o">::</span><span class="n">DlSystem</span><span class="o">::</span><span class="n">String</span><span class="w"> </span><span class="nf">getModelVersion</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="k">noexcept</span><span class="p">;</span>
+
+<span class="w">   </span><span class="cm">/**</span>
+<span class="cm">    * @brief Returns the dimensions of the input data to the model in the</span>
+<span class="cm">    * form of TensorShape. The dimensions in TensorShape corresponds to</span>
+<span class="cm">    * what the tensor dimensions would need to be for an input tensor to</span>
+<span class="cm">    * the model.</span>
+<span class="cm">    *</span>
+<span class="cm">    * @param[in] layer input name.</span>
+<span class="cm">    *</span>
+<span class="cm">    * @note Note that this function only makes sense for networks</span>
+<span class="cm">    *       that have a fixed input size. For networks in which the</span>
+<span class="cm">    *       input size varies with each call of Execute(), this</span>
+<span class="cm">    *       function should not be used.</span>
+<span class="cm">    *</span>
+<span class="cm">    * @note Because the returned type is an Optional instance, it must</span>
+<span class="cm">    *       be verified as a boolean true value before being dereferenced.</span>
+<span class="cm">    *</span>
+<span class="cm">    * @return An Optional instance of TensorShape that maintains dimensions,</span>
+<span class="cm">    *         matching the tensor dimensions for input to the model,</span>
+<span class="cm">    *         where the last entry is the fastest varying dimension, etc.</span>
+<span class="cm">    *</span>
+<span class="cm">    * @see zdl::DlSystem::ITensor</span>
+<span class="cm">    * @see zdl::DlSystem::TensorShape</span>
+<span class="cm">    * @see zdl::DlSystem::Optional</span>
+<span class="cm">    */</span>
+<span class="w">   </span><span class="n">zdl</span><span class="o">::</span><span class="n">DlSystem</span><span class="o">::</span><span class="n">Optional</span><span class="o">&lt;</span><span class="n">zdl</span><span class="o">::</span><span class="n">DlSystem</span><span class="o">::</span><span class="n">TensorShape</span><span class="o">&gt;</span>
+<span class="w">      </span><span class="n">getInputDimensions</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="k">noexcept</span><span class="p">;</span>
+<span class="w">   </span><span class="n">zdl</span><span class="o">::</span><span class="n">DlSystem</span><span class="o">::</span><span class="n">Optional</span><span class="o">&lt;</span><span class="n">zdl</span><span class="o">::</span><span class="n">DlSystem</span><span class="o">::</span><span class="n">TensorShape</span><span class="o">&gt;</span>
+<span class="w">      </span><span class="n">getInputDimensions</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="o">*</span><span class="n">name</span><span class="p">)</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="k">noexcept</span><span class="p">;</span>
+
+<span class="w">   </span><span class="cm">/**</span>
+<span class="cm">    * @brief Gets the output layer(s) for the network.</span>
+<span class="cm">    *</span>
+<span class="cm">    * Note that the output layers returned by this function may be</span>
+<span class="cm">    * different than those specified when the network was created</span>
+<span class="cm">    * via the zdl::SNPE::SNPEBuilder. For example, if the</span>
+<span class="cm">    * network was created in debug mode with no explicit output</span>
+<span class="cm">    * layers specified, this will contain all layers.</span>
+<span class="cm">    *</span>
+<span class="cm">    * @note Note that because the returned value is an Optional StringList,</span>
+<span class="cm">    * the list must be verified as a boolean true value before being</span>
+<span class="cm">    * dereferenced.</span>
+<span class="cm">    *</span>
+<span class="cm">    * @return A List of output layer names.</span>
+<span class="cm">    *</span>
+<span class="cm">    * @see zdl::DlSystem::Optional</span>
+<span class="cm">    */</span>
+<span class="w">   </span><span class="n">zdl</span><span class="o">::</span><span class="n">DlSystem</span><span class="o">::</span><span class="n">Optional</span><span class="o">&lt;</span><span class="n">zdl</span><span class="o">::</span><span class="n">DlSystem</span><span class="o">::</span><span class="n">StringList</span><span class="o">&gt;</span>
+<span class="w">      </span><span class="n">getOutputLayerNames</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="k">noexcept</span><span class="p">;</span>
+
+<span class="w">   </span><span class="cm">/**</span>
+<span class="cm">     * @brief Returns attributes of buffers used to feed input tensors and receive result from output tensors.</span>
+<span class="cm">     *</span>
+<span class="cm">     * @param[in] Tensor name.</span>
+<span class="cm">     *</span>
+<span class="cm">     * @return BufferAttributes of input/output tensor named</span>
+<span class="cm">     */</span>
+<span class="w">   </span><span class="n">zdl</span><span class="o">::</span><span class="n">DlSystem</span><span class="o">::</span><span class="n">Optional</span><span class="o">&lt;</span><span class="n">zdl</span><span class="o">::</span><span class="n">DlSystem</span><span class="o">::</span><span class="n">IBufferAttributes</span><span class="o">*&gt;</span><span class="w"> </span><span class="n">getInputOutputBufferAttributes</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="o">*</span><span class="n">name</span><span class="p">)</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="k">noexcept</span><span class="p">;</span>
+
+<span class="w">   </span><span class="cm">/**</span>
+<span class="cm">    * @brief .</span>
+<span class="cm">    *</span>
+<span class="cm">    * Get the diagnostic logging interface</span>
+<span class="cm">    *</span>
+<span class="cm">    * @note Note that because the returned type is an Optional instance,</span>
+<span class="cm">    * it must be verified as a boolean true value before being</span>
+<span class="cm">    * dereferenced.</span>
+<span class="cm">    *</span>
+<span class="cm">    * @see zdl::DlSystem::Optional</span>
+<span class="cm">    */</span>
+<span class="w">   </span><span class="n">zdl</span><span class="o">::</span><span class="n">DlSystem</span><span class="o">::</span><span class="n">Optional</span><span class="o">&lt;</span><span class="n">zdl</span><span class="o">::</span><span class="n">DiagLog</span><span class="o">::</span><span class="n">IDiagLog</span><span class="o">*&gt;</span>
+<span class="w">      </span><span class="n">getDiagLogInterface</span><span class="p">()</span><span class="w"> </span><span class="k">noexcept</span><span class="p">;</span>
+
+<span class="k">private</span><span class="o">:</span>
+<span class="w">   </span><span class="n">SNPE</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">SNPE</span><span class="o">&amp;</span><span class="p">)</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">delete</span><span class="p">;</span>
+<span class="w">   </span><span class="n">SNPE</span><span class="o">&amp;</span><span class="w"> </span><span class="k">operator</span><span class="o">=</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">SNPE</span><span class="o">&amp;</span><span class="p">)</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">delete</span><span class="p">;</span>
+
+<span class="w">   </span><span class="n">std</span><span class="o">::</span><span class="n">unique_ptr</span><span class="o">&lt;</span><span class="n">SnpeRuntime</span><span class="o">&gt;</span><span class="w"> </span><span class="n">m_Runtime</span><span class="p">;</span>
+<span class="p">};</span>
+
+<span class="cm">/** @} */</span><span class="w"> </span><span class="cm">/* end_addtogroup c_plus_plus_apis C++ */</span>
+<span class="p">}}</span>
+
+<span class="cp">#endif</span>
+</pre></div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2020-2023, Qualcomm Technologies, Inc..
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
