@@ -1,0 +1,130 @@
+#!/usr/bin/env python3
+# =============================================================================
+#
+#  Copyright (c) 2023 Qualcomm Technologies, Inc.
+#  All Rights Reserved.
+#  Confidential and Proprietary - Qualcomm Technologies, Inc.
+#
+# =============================================================================
+"""
+Please note that this script should be compilable with python2 as well.
+The reason behind is that this script is mostly used python2 which we would
+error back saying that the expected python version.
+Please use "python2 -m py_compile <currentFilePath>" to see if it broke.
+"""
+
+import sys
+from typing import Dict
+
+class SupportedVersion:
+    version: str
+    overrides: Dict[str, str]
+
+    def __init__(self, ver):
+        self.version = ver
+        self.overrides = {}
+
+supportedPythonVersions = {}
+
+version36 = SupportedVersion("3.6")
+supportedPythonVersions[version36.version] = version36
+
+version38 = SupportedVersion("3.8")
+version38.overrides["numpy"] = "1.23.5"
+supportedPythonVersions[version38.version] = version38
+
+currentVersion = f"{sys.version_info[0]}.{sys.version_info[1]}"
+if (currentVersion not in supportedPythonVersions):
+    print(
+        "Error: Supported versions of Python are [{0}]. Found instead: {1}".format(
+            ', '.join(supportedPythonVersions.keys()),
+            currentVersion,
+        )
+    )
+    exit()
+
+import subprocess
+import pkg_resources
+
+requiredPackages = {
+    "absl-py": "0.13.0",
+    "attrs": "22.2.0",
+    "decorator": "5.1.1",
+    "invoke": "2.0.0",
+    "joblib": "1.0.1",
+    "lxml": "4.6.2",
+    "mako": "1.1.0",
+    "matplotlib": "3.3.4",
+    "numpy": "1.18.5",
+    "opencv-python": "4.5.2.52",
+    "packaging": "21.0",
+    "pandas": "0.25.3",
+    "pathlib2": "2.3.6",
+    "pillow": "6.2.1",
+    "protobuf": "3.19.6",
+    "pytest": "7.0.1",
+    "pyyaml": "3.10",
+    "scipy": "1.3.2",
+    "six": "1.16.0",
+    "tabulate": "0.8.5",
+}
+
+for lib, version in supportedPythonVersions[currentVersion].overrides.items():
+    requiredPackages[lib] = version
+
+installedPackages = {}
+for installedPackage in pkg_resources.working_set:
+    installedPackageName = installedPackage.key
+    if not installedPackageName in requiredPackages.keys():
+        continue
+    installedPackages[installedPackage.key] = installedPackage.version
+
+toBeInstalledPackages = {}
+for requiredPackageName in requiredPackages.keys():
+    if requiredPackageName in installedPackages.keys():
+        recommendedPackageVersion = requiredPackages[requiredPackageName]
+        installedPackageVersion = installedPackages[requiredPackageName]
+        if recommendedPackageVersion == installedPackageVersion:
+            print(
+                "{0} is already installed with tested version: {1}".format(
+                    requiredPackageName, recommendedPackageVersion
+                )
+            )
+        else:
+            print(
+                "WARNING: {0} installed version: {1} does not match tested version: {2}".format(
+                    requiredPackageName,
+                    installedPackageVersion,
+                    recommendedPackageVersion,
+                )
+            )
+    else:
+        toBeInstalledPackages[requiredPackageName] = requiredPackages[
+            requiredPackageName
+        ]
+
+if len(toBeInstalledPackages) > 0:
+    print(
+        "Python Modules missing: {0}".format(
+            ", ".join(map(str, toBeInstalledPackages.keys()))
+        )
+    )
+    print("Installing missing modules using pip3")
+    for toBeInstalledPackage in toBeInstalledPackages:
+        print(
+            "Installing {0} version: {1}".format(
+                toBeInstalledPackage, toBeInstalledPackages[toBeInstalledPackage]
+            )
+        )
+        subprocess.check_call(
+            [
+                sys.executable,
+                '-m',
+                "pip",
+                "install",
+                toBeInstalledPackage
+                + "=="
+                + toBeInstalledPackages[toBeInstalledPackage],
+            ],
+            stdout=subprocess.DEVNULL,
+        )

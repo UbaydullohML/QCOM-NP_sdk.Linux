@@ -1,0 +1,63 @@
+#!/usr/bin/env python3
+# =============================================================================
+#
+#  Copyright (c) 2022 Qualcomm Technologies, Inc.
+#  All Rights Reserved.
+#  Confidential and Proprietary - Qualcomm Technologies, Inc.
+#
+# =============================================================================
+import argparse
+import logging
+import os
+import sys
+
+try:
+    from qti.aisw.dlc_utils import snpe_dlc_utils
+    from qti.aisw.arch_checker.snpe_arch_checker import SnpeArchChecker
+except ImportError as ie:
+    print("Failed to find necessary package:")
+    print(str(ie))
+    print("Please ensure that $SNPE_ROOT/lib/python is in your PYTHONPATH")
+    sys.exit(1)
+
+
+def main():
+    parser = argparse.ArgumentParser()
+    parser._action_groups.pop()
+
+    required = parser.add_argument_group('required arguments')
+    required.add_argument('-i', '--input_dlc', required=True, type=str, help="Path to a DLC file")
+
+    optional = parser.add_argument_group('optional arguments')
+    optional.add_argument('-o', '--output_path', required=False, type=str, help="Path where the output \
+        csv should be saved. If not specified, the output csv will be written to the same path as the input dlc file")
+
+    args = parser.parse_args()
+    logger = snpe_dlc_utils.setUpLogger(True)
+
+    logger = logging.getLogger()
+    if not os.path.exists(args.input_dlc):
+        logger.error("Cannot find archive DLC file " + args.input_dlc)
+        sys.exit(-1)
+
+    m = snpe_dlc_utils.ModelInfo()
+    m.load(args.input_dlc)
+    c_ir_graph = m.model_reader.get_ir_graph()
+
+    constraints_json = os.path.join(os.environ.get('SNPE_ROOT'),
+                'lib/python/qti/aisw/arch_checker/constraints.json')
+    if not os.path.exists(constraints_json):
+        logger.error("Failed to find necessary file. Please ensure $SNPE_ROOT/lib/python/qti/aisw/arch_checker/constraints.json exists")
+        sys.exit(-1)
+
+    out_file = os.path.splitext(os.path.abspath(args.input_dlc))[0] + '_architecture_checker.csv'
+    if args.output_path:
+        out_file = os.path.abspath(args.output_path)+'_architecture_checker.csv'
+    snpe_arch_checker = SnpeArchChecker(c_ir_graph, constraints_json, out_file, logger, m)
+    logger.info("Running snpe-architecture-checker...")
+    snpe_arch_checker.run_checks()
+
+    logger.info("Saved output at: " + out_file)
+
+if __name__ == '__main__':
+    main()

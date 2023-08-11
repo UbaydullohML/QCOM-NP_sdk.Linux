@@ -1,0 +1,225 @@
+#!/usr/bin/env python
+#=============================================================================
+#
+#  Copyright (c) 2021-2022 Qualcomm Technologies, Inc.
+#  All Rights Reserved.
+#  Confidential and Proprietary - Qualcomm Technologies, Inc.
+#
+#=============================================================================
+import os
+import sys
+
+sys.path.insert(0, os.path.abspath(os.path.join(sys.path[0], '../../lib/python/')))
+from pathlib import Path
+import signal
+
+from qti.aisw.quantization_checker.QOptionGenerator import QOptionGenerator
+from qti.aisw.quantization_checker.QOptionRunner import QOptionRunner
+from qti.aisw.quantization_checker.utils import utils
+from qti.aisw.quantization_checker.utils.ConfigParser import *
+from qti.aisw.quantization_checker.utils.DataFormatter import DataFormatter
+from qti.aisw.quantization_checker.utils.DataExtractor import DataExtractor
+from qti.aisw.quantization_checker.utils.HistogramVisualizer import (
+    HistogramGeneration, visualizeBiasTensors, visualizeWeightTensors)
+from qti.aisw.quantization_checker.utils.Logger import PrintOptions, getLogger
+from qti.aisw.quantization_checker.utils.Op import Op
+from qti.aisw.quantization_checker.utils.Processor import Processor
+from qti.aisw.quantization_checker.utils.Progress import (Progress,
+                                                          ProgressStage)
+
+def interruptHandler(signum, frame):
+    print('Exit requested by user, program will now exit...')
+    sys.exit(0)
+
+signal.signal(signal.SIGINT, interruptHandler)
+
+def main():
+    # TODO: store as an editable JSON database of options
+    quantizationVariations = [
+                                'unquantized',
+                                'enhanced', 'enhanced_cle',
+                                'tf', 'tf_cle',
+                                'adjusted', 'adjusted_cle',
+                                'symmetric', 'symmetric_cle'
+                             ]
+    args = utils.getArguments()
+    model = None
+    inputList = None
+    sdkDir = None
+    activationWidth = None
+    outputDir = None
+    generateHist = HistogramGeneration.SKIP_GENERATION
+    biasWidth = None
+    weightWidth = None
+    outputCsv = None
+    quantOverridesPath = None
+
+    configParams = extractConfigParams(args.config_file)
+    comparisonAlgorithms = setDefaultAlgorithms()
+
+    if configParams is not None:
+        if "model" in configParams:
+            model = configParams["model"]
+        if "input_list" in configParams:
+            inputList = configParams["input_list"]
+        if "activation_width" in configParams:
+            activationWidth = configParams["activation_width"]
+        if "bias_width" in configParams:
+            biasWidth = configParams["bias_width"]
+        if "weight_width" in configParams:
+            weightWidth = configParams["weight_width"]
+        if "input_dimension" in configParams:
+            inputDimension = configParams["input_dimension"]
+        if "output_dir" in configParams:
+            outputDir = configParams["output_dir"]
+        if "weight_comparison_algorithms" in configParams:
+            comparisonAlgorithms["weight_comparison_algorithms"] = configParams["weight_comparison_algorithms"]
+        if "bias_comparison_algorithms" in configParams:
+            comparisonAlgorithms["bias_comparison_algorithms"] = configParams["bias_comparison_algorithms"]
+        if "act_comparison_algorithms" in configParams:
+            comparisonAlgorithms["act_comparison_algorithms"] = configParams["act_comparison_algorithms"]
+        if "input_data_analysis_algorithms" in configParams:
+            comparisonAlgorithms["input_data_analysis_algorithms"] = configParams["input_data_analysis_algorithms"]
+        if "output_csv" in configParams:
+            outputCsv = configParams["output_csv"]
+        if "generate_histogram" in configParams and configParams["generate_histogram"] == True:
+            generateHist = HistogramGeneration.GENERATE_HISTOGRAM
+        if "per_channel_histogram" in configParams and configParams["per_channel_histogram"] == True:
+            generateHist = HistogramGeneration.GENERATE_PER_CHANNEL_HISTOGRAM
+        if "quantization_overrides" in configParams and os.path.exists(configParams["quantization_overrides"]) == True:
+            quantOverridesPath = configParams["quantization_overrides"]
+    if args.model:
+        model = args.model
+    if args.input_list:
+        inputList = args.input_list
+    if args.activation_width:
+        activationWidth = args.activation_width
+    if args.bias_width:
+        biasWidth = args.bias_width
+    if args.weight_width:
+        weightWidth = args.weight_width
+    if args.output_dir:
+        outputDir = args.output_dir
+    if args.generate_histogram:
+        generateHist = HistogramGeneration.GENERATE_HISTOGRAM
+    if args.per_channel_histogram:
+        generateHist = HistogramGeneration.GENERATE_PER_CHANNEL_HISTOGRAM
+    if args.output_csv:
+        outputCsv = args.output_csv
+    skipGenerator = args.skip_generator
+    skipRunner = args.skip_runner
+    sdkDir = retrieveSnpeSdkDir(os.path.abspath(__file__))
+    if activationWidth is not None:
+        Op.setActivationWidth(activationWidth)
+    if biasWidth is not None:
+        Op.setBiasWidth(biasWidth)
+    if weightWidth is not None:
+        Op.setWeightWidth(weightWidth)
+    if outputDir is None:
+        print("ERROR! Output directory has not been specified, tool will now exit...")
+        exit(-1)
+    if model is None:
+        print("ERROR! Input model file or directory of models has not been specified, tool will now exit...")
+        exit(-1)
+
+    logger = getLogger(outputDir, model, "snpe-quantization-checker-log")
+
+    if sdkDir is None or not os.path.exists(sdkDir):
+        logger.print("ERROR! Path to SNPE SDK doesn't exist, please check the file path!")
+        exit(-1)
+
+    Progress.setProgressInfo(model, logger, skipGenerator, skipRunner)
+    if os.path.isdir(model):
+        models = utils.buildModelDict(model)
+        skipFirstModel = True
+        for modelData in models.values():
+            if not skipFirstModel:
+                Progress.updateModelProgress()
+            skipFirstModel = False
+            Progress.updateProgressLimit()
+            outputDir = os.path.dirname(modelData['modelFile'])
+            if not os.path.exists(outputDir):
+                os.makedirs(outputDir)
+            result = doAnalysis(quantizationVariations, modelData['modelFile'], logger, modelData['inputList'], sdkDir, outputDir, skipGenerator, skipRunner, comparisonAlgorithms, args.config_file, generateHist, outputCsv, quantOverridesPath, inputDimension)
+        Progress.updateProgress(Progress.getRemainingProgress())
+        Progress.finishProcessor()
+        exit(result)
+    elif os.path.isfile(model):
+        Progress.updateProgressLimit()
+        if inputList is None or not os.path.exists(inputList):
+            logger.print("ERROR! List of input files doesn't exist, please check the file path!")
+            exit(-1)
+        result = doAnalysis(quantizationVariations, model, logger, inputList, sdkDir, outputDir, skipGenerator, skipRunner, comparisonAlgorithms, args.config_file, generateHist, outputCsv, quantOverridesPath, inputDimension)
+
+        Progress.updateProgress(Progress.getRemainingProgress())
+        Progress.finishProcessor()
+        exit(result)
+    else:
+        logger.print("ERROR! Incorrect or non-existent model path, please verify the path to the model file is correct!")
+        exit(-1)
+
+def doAnalysis(quantizationVariations, model, logger, inputList, sdkDir, outputDir, skipGenerator, skipRunner, comparisonAlgorithms, userDefinedArgs, generateHist, outputCsv, quantOverridesPath, inputDimension):
+    result = 0
+    if not skipGenerator:
+        result = runGenerator(quantizationVariations, model, inputDimension, inputList, sdkDir, outputDir, logger, userDefinedArgs, quantOverridesPath)
+    if result != -1:
+        extractor = DataExtractor(quantizationVariations, inputList, outputDir, logger)
+        logger.print('Parsing the dlc files.')
+        extractor.extract()
+
+        formatter = DataFormatter(outputDir, model, extractor.getInputFiles(), quantizationVariations, logger)
+        processor = Processor(quantizationVariations, comparisonAlgorithms, logger)
+        formatter.setInputResults(processor.processInputData(extractor.getInputData()))
+        if not skipRunner:
+            logger.print('Building and running model.')
+            result = runRunner(inputList, sdkDir, outputDir, logger, userDefinedArgs)
+        if result != -1:
+            logger.print('Extracting activations from raw files.')
+            extractor.extractActivations()
+            formatter.setActivationsResults(processor.processActivationResults(extractor.getAllOps()))
+
+        formatter.setWeightResults(processor.processWeightResults(extractor.getAllOps()))
+        formatter.setBiasResults(processor.processBiasResults(extractor.getAllOps()))
+        logger.print('Printing results to log file.')
+        formatter.printLog()
+        logger.print('Printing results to console file.')
+        formatter.printConsole()
+        logger.print('Printing results to HTML files.')
+        formatter.printHtml()
+        if outputCsv:
+            logger.print('Printing results to CSV files.')
+            formatter.printCsv()
+
+        weightsHistAnalysisDir = os.path.join(outputDir, 'hist_analysis_weights')
+        if generateHist == HistogramGeneration.GENERATE_HISTOGRAM:
+            weightsHistAnalysisDir = os.path.join(outputDir, 'hist_analysis_weights')
+            visualizeWeightTensors(quantizationVariations, extractor.getAllOps(), weightsHistAnalysisDir, logger)
+            biasesHistAnalysisDir = os.path.join(outputDir, 'hist_analysis_biases')
+            visualizeBiasTensors(quantizationVariations, extractor.getAllOps(), biasesHistAnalysisDir, logger)
+
+    return result
+
+def retrieveSnpeSdkDir(filePath):
+    return str(Path(filePath).parent.parent.parent)
+
+def setDefaultAlgorithms():
+    comparisonAlgorithms = {}
+    comparisonAlgorithms["input_data_analysis_algorithms"] = [{"algo_name":"stats", "threshold":"2"}]
+    comparisonAlgorithms["weight_comparison_algorithms"] = [{"algo_name":"minmax", "threshold":"10"}, {"algo_name":"maxdiff", "threshold":"10"}, {"algo_name":"sqnr", "threshold":"26"}, {"algo_name":"stats", "threshold":"2"}, {"algo_name":"data_range_analyzer"}, {"algo_name":"data_distribution_analyzer", "threshold":"0.6"}]
+    comparisonAlgorithms["bias_comparison_algorithms"] = [{"algo_name":"minmax", "threshold":"10"}, {"algo_name":"maxdiff", "threshold":"10"}, {"algo_name":"sqnr", "threshold":"26"}, {"algo_name":"stats", "threshold":"2"}, {"algo_name":"data_range_analyzer"}, {"algo_name":"data_distribution_analyzer", "threshold":"0.6"}]
+    comparisonAlgorithms["act_comparison_algorithms"] = [{"algo_name":"minmax", "threshold":"10"}]
+    return comparisonAlgorithms
+
+def runRunner(inputList, sdkDir, outputDir, logger, userDefinedArgs):
+    runner = QOptionRunner(outputDir, inputList, sdkDir, os.path.join(outputDir, 'output'), userDefinedArgs, logger)
+    result = runner.run()
+    Progress.updateProgress(Progress.getStepSize(ProgressStage.RUNNER))
+    return result
+
+def runGenerator(quantizationVariations, modelFile, inputDimension, inputList, sdkDir, outputDir, logger, userDefinedArgs, quantOverridesPath):
+    generator = QOptionGenerator(quantizationVariations, modelFile, inputList, sdkDir, Op.getActivationWidth(), Op.getBiasWidth(), Op.getWeightWidth(), inputDimension, outputDir, quantOverridesPath, userDefinedArgs, logger)
+    result = generator.generate()
+    return result
+
+if __name__ == '__main__':
+    main()
